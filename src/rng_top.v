@@ -48,7 +48,7 @@ module seed_random_opt_top(
                                     (
                                         .clk_dp_i               (clk_i),
                                         .rst_dp_i               (rst_i),
-                                        .req_card_state_dp_c_i    (state_w),
+                                        .req_card_state_dp_c_i  (state_w),
                                         .seed_sel_i             (seed_w),
                                         .card_to_send_dp_o      (card_to_send_o)
                                     );

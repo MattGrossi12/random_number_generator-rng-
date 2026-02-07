@@ -19,8 +19,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module rng_data_path(
-    input clk_dp_i,
-    input rst_dp_i,
+    input clk_i,
+    input rst_i,
     input req_card_state_dp_c_i,
     input [1:0] seed_sel_i,
     output [7:0] card_to_send_dp_o
@@ -35,8 +35,8 @@ localparam SEND = 1;
     wire [7:0] card_to_send;
 
     rng_data_path_counter inst(
-                                    .clk_dp_c_i(clk_dp_i),
-                                    .rst_dp_c_i(rst_dp_i),
+                                    .clk_i(clk_i),
+                                    .rst_i(rst_i),
                                     .req_card_state_dp_c_i(req_card_state_dp_c_i),
                                     .next_card_o(card_to_send)
                                 );
@@ -302,9 +302,9 @@ function [7:0] card_selector;
     end
 endfunction
 
-always@(posedge clk_dp_i or negedge rst_dp_i)
+always@(posedge clk_i or negedge rst_i)
     begin
-        if(!rst_dp_i)
+        if(!rst_i)
             begin
                     next_card <= 0;
             end

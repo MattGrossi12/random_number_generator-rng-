@@ -19,8 +19,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module rng_data_path_counter(
-    input clk_dp_c_i,
-    input rst_dp_c_i,
+    input clk_i,
+    input rst_i,
     input req_card_state_dp_c_i,
     output reg [7:0] next_card_o
 );
@@ -39,9 +39,9 @@ always@(*)
     end
 
 //Counter:
-always@(posedge clk_dp_c_i or negedge rst_dp_c_i)
+always@(posedge clk_i or negedge rst_i)
     begin
-        if(!rst_dp_c_i)
+        if(!rst_i)
             begin
                 card_counter    <= 0;
                 next_card_o <= 0;

@@ -19,8 +19,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module rng_control_path(
-    input clk_cp_i,
-    input rst_cp_i,
+    input clk_i,
+    input rst_i,
     input req_card_state_cp,
 
     output state_o
@@ -32,9 +32,9 @@ localparam SEND = 1;
 
 reg next_state;
 
-always@(posedge clk_cp_i or negedge rst_cp_i)
+always@(posedge clk_i or negedge rst_i)
     begin
-        if(!rst_cp_i)
+        if(!rst_i)
             begin
                 next_state <= IDLE;
             end
