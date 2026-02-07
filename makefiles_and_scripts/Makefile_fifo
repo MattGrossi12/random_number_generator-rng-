@@ -7,7 +7,7 @@ TB = ../testbenchs
 INC = -I $(SRC)
 
 TOP_MODULE   = rng_fifo.v
-TESTBENCH = testbench_fifo.v
+TESTBENCH = testbench_fifo.sv
 
 # Lista de arquivos Verilog
 VERILOG_FILES = \

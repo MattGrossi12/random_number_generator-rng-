@@ -21,7 +21,7 @@
 module rng_control_path(
     input clk_i,
     input rst_i,
-    input req_card_state_cp,
+    input req_num,
 
     output state_o
 );
@@ -39,7 +39,7 @@ always@(posedge clk_i or negedge rst_i)
                 next_state <= IDLE;
             end
         else 
-        if(req_card_state_cp)
+        if(req_num)
             begin 
                 next_state <= SEND;
             end

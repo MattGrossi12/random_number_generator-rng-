@@ -5,8 +5,8 @@ LD_LIBRARY_PATH="" gtkwave dump.fst
 SRC = ../src
 TB = ../testbenchs
 
-TOP_MODULE   = seed_random_opt_data_path_counter.v
-INST1 = seed_random_opt_data_base.vh
+TOP_MODULE   = rng_data_path_counter.v
+INST1 = rng_data_base.vh
 TESTBENCH = testbench_data_path_counter.v
 INC = -I $(SRC)
 

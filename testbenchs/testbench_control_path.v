@@ -25,25 +25,25 @@
 module testbench_control_path;
 
 	// Inputs
-	reg clk_cp_i;
-	reg rst_cp_i;
-	reg req_card_state_cp;
+	reg clk_i;
+	reg rst_i;
+	reg req_num;
 
 	// Outputs
 	wire state_o;
 
 	// Instantiate the Unit Under Test (UUT)
-	seed_random_1_control_path uut (
-		.clk_cp_i(clk_cp_i), 
-		.rst_cp_i(rst_cp_i), 
-		.req_card_state_cp(req_card_state_cp), 
+	rng_control_path uut (
+		.clk_i(clk_i), 
+		.rst_i(rst_i), 
+		.req_num(req_num), 
 		.state_o(state_o)
 	);
 
     initial 
         begin: Clock_generator
-          clk_cp_i = 0;
-          forever #5 clk_cp_i = ~clk_cp_i;
+          clk_i = 0;
+          forever #5 clk_i = ~clk_i;
         end
 
 		//States:
@@ -52,28 +52,28 @@ module testbench_control_path;
 
 	initial 
         begin
-			rst_cp_i = 1'b0;
+			rst_i = 1'b0;
 			#25;
-			rst_cp_i = 1'b1;
+			rst_i = 1'b1;
 			#25;
-			req_card_state_cp = 1'b1;
+			req_num = 1'b1;
 			#50;
-			req_card_state_cp = 1'b0;
+			req_num = 1'b0;
 			#50;
-			req_card_state_cp = 1'b1;
+			req_num = 1'b1;
 			#50;
-			req_card_state_cp = 1'b0;
+			req_num = 1'b0;
 			#50;
-			req_card_state_cp = 1'b1;
+			req_num = 1'b1;
 			#50;
-			req_card_state_cp = 1'b0;
+			req_num = 1'b0;
 			#50;
 			$finish;
         end
       
     initial 
         begin: Wavedump
-            $dumpfile("control_path.vcd");
+            $dumpfile("../waveforms/control_path.vcd");
             $dumpvars(0);
         end
 
