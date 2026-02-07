@@ -1,0 +1,1 @@
+make -f Makefile_fifo icarus

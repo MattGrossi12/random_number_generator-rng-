@@ -25,49 +25,49 @@
 module testbench_data_path_counter;
 
 	// Inputs
-	reg clk_dp_c_i;
-	reg rst_dp_c_i;
-	reg req_card_state_dp_c_i;
+	reg clk_i;
+	reg rst_i;
+	reg req_num;
 
 	// Outputs
-	wire [7:0] next_card_o;
+	wire [7:0] next_num_o;
 
 	// Instantiate the Unit Under Test (UUT)
-	seed_random_opt_data_path_counter uut (
-		.clk_dp_c_i(clk_dp_c_i), 
-		.rst_dp_c_i(rst_dp_c_i), 
-		.req_card_state_dp_c_i(req_card_state_dp_c_i), 
-		.next_card_o(next_card_o)
+	rng_data_path_counter uut (
+		.clk_i(clk_i), 
+		.rst_i(rst_i), 
+		.req_num(req_num), 
+		.next_num_o(next_num_o)
 	);
 
     initial 
         begin: Clock_generator
-          clk_dp_c_i = 0;
-          forever #5 clk_dp_c_i = ~clk_dp_c_i;
+          clk_i = 0;
+          forever #5 clk_i = ~clk_i;
         end
 
 	initial 
         begin
             // Initialize Inputs
-			rst_dp_c_i = 0; req_card_state_dp_c_i = 0;
+			rst_i = 0; req_num = 0;
 			#10;
-			rst_dp_c_i = 1;
+			rst_i = 1;
 			#10;
-            req_card_state_dp_c_i = 1;
+            req_num = 1;
 			#150;
-            req_card_state_dp_c_i = 0;
+            req_num = 0;
 			#150;
-            req_card_state_dp_c_i = 1;
+            req_num = 1;
 			#150;
-			rst_dp_c_i = 0;
+			rst_i = 0;
 			#10;
-			rst_dp_c_i = 1;
+			rst_i = 1;
 			#10;
-            req_card_state_dp_c_i = 1;
+            req_num = 1;
 			#150;
-            req_card_state_dp_c_i = 0;
+            req_num = 0;
 			#150;
-            req_card_state_dp_c_i = 1;
+            req_num = 1;
 			#150;
 			$finish;
         end

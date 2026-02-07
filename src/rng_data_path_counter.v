@@ -19,48 +19,48 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module rng_data_path_counter(
-    input clk_dp_c_i,
-    input rst_dp_c_i,
-    input req_card_state_dp_c_i,
-    output reg [7:0] next_card_o
+    input clk_i,
+    input rst_i,
+    input req_num,
+    output reg [7:0] next_num_o
 );
 
 //States:
 localparam IDLE = 0;
 localparam SEND = 1;
 
-reg [7:0] card_counter;
+reg [7:0] num_counter;
 reg state;
 
 always@(*)
     begin
-        state = req_card_state_dp_c_i;
-        next_card_o = card_counter;
+        state = req_num;
+        next_num_o = num_counter;
     end
 
 //Counter:
-always@(posedge clk_dp_c_i or negedge rst_dp_c_i)
+always@(posedge clk_i or negedge rst_i)
     begin
-        if(!rst_dp_c_i)
+        if(!rst_i)
             begin
-                card_counter    <= 0;
-                next_card_o <= 0;
+                num_counter    <= 0;
+                next_num_o <= 0;
             end
         else 
         if(state == 1)
             begin 
-                if(card_counter == 52) 
+                if(num_counter == 52) 
                     begin
-                        card_counter <= 1'b0;
+                        num_counter <= 1'b0;
                     end
                 else
                     begin
-                        card_counter <= card_counter + 1'b1;
+                        num_counter <= num_counter + 1'b1;
                     end
             end
         else
             begin
-                card_counter <= card_counter;
+                num_counter <= num_counter;
             end
     end
 

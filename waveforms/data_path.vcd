@@ -1,0 +1,665 @@
+$date
+	Sat Feb  7 18:50:29 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench_data_path $end
+$var wire 8 ! num_to_send_o [7:0] $end
+$var reg 1 " clk_i $end
+$var reg 1 # req_num $end
+$var reg 1 $ rst_i $end
+$var reg 2 % seed_sel_i [1:0] $end
+$scope module uut $end
+$var wire 1 " clk_i $end
+$var wire 8 & num_to_send_o [7:0] $end
+$var wire 1 # req_num $end
+$var wire 1 $ rst_i $end
+$var wire 2 ' seed_sel_i [1:0] $end
+$var wire 8 ( num_to_send [7:0] $end
+$var parameter 32 ) IDLE $end
+$var parameter 32 * SEND $end
+$var parameter 8 + position_s1_01 $end
+$var parameter 8 , position_s1_02 $end
+$var parameter 8 - position_s1_03 $end
+$var parameter 8 . position_s1_04 $end
+$var parameter 8 / position_s1_05 $end
+$var parameter 8 0 position_s1_06 $end
+$var parameter 8 1 position_s1_07 $end
+$var parameter 8 2 position_s1_08 $end
+$var parameter 8 3 position_s1_09 $end
+$var parameter 8 4 position_s1_10 $end
+$var parameter 8 5 position_s1_11 $end
+$var parameter 8 6 position_s1_12 $end
+$var parameter 8 7 position_s1_13 $end
+$var parameter 8 8 position_s1_14 $end
+$var parameter 8 9 position_s1_15 $end
+$var parameter 8 : position_s1_16 $end
+$var parameter 8 ; position_s2_01 $end
+$var parameter 8 < position_s2_02 $end
+$var parameter 8 = position_s2_03 $end
+$var parameter 8 > position_s2_04 $end
+$var parameter 8 ? position_s2_05 $end
+$var parameter 8 @ position_s2_06 $end
+$var parameter 8 A position_s2_07 $end
+$var parameter 8 B position_s2_08 $end
+$var parameter 8 C position_s2_09 $end
+$var parameter 8 D position_s2_10 $end
+$var parameter 8 E position_s2_11 $end
+$var parameter 8 F position_s2_12 $end
+$var parameter 8 G position_s2_13 $end
+$var parameter 8 H position_s2_14 $end
+$var parameter 8 I position_s2_15 $end
+$var parameter 8 J position_s2_16 $end
+$var parameter 8 K position_s3_01 $end
+$var parameter 8 L position_s3_02 $end
+$var parameter 8 M position_s3_03 $end
+$var parameter 8 N position_s3_04 $end
+$var parameter 8 O position_s3_05 $end
+$var parameter 8 P position_s3_06 $end
+$var parameter 8 Q position_s3_07 $end
+$var parameter 8 R position_s3_08 $end
+$var parameter 8 S position_s3_09 $end
+$var parameter 8 T position_s3_10 $end
+$var parameter 8 U position_s3_11 $end
+$var parameter 8 V position_s3_12 $end
+$var parameter 8 W position_s3_13 $end
+$var parameter 8 X position_s3_14 $end
+$var parameter 8 Y position_s3_15 $end
+$var parameter 8 Z position_s3_16 $end
+$var parameter 8 [ position_s4_01 $end
+$var parameter 8 \ position_s4_02 $end
+$var parameter 8 ] position_s4_03 $end
+$var parameter 8 ^ position_s4_04 $end
+$var parameter 8 _ position_s4_05 $end
+$var parameter 8 ` position_s4_06 $end
+$var parameter 8 a position_s4_07 $end
+$var parameter 8 b position_s4_08 $end
+$var parameter 8 c position_s4_09 $end
+$var parameter 8 d position_s4_10 $end
+$var parameter 8 e position_s4_11 $end
+$var parameter 8 f position_s4_12 $end
+$var parameter 8 g position_s4_13 $end
+$var parameter 8 h position_s4_14 $end
+$var parameter 8 i position_s4_15 $end
+$var parameter 8 j position_s4_16 $end
+$var parameter 8 k seed1_01 $end
+$var parameter 8 l seed1_02 $end
+$var parameter 8 m seed1_03 $end
+$var parameter 8 n seed1_04 $end
+$var parameter 8 o seed1_05 $end
+$var parameter 8 p seed1_06 $end
+$var parameter 8 q seed1_07 $end
+$var parameter 8 r seed1_08 $end
+$var parameter 8 s seed1_09 $end
+$var parameter 8 t seed1_10 $end
+$var parameter 8 u seed1_11 $end
+$var parameter 8 v seed1_12 $end
+$var parameter 8 w seed1_13 $end
+$var parameter 8 x seed1_14 $end
+$var parameter 8 y seed1_15 $end
+$var parameter 8 z seed1_16 $end
+$var parameter 2 { seed1_now $end
+$var parameter 8 | seed2_01 $end
+$var parameter 8 } seed2_02 $end
+$var parameter 8 ~ seed2_03 $end
+$var parameter 8 !" seed2_04 $end
+$var parameter 8 "" seed2_05 $end
+$var parameter 8 #" seed2_06 $end
+$var parameter 8 $" seed2_07 $end
+$var parameter 8 %" seed2_08 $end
+$var parameter 8 &" seed2_09 $end
+$var parameter 8 '" seed2_10 $end
+$var parameter 8 (" seed2_11 $end
+$var parameter 8 )" seed2_12 $end
+$var parameter 8 *" seed2_13 $end
+$var parameter 8 +" seed2_14 $end
+$var parameter 8 ," seed2_15 $end
+$var parameter 8 -" seed2_16 $end
+$var parameter 2 ." seed2_now $end
+$var parameter 8 /" seed3_01 $end
+$var parameter 8 0" seed3_02 $end
+$var parameter 8 1" seed3_03 $end
+$var parameter 8 2" seed3_04 $end
+$var parameter 8 3" seed3_05 $end
+$var parameter 8 4" seed3_06 $end
+$var parameter 8 5" seed3_07 $end
+$var parameter 8 6" seed3_08 $end
+$var parameter 8 7" seed3_09 $end
+$var parameter 8 8" seed3_10 $end
+$var parameter 8 9" seed3_11 $end
+$var parameter 8 :" seed3_12 $end
+$var parameter 8 ;" seed3_13 $end
+$var parameter 8 <" seed3_14 $end
+$var parameter 8 =" seed3_15 $end
+$var parameter 8 >" seed3_16 $end
+$var parameter 2 ?" seed3_now $end
+$var parameter 8 @" seed4_01 $end
+$var parameter 8 A" seed4_02 $end
+$var parameter 8 B" seed4_03 $end
+$var parameter 8 C" seed4_04 $end
+$var parameter 8 D" seed4_05 $end
+$var parameter 8 E" seed4_06 $end
+$var parameter 8 F" seed4_07 $end
+$var parameter 8 G" seed4_08 $end
+$var parameter 8 H" seed4_09 $end
+$var parameter 8 I" seed4_10 $end
+$var parameter 8 J" seed4_11 $end
+$var parameter 8 K" seed4_12 $end
+$var parameter 8 L" seed4_13 $end
+$var parameter 8 M" seed4_14 $end
+$var parameter 8 N" seed4_15 $end
+$var parameter 8 O" seed4_16 $end
+$var parameter 2 P" seed4_now $end
+$var reg 8 Q" next_num [7:0] $end
+$scope function num_selector $end
+$var reg 8 R" num [7:0] $end
+$upscope $end
+$scope module inst $end
+$var wire 1 " clk_i $end
+$var wire 1 # req_num $end
+$var wire 1 $ rst_i $end
+$var parameter 32 S" IDLE $end
+$var parameter 32 T" SEND $end
+$var reg 8 U" next_num_o [7:0] $end
+$var reg 8 V" num_counter [7:0] $end
+$var reg 1 W" state $end
+$upscope $end
+$upscope $end
+$scope begin Clock_generator $end
+$upscope $end
+$scope begin Wavedump $end
+$upscope $end
+$scope task Increment $end
+$upscope $end
+$scope task Initial_state $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 T"
+b0 S"
+b11 P"
+b11010011 O"
+b11010010 N"
+b11010001 M"
+b11001101 L"
+b11001100 K"
+b11001011 J"
+b11001010 I"
+b11001001 H"
+b11001000 G"
+b11000111 F"
+b11000110 E"
+b11000101 D"
+b11000100 C"
+b11000011 B"
+b11000010 A"
+b11000001 @"
+b10 ?"
+b10010011 >"
+b10010010 ="
+b10010001 <"
+b10001101 ;"
+b10001100 :"
+b10001011 9"
+b10001010 8"
+b10001001 7"
+b10001000 6"
+b10000111 5"
+b10000110 4"
+b10000101 3"
+b10000100 2"
+b10000011 1"
+b10000010 0"
+b10000001 /"
+b1 ."
+b1010011 -"
+b1010010 ,"
+b1010001 +"
+b1001101 *"
+b1001100 )"
+b1001011 ("
+b1001010 '"
+b1001001 &"
+b1001000 %"
+b1000111 $"
+b1000110 #"
+b1000101 ""
+b1000100 !"
+b1000011 ~
+b1000010 }
+b1000001 |
+b0 {
+b10011 z
+b10010 y
+b10001 x
+b1101 w
+b1100 v
+b1011 u
+b1010 t
+b1001 s
+b1000 r
+b111 q
+b110 p
+b101 o
+b100 n
+b11 m
+b10 l
+b1 k
+b11001001 j
+b11001000 i
+b11010011 h
+b11000111 g
+b11010010 f
+b11001101 e
+b11001100 d
+b11000101 c
+b11000010 b
+b11000100 a
+b11000011 `
+b11000110 _
+b11000001 ^
+b11001011 ]
+b11001010 \
+b11010001 [
+b10000100 Z
+b10000001 Y
+b10010011 X
+b10001100 W
+b10000010 V
+b10001101 U
+b10010001 T
+b10001000 S
+b10000101 R
+b10001010 Q
+b10000011 P
+b10000111 O
+b10001011 N
+b10010010 M
+b10001001 L
+b10000110 K
+b1010011 J
+b1010001 I
+b1000110 H
+b1000001 G
+b1001011 F
+b1000100 E
+b1001001 D
+b1001101 C
+b1000010 B
+b1010010 A
+b1001100 @
+b1000011 ?
+b1000101 >
+b1001010 =
+b1000111 <
+b1001000 ;
+b111 :
+b1000 9
+b1 8
+b1010 7
+b110 6
+b10010 5
+b100 4
+b10011 3
+b1101 2
+b1001 1
+b1011 0
+b101 /
+b10001 .
+b11 -
+b10 ,
+b1100 +
+b1 *
+b0 )
+$end
+#0
+$dumpvars
+0W"
+b0 V"
+b0 U"
+bx R"
+b0 Q"
+b0 (
+bx '
+b0 &
+bx %
+0$
+0#
+0"
+b0 !
+$end
+#5000
+1"
+#10000
+1W"
+0"
+1#
+1$
+#15000
+b1 (
+b1 U"
+b1 V"
+b0 R"
+1"
+#20000
+0"
+1#
+#25000
+b10 (
+b10 U"
+b11010001 !
+b11010001 &
+b11010001 Q"
+b10 V"
+b1 R"
+1"
+#30000
+0"
+1#
+#35000
+b11 (
+b11 U"
+b11 V"
+b11001010 !
+b11001010 &
+b11001010 Q"
+b10 R"
+1"
+#40000
+0"
+1#
+#45000
+b100 (
+b100 U"
+b11001011 !
+b11001011 &
+b11001011 Q"
+b100 V"
+b11 R"
+1"
+#50000
+0"
+1#
+#55000
+b101 (
+b101 U"
+b101 V"
+b11000001 !
+b11000001 &
+b11000001 Q"
+b100 R"
+1"
+#60000
+0"
+1#
+#65000
+b110 (
+b110 U"
+b11000110 !
+b11000110 &
+b11000110 Q"
+b110 V"
+b101 R"
+1"
+#70000
+0"
+1#
+#75000
+b111 (
+b111 U"
+b111 V"
+b11000011 !
+b11000011 &
+b11000011 Q"
+b110 R"
+1"
+#80000
+0"
+1#
+#85000
+b1000 (
+b1000 U"
+b11000100 !
+b11000100 &
+b11000100 Q"
+b1000 V"
+b111 R"
+1"
+#90000
+0"
+1#
+#95000
+b1001 (
+b1001 U"
+b1001 V"
+b11000010 !
+b11000010 &
+b11000010 Q"
+b1000 R"
+1"
+#100000
+0"
+1#
+#105000
+b1010 (
+b1010 U"
+b11000101 !
+b11000101 &
+b11000101 Q"
+b1010 V"
+b1001 R"
+1"
+#110000
+0"
+1#
+#115000
+b1011 (
+b1011 U"
+b1011 V"
+b11001100 !
+b11001100 &
+b11001100 Q"
+b1010 R"
+1"
+#120000
+0"
+1#
+#125000
+b1100 (
+b1100 U"
+b11001101 !
+b11001101 &
+b11001101 Q"
+b1100 V"
+b1011 R"
+1"
+#130000
+0"
+1#
+#135000
+b1101 (
+b1101 U"
+b1101 V"
+b11010010 !
+b11010010 &
+b11010010 Q"
+b1100 R"
+1"
+#140000
+0"
+1#
+#145000
+b1110 (
+b1110 U"
+b11000111 !
+b11000111 &
+b11000111 Q"
+b1110 V"
+b1101 R"
+1"
+#150000
+0"
+1#
+#155000
+b1111 (
+b1111 U"
+b1111 V"
+b11010011 !
+b11010011 &
+b11010011 Q"
+b1110 R"
+1"
+#160000
+0"
+1#
+#165000
+b10000 (
+b10000 U"
+b11001000 !
+b11001000 &
+b11001000 Q"
+b10000 V"
+b1111 R"
+1"
+#170000
+0"
+1#
+#175000
+b10001 (
+b10001 U"
+b10001 V"
+b11001001 !
+b11001001 &
+b11001001 Q"
+b10000 R"
+1"
+#180000
+0"
+1#
+#185000
+b10010 (
+b10010 U"
+b0 !
+b0 &
+b0 Q"
+b10010 V"
+b10001 R"
+1"
+#190000
+0"
+1#
+#195000
+b10011 (
+b10011 U"
+b10011 V"
+b10010 R"
+1"
+#200000
+0"
+1#
+#205000
+b10100 (
+b10100 U"
+b10100 V"
+b10011 R"
+1"
+#210000
+0"
+1#
+#215000
+b10101 (
+b10101 U"
+b10101 V"
+b10100 R"
+1"
+#220000
+0"
+1#
+#225000
+b10110 (
+b10110 U"
+b10110 V"
+b10101 R"
+1"
+#230000
+0"
+1#
+#235000
+b10111 (
+b10111 U"
+b10111 V"
+b10110 R"
+1"
+#240000
+0"
+1#
+#245000
+b11000 (
+b11000 U"
+b11000 V"
+b10111 R"
+1"
+#250000
+0"
+1#
+#255000
+b11001 (
+b11001 U"
+b11001 V"
+b11000 R"
+1"
+#260000
+0"
+1#
+#265000
+b11010 (
+b11010 U"
+b11010 V"
+b11001 R"
+1"
+#270000
+0"
+1#
+#275000
+b11011 (
+b11011 U"
+b11011 V"
+b11010 R"
+1"
+#280000
+0"
+1#
+#285000
+b11100 (
+b11100 U"
+b11100 V"
+b11011 R"
+1"
+#290000
+0"
+1#
+#295000
+b11101 (
+b11101 U"
+b11101 V"
+b11100 R"
+1"
+#300000
+0"
+1#
+#305000
+b11110 (
+b11110 U"
+b11110 V"
+b11101 R"
+1"
+#310000
+0W"
+0"
+0#

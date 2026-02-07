@@ -25,41 +25,43 @@
     module testbench_data_path;
 
         // Inputs
-        reg clk_dp_i;
-        reg rst_dp_i;
-        reg req_card_state_dp_i;
+        reg clk_i;
+        reg rst_i;
+        reg req_num;
+        reg [1:0] seed_sel_i;
 
         // Outputs
-        wire [7:0] card_to_send_dp_o;
+        wire [7:0] num_to_send_o;
 
         // Instantiate the Unit Under Test (UUT)
-        seed_random_1_data_path uut (
-            .clk_dp_i(clk_dp_i), 
-            .rst_dp_i(rst_dp_i), 
-            .req_card_state_dp_i(req_card_state_dp_i), 
-            .card_to_send_dp_o(card_to_send_dp_o)
+        rng_data_path uut (
+            .clk_i(clk_i), 
+            .rst_i(rst_i), 
+            .req_num(req_num), 
+            .seed_sel_i(seed_sel_i),
+            .num_to_send_o(num_to_send_o)
         );
 
         initial 
             begin: Clock_generator
-            clk_dp_i = 0;
-            forever #5 clk_dp_i = ~clk_dp_i;
+            clk_i = 0;
+            forever #5 clk_i = ~clk_i;
             end
 
         task Initial_state;
         begin
-            rst_dp_i = 0;
-            req_card_state_dp_i = 0;
+            rst_i = 0;
+            req_num = 0;
             #10;
-            rst_dp_i = 1;
+            rst_i = 1;
         end
         endtask
 
         task Increment;
         begin
-            req_card_state_dp_i = 1;
+            req_num = 1;
             #10;
-            req_card_state_dp_i = 0;
+            req_num = 0;
         end
         endtask
 

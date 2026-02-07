@@ -21,23 +21,23 @@
 module rng_repeat_detector(
     input clk_i,
     input start,
-    input request_card_i,
+    input req_num,
     input rst_i,
 
-    output reg [7:0] card_o
+    output reg [7:0] num_o
 );
 
     localparam APPROVE = 1'b1;
     localparam DECLINE = 1'b0;
 
     reg situation_state;
-    reg request_another_card;
+    reg request_another_num;
     reg temp_save;
 
     wire save;
-    wire card_requisiton;
+    wire num_req;
 
-    wire   [7:0] card_i;
+    wire   [7:0] num_i;
 
     wire [7:0] pos_0;
     wire [7:0] pos_1;
@@ -55,15 +55,15 @@ module rng_repeat_detector(
                                 .clk_i(clk_i),
                                 .start(start),
                                 .rst_i(rst_i),
-                                .request_card_i(card_requisiton),
-                                .card_to_send_o(card_i)
+                                .req_num(num_req),
+                                .num_to_send_o(num_i)
                             );
 
     rng_fifo fifo(
                     .clk_i(clk_i),
                     .save(save),
                     .rst_i(rst_i),
-                    .data_in(card_o),
+                    .data_in(num_o),
                     .data_out_0(pos_0),
                     .data_out_1(pos_1),
                     .data_out_2(pos_2),
@@ -79,7 +79,7 @@ module rng_repeat_detector(
 
 always@(posedge clk_i)
     begin
-        case(card_i)
+        case(num_i)
             pos_0, pos_1, pos_2, pos_3, pos_4, pos_5, pos_6, pos_7, pos_8, pos_9, pos_10:  situation_state <= DECLINE;
             default: situation_state <= APPROVE;
         endcase
@@ -89,18 +89,18 @@ always@(posedge clk_i)
     begin
         if(situation_state == APPROVE)
             begin
-                card_o <= card_i;
+                num_o <= num_i;
                 temp_save <= 1'b1;
             end
         else
             begin
-                request_another_card <= 1'b1;
-                card_o <= card_i;
+                request_another_num <= 1'b1;
+                num_o <= num_i;
                 temp_save <= 1'b0;
             end
     end
 
-assign card_requisiton = request_another_card | request_card_i;
+assign num_req = request_another_num | req_num;
 assign save = temp_save;
 
 endmodule
