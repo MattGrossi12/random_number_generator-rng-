@@ -20,44 +20,56 @@
 
 module rng_top(
     input clk_i,
-    input start,
+    input start_i,
     input rst_i,
-    input req_num,
+    input req_num_i,
     output reg [7:0] num_to_send_o
 );
-
-    wire [7:0] num_seed_1;
-    wire [7:0] num_seed_2;
-    wire [7:0] num_seed_3;
-    wire [7:0] num_seed_4;
-
+    //--------------------------------
     reg [7:0] next_num;
-    
-    wire state_w;
-    wire [1:0] seed_w;
+    //--------------------------------
+    wire state_bar;
+    wire [1:0] seed_bar;
+    //--------------------------------
+    wire [7:0] num_i_bar;
+    wire [7:0] num_o_bar;
+    //--------------------------------
+    wire write;
 
-    rng_control_path srcp
+    rng_control_path rng_cp
                                     (
-                                        .clk_i              (clk_i),
-                                        .rst_i              (rst_i),
-                                        .req_num            (req_num),
-                                        .state_o            (state_w)
+                                        .clk_i          (clk_i),
+                                        .rst_i          (rst_i),
+                                        .req_num_i      (req_num_i),
+                                        .state_o        (state_bar)
                                     );
 
-    rng_data_path srdp
+    rng_data_path rng_dp
                                     (
-                                        .clk_i                  (clk_i),
-                                        .rst_i                  (rst_i),
-                                        .req_num                (state_w),
-                                        .seed_sel_i             (seed_w),
-                                        .num_to_send_o          (num_to_send_o)
+                                        .clk_i          (clk_i),
+                                        .rst_i          (rst_i),
+                                        .req_num_i      (state_bar),
+                                        .seed_sel_i     (seed_bar),
+                                        .num_to_send_o  (num_i_bar)
                                     );
 
-    rng_selector seed_s(
-                            .clk_i      (clk_i),
-                            .start      (start),
-                            .rst_i      (rst_i),
-                            .seed_sel_o (seed_w)
-                        );
+    rng_selector rng_sel
+                                    (
+                                        .clk_i          (clk_i),
+                                        .start_i        (start_i),
+                                        .rst_i          (rst_i),
+                                        .seed_sel_o     (seed_bar)
+                                    );
+
+    rng_repeat_detector rng_rd
+                                    (
+                                        .clk_i          (clk_i),
+                                        .start_i        (start_i),
+                                        .req_num_i      (req_num_i),
+                                        .rst_i          (rst_i),
+                                        .num_i          (num_i_bar),                         
+                                        .num_o          (num_to_send_o),
+                                        .write          (write)
+                                    );
 
 endmodule

@@ -21,7 +21,7 @@
 module rng_data_path(
     input clk_i,
     input rst_i,
-    input req_num,
+    input req_num_i,
     input [1:0] seed_sel_i,
     output [7:0] num_to_send_o
 );
@@ -37,7 +37,7 @@ localparam SEND = 1;
     rng_data_path_counter inst(
                                     .clk_i(clk_i),
                                     .rst_i(rst_i),
-                                    .req_num(req_num),
+                                    .req_num_i(req_num_i),
                                     .next_num_o(num_to_send)
                                 );
 
@@ -165,7 +165,7 @@ always@(posedge clk_i or negedge rst_i)
                     next_num <= 0;
             end
         else
-        if(req_num)
+        if(req_num_i)
             begin
                 next_num <= num_selector(num_to_send);
             end

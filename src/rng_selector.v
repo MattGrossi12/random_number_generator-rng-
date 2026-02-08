@@ -20,7 +20,7 @@
 
 module rng_selector(
     input clk_i,
-    input start,
+    input start_i,
     input rst_i,
     output reg [1:0] seed_sel_o
 );

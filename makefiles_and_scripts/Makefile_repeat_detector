@@ -6,27 +6,12 @@ SRC = ../src
 TB = ../testbenchs
 INC = -I $(SRC)
 
-TOP_MODULE   = rng_top.v
-TESTBENCH = testbench.v
-
-INST1 = rng_control_path.v
-INST2 = rng_data_path.v
-INST3 = rng_data_base.vh
-INST4 = rng_data_path_counter.v
-INST5 = rng_selector.v
-INST6 = rng_fifo.v
-INST7 = rng_repeat_detector.v
+TOP_MODULE   = rng_repeat_detector.v
+TESTBENCH = testbench_rd.sv
 
 # Lista de arquivos Verilog
 VERILOG_FILES = \
     $(SRC)/$(TOP_MODULE) \
-	$(SRC)/$(INST1) \
-	$(SRC)/$(INST2) \
-	$(SRC)/$(INST3) \
-	$(SRC)/$(INST4) \
-	$(SRC)/$(INST5) \
-	$(SRC)/$(INST6) \
-	$(SRC)/$(INST7) \
     $(TB)/$(TESTBENCH)
 
 # Comando de compilação pelo cvc:

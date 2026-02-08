@@ -27,20 +27,21 @@
         // Inputs
         reg clk_i;
         reg rst_i;
-        reg req_num;
+        reg req_num_i;
         reg [1:0] seed_sel_i;
 
         // Outputs
         wire [7:0] num_to_send_o;
 
         // Instantiate the Unit Under Test (UUT)
-        rng_data_path uut (
-            .clk_i(clk_i), 
-            .rst_i(rst_i), 
-            .req_num(req_num), 
-            .seed_sel_i(seed_sel_i),
-            .num_to_send_o(num_to_send_o)
-        );
+        rng_data_path uut 
+                            (
+                                .clk_i(clk_i), 
+                                .rst_i(rst_i), 
+                                .req_num_i(req_num_i), 
+                                .seed_sel_i(seed_sel_i),
+                                .num_to_send_o(num_to_send_o)
+                            );
 
         initial 
             begin: Clock_generator
@@ -51,29 +52,68 @@
         task Initial_state;
         begin
             rst_i = 0;
-            req_num = 0;
+            req_num_i = 0;
             #10;
             rst_i = 1;
         end
         endtask
 
-        task Increment;
+        task s1;
         begin
-            req_num = 1;
+            seed_sel_i = 0;
             #10;
-            req_num = 0;
+        end
+        endtask
+
+        task s2;
+        begin
+            seed_sel_i = 1;
+            #10;
+        end
+        endtask
+
+        task s3;
+        begin
+            seed_sel_i = 2;
+            #10;
+        end
+        endtask
+
+        task s4;
+        begin
+            seed_sel_i = 3;
+            #10;
+        end
+        endtask
+
+        task call;
+        begin
+            s1();
+            s2();
+            s3();
+            s4();
+        end
+        endtask
+
+        task inc;
+        begin
+            repeat(40) 
+                begin
+                    req_num_i = 1;
+                    #10;
+                    req_num_i = 0;
+                    #10;
+                    call();
+                end
         end
         endtask
 
         initial 
             begin
-                // Initialize Inputs
                 Initial_state();
-                repeat(30) 
-                    begin
-                        Increment();
-                    end
+                inc();
                 $finish;
+                #500;
             end
         
         initial 
