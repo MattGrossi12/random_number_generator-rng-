@@ -23,6 +23,7 @@ module rng_top(
     input start_i,
     input rst_i,
     input req_num_i,
+    input wr_i,
     output reg [7:0] num_to_send_o
 );
     //--------------------------------
@@ -32,15 +33,19 @@ module rng_top(
     wire [1:0] seed_bar;
     //--------------------------------
     wire [7:0] num_i_bar;
-    wire [7:0] num_o_bar;
+    //wire [7:0] num_o_bar;
     //--------------------------------
-    wire write;
+    wire req_num_again;
+
+    wire req_num;
+
+    assign req_num = req_num_i | req_num_again;
 
     rng_control_path rng_cp
                                     (
                                         .clk_i          (clk_i),
                                         .rst_i          (rst_i),
-                                        .req_num_i      (req_num_i),
+                                        .req_num_i      (req_num),
                                         .state_o        (state_bar)
                                     );
 
@@ -48,7 +53,7 @@ module rng_top(
                                     (
                                         .clk_i          (clk_i),
                                         .rst_i          (rst_i),
-                                        .req_num_i      (state_bar),
+                                        .req_num_i      (req_num),
                                         .seed_sel_i     (seed_bar),
                                         .num_to_send_o  (num_i_bar)
                                     );
@@ -61,15 +66,15 @@ module rng_top(
                                         .seed_sel_o     (seed_bar)
                                     );
 
-    rng_repeat_detector rng_rd
+    rng_hs_dup_detector rng_rd
                                     (
                                         .clk_i          (clk_i),
-                                        .start_i        (start_i),
-                                        .req_num_i      (req_num_i),
                                         .rst_i          (rst_i),
-                                        .num_i          (num_i_bar),                         
-                                        .num_o          (num_to_send_o),
-                                        .write          (write)
+                                        .req_num_i      (req_num),
+                                        .data_i         (num_i_bar),            
+                                        .wr_i           (wr_i),
+                                        .data_o         (num_to_send_o),
+                                        .req_new_num_o  (req_num_again)
                                     );
 
 endmodule

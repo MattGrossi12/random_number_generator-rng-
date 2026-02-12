@@ -6,8 +6,8 @@ SRC = ../src
 TB = ../testbenchs
 INC = -I $(SRC)
 
-TOP_MODULE   = rng_repeat_detector.v
-TESTBENCH = testbench_rd.sv
+TOP_MODULE   = rng_hs_dup_detector.v
+TESTBENCH = testbench_hs.v
 
 # Lista de arquivos Verilog
 VERILOG_FILES = \

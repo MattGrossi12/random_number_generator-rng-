@@ -30,6 +30,8 @@ module rng_data_path(
 localparam IDLE = 0;
 localparam SEND = 1;
 
+reg x_state;
+
 `include "rng_data_base.vh"
 
     wire [7:0] num_to_send;
@@ -59,6 +61,7 @@ function [7:0] num_selector;
             // ======================================================
             seed1_now: begin
                 case (num)
+                    8'd0:  num_selector = position_s1_00;
                     8'd1:  num_selector = position_s1_01;
                     8'd2:  num_selector = position_s1_02;
                     8'd3:  num_selector = position_s1_03;
@@ -74,8 +77,7 @@ function [7:0] num_selector;
                     8'd13: num_selector = position_s1_13;
                     8'd14: num_selector = position_s1_14;
                     8'd15: num_selector = position_s1_15;
-                    8'd16: num_selector = position_s1_16;
-                    default: num_selector = 8'h00;
+                    default: num_selector = x_state;
                 endcase
             end
 
@@ -84,6 +86,7 @@ function [7:0] num_selector;
             // ======================================================
             seed2_now: begin
                 case (num)
+                    8'd0:  num_selector = position_s2_00;
                     8'd1:  num_selector = position_s2_01;
                     8'd2:  num_selector = position_s2_02;
                     8'd3:  num_selector = position_s2_03;
@@ -99,8 +102,8 @@ function [7:0] num_selector;
                     8'd13: num_selector = position_s2_13;
                     8'd14: num_selector = position_s2_14;
                     8'd15: num_selector = position_s2_15;
-                    8'd16: num_selector = position_s2_16;
-                    default: num_selector = 8'h00;
+                    default: num_selector = x_state;
+                    //
                 endcase
             end
 
@@ -109,6 +112,7 @@ function [7:0] num_selector;
             // ======================================================
             seed3_now: begin
                 case (num)
+                    8'd0:  num_selector = position_s3_00;
                     8'd1:  num_selector = position_s3_01;
                     8'd2:  num_selector = position_s3_02;
                     8'd3:  num_selector = position_s3_03;
@@ -124,8 +128,7 @@ function [7:0] num_selector;
                     8'd13: num_selector = position_s3_13;
                     8'd14: num_selector = position_s3_14;
                     8'd15: num_selector = position_s3_15;
-                    8'd16: num_selector = position_s3_16;
-                    default: num_selector = 8'h00;
+                    default: num_selector = x_state;
                 endcase
             end
 
@@ -134,6 +137,7 @@ function [7:0] num_selector;
             // ======================================================
             default: begin
                 case (num)
+                    8'd0:  num_selector = position_s4_00;
                     8'd1:  num_selector = position_s4_01;
                     8'd2:  num_selector = position_s4_02;
                     8'd3:  num_selector = position_s4_03;
@@ -149,8 +153,8 @@ function [7:0] num_selector;
                     8'd13: num_selector = position_s4_13;
                     8'd14: num_selector = position_s4_14;
                     8'd15: num_selector = position_s4_15;
-                    8'd16: num_selector = position_s4_16;
-                    default: num_selector = 8'h00;
+                    default: num_selector = x_state;
+                    //default: num_selector = x_state;
                 endcase
             end
 
@@ -162,7 +166,7 @@ always@(posedge clk_i or negedge rst_i)
     begin
         if(!rst_i)
             begin
-                    next_num <= 0;
+                next_num <= x_state;
             end
         else
         if(req_num_i)

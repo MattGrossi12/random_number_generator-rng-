@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module testbench;
+module testbench_sel;
 
     localparam DEPTH         = 72;                       //Profundidade
     localparam T_DEPTH       = (DEPTH-1);                //Profundidade real
@@ -33,51 +33,42 @@ module testbench;
     localparam COUNT_WIDTH   = $clog2(SEED_TOT_NUMB);    //Largura do contador de ciclos
     localparam T_COUNT_WID   = (COUNT_WIDTH-1);          //Largura "real" para uso vetorial
 
-
-    logic clk_i;
-    logic start_i;
-    logic req_num_i;
-    logic rst_i;
-    logic  [7:0] num_i;
-    logic  [7:0] num_o;
-	logic write_again;
+	// Inputs
+	logic clk_i;
+	logic start_i;
+	logic rst_i;
+	logic [1:0] seed_sel_o;
 
 	//Variável de sustentação do looping
 	integer i;
 
-	rng_repeat_detector uut
-							(
-								.clk_i			(clk_i), 
-								.rst_i			(rst_i), 
-								.start_i		(start_i),
-								.write_again	(write_again),
-								.req_num_i		(req_num_i),
-								.num_i			(num_i),
-								.num_o			(num_o)
-							);
+	// Instantiate the Unit Under Test (UUT)
+	rng_selector uut 
+					(
+						.clk_i(clk_i), 
+						.start_i(start_i), 
+						.rst_i(rst_i), 
+						.seed_sel_o(seed_sel_o)
+					);
 
-    initial 
-        begin: Clock_generator
-          clk_i = 0;
-          forever #5 clk_i = ~clk_i;
-        end
-
-	/*
-	function [T_WIDTH:0] vlr;
-		input [T_WIDTH:0] value;
-		begin
-			num_i = value;
+	initial
+		begin: Clock_generator
+			clk_i = 0;
+			forever #5 clk_i = ~clk_i;
 		end
-	endfunction
-	*/
 
 	task reset;
-		rst_i 	= 0;
-		start_i = 0;
+		rst_i = 0;
 		#10;
-		rst_i 	= 1;
-		start_i = 1;
+		rst_i = 1;
 		#10;
+	endtask 
+
+	task wr;
+		#50;
+		start_i = 1'b1;
+		#50;
+		start_i = 1'b0;
 	endtask 
 
 	initial 
@@ -85,10 +76,7 @@ module testbench;
 			//-------------------------------------------------
 			reset();
 			//-------------------------------------------------
-			#50;
-			//---------
-			num_i = 0;
-
+			start_i = 1;
 			//-------------------------------------------------
 			#500;
 			$finish;
@@ -96,7 +84,7 @@ module testbench;
       
     initial 
         begin: Wavedump
-                $dumpfile("../waveforms/repeat_detector.vcd");
+                $dumpfile("../waveforms/sel.vcd");
             $dumpvars(0, uut);
         end
 

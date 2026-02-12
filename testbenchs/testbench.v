@@ -28,7 +28,7 @@ module testbench;
 	reg start_i;
 	reg rst_i;
 	reg req_num_i;
-
+    reg wr_i;
 	// Outputs
 	wire [7:0] num_to_send_o;
 
@@ -36,9 +36,10 @@ module testbench;
 	rng_top uut 
 				(
 					.clk_i			(clk_i),
-					.start_i			(start_i), 
+					.start_i		(start_i), 
 					.rst_i			(rst_i), 
 					.req_num_i		(req_num_i), 
+					.wr_i			(wr_i),
 					.num_to_send_o	(num_to_send_o)
 				);
 
@@ -49,25 +50,40 @@ module testbench;
         end
 
 	task reset;
-		rst_i = 0;
-		#10;
-		rst_i = 1;
-		#10;
+			rst_i = 0;
+			#10;
+			rst_i = 1;
+			#10;
 	endtask 
 
-    initial 
-        begin: req
-          req_num_i = 0;
-          forever #50 req_num_i = ~req_num_i;
-        end
+	task reqn;
+			req_num_i = 1;
+			#15;
+			wr_i = 1;
+			#7;
+			req_num_i = 0;
+			#10;
+			wr_i = 0;
+			#5000;
+	endtask 
 
 	initial 
         begin
             // Initialize Inputs
 			//-------------------------------------------------
-			reset();
+			wr_i = 0;
 			start_i = 1'b1;
-			//--------------------------------------------------
+			reset();
+
+			//========================================================
+			//						Ciclo 1
+			
+			repeat(100) 
+				begin
+					reqn();
+				end
+
+
 			#5000;
 			$finish;
         end

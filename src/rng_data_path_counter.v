@@ -25,7 +25,7 @@ module rng_data_path_counter(
     output wire [7:0] next_num_o
 );
 
-reg [7:0] num_counter;
+reg [4:0] num_counter;
 reg       req_num_i_d;
 wire      req_rise;
 
@@ -40,8 +40,8 @@ always @(posedge clk_i or negedge rst_i) begin
         req_num_i_d <= req_num_i;
 
         if (req_rise) begin
-            if (num_counter == 8'd63)
-                num_counter <= 8'd0;
+            if (num_counter == 4'd15)
+                num_counter <= 4'd0;
             else
                 num_counter <= num_counter + 8'd1;
         end
