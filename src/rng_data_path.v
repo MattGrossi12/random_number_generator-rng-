@@ -18,12 +18,23 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module rng_data_path(
+module rng_data_path
+#(
+    parameter DEPTH         = 72,                       //Profundidade
+    parameter T_DEPTH       = (DEPTH-1),                //Profundidade real
+    parameter WIDTH         = 3,                        //Largura
+    parameter T_WIDTH       = (WIDTH-1),                //Largura "real" para uso vetorial
+    parameter SEED_TOT_NUMB = 12,                        //Total de números das seeds agrupados
+    parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),      //Total "real" de números das seeds agrupados
+    parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),    //Largura do contador de ciclos
+    parameter T_COUNT_WID   = (COUNT_WIDTH-1)           //Largura "real" para uso vetorial
+)
+(
     input clk_i,
     input rst_i,
     input req_num_i,
     input [1:0] seed_sel_i,
-    output [7:0] num_to_send_o
+    output [T_WIDTH:0] num_to_send_o
 );
 
 //States:
@@ -34,7 +45,7 @@ reg x_state;
 
 `include "rng_data_base.vh"
 
-    wire [7:0] num_to_send;
+wire [T_WIDTH:0] num_to_send;
 
     rng_data_path_counter inst(
                                     .clk_i(clk_i),
@@ -43,7 +54,7 @@ reg x_state;
                                     .next_num_o(num_to_send)
                                 );
 
-reg [7:0] next_num;
+reg [2:0] next_num;
 
 localparam seed1_now = 2'b00;
 localparam seed2_now = 2'b01;
@@ -51,8 +62,8 @@ localparam seed3_now = 2'b10;
 localparam seed4_now = 2'b11;
 
 //Data-Path:
-function [7:0] num_selector;
-    input [7:0] num;
+function [T_WIDTH:0] num_selector;
+    input [T_WIDTH:0] num;
     begin
         case (seed_sel_i)
 
@@ -61,23 +72,15 @@ function [7:0] num_selector;
             // ======================================================
             seed1_now: begin
                 case (num)
-                    8'd0:  num_selector = position_s1_00;
-                    8'd1:  num_selector = position_s1_01;
-                    8'd2:  num_selector = position_s1_02;
-                    8'd3:  num_selector = position_s1_03;
-                    8'd4:  num_selector = position_s1_04;
-                    8'd5:  num_selector = position_s1_05;
-                    8'd6:  num_selector = position_s1_06;
-                    8'd7:  num_selector = position_s1_07;
-                    8'd8:  num_selector = position_s1_08;
-                    8'd9:  num_selector = position_s1_09;
-                    8'd10: num_selector = position_s1_10;
-                    8'd11: num_selector = position_s1_11;
-                    8'd12: num_selector = position_s1_12;
-                    8'd13: num_selector = position_s1_13;
-                    8'd14: num_selector = position_s1_14;
-                    8'd15: num_selector = position_s1_15;
-                    default: num_selector = x_state;
+                    3'd0:  num_selector = position_s1_00;
+                    3'd1:  num_selector = position_s1_01;
+                    3'd2:  num_selector = position_s1_02;
+                    3'd3:  num_selector = position_s1_03;
+                    3'd4:  num_selector = position_s1_04;
+                    3'd5:  num_selector = position_s1_05;
+                    3'd6:  num_selector = position_s1_06;
+                    3'd7:  num_selector = position_s1_07;
+                    default: num_selector = 0;
                 endcase
             end
 
@@ -86,23 +89,15 @@ function [7:0] num_selector;
             // ======================================================
             seed2_now: begin
                 case (num)
-                    8'd0:  num_selector = position_s2_00;
-                    8'd1:  num_selector = position_s2_01;
-                    8'd2:  num_selector = position_s2_02;
-                    8'd3:  num_selector = position_s2_03;
-                    8'd4:  num_selector = position_s2_04;
-                    8'd5:  num_selector = position_s2_05;
-                    8'd6:  num_selector = position_s2_06;
-                    8'd7:  num_selector = position_s2_07;
-                    8'd8:  num_selector = position_s2_08;
-                    8'd9:  num_selector = position_s2_09;
-                    8'd10: num_selector = position_s2_10;
-                    8'd11: num_selector = position_s2_11;
-                    8'd12: num_selector = position_s2_12;
-                    8'd13: num_selector = position_s2_13;
-                    8'd14: num_selector = position_s2_14;
-                    8'd15: num_selector = position_s2_15;
-                    default: num_selector = x_state;
+                    3'd0:  num_selector = position_s2_00;
+                    3'd1:  num_selector = position_s2_01;
+                    3'd2:  num_selector = position_s2_02;
+                    3'd3:  num_selector = position_s2_03;
+                    3'd4:  num_selector = position_s2_04;
+                    3'd5:  num_selector = position_s2_05;
+                    3'd6:  num_selector = position_s2_06;
+                    3'd7:  num_selector = position_s2_07;
+                    default: num_selector = 0;
                     //
                 endcase
             end
@@ -112,23 +107,15 @@ function [7:0] num_selector;
             // ======================================================
             seed3_now: begin
                 case (num)
-                    8'd0:  num_selector = position_s3_00;
-                    8'd1:  num_selector = position_s3_01;
-                    8'd2:  num_selector = position_s3_02;
-                    8'd3:  num_selector = position_s3_03;
-                    8'd4:  num_selector = position_s3_04;
-                    8'd5:  num_selector = position_s3_05;
-                    8'd6:  num_selector = position_s3_06;
-                    8'd7:  num_selector = position_s3_07;
-                    8'd8:  num_selector = position_s3_08;
-                    8'd9:  num_selector = position_s3_09;
-                    8'd10: num_selector = position_s3_10;
-                    8'd11: num_selector = position_s3_11;
-                    8'd12: num_selector = position_s3_12;
-                    8'd13: num_selector = position_s3_13;
-                    8'd14: num_selector = position_s3_14;
-                    8'd15: num_selector = position_s3_15;
-                    default: num_selector = x_state;
+                    3'd0:  num_selector = position_s3_00;
+                    3'd1:  num_selector = position_s3_01;
+                    3'd2:  num_selector = position_s3_02;
+                    3'd3:  num_selector = position_s3_03;
+                    3'd4:  num_selector = position_s3_04;
+                    3'd5:  num_selector = position_s3_05;
+                    3'd6:  num_selector = position_s3_06;
+                    3'd7:  num_selector = position_s3_07;
+                    default: num_selector = 0;
                 endcase
             end
 
@@ -137,23 +124,15 @@ function [7:0] num_selector;
             // ======================================================
             default: begin
                 case (num)
-                    8'd0:  num_selector = position_s4_00;
-                    8'd1:  num_selector = position_s4_01;
-                    8'd2:  num_selector = position_s4_02;
-                    8'd3:  num_selector = position_s4_03;
-                    8'd4:  num_selector = position_s4_04;
-                    8'd5:  num_selector = position_s4_05;
-                    8'd6:  num_selector = position_s4_06;
-                    8'd7:  num_selector = position_s4_07;
-                    8'd8:  num_selector = position_s4_08;
-                    8'd9:  num_selector = position_s4_09;
-                    8'd10: num_selector = position_s4_10;
-                    8'd11: num_selector = position_s4_11;
-                    8'd12: num_selector = position_s4_12;
-                    8'd13: num_selector = position_s4_13;
-                    8'd14: num_selector = position_s4_14;
-                    8'd15: num_selector = position_s4_15;
-                    default: num_selector = x_state;
+                    3'd0:  num_selector = position_s4_00;
+                    3'd1:  num_selector = position_s4_01;
+                    3'd2:  num_selector = position_s4_02;
+                    3'd3:  num_selector = position_s4_03;
+                    3'd4:  num_selector = position_s4_04;
+                    3'd5:  num_selector = position_s4_05;
+                    3'd6:  num_selector = position_s4_06;
+                    3'd7:  num_selector = position_s4_07;
+                    default: num_selector = 0;
                     //default: num_selector = x_state;
                 endcase
             end
@@ -166,7 +145,7 @@ always@(posedge clk_i or negedge rst_i)
     begin
         if(!rst_i)
             begin
-                next_num <= x_state;
+                next_num <= 0;
             end
         else
         if(req_num_i)

@@ -34,7 +34,7 @@ fst:
 
 # Comando de compilação pelo icarus:
 icarus:
-	iverilog -Wall -g2012 $(INC) -o $(SIM) $(VERILOG_FILES)
+	iverilog -g2012 -Wall $(INC) -o $(SIM) $(VERILOG_FILES)
 	vvp $(SIM)
 	rm -f sim.vvp
 

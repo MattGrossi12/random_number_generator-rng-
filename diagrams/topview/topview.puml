@@ -1,0 +1,78 @@
+@startuml
+
+' --- CONFIGURAÇÕES VISUAIS ---
+skinparam linetype ortho
+skinparam nodesep 50
+skinparam ranksep 50
+left to right direction
+skinparam componentStyle rectangle
+skinparam shadow false
+
+' Estilização
+skinparam nodeBackgroundColor #E0E0E0
+skinparam agentBackgroundColor #FFF3E0
+skinparam databaseBackgroundColor #FFFFFF
+skinparam packageStyle rectangle
+
+package "Block Top-View" {
+
+    rectangle "Input Interface" as Inputs #line:gray;text:gray {
+        node "clk_i"     as input_1 #PaleGreen
+        node "start"     as input_2 #PaleGreen
+        node "rst_i"     as input_3 #PaleGreen
+        node "req_num_i" as input_4 #PaleGreen
+        node "wr_i"      as input_5 #PaleGreen
+        
+    ' --- 1. ENTRADAS  ---
+        input_1 -[hidden]down- input_2
+        input_2 -[hidden]down- input_3
+        input_3 -[hidden]down- input_4
+        input_4 -[hidden]down- input_5
+    }
+
+    ' --- 2. CORE LOGIC ---
+    rectangle "Core Logic" #line:gray;text:gray {
+        
+        node "Top Module" as RTL_1
+        
+        ' Sub-componentes
+        agent "selector"        as RTL_2
+        agent "hs_dup_detector" as RTL_3
+        agent "control_path"    as RTL_7
+        
+        rectangle "Data Block" #line:transparent {
+            agent "data_path"         as RTL_4
+            agent "data_path_counter" as RTL_5
+            database "data_base"      as RTL_6
+        }
+    }
+
+    ' --- 3. SAÍDA ---
+    rectangle "Output Interface" #line:gray;text:gray {
+        node "num_to_send_o\n[T_WIDTH:0]" as output_1 #Salmon
+    }
+
+    ' --- CONEXÕES ---
+    
+    ' Entradas -> Top
+    input_1 --> RTL_1
+    input_2 --> RTL_1
+    input_3 --> RTL_1
+    input_4 --> RTL_1
+    input_5 --> RTL_1
+
+    ' Top -> Sub-módulos
+    RTL_1 <--> RTL_2
+    RTL_1 <--> RTL_3
+    RTL_1 <--> RTL_7
+    RTL_1 <--> RTL_4
+
+    ' Lógica interna
+    RTL_4 <--> RTL_5
+    RTL_6 --> RTL_4
+
+    ' Saída
+    RTL_1 --> output_1
+
+} 
+@enduml

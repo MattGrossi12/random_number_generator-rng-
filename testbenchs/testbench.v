@@ -30,7 +30,7 @@ module testbench;
 	reg req_num_i;
     reg wr_i;
 	// Outputs
-	wire [7:0] num_to_send_o;
+	wire [2:0] num_to_send_o;
 
 	// Instantiate the Unit Under Test (UUT)
 	rng_top uut 
