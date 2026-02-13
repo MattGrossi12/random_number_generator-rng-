@@ -2,7 +2,11 @@
 
 Este projeto consiste na implementação em Verilog de um Gerador de Números Pseudoaleatórios (PRNG). O sistema foi projetado para gerar números de 3 bits (faixa de 0 a 7) utilizando 4 sementes (seeds) distintas baseadas em tabelas de permutação.
 
+![Topview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/topview/topview.png)
+
 A principal característica deste projeto é o mecanismo de detecção de duplicatas, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.
+
+![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/timing.png)
 
 ## Características do Sistema
 
@@ -32,8 +36,20 @@ O sistema utiliza um conjunto extenso de parâmetros para garantir que as largur
 Abaixo está detalhada a organização dos diretórios e arquivos do repositório.
 
 ```text
-.
+.├── diagrams
+│   ├── timing
+│   │   ├── timing.png
+│   │   ├── timing.puml
+│   │   └── timing.sh
+│   └── topview
+│       ├── diagram.sh
+│       ├── topview.png
+│       └── topview.puml
 ├── doc
+│   ├── doc.aux
+│   ├── doc.log
+│   ├── doc.pdf
+│   └── doc.tex
 ├── makefiles_and_scripts
 │   ├── control_path.sh
 │   ├── data_path_counter.sh
