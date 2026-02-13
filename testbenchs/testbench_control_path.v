@@ -27,7 +27,7 @@ module testbench_control_path;
 	// Inputs
 	reg clk_i;
 	reg rst_i;
-	reg req_num;
+	reg req_num_i;
 
 	// Outputs
 	wire state_o;
@@ -36,7 +36,7 @@ module testbench_control_path;
 	rng_control_path uut (
 		.clk_i(clk_i), 
 		.rst_i(rst_i), 
-		.req_num(req_num), 
+		.req_num_i(req_num_i), 
 		.state_o(state_o)
 	);
 
@@ -56,17 +56,17 @@ module testbench_control_path;
 			#25;
 			rst_i = 1'b1;
 			#25;
-			req_num = 1'b1;
+			req_num_i = 1'b1;
 			#50;
-			req_num = 1'b0;
+			req_num_i = 1'b0;
 			#50;
-			req_num = 1'b1;
+			req_num_i = 1'b1;
 			#50;
-			req_num = 1'b0;
+			req_num_i = 1'b0;
 			#50;
-			req_num = 1'b1;
+			req_num_i = 1'b1;
 			#50;
-			req_num = 1'b0;
+			req_num_i = 1'b0;
 			#50;
 			$finish;
         end

@@ -27,7 +27,7 @@ module testbench_data_path_counter;
 	// Inputs
 	reg clk_i;
 	reg rst_i;
-	reg req_num;
+	reg req_num_i;
 
 	// Outputs
 	wire [7:0] next_num_o;
@@ -36,39 +36,34 @@ module testbench_data_path_counter;
 	rng_data_path_counter uut (
 		.clk_i(clk_i), 
 		.rst_i(rst_i), 
-		.req_num(req_num), 
+		.req_num_i(req_num_i), 
 		.next_num_o(next_num_o)
 	);
 
     initial 
         begin: Clock_generator
           clk_i = 0;
-          forever #5 clk_i = ~clk_i;
+          forever #3 clk_i = ~clk_i;
+        end
+
+	task reset;
+		rst_i = 0;
+		#10;
+		rst_i = 1;
+		#10;
+	endtask 
+
+    initial 
+        begin: req
+          req_num_i = 0;
+          forever #50 req_num_i = ~req_num_i;
         end
 
 	initial 
         begin
             // Initialize Inputs
-			rst_i = 0; req_num = 0;
-			#10;
-			rst_i = 1;
-			#10;
-            req_num = 1;
-			#150;
-            req_num = 0;
-			#150;
-            req_num = 1;
-			#150;
-			rst_i = 0;
-			#10;
-			rst_i = 1;
-			#10;
-            req_num = 1;
-			#150;
-            req_num = 0;
-			#150;
-            req_num = 1;
-			#150;
+			reset();
+			#5000;
 			$finish;
         end
       

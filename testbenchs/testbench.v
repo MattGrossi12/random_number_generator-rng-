@@ -5,14 +5,14 @@
 // Engineer:
 //
 // Create Date:   20:47:53 01/28/2026
-// Design Name:   seed_random_1
-// Module Name:   /home/matheus/ISE_projects/seed_random_1/testbench.v
-// Project Name:  seed_random_1
+// Design Name:   rng_top
+// Module Name:   /home/matheus/ISE_projects/rng_top/testbench.v
+// Project Name:  rng_top
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: seed_random_1
+// Verilog Test Fixture created by ISE for module: rng_top
 //
 // Dependencies:
 // 
@@ -23,24 +23,25 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module testbench;
-
 	// Inputs
 	reg clk_i;
-	reg start;
+	reg start_i;
 	reg rst_i;
-	reg request_card_i;
-
+	reg req_num_i;
+    reg wr_i;
 	// Outputs
-	wire [7:0] card_to_send_o;
+	wire [2:0] num_to_send_o;
 
 	// Instantiate the Unit Under Test (UUT)
-	seed_random_opt_top uut (
-		.clk_i(clk_i),
-		.start(start), 
-		.rst_i(rst_i), 
-		.request_card_i(request_card_i), 
-		.card_to_send_o(card_to_send_o)
-	);
+	rng_top uut 
+				(
+					.clk_i			(clk_i),
+					.start_i		(start_i), 
+					.rst_i			(rst_i), 
+					.req_num_i		(req_num_i), 
+					.wr_i			(wr_i),
+					.num_to_send_o	(num_to_send_o)
+				);
 
     initial 
         begin: Clock_generator
@@ -48,36 +49,42 @@ module testbench;
           forever #5 clk_i = ~clk_i;
         end
 
-	initial 
-        begin
-            // Initialize Inputs
+	task reset;
 			rst_i = 0;
 			#10;
 			rst_i = 1;
 			#10;
-			start = 1;
-            request_card_i = 0;
-            #50;
-            request_card_i = 1;
-			#100;
-            request_card_i = 0;
-			#150;
-            request_card_i = 1;
-			#150;
-            request_card_i = 0;
-			#150;
-            request_card_i = 1;
-			#150;			
-            request_card_i = 0;
-			#150;
-            request_card_i = 1;
-			#150;
-            request_card_i = 0;
-			#150;
-            request_card_i = 1;
-			#150;			
-            request_card_i = 1;
-			#1000;
+	endtask 
+
+	task reqn;
+			req_num_i = 1;
+			#15;
+			wr_i = 1;
+			#7;
+			req_num_i = 0;
+			#10;
+			wr_i = 0;
+			#5000;
+	endtask 
+
+	initial 
+        begin
+            // Initialize Inputs
+			//-------------------------------------------------
+			wr_i = 0;
+			start_i = 1'b1;
+			reset();
+
+			//========================================================
+			//						Ciclo 1
+			
+			repeat(100) 
+				begin
+					reqn();
+				end
+
+
+			#5000;
 			$finish;
         end
       

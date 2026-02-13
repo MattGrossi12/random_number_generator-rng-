@@ -18,46 +18,104 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module rng_top(
+module rng_top
+#(
+    parameter DEPTH         = 72,                       //Profundidade
+    parameter T_DEPTH       = (DEPTH-1),                //Profundidade real
+    parameter WIDTH         = 3,                        //Largura
+    parameter T_WIDTH       = (WIDTH-1),                //Largura "real" para uso vetorial
+    parameter SEED_TOT_NUMB = 12,                        //Total de números das seeds agrupados
+    parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),      //Total "real" de números das seeds agrupados
+    parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),    //Largura do contador de ciclos
+    parameter T_COUNT_WID   = (COUNT_WIDTH-1)           //Largura "real" para uso vetorial
+)(
     input clk_i,
-    input start,
+    input start_i,
     input rst_i,
-    input req_num,
-    output reg [7:0] num_to_send_o
+    input req_num_i,
+    input wr_i,
+    output reg [T_WIDTH:0] num_to_send_o
 );
+    //--------------------------------
+    reg [T_WIDTH:0] next_num;
+    //--------------------------------
+    wire state_bar;
+    wire [1:0] seed_bar;
+    //--------------------------------
+    wire [T_WIDTH:0] num_i_bar;
+    //--------------------------------
+    wire req_num_again;
 
-    wire [7:0] num_seed_1;
-    wire [7:0] num_seed_2;
-    wire [7:0] num_seed_3;
-    wire [7:0] num_seed_4;
+    wire req_num;
 
-    reg [7:0] next_num;
-    
-    wire state_w;
-    wire [1:0] seed_w;
+    assign req_num = req_num_i | req_num_again;
 
-    rng_control_path srcp
-                                    (
-                                        .clk_i              (clk_i),
-                                        .rst_i              (rst_i),
-                                        .req_num            (req_num),
-                                        .state_o            (state_w)
+    rng_control_path                #(
+                                        .DEPTH         (DEPTH),
+                                        .T_DEPTH       (T_DEPTH),
+                                        .WIDTH         (WIDTH),
+                                        .T_WIDTH       (T_WIDTH),
+                                        .SEED_TOT_NUMB (SEED_TOT_NUMB),
+                                        .SD_T_TOT_NUMB (SD_T_TOT_NUMB),
+                                        .COUNT_WIDTH   (COUNT_WIDTH),
+                                        .T_COUNT_WID   (T_COUNT_WID)
+                                    )rng_cp(
+                                        .clk_i          (clk_i),
+                                        .rst_i          (rst_i),
+                                        .req_num_i      (req_num),
+                                        .state_o        (state_bar)
                                     );
 
-    rng_data_path srdp
-                                    (
-                                        .clk_i                  (clk_i),
-                                        .rst_i                  (rst_i),
-                                        .req_num                (state_w),
-                                        .seed_sel_i             (seed_w),
-                                        .num_to_send_o          (num_to_send_o)
+    rng_data_path                   #(
+                                        .DEPTH         (DEPTH),
+                                        .T_DEPTH       (T_DEPTH),
+                                        .WIDTH         (WIDTH),
+                                        .T_WIDTH       (T_WIDTH),
+                                        .SEED_TOT_NUMB (SEED_TOT_NUMB),
+                                        .SD_T_TOT_NUMB (SD_T_TOT_NUMB),
+                                        .COUNT_WIDTH   (COUNT_WIDTH),
+                                        .T_COUNT_WID   (T_COUNT_WID)
+                                    )rng_dp(
+                                        .clk_i          (clk_i),
+                                        .rst_i          (rst_i),
+                                        .req_num_i      (req_num),
+                                        .seed_sel_i     (seed_bar),
+                                        .num_to_send_o  (num_i_bar)
                                     );
 
-    rng_selector seed_s(
-                            .clk_i      (clk_i),
-                            .start      (start),
-                            .rst_i      (rst_i),
-                            .seed_sel_o (seed_w)
-                        );
+    rng_selector                    #(
+                                        .DEPTH         (DEPTH),
+                                        .T_DEPTH       (T_DEPTH),
+                                        .WIDTH         (WIDTH),
+                                        .T_WIDTH       (T_WIDTH),
+                                        .SEED_TOT_NUMB (SEED_TOT_NUMB),
+                                        .SD_T_TOT_NUMB (SD_T_TOT_NUMB),
+                                        .COUNT_WIDTH   (COUNT_WIDTH),
+                                        .T_COUNT_WID   (T_COUNT_WID)
+                                    )rng_sel(
+                                        .clk_i          (clk_i),
+                                        .start_i        (start_i),
+                                        .rst_i          (rst_i),
+                                        .seed_sel_o     (seed_bar)
+                                    );
+
+    rng_hs_dup_detector             #(
+                                        .DEPTH         (DEPTH),
+                                        .T_DEPTH       (T_DEPTH),
+                                        .WIDTH         (WIDTH),
+                                        .T_WIDTH       (T_WIDTH),
+                                        .SEED_TOT_NUMB (SEED_TOT_NUMB),
+                                        .SD_T_TOT_NUMB (SD_T_TOT_NUMB),
+                                        .COUNT_WIDTH   (COUNT_WIDTH),
+                                        .T_COUNT_WID   (T_COUNT_WID)
+                                    )rng_rd(
+                                        .clk_i          (clk_i),
+                                        .rst_i          (rst_i),
+                                        .req_num_i      (req_num),
+                                        .data_i         (num_i_bar),            
+                                        .wr_i           (wr_i),
+                                        .data_o         (num_to_send_o),
+                                        .req_new_num_o  (req_num_again)
+                                    );
 
 endmodule

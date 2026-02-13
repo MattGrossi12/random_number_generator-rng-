@@ -1,0 +1,104 @@
+@startuml
+title RNG Waveform - Sequencia: 2, 5, 4, 2(rej), 7
+
+' Pinos Físicos
+binary "clk_i" as clk_i
+binary "rst_i" as rst_i
+binary "req_num_i" as req_num_i
+binary "wr_i" as wr_i
+concise "num_to_send_o" as num_to_send_o
+
+' Sinais Internos (ilustrados separadamente)
+concise "temp_mem (sinais internos)" as TEMP
+concise "req_new_num (sinais internos)" as INT_req_num_i
+
+
+@0
+clk_i is 0
+rst_i is 1
+req_num_i is 0
+wr_i is 0
+INT_req_num_i is 0
+TEMP is "X"
+num_to_send_o is "X"
+
+@2
+rst_i is 0
+clk_i is 1
+
+' --- 1: Valor 2 (Novo) ---
+@4
+clk_i is 0
+req_num_i is 1
+TEMP is "2"
+INT_req_num_i is 0
+
+@6
+clk_i is 1
+num_to_send_o is "2"
+wr_i is 1
+
+@8
+clk_i is 0
+wr_i is 0
+req_num_i is 0
+
+' --- 2: Valor 5 (Novo) ---
+@10
+clk_i is 1
+req_num_i is 1
+TEMP is "5"
+
+@12
+clk_i is 0
+num_to_send_o is "5"
+wr_i is 1
+
+@14
+clk_i is 1
+wr_i is 0
+req_num_i is 0
+
+' --- 3: Valor 4 (Novo) ---
+@16
+clk_i is 0
+req_num_i is 1
+TEMP is "4"
+
+@18
+clk_i is 1
+num_to_send_o is "4"
+wr_i is 1
+
+@20
+clk_i is 0
+wr_i is 0
+req_num_i is 0
+
+' --- 4: Valor 2 (Repetido) -> Rejeitado ---
+@22
+clk_i is 1
+req_num_i is 1
+TEMP is "2"
+INT_req_num_i is 1
+num_to_send_o is "x"
+
+' --- 5: Valor 7 (Substituto) -> Aceito ---
+@24
+clk_i is 0
+TEMP is "7"
+INT_req_num_i is 0
+
+@26
+clk_i is 1
+num_to_send_o is "7"
+wr_i is 1
+
+@28
+clk_i is 0
+wr_i is 0
+req_num_i is 0
+
+@30
+clk_i is 1
+@enduml

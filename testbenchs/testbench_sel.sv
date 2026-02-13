@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module testbench;
+module testbench_sel;
 
     localparam DEPTH         = 72;                       //Profundidade
     localparam T_DEPTH       = (DEPTH-1);                //Profundidade real
@@ -35,33 +35,27 @@ module testbench;
 
 	// Inputs
 	logic clk_i;
-	logic write;
+	logic start_i;
 	logic rst_i;
-	logic [T_WIDTH:0] data_in;
+	logic [1:0] seed_sel_o;
 
 	//Variável de sustentação do looping
 	integer i;
 
 	// Instantiate the Unit Under Test (UUT)
-	rng_fifo uut (
-		.clk_i(clk_i), 
-		.write(write), 
-		.rst_i(rst_i), 
-		.data_in(data_in)
-	);
+	rng_selector uut 
+					(
+						.clk_i(clk_i), 
+						.start_i(start_i), 
+						.rst_i(rst_i), 
+						.seed_sel_o(seed_sel_o)
+					);
 
-    initial 
-        begin: Clock_generator
-          clk_i = 0;
-          forever #5 clk_i = ~clk_i;
-        end
-
-	function [T_WIDTH:0] vlr;
-		input [T_WIDTH:0] value;
-		begin
-			data_in = value;
+	initial
+		begin: Clock_generator
+			clk_i = 0;
+			forever #5 clk_i = ~clk_i;
 		end
-	endfunction
 
 	task reset;
 		rst_i = 0;
@@ -72,9 +66,9 @@ module testbench;
 
 	task wr;
 		#50;
-		write = 1'b1;
+		start_i = 1'b1;
 		#50;
-		write = 1'b0;
+		start_i = 1'b0;
 	endtask 
 
 	initial 
@@ -82,11 +76,7 @@ module testbench;
 			//-------------------------------------------------
 			reset();
 			//-------------------------------------------------
-			for (i = 0; i < SEED_TOT_NUMB; i = i + 1)
-				begin
-					vlr(i);
-					wr();
-				end
+			start_i = 1;
 			//-------------------------------------------------
 			#500;
 			$finish;
@@ -94,7 +84,7 @@ module testbench;
       
     initial 
         begin: Wavedump
-                $dumpfile("../waveforms/fifo.vcd");
+                $dumpfile("../waveforms/sel.vcd");
             $dumpvars(0, uut);
         end
 

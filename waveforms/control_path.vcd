@@ -1,5 +1,5 @@
 $date
-	Sat Feb  7 18:07:10 2026
+	Thu Feb 12 09:37:05 2026
 $end
 $version
 	Icarus Verilog
@@ -12,11 +12,11 @@ $var wire 1 ! state_o $end
 $var parameter 32 " IDLE $end
 $var parameter 32 # SEND $end
 $var reg 1 $ clk_i $end
-$var reg 1 % req_num $end
+$var reg 1 % req_num_i $end
 $var reg 1 & rst_i $end
 $scope module uut $end
 $var wire 1 $ clk_i $end
-$var wire 1 % req_num $end
+$var wire 1 % req_num_i $end
 $var wire 1 & rst_i $end
 $var wire 1 ! state_o $end
 $var parameter 32 ' IDLE $end
