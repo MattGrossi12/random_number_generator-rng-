@@ -9,6 +9,7 @@ module rng_hs_dup_detector
     parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),
     parameter T_COUNT_WID   = (COUNT_WIDTH-1)
 )(
+
     input                   clk_i,
     input                   rst_i,
     input                   req_num_i,
@@ -32,6 +33,8 @@ module rng_hs_dup_detector
     // Duplicate detection (combinational)
     wire hit =
         (vld[0]  && (data_i == mem[0]))  ||
+
+        
         (vld[1]  && (data_i == mem[1]))  ||
         (vld[2]  && (data_i == mem[2]))  ||
         (vld[3]  && (data_i == mem[3]))  ||
