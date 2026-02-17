@@ -1,0 +1,36 @@
+@startuml
+digraph RNG_FSM {
+  graph [
+    layout=neato,
+    overlap=false,
+    splines=curved
+  ];
+
+  node [shape=circle, fixedsize=true, width=2.60, fontsize=10,
+        style="filled", fillcolor="white", color="black"];
+  edge [fontsize=11, color="black"];
+
+  ' Estados (losango)
+  GEN  [label="GEN_CANDIDATE\ngera/atualiza next_num\n(seed_sel via selector)", pos="0,6!"];
+  CHK  [label="CHECK_DUP\ncompara data_i vs mem[]/vld[]\nAPPROVE/DECLINE",     pos="-6,0!"];
+  COM  [label="WAIT_WR_COMMIT\naguarda wr_dec\ncommit: data_o<=data_i\nshift mem[]/vld[]; wr_stb=1", pos="6,0!"];
+  WREQ [label="WAIT_REQ\n(req_num=0)\nreq_num=req_num_i|req_num_again",       pos="0,-6!"];
+
+  ' Reset
+  rst [shape=plaintext, label="rst_n (rst_i==0)", pos="0,-9!"];
+  rst -> WREQ;
+
+  ' Fluxo principal
+  WREQ -> GEN  [label="req_num==1"];
+  GEN  -> CHK  [label="1 ciclo / clk"];
+  CHK  -> COM  [label="novo\n/ req_num_again=0"];
+  COM  -> WREQ [label="wr_dec==1", constraint=false];
+
+  ' Retorno de duplicado
+  CHK  -> GEN  [label="duplicado\n/ req_num_again=1", constraint=false];
+
+  ' Self-loops
+  WREQ -> WREQ [label="req_num==0"];
+  COM  -> COM  [label="wr_dec==0"];
+}
+@enduml

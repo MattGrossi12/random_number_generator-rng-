@@ -1,0 +1,23 @@
+# Leitura dos fontes
+read_verilog -sv -I../src \
+  ../src/rng_top.v \
+  ../src/rng_control_path.v \
+  ../src/rng_data_path.v \
+  ../src/rng_data_base.vh \
+  ../src/rng_data_path_counter.v \
+  ../src/rng_selector.v \
+  ../src/rng_hs_dup_detector.v
+
+hierarchy -check -top rng_top
+
+# Síntese mantendo blocos (sem mapeamento em portas via ABC)
+# -noabc mantém $add/$mux/$eq/etc mais “altos”
+synth -top rng_top -noabc
+
+# Limpeza leve
+opt
+clean
+
+# Saídas
+write_verilog -noattr -noexpr netlist_top.v
+write_json netlist_top.json

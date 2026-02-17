@@ -49,7 +49,7 @@ reg wr_stb;
 //Variável para laço for:
 integer i;
 
-reg x_state;
+wire z_state;
 reg next_state;
 reg rqn;
 
@@ -112,12 +112,12 @@ always @(*)
     begin 
         if(next_state == APPROVE)
             begin
-                if(data_o == temp_mem) temp_mem = x_state;
+                if(data_o == temp_mem) temp_mem = 0;
                 else temp_mem = data_i;
             end
         else
             begin
-                temp_mem = x_state;
+                temp_mem = 0;
             end
     end
 
@@ -150,12 +150,10 @@ always@(posedge clk_i or negedge rst_i)
     begin
         if(!rst_i)
             begin
+                vld     <= 0;
                 //Reinicia a memória inteira:   
                 for (i=0; i<SD_T_TOT_NUMB; i=i+1)   
-                    mem[i]  <= x_state;
-                    vld     <= { (SD_T_TOT_NUMB+1){1'b0} };
-                    data_o  <= x_state;
-                    
+                    mem[i]  <= 0;
             end
         else
             begin
@@ -230,7 +228,7 @@ always@(posedge clk_i or negedge rst_i)
                             vld[11] <= vld[11];
                             
                             //Envio:
-                            data_o          <= x_state;
+                            data_o          <= z_state;
                             rqn             <= 0;
                             wr_stb          <= 0;
                             end
@@ -265,7 +263,7 @@ always@(posedge clk_i or negedge rst_i)
                         vld[10] <= vld[10];
                         vld[11] <= vld[11];
                     
-                        data_o          <= x_state;
+                        data_o          <= z_state;
                         rqn             <= 1;
                         wr_stb          <= 0;
                     end
