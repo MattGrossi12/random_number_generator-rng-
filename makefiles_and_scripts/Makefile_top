@@ -15,6 +15,8 @@ INST3 = rng_data_base.vh
 INST4 = rng_data_path_counter.v
 INST5 = rng_selector.v
 INST6 = rng_hs_dup_detector.v
+INST7 = rng_hs_dup_detector_control_path.v
+INST8 = rng_hs_dup_detector_data_path.v
 
 # Lista de arquivos Verilog
 VERILOG_FILES = \
@@ -25,6 +27,8 @@ VERILOG_FILES = \
 	$(SRC)/$(INST4) \
 	$(SRC)/$(INST5) \
 	$(SRC)/$(INST6) \
+	$(SRC)/$(INST7) \
+	$(SRC)/$(INST8) \
     $(TB)/$(TESTBENCH)
 
 # Comando de compilação pelo cvc:
