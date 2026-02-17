@@ -1,0 +1,36 @@
+# Leitura dos fontes
+read_verilog -sv -I../src \
+  ../src/rng_top.v \
+  ../src/rng_control_path.v \
+  ../src/rng_data_path.v \
+  ../src/rng_data_base.vh \
+  ../src/rng_data_path_counter.v \
+  ../src/rng_selector.v \
+  ../src/rng_hs_dup_detector.v
+
+hierarchy -check -top rng_top
+
+# RTL -> netlist
+proc
+opt
+fsm
+opt
+memory
+memory_map
+opt
+
+# *** Aqui está o ponto: achata a hierarquia no TOP ***
+select -module rng_top
+flatten
+opt_clean
+
+# Mapeia para portas
+techmap
+opt
+select -module rng_top
+abc -g AND,NAND,OR,NOR,XOR,XNOR,MUX
+clean -purge
+
+# Saídas
+write_verilog -noattr -noexpr netlist_gate.v
+write_json netlist_gate.json

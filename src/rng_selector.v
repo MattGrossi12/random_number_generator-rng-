@@ -55,6 +55,8 @@ always@(posedge clk_i or negedge rst_i)
             end
     end
 
-assign seed_sel_o = seed_s;
-
+always@(*)
+    begin
+        seed_sel_o = seed_s;
+    end
 endmodule

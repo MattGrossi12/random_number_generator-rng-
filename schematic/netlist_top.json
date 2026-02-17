@@ -1,0 +1,6271 @@
+{
+  "creator": "Yosys 0.59+0 (git sha1 26b51148a, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+  "modules": {
+    "$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\\rng_data_path": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "hdlname": "rng_data_path",
+        "src": "../src/rng_data_path.v:21.1-163.10"
+      },
+      "parameter_default_values": {
+        "COUNT_WIDTH": "00000000000000000000000000000100",
+        "DEPTH": "00000000000000000000000001001000",
+        "SD_T_TOT_NUMB": "00000000000000000000000000001011",
+        "SEED_TOT_NUMB": "00000000000000000000000000001100",
+        "T_COUNT_WID": "00000000000000000000000000000011",
+        "T_DEPTH": "00000000000000000000000001000111",
+        "T_WIDTH": "00000000000000000000000000000010",
+        "WIDTH": "00000000000000000000000000000011"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "req_num_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "seed_sel_i": {
+          "direction": "input",
+          "bits": [ 5, 6 ]
+        },
+        "num_to_send_o": {
+          "direction": "output",
+          "bits": [ 7, 8, 9 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$1204": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:144.1-159.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 10 ],
+            "E": [ 4 ],
+            "Q": [ 7 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1205": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:144.1-159.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 11 ],
+            "E": [ 4 ],
+            "Q": [ 8 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1206": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:144.1-159.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 12 ],
+            "E": [ 4 ],
+            "Q": [ 9 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$opt_expr.cc:617:replace_const_cells$1247": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$opt_expr.cc:617:replace_const_cells$1249": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1230": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1231": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 16 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1232": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 16 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1233": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "B": [ 23 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1234": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 23 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1235": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 23 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1236": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 30 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1237": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 30 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1238": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 30 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1158": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 13 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1171": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:85.16-85.16|../src/rng_data_path.v:68.9-140.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 6 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1219": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 28 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1221": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 21 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1223": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 26 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1225": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 19 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1227": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 24 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1229": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 17 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1243": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 23 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1245": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 16 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$auto$simplemap.cc:198:logic_reduce$1177": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:68.26-68.26|../src/rng_data_path.v:68.9-140.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1160": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1173": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:85.16-85.16|../src/rng_data_path.v:68.9-140.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1178": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:68.26-68.26|../src/rng_data_path.v:68.9-140.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1149": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 47 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1163": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 49 ],
+            "S": [ 47 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1174": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ 51 ],
+            "S": [ 47 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1179": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ "1" ],
+            "S": [ 47 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1181": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ 54 ],
+            "S": [ 34 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1182": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ 53 ],
+            "S": [ 34 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1183": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ 51 ],
+            "S": [ 34 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1192": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1196": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 56 ],
+            "S": [ 34 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1197": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ 58 ],
+            "S": [ 34 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1199": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 51 ],
+            "S": [ 47 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1201": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ 56 ],
+            "S": [ 34 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1202": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ 51 ],
+            "S": [ 34 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1203": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 50 ],
+            "S": [ 34 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1207": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 51 ],
+            "S": [ 47 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1208": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "B": [ "1" ],
+            "S": [ 47 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1211": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "B": [ 52 ],
+            "S": [ 34 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1212": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ 47 ],
+            "S": [ 34 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1214": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ "0" ],
+            "S": [ 47 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1239": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:605.13-605.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 43 ],
+            "S": [ 45 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1240": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:605.13-605.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 57 ],
+            "B": [ 41 ],
+            "S": [ 45 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1241": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:605.13-605.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ 39 ],
+            "S": [ 45 ],
+            "Y": [ 12 ]
+          }
+        },
+        "inst": {
+          "hide_name": 0,
+          "type": "rng_data_path_counter",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:50.27-55.34"
+          },
+          "port_directions": {
+            "clk_i": "input",
+            "next_num_o": "output",
+            "req_num_i": "input",
+            "rst_i": "input"
+          },
+          "connections": {
+            "clk_i": [ 2 ],
+            "next_num_o": [ 51, 47, 34 ],
+            "req_num_i": [ 4 ],
+            "rst_i": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$rtlil.cc:3377:NotGate$1248": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:3377:NotGate$1250": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1218": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1222": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1226": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1242": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:189:logic_reduce$1176": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1155": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1168": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$142$rdmux[0][0][0]$a$619": {
+          "hide_name": 1,
+          "bits": [ 53, 48, 55 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$142$rdmux[0][0][0]$b$620": {
+          "hide_name": 1,
+          "bits": [ 56, 51, 50 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$142$rdmux[0][1][0]$a$622": {
+          "hide_name": 1,
+          "bits": [ 49, "1", "1" ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$146$rdmux[0][0][0]$b$641": {
+          "hide_name": 1,
+          "bits": [ 54, 53, 51 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$150$rdmux[0][0][0]$b$662": {
+          "hide_name": 1,
+          "bits": [ 52, 47, "1" ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$154$rdmux[0][0][0]$b$683": {
+          "hide_name": 1,
+          "bits": [ 51, 56, 58 ],
+          "attributes": {
+          }
+        },
+        "$procmux$195.A": {
+          "hide_name": 1,
+          "bits": [ 27, 57, 59 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:577.20-577.21"
+          }
+        },
+        "$procmux$195.B": {
+          "hide_name": 1,
+          "bits": [ 29, 32, 34, 22, 25, 27, 15, 18, 20 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:579.28-579.29"
+          }
+        },
+        "$procmux$195.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 31, 33, 35, 24, 26, 28, 17, 19, 21 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:591.28-591.35"
+          }
+        },
+        "$procmux$195.S": {
+          "hide_name": 1,
+          "bits": [ 30, 23, 16 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:581.22-581.23"
+          }
+        },
+        "$procmux$195.Y": {
+          "hide_name": 1,
+          "bits": [ 10, 11, 12 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:583.21-583.22"
+          }
+        },
+        "$procmux$195.Y_B": {
+          "hide_name": 1,
+          "bits": [ 43, 41, 39 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:586.19-586.22"
+          }
+        },
+        "$techmap$procmux$195.$reduce_or$/usr/local/bin/../share/yosys/techmap.v:605$1184_Y": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:103.16-103.16|../src/rng_data_path.v:68.9-140.16|/usr/local/bin/../share/yosys/techmap.v:605.13-605.15"
+          }
+        },
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:33.11-33.16"
+          }
+        },
+        "next_num": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:57.11-57.19"
+          }
+        },
+        "num_to_send": {
+          "hide_name": 0,
+          "bits": [ 51, 47, 34 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:48.18-48.29"
+          }
+        },
+        "num_to_send_o": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:37.24-37.37"
+          }
+        },
+        "req_num_i": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:35.11-35.20"
+          }
+        },
+        "rst_i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:34.11-34.16"
+          }
+        },
+        "seed_sel_i": {
+          "hide_name": 0,
+          "bits": [ 5, 6 ],
+          "attributes": {
+            "src": "../src/rng_data_path.v:36.17-36.27"
+          }
+        }
+      }
+    },
+    "$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\\rng_hs_dup_detector": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "hdlname": "rng_hs_dup_detector",
+        "src": "../src/rng_hs_dup_detector.v:1.1-273.10"
+      },
+      "parameter_default_values": {
+        "COUNT_WIDTH": "00000000000000000000000000000100",
+        "DEPTH": "00000000000000000000000001001000",
+        "SD_T_TOT_NUMB": "00000000000000000000000000001011",
+        "SEED_TOT_NUMB": "00000000000000000000000000001100",
+        "T_COUNT_WID": "00000000000000000000000000000011",
+        "T_DEPTH": "00000000000000000000000001000111",
+        "T_WIDTH": "00000000000000000000000000000010",
+        "WIDTH": "00000000000000000000000000000011"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "req_num_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "data_i": {
+          "direction": "input",
+          "bits": [ 5, 6, 7 ]
+        },
+        "wr_i": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "data_o": {
+          "direction": "output",
+          "bits": [ 9, 10, 11 ]
+        },
+        "req_new_num_o": {
+          "direction": "output",
+          "bits": [ 12 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$1090": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 13 ],
+            "E": [ 14 ],
+            "Q": [ 15 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1091": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 16 ],
+            "E": [ 14 ],
+            "Q": [ 17 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1092": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 18 ],
+            "E": [ 14 ],
+            "Q": [ 19 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1093": {
+          "hide_name": 1,
+          "type": "$_SDFFCE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 20 ],
+            "E": [ 3 ],
+            "Q": [ 10 ],
+            "R": [ 21 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1094": {
+          "hide_name": 1,
+          "type": "$_SDFFCE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 22 ],
+            "E": [ 3 ],
+            "Q": [ 11 ],
+            "R": [ 21 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1095": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ "1" ],
+            "E": [ 23 ],
+            "Q": [ 24 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1096": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 24 ],
+            "E": [ 23 ],
+            "Q": [ 25 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1097": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 25 ],
+            "E": [ 23 ],
+            "Q": [ 26 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1098": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 26 ],
+            "E": [ 23 ],
+            "Q": [ 27 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1099": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 27 ],
+            "E": [ 23 ],
+            "Q": [ 28 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1100": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 28 ],
+            "E": [ 23 ],
+            "Q": [ 29 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1101": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 29 ],
+            "E": [ 23 ],
+            "Q": [ 30 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1102": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 30 ],
+            "E": [ 23 ],
+            "Q": [ 31 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1103": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 31 ],
+            "E": [ 23 ],
+            "Q": [ 32 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1104": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 32 ],
+            "E": [ 23 ],
+            "Q": [ 33 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1105": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 33 ],
+            "E": [ 23 ],
+            "Q": [ 34 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1106": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 34 ],
+            "E": [ 23 ],
+            "Q": [ 35 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1107": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 36 ],
+            "E": [ 3 ],
+            "Q": [ 37 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1108": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 38 ],
+            "E": [ 23 ],
+            "Q": [ 39 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1109": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 20 ],
+            "E": [ 23 ],
+            "Q": [ 40 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1110": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 22 ],
+            "E": [ 23 ],
+            "Q": [ 41 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1111": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 39 ],
+            "E": [ 23 ],
+            "Q": [ 42 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1112": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 40 ],
+            "E": [ 23 ],
+            "Q": [ 43 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1113": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 41 ],
+            "E": [ 23 ],
+            "Q": [ 44 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1114": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 38 ],
+            "E": [ 3 ],
+            "Q": [ 9 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1115": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 42 ],
+            "E": [ 23 ],
+            "Q": [ 45 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1116": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 43 ],
+            "E": [ 23 ],
+            "Q": [ 46 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1117": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 44 ],
+            "E": [ 23 ],
+            "Q": [ 47 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1120": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 45 ],
+            "E": [ 23 ],
+            "Q": [ 48 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1121": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 46 ],
+            "E": [ 23 ],
+            "Q": [ 49 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1122": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 47 ],
+            "E": [ 23 ],
+            "Q": [ 50 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1124": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 48 ],
+            "E": [ 23 ],
+            "Q": [ 51 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1125": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 49 ],
+            "E": [ 23 ],
+            "Q": [ 52 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1126": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 50 ],
+            "E": [ 23 ],
+            "Q": [ 53 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1127": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 51 ],
+            "E": [ 23 ],
+            "Q": [ 54 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1128": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 52 ],
+            "E": [ 23 ],
+            "Q": [ 55 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1129": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 53 ],
+            "E": [ 23 ],
+            "Q": [ 56 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1130": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 54 ],
+            "E": [ 23 ],
+            "Q": [ 57 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1131": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 55 ],
+            "E": [ 23 ],
+            "Q": [ 58 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1132": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 56 ],
+            "E": [ 23 ],
+            "Q": [ 59 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1133": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 57 ],
+            "E": [ 23 ],
+            "Q": [ 60 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1134": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 58 ],
+            "E": [ 23 ],
+            "Q": [ 61 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1135": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 59 ],
+            "E": [ 23 ],
+            "Q": [ 62 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1136": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 60 ],
+            "E": [ 23 ],
+            "Q": [ 63 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1137": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 61 ],
+            "E": [ 23 ],
+            "Q": [ 64 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1138": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 62 ],
+            "E": [ 23 ],
+            "Q": [ 65 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1139": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 63 ],
+            "E": [ 23 ],
+            "Q": [ 66 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1140": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 64 ],
+            "E": [ 23 ],
+            "Q": [ 67 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1141": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 65 ],
+            "E": [ 23 ],
+            "Q": [ 68 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1142": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 66 ],
+            "E": [ 23 ],
+            "Q": [ 13 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1143": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 67 ],
+            "E": [ 23 ],
+            "Q": [ 16 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1144": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 68 ],
+            "E": [ 23 ],
+            "Q": [ 18 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1145": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:129.1-143.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 69 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1146": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:129.1-143.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 69 ],
+            "Q": [ 70 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$1147": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:129.1-143.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 70 ],
+            "Q": [ 71 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1011": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 63 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1012": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 64 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1013": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 65 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1026": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 66 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1027": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 67 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1028": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 68 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1041": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 13 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1042": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 16 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1043": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 18 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1056": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 15 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1057": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 17 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1058": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 19 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1071": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 38 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1072": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 20 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1073": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 22 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$1083": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:146.15-146.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ 87 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$889": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:78.29-78.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 4 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$892": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 39 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$893": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 40 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$894": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 41 ],
+            "Y": [ 91 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$906": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 42 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$907": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 43 ],
+            "Y": [ 93 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$908": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 44 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$921": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 45 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$922": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 46 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$923": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 47 ],
+            "Y": [ 97 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$936": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 48 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$937": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 49 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$938": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 50 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$951": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 51 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$952": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 52 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$953": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 53 ],
+            "Y": [ 103 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$966": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 54 ],
+            "Y": [ 104 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$967": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 55 ],
+            "Y": [ 105 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$968": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 56 ],
+            "Y": [ 106 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$981": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 57 ],
+            "Y": [ 107 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$982": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 58 ],
+            "Y": [ 108 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$983": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 59 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$996": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 60 ],
+            "Y": [ 110 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$997": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 61 ],
+            "Y": [ 111 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$998": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 62 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1002": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 110 ],
+            "B": [ 111 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1004": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 113 ],
+            "B": [ 112 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1017": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "B": [ 73 ],
+            "Y": [ 115 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1019": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 115 ],
+            "B": [ 74 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1032": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75 ],
+            "B": [ 76 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1034": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 117 ],
+            "B": [ 77 ],
+            "Y": [ 118 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1047": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 78 ],
+            "B": [ 79 ],
+            "Y": [ 119 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1049": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119 ],
+            "B": [ 80 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1062": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 81 ],
+            "B": [ 82 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1064": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 121 ],
+            "B": [ 83 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1077": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84 ],
+            "B": [ 85 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1079": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 123 ],
+            "B": [ 86 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$1119": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 125 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$884": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 126 ],
+            "Y": [ 127 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$886": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 127 ],
+            "B": [ 88 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$888": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 126 ],
+            "B": [ 88 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$898": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "B": [ 90 ],
+            "Y": [ 128 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$900": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 128 ],
+            "B": [ 91 ],
+            "Y": [ 129 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$912": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92 ],
+            "B": [ 93 ],
+            "Y": [ 130 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$914": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 130 ],
+            "B": [ 94 ],
+            "Y": [ 131 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$927": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 96 ],
+            "Y": [ 132 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$929": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132 ],
+            "B": [ 97 ],
+            "Y": [ 133 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$942": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98 ],
+            "B": [ 99 ],
+            "Y": [ 134 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$944": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 134 ],
+            "B": [ 100 ],
+            "Y": [ 135 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$957": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 102 ],
+            "Y": [ 136 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$959": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 136 ],
+            "B": [ 103 ],
+            "Y": [ 137 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$972": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 104 ],
+            "B": [ 105 ],
+            "Y": [ 138 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$974": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 138 ],
+            "B": [ 106 ],
+            "Y": [ 139 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$987": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 107 ],
+            "B": [ 108 ],
+            "Y": [ 140 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$989": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 140 ],
+            "B": [ 109 ],
+            "Y": [ 141 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1006": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "Y": [ 142 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1021": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 116 ],
+            "Y": [ 143 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1036": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 118 ],
+            "Y": [ 144 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1051": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120 ],
+            "Y": [ 145 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$1066": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 122 ],
+            "Y": [ 146 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$902": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 129 ],
+            "Y": [ 147 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$916": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 131 ],
+            "Y": [ 148 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$931": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 133 ],
+            "Y": [ 149 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$946": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 135 ],
+            "Y": [ 150 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$961": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 137 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$976": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 139 ],
+            "Y": [ 152 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$991": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 141 ],
+            "Y": [ 153 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1007": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.14-90.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 142 ],
+            "Y": [ 154 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1008": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-90.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 155 ],
+            "B": [ 154 ],
+            "Y": [ 156 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1022": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.14-91.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 143 ],
+            "Y": [ 157 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1023": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-91.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 156 ],
+            "B": [ 157 ],
+            "Y": [ 158 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1037": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.14-92.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 144 ],
+            "Y": [ 159 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1038": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-92.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 158 ],
+            "B": [ 159 ],
+            "Y": [ 160 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1052": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.14-93.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 145 ],
+            "Y": [ 161 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1053": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-93.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 160 ],
+            "B": [ 161 ],
+            "Y": [ 162 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1067": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.14-94.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 146 ],
+            "Y": [ 163 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$1068": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-94.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 162 ],
+            "B": [ 163 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$903": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.14-83.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 147 ],
+            "Y": [ 164 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$917": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.14-84.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 148 ],
+            "Y": [ 165 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$918": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-84.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 164 ],
+            "B": [ 165 ],
+            "Y": [ 166 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$932": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.14-85.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 149 ],
+            "Y": [ 167 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$933": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-85.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 166 ],
+            "B": [ 167 ],
+            "Y": [ 168 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$947": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.14-86.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 150 ],
+            "Y": [ 169 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$948": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-86.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 168 ],
+            "B": [ 169 ],
+            "Y": [ 170 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$962": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.14-87.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 151 ],
+            "Y": [ 171 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$963": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-87.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 170 ],
+            "B": [ 171 ],
+            "Y": [ 172 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$977": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.14-88.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 152 ],
+            "Y": [ 173 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$978": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-88.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 172 ],
+            "B": [ 173 ],
+            "Y": [ 174 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$992": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.14-89.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 153 ],
+            "Y": [ 175 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$993": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-89.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 174 ],
+            "B": [ 175 ],
+            "Y": [ 155 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1084": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38|../src/rng_hs_dup_detector.v:115.17-116.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 5 ],
+            "S": [ 124 ],
+            "Y": [ 176 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1085": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38|../src/rng_hs_dup_detector.v:115.17-116.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 6 ],
+            "S": [ 124 ],
+            "Y": [ 177 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1086": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:115.20-115.38|../src/rng_hs_dup_detector.v:115.17-116.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 7 ],
+            "S": [ 124 ],
+            "Y": [ 178 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1087": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:113.12-113.33|../src/rng_hs_dup_detector.v:113.9-121.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 176 ],
+            "B": [ "0" ],
+            "S": [ 36 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1088": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:113.12-113.33|../src/rng_hs_dup_detector.v:113.9-121.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 177 ],
+            "B": [ "0" ],
+            "S": [ 36 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$1089": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:113.12-113.33|../src/rng_hs_dup_detector.v:113.9-121.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 178 ],
+            "B": [ "0" ],
+            "S": [ 36 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$1082": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:146.24-146.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$1123": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$882": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "Y": [ 126 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\rqn[0:0]": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:149.1-271.8"
+          }
+        },
+        "$2\\temp_mem[2:0]": {
+          "hide_name": 1,
+          "bits": [ 176, 177, 178 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:111.1-122.8"
+          }
+        },
+        "$auto$opt_dff.cc:272:make_patterns_logic$530": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:272:make_patterns_logic$535": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:306:combine_resets$597": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:3140:Not$529": {
+          "hide_name": 1,
+          "bits": [ 126 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:3140:Not$596": {
+          "hide_name": 1,
+          "bits": [ 125 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1001": {
+          "hide_name": 1,
+          "bits": [ 113 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1016": {
+          "hide_name": 1,
+          "bits": [ 115 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1031": {
+          "hide_name": 1,
+          "bits": [ 117 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1046": {
+          "hide_name": 1,
+          "bits": [ 119 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1061": {
+          "hide_name": 1,
+          "bits": [ 121 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$1076": {
+          "hide_name": 1,
+          "bits": [ 123 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$883": {
+          "hide_name": 1,
+          "bits": [ 127 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$897": {
+          "hide_name": 1,
+          "bits": [ 128 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$911": {
+          "hide_name": 1,
+          "bits": [ 130 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$926": {
+          "hide_name": 1,
+          "bits": [ 132 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$941": {
+          "hide_name": 1,
+          "bits": [ 134 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$956": {
+          "hide_name": 1,
+          "bits": [ 136 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$971": {
+          "hide_name": 1,
+          "bits": [ 138 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$986": {
+          "hide_name": 1,
+          "bits": [ 140 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$1009": {
+          "hide_name": 1,
+          "bits": [ 72, 73, 74 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$1024": {
+          "hide_name": 1,
+          "bits": [ 75, 76, 77 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$1039": {
+          "hide_name": 1,
+          "bits": [ 78, 79, 80 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$1054": {
+          "hide_name": 1,
+          "bits": [ 81, 82, 83 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$1069": {
+          "hide_name": 1,
+          "bits": [ 84, 85, 86 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$890": {
+          "hide_name": 1,
+          "bits": [ 89, 90, 91 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$904": {
+          "hide_name": 1,
+          "bits": [ 92, 93, 94 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$919": {
+          "hide_name": 1,
+          "bits": [ 95, 96, 97 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$934": {
+          "hide_name": 1,
+          "bits": [ 98, 99, 100 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$949": {
+          "hide_name": 1,
+          "bits": [ 101, 102, 103 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$964": {
+          "hide_name": 1,
+          "bits": [ 104, 105, 106 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$979": {
+          "hide_name": 1,
+          "bits": [ 107, 108, 109 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$994": {
+          "hide_name": 1,
+          "bits": [ 110, 111, 112 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1014": {
+          "hide_name": 1,
+          "bits": [ 116 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1029": {
+          "hide_name": 1,
+          "bits": [ 118 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1044": {
+          "hide_name": 1,
+          "bits": [ 120 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1059": {
+          "hide_name": 1,
+          "bits": [ 122 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$1074": {
+          "hide_name": 1,
+          "bits": [ 124 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$895": {
+          "hide_name": 1,
+          "bits": [ 129 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$909": {
+          "hide_name": 1,
+          "bits": [ 131 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$924": {
+          "hide_name": 1,
+          "bits": [ 133 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$939": {
+          "hide_name": 1,
+          "bits": [ 135 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$954": {
+          "hide_name": 1,
+          "bits": [ 137 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$969": {
+          "hide_name": 1,
+          "bits": [ 139 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$984": {
+          "hide_name": 1,
+          "bits": [ 141 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$999": {
+          "hide_name": 1,
+          "bits": [ 114 ],
+          "attributes": {
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:83$76_Y": {
+          "hide_name": 1,
+          "bits": [ 147 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.25-83.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:84$78_Y": {
+          "hide_name": 1,
+          "bits": [ 148 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.25-84.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:85$81_Y": {
+          "hide_name": 1,
+          "bits": [ 149 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.25-85.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:86$84_Y": {
+          "hide_name": 1,
+          "bits": [ 150 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.25-86.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:87$87_Y": {
+          "hide_name": 1,
+          "bits": [ 151 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.25-87.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:88$90_Y": {
+          "hide_name": 1,
+          "bits": [ 152 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.25-88.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:89$93_Y": {
+          "hide_name": 1,
+          "bits": [ 153 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.25-89.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:90$96_Y": {
+          "hide_name": 1,
+          "bits": [ 142 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.25-90.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:91$99_Y": {
+          "hide_name": 1,
+          "bits": [ 143 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.25-91.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:92$102_Y": {
+          "hide_name": 1,
+          "bits": [ 144 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.25-92.39"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:93$105_Y": {
+          "hide_name": 1,
+          "bits": [ 145 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.25-93.40"
+          }
+        },
+        "$eq$../src/rng_hs_dup_detector.v:94$108_Y": {
+          "hide_name": 1,
+          "bits": [ 146 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.25-94.40"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:83$77_Y": {
+          "hide_name": 1,
+          "bits": [ 164 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.14-83.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:84$79_Y": {
+          "hide_name": 1,
+          "bits": [ 165 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:84.14-84.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:85$82_Y": {
+          "hide_name": 1,
+          "bits": [ 167 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:85.14-85.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:86$85_Y": {
+          "hide_name": 1,
+          "bits": [ 169 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:86.14-86.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:87$88_Y": {
+          "hide_name": 1,
+          "bits": [ 171 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:87.14-87.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:88$91_Y": {
+          "hide_name": 1,
+          "bits": [ 173 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:88.14-88.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:89$94_Y": {
+          "hide_name": 1,
+          "bits": [ 175 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:89.14-89.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:90$97_Y": {
+          "hide_name": 1,
+          "bits": [ 154 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:90.14-90.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:91$100_Y": {
+          "hide_name": 1,
+          "bits": [ 157 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:91.14-91.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:92$103_Y": {
+          "hide_name": 1,
+          "bits": [ 159 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:92.14-92.39"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:93$106_Y": {
+          "hide_name": 1,
+          "bits": [ 161 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:93.14-93.40"
+          }
+        },
+        "$logic_and$../src/rng_hs_dup_detector.v:94$109_Y": {
+          "hide_name": 1,
+          "bits": [ 163 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:94.14-94.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$101_Y": {
+          "hide_name": 1,
+          "bits": [ 158 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-91.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$104_Y": {
+          "hide_name": 1,
+          "bits": [ 160 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-92.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$107_Y": {
+          "hide_name": 1,
+          "bits": [ 162 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-93.41"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$80_Y": {
+          "hide_name": 1,
+          "bits": [ 166 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-84.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$83_Y": {
+          "hide_name": 1,
+          "bits": [ 168 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-85.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$86_Y": {
+          "hide_name": 1,
+          "bits": [ 170 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-86.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$89_Y": {
+          "hide_name": 1,
+          "bits": [ 172 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-87.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$92_Y": {
+          "hide_name": 1,
+          "bits": [ 174 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-88.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$95_Y": {
+          "hide_name": 1,
+          "bits": [ 155 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-89.40"
+          }
+        },
+        "$logic_or$../src/rng_hs_dup_detector.v:83$98_Y": {
+          "hide_name": 1,
+          "bits": [ 156 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:83.13-90.40"
+          }
+        },
+        "$not$../src/rng_hs_dup_detector.v:146$116_Y": {
+          "hide_name": 1,
+          "bits": [ 87 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:146.24-146.33"
+          }
+        },
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:12.11-12.16"
+          }
+        },
+        "data_i": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:15.23-15.29"
+          }
+        },
+        "data_o": {
+          "hide_name": 0,
+          "bits": [ 9, 10, 11 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:18.28-18.34"
+          }
+        },
+        "mem[0]": {
+          "hide_name": 0,
+          "bits": [ 39, 40, 41 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[10]": {
+          "hide_name": 0,
+          "bits": [ 13, 16, 18 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[11]": {
+          "hide_name": 0,
+          "bits": [ 15, 17, 19 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[1]": {
+          "hide_name": 0,
+          "bits": [ 42, 43, 44 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[2]": {
+          "hide_name": 0,
+          "bits": [ 45, 46, 47 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[3]": {
+          "hide_name": 0,
+          "bits": [ 48, 49, 50 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[4]": {
+          "hide_name": 0,
+          "bits": [ 51, 52, 53 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[5]": {
+          "hide_name": 0,
+          "bits": [ 54, 55, 56 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[6]": {
+          "hide_name": 0,
+          "bits": [ 57, 58, 59 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[7]": {
+          "hide_name": 0,
+          "bits": [ 60, 61, 62 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[8]": {
+          "hide_name": 0,
+          "bits": [ 63, 64, 65 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem[9]": {
+          "hide_name": 0,
+          "bits": [ 66, 67, 68 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:25.17-25.20"
+          }
+        },
+        "mem_0": {
+          "hide_name": 0,
+          "bits": [ 39, 40, 41 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:28.18-28.23"
+          }
+        },
+        "mem_1": {
+          "hide_name": 0,
+          "bits": [ 42, 43, 44 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:29.18-29.23"
+          }
+        },
+        "mem_10": {
+          "hide_name": 0,
+          "bits": [ 13, 16, 18 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:38.18-38.24"
+          }
+        },
+        "mem_11": {
+          "hide_name": 0,
+          "bits": [ 15, 17, 19 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:39.18-39.24"
+          }
+        },
+        "mem_2": {
+          "hide_name": 0,
+          "bits": [ 45, 46, 47 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:30.18-30.23"
+          }
+        },
+        "mem_3": {
+          "hide_name": 0,
+          "bits": [ 48, 49, 50 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:31.18-31.23"
+          }
+        },
+        "mem_4": {
+          "hide_name": 0,
+          "bits": [ 51, 52, 53 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:32.18-32.23"
+          }
+        },
+        "mem_5": {
+          "hide_name": 0,
+          "bits": [ 54, 55, 56 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:33.18-33.23"
+          }
+        },
+        "mem_6": {
+          "hide_name": 0,
+          "bits": [ 57, 58, 59 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:34.18-34.23"
+          }
+        },
+        "mem_7": {
+          "hide_name": 0,
+          "bits": [ 60, 61, 62 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:35.18-35.23"
+          }
+        },
+        "mem_8": {
+          "hide_name": 0,
+          "bits": [ 63, 64, 65 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:36.18-36.23"
+          }
+        },
+        "mem_9": {
+          "hide_name": 0,
+          "bits": [ 66, 67, 68 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:37.18-37.23"
+          }
+        },
+        "req_new_num_o": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:19.16-19.29"
+          }
+        },
+        "req_num_i": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:14.11-14.20"
+          }
+        },
+        "rqn": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:54.5-54.8"
+          }
+        },
+        "rst_i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:13.11-13.16"
+          }
+        },
+        "temp_mem": {
+          "hide_name": 0,
+          "bits": [ 38, 20, 22 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:22.17-22.25"
+          }
+        },
+        "vld": {
+          "hide_name": 0,
+          "bits": [ 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:42.23-42.26"
+          }
+        },
+        "wr_dec": {
+          "hide_name": 0,
+          "bits": [ 88 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:146.6-146.12"
+          }
+        },
+        "wr_ff1": {
+          "hide_name": 0,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:57.5-57.11"
+          }
+        },
+        "wr_ff2": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:57.13-57.19"
+          }
+        },
+        "wr_ff2_d": {
+          "hide_name": 0,
+          "bits": [ 71 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:57.21-57.29"
+          }
+        },
+        "wr_i": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:16.11-16.15"
+          }
+        },
+        "x_state": {
+          "hide_name": 0,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "../src/rng_hs_dup_detector.v:52.5-52.12"
+          }
+        }
+      }
+    },
+    "$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\\rng_selector": {
+      "attributes": {
+        "hdlname": "rng_selector",
+        "src": "../src/rng_selector.v:21.1-62.10"
+      },
+      "parameter_default_values": {
+        "COUNT_WIDTH": "00000000000000000000000000000100",
+        "DEPTH": "00000000000000000000000001001000",
+        "SD_T_TOT_NUMB": "00000000000000000000000000001011",
+        "SEED_TOT_NUMB": "00000000000000000000000000001100",
+        "T_COUNT_WID": "00000000000000000000000000000011",
+        "T_DEPTH": "00000000000000000000000001000111",
+        "T_WIDTH": "00000000000000000000000000000010",
+        "WIDTH": "00000000000000000000000000000011"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "start_i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "rst_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "seed_sel_o": {
+          "direction": "output",
+          "bits": [ 5, 6 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$848": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_selector.v:46.1-56.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "Q": [ 5 ],
+            "R": [ 4 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$849": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_selector.v:46.1-56.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 6 ],
+            "R": [ 4 ]
+          }
+        },
+        "$auto$opt_expr.cc:617:replace_const_cells$1251": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$866": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_selector.v:54.27-54.40|/usr/local/bin/../share/yosys/techmap.v:296.13-296.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$alumacc.cc:512:replace_alu$604.P": {
+          "hide_name": 1,
+          "bits": [ 7, 6 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_selector.v:54.27-54.40|/usr/local/bin/../share/yosys/techmap.v:287.21-287.22"
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$604.Y": {
+          "hide_name": 1,
+          "bits": [ 7, 8 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_selector.v:54.27-54.40|/usr/local/bin/../share/yosys/techmap.v:270.26-270.27"
+          }
+        },
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../src/rng_selector.v:33.11-33.16"
+          }
+        },
+        "rst_i": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../src/rng_selector.v:35.11-35.16"
+          }
+        },
+        "seed_s": {
+          "hide_name": 0,
+          "bits": [ 5, 6 ],
+          "attributes": {
+            "src": "../src/rng_selector.v:39.11-39.17"
+          }
+        },
+        "seed_sel_o": {
+          "hide_name": 0,
+          "bits": [ 5, 6 ],
+          "attributes": {
+            "src": "../src/rng_selector.v:36.22-36.32"
+          }
+        },
+        "start_i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../src/rng_selector.v:34.11-34.18"
+          }
+        }
+      }
+    },
+    "rng_data_path_counter": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "src": "../src/rng_data_path_counter.v:21.1-62.10"
+      },
+      "parameter_default_values": {
+        "COUNT_WIDTH": "00000000000000000000000000000100",
+        "DEPTH": "00000000000000000000000001001000",
+        "SD_T_TOT_NUMB": "00000000000000000000000000001011",
+        "SEED_TOT_NUMB": "00000000000000000000000000001100",
+        "T_COUNT_WID": "00000000000000000000000000000011",
+        "T_DEPTH": "00000000000000000000000001000111",
+        "T_WIDTH": "00000000000000000000000000000010",
+        "WIDTH": "00000000000000000000000000000011"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "req_num_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "next_num_o": {
+          "direction": "output",
+          "bits": [ 5, 6, 7 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$797": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:43.1-60.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "E": [ 4 ],
+            "Q": [ 5 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$798": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:43.1-60.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 9 ],
+            "E": [ 4 ],
+            "Q": [ 6 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$799": {
+          "hide_name": 1,
+          "type": "$_DFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:43.1-60.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 10 ],
+            "E": [ 4 ],
+            "Q": [ 7 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$opt_expr.cc:617:replace_const_cells$1253": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$opt_expr.cc:617:replace_const_cells$1259": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$815": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:296.13-296.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$816": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:296.13-296.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 14 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$825": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$786": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:51.20-51.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 16 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$788": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:51.20-51.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 12 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$791": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:51.20-51.36|../src/rng_data_path_counter.v:51.17-58.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 11 ],
+            "S": [ 18 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$792": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:51.20-51.36|../src/rng_data_path_counter.v:51.17-58.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 13 ],
+            "S": [ 18 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$793": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:51.20-51.36|../src/rng_data_path_counter.v:51.17-58.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 15 ],
+            "S": [ 18 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$819": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:279.31-279.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 16 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$alumacc.cc:512:replace_alu$607.CO": {
+          "hide_name": 1,
+          "bits": [ 5, 14, 19 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:274.23-274.25",
+            "unused_bits": "2"
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$607.P": {
+          "hide_name": 1,
+          "bits": [ 11, 6, 7 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:287.21-287.22"
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$607.Y": {
+          "hide_name": 1,
+          "bits": [ 11, 13, 15 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "../src/rng_data_path_counter.v:57.40-57.55|/usr/local/bin/../share/yosys/techmap.v:270.26-270.27"
+          }
+        },
+        "$auto$rtlil.cc:3377:NotGate$1256": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:3377:NotGate$1260": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$785": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$783": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+          }
+        },
+        "$procmux$211_Y": {
+          "hide_name": 1,
+          "bits": [ 8, 9, 10 ],
+          "attributes": {
+          }
+        },
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:33.23-33.28"
+          }
+        },
+        "next_num_o": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7 ],
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:36.29-36.39"
+          }
+        },
+        "num_counter": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7 ],
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:39.17-39.28"
+          }
+        },
+        "req_num_i": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:35.23-35.32"
+          }
+        },
+        "rst_i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../src/rng_data_path_counter.v:34.23-34.28"
+          }
+        }
+      }
+    },
+    "rng_top": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "../src/rng_top.v:21.1-121.10"
+      },
+      "parameter_default_values": {
+        "COUNT_WIDTH": "00000000000000000000000000000100",
+        "DEPTH": "00000000000000000000000001001000",
+        "SD_T_TOT_NUMB": "00000000000000000000000000001011",
+        "SEED_TOT_NUMB": "00000000000000000000000000001100",
+        "T_COUNT_WID": "00000000000000000000000000000011",
+        "T_DEPTH": "00000000000000000000000001000111",
+        "T_WIDTH": "00000000000000000000000000000010",
+        "WIDTH": "00000000000000000000000000000011"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "start_i": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "rst_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "req_num_i": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "wr_i": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "num_to_send_o": {
+          "direction": "output",
+          "bits": [ 7, 8, 9 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$777": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_top.v:51.22-51.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 10 ],
+            "Y": [ 11 ]
+          }
+        },
+        "rng_dp": {
+          "hide_name": 0,
+          "type": "$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\\rng_data_path",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_top.v:78.38-84.38"
+          },
+          "port_directions": {
+            "clk_i": "input",
+            "num_to_send_o": "output",
+            "req_num_i": "input",
+            "rst_i": "input",
+            "seed_sel_i": "input"
+          },
+          "connections": {
+            "clk_i": [ 2 ],
+            "num_to_send_o": [ 12, 13, 14 ],
+            "req_num_i": [ 11 ],
+            "rst_i": [ 4 ],
+            "seed_sel_i": [ 15, 16 ]
+          }
+        },
+        "rng_rd": {
+          "hide_name": 0,
+          "type": "$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\\rng_hs_dup_detector",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_top.v:111.38-119.38"
+          },
+          "port_directions": {
+            "clk_i": "input",
+            "data_i": "input",
+            "data_o": "output",
+            "req_new_num_o": "output",
+            "req_num_i": "input",
+            "rst_i": "input",
+            "wr_i": "input"
+          },
+          "connections": {
+            "clk_i": [ 2 ],
+            "data_i": [ 12, 13, 14 ],
+            "data_o": [ 7, 8, 9 ],
+            "req_new_num_o": [ 10 ],
+            "req_num_i": [ 11 ],
+            "rst_i": [ 4 ],
+            "wr_i": [ 6 ]
+          }
+        },
+        "rng_sel": {
+          "hide_name": 0,
+          "type": "$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\\rng_selector",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "../src/rng_top.v:95.38-100.38"
+          },
+          "port_directions": {
+            "clk_i": "input",
+            "rst_i": "input",
+            "seed_sel_o": "output",
+            "start_i": "input"
+          },
+          "connections": {
+            "clk_i": [ 2 ],
+            "rst_i": [ 4 ],
+            "seed_sel_o": [ 15, 16 ],
+            "start_i": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../src/rng_top.v:32.11-32.16"
+          }
+        },
+        "num_i_bar": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14 ],
+          "attributes": {
+            "src": "../src/rng_top.v:45.22-45.31"
+          }
+        },
+        "num_to_send_o": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9 ],
+          "attributes": {
+            "src": "../src/rng_top.v:37.28-37.41"
+          }
+        },
+        "req_num": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "../src/rng_top.v:49.10-49.17"
+          }
+        },
+        "req_num_again": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "../src/rng_top.v:47.10-47.23"
+          }
+        },
+        "req_num_i": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../src/rng_top.v:35.11-35.20"
+          }
+        },
+        "rst_i": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../src/rng_top.v:34.11-34.16"
+          }
+        },
+        "seed_bar": {
+          "hide_name": 0,
+          "bits": [ 15, 16 ],
+          "attributes": {
+            "src": "../src/rng_top.v:43.16-43.24"
+          }
+        },
+        "start_i": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../src/rng_top.v:33.11-33.18"
+          }
+        },
+        "wr_i": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../src/rng_top.v:36.11-36.15"
+          }
+        }
+      }
+    }
+  }
+}
