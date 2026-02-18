@@ -1,9 +1,7 @@
 # Gerador de Números Pseudoaleatórios (RNG) Não Repetitivos
 
-<div align="center">
-
-| **Ação** |
-| :--- |
+| **Descrição** |
+| :---: |
 |Este projeto consiste na implementação em Verilog de um Gerador de Números Pseudoaleatórios (PRNG). O sistema foi projetado para gerar números de 3 bits (faixa de 0 a 7) utilizando 4 sementes (seeds) distintas baseadas em tabelas de permutação. |
 |![Topview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/topview/topview.png)|
 | Esta é a vista pós-síntense do SoC: |
