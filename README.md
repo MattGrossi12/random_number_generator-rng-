@@ -4,9 +4,34 @@ Este projeto consiste na implementação em Verilog de um Gerador de Números Ps
 
 ![Topview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/topview/topview.png)
 
+Esta é a vista pós-síntense do SoC:
+
+![socview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/soc_view.png)
+
 A principal característica deste projeto é o mecanismo de detecção de duplicatas, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.
 
 ![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/timing.png)
+
+Esta é a visão de topo do circuito:
+
+![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/top_view.png)
+
+Esta é a vista explodida 1:
+
+![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt1.png)
+
+Esta é a vista explodida 2:
+
+![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt2.png)
+
+Esta é a vista explodida 3:
+
+![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt3.png)
+
+Esta é a vista explodida 4:
+
+![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt4.png)
+
 
 ## Características do Sistema
 
@@ -97,7 +122,6 @@ Abaixo está detalhada a organização dos diretórios e arquivos do repositóri
 | Arquivo | Tipo | Descrição Funcional |
 | :--- | :--- | :--- |
 | `rng_top.v` | Módulo Topo | Integra todos os sub-módulos, gerencia as interconexões entre controle, dados e detector de duplicatas, e instancia os parâmetros globais. |
-| `rng_control_path.v` | Controle | Máquina de estados finitos (FSM) que gerencia os estados `IDLE` e `SEND`, controlando o fluxo de resposta às requisições. |
 | `rng_data_path.v` | Caminho de Dados | Seleciona o valor numérico atual através de multiplexação baseada na `seed_sel_i` e no índice do contador. Inclui o arquivo de definições `rng_data_base.vh`. |
 | `rng_data_path_counter.v` | Contador | Implementa um contador cíclico de 3 bits (0 a 7) que percorre as posições das tabelas de sementes para indexar o Data Path. |
 | `rng_selector.v` | Seletor | Gera o sinal de seleção de *seed* (2 bits, 4 opções) de forma pseudoaleatória, utilizando um contador contínuo (*free-running*) ativado pelo clock. |
@@ -131,7 +155,6 @@ Descrição dos sinais do módulo principal `rng_top`.
 | :--- | :--- | :--- | :--- |
 | `clk_i` | Entrada | 1 bit | Clock do sistema. |
 | `rst_i` | Entrada | 1 bit | Reset do sistema (ativo baixo). |
-| `start_i` | Entrada | 1 bit | Sinal utilizado pelo seletor para iniciar/alterar a base de tempo da semente. |
 | `req_num_i` | Entrada | 1 bit | Sinal de requisição de um novo número aleatório. |
 | `wr_i` | Entrada | 1 bit | Sinal de escrita/confirmação. Deve ser pulsado para confirmar que o número na saída foi lido e deve ser salvo no histórico de não-repetição. |
 | `num_to_send_o` | Saída | 3 bits | O número pseudoaleatório válido gerado (`[T_WIDTH:0]`). |

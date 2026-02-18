@@ -1,5 +1,0 @@
-`verilator_config
-lint_off -rule DECLFILENAME
-lint_off -rule EOFNEWLINE
-lint_off -rule UNDRIVEN -file "/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/3f65889535944398aa9bfb512cb2ad4b.bb.v"
-lint_off -rule UNUSEDSIGNAL -file "/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/3f65889535944398aa9bfb512cb2ad4b.bb.v"
