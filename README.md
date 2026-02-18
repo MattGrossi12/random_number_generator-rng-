@@ -9,7 +9,7 @@
 |A principal característica deste projeto é o mecanismo de detecção de duplicatas, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.|
 |![Timing](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/timing.png)|
 |Abaixo é possível ver o waveform real obtido em simulação:|
-|![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/waveform.png)|
+|![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/waveform.png)|
 |Esta é a visão de topo do circuito:|
 |![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/top_view.png)|
 |Esta é a vista explodida 1:|
