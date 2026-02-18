@@ -9,7 +9,7 @@
 |A principal característica deste projeto é o mecanismo de detecção de duplicatas, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.|
 |![Timing](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/timing.png)|
 |Abaixo é possível ver o waveform real obtido em simulação:|
-|![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/waveform.png)|
+|![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/waveform.png)|
 |Esta é a visão de topo do circuito:|
 |![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/top_view.png)|
 |Esta é a vista explodida 1:|
@@ -38,14 +38,12 @@ O sistema utiliza um conjunto extenso de parâmetros para garantir que as largur
 
 | Parâmetro | Valor Padrão | Descrição |
 | :--- | :--- | :--- |
-| `DEPTH` | 72 | Profundidade base utilizada para cálculos de dimensão. |
-| `T_DEPTH` | `DEPTH-1` | Profundidade real ajustada para indexação zero-based (71). |
 | `WIDTH` | 3 | Largura do barramento do número gerado. Define o intervalo de 0 a 7. |
 | `T_WIDTH` | `WIDTH-1` | Largura real do vetor de dados para declaração `[T_WIDTH:0]` (2). |
-| `SEED_TOT_NUMB` | 12 | Total de números agrupados nas sementes/histórico. |
-| `SD_T_TOT_NUMB` | `SEED_TOT_NUMB-1` | Total real para indexação de vetores de sementes (11). |
-| `COUNT_WIDTH` | `$clog2(SEED_TOT_NUMB)` | Largura em bits necessária para o contador de ciclos (4 bits). |
-| `T_COUNT_WID` | `COUNT_WIDTH-1` | Largura real do vetor do contador para declaração `[T_COUNT_WID:0]` (3). |
+| `SEED_TOT_NUMB` | 8 | Total de números agrupados nas sementes/histórico. |
+| `SD_T_TOT_NUMB` | `SEED_TOT_NUMB-1` | Total real para indexação de vetores de sementes. |
+| `COUNT_WIDTH` | `$clog2(SEED_TOT_NUMB)` | Largura em bits necessária para o contador de ciclos (3 bits). |
+| `T_COUNT_WID` | `COUNT_WIDTH-1` | Largura real do vetor do contador para declaração `[T_COUNT_WID:0]` (2). |
 
 ## Árvore da paste de Projeto
 
