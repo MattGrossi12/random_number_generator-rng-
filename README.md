@@ -1,37 +1,28 @@
 # Gerador de Números Pseudoaleatórios (RNG) Não Repetitivos
 
-Este projeto consiste na implementação em Verilog de um Gerador de Números Pseudoaleatórios (PRNG). O sistema foi projetado para gerar números de 3 bits (faixa de 0 a 7) utilizando 4 sementes (seeds) distintas baseadas em tabelas de permutação.
+<div align="center">
 
-![Topview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/topview/topview.png)
+| **Ação** |
+| :--- |
+|Este projeto consiste na implementação em Verilog de um Gerador de Números Pseudoaleatórios (PRNG). O sistema foi projetado para gerar números de 3 bits (faixa de 0 a 7) utilizando 4 sementes (seeds) distintas baseadas em tabelas de permutação. |
+|![Topview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/topview/topview.png)|
+| Esta é a vista pós-síntense do SoC: |
+|![socview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/soc_view.png)|
+|A principal característica deste projeto é o mecanismo de detecção de duplicatas, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.|
+|![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/timing.png)|
+|Esta é a visão de topo do circuito:|
+|![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/top_view.png)|
+|Esta é a vista explodida 1:|
+|![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt1.png)|
+|Esta é a vista explodida 2:|
+|![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt2.png)|
+|Esta é a vista explodida 3:|
+|![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt3.png)|
+|Esta é a vista explodida 4:|
+|![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt4.png)|
 
-Esta é a vista pós-síntense do SoC:
 
-![socview](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/soc_view.png)
-
-A principal característica deste projeto é o mecanismo de detecção de duplicatas, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.
-
-![Waveform](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/timing/timing.png)
-
-Esta é a visão de topo do circuito:
-
-![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/top_view.png)
-
-Esta é a vista explodida 1:
-
-![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt1.png)
-
-Esta é a vista explodida 2:
-
-![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt2.png)
-
-Esta é a vista explodida 3:
-
-![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt3.png)
-
-Esta é a vista explodida 4:
-
-![xplode_view_pt](https://github.com/MattGrossi12/random_number_generator-rng-/blob/main/diagrams/fpga_post_synth/xplode_view_pt4.png)
-
+<div align="justify">
 
 ## Características do Sistema
 
@@ -61,60 +52,19 @@ O sistema utiliza um conjunto extenso de parâmetros para garantir que as largur
 Abaixo está detalhada a organização dos diretórios e arquivos do repositório.
 
 ```text
-.├── diagrams
-│   ├── timing
-│   │   ├── timing.png
-│   │   ├── timing.puml
-│   │   └── timing.sh
-│   └── topview
-│       ├── diagram.sh
-│       ├── topview.png
-│       └── topview.puml
+├── diagrams
 ├── doc
-│   ├── doc.aux
-│   ├── doc.log
-│   ├── doc.pdf
-│   └── doc.tex
+├── librelane_synth
 ├── makefiles_and_scripts
-│   ├── control_path.sh
-│   ├── data_path_counter.sh
-│   ├── data_path.sh
-│   ├── fifo.sh
-│   ├── hs.sh
-│   ├── Makefile_control_path
-│   ├── Makefile_data_path
-│   ├── Makefile_data_path_counter
-│   ├── Makefile_fifo
-│   ├── Makefile_hs
-│   ├── Makefile_rd
-│   ├── Makefile_sel
-│   ├── Makefile_top
-│   ├── sel.sh
-│   ├── top.sh
-│   └── verilog.log
-├── README.md
+├── rng_fpga_based
+├── schematic
 ├── src
-│   ├── rng_control_path.v
-│   ├── rng_data_base.vh
-│   ├── rng_data_path_counter.v
-│   ├── rng_data_path.v
-│   ├── rng_hs_dup_detector.v
-│   ├── rng_selector.v
-│   └── rng_top.v
 ├── testbenchs
-│   ├── testbench_control_path.v
-│   ├── testbench_data_path_counter.v
-│   ├── testbench_data_path.v
-│   ├── testbench_hs.v
-│   ├── testbench_sel.sv
-│   └── testbench.v
+├── UVM
 └── waveforms
-    ├── control_path.vcd
-    ├── data_path_counter.vcd
-    ├── data_path.vcd
-    ├── hs.vcd
-    ├── sel.vcd
-    └── top.vcd
+
+176 directories, 1178 files
+
 ```
 
 ## Estrutura do Projeto
