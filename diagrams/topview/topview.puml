@@ -38,7 +38,6 @@ package "Block Top-View" {
         ' Sub-componentes
         agent "selector"        as RTL_2
         agent "hs_dup_detector" as RTL_3
-        agent "control_path"    as RTL_7
         
         rectangle "Data Block" #line:transparent {
             agent "data_path"         as RTL_4
@@ -64,7 +63,6 @@ package "Block Top-View" {
     ' Top -> Sub-módulos
     RTL_1 <--> RTL_2
     RTL_1 <--> RTL_3
-    RTL_1 <--> RTL_7
     RTL_1 <--> RTL_4
 
     ' Lógica interna
