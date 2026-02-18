@@ -1,0 +1,5 @@
+verilog work "../src/rng_data_path_counter.v"
+verilog work "../src/rng_selector.v"
+verilog work "../src/rng_hs_dup_detector.v"
+verilog work "../src/rng_data_path.v"
+verilog work "../src/rng_top.v"

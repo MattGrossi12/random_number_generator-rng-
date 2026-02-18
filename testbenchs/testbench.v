@@ -25,7 +25,6 @@
 module testbench;
 	// Inputs
 	reg clk_i;
-	reg start_i;
 	reg rst_i;
 	reg req_num_i;
     reg wr_i;
@@ -36,7 +35,6 @@ module testbench;
 	rng_top uut 
 				(
 					.clk_i			(clk_i),
-					.start_i		(start_i), 
 					.rst_i			(rst_i), 
 					.req_num_i		(req_num_i), 
 					.wr_i			(wr_i),
@@ -72,7 +70,6 @@ module testbench;
             // Initialize Inputs
 			//-------------------------------------------------
 			wr_i = 0;
-			start_i = 1'b1;
 			reset();
 
 			//========================================================

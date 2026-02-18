@@ -24,9 +24,10 @@ module rng_data_path
     parameter T_DEPTH       = (DEPTH-1),                //Profundidade real
     parameter WIDTH         = 3,                        //Largura
     parameter T_WIDTH       = (WIDTH-1),                //Largura "real" para uso vetorial
-    parameter SEED_TOT_NUMB = 12,                        //Total de números das seeds agrupados
+    parameter SEED_TOT_NUMB = 32,                        //Total de números das seeds agrupados
     parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),      //Total "real" de números das seeds agrupados
-    parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),    //Largura do contador de ciclos
+    //parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),    //Largura do contador de ciclos
+    parameter COUNT_WIDTH   = 5,                        //Largura do contador de ciclos
     parameter T_COUNT_WID   = (COUNT_WIDTH-1)           //Largura "real" para uso vetorial
 )
 (
@@ -40,8 +41,6 @@ module rng_data_path
 //States:
 localparam IDLE = 0;
 localparam SEND = 1;
-
-reg x_state;
 
 `include "rng_data_base.vh"
 

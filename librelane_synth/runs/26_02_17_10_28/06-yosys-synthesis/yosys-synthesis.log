@@ -1,0 +1,1690 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v
+Parsing SystemVerilog input from `/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v' to AST representation.
+Storing AST representation for module `$abstract\rng_control_path'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v
+Parsing SystemVerilog input from `/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v' to AST representation.
+Storing AST representation for module `$abstract\rng_data_path'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v
+Parsing SystemVerilog input from `/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v' to AST representation.
+Storing AST representation for module `$abstract\rng_data_path_counter'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v
+Parsing SystemVerilog input from `/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v' to AST representation.
+Storing AST representation for module `$abstract\rng_hs_dup_detector'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v
+Parsing SystemVerilog input from `/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v' to AST representation.
+Storing AST representation for module `$abstract\rng_selector'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v
+Parsing SystemVerilog input from `/home/matheus/openframe_user_project/openlane/rng/src/rng_top.v' to AST representation.
+Storing AST representation for module `$abstract\rng_top'.
+Successfully finished Verilog frontend.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+9. Executing AST frontend in derive mode using pre-parsed AST for module `\rng_top'.
+Generating RTLIL representation for module `\rng_top'.
+
+9.1. Analyzing design hierarchy..
+Top module:  \rng_top
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+
+9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\rng_hs_dup_detector'.
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+Generating RTLIL representation for module `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector'.
+Warning: Replacing memory \mem with list of registers. See /home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:80
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+
+9.3. Executing AST frontend in derive mode using pre-parsed AST for module `\rng_selector'.
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+Generating RTLIL representation for module `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector'.
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+
+9.4. Executing AST frontend in derive mode using pre-parsed AST for module `\rng_data_path'.
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+Generating RTLIL representation for module `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path'.
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+
+9.5. Executing AST frontend in derive mode using pre-parsed AST for module `\rng_control_path'.
+Parameter \DEPTH = 72
+Parameter \T_DEPTH = 71
+Parameter \WIDTH = 3
+Parameter \T_WIDTH = 2
+Parameter \SEED_TOT_NUMB = 12
+Parameter \SD_T_TOT_NUMB = 11
+Parameter \COUNT_WIDTH = 4
+Parameter \T_COUNT_WID = 3
+Generating RTLIL representation for module `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path'.
+
+9.6. Analyzing design hierarchy..
+Top module:  \rng_top
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path
+
+9.7. Executing AST frontend in derive mode using pre-parsed AST for module `\rng_data_path_counter'.
+Generating RTLIL representation for module `\rng_data_path_counter'.
+
+9.8. Analyzing design hierarchy..
+Top module:  \rng_top
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path
+Used module:         \rng_data_path_counter
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path
+
+9.9. Analyzing design hierarchy..
+Top module:  \rng_top
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path
+Used module:         \rng_data_path_counter
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path
+Removing unused module `$abstract\rng_top'.
+Removing unused module `$abstract\rng_selector'.
+Removing unused module `$abstract\rng_hs_dup_detector'.
+Removing unused module `$abstract\rng_data_path_counter'.
+Removing unused module `$abstract\rng_data_path'.
+Removing unused module `$abstract\rng_control_path'.
+Removed 6 unused modules.
+Renaming module rng_top to rng_top.
+
+10. Generating Graphviz representation of design.
+Writing dot description to `/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/06-yosys-synthesis/hierarchy.dot'.
+Dumping module rng_top to page 1.
+
+11. Executing TRIBUF pass.
+
+12. Executing HIERARCHY pass (managing design hierarchy).
+
+12.1. Analyzing design hierarchy..
+Top module:  \rng_top
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path
+Used module:         \rng_data_path_counter
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path
+
+12.2. Analyzing design hierarchy..
+Top module:  \rng_top
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path
+Used module:         \rng_data_path_counter
+Used module:     $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path
+Removed 0 unused modules.
+
+13. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+14. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v:46$67 in module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.
+Removed 4 dead cases from process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54 in module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.
+Marked 7 switch rules as full_case in process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54 in module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.
+Marked 1 switch rules as full_case in process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:45$49 in module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.
+Marked 1 switch rules as full_case in process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46 in module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.
+Marked 1 switch rules as full_case in process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42 in module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.
+Marked 2 switch rules as full_case in process $proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:43$69 in module rng_data_path_counter.
+Removed a total of 4 dead cases.
+
+15. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 8 redundant assignments.
+Promoted 5 assignments to connections.
+
+16. Executing PROC_INIT pass (extract init attributes).
+
+17. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_i in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v:46$67'.
+Found async reset \rst_i in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+Found async reset \rst_i in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:45$49'.
+Found async reset \rst_i in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+Found async reset \rst_i in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+Found async reset \rst_i in `\rng_data_path_counter.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:43$69'.
+
+18. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 4 switches.
+<suppressed ~6 debug messages>
+
+19. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v:46$67'.
+     1/1: $0\next_state[0:0]
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+     1/10: $7\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$66
+     2/10: $6\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$65
+     3/10: $5\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$64
+     4/10: $4\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$63
+     5/10: $3\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$62
+     6/10: $0\next_num[2:0]
+     7/10: $2\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$60
+     8/10: $2\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.num[2:0]$61
+     9/10: $1\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.num[2:0]$59
+    10/10: $1\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$58
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:57$52'.
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:45$49'.
+     1/1: $0\seed_s[1:0]
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+     1/26: $0\vld[11:0] [1]
+     2/26: $0\vld[11:0] [0]
+     3/26: $0\vld[11:0] [2]
+     4/26: $0\vld[11:0] [3]
+     5/26: $0\vld[11:0] [4]
+     6/26: $0\vld[11:0] [5]
+     7/26: $0\vld[11:0] [6]
+     8/26: $0\vld[11:0] [7]
+     9/26: $0\vld[11:0] [8]
+    10/26: $0\vld[11:0] [9]
+    11/26: $0\vld[11:0] [10]
+    12/26: $0\vld[11:0] [11]
+    13/26: $1\i[31:0]
+    14/26: $0\mem[11][2:0]
+    15/26: $0\mem[10][2:0]
+    16/26: $0\mem[9][2:0]
+    17/26: $0\mem[8][2:0]
+    18/26: $0\mem[7][2:0]
+    19/26: $0\mem[6][2:0]
+    20/26: $0\mem[5][2:0]
+    21/26: $0\mem[4][2:0]
+    22/26: $0\mem[3][2:0]
+    23/26: $0\mem[2][2:0]
+    24/26: $0\mem[1][2:0]
+    25/26: $0\mem[0][2:0]
+    26/26: $0\data_o[2:0]
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+     1/4: $0\wr_pulse[0:0]
+     2/4: $0\wr_ff2_d[0:0]
+     3/4: $0\wr_ff2[0:0]
+     4/4: $0\wr_ff1[0:0]
+Creating decoders for process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:50$39'.
+Creating decoders for process `\rng_data_path_counter.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:43$69'.
+     1/1: $0\num_counter[2:0]
+
+20. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.\seed_sel_o' from process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:57$52'.
+No latch inferred for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\req_new_num_o' from process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:50$39'.
+
+21. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.\next_state' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v:46$67'.
+  created $adff cell `$procdff$201' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.\next_num' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+  created $adff cell `$procdff$206' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+  created $adff cell `$procdff$211' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.num' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+  created $adff cell `$procdff$216' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.\seed_s' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:45$49'.
+  created $adff cell `$procdff$221' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\data_o' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$226' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\vld' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$231' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\i' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$236' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[0]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$241' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[1]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$246' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[2]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$251' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[3]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$256' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[4]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$261' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[5]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$266' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[6]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$271' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[7]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$276' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[8]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$281' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[9]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$286' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[10]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$291' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\mem[11]' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+  created $adff cell `$procdff$296' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\wr_ff1' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+  created $adff cell `$procdff$301' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\wr_ff2' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+  created $adff cell `$procdff$306' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\wr_ff2_d' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+  created $adff cell `$procdff$311' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.\wr_pulse' using process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+  created $adff cell `$procdff$316' with positive edge clock and positive level reset.
+Creating register for signal `\rng_data_path_counter.\num_counter' using process `\rng_data_path_counter.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:43$69'.
+  created $adff cell `$procdff$321' with positive edge clock and positive level reset.
+
+22. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+23. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v:46$67'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_control_path.v:46$67'.
+Found and cleaned up 6 empty switches in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:144$54'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:57$52'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:45$49'.
+Found and cleaned up 1 empty switch in `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:73$46'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:55$42'.
+Removing empty process `$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:50$39'.
+Found and cleaned up 2 empty switches in `\rng_data_path_counter.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:43$69'.
+Removing empty process `rng_data_path_counter.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:43$69'.
+Cleaned up 10 empty switches.
+
+24. Executing CHECK pass (checking for obvious problems).
+Checking module rng_top...
+Checking module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path...
+Checking module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path...
+Checking module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector...
+Checking module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector...
+Checking module rng_data_path_counter...
+Found and reported 0 problems.
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Optimizing module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.
+<suppressed ~9 debug messages>
+Optimizing module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.
+<suppressed ~39 debug messages>
+Optimizing module rng_data_path_counter.
+<suppressed ~2 debug messages>
+
+26. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_control_path.
+Deleting now unused module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path.
+Deleting now unused module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector.
+Deleting now unused module $paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector.
+Deleting now unused module rng_data_path_counter.
+<suppressed ~5 debug messages>
+
+27. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 38 unused cells and 153 unused wires.
+<suppressed ~43 debug messages>
+
+29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+30. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+31. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$104.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$106.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$112.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$114.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$121.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$123.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$131.
+    dead port 1/4 on $pmux $flatten\rng_dp.$procmux$95.
+    dead port 2/4 on $pmux $flatten\rng_dp.$procmux$95.
+    dead port 3/4 on $pmux $flatten\rng_dp.$procmux$95.
+    dead port 2/2 on $mux $flatten\rng_dp.$procmux$99.
+Removed 11 multiplexer ports.
+<suppressed ~27 debug messages>
+
+32. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+33. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+34. Executing OPT_DFF pass (perform DFF optimizations).
+
+35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 0 unused cells and 18 unused wires.
+<suppressed ~4 debug messages>
+
+36. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+37. Rerunning OPT passes. (Maybe there is more to do…)
+
+38. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+39. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+40. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+41. Executing OPT_DFF pass (perform DFF optimizations).
+
+42. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+44. Executing FSM pass (extract and optimize FSM).
+
+44.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+44.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+44.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+44.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+44.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+44.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+44.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+44.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+45. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+46. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+47. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~27 debug messages>
+
+48. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+49. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+50. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\rng_rd.$procdff$296 ($adff) from module rng_top (D = \rng_rd.mem[10], Q = \rng_rd.mem[11]).
+Adding EN signal on $flatten\rng_rd.$procdff$291 ($adff) from module rng_top (D = \rng_rd.mem[9], Q = \rng_rd.mem[10]).
+Adding EN signal on $flatten\rng_rd.$procdff$286 ($adff) from module rng_top (D = \rng_rd.mem[8], Q = \rng_rd.mem[9]).
+Adding EN signal on $flatten\rng_rd.$procdff$281 ($adff) from module rng_top (D = \rng_rd.mem[7], Q = \rng_rd.mem[8]).
+Adding EN signal on $flatten\rng_rd.$procdff$276 ($adff) from module rng_top (D = \rng_rd.mem[6], Q = \rng_rd.mem[7]).
+Adding EN signal on $flatten\rng_rd.$procdff$271 ($adff) from module rng_top (D = \rng_rd.mem[5], Q = \rng_rd.mem[6]).
+Adding EN signal on $flatten\rng_rd.$procdff$266 ($adff) from module rng_top (D = \rng_rd.mem[4], Q = \rng_rd.mem[5]).
+Adding EN signal on $flatten\rng_rd.$procdff$261 ($adff) from module rng_top (D = \rng_rd.mem[3], Q = \rng_rd.mem[4]).
+Adding EN signal on $flatten\rng_rd.$procdff$256 ($adff) from module rng_top (D = \rng_rd.mem[2], Q = \rng_rd.mem[3]).
+Adding EN signal on $flatten\rng_rd.$procdff$251 ($adff) from module rng_top (D = \rng_rd.mem[1], Q = \rng_rd.mem[2]).
+Adding EN signal on $flatten\rng_rd.$procdff$246 ($adff) from module rng_top (D = \rng_rd.mem[0], Q = \rng_rd.mem[1]).
+Adding EN signal on $flatten\rng_rd.$procdff$241 ($adff) from module rng_top (D = \rng_dp.next_num, Q = \rng_rd.mem[0]).
+Adding EN signal on $flatten\rng_rd.$procdff$231 ($adff) from module rng_top (D = { \rng_rd.vld [10:0] 1'1 }, Q = \rng_rd.vld).
+Adding EN signal on $flatten\rng_rd.$procdff$226 ($adff) from module rng_top (D = \rng_dp.next_num, Q = \rng_rd.data_o).
+Adding EN signal on $flatten\rng_dp.\inst.$procdff$321 ($adff) from module rng_top (D = $flatten\rng_dp.\inst.$procmux$193_Y, Q = \rng_dp.inst.num_counter).
+Adding EN signal on $flatten\rng_dp.$procdff$206 ($adff) from module rng_top (D = $flatten\rng_dp.$3\num_selector$func$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:153$53.$result[2:0]$62, Q = \rng_dp.next_num).
+
+51. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 27 unused cells and 16 unused wires.
+<suppressed ~28 debug messages>
+
+52. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+53. Rerunning OPT passes. (Maybe there is more to do…)
+
+54. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+55. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+56. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+57. Executing OPT_DFF pass (perform DFF optimizations).
+
+58. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+59. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+60. Rerunning OPT passes. (Maybe there is more to do…)
+
+61. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+62. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+63. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+64. Executing OPT_DFF pass (perform DFF optimizations).
+
+65. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+66. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+67. Executing WREDUCE pass (reducing word size of cells).
+Removed top 29 address bits (of 32) from memory init port rng_top.$flatten\rng_dp.$auto$mem.cc:328:emit$76 ($flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74).
+Removed top 29 address bits (of 32) from memory init port rng_top.$flatten\rng_dp.$auto$mem.cc:328:emit$80 ($flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78).
+Removed top 29 address bits (of 32) from memory init port rng_top.$flatten\rng_dp.$auto$mem.cc:328:emit$84 ($flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82).
+Removed top 29 address bits (of 32) from memory init port rng_top.$flatten\rng_dp.$auto$mem.cc:328:emit$88 ($flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86).
+Removed top 31 bits (of 32) from port B of cell rng_top.$flatten\rng_dp.\inst.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:57$72 ($add).
+Removed top 29 bits (of 32) from port Y of cell rng_top.$flatten\rng_dp.\inst.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:57$72 ($add).
+Removed top 1 bits (of 2) from port B of cell rng_top.$flatten\rng_dp.$procmux$113_CMP0 ($eq).
+Removed top 29 bits (of 32) from wire rng_top.$flatten\rng_dp.\inst.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:57$72_Y.
+
+68. Executing PEEPOPT pass (run peephole optimizers).
+
+69. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+70. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module rng_top:
+  creating $macc model for $flatten\rng_dp.\inst.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:57$72 ($add).
+  creating $macc model for $flatten\rng_sel.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:53$51 ($add).
+  creating $alu model for $macc $flatten\rng_sel.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:53$51.
+  creating $alu model for $macc $flatten\rng_dp.\inst.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:57$72.
+  creating $alu cell for $flatten\rng_dp.\inst.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:57$72: $auto$alumacc.cc:485:replace_alu$344
+  creating $alu cell for $flatten\rng_sel.$add$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:53$51: $auto$alumacc.cc:485:replace_alu$347
+  created 2 $alu and 0 $macc cells.
+
+71. Executing SHARE pass (SAT-based resource sharing).
+Found 4 cells in module rng_top that may be considered for resource sharing.
+  Analyzing resource sharing options for $flatten\rng_dp.$auto$mem.cc:282:emit$87 ($memrd_v2):
+    Found 1 activation_patterns using ctrl signal { $flatten\rng_dp.$procmux$105_CMP $flatten\rng_dp.$procmux$113_CMP $flatten\rng_dp.$procmux$122_CMP }.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\rng_dp.$auto$mem.cc:282:emit$83 ($memrd_v2):
+    Found 1 activation_patterns using ctrl signal $flatten\rng_dp.$procmux$105_CMP.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\rng_dp.$auto$mem.cc:282:emit$79 ($memrd_v2):
+    Found 1 activation_patterns using ctrl signal $flatten\rng_dp.$procmux$113_CMP.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\rng_dp.$auto$mem.cc:282:emit$75 ($memrd_v2):
+    Found 1 activation_patterns using ctrl signal $flatten\rng_dp.$procmux$122_CMP.
+    No candidates found.
+
+72. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+73. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+74. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+75. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+76. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+77. Executing OPT_DFF pass (perform DFF optimizations).
+
+78. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+79. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+80. Executing MEMORY pass.
+
+80.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+80.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+80.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+80.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+80.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74'[0] in module `\rng_top': no output FF found.
+Checking read port `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78'[0] in module `\rng_top': no output FF found.
+Checking read port `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82'[0] in module `\rng_top': no output FF found.
+Checking read port `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86'[0] in module `\rng_top': FF found, but with a mux select that doesn't seem to correspond to transparency logic.
+Checking read port address `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74'[0] in module `\rng_top': address FF has async set and/or reset, not supported.
+Checking read port address `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78'[0] in module `\rng_top': address FF has async set and/or reset, not supported.
+Checking read port address `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82'[0] in module `\rng_top': address FF has async set and/or reset, not supported.
+Checking read port address `$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86'[0] in module `\rng_top': address FF has async set and/or reset, not supported.
+
+80.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+80.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+80.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+80.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+80.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+81. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+82. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+83. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+84. Executing OPT_DFF pass (perform DFF optimizations).
+
+85. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+86. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74 in module \rng_top:
+  created 8 $dff cells and 0 static cells of width 3.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78 in module \rng_top:
+  created 8 $dff cells and 0 static cells of width 3.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82 in module \rng_top:
+  created 8 $dff cells and 0 static cells of width 3.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86 in module \rng_top:
+  created 8 $dff cells and 0 static cells of width 3.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
+
+87. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+88. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+89. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+90. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][2][2]$436:
+      Old ports: A=3'000, B=3'101, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$a$428
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$a$428 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$a$428 [2:1] = { $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$a$428 [0] 1'0 }
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][2][1]$433:
+      Old ports: A=3'001, B=3'110, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$b$426
+      New ports: A=2'01, B=2'10, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$b$426 [1:0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$b$426 [2] = $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$b$426 [1]
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][2][0]$430:
+      Old ports: A=3'011, B=3'010, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$a$425
+      New ports: A=1'1, B=1'0, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$a$425 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][0]$a$425 [2:1] = 2'01
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][2][2]$415:
+      Old ports: A=3'101, B=3'100, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$a$407
+      New ports: A=1'1, B=1'0, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$a$407 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$a$407 [2:1] = 2'10
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][2][1]$412:
+      Old ports: A=3'000, B=3'001, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$b$405
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$b$405 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$b$405 [2:1] = 2'00
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][2][0]$409:
+      Old ports: A=3'010, B=3'011, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$a$404
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$a$404 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$a$404 [2:1] = 2'01
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][2][2]$394:
+      Old ports: A=3'011, B=3'100, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$a$386
+      New ports: A=2'01, B=2'10, Y={ $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$a$386 [2] $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$a$386 [0] }
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$a$386 [1] = $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$a$386 [0]
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][2][1]$391:
+      Old ports: A=3'111, B=3'001, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$b$384
+      New ports: A=1'1, B=1'0, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$b$384 [1]
+      New connections: { $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$b$384 [2] $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$b$384 [0] } = { $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$b$384 [1] 1'1 }
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][2][0]$388:
+      Old ports: A=3'101, B=3'000, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$a$383
+      New ports: A=1'1, B=1'0, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$a$383 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$a$383 [2:1] = { $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$a$383 [0] 1'0 }
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][2][2]$373:
+      Old ports: A=3'000, B=3'010, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$a$365
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$a$365 [1]
+      New connections: { $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$a$365 [2] $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$a$365 [0] } = 2'00
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][2][1]$370:
+      Old ports: A=3'001, B=3'101, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [1:0] = 2'01
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][2][0]$367:
+      Old ports: A=3'111, B=3'110, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362
+      New ports: A=1'1, B=1'0, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [2:1] = 2'11
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][2][3]$376:
+      Old ports: A=3'100, B=3'011, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$b$366
+      New ports: A=2'10, B=2'01, Y={ $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$b$366 [2] $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$b$366 [0] }
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$b$366 [1] = $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][1]$b$366 [0]
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][2][3]$397:
+      Old ports: A=3'010, B=3'110, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$b$387
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$b$387 [2]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][1]$b$387 [1:0] = 2'10
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][2][3]$418:
+      Old ports: A=3'110, B=3'111, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$b$408
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$b$408 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$b$408 [2:1] = 2'11
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][2][3]$439:
+      Old ports: A=3'100, B=3'111, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$b$429
+      New ports: A=1'0, B=1'1, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$b$429 [0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$b$429 [2:1] = { 1'1 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$b$429 [0] }
+  Optimizing cells in module \rng_top.
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$406:
+      Old ports: A=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$a$407, B=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$b$408, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$b$402
+      New ports: A={ 1'0 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$a$407 [0] }, B={ 1'1 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][1]$b$408 [0] }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$b$402 [1:0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$b$402 [2] = 1'1
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$403:
+      Old ports: A=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$a$404, B=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$b$405, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$a$401
+      New ports: A={ 1'1 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$a$404 [0] }, B={ 1'0 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$b$405 [0] }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$a$401 [1:0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$a$401 [2] = 1'0
+  Optimizing cells in module \rng_top.
+Performed a total of 18 changes.
+
+91. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+92. Executing OPT_SHARE pass.
+
+93. Executing OPT_DFF pass (perform DFF optimizations).
+
+94. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 0 unused cells and 44 unused wires.
+<suppressed ~1 debug messages>
+
+95. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+<suppressed ~2 debug messages>
+
+96. Rerunning OPT passes. (Maybe there is more to do…)
+
+97. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+98. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][1][0]$382:
+      Old ports: A={ $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0] 1'0 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0] }, B={ $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0] $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0] 1'1 }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][0][0]$a$380
+      New ports: A={ 1'0 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0] }, B={ $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0] 1'1 }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][0][0]$a$380 [1:0]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$78$rdmux[0][0][0]$a$380 [2] = $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$a$362 [0]
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][1][0]$403:
+      Old ports: A={ 1'1 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2] }, B={ 1'0 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2] }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$a$401 [1:0]
+      New ports: A=1'1, B=1'0, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$a$401 [1]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$82$rdmux[0][0][0]$a$401 [0] = \rng_dp.inst.num_counter [0]
+    Consolidated identical input bits for $mux cell $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][1][1]$427:
+      Old ports: A={ $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2] 1'0 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2] }, B={ 1'1 $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2] $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$74$rdmux[0][1][0]$b$363 [2] }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][0][0]$b$423
+      New ports: A={ \rng_dp.inst.num_counter [0] 1'0 }, B={ 1'1 \rng_dp.inst.num_counter [0] }, Y=$memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][0][0]$b$423 [2:1]
+      New connections: $memory$flatten\rng_dp.$auto$proc_rom.cc:155:do_switch$86$rdmux[0][0][0]$b$423 [0] = \rng_dp.inst.num_counter [0]
+  Optimizing cells in module \rng_top.
+Performed a total of 3 changes.
+
+99. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+100. Executing OPT_SHARE pass.
+
+101. Executing OPT_DFF pass (perform DFF optimizations).
+
+102. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+103. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+<suppressed ~1 debug messages>
+
+104. Rerunning OPT passes. (Maybe there is more to do…)
+
+105. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+106. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+107. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+108. Executing OPT_SHARE pass.
+
+109. Executing OPT_DFF pass (perform DFF optimizations).
+
+110. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+111. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+112. Executing TECHMAP pass (map to technology primitives).
+
+112.1. Executing Verilog-2005 frontend: /nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+112.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $adffe.
+Using template $paramod$3ef7d3dd227da7627a99c5e5a6a4deb817573e39\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using template $paramod$85df5dc01c7df96a7d8e5f1fdf76ce9ac452af63\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~457 debug messages>
+
+113. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+<suppressed ~42 debug messages>
+
+114. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+<suppressed ~54 debug messages>
+Removed a total of 18 cells.
+
+115. Executing OPT_DFF pass (perform DFF optimizations).
+
+116. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 3 unused cells and 106 unused wires.
+<suppressed ~4 debug messages>
+
+117. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+<suppressed ~1 debug messages>
+
+118. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+119. Executing OPT_DFF pass (perform DFF optimizations).
+
+120. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+121. Executing ABC pass (technology mapping using ABC).
+
+121.1. Extracting gate netlist of module `\rng_top' to `<abc-temp-dir>/input.blif'..
+Breaking loop using new signal $abcloop$952: \req_num_again -> \rng_rd.req_num_i
+Extracted 158 gates and 221 wires to a netlist network with 61 inputs and 12 outputs.
+
+121.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+121.1.2. Re-integrating ABC results.
+ABC RESULTS:              XNOR cells:        1
+ABC RESULTS:               XOR cells:       40
+ABC RESULTS:             ORNOT cells:        1
+ABC RESULTS:               AND cells:        3
+ABC RESULTS:               MUX cells:       11
+ABC RESULTS:               NOR cells:        2
+ABC RESULTS:               NOT cells:        5
+ABC RESULTS:            ANDNOT cells:       30
+ABC RESULTS:                OR cells:       43
+ABC RESULTS:        internal signals:      148
+ABC RESULTS:           input signals:       61
+ABC RESULTS:          output signals:       12
+Removing temp directory.
+
+122. Executing OPT pass (performing simple optimizations).
+
+122.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+<suppressed ~11 debug messages>
+
+122.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+122.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+122.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 1 unused cells and 177 unused wires.
+<suppressed ~9 debug messages>
+
+122.5. Finished fast OPT passes.
+
+123. Executing HIERARCHY pass (managing design hierarchy).
+
+123.1. Analyzing design hierarchy..
+Top module:  \rng_top
+
+123.2. Analyzing design hierarchy..
+Top module:  \rng_top
+Removed 0 unused modules.
+
+124. Executing CHECK pass (checking for obvious problems).
+Checking module rng_top...
+Warning: found logic loop in module rng_top:
+    cell $abc$951$auto$blifparse.cc:396:parse_blif$1084 ($_NOR_)
+      (cell's internal connectivity overapproximated; loop may be a false positive)
+    cell $abc$951$auto$blifparse.cc:396:parse_blif$1085 ($_ANDNOT_)
+      (cell's internal connectivity overapproximated; loop may be a false positive)
+    wire \req_num_again source: /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v:46.10-46.23
+Found and reported 1 problems.
+Consider re-running with '-force-detailed-loop-check' to rule out false positives.
+
+125. Printing statistics.
+
+=== rng_top ===
+
+   Number of wires:                178
+   Number of wire bits:            239
+   Number of public wires:          47
+   Number of public wire bits:     104
+   Number of ports:                  5
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                199
+     $_ANDNOT_                      30
+     $_AND_                          3
+     $_DFFE_PN0N_                    6
+     $_DFFE_PN0P_                   48
+     $_DFF_PN0_                      6
+     $_MUX_                         11
+     $_NOR_                          2
+     $_NOT_                          4
+     $_ORNOT_                        1
+     $_OR_                          43
+     $_XNOR_                         1
+     $_XOR_                         39
+     $scopeinfo                      5
+
+126. Generating Graphviz representation of design.
+Writing dot description to `/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/06-yosys-synthesis/primitive_techmap.dot'.
+Dumping module rng_top to page 1.
+
+127. Executing OPT pass (performing simple optimizations).
+
+127.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+127.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+127.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rng_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+127.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rng_top.
+Performed a total of 0 changes.
+
+127.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rng_top'.
+Removed a total of 0 cells.
+
+127.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+127.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+
+127.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rng_top.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+Couldn't topologically sort cells, optimizing module rng_top may take a longer time.
+
+127.9. Finished OPT passes. (There is nothing left to do.)
+
+128. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 5 unused cells and 22 unused wires.
+<suppressed ~27 debug messages>
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/e686d5174edf4451a36143acad8d770c.lib ",
+   "modules": {
+      "\\rng_top": {
+         "num_wires":         156,
+         "num_wire_bits":     200,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 65,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         194,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 30,
+            "$_AND_": 3,
+            "$_DFFE_PN0N_": 6,
+            "$_DFFE_PN0P_": 48,
+            "$_DFF_PN0_": 6,
+            "$_MUX_": 11,
+            "$_NOR_": 2,
+            "$_NOT_": 4,
+            "$_ORNOT_": 1,
+            "$_OR_": 43,
+            "$_XNOR_": 1,
+            "$_XOR_": 39
+         }
+      }
+   },
+      "design": {
+         "num_wires":         156,
+         "num_wire_bits":     200,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 65,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         194,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 30,
+            "$_AND_": 3,
+            "$_DFFE_PN0N_": 6,
+            "$_DFFE_PN0P_": 48,
+            "$_DFF_PN0_": 6,
+            "$_MUX_": 11,
+            "$_NOR_": 2,
+            "$_NOT_": 4,
+            "$_ORNOT_": 1,
+            "$_OR_": 43,
+            "$_XNOR_": 1,
+            "$_XOR_": 39
+         }
+      }
+}
+
+129. Printing statistics.
+
+=== rng_top ===
+
+   Number of wires:                156
+   Number of wire bits:            200
+   Number of public wires:          25
+   Number of public wire bits:      65
+   Number of ports:                  5
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                194
+     $_ANDNOT_                      30
+     $_AND_                          3
+     $_DFFE_PN0N_                    6
+     $_DFFE_PN0P_                   48
+     $_DFF_PN0_                      6
+     $_MUX_                         11
+     $_NOR_                          2
+     $_NOT_                          4
+     $_ORNOT_                        1
+     $_OR_                          43
+     $_XNOR_                         1
+     $_XOR_                         39
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+130. Executing TECHMAP pass (map to technology primitives).
+
+130.1. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+130.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+131. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+132. Executing TECHMAP pass (map to technology primitives).
+
+132.1. Executing Verilog-2005 frontend: /home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/matheus/openframe_user_project/dependencies/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+132.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+133. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+134. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+134.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\rng_top':
+  mapped 60 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/e686d5174edf4451a36143acad8d770c.lib ",
+   "modules": {
+      "\\rng_top": {
+         "num_wires":         210,
+         "num_wire_bits":     254,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 65,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         248,
+         "area":              1576.512000,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 30,
+            "$_AND_": 3,
+            "$_MUX_": 65,
+            "$_NOR_": 2,
+            "$_NOT_": 4,
+            "$_ORNOT_": 1,
+            "$_OR_": 43,
+            "$_XNOR_": 1,
+            "$_XOR_": 39,
+            "sky130_fd_sc_hd__dfrtp_2": 60
+         }
+      }
+   },
+      "design": {
+         "num_wires":         210,
+         "num_wire_bits":     254,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 65,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         248,
+         "area":              1576.512000,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 30,
+            "$_AND_": 3,
+            "$_MUX_": 65,
+            "$_NOR_": 2,
+            "$_NOT_": 4,
+            "$_ORNOT_": 1,
+            "$_OR_": 43,
+            "$_XNOR_": 1,
+            "$_XOR_": 39,
+            "sky130_fd_sc_hd__dfrtp_2": 60
+         }
+      }
+}
+
+135. Printing statistics.
+
+=== rng_top ===
+
+   Number of wires:                210
+   Number of wire bits:            254
+   Number of public wires:          25
+   Number of public wire bits:      65
+   Number of ports:                  5
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                248
+     $_ANDNOT_                      30
+     $_AND_                          3
+     $_MUX_                         65
+     $_NOR_                          2
+     $_NOT_                          4
+     $_ORNOT_                        1
+     $_OR_                          43
+     $_XNOR_                         1
+     $_XOR_                         39
+     sky130_fd_sc_hd__dfrtp_2       60
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\rng_top': 1576.512000
+     of which used for sequential elements: 1576.512000 (100.00%)
+
+[INFO] Using generated ABC script '/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/06-yosys-synthesis/AREA_0.abc'…
+
+136. Executing ABC pass (technology mapping using ABC).
+
+136.1. Extracting gate netlist of module `\rng_top' to `/tmp/yosys-abc-CIJu9H/input.blif'..
+Breaking loop using new signal $abcloop$1199: \req_num_again -> $abc$951$new_n205
+Extracted 188 gates and 250 wires to a netlist network with 61 inputs and 58 outputs.
+
+136.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-CIJu9H/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-CIJu9H/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-CIJu9H/input.blif 
+ABC: + read_lib -w /home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/e686d5174edf4451a36143acad8d770c.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/e686d5174edf4451a36143acad8d770c.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.06 sec
+ABC: Memory =    9.54 MB. Time =     0.06 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =    167 ( 10.2 %)   Cap = 14.2 ff (  8.3 %)   Area =     1547.73 ( 61.7 %)   Delay =  2317.38 ps  ( 36.5 %)               
+ABC: Path  0 --      52 : 0    4 pi                       A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   9.9 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     139 : 2    1 sky130_fd_sc_hd__and2_2  A =   7.51  Df = 161.3  -50.3 ps  S =  36.1 ps  Cin =  1.5 ff  Cout =   2.4 ff  Cmax = 303.0 ff  G =  159  
+ABC: Path  2 --     141 : 5    1 sky130_fd_sc_hd__o221a_2 A =  11.26  Df = 387.4 -114.8 ps  S =  39.0 ps  Cin =  2.3 ff  Cout =   1.6 ff  Cmax = 281.1 ff  G =   64  
+ABC: Path  3 --     142 : 3    1 sky130_fd_sc_hd__and3_2  A =   7.51  Df = 592.5  -96.0 ps  S =  52.1 ps  Cin =  1.5 ff  Cout =   4.6 ff  Cmax = 309.5 ff  G =  293  
+ABC: Path  4 --     159 : 4    2 sky130_fd_sc_hd__nor4_2  A =  12.51  Df = 845.0 -275.5 ps  S = 190.0 ps  Cin =  4.3 ff  Cout =   3.0 ff  Cmax =  64.1 ff  G =   68  
+ABC: Path  5 --     206 : 4   48 sky130_fd_sc_hd__and4_2  A =  10.01  Df =1687.5 -149.5 ps  S = 843.6 ps  Cin =  1.5 ff  Cout = 166.9 ff  Cmax = 300.3 ff  G =10620  
+ABC: Path  6 --     207 : 3    1 sky130_fd_sc_hd__mux2_1  A =  11.26  Df =2317.4 -218.3 ps  S = 302.0 ps  Cin =  2.3 ff  Cout =  33.4 ff  Cmax = 173.0 ff  G = 1465  
+ABC: Start-point = pi51 (\rng_rd.mem[4] [2]).  End-point = po4 ($auto$rtlil.cc:2739:MuxGate$1091).
+ABC: netlist                       : i/o =   61/   58  lat =    0  nd =   167  edge =    484  area =1547.81  delay = 6.00  lev = 6
+ABC: + write_blif /tmp/yosys-abc-CIJu9H/output.blif 
+
+136.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__nor4_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:       47
+ABC RESULTS:        internal signals:      131
+ABC RESULTS:           input signals:       61
+ABC RESULTS:          output signals:       58
+Removing temp directory.
+
+137. Executing SETUNDEF pass (replace undef values with defined constants).
+
+138. Executing HILOMAP pass (mapping to constant drivers).
+
+139. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+140. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rng_top..
+Removed 0 unused cells and 252 unused wires.
+<suppressed ~1 debug messages>
+
+141. Executing INSBUF pass (insert buffer cells for connected wires).
+
+142. Executing CHECK pass (checking for obvious problems).
+Checking module rng_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/matheus/openframe_user_project/openlane/rng/runs/26_02_17_10_28/tmp/e686d5174edf4451a36143acad8d770c.lib ",
+   "modules": {
+      "\\rng_top": {
+         "num_wires":         229,
+         "num_wire_bits":     231,
+         "num_pub_wires":     63,
+         "num_pub_wire_bits": 65,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         227,
+         "area":              3124.246400,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211o_2": 3,
+            "sky130_fd_sc_hd__a21o_2": 1,
+            "sky130_fd_sc_hd__a21oi_2": 2,
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__a22o_2": 7,
+            "sky130_fd_sc_hd__a22oi_2": 1,
+            "sky130_fd_sc_hd__a32o_2": 1,
+            "sky130_fd_sc_hd__and2_2": 7,
+            "sky130_fd_sc_hd__and2b_2": 2,
+            "sky130_fd_sc_hd__and3_2": 4,
+            "sky130_fd_sc_hd__and3b_2": 2,
+            "sky130_fd_sc_hd__and4_2": 2,
+            "sky130_fd_sc_hd__dfrtp_2": 60,
+            "sky130_fd_sc_hd__inv_2": 17,
+            "sky130_fd_sc_hd__mux2_1": 47,
+            "sky130_fd_sc_hd__nand2_2": 8,
+            "sky130_fd_sc_hd__nor2_2": 14,
+            "sky130_fd_sc_hd__nor4_2": 2,
+            "sky130_fd_sc_hd__o211a_2": 5,
+            "sky130_fd_sc_hd__o21a_2": 1,
+            "sky130_fd_sc_hd__o21ai_2": 1,
+            "sky130_fd_sc_hd__o221a_2": 11,
+            "sky130_fd_sc_hd__o22a_2": 2,
+            "sky130_fd_sc_hd__o22ai_2": 1,
+            "sky130_fd_sc_hd__o2bb2a_2": 5,
+            "sky130_fd_sc_hd__o311a_2": 1,
+            "sky130_fd_sc_hd__o31a_2": 1,
+            "sky130_fd_sc_hd__o32a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 6,
+            "sky130_fd_sc_hd__or3_2": 1,
+            "sky130_fd_sc_hd__or3b_2": 3,
+            "sky130_fd_sc_hd__or4_2": 1,
+            "sky130_fd_sc_hd__xnor2_2": 3,
+            "sky130_fd_sc_hd__xor2_2": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         229,
+         "num_wire_bits":     231,
+         "num_pub_wires":     63,
+         "num_pub_wire_bits": 65,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         227,
+         "area":              3124.246400,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211o_2": 3,
+            "sky130_fd_sc_hd__a21o_2": 1,
+            "sky130_fd_sc_hd__a21oi_2": 2,
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__a22o_2": 7,
+            "sky130_fd_sc_hd__a22oi_2": 1,
+            "sky130_fd_sc_hd__a32o_2": 1,
+            "sky130_fd_sc_hd__and2_2": 7,
+            "sky130_fd_sc_hd__and2b_2": 2,
+            "sky130_fd_sc_hd__and3_2": 4,
+            "sky130_fd_sc_hd__and3b_2": 2,
+            "sky130_fd_sc_hd__and4_2": 2,
+            "sky130_fd_sc_hd__dfrtp_2": 60,
+            "sky130_fd_sc_hd__inv_2": 17,
+            "sky130_fd_sc_hd__mux2_1": 47,
+            "sky130_fd_sc_hd__nand2_2": 8,
+            "sky130_fd_sc_hd__nor2_2": 14,
+            "sky130_fd_sc_hd__nor4_2": 2,
+            "sky130_fd_sc_hd__o211a_2": 5,
+            "sky130_fd_sc_hd__o21a_2": 1,
+            "sky130_fd_sc_hd__o21ai_2": 1,
+            "sky130_fd_sc_hd__o221a_2": 11,
+            "sky130_fd_sc_hd__o22a_2": 2,
+            "sky130_fd_sc_hd__o22ai_2": 1,
+            "sky130_fd_sc_hd__o2bb2a_2": 5,
+            "sky130_fd_sc_hd__o311a_2": 1,
+            "sky130_fd_sc_hd__o31a_2": 1,
+            "sky130_fd_sc_hd__o32a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 6,
+            "sky130_fd_sc_hd__or3_2": 1,
+            "sky130_fd_sc_hd__or3b_2": 3,
+            "sky130_fd_sc_hd__or4_2": 1,
+            "sky130_fd_sc_hd__xnor2_2": 3,
+            "sky130_fd_sc_hd__xor2_2": 3
+         }
+      }
+}
+
+143. Printing statistics.
+
+=== rng_top ===
+
+   Number of wires:                229
+   Number of wire bits:            231
+   Number of public wires:          63
+   Number of public wire bits:      65
+   Number of ports:                  5
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                227
+     sky130_fd_sc_hd__a211o_2        3
+     sky130_fd_sc_hd__a21o_2         1
+     sky130_fd_sc_hd__a21oi_2        2
+     sky130_fd_sc_hd__a221o_2        1
+     sky130_fd_sc_hd__a22o_2         7
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a32o_2         1
+     sky130_fd_sc_hd__and2_2         7
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__and3_2         4
+     sky130_fd_sc_hd__and3b_2        2
+     sky130_fd_sc_hd__and4_2         2
+     sky130_fd_sc_hd__dfrtp_2       60
+     sky130_fd_sc_hd__inv_2         17
+     sky130_fd_sc_hd__mux2_1        47
+     sky130_fd_sc_hd__nand2_2        8
+     sky130_fd_sc_hd__nor2_2        14
+     sky130_fd_sc_hd__nor4_2         2
+     sky130_fd_sc_hd__o211a_2        5
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__o21ai_2        1
+     sky130_fd_sc_hd__o221a_2       11
+     sky130_fd_sc_hd__o22a_2         2
+     sky130_fd_sc_hd__o22ai_2        1
+     sky130_fd_sc_hd__o2bb2a_2       5
+     sky130_fd_sc_hd__o311a_2        1
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__o32a_2         1
+     sky130_fd_sc_hd__or2_2          6
+     sky130_fd_sc_hd__or3_2          1
+     sky130_fd_sc_hd__or3b_2         3
+     sky130_fd_sc_hd__or4_2          1
+     sky130_fd_sc_hd__xnor2_2        3
+     sky130_fd_sc_hd__xor2_2         3
+
+   Chip area for module '\rng_top': 3124.246400
+     of which used for sequential elements: 1576.512000 (50.46%)
+
+144. Executing Verilog backend.
+Dumping module `\rng_top'.
+
+145. Executing JSON backend.

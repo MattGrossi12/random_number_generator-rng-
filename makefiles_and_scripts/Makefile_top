@@ -9,7 +9,6 @@ INC = -I $(SRC)
 TOP_MODULE   = rng_top.v
 TESTBENCH = testbench.v
 
-INST1 = rng_control_path.v
 INST2 = rng_data_path.v
 INST3 = rng_data_base.vh
 INST4 = rng_data_path_counter.v
@@ -19,7 +18,6 @@ INST6 = rng_hs_dup_detector.v
 # Lista de arquivos Verilog
 VERILOG_FILES = \
     $(SRC)/$(TOP_MODULE) \
-	$(SRC)/$(INST1) \
 	$(SRC)/$(INST2) \
 	$(SRC)/$(INST3) \
 	$(SRC)/$(INST4) \

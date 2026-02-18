@@ -77,7 +77,7 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path (clk_i, 
   wire _30_;
   wire _31_;
   wire [2:0] next_num;
-  wire [2:0] \num_selector$func$../src/rng_data_path.v:153$125.num ;
+  wire [2:0] \num_selector$func$../src/rng_data_path.v:153$123.num ;
   wire [2:0] num_to_send;
   \$adffe  #(
     .ARST_POLARITY(32'd0),
@@ -361,7 +361,7 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_data_path (clk_i, 
     .req_num_i(req_num_i),
     .rst_i(rst_i)
   );
-  assign \num_selector$func$../src/rng_data_path.v:153$125.num  = 3'hx;
+  assign \num_selector$func$../src/rng_data_path.v:153$123.num  = 3'hx;
   assign num_to_send_o = next_num;
 endmodule
 
@@ -380,9 +380,9 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
   wire [2:0] data_o;
   output req_new_num_o;
   wire req_new_num_o;
-  wire [2:0] _000_;
+  wire _000_;
   wire _001_;
-  wire [2:0] _002_;
+  wire _002_;
   wire _003_;
   wire _004_;
   wire _005_;
@@ -417,15 +417,8 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
   wire _034_;
   wire _035_;
   wire _036_;
-  wire _037_;
-  wire _038_;
-  wire _039_;
-  wire _040_;
-  wire _041_;
-  wire _042_;
-  wire _043_;
-  wire _044_;
-  wire [2:0] _045_;
+  wire approve;
+  wire hit;
   wire [31:0] i;
   wire [2:0] \mem[0] ;
   wire [2:0] \mem[10] ;
@@ -439,60 +432,32 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
   wire [2:0] \mem[7] ;
   wire [2:0] \mem[8] ;
   wire [2:0] \mem[9] ;
-  wire [2:0] mem_0;
-  wire [2:0] mem_1;
-  wire [2:0] mem_10;
-  wire [2:0] mem_11;
-  wire [2:0] mem_2;
-  wire [2:0] mem_3;
-  wire [2:0] mem_4;
-  wire [2:0] mem_5;
-  wire [2:0] mem_6;
-  wire [2:0] mem_7;
-  wire [2:0] mem_8;
-  wire [2:0] mem_9;
-  wire rqn;
-  wire [2:0] temp_mem;
   wire [11:0] vld;
-  wire wr_dec;
   wire wr_ff1;
   wire wr_ff2;
   wire wr_ff2_d;
-  wire x_state;
+  wire wr_pulse;
   \$and  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _046_ (
-    .A(wr_ff2),
-    .B(_044_),
-    .Y(wr_dec)
-  );
-  \$and  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _047_ (
-    .A(rqn),
-    .B(req_num_i),
+  ) _037_ (
+    .A(req_num_i),
+    .B(hit),
     .Y(req_new_num_o)
   );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(3'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _048_ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(\mem[8] ),
-    .EN(_003_),
-    .Q(\mem[9] )
+  \$and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _038_ (
+    .A(wr_ff2),
+    .B(_036_),
+    .Y(_000_)
   );
   \$adffe  #(
     .ARST_POLARITY(32'd0),
@@ -500,278 +465,24 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .CLK_POLARITY(32'd1),
     .EN_POLARITY(32'd1),
     .WIDTH(32'd3)
-  ) _049_ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(\mem[0] ),
-    .EN(_003_),
-    .Q(\mem[1] )
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(3'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _050_ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(temp_mem),
-    .EN(_003_),
-    .Q(\mem[0] )
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(3'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _051_ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(\mem[4] ),
-    .EN(_003_),
-    .Q(\mem[5] )
-  );
-  \$dffe  #(
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _052_ (
-    .CLK(clk_i),
-    .D(\mem[10] ),
-    .EN(_004_),
-    .Q(\mem[11] )
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(3'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _053_ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(\mem[1] ),
-    .EN(_003_),
-    .Q(\mem[2] )
-  );
-  \$sdffce  #(
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .SRST_POLARITY(32'd1),
-    .SRST_VALUE(2'h0),
-    .WIDTH(32'd2)
-  ) _054_ (
-    .CLK(clk_i),
-    .D(temp_mem[2:1]),
-    .EN(rst_i),
-    .Q(data_o[2:1]),
-    .SRST(_005_)
-  );
-  \$dffe  #(
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \data_o_reg[0]  /* _055_ */ (
-    .CLK(clk_i),
-    .D(_000_[0]),
-    .EN(rst_i),
-    .Q(data_o[0])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(3'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _056_ (
+  ) _039_ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(\mem[6] ),
-    .EN(_003_),
+    .EN(_025_),
     .Q(\mem[7] )
   );
   \$adffe  #(
     .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[5]  /* _057_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[4]),
-    .EN(_003_),
-    .Q(vld[5])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[6]  /* _058_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[5]),
-    .EN(_003_),
-    .Q(vld[6])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[7]  /* _059_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[6]),
-    .EN(_003_),
-    .Q(vld[7])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[8]  /* _060_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[7]),
-    .EN(_003_),
-    .Q(vld[8])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[9]  /* _061_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[8]),
-    .EN(_003_),
-    .Q(vld[9])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[10]  /* _062_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[9]),
-    .EN(_003_),
-    .Q(vld[10])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[11]  /* _063_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[10]),
-    .EN(_003_),
-    .Q(vld[11])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[4]  /* _064_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[3]),
-    .EN(_003_),
-    .Q(vld[4])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[3]  /* _065_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[2]),
-    .EN(_003_),
-    .Q(vld[3])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[2]  /* _066_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[1]),
-    .EN(_003_),
-    .Q(vld[2])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[1]  /* _067_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(vld[0]),
-    .EN(_003_),
-    .Q(vld[1])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(1'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) \vld_reg[0]  /* _068_ */ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(1'h1),
-    .EN(_003_),
-    .Q(vld[0])
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
     .ARST_VALUE(3'h0),
     .CLK_POLARITY(32'd1),
     .EN_POLARITY(32'd1),
     .WIDTH(32'd3)
-  ) _069_ (
-    .ARST(rst_i),
-    .CLK(clk_i),
-    .D(\mem[2] ),
-    .EN(_003_),
-    .Q(\mem[3] )
-  );
-  \$adffe  #(
-    .ARST_POLARITY(32'd0),
-    .ARST_VALUE(3'h0),
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd3)
-  ) _070_ (
+  ) _040_ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(\mem[9] ),
-    .EN(_003_),
+    .EN(_025_),
     .Q(\mem[10] )
   );
   \$adffe  #(
@@ -780,22 +491,12 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .CLK_POLARITY(32'd1),
     .EN_POLARITY(32'd1),
     .WIDTH(32'd3)
-  ) _071_ (
+  ) _041_ (
     .ARST(rst_i),
     .CLK(clk_i),
-    .D(\mem[5] ),
-    .EN(_003_),
-    .Q(\mem[6] )
-  );
-  \$dffe  #(
-    .CLK_POLARITY(32'd1),
-    .EN_POLARITY(32'd1),
-    .WIDTH(32'd1)
-  ) rqn_reg /* _072_ */ (
-    .CLK(clk_i),
-    .D(_001_),
-    .EN(rst_i),
-    .Q(rqn)
+    .D(\mem[2] ),
+    .EN(_025_),
+    .Q(\mem[3] )
   );
   \$adffe  #(
     .ARST_POLARITY(32'd0),
@@ -803,11 +504,206 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .CLK_POLARITY(32'd1),
     .EN_POLARITY(32'd1),
     .WIDTH(32'd3)
-  ) _073_ (
+  ) _042_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(\mem[5] ),
+    .EN(_025_),
+    .Q(\mem[6] )
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _043_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(data_i),
+    .EN(_025_),
+    .Q(data_o)
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _044_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(\mem[10] ),
+    .EN(_025_),
+    .Q(\mem[11] )
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[11]  /* _045_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[10]),
+    .EN(_025_),
+    .Q(vld[11])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[10]  /* _046_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[9]),
+    .EN(_025_),
+    .Q(vld[10])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[9]  /* _047_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[8]),
+    .EN(_025_),
+    .Q(vld[9])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[8]  /* _048_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[7]),
+    .EN(_025_),
+    .Q(vld[8])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[7]  /* _049_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[6]),
+    .EN(_025_),
+    .Q(vld[7])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[6]  /* _050_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[5]),
+    .EN(_025_),
+    .Q(vld[6])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[5]  /* _051_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[4]),
+    .EN(_025_),
+    .Q(vld[5])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[4]  /* _052_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[3]),
+    .EN(_025_),
+    .Q(vld[4])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[3]  /* _053_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[2]),
+    .EN(_025_),
+    .Q(vld[3])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[2]  /* _054_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[1]),
+    .EN(_025_),
+    .Q(vld[2])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[0]  /* _055_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(1'h1),
+    .EN(_025_),
+    .Q(vld[0])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd1)
+  ) \vld_reg[1]  /* _056_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(vld[0]),
+    .EN(_025_),
+    .Q(vld[1])
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _057_ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(\mem[3] ),
-    .EN(_003_),
+    .EN(_025_),
     .Q(\mem[4] )
   );
   \$adffe  #(
@@ -816,51 +712,118 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .CLK_POLARITY(32'd1),
     .EN_POLARITY(32'd1),
     .WIDTH(32'd3)
-  ) _074_ (
+  ) _058_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(\mem[8] ),
+    .EN(_025_),
+    .Q(\mem[9] )
+  );
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _059_ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(\mem[7] ),
-    .EN(_003_),
+    .EN(_025_),
     .Q(\mem[8] )
   );
-  \$not  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _075_ (
-    .A(_036_),
-    .Y(_006_)
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _060_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(data_o),
+    .EN(_025_),
+    .Q(\mem[1] )
   );
-  \$reduce_and  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd2),
-    .Y_WIDTH(32'd1)
-  ) _076_ (
-    .A({ _006_, wr_dec }),
-    .Y(_003_)
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _061_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(\mem[4] ),
+    .EN(_025_),
+    .Q(\mem[5] )
   );
-  \$reduce_and  #(
+  \$adffe  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(3'h0),
+    .CLK_POLARITY(32'd1),
+    .EN_POLARITY(32'd1),
+    .WIDTH(32'd3)
+  ) _062_ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(\mem[1] ),
+    .EN(_025_),
+    .Q(\mem[2] )
+  );
+  \$eq  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _077_ (
-    .A({ _006_, wr_dec, rst_i }),
+  ) _063_ (
+    .A(data_i),
+    .B(data_o),
+    .Y(_001_)
+  );
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
+    .Y_WIDTH(32'd1)
+  ) _064_ (
+    .A(data_i),
+    .B(\mem[1] ),
+    .Y(_002_)
+  );
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
+    .Y_WIDTH(32'd1)
+  ) _065_ (
+    .A(data_i),
+    .B(\mem[2] ),
+    .Y(_003_)
+  );
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
+    .Y_WIDTH(32'd1)
+  ) _066_ (
+    .A(data_i),
+    .B(\mem[3] ),
     .Y(_004_)
   );
-  \$not  #(
+  \$eq  #(
     .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _078_ (
-    .A(wr_dec),
-    .Y(_007_)
-  );
-  \$reduce_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd2),
-    .Y_WIDTH(32'd1)
-  ) _079_ (
-    .A({ _007_, _036_ }),
+  ) _067_ (
+    .A(data_i),
+    .B(\mem[4] ),
     .Y(_005_)
   );
   \$eq  #(
@@ -869,9 +832,31 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _080_ (
-    .A(data_o),
-    .B(temp_mem),
+  ) _068_ (
+    .A(data_i),
+    .B(\mem[5] ),
+    .Y(_006_)
+  );
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
+    .Y_WIDTH(32'd1)
+  ) _069_ (
+    .A(data_i),
+    .B(\mem[6] ),
+    .Y(_007_)
+  );
+  \$eq  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd3),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd3),
+    .Y_WIDTH(32'd1)
+  ) _070_ (
+    .A(data_i),
+    .B(\mem[7] ),
     .Y(_008_)
   );
   \$eq  #(
@@ -880,9 +865,9 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _081_ (
+  ) _071_ (
     .A(data_i),
-    .B(\mem[0] ),
+    .B(\mem[8] ),
     .Y(_009_)
   );
   \$eq  #(
@@ -891,9 +876,9 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _082_ (
+  ) _072_ (
     .A(data_i),
-    .B(\mem[1] ),
+    .B(\mem[9] ),
     .Y(_010_)
   );
   \$eq  #(
@@ -902,9 +887,9 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _083_ (
+  ) _073_ (
     .A(data_i),
-    .B(\mem[2] ),
+    .B(\mem[10] ),
     .Y(_011_)
   );
   \$eq  #(
@@ -913,97 +898,97 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd3),
     .Y_WIDTH(32'd1)
-  ) _084_ (
-    .A(data_i),
-    .B(\mem[3] ),
-    .Y(_012_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _085_ (
-    .A(data_i),
-    .B(\mem[4] ),
-    .Y(_013_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _086_ (
-    .A(data_i),
-    .B(\mem[5] ),
-    .Y(_014_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _087_ (
-    .A(data_i),
-    .B(\mem[6] ),
-    .Y(_015_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _088_ (
-    .A(data_i),
-    .B(\mem[7] ),
-    .Y(_016_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _089_ (
-    .A(data_i),
-    .B(\mem[8] ),
-    .Y(_017_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _090_ (
-    .A(data_i),
-    .B(\mem[9] ),
-    .Y(_018_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _091_ (
-    .A(data_i),
-    .B(\mem[10] ),
-    .Y(_019_)
-  );
-  \$eq  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd3),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd3),
-    .Y_WIDTH(32'd1)
-  ) _092_ (
+  ) _074_ (
     .A(data_i),
     .B(\mem[11] ),
+    .Y(_012_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _075_ (
+    .A(vld[0]),
+    .B(_001_),
+    .Y(_013_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _076_ (
+    .A(vld[1]),
+    .B(_002_),
+    .Y(_014_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _077_ (
+    .A(vld[2]),
+    .B(_003_),
+    .Y(_015_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _078_ (
+    .A(vld[3]),
+    .B(_004_),
+    .Y(_016_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _079_ (
+    .A(vld[4]),
+    .B(_005_),
+    .Y(_017_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _080_ (
+    .A(vld[5]),
+    .B(_006_),
+    .Y(_018_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _081_ (
+    .A(vld[6]),
+    .B(_007_),
+    .Y(_019_)
+  );
+  \$logic_and  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _082_ (
+    .A(vld[7]),
+    .B(_008_),
     .Y(_020_)
   );
   \$logic_and  #(
@@ -1012,8 +997,8 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _093_ (
-    .A(vld[0]),
+  ) _083_ (
+    .A(vld[8]),
     .B(_009_),
     .Y(_021_)
   );
@@ -1023,8 +1008,8 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _094_ (
-    .A(vld[1]),
+  ) _084_ (
+    .A(vld[9]),
     .B(_010_),
     .Y(_022_)
   );
@@ -1034,8 +1019,8 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _095_ (
-    .A(vld[2]),
+  ) _085_ (
+    .A(vld[10]),
     .B(_011_),
     .Y(_023_)
   );
@@ -1045,8 +1030,8 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _096_ (
-    .A(vld[3]),
+  ) _086_ (
+    .A(vld[11]),
     .B(_012_),
     .Y(_024_)
   );
@@ -1056,86 +1041,97 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _097_ (
-    .A(vld[4]),
-    .B(_013_),
+  ) _087_ (
+    .A(approve),
+    .B(wr_pulse),
     .Y(_025_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _098_ (
-    .A(vld[5]),
-    .B(_014_),
+  ) _088_ (
+    .A(_035_),
+    .B(_022_),
     .Y(_026_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _099_ (
-    .A(vld[6]),
-    .B(_015_),
+  ) _089_ (
+    .A(_026_),
+    .B(_023_),
     .Y(_027_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _100_ (
-    .A(vld[7]),
-    .B(_016_),
+  ) _090_ (
+    .A(_027_),
+    .B(_024_),
+    .Y(hit)
+  );
+  \$logic_or  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .B_SIGNED(32'd0),
+    .B_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _091_ (
+    .A(_013_),
+    .B(_014_),
     .Y(_028_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _101_ (
-    .A(vld[8]),
-    .B(_017_),
+  ) _092_ (
+    .A(_028_),
+    .B(_015_),
     .Y(_029_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _102_ (
-    .A(vld[9]),
-    .B(_018_),
+  ) _093_ (
+    .A(_029_),
+    .B(_016_),
     .Y(_030_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _103_ (
-    .A(vld[10]),
-    .B(_019_),
+  ) _094_ (
+    .A(_030_),
+    .B(_017_),
     .Y(_031_)
   );
-  \$logic_and  #(
+  \$logic_or  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _104_ (
-    .A(vld[11]),
-    .B(_020_),
+  ) _095_ (
+    .A(_031_),
+    .B(_018_),
     .Y(_032_)
   );
   \$logic_or  #(
@@ -1144,9 +1140,9 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _105_ (
-    .A(_043_),
-    .B(_029_),
+  ) _096_ (
+    .A(_032_),
+    .B(_019_),
     .Y(_033_)
   );
   \$logic_or  #(
@@ -1155,9 +1151,9 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _106_ (
+  ) _097_ (
     .A(_033_),
-    .B(_030_),
+    .B(_020_),
     .Y(_034_)
   );
   \$logic_or  #(
@@ -1166,113 +1162,33 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .B_SIGNED(32'd0),
     .B_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _107_ (
+  ) _098_ (
     .A(_034_),
-    .B(_031_),
+    .B(_021_),
     .Y(_035_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _108_ (
-    .A(_035_),
-    .B(_032_),
-    .Y(_036_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _109_ (
-    .A(_021_),
-    .B(_022_),
-    .Y(_037_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _110_ (
-    .A(_037_),
-    .B(_023_),
-    .Y(_038_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _111_ (
-    .A(_038_),
-    .B(_024_),
-    .Y(_039_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _112_ (
-    .A(_039_),
-    .B(_025_),
-    .Y(_040_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _113_ (
-    .A(_040_),
-    .B(_026_),
-    .Y(_041_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _114_ (
-    .A(_041_),
-    .B(_027_),
-    .Y(_042_)
-  );
-  \$logic_or  #(
-    .A_SIGNED(32'd0),
-    .A_WIDTH(32'd1),
-    .B_SIGNED(32'd0),
-    .B_WIDTH(32'd1),
-    .Y_WIDTH(32'd1)
-  ) _115_ (
-    .A(_042_),
-    .B(_028_),
-    .Y(_043_)
   );
   \$not  #(
     .A_SIGNED(32'd0),
     .A_WIDTH(32'd1),
     .Y_WIDTH(32'd1)
-  ) _116_ (
+  ) _099_ (
+    .A(hit),
+    .Y(approve)
+  );
+  \$not  #(
+    .A_SIGNED(32'd0),
+    .A_WIDTH(32'd1),
+    .Y_WIDTH(32'd1)
+  ) _100_ (
     .A(wr_ff2_d),
-    .Y(_044_)
+    .Y(_036_)
   );
   \$adff  #(
     .ARST_POLARITY(32'd0),
     .ARST_VALUE(1'h0),
     .CLK_POLARITY(1'h1),
     .WIDTH(32'd1)
-  ) wr_ff1_reg /* _117_ */ (
+  ) wr_ff1_reg /* _101_ */ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(wr_i),
@@ -1283,7 +1199,7 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .ARST_VALUE(1'h0),
     .CLK_POLARITY(1'h1),
     .WIDTH(32'd1)
-  ) wr_ff2_reg /* _118_ */ (
+  ) wr_ff2_reg /* _102_ */ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(wr_ff1),
@@ -1294,65 +1210,25 @@ module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_hs_dup_detector (c
     .ARST_VALUE(1'h0),
     .CLK_POLARITY(1'h1),
     .WIDTH(32'd1)
-  ) wr_ff2_d_reg /* _119_ */ (
+  ) wr_ff2_d_reg /* _103_ */ (
     .ARST(rst_i),
     .CLK(clk_i),
     .D(wr_ff2),
     .Q(wr_ff2_d)
   );
-  \$mux  #(
+  \$adff  #(
+    .ARST_POLARITY(32'd0),
+    .ARST_VALUE(1'h0),
+    .CLK_POLARITY(1'h1),
     .WIDTH(32'd1)
-  ) _120_ (
-    .A(1'h0),
-    .B(1'h1),
-    .S(_036_),
-    .Y(_001_)
+  ) wr_pulse_reg /* _104_ */ (
+    .ARST(rst_i),
+    .CLK(clk_i),
+    .D(_000_),
+    .Q(wr_pulse)
   );
-  \$mux  #(
-    .WIDTH(32'd3)
-  ) _121_ (
-    .A({ 2'h0, x_state }),
-    .B(temp_mem),
-    .S(wr_dec),
-    .Y(_045_)
-  );
-  \$mux  #(
-    .WIDTH(32'd3)
-  ) _122_ (
-    .A(_045_),
-    .B({ 2'h0, x_state }),
-    .S(_036_),
-    .Y(_000_)
-  );
-  \$mux  #(
-    .WIDTH(32'd3)
-  ) _123_ (
-    .A(data_i),
-    .B(3'h0),
-    .S(_008_),
-    .Y(_002_)
-  );
-  \$mux  #(
-    .WIDTH(32'd3)
-  ) _124_ (
-    .A(_002_),
-    .B(3'h0),
-    .S(_036_),
-    .Y(temp_mem)
-  );
-  assign i = 32'd11;
-  assign mem_0 = \mem[0] ;
-  assign mem_1 = \mem[1] ;
-  assign mem_10 = \mem[10] ;
-  assign mem_11 = \mem[11] ;
-  assign mem_2 = \mem[2] ;
-  assign mem_3 = \mem[3] ;
-  assign mem_4 = \mem[4] ;
-  assign mem_5 = \mem[5] ;
-  assign mem_6 = \mem[6] ;
-  assign mem_7 = \mem[7] ;
-  assign mem_8 = \mem[8] ;
-  assign mem_9 = \mem[9] ;
+  assign i = 32'd12;
+  assign \mem[0]  = data_o;
 endmodule
 
 module \$paramod$54156aeb88216e1ed0a79a36b33881dba9f19205\rng_selector (clk_i, start_i, rst_i, seed_sel_o);
@@ -1602,21 +1478,13 @@ module rng_top(clk_i, start_i, rst_i, req_num_i, wr_i, num_to_send_o);
   wire _136_;
   wire _137_;
   wire _138_;
-  wire _139_;
-  wire _140_;
-  wire _141_;
-  wire _142_;
-  wire _143_;
-  wire _144_;
-  wire _145_;
-  wire [2:0] _146_;
-  wire [1:0] _147_;
-  wire [1:0] _148_;
+  wire [2:0] _139_;
+  wire [1:0] _140_;
+  wire [1:0] _141_;
   wire [2:0] num_i_bar;
   wire req_num;
   wire [2:0] \rng_dp.inst.next_num_o ;
   wire [1:0] \rng_dp.seed_sel_i ;
-  wire [2:0] \rng_rd.mem[0] ;
   wire [2:0] \rng_rd.mem[10] ;
   wire [2:0] \rng_rd.mem[11] ;
   wire [2:0] \rng_rd.mem[1] ;
@@ -1628,1213 +1496,1146 @@ module rng_top(clk_i, start_i, rst_i, req_num_i, wr_i, num_to_send_o);
   wire [2:0] \rng_rd.mem[7] ;
   wire [2:0] \rng_rd.mem[8] ;
   wire [2:0] \rng_rd.mem[9] ;
-  wire \rng_rd.rqn ;
-  wire [2:0] \rng_rd.temp_mem ;
   wire [11:0] \rng_rd.vld ;
   wire \rng_rd.wr_ff1 ;
   wire \rng_rd.wr_ff2 ;
   wire \rng_rd.wr_ff2_d ;
-  \$_NOT_  _149_ (
+  wire \rng_rd.wr_pulse ;
+  \$_NOT_  _142_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .Y(_115_)
+  );
+  \$_NOT_  _143_ (
+    .A(\rng_dp.seed_sel_i [0]),
+    .Y(_140_[0])
+  );
+  \$_NOT_  _144_ (
+    .A(\rng_dp.inst.next_num_o [1]),
+    .Y(_116_)
+  );
+  \$_NOT_  _145_ (
     .A(\rng_dp.inst.next_num_o [0]),
     .Y(_000_)
   );
-  \$_NOT_  _150_ (
-    .A(\rng_dp.inst.next_num_o [1]),
-    .Y(_134_)
+  \$_NOT_  _146_ (
+    .A(num_i_bar[0]),
+    .Y(_117_)
   );
-  \$_NOT_  _151_ (
-    .A(\rng_dp.seed_sel_i [0]),
-    .Y(_147_[0])
+  \$_NOT_  _147_ (
+    .A(\rng_rd.mem[11] [2]),
+    .Y(_118_)
   );
-  \$_NOT_  _152_ (
+  \$_NOT_  _148_ (
+    .A(\rng_rd.wr_pulse ),
+    .Y(_119_)
+  );
+  \$_NOT_  _149_ (
     .A(\rng_rd.wr_ff2_d ),
-    .Y(_135_)
+    .Y(_120_)
+  );
+  \$_NOR_  _150_ (
+    .A(_140_[0]),
+    .B(\rng_dp.seed_sel_i [1]),
+    .Y(_121_)
+  );
+  \$_AND_  _151_ (
+    .A(_140_[0]),
+    .B(\rng_dp.seed_sel_i [1]),
+    .Y(_122_)
+  );
+  \$_OR_  _152_ (
+    .A(_121_),
+    .B(_122_),
+    .Y(_141_[1])
   );
   \$_XNOR_  _153_ (
     .A(num_i_bar[2]),
-    .B(\rng_rd.mem[7] [2]),
-    .Y(_136_)
+    .B(num_to_send_o[2]),
+    .Y(_123_)
   );
   \$_XNOR_  _154_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[7] [1]),
-    .Y(_137_)
-  );
-  \$_XNOR_  _155_ (
     .A(num_i_bar[0]),
-    .B(\rng_rd.mem[7] [0]),
-    .Y(_138_)
+    .B(num_to_send_o[0]),
+    .Y(_124_)
   );
-  \$_AND_  _156_ (
-    .A(_136_),
-    .B(_138_),
-    .Y(_139_)
+  \$_AND_  _155_ (
+    .A(_123_),
+    .B(_124_),
+    .Y(_125_)
+  );
+  \$_XNOR_  _156_ (
+    .A(num_i_bar[1]),
+    .B(num_to_send_o[1]),
+    .Y(_126_)
   );
   \$_AND_  _157_ (
-    .A(\rng_rd.vld [7]),
-    .B(_139_),
-    .Y(_140_)
+    .A(\rng_rd.vld [0]),
+    .B(_126_),
+    .Y(_127_)
   );
   \$_NAND_  _158_ (
-    .A(_137_),
-    .B(_140_),
-    .Y(_141_)
+    .A(_125_),
+    .B(_127_),
+    .Y(_128_)
   );
   \$_XNOR_  _159_ (
     .A(num_i_bar[1]),
-    .B(\rng_rd.mem[8] [1]),
-    .Y(_142_)
+    .B(\rng_rd.mem[10] [1]),
+    .Y(_129_)
   );
   \$_XNOR_  _160_ (
     .A(num_i_bar[0]),
-    .B(\rng_rd.mem[8] [0]),
-    .Y(_143_)
-  );
-  \$_XNOR_  _161_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[8] [2]),
-    .Y(_144_)
-  );
-  \$_AND_  _162_ (
-    .A(_143_),
-    .B(_144_),
-    .Y(_145_)
-  );
-  \$_AND_  _163_ (
-    .A(\rng_rd.vld [8]),
-    .B(_142_),
-    .Y(_008_)
-  );
-  \$_NAND_  _164_ (
-    .A(_145_),
-    .B(_008_),
-    .Y(_009_)
-  );
-  \$_XNOR_  _165_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[10] [1]),
-    .Y(_010_)
-  );
-  \$_XNOR_  _166_ (
-    .A(num_i_bar[0]),
     .B(\rng_rd.mem[10] [0]),
-    .Y(_011_)
+    .Y(_130_)
   );
-  \$_AND_  _167_ (
-    .A(_010_),
-    .B(_011_),
-    .Y(_012_)
+  \$_AND_  _161_ (
+    .A(_129_),
+    .B(_130_),
+    .Y(_131_)
   );
-  \$_XNOR_  _168_ (
+  \$_XNOR_  _162_ (
     .A(num_i_bar[2]),
     .B(\rng_rd.mem[10] [2]),
+    .Y(_132_)
+  );
+  \$_AND_  _163_ (
+    .A(\rng_rd.vld [10]),
+    .B(_132_),
+    .Y(_133_)
+  );
+  \$_NAND_  _164_ (
+    .A(_131_),
+    .B(_133_),
+    .Y(_134_)
+  );
+  \$_AND_  _165_ (
+    .A(_128_),
+    .B(_134_),
+    .Y(_135_)
+  );
+  \$_NAND_  _166_ (
+    .A(_117_),
+    .B(\rng_rd.mem[11] [0]),
+    .Y(_136_)
+  );
+  \$_OR_  _167_ (
+    .A(_117_),
+    .B(\rng_rd.mem[11] [0]),
+    .Y(_137_)
+  );
+  \$_NAND_  _168_ (
+    .A(num_i_bar[2]),
+    .B(_118_),
+    .Y(_138_)
+  );
+  \$_OR_  _169_ (
+    .A(num_i_bar[2]),
+    .B(_118_),
+    .Y(_005_)
+  );
+  \$_XNOR_  _170_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[11] [1]),
+    .Y(_006_)
+  );
+  \$_AND_  _171_ (
+    .A(_005_),
+    .B(_006_),
+    .Y(_007_)
+  );
+  \$_AND_  _172_ (
+    .A(_137_),
+    .B(_138_),
+    .Y(_008_)
+  );
+  \$_AND_  _173_ (
+    .A(\rng_rd.vld [11]),
+    .B(_136_),
+    .Y(_009_)
+  );
+  \$_AND_  _174_ (
+    .A(_008_),
+    .B(_009_),
+    .Y(_010_)
+  );
+  \$_NAND_  _175_ (
+    .A(_007_),
+    .B(_010_),
+    .Y(_011_)
+  );
+  \$_XNOR_  _176_ (
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[7] [2]),
+    .Y(_012_)
+  );
+  \$_XNOR_  _177_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[7] [1]),
     .Y(_013_)
   );
-  \$_AND_  _169_ (
-    .A(\rng_rd.vld [10]),
+  \$_AND_  _178_ (
+    .A(_012_),
     .B(_013_),
     .Y(_014_)
   );
-  \$_NAND_  _170_ (
-    .A(_012_),
-    .B(_014_),
+  \$_XNOR_  _179_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[7] [0]),
     .Y(_015_)
   );
-  \$_XNOR_  _171_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[6] [2]),
+  \$_AND_  _180_ (
+    .A(\rng_rd.vld [7]),
+    .B(_015_),
     .Y(_016_)
   );
-  \$_XNOR_  _172_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[6] [0]),
+  \$_NAND_  _181_ (
+    .A(_014_),
+    .B(_016_),
     .Y(_017_)
   );
-  \$_XNOR_  _173_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[6] [1]),
+  \$_AND_  _182_ (
+    .A(_011_),
+    .B(_017_),
     .Y(_018_)
   );
-  \$_AND_  _174_ (
-    .A(_017_),
+  \$_AND_  _183_ (
+    .A(_135_),
     .B(_018_),
     .Y(_019_)
   );
-  \$_AND_  _175_ (
-    .A(\rng_rd.vld [6]),
-    .B(_016_),
-    .Y(_020_)
-  );
-  \$_NAND_  _176_ (
-    .A(_019_),
-    .B(_020_),
-    .Y(_021_)
-  );
-  \$_XNOR_  _177_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[5] [2]),
-    .Y(_022_)
-  );
-  \$_XNOR_  _178_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[5] [0]),
-    .Y(_023_)
-  );
-  \$_XNOR_  _179_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[5] [1]),
-    .Y(_024_)
-  );
-  \$_AND_  _180_ (
-    .A(_023_),
-    .B(_024_),
-    .Y(_025_)
-  );
-  \$_AND_  _181_ (
-    .A(\rng_rd.vld [5]),
-    .B(_022_),
-    .Y(_026_)
-  );
-  \$_NAND_  _182_ (
-    .A(_025_),
-    .B(_026_),
-    .Y(_027_)
-  );
-  \$_XNOR_  _183_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[2] [2]),
-    .Y(_028_)
-  );
   \$_XNOR_  _184_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[2] [0]),
-    .Y(_029_)
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[9] [2]),
+    .Y(_020_)
   );
   \$_XNOR_  _185_ (
     .A(num_i_bar[1]),
-    .B(\rng_rd.mem[2] [1]),
-    .Y(_030_)
+    .B(\rng_rd.mem[9] [1]),
+    .Y(_021_)
   );
-  \$_AND_  _186_ (
-    .A(_029_),
-    .B(_030_),
-    .Y(_031_)
+  \$_XNOR_  _186_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[9] [0]),
+    .Y(_022_)
   );
   \$_AND_  _187_ (
-    .A(\rng_rd.vld [2]),
-    .B(_028_),
-    .Y(_032_)
+    .A(_020_),
+    .B(_022_),
+    .Y(_023_)
   );
-  \$_NAND_  _188_ (
-    .A(_031_),
-    .B(_032_),
-    .Y(_033_)
+  \$_AND_  _188_ (
+    .A(\rng_rd.vld [9]),
+    .B(_023_),
+    .Y(_024_)
   );
-  \$_XNOR_  _189_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[11] [1]),
-    .Y(_034_)
+  \$_NAND_  _189_ (
+    .A(_021_),
+    .B(_024_),
+    .Y(_025_)
   );
   \$_XNOR_  _190_ (
     .A(num_i_bar[2]),
-    .B(\rng_rd.mem[11] [2]),
+    .B(\rng_rd.mem[5] [2]),
+    .Y(_026_)
+  );
+  \$_XNOR_  _191_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[5] [1]),
+    .Y(_027_)
+  );
+  \$_XNOR_  _192_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[5] [0]),
+    .Y(_028_)
+  );
+  \$_AND_  _193_ (
+    .A(_026_),
+    .B(_028_),
+    .Y(_029_)
+  );
+  \$_AND_  _194_ (
+    .A(\rng_rd.vld [5]),
+    .B(_029_),
+    .Y(_030_)
+  );
+  \$_NAND_  _195_ (
+    .A(_027_),
+    .B(_030_),
+    .Y(_031_)
+  );
+  \$_AND_  _196_ (
+    .A(_025_),
+    .B(_031_),
+    .Y(_032_)
+  );
+  \$_XNOR_  _197_ (
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[4] [2]),
+    .Y(_033_)
+  );
+  \$_XNOR_  _198_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[4] [1]),
+    .Y(_034_)
+  );
+  \$_XNOR_  _199_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[4] [0]),
     .Y(_035_)
   );
-  \$_AND_  _191_ (
+  \$_AND_  _200_ (
     .A(_034_),
     .B(_035_),
     .Y(_036_)
   );
-  \$_XNOR_  _192_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[11] [0]),
+  \$_AND_  _201_ (
+    .A(\rng_rd.vld [4]),
+    .B(_033_),
     .Y(_037_)
   );
-  \$_AND_  _193_ (
-    .A(\rng_rd.vld [11]),
+  \$_NAND_  _202_ (
+    .A(_036_),
     .B(_037_),
     .Y(_038_)
   );
-  \$_NAND_  _194_ (
-    .A(_036_),
-    .B(_038_),
+  \$_XNOR_  _203_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[8] [1]),
     .Y(_039_)
   );
-  \$_XNOR_  _195_ (
+  \$_XNOR_  _204_ (
     .A(num_i_bar[2]),
-    .B(\rng_rd.mem[0] [2]),
+    .B(\rng_rd.mem[8] [2]),
     .Y(_040_)
   );
-  \$_XNOR_  _196_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[0] [0]),
+  \$_AND_  _205_ (
+    .A(_039_),
+    .B(_040_),
     .Y(_041_)
   );
-  \$_XNOR_  _197_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[0] [1]),
+  \$_XNOR_  _206_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[8] [0]),
     .Y(_042_)
   );
-  \$_AND_  _198_ (
-    .A(\rng_rd.vld [0]),
-    .B(_040_),
+  \$_AND_  _207_ (
+    .A(\rng_rd.vld [8]),
+    .B(_042_),
     .Y(_043_)
   );
-  \$_AND_  _199_ (
-    .A(_042_),
+  \$_NAND_  _208_ (
+    .A(_041_),
     .B(_043_),
     .Y(_044_)
   );
-  \$_NAND_  _200_ (
-    .A(_041_),
+  \$_AND_  _209_ (
+    .A(_038_),
     .B(_044_),
     .Y(_045_)
   );
-  \$_XNOR_  _201_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[1] [2]),
+  \$_AND_  _210_ (
+    .A(_032_),
+    .B(_045_),
     .Y(_046_)
   );
-  \$_XNOR_  _202_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[1] [1]),
+  \$_XNOR_  _211_ (
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[6] [2]),
     .Y(_047_)
   );
-  \$_XNOR_  _203_ (
+  \$_XNOR_  _212_ (
     .A(num_i_bar[0]),
-    .B(\rng_rd.mem[1] [0]),
+    .B(\rng_rd.mem[6] [0]),
     .Y(_048_)
-  );
-  \$_AND_  _204_ (
-    .A(_046_),
-    .B(_048_),
-    .Y(_049_)
-  );
-  \$_AND_  _205_ (
-    .A(\rng_rd.vld [1]),
-    .B(_049_),
-    .Y(_050_)
-  );
-  \$_NAND_  _206_ (
-    .A(_047_),
-    .B(_050_),
-    .Y(_051_)
-  );
-  \$_XNOR_  _207_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[4] [2]),
-    .Y(_052_)
-  );
-  \$_XNOR_  _208_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[4] [0]),
-    .Y(_053_)
-  );
-  \$_XNOR_  _209_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[4] [1]),
-    .Y(_054_)
-  );
-  \$_AND_  _210_ (
-    .A(\rng_rd.vld [4]),
-    .B(_052_),
-    .Y(_055_)
-  );
-  \$_AND_  _211_ (
-    .A(_054_),
-    .B(_055_),
-    .Y(_056_)
-  );
-  \$_NAND_  _212_ (
-    .A(_053_),
-    .B(_056_),
-    .Y(_057_)
   );
   \$_XNOR_  _213_ (
     .A(num_i_bar[1]),
-    .B(\rng_rd.mem[9] [1]),
-    .Y(_058_)
+    .B(\rng_rd.mem[6] [1]),
+    .Y(_049_)
   );
-  \$_XNOR_  _214_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[9] [2]),
-    .Y(_059_)
+  \$_AND_  _214_ (
+    .A(_048_),
+    .B(_049_),
+    .Y(_050_)
   );
   \$_AND_  _215_ (
-    .A(_058_),
-    .B(_059_),
+    .A(\rng_rd.vld [6]),
+    .B(_047_),
+    .Y(_051_)
+  );
+  \$_NAND_  _216_ (
+    .A(_050_),
+    .B(_051_),
+    .Y(_052_)
+  );
+  \$_XNOR_  _217_ (
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[1] [2]),
+    .Y(_053_)
+  );
+  \$_XNOR_  _218_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[1] [0]),
+    .Y(_054_)
+  );
+  \$_XNOR_  _219_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[1] [1]),
+    .Y(_055_)
+  );
+  \$_AND_  _220_ (
+    .A(\rng_rd.vld [1]),
+    .B(_053_),
+    .Y(_056_)
+  );
+  \$_AND_  _221_ (
+    .A(_055_),
+    .B(_056_),
+    .Y(_057_)
+  );
+  \$_NAND_  _222_ (
+    .A(_054_),
+    .B(_057_),
+    .Y(_058_)
+  );
+  \$_AND_  _223_ (
+    .A(_052_),
+    .B(_058_),
+    .Y(_059_)
+  );
+  \$_XNOR_  _224_ (
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[2] [2]),
     .Y(_060_)
   );
-  \$_XNOR_  _216_ (
+  \$_XNOR_  _225_ (
     .A(num_i_bar[0]),
-    .B(\rng_rd.mem[9] [0]),
+    .B(\rng_rd.mem[2] [0]),
     .Y(_061_)
   );
-  \$_AND_  _217_ (
-    .A(\rng_rd.vld [9]),
-    .B(_061_),
+  \$_XNOR_  _226_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[2] [1]),
     .Y(_062_)
   );
-  \$_NAND_  _218_ (
-    .A(_060_),
+  \$_AND_  _227_ (
+    .A(_061_),
     .B(_062_),
     .Y(_063_)
   );
-  \$_XNOR_  _219_ (
-    .A(num_i_bar[2]),
-    .B(\rng_rd.mem[3] [2]),
+  \$_AND_  _228_ (
+    .A(\rng_rd.vld [2]),
+    .B(_060_),
     .Y(_064_)
   );
-  \$_XNOR_  _220_ (
-    .A(num_i_bar[0]),
-    .B(\rng_rd.mem[3] [0]),
+  \$_NAND_  _229_ (
+    .A(_063_),
+    .B(_064_),
     .Y(_065_)
   );
-  \$_XNOR_  _221_ (
-    .A(num_i_bar[1]),
-    .B(\rng_rd.mem[3] [1]),
+  \$_XNOR_  _230_ (
+    .A(num_i_bar[2]),
+    .B(\rng_rd.mem[3] [2]),
     .Y(_066_)
   );
-  \$_AND_  _222_ (
-    .A(_065_),
-    .B(_066_),
+  \$_XNOR_  _231_ (
+    .A(num_i_bar[0]),
+    .B(\rng_rd.mem[3] [0]),
     .Y(_067_)
   );
-  \$_AND_  _223_ (
-    .A(\rng_rd.vld [3]),
-    .B(_064_),
+  \$_XNOR_  _232_ (
+    .A(num_i_bar[1]),
+    .B(\rng_rd.mem[3] [1]),
     .Y(_068_)
   );
-  \$_NAND_  _224_ (
+  \$_AND_  _233_ (
     .A(_067_),
     .B(_068_),
     .Y(_069_)
   );
-  \$_AND_  _225_ (
-    .A(_027_),
-    .B(_063_),
+  \$_AND_  _234_ (
+    .A(\rng_rd.vld [3]),
+    .B(_066_),
     .Y(_070_)
   );
-  \$_AND_  _226_ (
-    .A(_141_),
-    .B(_051_),
+  \$_NAND_  _235_ (
+    .A(_069_),
+    .B(_070_),
     .Y(_071_)
   );
-  \$_AND_  _227_ (
-    .A(_070_),
+  \$_AND_  _236_ (
+    .A(_065_),
     .B(_071_),
     .Y(_072_)
   );
-  \$_AND_  _228_ (
-    .A(_039_),
-    .B(_057_),
+  \$_AND_  _237_ (
+    .A(_059_),
+    .B(_072_),
     .Y(_073_)
   );
-  \$_AND_  _229_ (
-    .A(_015_),
-    .B(_069_),
+  \$_AND_  _238_ (
+    .A(_046_),
+    .B(_073_),
     .Y(_074_)
   );
-  \$_AND_  _230_ (
-    .A(_009_),
-    .B(_021_),
+  \$_NAND_  _239_ (
+    .A(_019_),
+    .B(_074_),
     .Y(_075_)
   );
-  \$_AND_  _231_ (
-    .A(_074_),
+  \$_AND_  _240_ (
+    .A(req_num),
     .B(_075_),
     .Y(_076_)
   );
-  \$_AND_  _232_ (
-    .A(_073_),
+  \$_OR_  _241_ (
+    .A(req_num_i),
     .B(_076_),
-    .Y(_077_)
-  );
-  \$_AND_  _233_ (
-    .A(_033_),
-    .B(_045_),
-    .Y(_078_)
-  );
-  \$_AND_  _234_ (
-    .A(_077_),
-    .B(_078_),
-    .Y(_079_)
-  );
-  \$_AND_  _235_ (
-    .A(_072_),
-    .B(_079_),
-    .Y(_080_)
-  );
-  \$_NOT_  _236_ (
-    .A(_080_),
-    .Y(_004_)
-  );
-  \$_XNOR_  _237_ (
-    .A(num_to_send_o[1]),
-    .B(\rng_rd.temp_mem [1]),
-    .Y(_081_)
-  );
-  \$_XNOR_  _238_ (
-    .A(num_to_send_o[2]),
-    .B(\rng_rd.temp_mem [2]),
-    .Y(_082_)
-  );
-  \$_XNOR_  _239_ (
-    .A(num_to_send_o[0]),
-    .B(\rng_rd.temp_mem [0]),
-    .Y(_083_)
-  );
-  \$_AND_  _240_ (
-    .A(_082_),
-    .B(_083_),
-    .Y(_084_)
-  );
-  \$_NAND_  _241_ (
-    .A(_081_),
-    .B(_084_),
-    .Y(_085_)
+    .Y(req_num)
   );
   \$_AND_  _242_ (
-    .A(num_i_bar[0]),
+    .A(\rng_rd.wr_ff2 ),
+    .B(_120_),
+    .Y(_003_)
+  );
+  \$_NOR_  _243_ (
+    .A(_119_),
+    .B(_075_),
+    .Y(_004_)
+  );
+  \$_NAND_  _244_ (
+    .A(_116_),
+    .B(\rng_dp.inst.next_num_o [0]),
+    .Y(_077_)
+  );
+  \$_AND_  _245_ (
+    .A(\rng_dp.inst.next_num_o [1]),
+    .B(_000_),
+    .Y(_078_)
+  );
+  \$_XOR_  _246_ (
+    .A(\rng_dp.inst.next_num_o [1]),
+    .B(\rng_dp.inst.next_num_o [0]),
+    .Y(_001_)
+  );
+  \$_NAND_  _247_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(\rng_dp.inst.next_num_o [0]),
+    .Y(_079_)
+  );
+  \$_NAND_  _248_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(\rng_dp.inst.next_num_o [1]),
+    .Y(_080_)
+  );
+  \$_OR_  _249_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(\rng_dp.inst.next_num_o [0]),
+    .Y(_081_)
+  );
+  \$_MUX_  _250_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(_079_),
+    .S(\rng_dp.inst.next_num_o [1]),
+    .Y(_082_)
+  );
+  \$_AND_  _251_ (
+    .A(_081_),
+    .B(_082_),
+    .Y(_002_)
+  );
+  \$_NAND_  _252_ (
+    .A(_079_),
+    .B(_081_),
+    .Y(_083_)
+  );
+  \$_NOR_  _253_ (
+    .A(\rng_dp.seed_sel_i [0]),
+    .B(\rng_dp.seed_sel_i [1]),
+    .Y(_084_)
+  );
+  \$_AND_  _254_ (
+    .A(\rng_dp.seed_sel_i [0]),
+    .B(\rng_dp.seed_sel_i [1]),
+    .Y(_085_)
+  );
+  \$_NAND_  _255_ (
+    .A(_083_),
     .B(_085_),
     .Y(_086_)
   );
-  \$_AND_  _243_ (
-    .A(_080_),
-    .B(_086_),
-    .Y(\rng_rd.temp_mem [0])
-  );
-  \$_AND_  _244_ (
-    .A(num_i_bar[1]),
-    .B(_085_),
+  \$_NAND_  _256_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(_001_),
     .Y(_087_)
   );
-  \$_AND_  _245_ (
-    .A(_080_),
+  \$_AND_  _257_ (
+    .A(_122_),
     .B(_087_),
-    .Y(\rng_rd.temp_mem [1])
-  );
-  \$_AND_  _246_ (
-    .A(num_i_bar[2]),
-    .B(_085_),
     .Y(_088_)
   );
-  \$_AND_  _247_ (
-    .A(_080_),
+  \$_NAND_  _258_ (
+    .A(_081_),
     .B(_088_),
-    .Y(\rng_rd.temp_mem [2])
-  );
-  \$_AND_  _248_ (
-    .A(\rng_rd.rqn ),
-    .B(req_num),
     .Y(_089_)
   );
-  \$_OR_  _249_ (
-    .A(req_num_i),
-    .B(_089_),
-    .Y(req_num)
-  );
-  \$_NOR_  _250_ (
-    .A(_147_[0]),
-    .B(\rng_dp.seed_sel_i [1]),
+  \$_MUX_  _259_ (
+    .A(_115_),
+    .B(\rng_dp.inst.next_num_o [1]),
+    .S(\rng_dp.inst.next_num_o [0]),
     .Y(_090_)
   );
-  \$_AND_  _251_ (
-    .A(_147_[0]),
-    .B(\rng_dp.seed_sel_i [1]),
+  \$_NAND_  _260_ (
+    .A(_084_),
+    .B(_090_),
     .Y(_091_)
   );
-  \$_OR_  _252_ (
-    .A(_090_),
-    .B(_091_),
-    .Y(_148_[1])
-  );
-  \$_AND_  _253_ (
-    .A(\rng_rd.wr_ff2 ),
-    .B(_135_),
+  \$_AND_  _261_ (
+    .A(_121_),
+    .B(_077_),
     .Y(_092_)
   );
-  \$_AND_  _254_ (
+  \$_NAND_  _262_ (
     .A(_080_),
     .B(_092_),
-    .Y(_005_)
-  );
-  \$_NOT_  _255_ (
-    .A(_005_),
-    .Y(_007_)
-  );
-  \$_AND_  _256_ (
-    .A(rst_i),
-    .B(_005_),
-    .Y(_006_)
-  );
-  \$_OR_  _257_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(\rng_dp.inst.next_num_o [0]),
     .Y(_093_)
   );
-  \$_XNOR_  _258_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(\rng_dp.inst.next_num_o [0]),
+  \$_AND_  _263_ (
+    .A(_091_),
+    .B(_093_),
     .Y(_094_)
   );
-  \$_NOR_  _259_ (
-    .A(\rng_dp.seed_sel_i [0]),
-    .B(\rng_dp.seed_sel_i [1]),
+  \$_AND_  _264_ (
+    .A(_089_),
+    .B(_094_),
     .Y(_095_)
   );
-  \$_AND_  _260_ (
-    .A(\rng_dp.seed_sel_i [0]),
-    .B(\rng_dp.seed_sel_i [1]),
+  \$_NAND_  _265_ (
+    .A(_086_),
+    .B(_095_),
+    .Y(_139_[0])
+  );
+  \$_MUX_  _266_ (
+    .A(_115_),
+    .B(\rng_dp.inst.next_num_o [0]),
+    .S(\rng_dp.inst.next_num_o [1]),
     .Y(_096_)
   );
-  \$_NAND_  _261_ (
-    .A(_094_),
+  \$_NAND_  _267_ (
+    .A(_085_),
     .B(_096_),
     .Y(_097_)
   );
-  \$_NAND_  _262_ (
-    .A(\rng_dp.inst.next_num_o [0]),
-    .B(_134_),
+  \$_MUX_  _268_ (
+    .A(_116_),
+    .B(\rng_dp.inst.next_num_o [0]),
+    .S(\rng_dp.inst.next_num_o [2]),
     .Y(_098_)
   );
-  \$_AND_  _263_ (
-    .A(_090_),
+  \$_NAND_  _269_ (
+    .A(_084_),
     .B(_098_),
     .Y(_099_)
   );
-  \$_NAND_  _264_ (
+  \$_OR_  _270_ (
     .A(\rng_dp.inst.next_num_o [2]),
-    .B(\rng_dp.inst.next_num_o [1]),
+    .B(_078_),
     .Y(_100_)
   );
-  \$_NAND_  _265_ (
-    .A(_099_),
+  \$_NAND_  _271_ (
+    .A(_092_),
     .B(_100_),
     .Y(_101_)
   );
-  \$_NAND_  _266_ (
-    .A(\rng_dp.inst.next_num_o [0]),
+  \$_XNOR_  _272_ (
+    .A(\rng_dp.inst.next_num_o [2]),
     .B(\rng_dp.inst.next_num_o [1]),
     .Y(_102_)
   );
-  \$_NAND_  _267_ (
-    .A(_093_),
+  \$_NAND_  _273_ (
+    .A(_122_),
     .B(_102_),
     .Y(_103_)
   );
-  \$_NAND_  _268_ (
-    .A(_095_),
-    .B(_103_),
+  \$_AND_  _274_ (
+    .A(_097_),
+    .B(_101_),
     .Y(_104_)
   );
-  \$_AND_  _269_ (
-    .A(_101_),
-    .B(_104_),
+  \$_AND_  _275_ (
+    .A(_099_),
+    .B(_103_),
     .Y(_105_)
   );
-  \$_OR_  _270_ (
-    .A(\rng_dp.inst.next_num_o [0]),
-    .B(\rng_dp.inst.next_num_o [1]),
+  \$_NAND_  _276_ (
+    .A(_104_),
+    .B(_105_),
+    .Y(_139_[1])
+  );
+  \$_NAND_  _277_ (
+    .A(\rng_dp.inst.next_num_o [1]),
+    .B(_081_),
     .Y(_106_)
   );
-  \$_AND_  _271_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(_102_),
+  \$_NAND_  _278_ (
+    .A(_079_),
+    .B(_106_),
     .Y(_107_)
   );
-  \$_NAND_  _272_ (
-    .A(_106_),
+  \$_NAND_  _279_ (
+    .A(_085_),
     .B(_107_),
     .Y(_108_)
   );
-  \$_AND_  _273_ (
-    .A(_091_),
-    .B(_093_),
+  \$_XNOR_  _280_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(_078_),
     .Y(_109_)
   );
-  \$_NAND_  _274_ (
-    .A(_108_),
+  \$_NAND_  _281_ (
+    .A(_084_),
     .B(_109_),
     .Y(_110_)
   );
-  \$_AND_  _275_ (
-    .A(_097_),
-    .B(_110_),
+  \$_NAND_  _282_ (
+    .A(\rng_dp.inst.next_num_o [2]),
+    .B(_122_),
     .Y(_111_)
   );
-  \$_NAND_  _276_ (
-    .A(_105_),
-    .B(_111_),
-    .Y(_146_[0])
-  );
-  \$_OR_  _277_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(\rng_dp.inst.next_num_o [1]),
+  \$_NAND_  _283_ (
+    .A(_121_),
+    .B(_083_),
     .Y(_112_)
   );
-  \$_NAND_  _278_ (
-    .A(_102_),
+  \$_AND_  _284_ (
+    .A(_111_),
     .B(_112_),
     .Y(_113_)
   );
-  \$_NAND_  _279_ (
-    .A(_096_),
+  \$_AND_  _285_ (
+    .A(_110_),
     .B(_113_),
     .Y(_114_)
   );
-  \$_OR_  _280_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(_102_),
-    .Y(_115_)
-  );
-  \$_AND_  _281_ (
-    .A(_112_),
-    .B(_115_),
-    .Y(_116_)
-  );
-  \$_NAND_  _282_ (
-    .A(_099_),
-    .B(_116_),
-    .Y(_117_)
-  );
-  \$_MUX_  _283_ (
-    .A(_134_),
-    .B(\rng_dp.inst.next_num_o [0]),
-    .S(\rng_dp.inst.next_num_o [2]),
-    .Y(_118_)
-  );
-  \$_NAND_  _284_ (
-    .A(_095_),
-    .B(_118_),
-    .Y(_119_)
-  );
-  \$_NAND_  _285_ (
-    .A(_100_),
-    .B(_112_),
-    .Y(_120_)
-  );
   \$_NAND_  _286_ (
-    .A(_091_),
-    .B(_120_),
-    .Y(_121_)
+    .A(_108_),
+    .B(_114_),
+    .Y(_139_[2])
   );
-  \$_AND_  _287_ (
-    .A(_119_),
-    .B(_121_),
-    .Y(_122_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[1][0]  /* _287_ */ (
+    .C(clk_i),
+    .D(num_to_send_o[0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[1] [0]),
+    .R(rst_i)
   );
-  \$_AND_  _288_ (
-    .A(_117_),
-    .B(_122_),
-    .Y(_123_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[1][1]  /* _288_ */ (
+    .C(clk_i),
+    .D(num_to_send_o[1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[1] [1]),
+    .R(rst_i)
   );
-  \$_NAND_  _289_ (
-    .A(_114_),
-    .B(_123_),
-    .Y(_146_[1])
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[1][2]  /* _289_ */ (
+    .C(clk_i),
+    .D(num_to_send_o[2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[1] [2]),
+    .R(rst_i)
   );
-  \$_OR_  _290_ (
-    .A(\rng_dp.inst.next_num_o [0]),
-    .B(_100_),
-    .Y(_124_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[8][0]  /* _290_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[7] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[8] [0]),
+    .R(rst_i)
   );
-  \$_NAND_  _291_ (
-    .A(_116_),
-    .B(_124_),
-    .Y(_125_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[8][1]  /* _291_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[7] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[8] [1]),
+    .R(rst_i)
   );
-  \$_NAND_  _292_ (
-    .A(_095_),
-    .B(_125_),
-    .Y(_126_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[8][2]  /* _292_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[7] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[8] [2]),
+    .R(rst_i)
   );
-  \$_NAND_  _293_ (
-    .A(\rng_dp.inst.next_num_o [0]),
-    .B(_112_),
-    .Y(_127_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[9][0]  /* _293_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[8] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[9] [0]),
+    .R(rst_i)
   );
-  \$_NAND_  _294_ (
-    .A(_100_),
-    .B(_127_),
-    .Y(_128_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[9][1]  /* _294_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[8] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[9] [1]),
+    .R(rst_i)
   );
-  \$_NAND_  _295_ (
-    .A(_096_),
-    .B(_128_),
-    .Y(_129_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[9][2]  /* _295_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[8] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[9] [2]),
+    .R(rst_i)
   );
-  \$_NAND_  _296_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(_091_),
-    .Y(_130_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[4][0]  /* _296_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[3] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[4] [0]),
+    .R(rst_i)
   );
-  \$_NAND_  _297_ (
-    .A(_090_),
-    .B(_094_),
-    .Y(_131_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[4][1]  /* _297_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[3] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[4] [1]),
+    .R(rst_i)
   );
-  \$_AND_  _298_ (
-    .A(_130_),
-    .B(_131_),
-    .Y(_132_)
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[4][2]  /* _298_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[3] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[4] [2]),
+    .R(rst_i)
   );
-  \$_AND_  _299_ (
-    .A(_129_),
-    .B(_132_),
-    .Y(_133_)
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[1]  /* _299_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [0]),
+    .E(_004_),
+    .Q(\rng_rd.vld [1]),
+    .R(rst_i)
   );
-  \$_NAND_  _300_ (
-    .A(_126_),
-    .B(_133_),
-    .Y(_146_[2])
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[0]  /* _300_ */ (
+    .C(clk_i),
+    .D(1'h1),
+    .E(_004_),
+    .Q(\rng_rd.vld [0]),
+    .R(rst_i)
   );
-  \$_AND_  _301_ (
-    .A(\rng_rd.temp_mem [0]),
-    .B(_005_),
-    .Y(_003_)
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[2]  /* _301_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [1]),
+    .E(_004_),
+    .Q(\rng_rd.vld [2]),
+    .R(rst_i)
   );
-  \$_AND_  _302_ (
-    .A(_102_),
-    .B(_106_),
-    .Y(_001_)
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[3]  /* _302_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [2]),
+    .E(_004_),
+    .Q(\rng_rd.vld [3]),
+    .R(rst_i)
   );
-  \$_XNOR_  _303_ (
-    .A(\rng_dp.inst.next_num_o [2]),
-    .B(_102_),
-    .Y(_002_)
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[4]  /* _303_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [3]),
+    .E(_004_),
+    .Q(\rng_rd.vld [4]),
+    .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_dp.inst.next_num_o_reg[0]  /* _304_ */ (
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[5]  /* _304_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [4]),
+    .E(_004_),
+    .Q(\rng_rd.vld [5]),
+    .R(rst_i)
+  );
+  \$_DFF_PN0_  \rng_rd.wr_ff1_reg  /* _305_ */ (
+    .C(clk_i),
+    .D(wr_i),
+    .Q(\rng_rd.wr_ff1 ),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[6]  /* _306_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [5]),
+    .E(_004_),
+    .Q(\rng_rd.vld [6]),
+    .R(rst_i)
+  );
+  \$_DFF_PN0_  \rng_rd.wr_ff2_reg  /* _307_ */ (
+    .C(clk_i),
+    .D(\rng_rd.wr_ff1 ),
+    .Q(\rng_rd.wr_ff2 ),
+    .R(rst_i)
+  );
+  \$_DFF_PN0_  \rng_rd.wr_ff2_d_reg  /* _308_ */ (
+    .C(clk_i),
+    .D(\rng_rd.wr_ff2 ),
+    .Q(\rng_rd.wr_ff2_d ),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[7]  /* _309_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [6]),
+    .E(_004_),
+    .Q(\rng_rd.vld [7]),
+    .R(rst_i)
+  );
+  \$_DFF_PN0_  \rng_rd.wr_pulse_reg  /* _310_ */ (
+    .C(clk_i),
+    .D(_003_),
+    .Q(\rng_rd.wr_pulse ),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[8]  /* _311_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [7]),
+    .E(_004_),
+    .Q(\rng_rd.vld [8]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[9]  /* _312_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [8]),
+    .E(_004_),
+    .Q(\rng_rd.vld [9]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[10]  /* _313_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [9]),
+    .E(_004_),
+    .Q(\rng_rd.vld [10]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.vld_reg[11]  /* _314_ */ (
+    .C(clk_i),
+    .D(\rng_rd.vld [10]),
+    .E(_004_),
+    .Q(\rng_rd.vld [11]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[11][0]  /* _315_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[10] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[11] [0]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[11][1]  /* _316_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[10] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[11] [1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[11][2]  /* _317_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[10] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[11] [2]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \num_to_send_o_reg[0]  /* _318_ */ (
+    .C(clk_i),
+    .D(num_i_bar[0]),
+    .E(_004_),
+    .Q(num_to_send_o[0]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \num_to_send_o_reg[1]  /* _319_ */ (
+    .C(clk_i),
+    .D(num_i_bar[1]),
+    .E(_004_),
+    .Q(num_to_send_o[1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \num_to_send_o_reg[2]  /* _320_ */ (
+    .C(clk_i),
+    .D(num_i_bar[2]),
+    .E(_004_),
+    .Q(num_to_send_o[2]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[6][0]  /* _321_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[5] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[6] [0]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[6][1]  /* _322_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[5] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[6] [1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[6][2]  /* _323_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[5] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[6] [2]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[3][0]  /* _324_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[2] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[3] [0]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[3][1]  /* _325_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[2] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[3] [1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[3][2]  /* _326_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[2] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[3] [2]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[10][0]  /* _327_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[9] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[10] [0]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[10][1]  /* _328_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[9] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[10] [1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[10][2]  /* _329_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[9] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[10] [2]),
+    .R(rst_i)
+  );
+  \$_DFF_PN0_  \rng_dp.seed_sel_i_reg[0]  /* _330_ */ (
+    .C(clk_i),
+    .D(_140_[0]),
+    .Q(\rng_dp.seed_sel_i [0]),
+    .R(rst_i)
+  );
+  \$_DFF_PN0_  \rng_dp.seed_sel_i_reg[1]  /* _331_ */ (
+    .C(clk_i),
+    .D(_141_[1]),
+    .Q(\rng_dp.seed_sel_i [1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[7][0]  /* _332_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[6] [0]),
+    .E(_004_),
+    .Q(\rng_rd.mem[7] [0]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[7][1]  /* _333_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[6] [1]),
+    .E(_004_),
+    .Q(\rng_rd.mem[7] [1]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[7][2]  /* _334_ */ (
+    .C(clk_i),
+    .D(\rng_rd.mem[6] [2]),
+    .E(_004_),
+    .Q(\rng_rd.mem[7] [2]),
+    .R(rst_i)
+  );
+  \$_DFFE_PN0P_  \rng_dp.inst.next_num_o_reg[0]  /* _335_ */ (
     .C(clk_i),
     .D(_000_),
     .E(req_num),
     .Q(\rng_dp.inst.next_num_o [0]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_dp.inst.next_num_o_reg[1]  /* _305_ */ (
+  \$_DFFE_PN0P_  \rng_dp.inst.next_num_o_reg[1]  /* _336_ */ (
     .C(clk_i),
     .D(_001_),
     .E(req_num),
     .Q(\rng_dp.inst.next_num_o [1]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_dp.inst.next_num_o_reg[2]  /* _306_ */ (
+  \$_DFFE_PN0P_  \rng_dp.inst.next_num_o_reg[2]  /* _337_ */ (
     .C(clk_i),
     .D(_002_),
     .E(req_num),
     .Q(\rng_dp.inst.next_num_o [2]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[8][0]  /* _307_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[7] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[8] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[8][1]  /* _308_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[7] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[8] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[8][2]  /* _309_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[7] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[8] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[4][0]  /* _310_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[3] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[4] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[4][1]  /* _311_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[3] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[4] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[4][2]  /* _312_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[3] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[4] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PP_  \rng_rd.rqn_reg  /* _313_ */ (
-    .C(clk_i),
-    .D(_004_),
-    .E(rst_i),
-    .Q(\rng_rd.rqn )
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[6][0]  /* _314_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[5] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[6] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[6][1]  /* _315_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[5] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[6] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[6][2]  /* _316_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[5] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[6] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[10][0]  /* _317_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[9] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[10] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[10][1]  /* _318_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[9] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[10] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[10][2]  /* _319_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[9] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[10] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[3][0]  /* _320_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[2] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[3] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[3][1]  /* _321_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[2] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[3] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[3][2]  /* _322_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[2] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[3] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[0]  /* _323_ */ (
-    .C(clk_i),
-    .D(1'h1),
-    .E(_005_),
-    .Q(\rng_rd.vld [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[1]  /* _324_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [0]),
-    .E(_005_),
-    .Q(\rng_rd.vld [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[2]  /* _325_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [1]),
-    .E(_005_),
-    .Q(\rng_rd.vld [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[3]  /* _326_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [2]),
-    .E(_005_),
-    .Q(\rng_rd.vld [3]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[4]  /* _327_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [3]),
-    .E(_005_),
-    .Q(\rng_rd.vld [4]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[11]  /* _328_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [10]),
-    .E(_005_),
-    .Q(\rng_rd.vld [11]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[10]  /* _329_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [9]),
-    .E(_005_),
-    .Q(\rng_rd.vld [10]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[9]  /* _330_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [8]),
-    .E(_005_),
-    .Q(\rng_rd.vld [9]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[8]  /* _331_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [7]),
-    .E(_005_),
-    .Q(\rng_rd.vld [8]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[7]  /* _332_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [6]),
-    .E(_005_),
-    .Q(\rng_rd.vld [7]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[6]  /* _333_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [5]),
-    .E(_005_),
-    .Q(\rng_rd.vld [6]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.vld_reg[5]  /* _334_ */ (
-    .C(clk_i),
-    .D(\rng_rd.vld [4]),
-    .E(_005_),
-    .Q(\rng_rd.vld [5]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[7][0]  /* _335_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[6] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[7] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[7][1]  /* _336_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[6] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[7] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[7][2]  /* _337_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[6] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[7] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PP_  \num_to_send_o_reg[0]  /* _338_ */ (
-    .C(clk_i),
-    .D(_003_),
-    .E(rst_i),
-    .Q(num_to_send_o[0])
-  );
-  \$_SDFFCE_PP0P_  \num_to_send_o_reg[1]  /* _339_ */ (
-    .C(clk_i),
-    .D(\rng_rd.temp_mem [1]),
-    .E(rst_i),
-    .Q(num_to_send_o[1]),
-    .R(_007_)
-  );
-  \$_SDFFCE_PP0P_  \num_to_send_o_reg[2]  /* _340_ */ (
-    .C(clk_i),
-    .D(\rng_rd.temp_mem [2]),
-    .E(rst_i),
-    .Q(num_to_send_o[2]),
-    .R(_007_)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[2][0]  /* _341_ */ (
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[2][0]  /* _338_ */ (
     .C(clk_i),
     .D(\rng_rd.mem[1] [0]),
-    .E(_005_),
+    .E(_004_),
     .Q(\rng_rd.mem[2] [0]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[2][1]  /* _342_ */ (
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[2][1]  /* _339_ */ (
     .C(clk_i),
     .D(\rng_rd.mem[1] [1]),
-    .E(_005_),
+    .E(_004_),
     .Q(\rng_rd.mem[2] [1]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[2][2]  /* _343_ */ (
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[2][2]  /* _340_ */ (
     .C(clk_i),
     .D(\rng_rd.mem[1] [2]),
-    .E(_005_),
+    .E(_004_),
     .Q(\rng_rd.mem[2] [2]),
     .R(rst_i)
   );
-  \$_DFFE_PP_  \rng_rd.mem_reg[11][0]  /* _344_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[10] [0]),
-    .E(_006_),
-    .Q(\rng_rd.mem[11] [0])
-  );
-  \$_DFFE_PP_  \rng_rd.mem_reg[11][1]  /* _345_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[10] [1]),
-    .E(_006_),
-    .Q(\rng_rd.mem[11] [1])
-  );
-  \$_DFFE_PP_  \rng_rd.mem_reg[11][2]  /* _346_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[10] [2]),
-    .E(_006_),
-    .Q(\rng_rd.mem[11] [2])
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[5][0]  /* _347_ */ (
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[5][0]  /* _341_ */ (
     .C(clk_i),
     .D(\rng_rd.mem[4] [0]),
-    .E(_005_),
+    .E(_004_),
     .Q(\rng_rd.mem[5] [0]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[5][1]  /* _348_ */ (
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[5][1]  /* _342_ */ (
     .C(clk_i),
     .D(\rng_rd.mem[4] [1]),
-    .E(_005_),
+    .E(_004_),
     .Q(\rng_rd.mem[5] [1]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[5][2]  /* _349_ */ (
+  \$_DFFE_PN0P_  \rng_rd.mem_reg[5][2]  /* _343_ */ (
     .C(clk_i),
     .D(\rng_rd.mem[4] [2]),
-    .E(_005_),
+    .E(_004_),
     .Q(\rng_rd.mem[5] [2]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[0][0]  /* _350_ */ (
+  \$_DFFE_PN0P_  \num_i_bar_reg[0]  /* _344_ */ (
     .C(clk_i),
-    .D(\rng_rd.temp_mem [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[0] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[0][1]  /* _351_ */ (
-    .C(clk_i),
-    .D(\rng_rd.temp_mem [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[0] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[0][2]  /* _352_ */ (
-    .C(clk_i),
-    .D(\rng_rd.temp_mem [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[0] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[1][0]  /* _353_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[0] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[1] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[1][1]  /* _354_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[0] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[1] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[1][2]  /* _355_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[0] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[1] [2]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[9][0]  /* _356_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[8] [0]),
-    .E(_005_),
-    .Q(\rng_rd.mem[9] [0]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[9][1]  /* _357_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[8] [1]),
-    .E(_005_),
-    .Q(\rng_rd.mem[9] [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \rng_rd.mem_reg[9][2]  /* _358_ */ (
-    .C(clk_i),
-    .D(\rng_rd.mem[8] [2]),
-    .E(_005_),
-    .Q(\rng_rd.mem[9] [2]),
-    .R(rst_i)
-  );
-  \$_DFF_PN0_  \rng_dp.seed_sel_i_reg[0]  /* _359_ */ (
-    .C(clk_i),
-    .D(_147_[0]),
-    .Q(\rng_dp.seed_sel_i [0]),
-    .R(rst_i)
-  );
-  \$_DFF_PN0_  \rng_dp.seed_sel_i_reg[1]  /* _360_ */ (
-    .C(clk_i),
-    .D(_148_[1]),
-    .Q(\rng_dp.seed_sel_i [1]),
-    .R(rst_i)
-  );
-  \$_DFFE_PN0P_  \num_i_bar_reg[0]  /* _361_ */ (
-    .C(clk_i),
-    .D(_146_[0]),
+    .D(_139_[0]),
     .E(req_num),
     .Q(num_i_bar[0]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \num_i_bar_reg[1]  /* _362_ */ (
+  \$_DFFE_PN0P_  \num_i_bar_reg[1]  /* _345_ */ (
     .C(clk_i),
-    .D(_146_[1]),
+    .D(_139_[1]),
     .E(req_num),
     .Q(num_i_bar[1]),
     .R(rst_i)
   );
-  \$_DFFE_PN0P_  \num_i_bar_reg[2]  /* _363_ */ (
+  \$_DFFE_PN0P_  \num_i_bar_reg[2]  /* _346_ */ (
     .C(clk_i),
-    .D(_146_[2]),
+    .D(_139_[2]),
     .E(req_num),
     .Q(num_i_bar[2]),
     .R(rst_i)
   );
-  \$_DFF_PN0_  \rng_rd.wr_ff2_d_reg  /* _364_ */ (
-    .C(clk_i),
-    .D(\rng_rd.wr_ff2 ),
-    .Q(\rng_rd.wr_ff2_d ),
-    .R(rst_i)
-  );
-  \$_DFF_PN0_  \rng_rd.wr_ff2_reg  /* _365_ */ (
-    .C(clk_i),
-    .D(\rng_rd.wr_ff1 ),
-    .Q(\rng_rd.wr_ff2 ),
-    .R(rst_i)
-  );
-  \$_DFF_PN0_  \rng_rd.wr_ff1_reg  /* _366_ */ (
-    .C(clk_i),
-    .D(wr_i),
-    .Q(\rng_rd.wr_ff1 ),
-    .R(rst_i)
-  );
-  assign _147_[1] = \rng_dp.seed_sel_i [1];
-  assign _148_[0] = _147_[0];
+  assign _140_[1] = \rng_dp.seed_sel_i [1];
+  assign _141_[0] = _140_[0];
 endmodule

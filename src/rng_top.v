@@ -24,22 +24,21 @@ module rng_top
     parameter T_DEPTH       = (DEPTH-1),                //Profundidade real
     parameter WIDTH         = 3,                        //Largura
     parameter T_WIDTH       = (WIDTH-1),                //Largura "real" para uso vetorial
-    parameter SEED_TOT_NUMB = 12,                        //Total de números das seeds agrupados
+    parameter SEED_TOT_NUMB = 32,                       //Total de números das seeds agrupados
     parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),      //Total "real" de números das seeds agrupados
-    parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),    //Largura do contador de ciclos
+    //parameter COUNT_WIDTH   = $clog2(SEED_TOT_NUMB),    //Largura do contador de ciclos
+    parameter COUNT_WIDTH   = 5,                        //Largura do contador de ciclos
     parameter T_COUNT_WID   = (COUNT_WIDTH-1)           //Largura "real" para uso vetorial
 )(
     input clk_i,
-    input start_i,
+    //input start_i,
     input rst_i,
     input req_num_i,
     input wr_i,
-    output reg [T_WIDTH:0] num_to_send_o
+    output [T_WIDTH:0] num_to_send_o
 );
+
     //--------------------------------
-    reg [T_WIDTH:0] next_num;
-    //--------------------------------
-    wire state_bar;
     wire [1:0] seed_bar;
     //--------------------------------
     wire [T_WIDTH:0] num_i_bar;
@@ -48,23 +47,10 @@ module rng_top
 
     wire req_num;
 
-    assign req_num = req_num_i | req_num_again;
+    wire [T_WIDTH:0] data_out;
 
-    rng_control_path                #(
-                                        .DEPTH         (DEPTH),
-                                        .T_DEPTH       (T_DEPTH),
-                                        .WIDTH         (WIDTH),
-                                        .T_WIDTH       (T_WIDTH),
-                                        .SEED_TOT_NUMB (SEED_TOT_NUMB),
-                                        .SD_T_TOT_NUMB (SD_T_TOT_NUMB),
-                                        .COUNT_WIDTH   (COUNT_WIDTH),
-                                        .T_COUNT_WID   (T_COUNT_WID)
-                                    )rng_cp(
-                                        .clk_i          (clk_i),
-                                        .rst_i          (rst_i),
-                                        .req_num_i      (req_num),
-                                        .state_o        (state_bar)
-                                    );
+    assign req_num = req_num_i | req_num_again;
+    assign num_to_send_o = data_out;
 
     rng_data_path                   #(
                                         .DEPTH         (DEPTH),
@@ -94,7 +80,6 @@ module rng_top
                                         .T_COUNT_WID   (T_COUNT_WID)
                                     )rng_sel(
                                         .clk_i          (clk_i),
-                                        .start_i        (start_i),
                                         .rst_i          (rst_i),
                                         .seed_sel_o     (seed_bar)
                                     );
@@ -114,7 +99,7 @@ module rng_top
                                         .req_num_i      (req_num),
                                         .data_i         (num_i_bar),            
                                         .wr_i           (wr_i),
-                                        .data_o         (num_to_send_o),
+                                        .data_o         (data_out),
                                         .req_new_num_o  (req_num_again)
                                     );
 

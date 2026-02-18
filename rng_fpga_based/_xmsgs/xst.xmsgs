@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">i</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">vld&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">mem&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rng_hs_dup_detector</arg>&gt; has a constant value of <arg fmt="%s" index="3">000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">vld&lt;31:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">mem&lt;8:31&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">rng_top</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+</messages>
+
