@@ -1,0 +1,233 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel} % Adaptado para português
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{enumitem}
+
+% Configuração das margens
+\geometry{
+	top=2.5cm,
+	bottom=2.5cm,
+	left=2.5cm,
+	right=2.5cm
+}
+
+\begin{document}
+	
+	% -------------------------------------------------------------------
+	% CAPA (TITLE PAGE)
+	% -------------------------------------------------------------------
+	\begin{titlepage}
+		\centering
+		\vspace*{2cm}
+		
+		{\LARGE \textbf{RNG com não repetição (3 Bits)}}\\[0.5cm]
+		{\Huge \textbf{ESPECIFICAÇÃO}}\\[1.5cm]
+		
+		{\Large Projeto do Bloco Digital}\\[2cm]
+		
+		{\Large \textbf{Matheus Grossi}}\\[3cm]
+		
+		\vfill
+		
+		Data: 20/01/2026\\
+		Rev.: 1
+		
+		\vspace*{1cm}
+	\end{titlepage}
+	
+	% -------------------------------------------------------------------
+	% VERSÕES DO DOCUMENTO
+	% -------------------------------------------------------------------
+	\section*{Histórico de Versões}
+	
+	A tabela abaixo registra o histórico de alterações deste documento:
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\textwidth}{|c|c|X|X|}
+			\hline
+			\textbf{Versão} & \textbf{Data} & \textbf{Autor} & \textbf{Descrição das Mudanças} \\
+			\hline
+			1.0 & 20/01/2026 & Matheus Grossi & Versão inicial (RNG - 3 bits). \\
+			\hline
+		\end{tabularx}
+	\end{table}
+	
+	% -------------------------------------------------------------------
+	% ACRÔNIMOS
+	% -------------------------------------------------------------------
+	\section*{Siglas e Acrônimos}
+	
+	\begin{tabular}{ll}
+		\textbf{RNG}  & Random Number Generator (Gerador de Números Aleatórios) \\
+		\textbf{PRNG} & Pseudo-Random Number Generator \\
+		\textbf{ASIC} & Application Specific Integrated Circuit \\
+		\textbf{FPGA} & Field-Programmable Gate Array \\
+		\textbf{FSM}  & Finite State Machine (Máquina de Estados Finita) \\
+		\textbf{HDL}  & Hardware Description Language \\
+		\textbf{RTL}  & Register Transfer Level \\
+	\end{tabular}
+	
+	\newpage
+	
+	% -------------------------------------------------------------------
+	% CONTEÚDO PRINCIPAL
+	% -------------------------------------------------------------------
+	
+	\section{Visão Geral e Objetivos}
+	
+	Este projeto consiste na implementação em Verilog de um Gerador de Números Pseudoaleatórios (PRNG). O sistema foi projetado para gerar números de \textbf{3 bits} (faixa de 0 a 7) utilizando 4 sementes (\textit{seeds}) distintas baseadas em tabelas de permutação.
+	
+
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=1.05\textwidth]{../diagrams/topview/topview.png}}
+		\caption{Vista de Topo do Sistema (Topview)}
+		\label{fig:topview}
+	\end{figure}
+	
+	A principal característica deste projeto é o mecanismo de \textbf{detecção de duplicatas}, que assegura que os números gerados não se repitam dentro de um ciclo de operação, garantindo a unicidade da saída até que a sequência seja reiniciada ou o buffer seja limpo.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=0.6\textwidth]{../diagrams/soc_view.png}}
+		\caption{Vista Pós-Síntese do SoC}
+		\label{fig:socview}
+	\end{figure}
+	
+	\section{Identificação do Projeto (RTL Design)}
+	Este design é implementado utilizando HDL padrão de indústria e estruturado para facilitar a integração e síntese.
+	
+	\begin{itemize}
+		\item \textbf{Nome do bloco:} RNG Não Repetitivo (3 bits)
+		\item \textbf{Linguagem de Descrição:} Verilog
+		\item \textbf{Tecnologias Alvo:} FPGA e ASIC
+		\item \textbf{Características Chave:} Interface de Handshake, 4 Seeds, Histórico de não-repetição.
+	\end{itemize}
+	
+	Abaixo estão as vistas explodidas do design após síntese em FPGA:
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=0.65\textwidth]{../diagrams/fpga_post_synth/top_view.png}}
+		\caption{Visão de Topo do Circuito (Síntese)}
+	\end{figure}
+	
+	% Vistas Explodidas Separadas Verticalmente
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=0.65\textwidth]{../diagrams/fpga_post_synth/xplode_view_pt1.png}}
+		\caption{Vista Explodida 1}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=0.65\textwidth]{../diagrams/fpga_post_synth/xplode_view_pt2.png}}
+		\caption{Vista Explodida 2}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=0.65\textwidth]{../diagrams/fpga_post_synth/xplode_view_pt3.png}}
+		\caption{Vista Explodida 3}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=0.65\textwidth]{../diagrams/fpga_post_synth/xplode_view_pt4.png}}
+		\caption{Vista Explodida 4}
+	\end{figure}
+	
+	\section{Fluxo de Funcionamento e Timing}
+	O bloco opera através de um fluxo coordenado para garantir a validade dos dados:
+	
+	\begin{enumerate}
+		\item \textbf{Reset:} O sistema é resetado (\texttt{rst\_i}), limpando a memória do detector de duplicatas.
+		\item \textbf{Seleção de Seed:} O módulo \texttt{rng\_selector} utiliza um contador \textit{free-running} para definir qual das 4 tabelas será usada.
+		\item \textbf{Geração e Validação:} O \texttt{rng\_data\_path} gera um candidato. O \texttt{rng\_hs\_dup\_detector} verifica duplicatas. Se existir, descarta e busca o próximo. Se for único, disponibiliza na saída.
+		\item \textbf{Confirmação (Handshake):} O sinal \texttt{wr\_i} confirma a leitura e salva o valor no histórico.
+	\end{enumerate}
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=1.0\textwidth]{../diagrams/timing/timing.png}}
+		\caption{Diagrama de Temporização (Timing)}
+		\label{fig:timing}
+	\end{figure}
+	
+	\section{Parâmetros de Configuração}
+	
+	O sistema utiliza parâmetros para cálculo automático de larguras de barramento e profundidade de memória.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabularx}{\textwidth}{l l X}
+			\toprule
+			\textbf{Parâmetro} & \textbf{Padrão} & \textbf{Descrição} \\
+			\midrule
+			DEPTH & 72 & Profundidade base para cálculos de dimensão. \\
+			T\_DEPTH & DEPTH-1 & Profundidade real (zero-based). \\
+			WIDTH & 3 & Largura do número gerado (0 a 7). \\
+			T\_WIDTH & WIDTH-1 & Largura real do vetor de dados. \\
+			SEED\_TOT\_NUMB & 12 & Total de números agrupados nas sementes. \\
+			COUNT\_WIDTH & \$clog2(...) & Largura do contador de ciclos (4 bits). \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	
+	\section{Visão Geral do Sistema}
+	
+	\subsection{Interfaces do Bloco}
+	A tabela abaixo descreve os sinais do módulo principal \texttt{rng\_top}.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabularx}{\textwidth}{l c c X}
+			\toprule
+			\textbf{Nome} & \textbf{Dir} & \textbf{Bits} & \textbf{Descrição Funcional} \\
+			\midrule
+			clk\_i & I & 1 & Clock do sistema. \\
+			rst\_i & I & 1 & Reset assíncrono (Active Low). \\
+			req\_num\_i & I & 1 & Requisição de novo número aleatório. \\
+			wr\_i & I & 1 & Sinal de escrita/confirmação. Salva no histórico de não-repetição. \\
+			num\_to\_send\_o & O & 3 & Número pseudoaleatório válido gerado. \\
+			\bottomrule
+		\end{tabularx}
+		\caption{Definição de Interfaces (I/O)}
+		\label{tab:io_desc}
+	\end{table}
+	
+	\subsection{Estrutura de Sub-blocos}
+	O projeto está organizado nos seguintes módulos funcionais:
+	
+	\begin{itemize}
+		\item \textbf{rng\_top:} Módulo topo que integra controle, dados e detector.
+		\item \textbf{rng\_data\_path:} Seleciona o valor numérico via multiplexação baseada na seed e índice.
+		\item \textbf{rng\_selector:} Gera o sinal de seleção de seed (2 bits) de forma pseudoaleatória.
+		\item \textbf{rng\_hs\_dup\_detector:} Memória de histórico e lógica de comparação. Rejeita números repetidos e armazena novos valores válidos mediante \texttt{wr\_i}.
+		\item \textbf{rng\_data\_path\_counter:} Contador cíclico de 3 bits para percorrer as tabelas.
+	\end{itemize}
+	
+	\section{Verificação e Simulação}
+	Os ambientes de teste estão localizados em \texttt{testbenchs} e utilizam scripts de automação (Makefiles/Bash) para geração de ondas. O waveform abaixo demonstra o comportamento real obtido em simulação.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{\includegraphics[width=1.0\textwidth]{../diagrams/waveform.png}}
+		\caption{Waveform da Simulação}
+		\label{fig:waveform}
+	\end{figure}
+	
+	\vfill
+	\begin{center}
+		\textbf{Metodologia:} Design Síncrono com validação via Handshake e Testbenchs Automatizados.
+	\end{center}
+	
+\end{document}

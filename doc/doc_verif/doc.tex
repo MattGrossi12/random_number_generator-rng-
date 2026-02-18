@@ -1,0 +1,95 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry} % Pacote para gerenciar as margens e orientação
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+% ALTERAÇÃO AQUI: Adicionado 'landscape' para virar a folha
+\geometry{landscape, margin=2.5cm}
+
+\title{Requisitos de verificação}
+\author{Matheus Grossi}
+\date{2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Identificação do Bloco}
+\begin{itemize}[label=\textbullet]
+    \item \textbf{1.1. Nome do bloco:} Gerador de números pseudo-aleatórios de 3 bits com não repetição (RNG)
+    \item \textbf{1.2. Versão:} 1.0
+    \item \textbf{1.3. Autor do bloco:} Matheus Grossi
+    \item \textbf{1.4. Responsável pela verificação:} Matheus Grossi.
+    \item \textbf{1.5. Ferramentas utilizadas:} EDA Playground/Xcellium + Icarus Verilog (Versão 13.0) + gtkwave + SimVision
+    \item \textbf{1.6. Data do início e término:} 24/01/2026 - Em andamento
+\end{itemize}
+
+\section{Objetivo da Verificação}
+O objetivo da verificação do bloco é assegurar que:
+\begin{itemize}
+    \item O comportamento da máquina de estados condiz com o esperado em esboço;
+    \item Confirmar se as leituras de sinais e endereços ocorrem como esperado;
+    \item \textbf{Robustez temporal:} o bloco se comporte corretamente sob latências variáveis de \texttt{clk\_i} (25MHz, 50MHz e 100MHz).
+\end{itemize}
+
+\section{Casos de Teste Executados}
+% DICA: Como a página agora é larga, usei \centering para centralizar a tabela.
+% Se quiser que a tabela ocupe a largura total, considere usar o pacote 'tabularx'.
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{|p{4cm}|p{5cm}|p{4cm}|p{4cm}|p{4cm}|} % Aumentei um pouco as larguras para aproveitar o espaço horizontal
+\hline
+\textbf{ID do Teste} & \textbf{Descrição} & \textbf{Sequência Principal} & \textbf{Ambiente} & \textbf{Critério de Sucesso} \\ \hline
+test & Cobertura Funcional: Teste focado em certificar se em solicitações diversas com períodos de tempo não cíclicos o bloco se comporta como esperado. & Sequência direcionada sem erros. & build\_phase(self) & Atingir 100\% da cobertura funcional. \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Resultados}
+\subsection{Sumário dos testes executados}
+\begin{itemize}
+    \item \textbf{Total de sequências:} À definir
+    \item \textbf{Passaram:} À definir
+    \item \textbf{Falharam:} À definir
+\end{itemize}
+
+\subsection{Comportamentos esperados observados?}
+À definir
+
+\subsection{Comportamentos inesperados detectados?}
+À definir
+
+\section{Análise dos Resultados}
+\subsection{Interpretação dos casos de sucesso/falha}
+\textbf{Sucesso:} À definir \par
+\textbf{Falha:} À definir
+
+\subsection{Sumário da cobertura de verificação}
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Elemento} & \textbf{Taxa} & \textbf{Total} & \textbf{Atingido} \\ \midrule
+Lines             & 0\%        & 0            & 0               \\
+Functions         & 0\%           & 0              & 0                 \\
+Branches          & 0\%           & 0              & 0                 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Comentários sobre limitações dos testes}
+À definir
+
+\section{Conclusão}
+A verificação do bloco blablabla foi concluída com sucesso, cobrindo 100\% dos cenários previstos. O bloco apresenta comportamento robusto e está apto para uso.
+
+\vfill
+\begin{center}
+\textbf{Ambiente de Verificação:} UVM
+\end{center}
+
+\end{document}

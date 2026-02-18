@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.21)  13 FEB 2026 08:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.21)  18 FEB 2026 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,23 +55,12 @@ Type  H <return>  for immediate help.
                                                   
 l.4291 \ProcessOptions*
                        
-? ^^[[A
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? clear
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? q
-OK, entering \batchmode...
+Valid options are, among others: shorthands=, KeepShorthandsActive,
+activeacute, activegrave, noconfigs, safe=, main=, math=
+headfoot=, strings=, config=, hyphenmap=, or a language name.
+
 Package babel Info: You haven't specified a language as a class or package
 (babel)             option. I'll load 'nil'. Reported on input line 4342.
-
 (/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
 Language: nil 2024/01/07 v24.1 Nil language
 \l@nil=\language6
@@ -200,7 +189,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box56
-) (./doc.aux)
+)
+(./doc.aux)
 \openout1 = `doc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -217,6 +207,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -251,7 +242,6 @@ LaTeX Font Info:    ... okay on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
@@ -265,8 +255,7 @@ LaTeX Font Info:    ... okay on input line 21.
 \MPnumerator=\count280
 \makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks27
-)
-(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -274,50 +263,135 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) [1
+))
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1]
-Overfull \hbox (23.03189pt too wide) in paragraph at lines 91--92
-[]\T1/cmr/m/n/12 Robustez: operação estável em condição ociosa (sem requisições
-) e durante reinicialização
+Overfull \hbox (28.15327pt too wide) in paragraph at lines 86--87
+\T1/cmr/m/n/12 Este projeto consiste na implementação em Verilog de um Gerador 
+de Números Pseudoaleatórios
  []
 
- [2]
-<example-image-a.pdf, id=21, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 148.
-(pdftex.def)             Requested size: 273.14923pt x 204.86888pt.
- [3 </usr/share/texlive/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
+<../diagrams/topview/topview.png, id=15, 1307.88625pt x 571.13374pt>
+File: ../diagrams/topview/topview.png Graphic file (type png)
+<use ../diagrams/topview/topview.png>
+Package pdftex.def Info: ../diagrams/topview/topview.png  used on input line 91
+.
+(pdftex.def)             Requested size: 478.00769pt x 208.7366pt.
+
+Overfull \hbox (29.56357pt too wide) in paragraph at lines 91--92
+ [][] 
+ []
+
+<../diagrams/soc_view.png, id=16, 577.15625pt x 545.03625pt>
+File: ../diagrams/soc_view.png Graphic file (type png)
+<use ../diagrams/soc_view.png>
+Package pdftex.def Info: ../diagrams/soc_view.png  used on input line 100.
+(pdftex.def)             Requested size: 273.14923pt x 257.95514pt.
+[2 <../diagrams/topview/topview.png (PNG copy)> <../diagrams/soc_view.png>]
+Overfull \hbox (10.60173pt too wide) in paragraph at lines 112--113
+[]\T1/cmr/bx/n/12 Características Chave: \T1/cmr/m/n/12 Interface de Handshake,
+ 4 Seeds, Histórico de não-repetição. 
+ []
+
+<../diagrams/fpga_post_synth/top_view.png, id=23, 735.74875pt x 621.32124pt>
+File: ../diagrams/fpga_post_synth/top_view.png Graphic file (type png)
+<use ../diagrams/fpga_post_synth/top_view.png>
+Package pdftex.def Info: ../diagrams/fpga_post_synth/top_view.png  used on inpu
+t line 119.
+(pdftex.def)             Requested size: 295.90588pt x 249.8893pt.
+<../diagrams/fpga_post_synth/xplode_view_pt1.png, id=24, 1135.24126pt x 563.103
+74pt>
+File: ../diagrams/fpga_post_synth/xplode_view_pt1.png Graphic file (type png)
+<use ../diagrams/fpga_post_synth/xplode_view_pt1.png>
+Package pdftex.def Info: ../diagrams/fpga_post_synth/xplode_view_pt1.png  used 
+on input line 126.
+(pdftex.def)             Requested size: 295.90588pt x 146.77298pt.
+<../diagrams/fpga_post_synth/xplode_view_pt2.png, id=25, 1170.3725pt x 579.1637
+6pt>
+File: ../diagrams/fpga_post_synth/xplode_view_pt2.png Graphic file (type png)
+<use ../diagrams/fpga_post_synth/xplode_view_pt2.png>
+Package pdftex.def Info: ../diagrams/fpga_post_synth/xplode_view_pt2.png  used 
+on input line 132.
+(pdftex.def)             Requested size: 295.90588pt x 146.42548pt.
+[3 <../diagrams/fpga_post_synth/top_view.png> <../diagrams/fpga_post_synth/xplo
+de_view_pt1.png>]
+<../diagrams/fpga_post_synth/xplode_view_pt3.png, id=32, 1127.21124pt x 503.882
+5pt>
+File: ../diagrams/fpga_post_synth/xplode_view_pt3.png Graphic file (type png)
+<use ../diagrams/fpga_post_synth/xplode_view_pt3.png>
+Package pdftex.def Info: ../diagrams/fpga_post_synth/xplode_view_pt3.png  used 
+on input line 138.
+(pdftex.def)             Requested size: 295.90588pt x 132.27498pt.
+<../diagrams/fpga_post_synth/xplode_view_pt4.png, id=33, 770.88pt x 640.3925pt>
+
+File: ../diagrams/fpga_post_synth/xplode_view_pt4.png Graphic file (type png)
+<use ../diagrams/fpga_post_synth/xplode_view_pt4.png>
+Package pdftex.def Info: ../diagrams/fpga_post_synth/xplode_view_pt4.png  used 
+on input line 144.
+(pdftex.def)             Requested size: 295.90588pt x 245.81412pt.
+ [4 <../diagrams/fpga_post_synth/xplode_view_pt2.png> <../diagrams/fpga_post_sy
+nth/xplode_view_pt3.png> <../diagrams/fpga_post_synth/xplode_view_pt4.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-76.
+52.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (20.26877pt too wide) in paragraph at lines 179--180
-[]\T1/cmr/bx/n/12 Mitigação (Opcional): \T1/cmr/m/n/12 bloco para reduzir valor
-es repetidos em uma sessão, controlado
+Overfull \hbox (1.81654pt too wide) in paragraph at lines 152--153
+[]\T1/cmr/bx/n/12 Reset: \T1/cmr/m/n/12 O sistema é resetado (\T1/cmtt/m/n/12 r
+st_i\T1/cmr/m/n/12 ), limpando a memória do detector de duplicatas. 
  []
 
- [4] (./doc.aux)
+
+Overfull \hbox (24.27312pt too wide) in paragraph at lines 154--155
+[]\T1/cmr/bx/n/12 Geração e Validação: \T1/cmr/m/n/12 O \T1/cmtt/m/n/12 rng_dat
+a_path \T1/cmr/m/n/12 gera um candidato. O \T1/cmtt/m/n/12 rng_hs_dup_detector
+ []
+
+<../diagrams/timing/timing.png, id=40, 901.3675pt x 392.46625pt>
+File: ../diagrams/timing/timing.png Graphic file (type png)
+<use ../diagrams/timing/timing.png>
+Package pdftex.def Info: ../diagrams/timing/timing.png  used on input line 160.
+
+(pdftex.def)             Requested size: 455.24411pt x 198.22083pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
+
+
+Overfull \hbox (24.69019pt too wide) in paragraph at lines 167--168
+\T1/cmr/m/n/12 O sistema utiliza parâmetros para cálculo automático de larguras
+ de barramento e profundidade
+ []
+
+[5 <../diagrams/timing/timing.png (PNG copy)>]
+<../diagrams/waveform.png, id=45, 1638.12pt x 115.43124pt>
+File: ../diagrams/waveform.png Graphic file (type png)
+<use ../diagrams/waveform.png>
+Package pdftex.def Info: ../diagrams/waveform.png  used on input line 223.
+(pdftex.def)             Requested size: 455.24411pt x 32.07921pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 223--224
+ [][] 
+ []
+
+[6 <../diagrams/waveform.png>] (./doc.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4489 strings out of 476182
- 72268 string characters out of 5795594
+ 4543 strings out of 476182
+ 74747 string characters out of 5795594
  1932975 words of memory out of 5000000
- 26450 multiletter control sequences out of 15000+600000
+ 26504 multiletter control sequences out of 15000+600000
  569863 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,65p,517b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.6
-00pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx144
+ </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.6
+00pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt120
 0.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm
 1200.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
 cti1200.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
@@ -326,12 +400,11 @@ n/ec/ecrm1200.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
 ppen/ec/ecbx1728.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecrm1728.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecbx2488.600pk> </home/matheus/.texlive2023/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecbx2074.600pk></usr/share/texmf/fonts/type1/public/lm/lmss17.
-pfb>
-Output written on doc.pdf (5 pages, 115080 bytes).
+four/jknappen/ec/ecbx2074.600pk>
+Output written on doc.pdf (7 pages, 665770 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 351 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
