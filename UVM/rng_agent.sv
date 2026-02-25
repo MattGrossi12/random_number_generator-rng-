@@ -5,6 +5,10 @@
 // - is_active pode ser overriden via uvm_config_db
 //============================================================
 
+//============================================================
+// rng_agent.sv (ESQUELETO)
+//============================================================
+
 class rng_agent extends uvm_agent;
   `uvm_component_utils(rng_agent)
 
@@ -17,14 +21,7 @@ class rng_agent extends uvm_agent;
   endfunction
 
   function void build_phase(uvm_phase phase);
-    uvm_active_passive_enum cfg_is_active;
-
     super.build_phase(phase);
-
-    // Permite configurar agent como PASSIVE sem editar o código
-    if (uvm_config_db #(uvm_active_passive_enum)::get(this, "", "is_active", cfg_is_active)) begin
-      is_active = cfg_is_active;
-    end
 
     monitor = rng_monitor::type_id::create("monitor", this);
 
@@ -36,6 +33,7 @@ class rng_agent extends uvm_agent;
 
   function void connect_phase(uvm_phase phase);
     super.connect_phase(phase);
+
     if (is_active == UVM_ACTIVE) begin
       driver.seq_item_port.connect(sequencer.seq_item_export);
     end

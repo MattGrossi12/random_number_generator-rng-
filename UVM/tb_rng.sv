@@ -22,21 +22,36 @@ module tb_rng;
   logic clk;
   always #5 clk = ~clk;
 
+
   localparam int WIDTH = 3;
   rng_if #(WIDTH) rif(.clk_i(clk));
 
   // ---- DUT ----
   rng_top #(
-    .WIDTH(WIDTH)
-  ) dut (
-    .clk_i         (rif.clk_i),
-    .rst_i         (rif.rst_i),
-    .req_num_i     (rif.req_num_i),
-    .wr_i          (rif.wr_i),
-    .num_to_send_o (rif.num_to_send_o)
-  );
+            .WIDTH(WIDTH)
+            ) dut (
+            .clk_i         (rif.clk_i),
+            .rst_i         (rif.rst_i),
+            .req_num_i     (rif.req_num_i),
+            .wr_i          (rif.wr_i),
+            .num_to_send_o (rif.num_to_send_o)
+          );
 
-  // ---- Inicialização ----
+  initial 
+      begin: Clock_generator
+        clk_i = 0;
+        forever #5 clk_i = ~clk_i;
+      end
+
+	task reset;
+			rif.rst_i = 0;
+      rif.req_num_i = 1'b0;
+			#10;
+			rif.rst_i = 1;
+			#10;
+	endtask 
+
+  // Dump
   initial begin
     $dumpfile("dump_rng.vcd");
     $dumpvars(0, tb_rng);
@@ -50,6 +65,7 @@ module tb_rng;
     run_test("rng_test");
   end
 
+  // Estimulos:
   initial begin
     clk = 1'b0;
 
