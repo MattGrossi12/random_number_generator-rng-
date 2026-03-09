@@ -49,7 +49,7 @@ begin
     else 
         if(req_num_i) 
             begin
-                if(num_counter == 7)
+                if(num_counter == 3'b111)
                     begin   
                         num_counter <= 0;
                     end
@@ -57,8 +57,11 @@ begin
                     begin
                         num_counter <= num_counter + 1;
                     end
-  end
+            end
+        else
+            begin
+                num_counter <= num_counter;
+            end
 end
 
 endmodule
-
