@@ -1,0 +1,90 @@
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:24:15: Parameter is not used: 'T_DEPTH'
+                                                                                                 : ... note: In instance 'rng_top.rng_dp'
+   24 |     parameter T_DEPTH       = (DEPTH-1),                 
+      |               ^~~~~~~
+                      ... For warning description see https://verilator.org/warn/UNUSEDPARAM?v=5.018
+                      ... Use "/* verilator lint_off UNUSEDPARAM */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:28:15: Parameter is not used: 'SD_T_TOT_NUMB'
+                                                                                                 : ... note: In instance 'rng_top.rng_dp'
+   28 |     parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),       
+      |               ^~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:31:15: Parameter is not used: 'T_COUNT_WID'
+                                                                                                 : ... note: In instance 'rng_top.rng_dp'
+   31 |     parameter T_COUNT_WID   = (COUNT_WIDTH-1)            
+      |               ^~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:42:12: Parameter is not used: 'IDLE'
+                                                                                                 : ... note: In instance 'rng_top.rng_dp'
+   42 | localparam IDLE = 0;
+      |            ^~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:43:12: Parameter is not used: 'SEND'
+                                                                                                 : ... note: In instance 'rng_top.rng_dp'
+   43 | localparam SEND = 1;
+      |            ^~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path.v:61:12: Parameter is not used: 'seed4_now'
+                                                                                                 : ... note: In instance 'rng_top.rng_dp'
+   61 | localparam seed4_now = 2'b11;
+      |            ^~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:24:15: Parameter is not used: 'T_DEPTH'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   24 |     parameter T_DEPTH       = (DEPTH-1),                 
+      |               ^~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:26:15: Parameter is not used: 'T_WIDTH'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   26 |     parameter T_WIDTH       = (WIDTH-1),                 
+      |               ^~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:28:15: Parameter is not used: 'SD_T_TOT_NUMB'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   28 |     parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),       
+      |               ^~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:31:15: Parameter is not used: 'T_COUNT_WID'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   31 |     parameter T_COUNT_WID   = (COUNT_WIDTH-1)            
+      |               ^~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:41:16: Parameter is not used: 'seed_1'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   41 |     localparam seed_1 = 2'b00;
+      |                ^~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:42:16: Parameter is not used: 'seed_2'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   42 |     localparam seed_2 = 2'b01;
+      |                ^~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:43:16: Parameter is not used: 'seed_3'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   43 |     localparam seed_3 = 2'b10;
+      |                ^~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:44:16: Parameter is not used: 'seed_4'
+                                                                                                : ... note: In instance 'rng_top.rng_sel'
+   44 |     localparam seed_4 = 2'b11;
+      |                ^~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:5:15: Parameter is not used: 'T_DEPTH'
+                                                                                                      : ... note: In instance 'rng_top.rng_rd'
+    5 |     parameter T_DEPTH       = (DEPTH-1),
+      |               ^~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:9:15: Parameter is not used: 'SD_T_TOT_NUMB'
+                                                                                                      : ... note: In instance 'rng_top.rng_rd'
+    9 |     parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),
+      |               ^~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:12:15: Parameter is not used: 'T_COUNT_WID'
+                                                                                                       : ... note: In instance 'rng_top.rng_rd'
+   12 |     parameter T_COUNT_WID   = (COUNT_WIDTH-1)
+      |               ^~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:24:15: Parameter is not used: 'T_DEPTH'
+                                                                                                         : ... note: In instance 'rng_top.rng_dp.inst'
+   24 |     parameter T_DEPTH       = (DEPTH-1),                 
+      |               ^~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:28:15: Parameter is not used: 'SD_T_TOT_NUMB'
+                                                                                                         : ... note: In instance 'rng_top.rng_dp.inst'
+   28 |     parameter SD_T_TOT_NUMB = (SEED_TOT_NUMB - 1),       
+      |               ^~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/matheus/openframe_user_project/openlane/rng/src/rng_data_path_counter.v:31:15: Parameter is not used: 'T_COUNT_WID'
+                                                                                                         : ... note: In instance 'rng_top.rng_dp.inst'
+   31 |     parameter T_COUNT_WID   = (COUNT_WIDTH-1)            
+      |               ^~~~~~~~~~~
+%Warning-UNOPTFLAT: /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v:46:10: Signal unoptimizable: Circular combinational logic: 'rng_top.req_num_again'
+   46 |     wire req_num_again;
+      |          ^~~~~~~~~~~~~
+                    /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v:46:10:      Example path: rng_top.req_num_again
+                    /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v:52:20:      Example path: ASSIGNW
+                    /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v:48:10:      Example path: rng_top.req_num
+                    /home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:261:19:      Example path: ASSIGNW
+                    /home/matheus/openframe_user_project/openlane/rng/src/rng_top.v:46:10:      Example path: rng_top.req_num_again

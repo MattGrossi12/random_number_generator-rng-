@@ -1,4 +1,0 @@
-
-19. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `$paramod$d4a8d07bbfa4d976cb7990b0fb06505ff64b7723\rng_selector.\seed_sel_o' from process `$paramod$d4a8d07bbfa4d976cb7990b0fb06505ff64b7723\rng_selector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_selector.v:58$40'.
-No latch inferred for signal `$paramod$d4a8d07bbfa4d976cb7990b0fb06505ff64b7723\rng_hs_dup_detector.\req_new_num_o' from process `$paramod$d4a8d07bbfa4d976cb7990b0fb06505ff64b7723\rng_hs_dup_detector.$proc$/home/matheus/openframe_user_project/openlane/rng/src/rng_hs_dup_detector.v:52$27'.

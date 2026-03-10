@@ -1,1 +1,0 @@
-openroad -exit -no_splash -metrics /home/matheus/openframe_user_project/openlane/rng/runs/26_02_18_09_30/13-openroad-floorplan/or_metrics_out.json /nix/store/iah2c26wzpgdvqc1jv2xxg55xq5km74d-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/floorplan.tcl
