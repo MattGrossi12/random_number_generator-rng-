@@ -1,0 +1,56 @@
+VERILATOR ?= verilator
+
+# Ajuste este caminho para a pasta que REALMENTE contém uvm_pkg.sv
+UVM_HOME := /home/matheus/tools/1800.2-2017-1.0/src
+TB_DIR   := ../UVM
+RTL_DIR  := ../src
+TOP      := tb_rng
+
+RTL = \
+    $(RTL_DIR)/rng_top.v \
+    $(RTL_DIR)/rng_data_path.v \
+    $(RTL_DIR)/rng_data_path_counter.v \
+    $(RTL_DIR)/rng_selector.v \
+    $(RTL_DIR)/rng_hs_dup_detector.v
+
+TB = $(TB_DIR)/testbench.sv
+
+INC = \
+    +incdir+$(TB_DIR) \
+    +incdir+$(RTL_DIR) \
+    +incdir+$(UVM_HOME)
+
+VFLAGS = \
+    -sv \
+    --binary \
+    -j $$(nproc) \
+    -Wno-fatal \
+    --trace-vcd \
+    +define+UVM_NO_DPI \
+    $(INC) \
+    --top-module $(TOP)
+
+all: run
+
+check_uvm:
+	@test -f "$(UVM_HOME)/uvm_pkg.sv" || \
+	( echo "ERRO: uvm_pkg.sv nao encontrado em $(UVM_HOME)"; \
+	  echo "Use: find $$HOME/tools -name uvm_pkg.sv 2>/dev/null"; \
+	  exit 1 )
+
+check_tb:
+	@test -f "$(TB)" || \
+	( echo "ERRO: testbench.sv nao encontrado em $(TB)"; \
+	  exit 1 )
+
+compile: check_uvm check_tb
+	$(VERILATOR) $(VFLAGS) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+
+run: compile
+	./obj_dir/V$(TOP)
+
+waves:
+	gtkwave dump_rng.vcd
+
+clean:
+	rm -rf obj_dir dump_rng.vcd dump_rng.fst *.log

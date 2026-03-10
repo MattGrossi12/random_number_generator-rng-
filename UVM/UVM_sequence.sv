@@ -55,10 +55,9 @@ class rng_sequence extends uvm_sequence #(rng_seq_item);
       tr.round_id      = r;
       tr.clk_toggle_tu = clk_tog;
 
-      if (!std::randomize(inter_req_tmp) with { inter_req_tmp inside {[lo:hi]}; }) begin
-        `uvm_fatal("RNG_SEQ_RAND", $sformatf("Falha randomize inter_req_tu r=%0d", r))
-      end
-
+      // Para maximizar compatibilidade no Verilator, evita std::randomize(... ) with
+      // e usa $urandom_range para gerar o intervalo requisitado.
+      inter_req_tmp   = $urandom_range(hi, lo);
       tr.inter_req_tu = inter_req_tmp;
 
       `uvm_info("RNG_SEQ_ITEM",

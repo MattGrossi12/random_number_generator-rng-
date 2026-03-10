@@ -4,7 +4,7 @@
 //============================================================
 module tb_rng;
   import uvm_pkg::*;
-  //`include "UVM_macros.svh"
+  `include "uvm_macros.svh"
   `include "UVM_tb_params.svh"
 
   // Inclui classes
