@@ -40,3 +40,9 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rng_top
 par -w -intstyle ise -ol high -t 1 rng_top_map.ncd rng_top.ncd rng_top.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rng_top.twx rng_top.ncd -o rng_top.twr rng_top.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rng_top_preroute.twx rng_top_map.ncd -o rng_top_preroute.twr rng_top.pcf 
+xst -intstyle ise -ifn "/home/matheus/Documentos/random_number_generator-rng-/rng_fpga_based/rng_top.xst" -ofn "/home/matheus/Documentos/random_number_generator-rng-/rng_fpga_based/rng_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 rng_top.ngc rng_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rng_top.ucf -p xc3s500e-fg320-4 rng_top.ngc rng_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rng_top_map.ncd rng_top.ngd rng_top.pcf 
+par -w -intstyle ise -ol high -t 1 rng_top_map.ncd rng_top.ncd rng_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rng_top.twx rng_top.ncd -o rng_top.twr rng_top.pcf -ucf rng_top.ucf 

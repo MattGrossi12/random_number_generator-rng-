@@ -4,6 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /home/matheus/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
 3 -s 4 -n 3 -fastpaths -xml rng_top.twx rng_top.ncd -o rng_top.twr rng_top.pcf
+-ucf rng_top.ucf
 
 Design file:              rng_top.ncd
 Physical constraint file: rng_top.pcf
@@ -44,8 +45,8 @@ Setup/Hold to clock clk_i
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-req_num_i   |    2.122(R)|    0.045(R)|clk_i_BUFGP       |   0.000|
-wr_i        |   -0.056(R)|    1.264(R)|clk_i_BUFGP       |   0.000|
+req_num_i   |    1.996(R)|    0.303(R)|clk_i_BUFGP       |   0.000|
+wr_i        |    1.550(R)|    0.924(R)|clk_i_BUFGP       |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk_i to Pad
@@ -53,9 +54,9 @@ Clock clk_i to Pad
                 | clk (edge) |                  | Clock  |
 Destination     |   to PAD   |Internal Clock(s) | Phase  |
 ----------------+------------+------------------+--------+
-num_to_send_o<0>|    7.526(R)|clk_i_BUFGP       |   0.000|
-num_to_send_o<1>|    7.535(R)|clk_i_BUFGP       |   0.000|
-num_to_send_o<2>|    7.522(R)|clk_i_BUFGP       |   0.000|
+num_to_send_o<0>|    8.140(R)|clk_i_BUFGP       |   0.000|
+num_to_send_o<1>|    8.158(R)|clk_i_BUFGP       |   0.000|
+num_to_send_o<2>|    8.178(R)|clk_i_BUFGP       |   0.000|
 ----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_i
@@ -63,11 +64,11 @@ Clock to Setup on destination clock clk_i
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |    7.379|         |         |         |
+clk_i          |    6.521|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Feb 18 08:55:37 2026 
+Analysis completed Tue Mar 10 14:12:11 2026 
 --------------------------------------------------------------------------------
 
 Trace Settings:

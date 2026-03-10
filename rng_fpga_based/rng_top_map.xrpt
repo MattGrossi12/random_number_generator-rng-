@@ -5,26 +5,22 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Wed Feb 18 08:55:26 2026">
+  <application stringID="Map" timeStamp="Tue Mar 10 14:12:00 2026">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
-          <item stringID="value" value="/home/matheus/.Xilinx/Xilinx.lic"/>
-        </row>
-        <row stringID="row" value="1">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
           <item stringID="value" value="/home/matheus/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/home/matheus/Xilinx/14.7/ISE_DS/ISE/lib/lin64"/>
         </row>
-        <row stringID="row" value="2">
+        <row stringID="row" value="1">
           <item stringID="variable" value="XILINX"/>
           <item stringID="value" value="/home/matheus/Xilinx/14.7/ISE_DS/ISE/"/>
         </row>
-        <row stringID="row" value="3">
+        <row stringID="row" value="2">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/home/matheus/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/matheus/cvc/bin:/home/matheus/.cargo/bin:/home/matheus/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
+          <item stringID="value" value="/home/matheus/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/matheus/cvc/bin:/home/matheus/.cargo/bin:/home/matheus/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/matheus/Xyce_Install/Xyce_Serial/bin/"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
@@ -37,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz"/>
-          <item stringID="speed" value="3425.663 MHz"/>
+          <item stringID="speed" value="3199.301 MHz"/>
         </row>
       </table>
     </section>
@@ -61,14 +57,14 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="593380"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="593312"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="1 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="1 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="9312" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="44"/>
-        <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="34"/>
-        <item AVAILABLE="4656" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="41">
+        <item AVAILABLE="9312" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="35"/>
+        <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="26"/>
+        <item AVAILABLE="4656" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="36">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
