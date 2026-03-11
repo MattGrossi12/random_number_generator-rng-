@@ -16,13 +16,13 @@ VL_ATTR_COLD void Vtb_rng_tb_rng__03a__03arng_agent__Vclpkg___configure_coverage
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[650]), first, "../UVM/UVM_agent.sv", 5, 28, "", "v_line/rng_agent", "block", "5");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[651]), first, "../UVM/UVM_agent.sv", 5, 40, "", "v_line/rng_agent", "block", "5");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[652]), first, "../UVM/UVM_agent.sv", 5, 29, "", "v_line/rng_agent", "block", "5");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[653]), first, "../UVM/UVM_agent.sv", 5, 30, "", "v_line/rng_agent", "block", "5");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[654]), first, "../UVM/UVM_agent.sv", 11, 12, "", "v_line/rng_agent", "block", "11-12");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[655]), first, "../UVM/UVM_agent.sv", 15, 17, "", "v_line/rng_agent", "block", "15-16,18-20");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[656]), first, "../UVM/UVM_agent.sv", 23, 17, "", "v_line/rng_agent", "block", "23-25");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[650]), first, "../UVM/UVM_agent.sv", 2, 28, "", "v_line/rng_agent", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[651]), first, "../UVM/UVM_agent.sv", 2, 40, "", "v_line/rng_agent", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[652]), first, "../UVM/UVM_agent.sv", 2, 29, "", "v_line/rng_agent", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[653]), first, "../UVM/UVM_agent.sv", 2, 30, "", "v_line/rng_agent", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[654]), first, "../UVM/UVM_agent.sv", 16, 14, "", "v_line/rng_agent", "block", "16,18");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[655]), first, "../UVM/UVM_agent.sv", 21, 19, "", "v_line/rng_agent", "block", "21,23,27,31,35");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[656]), first, "../UVM/UVM_agent.sv", 38, 19, "", "v_line/rng_agent", "block", "38,40,44");
 }
 
 VL_ATTR_COLD void Vtb_rng_tb_rng__03a__03arng_agent___configure_coverage(Vtb_rng_tb_rng__03a__03arng_agent* vlSelf, bool first) {

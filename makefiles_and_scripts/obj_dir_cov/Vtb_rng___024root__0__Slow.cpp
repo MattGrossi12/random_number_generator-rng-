@@ -659,7 +659,7 @@ VL_ATTR_COLD void Vtb_rng___024root___eval_settle(Vtb_rng___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtb_rng___024root___dump_triggers__stl(vlSelfRef.__VstlTriggered, "stl"s);
 #endif
-            VL_FATAL_MT("../UVM/../UVM/testbench.sv", 37, "", "DIDNOTCONVERGE: Settle region did not converge after '--converge-limit' of 10000 tries");
+            VL_FATAL_MT("../UVM/../UVM/testbench.sv", 23, "", "DIDNOTCONVERGE: Settle region did not converge after '--converge-limit' of 10000 tries");
         }
         __VstlIterCount = ((IData)(1U) + __VstlIterCount);
         vlSelfRef.__VstlPhaseResult = Vtb_rng___024root___eval_phase__stl(vlSelf);

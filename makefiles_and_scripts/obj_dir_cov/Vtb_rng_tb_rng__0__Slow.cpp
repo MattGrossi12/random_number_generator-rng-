@@ -464,12 +464,12 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___configure_coverage(Vtb_rng_tb_rng* vlSelf, bo
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[0]), first, "../UVM/../UVM/testbench.sv", 116, 9, "", "v_toggle/tb_rng", "clk");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2]), first, "../UVM/../UVM/testbench.sv", 124, 34, "", "v_expr/tb_rng", "(clk==0) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[3]), first, "../UVM/../UVM/testbench.sv", 124, 34, "", "v_expr/tb_rng", "(clk==1) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[4]), first, "../UVM/../UVM/testbench.sv", 123, 5, "", "v_line/tb_rng", "block", "123-124");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[5]), first, "../UVM/../UVM/testbench.sv", 121, 3, "", "v_line/tb_rng", "block", "121-122");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[6]), first, "../UVM/../UVM/testbench.sv", 137, 3, "", "v_line/tb_rng", "block", "137-139,141-144,146-147,149,151");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[0]), first, "../UVM/../UVM/testbench.sv", 139, 11, "", "v_toggle/tb_rng", "clk");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2]), first, "../UVM/../UVM/testbench.sv", 153, 40, "", "v_expr/tb_rng", "(clk==0) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[3]), first, "../UVM/../UVM/testbench.sv", 153, 40, "", "v_expr/tb_rng", "(clk==1) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[4]), first, "../UVM/../UVM/testbench.sv", 150, 9, "", "v_line/tb_rng", "block", "150,153");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[5]), first, "../UVM/../UVM/testbench.sv", 145, 5, "", "v_line/tb_rng", "block", "145,148");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[6]), first, "../UVM/../UVM/testbench.sv", 167, 5, "", "v_line/tb_rng", "block", "167,170,174,178,182,186,190,194-195,199,203");
     vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[7]), first, "../UVM/../src/rng_top.v", 33, 11, ".dut", "v_toggle/rng_top", "clk_i");
     vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[9]), first, "../UVM/../src/rng_top.v", 35, 11, ".dut", "v_toggle/rng_top", "rst_i");
     vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[11]), first, "../UVM/../src/rng_top.v", 36, 11, ".dut", "v_toggle/rng_top", "req_num_i");
