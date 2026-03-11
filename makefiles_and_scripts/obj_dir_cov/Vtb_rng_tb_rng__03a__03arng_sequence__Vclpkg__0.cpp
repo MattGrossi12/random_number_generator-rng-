@@ -92,7 +92,7 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_body(VlProcessRef 
                                                                                 32,
                                                                                 this->__PVT__num_rounds,
                                                                                 32,
-                                                                                s) , 0x00000064U, "../UVM/UVM_sequence.sv"s, 0x00000021U, ""s, 1U);
+                                                                                s) , 0x00000064U, "../UVM/UVM_sequence.sv"s, 0x00000026U, ""s, 1U);
         ++(vlSymsp->__Vcoverage[544]);
     } else {
         ++(vlSymsp->__Vcoverage[545]);
@@ -120,19 +120,19 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_body(VlProcessRef 
                                                                                 32,
                                                                                 unnamedblk1__DOT__r) , VlNull{}, ""s, tr);
         co_await this->__VnoInFunc_start_item(vlProcess, vlSymsp, tr, 0xffffffffU, VlNull{});
-        VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 55)->__PVT__round_id 
+        VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 68)->__PVT__round_id 
             = unnamedblk1__DOT__r;
-        VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 56)->__PVT__clk_toggle_tu 
+        VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 71)->__PVT__clk_toggle_tu 
             = clk_tog;
         inter_req_tmp = VL_URANDOM_RANGE_I(hi, lo);
-        VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 61)->__PVT__inter_req_tu 
+        VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 78)->__PVT__inter_req_tu 
             = inter_req_tmp;
         this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_SEQ_ITEM"s, __VlefCall_1__uvm_report_enabled);
         if ((0U != __VlefCall_1__uvm_report_enabled)) {
-            VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 65)->__VnoInFunc_convert2string(vlProcess, vlSymsp, __VlefCall_2__convert2string);
+            VL_NULL_CHECK(tr, "../UVM/UVM_sequence.sv", 83)->__VnoInFunc_convert2string(vlProcess, vlSymsp, __VlefCall_2__convert2string);
             this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_SEQ_ITEM"s, VL_SFORMATF_N_NX("Gerado: %@",0,
                                                                                 -1,
-                                                                                &(__VlefCall_2__convert2string)) , 0x00000064U, "../UVM/UVM_sequence.sv"s, 0x00000041U, ""s, 1U);
+                                                                                &(__VlefCall_2__convert2string)) , 0x00000064U, "../UVM/UVM_sequence.sv"s, 0x00000053U, ""s, 1U);
             ++(vlSymsp->__Vcoverage[549]);
         } else {
             ++(vlSymsp->__Vcoverage[550]);

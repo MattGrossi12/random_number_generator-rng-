@@ -63,7 +63,7 @@ void Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_build_phase(VlProcessRef vl
     } else {
         this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 3U, "NOVIF"s, __VlefCall_0__uvm_report_enabled);
         if ((0U != __VlefCall_0__uvm_report_enabled)) {
-            this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "NOVIF"s, "vif nao encontrado"s, 0U, "../UVM/UVM_driver.sv"s, 0x0000001bU, ""s, 1U);
+            this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "NOVIF"s, "vif nao encontrado"s, 0U, "../UVM/UVM_driver.sv"s, 0x00000014U, ""s, 1U);
             ++(vlSymsp->__Vcoverage[558]);
         } else {
             ++(vlSymsp->__Vcoverage[559]);
@@ -104,23 +104,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_drive_idle____Vfork_
                                                      nullptr, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     33);
+                                                     31);
         __VdynTrigger_h24befa02__1 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__1);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      nullptr, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     33);
+                                                     31);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(nullptr, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 33);
+                                                 31);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__4_Vtrigm___PVT__wr_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 33)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 31)
      ->__PVT__wr_i) = __Vintraval_h89b329dd__0;
     co_return;
 }
@@ -137,23 +137,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_drive_idle____Vfork_
                                                      nullptr, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     32);
+                                                     27);
         __VdynTrigger_h24befa02__0 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__0);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      nullptr, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     32);
+                                                     27);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(nullptr, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 32);
+                                                 27);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__3_Vtrigm___PVT__req_num_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 32)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 27)
      ->__PVT__req_num_i) = __Vintraval_h5eef67f4__0;
     co_return;
 }
@@ -175,25 +175,25 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_request_number(VlPro
     CData/*0:0*/ __VdynTrigger_haa8d97dd__0;
     __VdynTrigger_haa8d97dd__0 = 0;
     __VdynTrigger_haa8d97dd__0 = 0U;
-    __Vtrigprevexpr_h9c61cdb3__0 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 41)
+    __Vtrigprevexpr_h9c61cdb3__0 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 40)
         ->__PVT__clk_i;
     while ((1U & (~ (IData)(__VdynTrigger_haa8d97dd__0)))) {
         co_await vlSymsp->TOP.__VdynSched.evaluation(
                                                      vlProcess, 
                                                      "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     41);
-        __VdynTrigger_haa8d97dd__0 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 41)
+                                                     40);
+        __VdynTrigger_haa8d97dd__0 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 40)
                                        ->__PVT__clk_i) 
                                       & (IData)(__Vtrigprevexpr_h9c61cdb3__0));
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_haa8d97dd__0);
-        __Vtrigprevexpr_h9c61cdb3__0 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 41)
+        __Vtrigprevexpr_h9c61cdb3__0 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 40)
             ->__PVT__clk_i;
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 41);
+                                                 40);
     vlSymsp->TOP.__VnbaEventTrigger = 1U;
     CData/*0:0*/ __Vintraval_h5ef0e5e1__0;
     __Vintraval_h5ef0e5e1__0 = 0;
@@ -208,25 +208,25 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_request_number(VlPro
     CData/*0:0*/ __VdynTrigger_haa8d97dd__1;
     __VdynTrigger_haa8d97dd__1 = 0;
     __VdynTrigger_haa8d97dd__1 = 0U;
-    __Vtrigprevexpr_h9c61cdb3__1 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 47)
+    __Vtrigprevexpr_h9c61cdb3__1 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 54)
         ->__PVT__clk_i;
     while ((1U & (~ (IData)(__VdynTrigger_haa8d97dd__1)))) {
         co_await vlSymsp->TOP.__VdynSched.evaluation(
                                                      vlProcess, 
                                                      "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     47);
-        __VdynTrigger_haa8d97dd__1 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 47)
+                                                     54);
+        __VdynTrigger_haa8d97dd__1 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 54)
                                        ->__PVT__clk_i) 
                                       & (IData)(__Vtrigprevexpr_h9c61cdb3__1));
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_haa8d97dd__1);
-        __Vtrigprevexpr_h9c61cdb3__1 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 47)
+        __Vtrigprevexpr_h9c61cdb3__1 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 54)
             ->__PVT__clk_i;
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 47);
+                                                 54);
     t_off = VL_TIME_UNITED_Q(1);
     this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_DRV"s, __VlefCall_0__uvm_report_enabled);
     if ((0U != __VlefCall_0__uvm_report_enabled)) {
@@ -242,7 +242,7 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_request_number(VlPro
                                                                                 64,
                                                                                 (t_off 
                                                                                 - t_on),
-                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x00000035U, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x00000040U, ""s, 1U);
         ++(vlSymsp->__Vcoverage[566]);
     } else {
         ++(vlSymsp->__Vcoverage[567]);
@@ -263,23 +263,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_request_number____Vf
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     43);
+                                                     47);
         __VdynTrigger_h24befa02__3 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__3);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     43);
+                                                     47);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 43);
+                                                 47);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__4_Vtrigm___PVT__wr_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 43)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 47)
      ->__PVT__wr_i) = __Vintraval_h89b329dd__1;
     vlProcess->state(VlProcess::FINISHED);
     co_return;
@@ -297,23 +297,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_request_number____Vf
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     42);
+                                                     44);
         __VdynTrigger_h24befa02__2 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__2);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     42);
+                                                     44);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 42);
+                                                 44);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__3_Vtrigm___PVT__req_num_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 42)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 44)
      ->__PVT__req_num_i) = __Vintraval_h5ef0e5e1__0;
     vlProcess->state(VlProcess::FINISHED);
     co_return;
@@ -340,25 +340,25 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_accept_number(VlProc
     CData/*0:0*/ __VdynTrigger_haa8d97dd__2;
     __VdynTrigger_haa8d97dd__2 = 0;
     __VdynTrigger_haa8d97dd__2 = 0U;
-    __Vtrigprevexpr_h9c61cdb3__2 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 62)
+    __Vtrigprevexpr_h9c61cdb3__2 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 74)
         ->__PVT__clk_i;
     while ((1U & (~ (IData)(__VdynTrigger_haa8d97dd__2)))) {
         co_await vlSymsp->TOP.__VdynSched.evaluation(
                                                      vlProcess, 
                                                      "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     62);
-        __VdynTrigger_haa8d97dd__2 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 62)
+                                                     74);
+        __VdynTrigger_haa8d97dd__2 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 74)
                                        ->__PVT__clk_i) 
                                       & (IData)(__Vtrigprevexpr_h9c61cdb3__2));
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_haa8d97dd__2);
-        __Vtrigprevexpr_h9c61cdb3__2 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 62)
+        __Vtrigprevexpr_h9c61cdb3__2 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 74)
             ->__PVT__clk_i;
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 62);
+                                                 74);
     vlSymsp->TOP.__VnbaEventTrigger = 1U;
     CData/*0:0*/ __Vintraval_h89849fca__0;
     __Vintraval_h89849fca__0 = 0;
@@ -368,48 +368,48 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_accept_number(VlProc
     CData/*0:0*/ __VdynTrigger_haa8d9923__0;
     __VdynTrigger_haa8d9923__0 = 0;
     __VdynTrigger_haa8d9923__0 = 0U;
-    __Vtrigprevexpr_h9c61cdb3__3 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 67)
+    __Vtrigprevexpr_h9c61cdb3__3 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 85)
         ->__PVT__clk_i;
     while ((1U & (~ (IData)(__VdynTrigger_haa8d9923__0)))) {
         co_await vlSymsp->TOP.__VdynSched.evaluation(
                                                      vlProcess, 
                                                      "@(posedge tb_rng::rng_driver.vif.clk_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     67);
-        __VdynTrigger_haa8d9923__0 = (VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 67)
+                                                     85);
+        __VdynTrigger_haa8d9923__0 = (VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 85)
                                       ->__PVT__clk_i 
                                       & (~ (IData)(__Vtrigprevexpr_h9c61cdb3__3)));
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_haa8d9923__0);
-        __Vtrigprevexpr_h9c61cdb3__3 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 67)
+        __Vtrigprevexpr_h9c61cdb3__3 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 85)
             ->__PVT__clk_i;
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@(posedge tb_rng::rng_driver.vif.clk_i)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 67);
+                                                 85);
     t_wr_posedge = VL_TIME_UNITED_Q(1);
     CData/*0:0*/ __VdynTrigger_haa8d97dd__3;
     __VdynTrigger_haa8d97dd__3 = 0;
     __VdynTrigger_haa8d97dd__3 = 0U;
-    __Vtrigprevexpr_h9c61cdb3__4 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 71)
+    __Vtrigprevexpr_h9c61cdb3__4 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 92)
         ->__PVT__clk_i;
     while ((1U & (~ (IData)(__VdynTrigger_haa8d97dd__3)))) {
         co_await vlSymsp->TOP.__VdynSched.evaluation(
                                                      vlProcess, 
                                                      "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     71);
-        __VdynTrigger_haa8d97dd__3 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 71)
+                                                     92);
+        __VdynTrigger_haa8d97dd__3 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 92)
                                        ->__PVT__clk_i) 
                                       & (IData)(__Vtrigprevexpr_h9c61cdb3__4));
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_haa8d97dd__3);
-        __Vtrigprevexpr_h9c61cdb3__4 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 71)
+        __Vtrigprevexpr_h9c61cdb3__4 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 92)
             ->__PVT__clk_i;
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 71);
+                                                 92);
     vlSymsp->TOP.__VnbaEventTrigger = 1U;
     CData/*0:0*/ __Vintraval_h5eef67f4__1;
     __Vintraval_h5eef67f4__1 = 0;
@@ -434,7 +434,7 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_accept_number(VlProc
                                                                                 -12,
                                                                                 64,
                                                                                 t_both_off,
-                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x0000004fU, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x0000006cU, ""s, 1U);
         ++(vlSymsp->__Vcoverage[569]);
     } else {
         ++(vlSymsp->__Vcoverage[570]);
@@ -455,23 +455,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_accept_number____Vfo
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     73);
+                                                     98);
         __VdynTrigger_h24befa02__6 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__6);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     73);
+                                                     98);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 73);
+                                                 98);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__4_Vtrigm___PVT__wr_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 73)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 98)
      ->__PVT__wr_i) = __Vintraval_h89b329dd__2;
     vlProcess->state(VlProcess::FINISHED);
     co_return;
@@ -489,23 +489,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_accept_number____Vfo
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     72);
+                                                     95);
         __VdynTrigger_h24befa02__5 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__5);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     72);
+                                                     95);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 72);
+                                                 95);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__3_Vtrigm___PVT__req_num_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 72)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 95)
      ->__PVT__req_num_i) = __Vintraval_h5eef67f4__1;
     vlProcess->state(VlProcess::FINISHED);
     co_return;
@@ -523,23 +523,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_accept_number____Vfo
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     63);
+                                                     78);
         __VdynTrigger_h24befa02__4 = vlSymsp->TOP.__VnbaEvent.isFired();
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h24befa02__4);
         co_await vlSymsp->TOP.__VdynSched.postUpdate(
                                                      vlProcess, 
                                                      "@([event] __VnbaEvent)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     63);
+                                                     78);
         vlSymsp->TOP.__VnbaEvent.clearFired();
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@([event] __VnbaEvent)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 63);
+                                                 78);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__4_Vtrigm___PVT__wr_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 63)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 78)
      ->__PVT__wr_i) = __Vintraval_h89849fca__0;
     vlProcess->state(VlProcess::FINISHED);
     co_return;
@@ -563,22 +563,22 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_drive_one_use(VlProc
     if ((0U != __VlefCall_0__uvm_report_enabled)) {
         this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_DRV"s, VL_SFORMATF_N_NX("BEGIN round=%0# clk_toggle=%0tTU(period=%0tTU) inter_req=%0#TU t=%0t",0,
                                                                                 32,
-                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 91)
+                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 126)
                                                                                 ->__PVT__round_id,
                                                                                 64,
-                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 91)
+                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 126)
                                                                                 ->__PVT__clk_toggle_tu,
                                                                                 -12,
                                                                                 64,
-                                                                                VL_SHIFTL_QQI(64,64,32, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 91)
+                                                                                VL_SHIFTL_QQI(64,64,32, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 126)
                                                                                 ->__PVT__clk_toggle_tu, 1U),
                                                                                 -12,
                                                                                 32,
-                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 91)
+                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 126)
                                                                                 ->__PVT__inter_req_tu,
                                                                                 64,
                                                                                 t_start,
-                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x0000005bU, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x0000007eU, ""s, 1U);
         ++(vlSymsp->__Vcoverage[572]);
     } else {
         ++(vlSymsp->__Vcoverage[573]);
@@ -586,66 +586,66 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_drive_one_use(VlProc
     CData/*0:0*/ __VdynTrigger_haa8d97dd__4;
     __VdynTrigger_haa8d97dd__4 = 0;
     __VdynTrigger_haa8d97dd__4 = 0U;
-    __Vtrigprevexpr_h9c61cdb3__5 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 94)
+    __Vtrigprevexpr_h9c61cdb3__5 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 130)
         ->__PVT__clk_i;
     while ((1U & (~ (IData)(__VdynTrigger_haa8d97dd__4)))) {
         co_await vlSymsp->TOP.__VdynSched.evaluation(
                                                      vlProcess, 
                                                      "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     94);
-        __VdynTrigger_haa8d97dd__4 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 94)
+                                                     130);
+        __VdynTrigger_haa8d97dd__4 = ((~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 130)
                                        ->__PVT__clk_i) 
                                       & (IData)(__Vtrigprevexpr_h9c61cdb3__5));
         vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_haa8d97dd__4);
-        __Vtrigprevexpr_h9c61cdb3__5 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 94)
+        __Vtrigprevexpr_h9c61cdb3__5 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 130)
             ->__PVT__clk_i;
     }
     co_await vlSymsp->TOP.__VdynSched.resumption(vlProcess, 
                                                  "@(negedge tb_rng::rng_driver.vif.clk_i)", 
                                                  "../UVM/UVM_driver.sv", 
-                                                 94);
+                                                 130);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__5_Vtrigm___PVT__clk_toggle_tu = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 95)
-     ->__PVT__clk_toggle_tu) = VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 95)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 134)
+     ->__PVT__clk_toggle_tu) = VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 134)
         ->__PVT__clk_toggle_tu;
     this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_DRV"s, __VlefCall_1__uvm_report_enabled);
     if ((0U != __VlefCall_1__uvm_report_enabled)) {
         this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_DRV"s, VL_SFORMATF_N_NX("round=%0# clock atualizado: clk_toggle_tu=%0tTU (periodo=%0tTU)",0,
                                                                                 32,
-                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 100)
+                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 141)
                                                                                 ->__PVT__round_id,
                                                                                 64,
-                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 100)
+                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 141)
                                                                                 ->__PVT__clk_toggle_tu,
                                                                                 -12,
                                                                                 64,
-                                                                                VL_SHIFTL_QQI(64,64,32, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 100)
+                                                                                VL_SHIFTL_QQI(64,64,32, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 141)
                                                                                 ->__PVT__clk_toggle_tu, 1U),
-                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x00000064U, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x0000008dU, ""s, 1U);
         ++(vlSymsp->__Vcoverage[574]);
     } else {
         ++(vlSymsp->__Vcoverage[575]);
     }
-    co_await vlSymsp->TOP.__VdlySched.delay((QData)((IData)(VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 103)
+    co_await vlSymsp->TOP.__VdlySched.delay((QData)((IData)(VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 145)
                                                             ->__PVT__inter_req_tu)), 
                                             vlProcess, 
                                             "../UVM/UVM_driver.sv", 
-                                            103);
-    co_await this->__VnoInFunc_request_number(vlProcess, vlSymsp, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 106)
+                                            145);
+    co_await this->__VnoInFunc_request_number(vlProcess, vlSymsp, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 149)
                                               ->__PVT__round_id);
-    co_await this->__VnoInFunc_accept_number(vlProcess, vlSymsp, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 109)
+    co_await this->__VnoInFunc_accept_number(vlProcess, vlSymsp, VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 153)
                                              ->__PVT__round_id);
     this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_DRV"s, __VlefCall_2__uvm_report_enabled);
     if ((0U != __VlefCall_2__uvm_report_enabled)) {
         this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_DRV"s, VL_SFORMATF_N_NX("END round=%0# t=%0t",0,
                                                                                 32,
-                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 113)
+                                                                                VL_NULL_CHECK(tr, "../UVM/UVM_driver.sv", 158)
                                                                                 ->__PVT__round_id,
                                                                                 64,
                                                                                 VL_TIME_UNITED_Q(1),
-                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x00000071U, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x0000009eU, ""s, 1U);
         ++(vlSymsp->__Vcoverage[576]);
     } else {
         ++(vlSymsp->__Vcoverage[577]);
@@ -667,7 +667,7 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_run_phase(VlProcessR
     VlClassRef<Vtb_rng_tb_rng__03a__03arng_seq_item> tr;
     co_await Vtb_rng_uvm_pkg__03a__03auvm_component::__VnoInFunc_run_phase(vlProcess, vlSymsp, phase);
     this->__VnoInFunc_drive_idle(vlSymsp);
-    if (VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 126)
+    if (VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 176)
         ->__PVT__rst_i) {
         CData/*0:0*/ __VdynTrigger_h5fe91d45__0;
         __VdynTrigger_h5fe91d45__0 = 0;
@@ -677,8 +677,8 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_run_phase(VlProcessR
                                                          vlProcess, 
                                                          "@([true] (~ tb_rng::rng_driver.vif.rst_i))", 
                                                          "../UVM/UVM_driver.sv", 
-                                                         126);
-            __Vtrigprevexpr_h66064b9d__0 = (1U & (~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 126)
+                                                         176);
+            __Vtrigprevexpr_h66064b9d__0 = (1U & (~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 176)
                                                   ->__PVT__rst_i));
             __VdynTrigger_h5fe91d45__0 = __Vtrigprevexpr_h66064b9d__0;
             vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_h5fe91d45__0);
@@ -687,9 +687,9 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_run_phase(VlProcessR
                                                      vlProcess, 
                                                      "@([true] (~ tb_rng::rng_driver.vif.rst_i))", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     126);
+                                                     176);
     }
-    if ((1U & (~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 127)
+    if ((1U & (~ VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 180)
                ->__PVT__rst_i))) {
         CData/*0:0*/ __VdynTrigger_hfc770897__0;
         __VdynTrigger_hfc770897__0 = 0;
@@ -699,8 +699,8 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_run_phase(VlProcessR
                                                          vlProcess, 
                                                          "@([true] tb_rng::rng_driver.vif.rst_i)", 
                                                          "../UVM/UVM_driver.sv", 
-                                                         127);
-            __VdynTrigger_hfc770897__0 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 127)
+                                                         180);
+            __VdynTrigger_hfc770897__0 = VL_NULL_CHECK(this->__PVT__vif, "../UVM/UVM_driver.sv", 180)
                 ->__PVT__rst_i;
             vlSymsp->TOP.__VdynSched.anyTriggered(__VdynTrigger_hfc770897__0);
         }
@@ -708,23 +708,23 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_driver::__VnoInFunc_run_phase(VlProcessR
                                                      vlProcess, 
                                                      "@([true] tb_rng::rng_driver.vif.rst_i)", 
                                                      "../UVM/UVM_driver.sv", 
-                                                     127);
+                                                     180);
     }
     this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_DRV"s, __VlefCall_0__uvm_report_enabled);
     if ((0U != __VlefCall_0__uvm_report_enabled)) {
         this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_DRV"s, VL_SFORMATF_N_NX("Reset liberado em t=%0t. Iniciando rodadas.",0,
                                                                                 64,
                                                                                 VL_TIME_UNITED_Q(1),
-                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x00000083U, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/UVM_driver.sv"s, 0x000000b9U, ""s, 1U);
         ++(vlSymsp->__Vcoverage[579]);
     } else {
         ++(vlSymsp->__Vcoverage[580]);
     }
     while (true) {
-        co_await VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__PVT__seq_item_port, "../UVM/UVM_driver.sv", 134)->__VnoInFunc_get_next_item(vlProcess, vlSymsp, __Vtask_get_next_item__24__t);
+        co_await VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__PVT__seq_item_port, "../UVM/UVM_driver.sv", 189)->__VnoInFunc_get_next_item(vlProcess, vlSymsp, __Vtask_get_next_item__24__t);
         tr = __Vtask_get_next_item__24__t;
         co_await this->__VnoInFunc_drive_one_use(vlProcess, vlSymsp, tr);
-        VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__PVT__seq_item_port, "../UVM/UVM_driver.sv", 136)->__VnoInFunc_item_done(vlProcess, vlSymsp, VlNull{});
+        VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__PVT__seq_item_port, "../UVM/UVM_driver.sv", 195)->__VnoInFunc_item_done(vlProcess, vlSymsp, VlNull{});
         ++(vlSymsp->__Vcoverage[581]);
     }
     ++(vlSymsp->__Vcoverage[582]);

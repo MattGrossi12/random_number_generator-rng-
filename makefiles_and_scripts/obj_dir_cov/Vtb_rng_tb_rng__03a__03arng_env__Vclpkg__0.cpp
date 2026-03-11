@@ -59,9 +59,9 @@ void Vtb_rng_tb_rng__03a__03arng_env::__VnoInFunc_connect_phase(VlProcessRef vlP
     VL_DEBUG_IF(VL_DBG_MSGF("+                    Vtb_rng_tb_rng__03a__03arng_env::__VnoInFunc_connect_phase\n"); );
     // Body
     Vtb_rng_uvm_pkg__03a__03auvm_component::__VnoInFunc_connect_phase(vlProcess, vlSymsp, phase);
-    VL_NULL_CHECK(VL_NULL_CHECK(VL_NULL_CHECK(this->__PVT__agent, "../UVM/UVM_env.sv", 22)
-                                ->__PVT__monitor, "../UVM/UVM_env.sv", 22)
-                  ->__PVT__ap, "../UVM/UVM_env.sv", 22)->__VnoInFunc_connect(vlProcess, vlSymsp, VL_NULL_CHECK(this->__PVT__scb, "../UVM/UVM_env.sv", 22)
+    VL_NULL_CHECK(VL_NULL_CHECK(VL_NULL_CHECK(this->__PVT__agent, "../UVM/UVM_env.sv", 34)
+                                ->__PVT__monitor, "../UVM/UVM_env.sv", 34)
+                  ->__PVT__ap, "../UVM/UVM_env.sv", 34)->__VnoInFunc_connect(vlProcess, vlSymsp, VL_NULL_CHECK(this->__PVT__scb, "../UVM/UVM_env.sv", 34)
                                                                              ->__PVT__imp);
     ++(vlSymsp->__Vcoverage[663]);
 }

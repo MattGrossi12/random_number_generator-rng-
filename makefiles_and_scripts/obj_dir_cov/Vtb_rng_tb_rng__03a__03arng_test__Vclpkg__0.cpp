@@ -65,7 +65,7 @@ void Vtb_rng_tb_rng__03a__03arng_test::__VnoInFunc_build_phase(VlProcessRef vlPr
     } else {
         this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 3U, "NOVIF"s, __VlefCall_0__uvm_report_enabled);
         if ((0U != __VlefCall_0__uvm_report_enabled)) {
-            this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "NOVIF"s, "vif nao encontrado no test"s, 0U, "../UVM/../UVM/testbench.sv"s, 0x0000004cU, ""s, 1U);
+            this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "NOVIF"s, "vif nao encontrado no test"s, 0U, "../UVM/../UVM/testbench.sv"s, 0x00000042U, ""s, 1U);
             ++(vlSymsp->__Vcoverage[669]);
         } else {
             ++(vlSymsp->__Vcoverage[670]);
@@ -89,22 +89,22 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_test::__VnoInFunc_apply_reset(VlProcessR
     IData/*31:0*/ __VlefCall_0__uvm_report_enabled;
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__2_Vtrigm___PVT__rst_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 82)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 73)
      ->__PVT__rst_i) = 0U;
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__3_Vtrigm___PVT__req_num_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 83)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 77)
      ->__PVT__req_num_i) = 0U;
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__4_Vtrigm___PVT__wr_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 84)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 81)
      ->__PVT__wr_i) = 0U;
     this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_TEST"s, __VlefCall_0__uvm_report_enabled);
     if ((0U != __VlefCall_0__uvm_report_enabled)) {
         this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_TEST"s, VL_SFORMATF_N_NX("Reset assert em t=%0t",0,
                                                                                 64,
                                                                                 VL_TIME_UNITED_Q(1),
-                                                                                -12) , 0x00000064U, "../UVM/../UVM/testbench.sv"s, 0x00000056U, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/../UVM/testbench.sv"s, 0x00000055U, ""s, 1U);
         ++(vlSymsp->__Vcoverage[676]);
     } else {
         ++(vlSymsp->__Vcoverage[677]);
@@ -112,17 +112,17 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_test::__VnoInFunc_apply_reset(VlProcessR
     co_await vlSymsp->TOP.__VdlySched.delay(0x0000000000000019ULL, 
                                             vlProcess, 
                                             "../UVM/../UVM/testbench.sv", 
-                                            87);
+                                            89);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__2_Vtrigm___PVT__rst_i = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 88)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 93)
      ->__PVT__rst_i) = 1U;
     this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "RNG_TEST"s, __VlefCall_1__uvm_report_enabled);
     if ((0U != __VlefCall_1__uvm_report_enabled)) {
         this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_TEST"s, VL_SFORMATF_N_NX("Reset deassert em t=%0t",0,
                                                                                 64,
                                                                                 VL_TIME_UNITED_Q(1),
-                                                                                -12) , 0x00000064U, "../UVM/../UVM/testbench.sv"s, 0x00000059U, ""s, 1U);
+                                                                                -12) , 0x00000064U, "../UVM/../UVM/testbench.sv"s, 0x00000061U, ""s, 1U);
         ++(vlSymsp->__Vcoverage[678]);
     } else {
         ++(vlSymsp->__Vcoverage[679]);
@@ -137,22 +137,22 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_test::__VnoInFunc_run_phase(VlProcessRef
     VL_KEEP_THIS;
     VlClassRef<Vtb_rng_tb_rng__03a__03arng_sequence> seq;
     co_await Vtb_rng_uvm_pkg__03a__03auvm_component::__VnoInFunc_run_phase(vlProcess, vlSymsp, phase);
-    VL_NULL_CHECK(phase, "../UVM/../UVM/testbench.sv", 96)->__VnoInFunc_raise_objection(vlProcess, vlSymsp, 
+    VL_NULL_CHECK(phase, "../UVM/../UVM/testbench.sv", 109)->__VnoInFunc_raise_objection(vlProcess, vlSymsp, 
                                                                                 VlClassRef<Vtb_rng_tb_rng__03a__03arng_test>{this}, ""s, 1U);
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__5_Vtrigm___PVT__clk_toggle_tu = 1U;
-        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 99)
+        }(), VL_NULL_CHECK(this->__PVT__vif, "../UVM/../UVM/testbench.sv", 113)
      ->__PVT__clk_toggle_tu) = 3ULL;
     co_await this->__VnoInFunc_apply_reset(vlProcess, vlSymsp);
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi64__Vclpkg.__VnoInFunc_create(vlProcess, vlSymsp, "seq"s, VlNull{}, ""s, seq);
-    co_await VL_NULL_CHECK(seq, "../UVM/../UVM/testbench.sv", 104)->__VnoInFunc_start(vlProcess, vlSymsp, VL_NULL_CHECK(VL_NULL_CHECK(this->__PVT__env, "../UVM/../UVM/testbench.sv", 104)
-                                                                                ->__PVT__agent, "../UVM/../UVM/testbench.sv", 104)
+    co_await VL_NULL_CHECK(seq, "../UVM/../UVM/testbench.sv", 125)->__VnoInFunc_start(vlProcess, vlSymsp, VL_NULL_CHECK(VL_NULL_CHECK(this->__PVT__env, "../UVM/../UVM/testbench.sv", 125)
+                                                                                ->__PVT__agent, "../UVM/../UVM/testbench.sv", 125)
                                                                                 ->__PVT__sequencer, VlNull{}, 0xffffffffU, 1U);
     co_await vlSymsp->TOP.__VdlySched.delay(0x0000000000000064ULL, 
                                             vlProcess, 
                                             "../UVM/../UVM/testbench.sv", 
-                                            107);
-    VL_NULL_CHECK(phase, "../UVM/../UVM/testbench.sv", 108)->__VnoInFunc_drop_objection(vlProcess, vlSymsp, 
+                                            129);
+    VL_NULL_CHECK(phase, "../UVM/../UVM/testbench.sv", 133)->__VnoInFunc_drop_objection(vlProcess, vlSymsp, 
                                                                                 VlClassRef<Vtb_rng_tb_rng__03a__03arng_test>{this}, ""s, 1U);
     ++(vlSymsp->__Vcoverage[681]);
     co_return;

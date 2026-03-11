@@ -66,10 +66,10 @@ VL_ATTR_COLD void Vtb_rng_rng_if___configure_coverage(Vtb_rng_rng_if* vlSelf, bo
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[501]), first, "../UVM/../UVM/testbench.sv", 8, 58, "", "v_toggle/rng_if", "clk_i");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[503]), first, "../UVM/../UVM/testbench.sv", 10, 9, "", "v_toggle/rng_if", "rst_i");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[505]), first, "../UVM/../UVM/testbench.sv", 13, 9, "", "v_toggle/rng_if", "req_num_i");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[507]), first, "../UVM/../UVM/testbench.sv", 14, 9, "", "v_toggle/rng_if", "wr_i");
-    vlSelf->__vlCoverToggleInsert(0, 2, 1, &(vlSymsp->__Vcoverage[509]), first, "../UVM/../UVM/testbench.sv", 17, 21, "", "v_toggle/rng_if", "num_to_send_o");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[515]), first, "../UVM/../UVM/testbench.sv", 20, 24, "", "v_line/rng_if", "block", "20");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[501]), first, "../UVM/../UVM/testbench.sv", 1, 58, "", "v_toggle/rng_if", "clk_i");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[503]), first, "../UVM/../UVM/testbench.sv", 4, 11, "", "v_toggle/rng_if", "rst_i");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[505]), first, "../UVM/../UVM/testbench.sv", 8, 11, "", "v_toggle/rng_if", "req_num_i");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[507]), first, "../UVM/../UVM/testbench.sv", 12, 11, "", "v_toggle/rng_if", "wr_i");
+    vlSelf->__vlCoverToggleInsert(0, 2, 1, &(vlSymsp->__Vcoverage[509]), first, "../UVM/../UVM/testbench.sv", 16, 23, "", "v_toggle/rng_if", "num_to_send_o");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[515]), first, "../UVM/../UVM/testbench.sv", 20, 26, "", "v_line/rng_if", "block", "20");
 }

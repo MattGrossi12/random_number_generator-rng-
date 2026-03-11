@@ -1,15 +1,12 @@
-//============================================================
-// rng_tb_params.svh
-// Parametros gerais da bancada
-//============================================================
 `ifndef RNG_TB_PARAMS_SVH
 `define RNG_TB_PARAMS_SVH
 
+// Mantem a largura do dado como parametro global para garantir coerencia entre interface,
+// DUT e componentes que interpretam o valor observado.
 localparam int RNG_WIDTH = 3;
 
-// Interpretação do requisito de clock:
-// "periodo de clk = 3/7/10" foi implementado como TOGGLE a cada 3/7/10 TU.
-// => periodo completo = 2*CLK_TOGGLE_TU.
+// Define um tipo sem sinal para identificar rodadas de forma uniforme em toda a bancada,
+// preservando legibilidade e consistencia semantica.
 typedef int unsigned rng_round_t;
 
 `endif
