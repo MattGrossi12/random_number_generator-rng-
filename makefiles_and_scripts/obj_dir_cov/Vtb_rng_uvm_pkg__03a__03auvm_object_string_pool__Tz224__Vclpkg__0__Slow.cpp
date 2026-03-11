@@ -1,0 +1,51 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vtb_rng.h for the primary calling header
+
+#include "Vtb_rng__pch.h"
+
+VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg___ctor_var_reset(Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg___ctor_var_reset\n"); );
+    Vtb_rng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+}
+
+VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg___configure_coverage(Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg* vlSelf, bool first) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg___configure_coverage\n"); );
+    Vtb_rng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    (void)first;  // Prevent unused variable warning
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2468]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 255, 28, "", "v_line/uvm_object_string_pool__Tz224", "block", "255");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2469]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 255, 40, "", "v_line/uvm_object_string_pool__Tz224", "block", "255");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2470]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 255, 6, "", "v_branch/uvm_object_string_pool__Tz224", "if", "255,262");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2471]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 255, 7, "", "v_branch/uvm_object_string_pool__Tz224", "else", "255");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2472]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 255, 24, "", "v_line/uvm_object_string_pool__Tz224", "block", "255");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2473]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 256, 29, "", "v_line/uvm_object_string_pool__Tz224", "block", "256");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2474]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 256, 30, "", "v_line/uvm_object_string_pool__Tz224", "block", "256");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2475]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 262, 12, "", "v_line/uvm_object_string_pool__Tz224", "block", "262-263");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2476]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 274, 5, "", "v_branch/uvm_object_string_pool__Tz224", "if", "274-275");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2477]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 274, 6, "", "v_branch/uvm_object_string_pool__Tz224", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2478]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 273, 29, "", "v_line/uvm_object_string_pool__Tz224", "block", "273,276");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2479]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 284, 21, "", "v_line/uvm_object_string_pool__Tz224", "block", "284-287");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2480]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 299, 5, "", "v_branch/uvm_object_string_pool__Tz224", "if", "299-300");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2481]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 299, 6, "", "v_branch/uvm_object_string_pool__Tz224", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2482]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 298, 22, "", "v_line/uvm_object_string_pool__Tz224", "block", "298,301");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2483]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 310, 5, "", "v_branch/uvm_object_string_pool__Tz224", "if", "310-313");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2484]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 310, 6, "", "v_branch/uvm_object_string_pool__Tz224", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2485]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 309, 25, "", "v_line/uvm_object_string_pool__Tz224", "block", "309,315");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2486]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 327, 14, "", "v_line/uvm_object_string_pool__Tz224", "block", "326-327");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2487]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 325, 7, "", "v_line/uvm_object_string_pool__Tz224", "block", "327");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2488]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 324, 5, "", "v_branch/uvm_object_string_pool__Tz224", "if", "324");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2489]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 324, 6, "", "v_branch/uvm_object_string_pool__Tz224", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[2490]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 321, 25, "", "v_line/uvm_object_string_pool__Tz224", "block", "321-323,328");
+}
+
+VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224___configure_coverage(Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224* vlSelf, bool first) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224___configure_coverage\n"); );
+    (void)vlSelf;  // Prevent unused variable warning
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    (void)first;  // Prevent unused variable warning
+}

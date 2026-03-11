@@ -1,0 +1,9 @@
+
+# Verilator artifacts
+makefiles_and_scripts/obj_dir/
+**/obj_dir/
+*.gch
+*.o
+*.a
+*.d
+*.log

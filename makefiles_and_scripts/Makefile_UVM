@@ -1,0 +1,174 @@
+VERILATOR ?= verilator
+
+# Pasta que contem uvm_pkg.sv
+UVM_HOME  ?= /home/matheus/tools/1800.2-2017-1.0/src
+
+TB_DIR      := ../UVM
+RTL_DIR     := ../src
+TOP         := tb_rng
+
+# Caminhos absolutos normalizados
+PROJECT_ROOT := $(realpath ..)
+RTL_DIR_ABS  := $(realpath $(RTL_DIR))
+TB_DIR_ABS   := $(realpath $(TB_DIR))
+
+# Diretorios de build
+OBJ_DIR      := obj_dir
+OBJ_DIR_COV  := obj_dir_cov
+
+# Waveform
+WAVE_DIR     := ../waveforms
+WAVE_VCD     := $(WAVE_DIR)/UVM.vcd
+
+# Cobertura
+COV_DIR         := $(PROJECT_ROOT)/coverage
+COV_DAT         := $(COV_DIR)/uvm_coverage.dat
+COV_INFO_RAW    := $(COV_DIR)/uvm_coverage_raw.info
+COV_INFO_RTL    := $(COV_DIR)/rtl_coverage.info
+COV_HTML        := $(COV_DIR)/html_rtl
+
+# Args de runtime do teste normal
+RUN_ARGS ?= +UVM_TESTNAME=rng_test +UVM_VERBOSITY=UVM_NONE +UVM_NO_RELNOTES
+
+# Args de runtime para cobertura
+COV_RUN_ARGS := $(RUN_ARGS) +verilator+coverage+file+$(COV_DAT)
+
+RTL = \
+    $(RTL_DIR)/rng_top.v \
+    $(RTL_DIR)/rng_data_path.v \
+    $(RTL_DIR)/rng_data_path_counter.v \
+    $(RTL_DIR)/rng_selector.v \
+    $(RTL_DIR)/rng_hs_dup_detector.v
+
+# TB principal agora eh a versao fusionada/monolitica
+TB = $(TB_DIR)/testbench.sv
+
+# Arquivos ainda referenciados por `include dentro da testbench fusionada
+TB_INCLUDES = \
+    $(TB_DIR)/UVM_tb_params.svh \
+    $(TB_DIR)/UVM_seq_item.sv \
+    $(TB_DIR)/UVM_sequencer.sv \
+    $(TB_DIR)/UVM_sequence.sv \
+    $(TB_DIR)/UVM_driver.sv \
+    $(TB_DIR)/UVM_monitor.sv \
+    $(TB_DIR)/UVM_scoreboard.sv \
+    $(TB_DIR)/UVM_agent.sv \
+    $(TB_DIR)/UVM_env.sv
+
+INC = \
+    +incdir+$(TB_DIR) \
+    +incdir+$(RTL_DIR) \
+    +incdir+$(UVM_HOME)
+
+VFLAGS_COMMON = \
+    -sv \
+    --binary \
+    --timing \
+    -j $$(nproc) \
+    -Wno-fatal \
+    --trace-vcd \
+    -Wno-WIDTHTRUNC \
+    -Wno-WIDTHEXPAND \
+    +define+UVM_NO_DPI \
+    $(INC) \
+    --top-module $(TOP)
+
+# Build normal
+VFLAGS = \
+    $(VFLAGS_COMMON) \
+    --Mdir $(OBJ_DIR)
+
+# Build com cobertura
+VFLAGS_COV = \
+    $(VFLAGS_COMMON) \
+    --coverage \
+    --Mdir $(OBJ_DIR_COV)
+
+all: run
+
+check_uvm:
+	@test -f "$(UVM_HOME)/uvm_pkg.sv" || \
+	( echo "ERRO: uvm_pkg.sv nao encontrado em $(UVM_HOME)"; \
+	  echo "Use: find $$HOME/tools -name uvm_pkg.sv 2>/dev/null"; \
+	  exit 1 )
+
+check_tb:
+	@test -f "$(TB)" || \
+	( echo "ERRO: testbench fusionado nao encontrado em $(TB)"; \
+	  exit 1 )
+
+check_tb_includes:
+	@for f in $(TB_INCLUDES); do \
+		test -f "$$f" || \
+		( echo "ERRO: arquivo referenciado por include nao encontrado: $$f"; exit 1 ); \
+	done
+
+check_tools:
+	@command -v $(VERILATOR) >/dev/null 2>&1 || \
+	( echo "ERRO: verilator nao encontrado no PATH"; exit 1 )
+	@command -v verilator_coverage >/dev/null 2>&1 || \
+	( echo "ERRO: verilator_coverage nao encontrado no PATH"; exit 1 )
+	@command -v lcov >/dev/null 2>&1 || \
+	( echo "ERRO: lcov nao encontrado no PATH"; exit 1 )
+
+check_html_tools:
+	@command -v genhtml >/dev/null 2>&1 || \
+	( echo "ERRO: genhtml nao encontrado no PATH (instale o pacote lcov)"; exit 1 )
+
+compile: check_tools check_uvm check_tb check_tb_includes
+	$(VERILATOR) $(VFLAGS) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+
+compile_cov: check_tools check_uvm check_tb check_tb_includes
+	$(VERILATOR) $(VFLAGS_COV) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+
+run: compile
+	mkdir -p $(WAVE_DIR)
+	./$(OBJ_DIR)/V$(TOP) $(RUN_ARGS)
+
+run_cov: compile_cov
+	mkdir -p $(WAVE_DIR) $(COV_DIR)
+	rm -f $(COV_DAT) $(COV_INFO_RAW) $(COV_INFO_RTL)
+	./$(OBJ_DIR_COV)/V$(TOP) $(COV_RUN_ARGS)
+
+# Gera o tracefile bruto em formato LCOV
+lcov_raw: run_cov
+	verilator_coverage --write-info $(COV_INFO_RAW) $(COV_DAT)
+	@echo "LCOV bruto gerado em: $(COV_INFO_RAW)"
+
+# Reescreve os caminhos do tracefile e filtra apenas o RTL
+lcov_rtl: lcov_raw
+	lcov \
+		--substitute 's#^\.\./UVM/\.\./src/#$(RTL_DIR_ABS)/#' \
+		--extract $(COV_INFO_RAW) "$(RTL_DIR_ABS)/*" \
+		-o $(COV_INFO_RTL)
+	@echo "LCOV RTL-only gerado em: $(COV_INFO_RTL)"
+
+# Resumo no terminal
+coverage_summary: lcov_rtl
+	lcov --summary $(COV_INFO_RTL)
+
+# HTML apenas do RTL, com caminhos normalizados
+html_rtl: lcov_rtl check_html_tools
+	rm -rf $(COV_HTML)
+	mkdir -p $(COV_HTML)
+	genhtml \
+		--flat \
+		--legend \
+		--prefix "$(PROJECT_ROOT)/" \
+		--source-directory "$(PROJECT_ROOT)" \
+		-o $(COV_HTML) \
+		$(COV_INFO_RTL)
+	@echo "HTML RTL gerado em: $(COV_HTML)/index.html"
+
+coverage: html_rtl
+
+waves:
+	gtkwave $(WAVE_VCD)
+
+clean:
+	rm -rf $(OBJ_DIR) $(OBJ_DIR_COV) $(COV_DIR) $(WAVE_VCD) *.log
+
+.PHONY: all check_uvm check_tb check_tb_includes check_tools check_html_tools \
+        compile compile_cov run run_cov \
+        lcov_raw lcov_rtl coverage_summary html_rtl coverage \
+        waves clean
