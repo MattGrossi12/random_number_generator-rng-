@@ -6,6 +6,4 @@ makefiles_and_scripts/obj_dir/
 *.o
 *.a
 *.d
-*.vcd
-*.fst
 *.log

@@ -4,7 +4,7 @@
 class rng_scoreboard extends uvm_scoreboard;
   `uvm_component_utils(rng_scoreboard)
 
-  localparam int unsigned EXPECTED_REQS = 24;
+  localparam longint unsigned EXPECTED_REQS = 24;
 
   uvm_analysis_imp #(int unsigned, rng_scoreboard) imp;
 
@@ -94,7 +94,7 @@ class rng_scoreboard extends uvm_scoreboard;
     end
 
     list = "";
-    for (i = 0; i < EXPECTED_REQS; i++) begin
+    for (i = 0; i < int'(EXPECTED_REQS); i++) begin
       if (i < seq.size()) begin
         list = {list, $sformatf("%0d", seq[i])};
       end
@@ -128,11 +128,11 @@ class rng_scoreboard extends uvm_scoreboard;
                   EXPECTED_REQS, sample_count))
     end
 
-    if (seq.size() < EXPECTED_REQS) begin
-      `uvm_info("RNG_SCB",
-        $sformatf("Sequencia completada com x: capturados=%0d faltantes=%0d",
-                  seq.size(), EXPECTED_REQS - seq.size()),
-        UVM_LOW)
-    end
+  if (seq.size() < EXPECTED_REQS) begin
+    `uvm_info("RNG_SCB",
+      $sformatf("Sequencia completada com x: capturados=%0d faltantes=%0d",
+                seq.size(), EXPECTED_REQS - seq.size()),
+      UVM_LOW)
+  end
   endfunction
 endclass

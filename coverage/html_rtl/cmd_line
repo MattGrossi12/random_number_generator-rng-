@@ -1,0 +1,1 @@
+genhtml --flat --legend --prefix /home/matheus/Documentos/random_number_generator-rng-/ --source-directory /home/matheus/Documentos/random_number_generator-rng- -o /home/matheus/Documentos/random_number_generator-rng-/coverage/html_rtl /home/matheus/Documentos/random_number_generator-rng-/coverage/rtl_coverage.info
