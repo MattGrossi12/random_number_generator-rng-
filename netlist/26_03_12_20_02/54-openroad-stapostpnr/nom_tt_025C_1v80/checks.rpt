@@ -1,0 +1,133 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: rst_i (input port clocked by clk_i)
+Endpoint: _164_ (recovery check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                625.000000  625.000000 ^ input external delay
+     1    0.002604    0.018897    0.009607  625.009583 ^ rst_i (in)
+                                                         rst_i (net)
+                      0.018897    0.000000  625.009583 ^ input2/A (sky130_fd_sc_hd__buf_1)
+     2    0.009314    0.116869    0.123180  625.132812 ^ input2/X (sky130_fd_sc_hd__buf_1)
+                                                         net2 (net)
+                      0.116870    0.000341  625.133118 ^ fanout16/A (sky130_fd_sc_hd__buf_2)
+     8    0.039264    0.193689    0.240107  625.373230 ^ fanout16/X (sky130_fd_sc_hd__buf_2)
+                                                         net16 (net)
+                      0.193785    0.002160  625.375366 ^ fanout15/A (sky130_fd_sc_hd__clkbuf_4)
+    10    0.044173    0.140612    0.258183  625.633606 ^ fanout15/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         net15 (net)
+                      0.140613    0.000739  625.634338 ^ _164_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                            625.634338   data arrival time
+
+                               3125.000000 3125.000000   clock clk_i (rise edge)
+                                  0.000000 3125.000000   clock source latency
+     1    0.014405    0.070783    0.048203 3125.048096 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.070787    0.000000 3125.048096 ^ clkbuf_0_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+     4    0.041418    0.061011    0.152113 3125.200439 ^ clkbuf_0_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk_i (net)
+                      0.061033    0.001137 3125.201416 ^ clkbuf_2_2__f_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+    11    0.030299    0.051254    0.140290 3125.341797 ^ clkbuf_2_2__f_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_2_2__leaf_clk_i (net)
+                      0.051257    0.000682 3125.342529 ^ _164_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                                 -0.250000 3125.092285   clock uncertainty
+                                  0.000000 3125.092285   clock reconvergence pessimism
+                                  0.192604 3125.284912   library recovery time
+                                           3125.284912   data required time
+---------------------------------------------------------------------------------------------
+                                           3125.284912   data required time
+                                           -625.634338   data arrival time
+---------------------------------------------------------------------------------------------
+                                           2499.650635   slack (MET)
+
+
+Startpoint: _187_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: num_to_send_o[2] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.014405    0.070783    0.048240    0.048240 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.070787    0.000000    0.048240 ^ clkbuf_0_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+     4    0.041418    0.061011    0.152112    0.200353 ^ clkbuf_0_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk_i (net)
+                      0.061041    0.001186    0.201539 ^ clkbuf_2_0__f_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+    11    0.031870    0.052620    0.141305    0.342844 ^ clkbuf_2_0__f_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_2_0__leaf_clk_i (net)
+                      0.052645    0.001652    0.344496 ^ _187_/CLK (sky130_fd_sc_hd__dfrtp_1)
+     5    0.014947    0.140879    0.395832    0.740329 ^ _187_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                                         net6 (net)
+                      0.140879    0.000520    0.740849 ^ output6/A (sky130_fd_sc_hd__buf_2)
+     1    0.033965    0.169203    0.230640    0.971489 ^ output6/X (sky130_fd_sc_hd__buf_2)
+                                                         num_to_send_o[2] (net)
+                      0.169203    0.000614    0.972103 ^ num_to_send_o[2] (out)
+                                              0.972103   data arrival time
+
+                               3125.000000 3125.000000   clock clk_i (rise edge)
+                                  0.000000 3125.000000   clock network delay (propagated)
+                                 -0.250000 3124.750000   clock uncertainty
+                                  0.000000 3124.750000   clock reconvergence pessimism
+                               -625.000000 2499.750000   output external delay
+                                           2499.750000   data required time
+---------------------------------------------------------------------------------------------
+                                           2499.750000   data required time
+                                             -0.972103   data arrival time
+---------------------------------------------------------------------------------------------
+                                           2498.777832   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_2_0__f_clk_i/X                    10     11        (VIOLATED)
+clkbuf_2_2__f_clk_i/X                    10     11        (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 3 unannotated drivers.
+ clkload0/X
+ clkload1/Y
+ clkload2/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 2
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

@@ -8,14 +8,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor__Vclpkg::__VnoInFunc_get_type(Vt
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_abstract_object_registry__pi123__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[20858]);
+    ++(vlSymsp->__Vcoverage[20853]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_reg_frontdoor"s;
-    ++(vlSymsp->__Vcoverage[20860]);
+    ++(vlSymsp->__Vcoverage[20855]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,14 +25,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__VnoInFunc_get_object_type(Vtb
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_abstract_object_registry__pi123__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[20859]);
+    ++(vlSymsp->__Vcoverage[20854]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_reg_frontdoor"s;
-    ++(vlSymsp->__Vcoverage[20861]);
+    ++(vlSymsp->__Vcoverage[20856]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -41,7 +41,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::init(VlProcessRef vlProcess, Vt
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[20862]);
+    ++(vlSymsp->__Vcoverage[20857]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

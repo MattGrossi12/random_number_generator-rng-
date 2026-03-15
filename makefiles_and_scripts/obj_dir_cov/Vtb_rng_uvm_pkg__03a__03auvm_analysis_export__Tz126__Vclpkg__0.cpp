@@ -11,14 +11,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz126::init(VlProcessRef vlPr
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
     Vtb_rng_uvm_pkg__03a__03auvm_port_base__Tz172::__PVT__m_if_mask = 0x00000100U;
-    ++(vlSymsp->__Vcoverage[18906]);
+    ++(vlSymsp->__Vcoverage[18901]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz126::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz126::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_analysis_export"s;
-    ++(vlSymsp->__Vcoverage[18907]);
+    ++(vlSymsp->__Vcoverage[18902]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz126::__VnoInFunc_write(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_tb_rng__03a__03arng_seq_item> t) {
@@ -42,15 +42,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz126::__VnoInFunc_write(VlPr
                                                                             VL_CVT_PACK_STR_NN(
                                                                                 VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN("No uvm_tlm interface is connected to "s, __VlefCall_1__get_full_name), " for executing write()"s)), 0U, ""s, 0U, ""s, 0U);
-            ++(vlSymsp->__Vcoverage[18908]);
+            ++(vlSymsp->__Vcoverage[18903]);
         } else {
-            ++(vlSymsp->__Vcoverage[18909]);
+            ++(vlSymsp->__Vcoverage[18904]);
         }
         VL_NULL_CHECK(tif, "/home/matheus/tools/1800.2-2017-1.0/src/tlm1/uvm_analysis_port.svh", 153)->__VnoInFunc_write(vlProcess, vlSymsp, t);
         unnamedblk1__DOT__i = ((IData)(1U) + unnamedblk1__DOT__i);
-        ++(vlSymsp->__Vcoverage[18910]);
+        ++(vlSymsp->__Vcoverage[18905]);
     }
-    ++(vlSymsp->__Vcoverage[18911]);
+    ++(vlSymsp->__Vcoverage[18906]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz126::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

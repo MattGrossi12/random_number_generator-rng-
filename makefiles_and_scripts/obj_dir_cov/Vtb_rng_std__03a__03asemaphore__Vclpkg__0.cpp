@@ -9,7 +9,7 @@ void Vtb_rng_std__03a__03asemaphore::init(Vtb_rng__Syms* __restrict vlSymsp, IDa
     // Body
     _ctor_var_reset(vlSymsp);
     this->__PVT__m_keyCount = keyCount;
-    ++(vlSymsp->__Vcoverage[25444]);
+    ++(vlSymsp->__Vcoverage[25439]);
 }
 
 void Vtb_rng_std__03a__03asemaphore::__VnoInFunc_put(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ keyCount) {
@@ -17,7 +17,7 @@ void Vtb_rng_std__03a__03asemaphore::__VnoInFunc_put(Vtb_rng__Syms* __restrict v
     // Body
     this->__PVT__m_keyCount = (this->__PVT__m_keyCount 
                                + keyCount);
-    ++(vlSymsp->__Vcoverage[25445]);
+    ++(vlSymsp->__Vcoverage[25440]);
 }
 
 VlCoroutine Vtb_rng_std__03a__03asemaphore::__VnoInFunc_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ keyCount) {
@@ -48,11 +48,11 @@ VlCoroutine Vtb_rng_std__03a__03asemaphore::__VnoInFunc_get(VlProcessRef vlProce
                                                          "/usr/local/share/verilator/include/verilated_std.sv", 
                                                          114);
         }
-        ++(vlSymsp->__Vcoverage[25446]);
+        ++(vlSymsp->__Vcoverage[25441]);
     }
     this->__PVT__m_keyCount = (this->__PVT__m_keyCount 
                                - keyCount);
-    ++(vlSymsp->__Vcoverage[25447]);
+    ++(vlSymsp->__Vcoverage[25442]);
     co_return;
 }
 
@@ -67,12 +67,12 @@ void Vtb_rng_std__03a__03asemaphore::__VnoInFunc_try_get(Vtb_rng__Syms* __restri
             try_get__Vfuncrtn = 1U;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[25449]);
+            ++(vlSymsp->__Vcoverage[25444]);
         }
         try_get__Vfuncrtn = 0U;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[25450]);
+    ++(vlSymsp->__Vcoverage[25445]);
 }
 
 void Vtb_rng_std__03a__03asemaphore::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

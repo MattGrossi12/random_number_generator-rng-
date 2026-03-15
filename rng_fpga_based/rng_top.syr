@@ -356,6 +356,7 @@ Unit <rng_selector> synthesized.
 
 Synthesizing Unit <rng_hs_dup_detector>.
     Related source file is "../src/rng_hs_dup_detector.v".
+WARNING:Xst:647 - Input <req_num_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <dec7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <dec6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <dec5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -457,7 +458,6 @@ Optimizing unit <rng_top> ...
 Optimizing unit <rng_hs_dup_detector> ...
 
 Mapping all equations...
-WARNING:Xst:2170 - Unit rng_top : the following signal(s) form a combinatorial loop: req_num.
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block rng_top, actual ratio is 0.
 
@@ -499,8 +499,8 @@ Design Statistics
 Cell Usage :
 # BELS                             : 28
 #      INV                         : 2
-#      LUT2                        : 9
-#      LUT3                        : 2
+#      LUT2                        : 10
+#      LUT3                        : 1
 #      LUT3_L                      : 1
 #      LUT4                        : 11
 #      LUT4_L                      : 3
@@ -563,7 +563,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 7.079ns (Maximum Frequency: 141.263MHz)
-   Minimum input arrival time before clock: 3.659ns
+   Minimum input arrival time before clock: 3.603ns
    Maximum output required time after clock: 4.394ns
    Maximum combinational path delay: No path found
 
@@ -600,7 +600,7 @@ Delay:               7.079ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
   Total number of paths / destination ports: 7 / 7
 -------------------------------------------------------------------------
-Offset:              3.659ns (Levels of Logic = 2)
+Offset:              3.603ns (Levels of Logic = 2)
   Source:            req_num_i (PAD)
   Destination:       rng_dp/inst/num_counter_0 (FF)
   Destination Clock: clk_i rising
@@ -610,11 +610,11 @@ Offset:              3.659ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.218   0.595  req_num_i_IBUF (req_num_i_IBUF)
-     LUT3:I0->O            4   0.704   0.587  req_num1 (req_num)
+     LUT2:I0->O            3   0.704   0.531  req_num1 (req_num)
      FDCE:CE                   0.555          rng_dp/inst/num_counter_0
     ----------------------------------------
-    Total                      3.659ns (2.477ns logic, 1.182ns route)
-                                       (67.7% logic, 32.3% route)
+    Total                      3.603ns (2.477ns logic, 1.126ns route)
+                                       (68.7% logic, 31.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
@@ -639,12 +639,12 @@ Offset:              4.394ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.41 secs
+Total CPU time to Xst completion: 3.81 secs
  
 --> 
 
 
-Total memory usage is 512476 kilobytes
+Total memory usage is 512480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   11 (   0 filtered)

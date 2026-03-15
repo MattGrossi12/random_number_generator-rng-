@@ -258,7 +258,7 @@ end
 
 always@(*)
 begin
-    req_new_num_o = req_num || req_num_i;
+    req_new_num_o = req_num;
 end
 
 endmodule

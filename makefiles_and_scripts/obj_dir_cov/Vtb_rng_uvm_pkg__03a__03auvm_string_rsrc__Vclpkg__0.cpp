@@ -14,7 +14,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_string_rsrc::init(VlProcessRef vlProcess, Vtb_
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_pool__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, rp);
     VL_NULL_CHECK(rp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_specializations.svh", 108)->__VnoInFunc_set_scope(vlProcess, vlSymsp, 
                                                                                 VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_string_rsrc>{this}, s);
-    ++(vlSymsp->__Vcoverage[8024]);
+    ++(vlSymsp->__Vcoverage[8019]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_string_rsrc::__VnoInFunc_convert2string(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string &convert2string__Vfuncrtn) {
@@ -22,7 +22,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_string_rsrc::__VnoInFunc_convert2string(VlProc
     // Body
     convert2string__Vfuncrtn = ""s;
     this->__VnoInFunc_read(vlProcess, vlSymsp, VlNull{}, convert2string__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[8025]);
+    ++(vlSymsp->__Vcoverage[8020]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_string_rsrc::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

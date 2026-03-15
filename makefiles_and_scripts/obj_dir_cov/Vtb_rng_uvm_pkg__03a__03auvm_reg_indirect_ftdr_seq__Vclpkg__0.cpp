@@ -13,7 +13,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_indirect_ftdr_seq::init(VlProcessRef vlPro
     this->__PVT__m_addr_reg = addr_reg;
     this->__PVT__m_idx = idx;
     this->__PVT__m_data_reg = data_reg;
-    ++(vlSymsp->__Vcoverage[22373]);
+    ++(vlSymsp->__Vcoverage[22368]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_indirect_ftdr_seq::__VnoInFunc_body(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -46,7 +46,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_indirect_ftdr_seq::__VnoInFunc_body
              ->__PVT__status)) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[22375]);
+            ++(vlSymsp->__Vcoverage[22370]);
         }
         VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__PVT__rw_info, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 300)->__VnoInFunc_clone(vlProcess, vlSymsp, __VlefCall_2__clone);
         __VlefExpr_3 = VL_CAST_DYNAMIC(__VlefCall_2__clone, rw);
@@ -61,13 +61,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_indirect_ftdr_seq::__VnoInFunc_body
         if ((1U == VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__PVT__rw_info, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 303)
              ->__PVT__kind)) {
             co_await VL_NULL_CHECK(this->__PVT__m_data_reg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 304)->__VnoInFunc_do_write(vlProcess, vlSymsp, rw);
-            ++(vlSymsp->__Vcoverage[22376]);
+            ++(vlSymsp->__Vcoverage[22371]);
         } else {
             co_await VL_NULL_CHECK(this->__PVT__m_data_reg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 306)->__VnoInFunc_do_read(vlProcess, vlSymsp, rw);
             VL_NULL_CHECK(Vtb_rng_uvm_pkg__03a__03auvm_reg_frontdoor::__PVT__rw_info, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 307)->__PVT__value.atWrite(0U) 
                 = VL_NULL_CHECK(rw, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 307)
                 ->__PVT__value.at(0U);
-            ++(vlSymsp->__Vcoverage[22377]);
+            ++(vlSymsp->__Vcoverage[22372]);
         }
         co_await VL_NULL_CHECK(this->__PVT__m_addr_reg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 310)->__VnoInFunc_XatomicX(vlProcess, vlSymsp, 0U);
         co_await VL_NULL_CHECK(this->__PVT__m_data_reg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/uvm_reg_indirect.svh", 311)->__VnoInFunc_XatomicX(vlProcess, vlSymsp, 0U);
@@ -76,7 +76,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_indirect_ftdr_seq::__VnoInFunc_body
             ->__PVT__status;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[22378]);
+    ++(vlSymsp->__Vcoverage[22373]);
     co_return;
 }
 

@@ -12,21 +12,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_registry_object_creator__Vclpkg::__VnoInFunc_c
     vlSymsp->TOP__uvm_pkg__03a__03auvm_coreservice_t__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, cs);
     VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 670)->__VnoInFunc_get_factory(vlSymsp, factory);
     VL_NULL_CHECK(factory, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 672)->__VnoInFunc_create_object_by_type(vlProcess, vlSymsp, obj_wrpr, contxt, name, create_by_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[1209]);
+    ++(vlSymsp->__Vcoverage[1204]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_registry_object_creator__Vclpkg::__VnoInFunc_base_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &base_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_registry_object_creator__Vclpkg::__VnoInFunc_base_type_name\n"); );
     // Body
     base_type_name__Vfuncrtn = "object"s;
-    ++(vlSymsp->__Vcoverage[1210]);
+    ++(vlSymsp->__Vcoverage[1205]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_registry_object_creator::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_registry_object_creator::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[1211]);
+    ++(vlSymsp->__Vcoverage[1206]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_registry_object_creator::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

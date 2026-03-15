@@ -10,13 +10,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy_::init(VlProcessRef vlProcess,
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[18005]);
+    ++(vlSymsp->__Vcoverage[18000]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy_::__VnoInFunc_get_immediate_children(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> s, VlQueue<VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component>> &children) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy_::__VnoInFunc_get_immediate_children\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18006]);
+    ++(vlSymsp->__Vcoverage[18001]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy_::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

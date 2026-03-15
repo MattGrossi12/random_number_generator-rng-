@@ -8,14 +8,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__Tz268__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[2468]);
+    ++(vlSymsp->__Vcoverage[2463]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_obj_str_pool"s;
-    ++(vlSymsp->__Vcoverage[2473]);
+    ++(vlSymsp->__Vcoverage[2468]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc_get_global_pool(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224> &get_global_pool__Vfuncrtn) {
@@ -24,12 +24,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     if ((VlNull{} == this->__PVT__m_global_pool)) {
         this->__PVT__m_global_pool = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224, vlProcess, vlSymsp, "global_pool"s);
-        ++(vlSymsp->__Vcoverage[2476]);
+        ++(vlSymsp->__Vcoverage[2471]);
     } else {
-        ++(vlSymsp->__Vcoverage[2477]);
+        ++(vlSymsp->__Vcoverage[2472]);
     }
     get_global_pool__Vfuncrtn = this->__PVT__m_global_pool;
-    ++(vlSymsp->__Vcoverage[2478]);
+    ++(vlSymsp->__Vcoverage[2473]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc_get_global(Vtb_rng__Syms* __restrict vlSymsp, std::string key, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz2> &get_global__Vfuncrtn) {
@@ -39,7 +39,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224__Vclpkg::__VnoInFunc
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224> gpool;
     this->__VnoInFunc_get_global_pool(vlSymsp, gpool);
     VL_NULL_CHECK(gpool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 287)->__VnoInFunc_get(vlProcess, vlSymsp, key, get_global__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[2479]);
+    ++(vlSymsp->__Vcoverage[2474]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -49,7 +49,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_get_obj
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__Tz268__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[2469]);
+    ++(vlSymsp->__Vcoverage[2464]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_create(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create__Vfuncrtn) {
@@ -58,20 +58,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_create(
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224> tmp;
     if ((""s == name)) {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224, vlProcess, vlSymsp, ""s);
-        ++(vlSymsp->__Vcoverage[2470]);
+        ++(vlSymsp->__Vcoverage[2465]);
     } else {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224, vlProcess, vlSymsp, name);
-        ++(vlSymsp->__Vcoverage[2471]);
+        ++(vlSymsp->__Vcoverage[2466]);
     }
     create__Vfuncrtn = tmp;
-    ++(vlSymsp->__Vcoverage[2472]);
+    ++(vlSymsp->__Vcoverage[2467]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_obj_str_pool"s;
-    ++(vlSymsp->__Vcoverage[2474]);
+    ++(vlSymsp->__Vcoverage[2469]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -80,7 +80,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::init(VlProcessRef v
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[2475]);
+    ++(vlSymsp->__Vcoverage[2470]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string key, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz2> &get__Vfuncrtn) {
@@ -88,16 +88,16 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_get(VlP
     // Body
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz2> __VlefCall_0__new;
     if (Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz224::__PVT__pool.exists(key)) {
-        ++(vlSymsp->__Vcoverage[2481]);
+        ++(vlSymsp->__Vcoverage[2476]);
     } else {
         __VlefCall_0__new = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz2, vlProcess, vlSymsp, key);
         Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz224::__PVT__pool.at(key) 
             = __VlefCall_0__new;
-        ++(vlSymsp->__Vcoverage[2480]);
+        ++(vlSymsp->__Vcoverage[2475]);
     }
     get__Vfuncrtn = Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz224::__PVT__pool
         .at(key);
-    ++(vlSymsp->__Vcoverage[2482]);
+    ++(vlSymsp->__Vcoverage[2477]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_delete(Vtb_rng__Syms* __restrict vlSymsp, std::string key) {
@@ -117,7 +117,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_delete(
     {
         this->__VnoInFunc_exists(vlSymsp, key, __VlefCall_0__exists);
         if ((0U != __VlefCall_0__exists)) {
-            ++(vlSymsp->__Vcoverage[2484]);
+            ++(vlSymsp->__Vcoverage[2479]);
         } else {
             __Vtask_uvm_report_warning__6__report_enabled_checked = 0U;
             this->__Vtask_uvm_report_warning__6__context_name = ""s;
@@ -135,13 +135,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_delete(
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top 
                 = __Vtask_get_root__8__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 156)->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, this->__Vtask_uvm_report_warning__6__id, this->__Vtask_uvm_report_warning__6__message, __Vtask_uvm_report_warning__6__verbosity, this->__Vtask_uvm_report_warning__6__filename, __Vtask_uvm_report_warning__6__line, this->__Vtask_uvm_report_warning__6__context_name, (IData)(__Vtask_uvm_report_warning__6__report_enabled_checked));
-            ++(vlSymsp->__Vcoverage[441]);
+            ++(vlSymsp->__Vcoverage[436]);
             goto __Vlabel0;
         }
         Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz224::__PVT__pool.erase(key);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[2485]);
+    ++(vlSymsp->__Vcoverage[2480]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_do_print(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer> printer) {
@@ -160,17 +160,17 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_do_prin
                                                                                 VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN("["s, key), "]"s)), Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz224::__PVT__pool
                                                                                 .at(key), 0x5bU);
-            ++(vlSymsp->__Vcoverage[2486]);
+            ++(vlSymsp->__Vcoverage[2481]);
             __VlefExpr_1 = (0U != Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz224::__PVT__pool.next(key));
             if (!(__VlefExpr_1)) break;
-            ++(vlSymsp->__Vcoverage[2487]);
+            ++(vlSymsp->__Vcoverage[2482]);
         }
-        ++(vlSymsp->__Vcoverage[2488]);
+        ++(vlSymsp->__Vcoverage[2483]);
     } else {
-        ++(vlSymsp->__Vcoverage[2489]);
+        ++(vlSymsp->__Vcoverage[2484]);
     }
     VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_pool.svh", 328)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-    ++(vlSymsp->__Vcoverage[2490]);
+    ++(vlSymsp->__Vcoverage[2485]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_string_pool__Tz224::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

@@ -8,14 +8,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard__Vclpkg::__VnoInFunc_get_type(Vtb_r
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_scoreboard__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_abstract_component_registry__pi81__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[18169]);
+    ++(vlSymsp->__Vcoverage[18164]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_scoreboard__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_scoreboard"s;
-    ++(vlSymsp->__Vcoverage[18171]);
+    ++(vlSymsp->__Vcoverage[18166]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,14 +25,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::__VnoInFunc_get_object_type(Vtb_rn
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_abstract_component_registry__pi81__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[18170]);
+    ++(vlSymsp->__Vcoverage[18165]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_scoreboard"s;
-    ++(vlSymsp->__Vcoverage[18172]);
+    ++(vlSymsp->__Vcoverage[18167]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
@@ -41,7 +41,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::init(VlProcessRef vlProcess, Vtb_r
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[18173]);
+    ++(vlSymsp->__Vcoverage[18168]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_scoreboard::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

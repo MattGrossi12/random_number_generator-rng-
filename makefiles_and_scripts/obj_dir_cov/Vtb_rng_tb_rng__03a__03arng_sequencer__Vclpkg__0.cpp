@@ -8,14 +8,14 @@ void Vtb_rng_tb_rng__03a__03arng_sequencer__Vclpkg::__VnoInFunc_get_type(Vtb_rng
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_tb_rng__03a__03arng_sequencer__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__pi63__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[526]);
+    ++(vlSymsp->__Vcoverage[521]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequencer__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_tb_rng__03a__03arng_sequencer__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "rng_sequencer"s;
-    ++(vlSymsp->__Vcoverage[528]);
+    ++(vlSymsp->__Vcoverage[523]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequencer::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,14 +25,14 @@ void Vtb_rng_tb_rng__03a__03arng_sequencer::__VnoInFunc_get_object_type(Vtb_rng_
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__pi63__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[527]);
+    ++(vlSymsp->__Vcoverage[522]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequencer::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vtb_rng_tb_rng__03a__03arng_sequencer::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "rng_sequencer"s;
-    ++(vlSymsp->__Vcoverage[529]);
+    ++(vlSymsp->__Vcoverage[524]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequencer::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
@@ -41,7 +41,7 @@ void Vtb_rng_tb_rng__03a__03arng_sequencer::init(VlProcessRef vlProcess, Vtb_rng
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[530]);
+    ++(vlSymsp->__Vcoverage[525]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequencer::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

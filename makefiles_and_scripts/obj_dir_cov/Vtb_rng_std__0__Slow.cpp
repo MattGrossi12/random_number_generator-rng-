@@ -16,5 +16,5 @@ VL_ATTR_COLD void Vtb_rng_std___configure_coverage(Vtb_rng_std* vlSelf, bool fir
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[500]), first, "/usr/local/share/verilator/include/verilated_std.sv", 243, 16, "", "v_line/std", "block", "243-244");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[495]), first, "/usr/local/share/verilator/include/verilated_std.sv", 243, 16, "", "v_line/std", "block", "243-244");
 }

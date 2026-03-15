@@ -10,47 +10,47 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::init(VlProcessRef vlProce
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[18156]);
+    ++(vlSymsp->__Vcoverage[18151]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_get_connected_to(Vtb_rng__Syms* __restrict vlSymsp, VlAssocArray<std::string, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_port_component_base>> &list) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_get_connected_to\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18157]);
+    ++(vlSymsp->__Vcoverage[18152]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_is_port(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_port__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_is_port\n"); );
     // Body
     is_port__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[18158]);
+    ++(vlSymsp->__Vcoverage[18153]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_is_export(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_export__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_is_export\n"); );
     // Body
     is_export__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[18159]);
+    ++(vlSymsp->__Vcoverage[18154]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_is_imp(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_imp__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_is_imp\n"); );
     // Body
     is_imp__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[18160]);
+    ++(vlSymsp->__Vcoverage[18155]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_use_automatic_config(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &use_automatic_config__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_use_automatic_config\n"); );
     // Body
     use_automatic_config__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[18161]);
+    ++(vlSymsp->__Vcoverage[18156]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_do_task_phase(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_do_task_phase\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18162]);
+    ++(vlSymsp->__Vcoverage[18157]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component_base::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

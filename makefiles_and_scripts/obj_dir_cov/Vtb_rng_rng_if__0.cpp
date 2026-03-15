@@ -10,7 +10,7 @@ void Vtb_rng_rng_if___act_sequent__TOP__tb_rng__rif__0(Vtb_rng_rng_if* vlSelf) {
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     if (((IData)(vlSelfRef.__PVT__clk_i) ^ (IData)(vlSelfRef.__Vtogcov__clk_i))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 501, vlSelfRef.__PVT__clk_i, vlSelfRef.__Vtogcov__clk_i);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 496, vlSelfRef.__PVT__clk_i, vlSelfRef.__Vtogcov__clk_i);
         vlSelfRef.__Vtogcov__clk_i = vlSelfRef.__PVT__clk_i;
     }
 }
@@ -21,7 +21,7 @@ void Vtb_rng_rng_if___nba_comb__TOP__tb_rng__rif__0(Vtb_rng_rng_if* vlSelf) {
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     if (((IData)(vlSelfRef.__PVT__num_to_send_o) ^ (IData)(vlSelfRef.__Vtogcov__num_to_send_o))) {
-        VL_COV_TOGGLE_CHG_ST_I(3, vlSymsp->__Vcoverage + 509, vlSelfRef.__PVT__num_to_send_o, vlSelfRef.__Vtogcov__num_to_send_o);
+        VL_COV_TOGGLE_CHG_ST_I(3, vlSymsp->__Vcoverage + 504, vlSelfRef.__PVT__num_to_send_o, vlSelfRef.__Vtogcov__num_to_send_o);
         vlSelfRef.__Vtogcov__num_to_send_o = vlSelfRef.__PVT__num_to_send_o;
     }
 }

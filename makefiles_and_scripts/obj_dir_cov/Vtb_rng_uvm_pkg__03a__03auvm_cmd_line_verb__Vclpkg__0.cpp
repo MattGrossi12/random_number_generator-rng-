@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_cmd_line_verb::init(Vtb_rng__Syms* __restrict 
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_cmd_line_verb::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[17792]);
+    ++(vlSymsp->__Vcoverage[17787]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_cmd_line_verb::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

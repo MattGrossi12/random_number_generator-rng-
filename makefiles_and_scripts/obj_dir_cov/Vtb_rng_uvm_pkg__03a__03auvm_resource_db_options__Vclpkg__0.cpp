@@ -8,12 +8,31 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_on_tracing\n"); );
     // Body
     if (this->__PVT__ready) {
+        ++(vlSymsp->__Vcoverage[8023]);
+    } else {
+        this->__VnoInFunc_init(vlSymsp);
+        ++(vlSymsp->__Vcoverage[8022]);
+    }
+    this->__PVT__tracing = 1U;
+    if ((1U & (~ (IData)(this->__PVT__ready)))) {
+        ++(vlSymsp->__Vcoverage[8024]);
+    }
+    if (this->__PVT__ready) {
+        ++(vlSymsp->__Vcoverage[8025]);
+    }
+    ++(vlSymsp->__Vcoverage[8026]);
+}
+
+void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_off_tracing(Vtb_rng__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_off_tracing\n"); );
+    // Body
+    if (this->__PVT__ready) {
         ++(vlSymsp->__Vcoverage[8028]);
     } else {
         this->__VnoInFunc_init(vlSymsp);
         ++(vlSymsp->__Vcoverage[8027]);
     }
-    this->__PVT__tracing = 1U;
+    this->__PVT__tracing = 0U;
     if ((1U & (~ (IData)(this->__PVT__ready)))) {
         ++(vlSymsp->__Vcoverage[8029]);
     }
@@ -23,16 +42,17 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_
     ++(vlSymsp->__Vcoverage[8031]);
 }
 
-void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_off_tracing(Vtb_rng__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_off_tracing\n"); );
+void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_is_tracing(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_tracing__Vfuncrtn) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_is_tracing\n"); );
     // Body
+    is_tracing__Vfuncrtn = 0U;
     if (this->__PVT__ready) {
         ++(vlSymsp->__Vcoverage[8033]);
     } else {
         this->__VnoInFunc_init(vlSymsp);
         ++(vlSymsp->__Vcoverage[8032]);
     }
-    this->__PVT__tracing = 0U;
+    is_tracing__Vfuncrtn = this->__PVT__tracing;
     if ((1U & (~ (IData)(this->__PVT__ready)))) {
         ++(vlSymsp->__Vcoverage[8034]);
     }
@@ -40,26 +60,6 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_turn_
         ++(vlSymsp->__Vcoverage[8035]);
     }
     ++(vlSymsp->__Vcoverage[8036]);
-}
-
-void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_is_tracing(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_tracing__Vfuncrtn) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_is_tracing\n"); );
-    // Body
-    is_tracing__Vfuncrtn = 0U;
-    if (this->__PVT__ready) {
-        ++(vlSymsp->__Vcoverage[8038]);
-    } else {
-        this->__VnoInFunc_init(vlSymsp);
-        ++(vlSymsp->__Vcoverage[8037]);
-    }
-    is_tracing__Vfuncrtn = this->__PVT__tracing;
-    if ((1U & (~ (IData)(this->__PVT__ready)))) {
-        ++(vlSymsp->__Vcoverage[8039]);
-    }
-    if (this->__PVT__ready) {
-        ++(vlSymsp->__Vcoverage[8040]);
-    }
-    ++(vlSymsp->__Vcoverage[8041]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_init(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -79,19 +79,19 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options__Vclpkg::__VnoInFunc_init(
     __VlefCall_0__get_arg_matches = __Vtask_get_arg_matches__4__Vfuncout;
     if ((0U != __VlefCall_0__get_arg_matches)) {
         this->__PVT__tracing = 1U;
-        ++(vlSymsp->__Vcoverage[8042]);
+        ++(vlSymsp->__Vcoverage[8037]);
     } else {
-        ++(vlSymsp->__Vcoverage[8043]);
+        ++(vlSymsp->__Vcoverage[8038]);
     }
     this->__PVT__ready = 1U;
-    ++(vlSymsp->__Vcoverage[8044]);
+    ++(vlSymsp->__Vcoverage[8039]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[8045]);
+    ++(vlSymsp->__Vcoverage[8040]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db_options::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

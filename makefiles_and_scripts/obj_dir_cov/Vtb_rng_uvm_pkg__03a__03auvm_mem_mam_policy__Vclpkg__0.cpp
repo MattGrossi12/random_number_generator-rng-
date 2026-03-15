@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_mem_mam_policy::init(Vtb_rng__Syms* __restrict
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_mem_mam_policy::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[22648]);
+    ++(vlSymsp->__Vcoverage[22643]);
     this->__PVT__constraint.write_var(this->__PVT__start_offset, 0x0000000000000040ULL, 
                                       "start_offset", 0ULL);
 }
@@ -17,7 +17,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_mem_mam_policy::__VnoInFunc_randomize(Vtb_rng_
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_mem_mam_policy::__VnoInFunc_randomize\n"); );
     // Body
     IData/*31:0*/ __VlefCall_0____VBasicRand;
-    ++(vlSymsp->__Vcoverage[22649]);
+    ++(vlSymsp->__Vcoverage[22644]);
     this->__PVT__constraint.clearConstraints();
     this->__VnoInFunc___Vsetup_constraints(vlSymsp);
     randomize__Vfuncrtn = this->__PVT__constraint.next(__Vm_rng);

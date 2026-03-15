@@ -10,14 +10,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy::init(VlProcessRef vlPro
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[10056]);
+    ++(vlSymsp->__Vcoverage[10051]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy::__VnoInFunc_get_immediate_children(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer_element> s, VlQueue<VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer_element>> &children) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy::__VnoInFunc_get_immediate_children\n"); );
     // Body
     VL_NULL_CHECK(s, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1148)->__VnoInFunc_get_children(vlSymsp, children, 0U);
-    ++(vlSymsp->__Vcoverage[10057]);
+    ++(vlSymsp->__Vcoverage[10052]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

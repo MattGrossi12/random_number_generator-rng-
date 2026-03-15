@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/matheus/openframe_user_project/openlane/rng/runs/26_03_12_20_02/41-openroad-repairantennas/2-openroad-checkantennas/or_metrics_out.json /nix/store/iah2c26wzpgdvqc1jv2xxg55xq5km74d-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/antenna_check.tcl

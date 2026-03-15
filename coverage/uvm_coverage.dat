@@ -12,9 +12,9 @@ C 'f../UVM/../UVM/testbench.svl153n40texprpagev_expr/tb_rngo(clk==0)
 C 'f../UVM/../UVM/testbench.svl153n40texprpagev_expr/tb_rngo(clk==1) => 0htb_rng' 0
 C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[0]:0->1htb_rng.rif' 3
 C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[0]:1->0htb_rng.rif' 2
-C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[1]:0->1htb_rng.rif' 1
-C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[1]:1->0htb_rng.rif' 1
-C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[2]:0->1htb_rng.rif' 1
+C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[1]:0->1htb_rng.rif' 2
+C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[1]:1->0htb_rng.rif' 2
+C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[2]:0->1htb_rng.rif' 2
 C 'f../UVM/../UVM/testbench.svl16n23ttogglepagev_toggle/rng_ifonum_to_send_o[2]:1->0htb_rng.rif' 1
 C 'f../UVM/../UVM/testbench.svl167n5tlinepagev_line/tb_rngoblockS167,170,174,178,182,186,190,194-195,199,203htb_rng' 1
 C 'f../UVM/../UVM/testbench.svl20n26tlinepagev_line/rng_ifoblockS20htb_rng.rif' 1
@@ -40,143 +40,143 @@ C 'f../UVM/../UVM/testbench.svl85n7tbranchpagev_branch/rng_testoelse
 C 'f../UVM/../UVM/testbench.svl97n6tbranchpagev_branch/rng_testoifS97htb_rng::rng_test__Vclpkg' 0
 C 'f../UVM/../UVM/testbench.svl97n7tbranchpagev_branch/rng_testoelsehtb_rng::rng_test__Vclpkg' 1
 C 'f../UVM/../src/rng_data_path.vl106n22tlinepagev_line/rng_data_path__pi1ocaseS106-107htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl108n25tlinepagev_line/rng_data_path__pi1ocaseS108htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl109n25tlinepagev_line/rng_data_path__pi1ocaseS109htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl110n25tlinepagev_line/rng_data_path__pi1ocaseS110htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl111n25tlinepagev_line/rng_data_path__pi1ocaseS111htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl112n25tlinepagev_line/rng_data_path__pi1ocaseS112htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl113n25tlinepagev_line/rng_data_path__pi1ocaseS113htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl114n25tlinepagev_line/rng_data_path__pi1ocaseS114htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl115n25tlinepagev_line/rng_data_path__pi1ocaseS115htb_rng.dut.rng_dp' 0
+C 'f../UVM/../src/rng_data_path.vl108n25tlinepagev_line/rng_data_path__pi1ocaseS108htb_rng.dut.rng_dp' 14
+C 'f../UVM/../src/rng_data_path.vl109n25tlinepagev_line/rng_data_path__pi1ocaseS109htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl110n25tlinepagev_line/rng_data_path__pi1ocaseS110htb_rng.dut.rng_dp' 10
+C 'f../UVM/../src/rng_data_path.vl111n25tlinepagev_line/rng_data_path__pi1ocaseS111htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl112n25tlinepagev_line/rng_data_path__pi1ocaseS112htb_rng.dut.rng_dp' 13
+C 'f../UVM/../src/rng_data_path.vl113n25tlinepagev_line/rng_data_path__pi1ocaseS113htb_rng.dut.rng_dp' 6
+C 'f../UVM/../src/rng_data_path.vl114n25tlinepagev_line/rng_data_path__pi1ocaseS114htb_rng.dut.rng_dp' 9
+C 'f../UVM/../src/rng_data_path.vl115n25tlinepagev_line/rng_data_path__pi1ocaseS115htb_rng.dut.rng_dp' 6
 C 'f../UVM/../src/rng_data_path.vl116n21tlinepagev_line/rng_data_path__pi1ocaseS116htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl123n13tlinepagev_line/rng_data_path__pi1ocaseS123-124htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl125n25tlinepagev_line/rng_data_path__pi1ocaseS125htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl126n25tlinepagev_line/rng_data_path__pi1ocaseS126htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl127n25tlinepagev_line/rng_data_path__pi1ocaseS127htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl128n25tlinepagev_line/rng_data_path__pi1ocaseS128htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl129n25tlinepagev_line/rng_data_path__pi1ocaseS129htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl130n25tlinepagev_line/rng_data_path__pi1ocaseS130htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl131n25tlinepagev_line/rng_data_path__pi1ocaseS131htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl132n25tlinepagev_line/rng_data_path__pi1ocaseS132htb_rng.dut.rng_dp' 0
+C 'f../UVM/../src/rng_data_path.vl123n13tlinepagev_line/rng_data_path__pi1ocaseS123-124htb_rng.dut.rng_dp' 63
+C 'f../UVM/../src/rng_data_path.vl125n25tlinepagev_line/rng_data_path__pi1ocaseS125htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl126n25tlinepagev_line/rng_data_path__pi1ocaseS126htb_rng.dut.rng_dp' 13
+C 'f../UVM/../src/rng_data_path.vl127n25tlinepagev_line/rng_data_path__pi1ocaseS127htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl128n25tlinepagev_line/rng_data_path__pi1ocaseS128htb_rng.dut.rng_dp' 9
+C 'f../UVM/../src/rng_data_path.vl129n25tlinepagev_line/rng_data_path__pi1ocaseS129htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl130n25tlinepagev_line/rng_data_path__pi1ocaseS130htb_rng.dut.rng_dp' 12
+C 'f../UVM/../src/rng_data_path.vl131n25tlinepagev_line/rng_data_path__pi1ocaseS131htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl132n25tlinepagev_line/rng_data_path__pi1ocaseS132htb_rng.dut.rng_dp' 9
 C 'f../UVM/../src/rng_data_path.vl133n21tlinepagev_line/rng_data_path__pi1ocaseS133htb_rng.dut.rng_dp' 0
 C 'f../UVM/../src/rng_data_path.vl141n1tlinepagev_line/rng_data_path__pi1oblockS141-142htb_rng.dut.rng_dp' 278
 C 'f../UVM/../src/rng_data_path.vl143n12texprpagev_expr/rng_data_path__pi1o(rst_i==0) => 1htb_rng.dut.rng_dp' 5
 C 'f../UVM/../src/rng_data_path.vl143n12texprpagev_expr/rng_data_path__pi1o(rst_i==1) => 0htb_rng.dut.rng_dp' 273
 C 'f../UVM/../src/rng_data_path.vl143n9tlinepagev_line/rng_data_path__pi1oelsifS143-145htb_rng.dut.rng_dp' 5
-C 'f../UVM/../src/rng_data_path.vl148n10tlinepagev_line/rng_data_path__pi1oelseS153-154htb_rng.dut.rng_dp' 1
-C 'f../UVM/../src/rng_data_path.vl148n9tlinepagev_line/rng_data_path__pi1oifS148-150htb_rng.dut.rng_dp' 272
+C 'f../UVM/../src/rng_data_path.vl148n10tlinepagev_line/rng_data_path__pi1oelseS153-154htb_rng.dut.rng_dp' 7
+C 'f../UVM/../src/rng_data_path.vl148n9tlinepagev_line/rng_data_path__pi1oifS148-150htb_rng.dut.rng_dp' 266
 C 'f../UVM/../src/rng_data_path.vl34n11ttogglepagev_toggle/rng_data_path__pi1oclk_i:0->1htb_rng.dut.rng_dp' 277
 C 'f../UVM/../src/rng_data_path.vl34n11ttogglepagev_toggle/rng_data_path__pi1oclk_i:1->0htb_rng.dut.rng_dp' 277
 C 'f../UVM/../src/rng_data_path.vl35n11ttogglepagev_toggle/rng_data_path__pi1orst_i:0->1htb_rng.dut.rng_dp' 1
 C 'f../UVM/../src/rng_data_path.vl35n11ttogglepagev_toggle/rng_data_path__pi1orst_i:1->0htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl36n11ttogglepagev_toggle/rng_data_path__pi1oreq_num_i:0->1htb_rng.dut.rng_dp' 1
-C 'f../UVM/../src/rng_data_path.vl36n11ttogglepagev_toggle/rng_data_path__pi1oreq_num_i:1->0htb_rng.dut.rng_dp' 0
+C 'f../UVM/../src/rng_data_path.vl36n11ttogglepagev_toggle/rng_data_path__pi1oreq_num_i:0->1htb_rng.dut.rng_dp' 7
+C 'f../UVM/../src/rng_data_path.vl36n11ttogglepagev_toggle/rng_data_path__pi1oreq_num_i:1->0htb_rng.dut.rng_dp' 6
 C 'f../UVM/../src/rng_data_path.vl37n17ttogglepagev_toggle/rng_data_path__pi1oseed_sel_i[0]:0->1htb_rng.dut.rng_dp' 137
 C 'f../UVM/../src/rng_data_path.vl37n17ttogglepagev_toggle/rng_data_path__pi1oseed_sel_i[0]:1->0htb_rng.dut.rng_dp' 136
 C 'f../UVM/../src/rng_data_path.vl37n17ttogglepagev_toggle/rng_data_path__pi1oseed_sel_i[1]:0->1htb_rng.dut.rng_dp' 68
 C 'f../UVM/../src/rng_data_path.vl37n17ttogglepagev_toggle/rng_data_path__pi1oseed_sel_i[1]:1->0htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[0]:0->1htb_rng.dut.rng_dp' 136
-C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[0]:1->0htb_rng.dut.rng_dp' 136
-C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[1]:0->1htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[1]:1->0htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[2]:0->1htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[2]:1->0htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[0]:0->1htb_rng.dut.rng_dp' 136
-C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[0]:1->0htb_rng.dut.rng_dp' 136
-C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[1]:0->1htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[1]:1->0htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[2]:0->1htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[2]:1->0htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[0]:0->1htb_rng.dut.rng_dp' 35
-C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[0]:1->0htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[1]:0->1htb_rng.dut.rng_dp' 102
-C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[1]:1->0htb_rng.dut.rng_dp' 101
-C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[2]:0->1htb_rng.dut.rng_dp' 102
-C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[2]:1->0htb_rng.dut.rng_dp' 102
-C 'f../UVM/../src/rng_data_path.vl64n22tlinepagev_line/rng_data_path__pi1oblockS64,66-67htb_rng.dut.rng_dp' 272
-C 'f../UVM/../src/rng_data_path.vl72n22tlinepagev_line/rng_data_path__pi1ocaseS72-73htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl74n25tlinepagev_line/rng_data_path__pi1ocaseS74htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl75n25tlinepagev_line/rng_data_path__pi1ocaseS75htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl76n25tlinepagev_line/rng_data_path__pi1ocaseS76htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl77n25tlinepagev_line/rng_data_path__pi1ocaseS77htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl78n25tlinepagev_line/rng_data_path__pi1ocaseS78htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl79n25tlinepagev_line/rng_data_path__pi1ocaseS79htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl80n25tlinepagev_line/rng_data_path__pi1ocaseS80htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl81n25tlinepagev_line/rng_data_path__pi1ocaseS81htb_rng.dut.rng_dp' 34
+C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[0]:0->1htb_rng.dut.rng_dp' 133
+C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[0]:1->0htb_rng.dut.rng_dp' 133
+C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[1]:0->1htb_rng.dut.rng_dp' 67
+C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[1]:1->0htb_rng.dut.rng_dp' 66
+C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[2]:0->1htb_rng.dut.rng_dp' 33
+C 'f../UVM/../src/rng_data_path.vl38n24ttogglepagev_toggle/rng_data_path__pi1onum_to_send_o[2]:1->0htb_rng.dut.rng_dp' 33
+C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[0]:0->1htb_rng.dut.rng_dp' 133
+C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[0]:1->0htb_rng.dut.rng_dp' 133
+C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[1]:0->1htb_rng.dut.rng_dp' 67
+C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[1]:1->0htb_rng.dut.rng_dp' 66
+C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[2]:0->1htb_rng.dut.rng_dp' 33
+C 'f../UVM/../src/rng_data_path.vl47n18ttogglepagev_toggle/rng_data_path__pi1onum_to_send[2]:1->0htb_rng.dut.rng_dp' 33
+C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[0]:0->1htb_rng.dut.rng_dp' 39
+C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[0]:1->0htb_rng.dut.rng_dp' 39
+C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[1]:0->1htb_rng.dut.rng_dp' 53
+C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[1]:1->0htb_rng.dut.rng_dp' 52
+C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[2]:0->1htb_rng.dut.rng_dp' 60
+C 'f../UVM/../src/rng_data_path.vl56n11ttogglepagev_toggle/rng_data_path__pi1onext_num[2]:1->0htb_rng.dut.rng_dp' 59
+C 'f../UVM/../src/rng_data_path.vl64n22tlinepagev_line/rng_data_path__pi1oblockS64,66-67htb_rng.dut.rng_dp' 266
+C 'f../UVM/../src/rng_data_path.vl72n22tlinepagev_line/rng_data_path__pi1ocaseS72-73htb_rng.dut.rng_dp' 67
+C 'f../UVM/../src/rng_data_path.vl74n25tlinepagev_line/rng_data_path__pi1ocaseS74htb_rng.dut.rng_dp' 10
+C 'f../UVM/../src/rng_data_path.vl75n25tlinepagev_line/rng_data_path__pi1ocaseS75htb_rng.dut.rng_dp' 6
+C 'f../UVM/../src/rng_data_path.vl76n25tlinepagev_line/rng_data_path__pi1ocaseS76htb_rng.dut.rng_dp' 13
+C 'f../UVM/../src/rng_data_path.vl77n25tlinepagev_line/rng_data_path__pi1ocaseS77htb_rng.dut.rng_dp' 6
+C 'f../UVM/../src/rng_data_path.vl78n25tlinepagev_line/rng_data_path__pi1ocaseS78htb_rng.dut.rng_dp' 9
+C 'f../UVM/../src/rng_data_path.vl79n25tlinepagev_line/rng_data_path__pi1ocaseS79htb_rng.dut.rng_dp' 6
+C 'f../UVM/../src/rng_data_path.vl80n25tlinepagev_line/rng_data_path__pi1ocaseS80htb_rng.dut.rng_dp' 13
+C 'f../UVM/../src/rng_data_path.vl81n25tlinepagev_line/rng_data_path__pi1ocaseS81htb_rng.dut.rng_dp' 4
 C 'f../UVM/../src/rng_data_path.vl82n21tlinepagev_line/rng_data_path__pi1ocaseS82htb_rng.dut.rng_dp' 0
 C 'f../UVM/../src/rng_data_path.vl89n22tlinepagev_line/rng_data_path__pi1ocaseS89-90htb_rng.dut.rng_dp' 68
-C 'f../UVM/../src/rng_data_path.vl91n25tlinepagev_line/rng_data_path__pi1ocaseS91htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl92n25tlinepagev_line/rng_data_path__pi1ocaseS92htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl93n25tlinepagev_line/rng_data_path__pi1ocaseS93htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl94n25tlinepagev_line/rng_data_path__pi1ocaseS94htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl95n25tlinepagev_line/rng_data_path__pi1ocaseS95htb_rng.dut.rng_dp' 34
-C 'f../UVM/../src/rng_data_path.vl96n25tlinepagev_line/rng_data_path__pi1ocaseS96htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl97n25tlinepagev_line/rng_data_path__pi1ocaseS97htb_rng.dut.rng_dp' 0
-C 'f../UVM/../src/rng_data_path.vl98n25tlinepagev_line/rng_data_path__pi1ocaseS98htb_rng.dut.rng_dp' 0
+C 'f../UVM/../src/rng_data_path.vl91n25tlinepagev_line/rng_data_path__pi1ocaseS91htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl92n25tlinepagev_line/rng_data_path__pi1ocaseS92htb_rng.dut.rng_dp' 10
+C 'f../UVM/../src/rng_data_path.vl93n25tlinepagev_line/rng_data_path__pi1ocaseS93htb_rng.dut.rng_dp' 5
+C 'f../UVM/../src/rng_data_path.vl94n25tlinepagev_line/rng_data_path__pi1ocaseS94htb_rng.dut.rng_dp' 13
+C 'f../UVM/../src/rng_data_path.vl95n25tlinepagev_line/rng_data_path__pi1ocaseS95htb_rng.dut.rng_dp' 6
+C 'f../UVM/../src/rng_data_path.vl96n25tlinepagev_line/rng_data_path__pi1ocaseS96htb_rng.dut.rng_dp' 9
+C 'f../UVM/../src/rng_data_path.vl97n25tlinepagev_line/rng_data_path__pi1ocaseS97htb_rng.dut.rng_dp' 6
+C 'f../UVM/../src/rng_data_path.vl98n25tlinepagev_line/rng_data_path__pi1ocaseS98htb_rng.dut.rng_dp' 14
 C 'f../UVM/../src/rng_data_path.vl99n21tlinepagev_line/rng_data_path__pi1ocaseS99htb_rng.dut.rng_dp' 0
 C 'f../UVM/../src/rng_data_path_counter.vl34n23ttogglepagev_toggle/rng_data_path_counteroclk_i:0->1htb_rng.dut.rng_dp.inst' 277
 C 'f../UVM/../src/rng_data_path_counter.vl34n23ttogglepagev_toggle/rng_data_path_counteroclk_i:1->0htb_rng.dut.rng_dp.inst' 277
 C 'f../UVM/../src/rng_data_path_counter.vl35n23ttogglepagev_toggle/rng_data_path_counterorst_i:0->1htb_rng.dut.rng_dp.inst' 1
 C 'f../UVM/../src/rng_data_path_counter.vl35n23ttogglepagev_toggle/rng_data_path_counterorst_i:1->0htb_rng.dut.rng_dp.inst' 0
-C 'f../UVM/../src/rng_data_path_counter.vl36n23ttogglepagev_toggle/rng_data_path_counteroreq_num_i:0->1htb_rng.dut.rng_dp.inst' 1
-C 'f../UVM/../src/rng_data_path_counter.vl36n23ttogglepagev_toggle/rng_data_path_counteroreq_num_i:1->0htb_rng.dut.rng_dp.inst' 0
-C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[0]:0->1htb_rng.dut.rng_dp.inst' 136
-C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[0]:1->0htb_rng.dut.rng_dp.inst' 136
-C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[1]:0->1htb_rng.dut.rng_dp.inst' 68
-C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[1]:1->0htb_rng.dut.rng_dp.inst' 68
-C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[2]:0->1htb_rng.dut.rng_dp.inst' 34
-C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[2]:1->0htb_rng.dut.rng_dp.inst' 34
-C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[0]:0->1htb_rng.dut.rng_dp.inst' 136
-C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[0]:1->0htb_rng.dut.rng_dp.inst' 136
-C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[1]:0->1htb_rng.dut.rng_dp.inst' 68
-C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[1]:1->0htb_rng.dut.rng_dp.inst' 68
-C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[2]:0->1htb_rng.dut.rng_dp.inst' 34
-C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[2]:1->0htb_rng.dut.rng_dp.inst' 34
+C 'f../UVM/../src/rng_data_path_counter.vl36n23ttogglepagev_toggle/rng_data_path_counteroreq_num_i:0->1htb_rng.dut.rng_dp.inst' 7
+C 'f../UVM/../src/rng_data_path_counter.vl36n23ttogglepagev_toggle/rng_data_path_counteroreq_num_i:1->0htb_rng.dut.rng_dp.inst' 6
+C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[0]:0->1htb_rng.dut.rng_dp.inst' 133
+C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[0]:1->0htb_rng.dut.rng_dp.inst' 133
+C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[1]:0->1htb_rng.dut.rng_dp.inst' 67
+C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[1]:1->0htb_rng.dut.rng_dp.inst' 66
+C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[2]:0->1htb_rng.dut.rng_dp.inst' 33
+C 'f../UVM/../src/rng_data_path_counter.vl37n29ttogglepagev_toggle/rng_data_path_counteronext_num_o[2]:1->0htb_rng.dut.rng_dp.inst' 33
+C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[0]:0->1htb_rng.dut.rng_dp.inst' 133
+C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[0]:1->0htb_rng.dut.rng_dp.inst' 133
+C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[1]:0->1htb_rng.dut.rng_dp.inst' 67
+C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[1]:1->0htb_rng.dut.rng_dp.inst' 66
+C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[2]:0->1htb_rng.dut.rng_dp.inst' 33
+C 'f../UVM/../src/rng_data_path_counter.vl40n17ttogglepagev_toggle/rng_data_path_counteronum_counter[2]:1->0htb_rng.dut.rng_dp.inst' 33
 C 'f../UVM/../src/rng_data_path_counter.vl44n1tlinepagev_line/rng_data_path_counteroblockS44-45htb_rng.dut.rng_dp.inst' 278
 C 'f../UVM/../src/rng_data_path_counter.vl46n5tlinepagev_line/rng_data_path_counteroelsifS46-47htb_rng.dut.rng_dp.inst' 5
 C 'f../UVM/../src/rng_data_path_counter.vl46n8texprpagev_expr/rng_data_path_countero(rst_i==0) => 1htb_rng.dut.rng_dp.inst' 5
 C 'f../UVM/../src/rng_data_path_counter.vl46n8texprpagev_expr/rng_data_path_countero(rst_i==1) => 0htb_rng.dut.rng_dp.inst' 273
-C 'f../UVM/../src/rng_data_path_counter.vl50n10tlinepagev_line/rng_data_path_counteroelseS62-63htb_rng.dut.rng_dp.inst' 1
-C 'f../UVM/../src/rng_data_path_counter.vl50n9tlinepagev_line/rng_data_path_counteroifS50-51htb_rng.dut.rng_dp.inst' 272
-C 'f../UVM/../src/rng_data_path_counter.vl52n17tbranchpagev_branch/rng_data_path_counteroifS52-54htb_rng.dut.rng_dp.inst' 34
-C 'f../UVM/../src/rng_data_path_counter.vl52n18tbranchpagev_branch/rng_data_path_counteroelseS57-58htb_rng.dut.rng_dp.inst' 238
-C 'f../UVM/../src/rng_hs_dup_detector.vl106n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS106-108htb_rng.dut.rng_rd' 51
-C 'f../UVM/../src/rng_hs_dup_detector.vl106n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS111-112htb_rng.dut.rng_rd' 228
-C 'f../UVM/../src/rng_hs_dup_detector.vl116n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS116-118htb_rng.dut.rng_rd' 28
-C 'f../UVM/../src/rng_hs_dup_detector.vl116n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS121-122htb_rng.dut.rng_rd' 251
-C 'f../UVM/../src/rng_hs_dup_detector.vl126n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS126-128htb_rng.dut.rng_rd' 10
-C 'f../UVM/../src/rng_hs_dup_detector.vl126n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS131-132htb_rng.dut.rng_rd' 269
-C 'f../UVM/../src/rng_hs_dup_detector.vl136n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS136-138htb_rng.dut.rng_rd' 29
-C 'f../UVM/../src/rng_hs_dup_detector.vl136n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS141-142htb_rng.dut.rng_rd' 250
+C 'f../UVM/../src/rng_data_path_counter.vl50n10tlinepagev_line/rng_data_path_counteroelseS62-63htb_rng.dut.rng_dp.inst' 7
+C 'f../UVM/../src/rng_data_path_counter.vl50n9tlinepagev_line/rng_data_path_counteroifS50-51htb_rng.dut.rng_dp.inst' 266
+C 'f../UVM/../src/rng_data_path_counter.vl52n17tbranchpagev_branch/rng_data_path_counteroifS52-54htb_rng.dut.rng_dp.inst' 33
+C 'f../UVM/../src/rng_data_path_counter.vl52n18tbranchpagev_branch/rng_data_path_counteroelseS57-58htb_rng.dut.rng_dp.inst' 233
+C 'f../UVM/../src/rng_hs_dup_detector.vl106n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS106-108htb_rng.dut.rng_rd' 74
+C 'f../UVM/../src/rng_hs_dup_detector.vl106n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS111-112htb_rng.dut.rng_rd' 205
+C 'f../UVM/../src/rng_hs_dup_detector.vl116n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS116-118htb_rng.dut.rng_rd' 62
+C 'f../UVM/../src/rng_hs_dup_detector.vl116n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS121-122htb_rng.dut.rng_rd' 217
+C 'f../UVM/../src/rng_hs_dup_detector.vl126n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS126-128htb_rng.dut.rng_rd' 71
+C 'f../UVM/../src/rng_hs_dup_detector.vl126n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS131-132htb_rng.dut.rng_rd' 208
+C 'f../UVM/../src/rng_hs_dup_detector.vl136n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS136-138htb_rng.dut.rng_rd' 71
+C 'f../UVM/../src/rng_hs_dup_detector.vl136n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS141-142htb_rng.dut.rng_rd' 208
 C 'f../UVM/../src/rng_hs_dup_detector.vl14n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oclk_i:0->1htb_rng.dut.rng_rd' 277
 C 'f../UVM/../src/rng_hs_dup_detector.vl14n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oclk_i:1->0htb_rng.dut.rng_rd' 277
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec0==0 && dec1==0 && dec2==0 && dec3==0 && dec4==0 && dec5==0 && dec6==0 && dec7==0) => 0htb_rng.dut.rng_rd' 21
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec0==1) => 1htb_rng.dut.rng_rd' 109
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec1==1) => 1htb_rng.dut.rng_rd' 28
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec2==1) => 1htb_rng.dut.rng_rd' 31
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec3==1) => 1htb_rng.dut.rng_rd' 42
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec4==1) => 1htb_rng.dut.rng_rd' 51
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec5==1) => 1htb_rng.dut.rng_rd' 28
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec6==1) => 1htb_rng.dut.rng_rd' 10
-C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec7==1) => 1htb_rng.dut.rng_rd' 29
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec0==0 && dec1==0 && dec2==0 && dec3==0 && dec4==0 && dec5==0 && dec6==0 && dec7==0) => 0htb_rng.dut.rng_rd' 18
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec0==1) => 1htb_rng.dut.rng_rd' 96
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec1==1) => 1htb_rng.dut.rng_rd' 34
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec2==1) => 1htb_rng.dut.rng_rd' 47
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec3==1) => 1htb_rng.dut.rng_rd' 50
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec4==1) => 1htb_rng.dut.rng_rd' 74
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec5==1) => 1htb_rng.dut.rng_rd' 62
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec6==1) => 1htb_rng.dut.rng_rd' 71
+C 'f../UVM/../src/rng_hs_dup_detector.vl146n66texprpagev_expr/rng_hs_dup_detector__pi2o(dec7==1) => 1htb_rng.dut.rng_rd' 71
 C 'f../UVM/../src/rng_hs_dup_detector.vl15n29ttogglepagev_toggle/rng_hs_dup_detector__pi2orst_i:0->1htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl15n29ttogglepagev_toggle/rng_hs_dup_detector__pi2orst_i:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl150n1tlinepagev_line/rng_hs_dup_detector__pi2oblockS150-151htb_rng.dut.rng_rd' 279
-C 'f../UVM/../src/rng_hs_dup_detector.vl152n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS152-154htb_rng.dut.rng_rd' 258
-C 'f../UVM/../src/rng_hs_dup_detector.vl152n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS157-158htb_rng.dut.rng_rd' 21
-C 'f../UVM/../src/rng_hs_dup_detector.vl16n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num_i:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl16n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num_i:1->0htb_rng.dut.rng_rd' 0
+C 'f../UVM/../src/rng_hs_dup_detector.vl152n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS152-154htb_rng.dut.rng_rd' 261
+C 'f../UVM/../src/rng_hs_dup_detector.vl152n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS157-158htb_rng.dut.rng_rd' 18
+C 'f../UVM/../src/rng_hs_dup_detector.vl16n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num_i:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl16n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num_i:1->0htb_rng.dut.rng_rd' 6
 C 'f../UVM/../src/rng_hs_dup_detector.vl163n1tlinepagev_line/rng_hs_dup_detector__pi2oblockS163-164htb_rng.dut.rng_rd' 278
 C 'f../UVM/../src/rng_hs_dup_detector.vl165n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS165-170htb_rng.dut.rng_rd' 5
 C 'f../UVM/../src/rng_hs_dup_detector.vl165n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS171-174,177htb_rng.dut.rng_rd' 273
 C 'f../UVM/../src/rng_hs_dup_detector.vl165n9texprpagev_expr/rng_hs_dup_detector__pi2o(rst_i==0) => 1htb_rng.dut.rng_rd' 5
 C 'f../UVM/../src/rng_hs_dup_detector.vl165n9texprpagev_expr/rng_hs_dup_detector__pi2o(rst_i==1) => 0htb_rng.dut.rng_rd' 273
-C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[0]:0->1htb_rng.dut.rng_rd' 136
-C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[0]:1->0htb_rng.dut.rng_rd' 136
-C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[1]:0->1htb_rng.dut.rng_rd' 68
-C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[1]:1->0htb_rng.dut.rng_rd' 68
-C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[2]:0->1htb_rng.dut.rng_rd' 34
-C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[2]:1->0htb_rng.dut.rng_rd' 34
+C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[0]:0->1htb_rng.dut.rng_rd' 133
+C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[0]:1->0htb_rng.dut.rng_rd' 133
+C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[1]:0->1htb_rng.dut.rng_rd' 67
+C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[1]:1->0htb_rng.dut.rng_rd' 66
+C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[2]:0->1htb_rng.dut.rng_rd' 33
+C 'f../UVM/../src/rng_hs_dup_detector.vl17n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_i[2]:1->0htb_rng.dut.rng_rd' 33
 C 'f../UVM/../src/rng_hs_dup_detector.vl177n29texprpagev_expr/rng_hs_dup_detector__pi2o(wr_ff2==0) => 0htb_rng.dut.rng_rd' 249
 C 'f../UVM/../src/rng_hs_dup_detector.vl177n29texprpagev_expr/rng_hs_dup_detector__pi2o(wr_ff2==1 && wr_ff2_d==0) => 1htb_rng.dut.rng_rd' 24
 C 'f../UVM/../src/rng_hs_dup_detector.vl177n29texprpagev_expr/rng_hs_dup_detector__pi2o(wr_ff2_d==1) => 0htb_rng.dut.rng_rd' 24
@@ -190,64 +190,61 @@ C 'f../UVM/../src/rng_hs_dup_detector.vl189n10tlinepagev_line/rng_hs_d
 C 'f../UVM/../src/rng_hs_dup_detector.vl189n9tlinepagev_line/rng_hs_dup_detector__pi2oifS189-191htb_rng.dut.rng_rd' 24
 C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[0]:0->1htb_rng.dut.rng_rd' 3
 C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[0]:1->0htb_rng.dut.rng_rd' 2
-C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[1]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[1]:1->0htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[2]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[1]:0->1htb_rng.dut.rng_rd' 2
+C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[1]:1->0htb_rng.dut.rng_rd' 2
+C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[2]:0->1htb_rng.dut.rng_rd' 2
 C 'f../UVM/../src/rng_hs_dup_detector.vl20n29ttogglepagev_toggle/rng_hs_dup_detector__pi2odata_o[2]:1->0htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl200n1tlinepagev_line/rng_hs_dup_detector__pi2oblockS200-201htb_rng.dut.rng_rd' 278
 C 'f../UVM/../src/rng_hs_dup_detector.vl202n5tlinepagev_line/rng_hs_dup_detector__pi2oelsifS202-203,205-212,215,218htb_rng.dut.rng_rd' 5
 C 'f../UVM/../src/rng_hs_dup_detector.vl202n8texprpagev_expr/rng_hs_dup_detector__pi2o(rst_i==0) => 1htb_rng.dut.rng_rd' 5
 C 'f../UVM/../src/rng_hs_dup_detector.vl202n8texprpagev_expr/rng_hs_dup_detector__pi2o(rst_i==1) => 0htb_rng.dut.rng_rd' 273
-C 'f../UVM/../src/rng_hs_dup_detector.vl21n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_new_num_o:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl21n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_new_num_o:1->0htb_rng.dut.rng_rd' 0
-C 'f../UVM/../src/rng_hs_dup_detector.vl221n10tlinepagev_line/rng_hs_dup_detector__pi2oelseS240,242-249,252,255htb_rng.dut.rng_rd' 266
-C 'f../UVM/../src/rng_hs_dup_detector.vl221n43texprpagev_expr/rng_hs_dup_detector__pi2o((next_state == approve_number)==0) => 0htb_rng.dut.rng_rd' 252
-C 'f../UVM/../src/rng_hs_dup_detector.vl221n43texprpagev_expr/rng_hs_dup_detector__pi2o((next_state == approve_number)==1 && wr_pulse==1) => 1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl21n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_new_num_o:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl21n29ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_new_num_o:1->0htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl221n10tlinepagev_line/rng_hs_dup_detector__pi2oelseS240,242-249,252,255htb_rng.dut.rng_rd' 267
+C 'f../UVM/../src/rng_hs_dup_detector.vl221n43texprpagev_expr/rng_hs_dup_detector__pi2o((next_state == approve_number)==0) => 0htb_rng.dut.rng_rd' 255
+C 'f../UVM/../src/rng_hs_dup_detector.vl221n43texprpagev_expr/rng_hs_dup_detector__pi2o((next_state == approve_number)==1 && wr_pulse==1) => 1htb_rng.dut.rng_rd' 6
 C 'f../UVM/../src/rng_hs_dup_detector.vl221n43texprpagev_expr/rng_hs_dup_detector__pi2o(wr_pulse==0) => 0htb_rng.dut.rng_rd' 249
-C 'f../UVM/../src/rng_hs_dup_detector.vl221n9tlinepagev_line/rng_hs_dup_detector__pi2oifS221-222,224-231,234,237htb_rng.dut.rng_rd' 7
-C 'f../UVM/../src/rng_hs_dup_detector.vl259n1tlinepagev_line/rng_hs_dup_detector__pi2oblockS259-261htb_rng.dut.rng_rd' 984
-C 'f../UVM/../src/rng_hs_dup_detector.vl261n29texprpagev_expr/rng_hs_dup_detector__pi2o(req_num==0 && req_num_i==0) => 0htb_rng.dut.rng_rd' 50
-C 'f../UVM/../src/rng_hs_dup_detector.vl261n29texprpagev_expr/rng_hs_dup_detector__pi2o(req_num==1) => 1htb_rng.dut.rng_rd' 913
-C 'f../UVM/../src/rng_hs_dup_detector.vl261n29texprpagev_expr/rng_hs_dup_detector__pi2o(req_num_i==1) => 1htb_rng.dut.rng_rd' 934
+C 'f../UVM/../src/rng_hs_dup_detector.vl221n9tlinepagev_line/rng_hs_dup_detector__pi2oifS221-222,224-231,234,237htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl259n1tlinepagev_line/rng_hs_dup_detector__pi2oblockS259-261htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[0]:0->1htb_rng.dut.rng_rd' 3
 C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[0]:1->0htb_rng.dut.rng_rd' 2
-C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[1]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[1]:1->0htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[2]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[1]:0->1htb_rng.dut.rng_rd' 2
+C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[1]:1->0htb_rng.dut.rng_rd' 2
+C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[2]:0->1htb_rng.dut.rng_rd' 2
 C 'f../UVM/../src/rng_hs_dup_detector.vl29n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_0[2]:1->0htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[0]:0->1htb_rng.dut.rng_rd' 3
+C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[0]:0->1htb_rng.dut.rng_rd' 2
 C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[0]:1->0htb_rng.dut.rng_rd' 2
-C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[1]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[1]:0->1htb_rng.dut.rng_rd' 2
 C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[1]:1->0htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[2]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[2]:1->0htb_rng.dut.rng_rd' 0
+C 'f../UVM/../src/rng_hs_dup_detector.vl30n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_1[2]:1->0htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[0]:0->1htb_rng.dut.rng_rd' 2
-C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[0]:1->0htb_rng.dut.rng_rd' 2
-C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[1]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[0]:1->0htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[1]:0->1htb_rng.dut.rng_rd' 2
 C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[1]:1->0htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[2]:0->1htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl31n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_2[2]:1->0htb_rng.dut.rng_rd' 0
-C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[0]:0->1htb_rng.dut.rng_rd' 2
+C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[0]:0->1htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[0]:1->0htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[1]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[1]:1->0htb_rng.dut.rng_rd' 0
+C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[1]:1->0htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[2]:0->1htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl32n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_3[2]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[0]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[0]:1->0htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[0]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[1]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[1]:1->0htb_rng.dut.rng_rd' 0
-C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[2]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[1]:1->0htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[2]:0->1htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl33n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_4[2]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[0]:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[0]:1->0htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[0]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[1]:0->1htb_rng.dut.rng_rd' 1
 C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[1]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[2]:0->1htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl34n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_5[2]:1->0htb_rng.dut.rng_rd' 0
-C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[0]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[0]:0->1htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[0]:1->0htb_rng.dut.rng_rd' 0
-C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[1]:0->1htb_rng.dut.rng_rd' 1
+C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[1]:0->1htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[1]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[2]:0->1htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl35n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_6[2]:1->0htb_rng.dut.rng_rd' 0
@@ -259,32 +256,32 @@ C 'f../UVM/../src/rng_hs_dup_detector.vl36n17ttogglepagev_toggle/rng_h
 C 'f../UVM/../src/rng_hs_dup_detector.vl36n17ttogglepagev_toggle/rng_hs_dup_detector__pi2oram_7[2]:1->0htb_rng.dut.rng_rd' 0
 C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[0]:0->1htb_rng.dut.rng_rd' 9
 C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[0]:1->0htb_rng.dut.rng_rd' 9
-C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[1]:0->1htb_rng.dut.rng_rd' 6
-C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[1]:1->0htb_rng.dut.rng_rd' 5
-C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[2]:0->1htb_rng.dut.rng_rd' 6
-C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[2]:1->0htb_rng.dut.rng_rd' 6
-C 'f../UVM/../src/rng_hs_dup_detector.vl42n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odecx:0->1htb_rng.dut.rng_rd' 8
-C 'f../UVM/../src/rng_hs_dup_detector.vl42n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odecx:1->0htb_rng.dut.rng_rd' 7
-C 'f../UVM/../src/rng_hs_dup_detector.vl43n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec0:0->1htb_rng.dut.rng_rd' 10
-C 'f../UVM/../src/rng_hs_dup_detector.vl43n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec0:1->0htb_rng.dut.rng_rd' 10
+C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[1]:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[1]:1->0htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[2]:0->1htb_rng.dut.rng_rd' 9
+C 'f../UVM/../src/rng_hs_dup_detector.vl39n17ttogglepagev_toggle/rng_hs_dup_detector__pi2ocache[2]:1->0htb_rng.dut.rng_rd' 8
+C 'f../UVM/../src/rng_hs_dup_detector.vl42n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odecx:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl42n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odecx:1->0htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl43n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec0:0->1htb_rng.dut.rng_rd' 9
+C 'f../UVM/../src/rng_hs_dup_detector.vl43n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec0:1->0htb_rng.dut.rng_rd' 9
 C 'f../UVM/../src/rng_hs_dup_detector.vl44n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec1:0->1htb_rng.dut.rng_rd' 3
 C 'f../UVM/../src/rng_hs_dup_detector.vl44n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec1:1->0htb_rng.dut.rng_rd' 3
-C 'f../UVM/../src/rng_hs_dup_detector.vl45n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec2:0->1htb_rng.dut.rng_rd' 3
-C 'f../UVM/../src/rng_hs_dup_detector.vl45n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec2:1->0htb_rng.dut.rng_rd' 3
-C 'f../UVM/../src/rng_hs_dup_detector.vl46n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec3:0->1htb_rng.dut.rng_rd' 4
+C 'f../UVM/../src/rng_hs_dup_detector.vl45n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec2:0->1htb_rng.dut.rng_rd' 4
+C 'f../UVM/../src/rng_hs_dup_detector.vl45n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec2:1->0htb_rng.dut.rng_rd' 4
+C 'f../UVM/../src/rng_hs_dup_detector.vl46n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec3:0->1htb_rng.dut.rng_rd' 5
 C 'f../UVM/../src/rng_hs_dup_detector.vl46n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec3:1->0htb_rng.dut.rng_rd' 4
-C 'f../UVM/../src/rng_hs_dup_detector.vl47n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec4:0->1htb_rng.dut.rng_rd' 5
-C 'f../UVM/../src/rng_hs_dup_detector.vl47n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec4:1->0htb_rng.dut.rng_rd' 5
-C 'f../UVM/../src/rng_hs_dup_detector.vl48n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec5:0->1htb_rng.dut.rng_rd' 3
-C 'f../UVM/../src/rng_hs_dup_detector.vl48n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec5:1->0htb_rng.dut.rng_rd' 2
-C 'f../UVM/../src/rng_hs_dup_detector.vl49n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec6:0->1htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl49n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec6:1->0htb_rng.dut.rng_rd' 1
-C 'f../UVM/../src/rng_hs_dup_detector.vl50n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec7:0->1htb_rng.dut.rng_rd' 3
-C 'f../UVM/../src/rng_hs_dup_detector.vl50n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec7:1->0htb_rng.dut.rng_rd' 3
-C 'f../UVM/../src/rng_hs_dup_detector.vl53n5ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num:0->1htb_rng.dut.rng_rd' 8
-C 'f../UVM/../src/rng_hs_dup_detector.vl53n5ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num:1->0htb_rng.dut.rng_rd' 7
-C 'f../UVM/../src/rng_hs_dup_detector.vl56n5ttogglepagev_toggle/rng_hs_dup_detector__pi2onext_state:0->1htb_rng.dut.rng_rd' 7
-C 'f../UVM/../src/rng_hs_dup_detector.vl56n5ttogglepagev_toggle/rng_hs_dup_detector__pi2onext_state:1->0htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl47n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec4:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl47n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec4:1->0htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl48n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec5:0->1htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl48n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec5:1->0htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl49n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec6:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl49n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec6:1->0htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl50n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec7:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl50n5ttogglepagev_toggle/rng_hs_dup_detector__pi2odec7:1->0htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl53n5ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num:0->1htb_rng.dut.rng_rd' 7
+C 'f../UVM/../src/rng_hs_dup_detector.vl53n5ttogglepagev_toggle/rng_hs_dup_detector__pi2oreq_num:1->0htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl56n5ttogglepagev_toggle/rng_hs_dup_detector__pi2onext_state:0->1htb_rng.dut.rng_rd' 6
+C 'f../UVM/../src/rng_hs_dup_detector.vl56n5ttogglepagev_toggle/rng_hs_dup_detector__pi2onext_state:1->0htb_rng.dut.rng_rd' 6
 C 'f../UVM/../src/rng_hs_dup_detector.vl59n13ttogglepagev_toggle/rng_hs_dup_detector__pi2owr_ff2:0->1htb_rng.dut.rng_rd' 24
 C 'f../UVM/../src/rng_hs_dup_detector.vl59n13ttogglepagev_toggle/rng_hs_dup_detector__pi2owr_ff2:1->0htb_rng.dut.rng_rd' 24
 C 'f../UVM/../src/rng_hs_dup_detector.vl59n21ttogglepagev_toggle/rng_hs_dup_detector__pi2owr_ff2_d:0->1htb_rng.dut.rng_rd' 24
@@ -294,14 +291,14 @@ C 'f../UVM/../src/rng_hs_dup_detector.vl59n5ttogglepagev_toggle/rng_hs
 C 'f../UVM/../src/rng_hs_dup_detector.vl60n5ttogglepagev_toggle/rng_hs_dup_detector__pi2owr_pulse:0->1htb_rng.dut.rng_rd' 24
 C 'f../UVM/../src/rng_hs_dup_detector.vl60n5ttogglepagev_toggle/rng_hs_dup_detector__pi2owr_pulse:1->0htb_rng.dut.rng_rd' 24
 C 'f../UVM/../src/rng_hs_dup_detector.vl63n1tlinepagev_line/rng_hs_dup_detector__pi2oblockS63-64,146htb_rng.dut.rng_rd' 279
-C 'f../UVM/../src/rng_hs_dup_detector.vl66n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS66-68htb_rng.dut.rng_rd' 109
-C 'f../UVM/../src/rng_hs_dup_detector.vl66n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS71-72htb_rng.dut.rng_rd' 170
-C 'f../UVM/../src/rng_hs_dup_detector.vl76n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS76-78htb_rng.dut.rng_rd' 28
-C 'f../UVM/../src/rng_hs_dup_detector.vl76n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS81-82htb_rng.dut.rng_rd' 251
-C 'f../UVM/../src/rng_hs_dup_detector.vl86n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS86-88htb_rng.dut.rng_rd' 31
-C 'f../UVM/../src/rng_hs_dup_detector.vl86n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS91-92htb_rng.dut.rng_rd' 248
-C 'f../UVM/../src/rng_hs_dup_detector.vl96n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS96-98htb_rng.dut.rng_rd' 42
-C 'f../UVM/../src/rng_hs_dup_detector.vl96n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS101-102htb_rng.dut.rng_rd' 237
+C 'f../UVM/../src/rng_hs_dup_detector.vl66n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS66-68htb_rng.dut.rng_rd' 96
+C 'f../UVM/../src/rng_hs_dup_detector.vl66n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS71-72htb_rng.dut.rng_rd' 183
+C 'f../UVM/../src/rng_hs_dup_detector.vl76n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS76-78htb_rng.dut.rng_rd' 34
+C 'f../UVM/../src/rng_hs_dup_detector.vl76n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS81-82htb_rng.dut.rng_rd' 245
+C 'f../UVM/../src/rng_hs_dup_detector.vl86n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS86-88htb_rng.dut.rng_rd' 47
+C 'f../UVM/../src/rng_hs_dup_detector.vl86n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS91-92htb_rng.dut.rng_rd' 232
+C 'f../UVM/../src/rng_hs_dup_detector.vl96n5tbranchpagev_branch/rng_hs_dup_detector__pi2oifS96-98htb_rng.dut.rng_rd' 50
+C 'f../UVM/../src/rng_hs_dup_detector.vl96n6tbranchpagev_branch/rng_hs_dup_detector__pi2oelseS101-102htb_rng.dut.rng_rd' 229
 C 'f../UVM/../src/rng_selector.vl34n11ttogglepagev_toggle/rng_selector__T47_TB2_SB1f_TC4oclk_i:0->1htb_rng.dut.rng_sel' 277
 C 'f../UVM/../src/rng_selector.vl34n11ttogglepagev_toggle/rng_selector__T47_TB2_SB1f_TC4oclk_i:1->0htb_rng.dut.rng_sel' 277
 C 'f../UVM/../src/rng_selector.vl35n11ttogglepagev_toggle/rng_selector__T47_TB2_SB1f_TC4orst_i:0->1htb_rng.dut.rng_sel' 1
@@ -330,29 +327,29 @@ C 'f../UVM/../src/rng_top.vl37n11ttogglepagev_toggle/rng_topowr_i:0-
 C 'f../UVM/../src/rng_top.vl37n11ttogglepagev_toggle/rng_topowr_i:1->0htb_rng.dut' 0
 C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[0]:0->1htb_rng.dut' 3
 C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[0]:1->0htb_rng.dut' 2
-C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[1]:0->1htb_rng.dut' 1
-C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[1]:1->0htb_rng.dut' 1
-C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[2]:0->1htb_rng.dut' 1
+C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[1]:0->1htb_rng.dut' 2
+C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[1]:1->0htb_rng.dut' 2
+C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[2]:0->1htb_rng.dut' 2
 C 'f../UVM/../src/rng_top.vl38n24ttogglepagev_toggle/rng_toponum_to_send_o[2]:1->0htb_rng.dut' 1
 C 'f../UVM/../src/rng_top.vl42n16ttogglepagev_toggle/rng_toposeed_bar[0]:0->1htb_rng.dut' 137
 C 'f../UVM/../src/rng_top.vl42n16ttogglepagev_toggle/rng_toposeed_bar[0]:1->0htb_rng.dut' 136
 C 'f../UVM/../src/rng_top.vl42n16ttogglepagev_toggle/rng_toposeed_bar[1]:0->1htb_rng.dut' 68
 C 'f../UVM/../src/rng_top.vl42n16ttogglepagev_toggle/rng_toposeed_bar[1]:1->0htb_rng.dut' 68
-C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[0]:0->1htb_rng.dut' 136
-C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[0]:1->0htb_rng.dut' 136
-C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[1]:0->1htb_rng.dut' 68
-C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[1]:1->0htb_rng.dut' 68
-C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[2]:0->1htb_rng.dut' 34
-C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[2]:1->0htb_rng.dut' 34
-C 'f../UVM/../src/rng_top.vl46n10ttogglepagev_toggle/rng_toporeq_num_again:0->1htb_rng.dut' 1
-C 'f../UVM/../src/rng_top.vl46n10ttogglepagev_toggle/rng_toporeq_num_again:1->0htb_rng.dut' 0
-C 'f../UVM/../src/rng_top.vl48n10ttogglepagev_toggle/rng_toporeq_num:0->1htb_rng.dut' 1
-C 'f../UVM/../src/rng_top.vl48n10ttogglepagev_toggle/rng_toporeq_num:1->0htb_rng.dut' 0
+C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[0]:0->1htb_rng.dut' 133
+C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[0]:1->0htb_rng.dut' 133
+C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[1]:0->1htb_rng.dut' 67
+C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[1]:1->0htb_rng.dut' 66
+C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[2]:0->1htb_rng.dut' 33
+C 'f../UVM/../src/rng_top.vl44n22ttogglepagev_toggle/rng_toponum_i_bar[2]:1->0htb_rng.dut' 33
+C 'f../UVM/../src/rng_top.vl46n10ttogglepagev_toggle/rng_toporeq_num_again:0->1htb_rng.dut' 7
+C 'f../UVM/../src/rng_top.vl46n10ttogglepagev_toggle/rng_toporeq_num_again:1->0htb_rng.dut' 6
+C 'f../UVM/../src/rng_top.vl48n10ttogglepagev_toggle/rng_toporeq_num:0->1htb_rng.dut' 7
+C 'f../UVM/../src/rng_top.vl48n10ttogglepagev_toggle/rng_toporeq_num:1->0htb_rng.dut' 6
 C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[0]:0->1htb_rng.dut' 3
 C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[0]:1->0htb_rng.dut' 2
-C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[1]:0->1htb_rng.dut' 1
-C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[1]:1->0htb_rng.dut' 1
-C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[2]:0->1htb_rng.dut' 1
+C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[1]:0->1htb_rng.dut' 2
+C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[1]:1->0htb_rng.dut' 2
+C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[2]:0->1htb_rng.dut' 2
 C 'f../UVM/../src/rng_top.vl50n22ttogglepagev_toggle/rng_topodata_out[2]:1->0htb_rng.dut' 1
 C 'f../UVM/UVM_agent.svl16n14tlinepagev_line/rng_agentoblockS16,18htb_rng::rng_agent__Vclpkg' 1
 C 'f../UVM/UVM_agent.svl2n28tlinepagev_line/rng_agentoblockS2htb_rng::rng_agent__Vclpkg' 0
@@ -425,14 +422,14 @@ C 'f../UVM/UVM_scoreboard.svl117n23tbranchpagev_branch/rng_scoreboard
 C 'f../UVM/UVM_scoreboard.svl117n23texprpagev_expr/rng_scoreboardo((32'h0 != seen.next(k))==1) => 1htb_rng::rng_scoreboard__Vclpkg' 0
 C 'f../UVM/UVM_scoreboard.svl117n23texprpagev_expr/rng_scoreboardo(k__Vfirst==0 && (32'h0 != seen.next(k))==0) => 0htb_rng::rng_scoreboard__Vclpkg' 1
 C 'f../UVM/UVM_scoreboard.svl117n23texprpagev_expr/rng_scoreboardo(k__Vfirst==1) => 1htb_rng::rng_scoreboard__Vclpkg' 0
-C 'f../UVM/UVM_scoreboard.svl117n23tlinepagev_line/rng_scoreboardoblockS117-118htb_rng::rng_scoreboard__Vclpkg' 8
+C 'f../UVM/UVM_scoreboard.svl117n23tlinepagev_line/rng_scoreboardoblockS117-118htb_rng::rng_scoreboard__Vclpkg' 7
 C 'f../UVM/UVM_scoreboard.svl117n24tbranchpagev_branch/rng_scoreboardoelsehtb_rng::rng_scoreboard__Vclpkg' 0
-C 'f../UVM/UVM_scoreboard.svl127n23tlinepagev_line/rng_scoreboardoblockS127-128,131,134htb_rng::rng_scoreboard__Vclpkg' 8
-C 'f../UVM/UVM_scoreboard.svl137n13tbranchpagev_branch/rng_scoreboardoifS137-138htb_rng::rng_scoreboard__Vclpkg' 7
+C 'f../UVM/UVM_scoreboard.svl127n23tlinepagev_line/rng_scoreboardoblockS127-128,131,134htb_rng::rng_scoreboard__Vclpkg' 7
+C 'f../UVM/UVM_scoreboard.svl137n13tbranchpagev_branch/rng_scoreboardoifS137-138htb_rng::rng_scoreboard__Vclpkg' 6
 C 'f../UVM/UVM_scoreboard.svl137n14tbranchpagev_branch/rng_scoreboardoelsehtb_rng::rng_scoreboard__Vclpkg' 1
 C 'f../UVM/UVM_scoreboard.svl145n9tlinepagev_line/rng_scoreboardoblockS145htb_rng::rng_scoreboard__Vclpkg' 24
-C 'f../UVM/UVM_scoreboard.svl147n13tbranchpagev_branch/rng_scoreboardoifS147-148htb_rng::rng_scoreboard__Vclpkg' 8
-C 'f../UVM/UVM_scoreboard.svl147n14tbranchpagev_branch/rng_scoreboardoelseS150,152htb_rng::rng_scoreboard__Vclpkg' 16
+C 'f../UVM/UVM_scoreboard.svl147n13tbranchpagev_branch/rng_scoreboardoifS147-148htb_rng::rng_scoreboard__Vclpkg' 7
+C 'f../UVM/UVM_scoreboard.svl147n14tbranchpagev_branch/rng_scoreboardoelseS150,152htb_rng::rng_scoreboard__Vclpkg' 17
 C 'f../UVM/UVM_scoreboard.svl156n13tbranchpagev_branch/rng_scoreboardoifS156-157htb_rng::rng_scoreboard__Vclpkg' 23
 C 'f../UVM/UVM_scoreboard.svl156n14tbranchpagev_branch/rng_scoreboardoelsehtb_rng::rng_scoreboard__Vclpkg' 1
 C 'f../UVM/UVM_scoreboard.svl169n6tbranchpagev_branch/rng_scoreboardoifS169htb_rng::rng_scoreboard__Vclpkg' 1
@@ -456,13 +453,13 @@ C 'f../UVM/UVM_scoreboard.svl2n40tlinepagev_line/rng_scoreboardobloc
 C 'f../UVM/UVM_scoreboard.svl34n14tlinepagev_line/rng_scoreboardoblockS34,36,39htb_rng::rng_scoreboard__Vclpkg' 1
 C 'f../UVM/UVM_scoreboard.svl42n19tlinepagev_line/rng_scoreboardoblockS42,44,47,50,53,56,59,62,65htb_rng::rng_scoreboard__Vclpkg' 1
 C 'f../UVM/UVM_scoreboard.svl68n27tlinepagev_line/rng_scoreboardoblockS68,70htb_rng::rng_scoreboard__Vclpkg' 24
-C 'f../UVM/UVM_scoreboard.svl74n10tbranchpagev_branch/rng_scoreboardoelsehtb_rng::rng_scoreboard__Vclpkg' 16
+C 'f../UVM/UVM_scoreboard.svl74n10tbranchpagev_branch/rng_scoreboardoelsehtb_rng::rng_scoreboard__Vclpkg' 17
 C 'f../UVM/UVM_scoreboard.svl74n29texprpagev_expr/rng_scoreboardo((val != last_val)==1) => 1htb_rng::rng_scoreboard__Vclpkg' 0
 C 'f../UVM/UVM_scoreboard.svl74n29texprpagev_expr/rng_scoreboardo(last_val_valid==0) => 1htb_rng::rng_scoreboard__Vclpkg' 0
 C 'f../UVM/UVM_scoreboard.svl74n29texprpagev_expr/rng_scoreboardo(last_val_valid==1 && (val != last_val)==0) => 0htb_rng::rng_scoreboard__Vclpkg' 24
-C 'f../UVM/UVM_scoreboard.svl74n9tbranchpagev_branch/rng_scoreboardoifS74,76,79,96,99htb_rng::rng_scoreboard__Vclpkg' 8
+C 'f../UVM/UVM_scoreboard.svl74n9tbranchpagev_branch/rng_scoreboardoifS74,76,79,96,99htb_rng::rng_scoreboard__Vclpkg' 7
 C 'f../UVM/UVM_scoreboard.svl83n13tbranchpagev_branch/rng_scoreboardoifS83-85,88htb_rng::rng_scoreboard__Vclpkg' 0
-C 'f../UVM/UVM_scoreboard.svl83n14tbranchpagev_branch/rng_scoreboardoelseS90,92htb_rng::rng_scoreboard__Vclpkg' 8
+C 'f../UVM/UVM_scoreboard.svl83n14tbranchpagev_branch/rng_scoreboardoelseS90,92htb_rng::rng_scoreboard__Vclpkg' 7
 C 'f../UVM/UVM_scoreboard.svl88n6tbranchpagev_branch/rng_scoreboardoifS88htb_rng::rng_scoreboard__Vclpkg' 0
 C 'f../UVM/UVM_scoreboard.svl88n7tbranchpagev_branch/rng_scoreboardoelsehtb_rng::rng_scoreboard__Vclpkg' 0
 C 'f../UVM/UVM_seq_item.svl1n1tlinepagev_line/rng_seq_itemoblockS1htb_rng::rng_seq_item__Vclpkg' 0

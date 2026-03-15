@@ -10,9 +10,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper___Vclpkg::__VnoInFunc_from_name(V
     from_name__Vfuncrtn = 0U;
     if ((0U == this->__PVT__map.size())) {
         this->__VnoInFunc_m_init_map(vlSymsp);
-        ++(vlSymsp->__Vcoverage[855]);
+        ++(vlSymsp->__Vcoverage[850]);
     } else {
-        ++(vlSymsp->__Vcoverage[856]);
+        ++(vlSymsp->__Vcoverage[851]);
     }
     if (this->__PVT__map.exists(name)) {
         value = this->__PVT__map.at(name);
@@ -20,25 +20,25 @@ void Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper___Vclpkg::__VnoInFunc_from_name(V
     } else {
         from_name__Vfuncrtn = 0U;
     }
-    ++(vlSymsp->__Vcoverage[859]);
+    ++(vlSymsp->__Vcoverage[854]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper___Vclpkg::__VnoInFunc_m_init_map(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper___Vclpkg::__VnoInFunc_m_init_map\n"); );
     // Body
     this->__PVT__map.at("UVM_PASSIVE"s) = 0U;
-    ++(vlSymsp->__Vcoverage[860]);
-    ++(vlSymsp->__Vcoverage[861]);
+    ++(vlSymsp->__Vcoverage[855]);
+    ++(vlSymsp->__Vcoverage[856]);
     this->__PVT__map.at("UVM_ACTIVE"s) = 1U;
-    ++(vlSymsp->__Vcoverage[860]);
-    ++(vlSymsp->__Vcoverage[862]);
+    ++(vlSymsp->__Vcoverage[855]);
+    ++(vlSymsp->__Vcoverage[857]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper_::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper_::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[863]);
+    ++(vlSymsp->__Vcoverage[858]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_enum_wrapper_::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

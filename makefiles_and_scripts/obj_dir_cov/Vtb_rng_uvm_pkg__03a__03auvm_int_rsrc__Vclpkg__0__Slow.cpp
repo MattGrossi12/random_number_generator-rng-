@@ -16,8 +16,8 @@ VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_int_rsrc__Vclpkg___configure_cove
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[8022]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_specializations.svh", 76, 12, "", "v_line/uvm_int_rsrc", "block", "76-80");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[8023]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_specializations.svh", 83, 19, "", "v_line/uvm_int_rsrc", "block", "83-86");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[8017]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_specializations.svh", 76, 12, "", "v_line/uvm_int_rsrc", "block", "76-80");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[8018]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_specializations.svh", 83, 19, "", "v_line/uvm_int_rsrc", "block", "83-86");
 }
 
 VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_int_rsrc___configure_coverage(Vtb_rng_uvm_pkg__03a__03auvm_int_rsrc* vlSelf, bool first) {

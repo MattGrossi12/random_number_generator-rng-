@@ -16,13 +16,13 @@ VL_ATTR_COLD void Vtb_rng_tb_rng__03a__03arng_env__Vclpkg___configure_coverage(V
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[657]), first, "../UVM/UVM_env.sv", 2, 28, "", "v_line/rng_env", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[658]), first, "../UVM/UVM_env.sv", 2, 40, "", "v_line/rng_env", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[659]), first, "../UVM/UVM_env.sv", 2, 29, "", "v_line/rng_env", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[660]), first, "../UVM/UVM_env.sv", 2, 30, "", "v_line/rng_env", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[661]), first, "../UVM/UVM_env.sv", 12, 14, "", "v_line/rng_env", "block", "12,14");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[662]), first, "../UVM/UVM_env.sv", 17, 19, "", "v_line/rng_env", "block", "17,19,22,25");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[663]), first, "../UVM/UVM_env.sv", 28, 19, "", "v_line/rng_env", "block", "28,30,34");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[652]), first, "../UVM/UVM_env.sv", 2, 28, "", "v_line/rng_env", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[653]), first, "../UVM/UVM_env.sv", 2, 40, "", "v_line/rng_env", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[654]), first, "../UVM/UVM_env.sv", 2, 29, "", "v_line/rng_env", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[655]), first, "../UVM/UVM_env.sv", 2, 30, "", "v_line/rng_env", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[656]), first, "../UVM/UVM_env.sv", 12, 14, "", "v_line/rng_env", "block", "12,14");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[657]), first, "../UVM/UVM_env.sv", 17, 19, "", "v_line/rng_env", "block", "17,19,22,25");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[658]), first, "../UVM/UVM_env.sv", 28, 19, "", "v_line/rng_env", "block", "28,30,34");
 }
 
 VL_ATTR_COLD void Vtb_rng_tb_rng__03a__03arng_env___configure_coverage(Vtb_rng_tb_rng__03a__03arng_env* vlSelf, bool first) {

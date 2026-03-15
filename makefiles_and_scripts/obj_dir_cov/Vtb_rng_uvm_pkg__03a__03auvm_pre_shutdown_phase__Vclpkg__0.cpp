@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase__Vclpkg::__VnoInFunc_type_n
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_pre_shutdown_phase"s;
-    ++(vlSymsp->__Vcoverage[16695]);
+    ++(vlSymsp->__Vcoverage[16690]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase__Vclpkg::__VnoInFunc_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase> &get__Vfuncrtn) {
@@ -16,12 +16,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase__Vclpkg::__VnoInFunc_get(Vl
     // Body
     if ((VlNull{} == this->__PVT__m_inst)) {
         this->__PVT__m_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase, vlProcess, vlSymsp, "pre_shutdown"s);
-        ++(vlSymsp->__Vcoverage[16697]);
+        ++(vlSymsp->__Vcoverage[16692]);
     } else {
-        ++(vlSymsp->__Vcoverage[16698]);
+        ++(vlSymsp->__Vcoverage[16693]);
     }
     get__Vfuncrtn = this->__PVT__m_inst;
-    ++(vlSymsp->__Vcoverage[16699]);
+    ++(vlSymsp->__Vcoverage[16694]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::__VnoInFunc_exec_task(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -29,7 +29,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::__VnoInFunc_exec_ta
     // Body
     VL_KEEP_THIS;
     VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_runtime_phases.svh", 246)->__VnoInFunc_pre_shutdown_phase(vlSymsp, phase);
-    ++(vlSymsp->__Vcoverage[16694]);
+    ++(vlSymsp->__Vcoverage[16689]);
     co_return;
 }
 
@@ -37,7 +37,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::__VnoInFunc_get_type_name(
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_pre_shutdown_phase"s;
-    ++(vlSymsp->__Vcoverage[16696]);
+    ++(vlSymsp->__Vcoverage[16691]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -46,7 +46,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::init(VlProcessRef vlProces
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[16700]);
+    ++(vlSymsp->__Vcoverage[16695]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_pre_shutdown_phase::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

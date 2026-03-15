@@ -1,0 +1,67 @@
+# =========================================================
+# Simulação pós-síntese com Icarus Verilog + SDF
+# Projeto: RNG
+# =========================================================
+
+# Arquivos gerados
+SIM  = sim.vvp
+WAVE = dump.vcd
+
+# Diretórios
+NETLIST_DIR = ../netlist
+LIB_DIR     = $(NETLIST_DIR)/libs_files
+TB_DIR      = ../testbenchs
+
+# Arquivos principais
+POST_SYN_NETLIST = $(NETLIST_DIR)/rng_top_nl_refactor.v
+TESTBENCH        = $(TB_DIR)/testbench_top_spa.v
+
+# Bibliotecas SKY130 para simulação gate-level / timing
+STD_CELL_LIBS = \
+	$(LIB_DIR)/primitives.v \
+	$(LIB_DIR)/sky130_fd_sc_hd.v
+
+# Lista completa de arquivos Verilog
+VERILOG_FILES = \
+	$(STD_CELL_LIBS) \
+	$(POST_SYN_NETLIST) \
+	$(TESTBENCH)
+
+# Flags de compilação para gate-level + SDF
+# Obs.: -DFUNCTIONAL foi removido para permitir o uso dos blocos de timing/specify.
+COMPILE_ARGS = -Wall -g2012
+COMPILE_ARGS += -gspecify -ginterconnect
+COMPILE_ARGS += -DUNIT_DELAY=\#1 -DSKY130_FD_SC_HD__LPFLOW_BLEEDER_1_TIMING_V
+VVP_FLAGS    =
+
+.PHONY: all post_synth icarus run gtk clean
+
+# Alvo padrão
+all: icarus
+
+# Alias explícito
+post_synth: icarus
+
+# Compila e executa a simulação
+icarus: $(SIM) run
+
+# Compilação
+$(SIM): $(VERILOG_FILES)
+	iverilog $(COMPILE_ARGS) -o $(SIM) $(VERILOG_FILES)
+
+# Execução da simulação
+run: $(SIM)
+	vvp $(SIM) $(VVP_FLAGS)
+
+# Visualização de waveform
+gtk: $(WAVE)
+	gtkwave $(WAVE)
+
+# Apenas verifica se o VCD foi realmente gerado pelo testbench
+$(WAVE): run
+	@test -f $(WAVE) || (echo "Erro: $(WAVE) nao foi gerado. Ajuste o testbench para usar \$$(dumpfile(\"$(WAVE)\")) e \$$(dumpvars)." && exit 1)
+
+# Limpeza
+clean:
+	rm -f $(SIM)
+	rm -f $(WAVE)

@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase__Vclpkg::__VnoInFunc_type_name(V
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_extract_phase__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_extract_phase"s;
-    ++(vlSymsp->__Vcoverage[16604]);
+    ++(vlSymsp->__Vcoverage[16599]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase__Vclpkg::__VnoInFunc_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_extract_phase> &get__Vfuncrtn) {
@@ -16,26 +16,26 @@ void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase__Vclpkg::__VnoInFunc_get(VlProce
     // Body
     if ((VlNull{} == this->__PVT__m_inst)) {
         this->__PVT__m_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_extract_phase, vlProcess, vlSymsp, "extract"s);
-        ++(vlSymsp->__Vcoverage[16606]);
+        ++(vlSymsp->__Vcoverage[16601]);
     } else {
-        ++(vlSymsp->__Vcoverage[16607]);
+        ++(vlSymsp->__Vcoverage[16602]);
     }
     get__Vfuncrtn = this->__PVT__m_inst;
-    ++(vlSymsp->__Vcoverage[16608]);
+    ++(vlSymsp->__Vcoverage[16603]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::__VnoInFunc_exec_func(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::__VnoInFunc_exec_func\n"); );
     // Body
     VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_common_phases.svh", 242)->__VnoInFunc_extract_phase(vlSymsp, phase);
-    ++(vlSymsp->__Vcoverage[16603]);
+    ++(vlSymsp->__Vcoverage[16598]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_extract_phase"s;
-    ++(vlSymsp->__Vcoverage[16605]);
+    ++(vlSymsp->__Vcoverage[16600]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -44,7 +44,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::init(VlProcessRef vlProcess, Vt
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[16609]);
+    ++(vlSymsp->__Vcoverage[16604]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_extract_phase::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

@@ -13,7 +13,7 @@ void Vtb_rng_std__03a__03aprocess__Vclpkg::__VnoInFunc_self(VlProcessRef vlProce
 // $c statement at /usr/local/share/verilator/include/verilated_std.sv:145:7
     VL_NULL_CHECK(p, "/usr/local/share/verilator/include/verilated_std.sv", 145)->__PVT__m_process = vlProcess;
     self__Vfuncrtn = p;
-    ++(vlSymsp->__Vcoverage[25451]);
+    ++(vlSymsp->__Vcoverage[25446]);
 }
 
 void Vtb_rng_std__03a__03aprocess__Vclpkg::__VnoInFunc_killQueue(Vtb_rng__Syms* __restrict vlSymsp, VlQueue<VlClassRef<Vtb_rng_std__03a__03aprocess>> &processQueue) {
@@ -21,9 +21,9 @@ void Vtb_rng_std__03a__03aprocess__Vclpkg::__VnoInFunc_killQueue(Vtb_rng__Syms* 
     // Body
     while (VL_LTS_III(32, 0U, processQueue.size())) {
         VL_NULL_CHECK(processQueue.pop_back(), "/usr/local/share/verilator/include/verilated_std.sv", 185)->__VnoInFunc_kill(vlSymsp);
-        ++(vlSymsp->__Vcoverage[25460]);
+        ++(vlSymsp->__Vcoverage[25455]);
     }
-    ++(vlSymsp->__Vcoverage[25461]);
+    ++(vlSymsp->__Vcoverage[25456]);
 }
 
 void Vtb_rng_std__03a__03aprocess::__VnoInFunc_set_status(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ s) {
@@ -32,7 +32,7 @@ void Vtb_rng_std__03a__03aprocess::__VnoInFunc_set_status(Vtb_rng__Syms* __restr
 
 // $c statement at /usr/local/share/verilator/include/verilated_std.sv:152:7
     this->__PVT__m_process->state(s);
-    ++(vlSymsp->__Vcoverage[25452]);
+    ++(vlSymsp->__Vcoverage[25447]);
 }
 
 void Vtb_rng_std__03a__03aprocess::__VnoInFunc_status(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &status__Vfuncrtn) {
@@ -43,14 +43,14 @@ void Vtb_rng_std__03a__03aprocess::__VnoInFunc_status(Vtb_rng__Syms* __restrict 
 // $cpure expression at /usr/local/share/verilator/include/verilated_std.sv:158:21
 this->__PVT__m_process->state()
     ;
-    ++(vlSymsp->__Vcoverage[25453]);
+    ++(vlSymsp->__Vcoverage[25448]);
 }
 
 void Vtb_rng_std__03a__03aprocess::__VnoInFunc_kill(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_std__03a__03aprocess::__VnoInFunc_kill\n"); );
     // Body
     this->__VnoInFunc_set_status(vlSymsp, 4U);
-    ++(vlSymsp->__Vcoverage[25454]);
+    ++(vlSymsp->__Vcoverage[25449]);
 }
 
 void Vtb_rng_std__03a__03aprocess::__VnoInFunc_suspend(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -65,7 +65,7 @@ void Vtb_rng_std__03a__03aprocess::__VnoInFunc_resume(Vtb_rng__Syms* __restrict 
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_std__03a__03aprocess::__VnoInFunc_resume\n"); );
     // Body
     this->__VnoInFunc_set_status(vlSymsp, 1U);
-    ++(vlSymsp->__Vcoverage[25455]);
+    ++(vlSymsp->__Vcoverage[25450]);
 }
 
 VlCoroutine Vtb_rng_std__03a__03aprocess::__VnoInFunc_await(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -107,11 +107,11 @@ VlCoroutine Vtb_rng_std__03a__03aprocess::__VnoInFunc_await(Vtb_rng__Syms* __res
     }
     this->__VnoInFunc_status(vlSymsp, __VlefCall_3__status);
     if ((4U == __VlefCall_3__status)) {
-        ++(vlSymsp->__Vcoverage[25456]);
+        ++(vlSymsp->__Vcoverage[25451]);
     }
     this->__VnoInFunc_status(vlSymsp, __VlefCall_4__status);
     if ((0U == __VlefCall_4__status)) {
-        ++(vlSymsp->__Vcoverage[25457]);
+        ++(vlSymsp->__Vcoverage[25452]);
     }
     this->__VnoInFunc_status(vlSymsp, __VlefCall_5__status);
     __VlefLogAnd_7 = (0U != __VlefCall_5__status);
@@ -120,9 +120,9 @@ VlCoroutine Vtb_rng_std__03a__03aprocess::__VnoInFunc_await(Vtb_rng__Syms* __res
         __VlefLogAnd_7 = (4U != __VlefCall_6__status);
     }
     if (__VlefLogAnd_7) {
-        ++(vlSymsp->__Vcoverage[25458]);
+        ++(vlSymsp->__Vcoverage[25453]);
     }
-    ++(vlSymsp->__Vcoverage[25459]);
+    ++(vlSymsp->__Vcoverage[25454]);
     co_return;
 }
 
@@ -138,7 +138,7 @@ void Vtb_rng_std__03a__03aprocess::__VnoInFunc_get_randstate(Vtb_rng__Syms* __re
 // $c statement at /usr/local/share/verilator/include/verilated_std.sv:233:7
     s = this->__PVT__m_process->randstate();
     get_randstate__Vfuncrtn = s;
-    ++(vlSymsp->__Vcoverage[25462]);
+    ++(vlSymsp->__Vcoverage[25457]);
 }
 
 void Vtb_rng_std__03a__03aprocess::__VnoInFunc_set_randstate(Vtb_rng__Syms* __restrict vlSymsp, std::string s) {
@@ -147,21 +147,21 @@ void Vtb_rng_std__03a__03aprocess::__VnoInFunc_set_randstate(Vtb_rng__Syms* __re
 
 // $c statement at /usr/local/share/verilator/include/verilated_std.sv:238:7
     this->__PVT__m_process->randstate(s);
-    ++(vlSymsp->__Vcoverage[25463]);
+    ++(vlSymsp->__Vcoverage[25458]);
 }
 
 void Vtb_rng_std__03a__03aprocess::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_std__03a__03aprocess::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[25464]);
+    ++(vlSymsp->__Vcoverage[25459]);
 }
 
 void Vtb_rng_std__03a__03aprocess::__VnoInFunc_srandom(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ seed) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_std__03a__03aprocess::__VnoInFunc_srandom\n"); );
     // Body
     __Vm_rng.srandom(seed);
-    ++(vlSymsp->__Vcoverage[25465]);
+    ++(vlSymsp->__Vcoverage[25460]);
 }
 
 void Vtb_rng_std__03a__03aprocess::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

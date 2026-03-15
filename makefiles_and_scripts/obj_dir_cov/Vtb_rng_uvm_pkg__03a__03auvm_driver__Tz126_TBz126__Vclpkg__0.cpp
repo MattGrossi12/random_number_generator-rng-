@@ -8,14 +8,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126__Vclpkg::__VnoInFunc_get_
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__Tz150__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[18316]);
+    ++(vlSymsp->__Vcoverage[18311]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_driver #(REQ,RSP)"s;
-    ++(vlSymsp->__Vcoverage[18318]);
+    ++(vlSymsp->__Vcoverage[18313]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,14 +25,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_get_object_t
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__Tz150__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[18317]);
+    ++(vlSymsp->__Vcoverage[18312]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_driver #(REQ,RSP)"s;
-    ++(vlSymsp->__Vcoverage[18319]);
+    ++(vlSymsp->__Vcoverage[18314]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
@@ -46,7 +46,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::init(VlProcessRef vlProc
     this->__PVT__rsp_port = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_analysis_port__Tz126, vlProcess, vlSymsp, "rsp_port"s, 
                                    VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126>{this});
     this->__PVT__seq_item_prod_if = this->__PVT__seq_item_port;
-    ++(vlSymsp->__Vcoverage[18320]);
+    ++(vlSymsp->__Vcoverage[18315]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_end_of_elaboration_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -59,15 +59,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_end_of_elabo
         this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 1U, "DRVCONNECT"s, __VlefCall_1__uvm_report_enabled);
         if ((0U != __VlefCall_1__uvm_report_enabled)) {
             this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "DRVCONNECT"s, "the driver is not connected to a sequencer via the standard mechanisms enabled by connect()"s, 0U, "/home/matheus/tools/1800.2-2017-1.0/src/comps/uvm_driver.svh"s, 0x0000005aU, ""s, 1U);
-            ++(vlSymsp->__Vcoverage[18321]);
+            ++(vlSymsp->__Vcoverage[18316]);
         } else {
-            ++(vlSymsp->__Vcoverage[18322]);
+            ++(vlSymsp->__Vcoverage[18317]);
         }
-        ++(vlSymsp->__Vcoverage[18323]);
+        ++(vlSymsp->__Vcoverage[18318]);
     } else {
-        ++(vlSymsp->__Vcoverage[18324]);
+        ++(vlSymsp->__Vcoverage[18319]);
     }
-    ++(vlSymsp->__Vcoverage[18325]);
+    ++(vlSymsp->__Vcoverage[18320]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_driver__Tz126_TBz126::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

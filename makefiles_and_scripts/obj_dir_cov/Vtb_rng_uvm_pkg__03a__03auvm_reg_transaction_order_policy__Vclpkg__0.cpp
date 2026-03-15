@@ -10,13 +10,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_transaction_order_policy::init(VlProcessRe
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[23368]);
+    ++(vlSymsp->__Vcoverage[23363]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_transaction_order_policy::__VnoInFunc_order(Vtb_rng__Syms* __restrict vlSymsp, VlQueue<Vtb_rng_uvm_reg_bus_op__struct__0> &q) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_reg_transaction_order_policy::__VnoInFunc_order\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[23369]);
+    ++(vlSymsp->__Vcoverage[23364]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_transaction_order_policy::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

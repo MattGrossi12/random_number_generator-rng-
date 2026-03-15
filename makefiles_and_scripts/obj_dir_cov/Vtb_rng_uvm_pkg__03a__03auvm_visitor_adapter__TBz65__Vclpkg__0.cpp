@@ -7,7 +7,7 @@
 void Vtb_rng_uvm_pkg__03a__03auvm_visitor_adapter__TBz65::__VnoInFunc_accept(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> s, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_visitor_> v, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy_> p, CData/*0:0*/ invoke_begin_end) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_visitor_adapter__TBz65::__VnoInFunc_accept\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18078]);
+    ++(vlSymsp->__Vcoverage[18073]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_visitor_adapter__TBz65::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -16,7 +16,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_visitor_adapter__TBz65::init(VlProcessRef vlPr
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[18079]);
+    ++(vlSymsp->__Vcoverage[18074]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_visitor_adapter__TBz65::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

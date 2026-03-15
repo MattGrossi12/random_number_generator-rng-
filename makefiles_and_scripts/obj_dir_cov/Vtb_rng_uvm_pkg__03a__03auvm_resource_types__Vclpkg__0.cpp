@@ -20,7 +20,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_types::init(Vtb_rng__Syms* __restrict
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_resource_types::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[7803]);
+    ++(vlSymsp->__Vcoverage[7798]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_types::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

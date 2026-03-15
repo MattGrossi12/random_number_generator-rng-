@@ -9,7 +9,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_ty
     // Body
     type_name__Vfuncrtn = ""s;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_type_name(vlSymsp, type_name__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[2457]);
+    ++(vlSymsp->__Vcoverage[2452]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_get(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119> &get__Vfuncrtn) {
@@ -17,33 +17,33 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_ge
     // Body
     if ((VlNull{} == this->__PVT__get__Vstatic__m_inst)) {
         this->__PVT__get__Vstatic__m_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119, vlSymsp);
-        ++(vlSymsp->__Vcoverage[2459]);
+        ++(vlSymsp->__Vcoverage[2454]);
     } else {
-        ++(vlSymsp->__Vcoverage[2460]);
+        ++(vlSymsp->__Vcoverage[2455]);
     }
     get__Vfuncrtn = this->__PVT__get__Vstatic__m_inst;
-    ++(vlSymsp->__Vcoverage[2461]);
+    ++(vlSymsp->__Vcoverage[2456]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_create(Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent, std::string contxt, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_block> &create__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_create\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_create(vlSymsp, name, parent, contxt, create__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[2462]);
+    ++(vlSymsp->__Vcoverage[2457]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_set_type_override(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> override_type, CData/*0:0*/ replace) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_set_type_override\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_set_type_override(vlSymsp, override_type, replace);
-    ++(vlSymsp->__Vcoverage[2463]);
+    ++(vlSymsp->__Vcoverage[2458]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_set_inst_override(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> override_type, std::string inst_path, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_set_inst_override\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_set_inst_override(vlSymsp, override_type, inst_path, parent);
-    ++(vlSymsp->__Vcoverage[2464]);
+    ++(vlSymsp->__Vcoverage[2459]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_set_type_alias(Vtb_rng__Syms* __restrict vlSymsp, std::string alias_name, CData/*0:0*/ &set_type_alias__Vfuncrtn) {
@@ -52,7 +52,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119__Vclpkg::__VnoInFunc_se
     set_type_alias__Vfuncrtn = 0U;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_set_type_alias(vlSymsp, alias_name);
     set_type_alias__Vfuncrtn = 1U;
-    ++(vlSymsp->__Vcoverage[2465]);
+    ++(vlSymsp->__Vcoverage[2460]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::__VnoInFunc_create_object(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create_object__Vfuncrtn) {
@@ -61,13 +61,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::__VnoInFunc_create_obj
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_block> obj;
     if ((""s == name)) {
         obj = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_reg_block, vlProcess, vlSymsp, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[2454]);
+        ++(vlSymsp->__Vcoverage[2449]);
     } else {
         obj = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_reg_block, vlProcess, vlSymsp, name, 0U);
-        ++(vlSymsp->__Vcoverage[2455]);
+        ++(vlSymsp->__Vcoverage[2450]);
     }
     create_object__Vfuncrtn = obj;
-    ++(vlSymsp->__Vcoverage[2456]);
+    ++(vlSymsp->__Vcoverage[2451]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
@@ -77,7 +77,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::__VnoInFunc_get_type_n
     get_type_name__Vfuncrtn = ""s;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_get(vlSymsp, common);
     VL_NULL_CHECK(common, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 200)->__VnoInFunc_get_type_name(vlSymsp, get_type_name__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[2458]);
+    ++(vlSymsp->__Vcoverage[2453]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::__VnoInFunc_initialize(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -86,7 +86,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::__VnoInFunc_initialize
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi141> common;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_registry_common__pi141__Vclpkg.__VnoInFunc_get(vlSymsp, common);
     VL_NULL_CHECK(common, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 281)->__VnoInFunc_initialize(vlProcess, vlSymsp);
-    ++(vlSymsp->__Vcoverage[2466]);
+    ++(vlSymsp->__Vcoverage[2461]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::init(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -95,7 +95,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::init(Vtb_rng__Syms* __
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[2467]);
+    ++(vlSymsp->__Vcoverage[2462]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_object_registry__pi119::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

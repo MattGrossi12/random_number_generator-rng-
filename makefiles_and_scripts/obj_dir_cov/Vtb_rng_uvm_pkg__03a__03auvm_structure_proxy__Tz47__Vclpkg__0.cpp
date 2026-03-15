@@ -10,13 +10,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy__Tz47::init(VlProcessRef vlPro
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[18007]);
+    ++(vlSymsp->__Vcoverage[18002]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy__Tz47::__VnoInFunc_get_immediate_children(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer_element> s, VlQueue<VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer_element>> &children) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy__Tz47::__VnoInFunc_get_immediate_children\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18008]);
+    ++(vlSymsp->__Vcoverage[18003]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy__Tz47::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

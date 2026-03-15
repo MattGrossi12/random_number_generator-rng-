@@ -10,6 +10,7 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___eval_initial__TOP__tb_rng(Vtb_rng_tb_rng* vlS
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     ++(vlSymsp->__Vcoverage[101]);
+    ++(vlSymsp->__Vcoverage[236]);
 }
 
 VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* vlSelf) {
@@ -51,6 +52,12 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* v
          ^ (IData)(vlSelfRef.dut__DOT____Vtogcov__num_i_bar))) {
         VL_COV_TOGGLE_CHG_ST_I(3, vlSymsp->__Vcoverage + 25, vlSelfRef.__PVT__dut__DOT__rng_dp__DOT__inst__DOT__num_counter, vlSelfRef.dut__DOT____Vtogcov__num_i_bar);
         vlSelfRef.dut__DOT____Vtogcov__num_i_bar = vlSelfRef.__PVT__dut__DOT__rng_dp__DOT__inst__DOT__num_counter;
+    }
+    if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num) 
+         ^ (IData)(vlSelfRef.dut__DOT____Vtogcov__req_num_again))) {
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 31, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num, vlSelfRef.dut__DOT____Vtogcov__req_num_again);
+        vlSelfRef.dut__DOT____Vtogcov__req_num_again 
+            = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num;
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_dp__DOT__next_num) 
          ^ (IData)(vlSelfRef.dut__DOT__rng_dp__DOT____Vtogcov__next_num))) {
@@ -112,36 +119,32 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* v
         vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__cache 
             = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache;
     }
-    if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num) 
-         ^ (IData)(vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__req_num))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 174, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__req_num);
-        vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__req_num 
-            = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num;
-    }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff1) 
          ^ (IData)(vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff1))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 178, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff1, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff1);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 176, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff1, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff1);
         vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff1 
             = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff1;
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2) 
          ^ (IData)(vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 180, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 178, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2);
         vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2 
             = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2;
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2_d) 
          ^ (IData)(vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2_d))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 182, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2_d, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2_d);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 180, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2_d, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2_d);
         vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2_d 
             = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_ff2_d;
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_pulse) 
          ^ (IData)(vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_pulse))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 184, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_pulse, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_pulse);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 182, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_pulse, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_pulse);
         vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__wr_pulse 
             = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__wr_pulse;
     }
+    vlSelfRef.__PVT__dut__DOT__req_num = ((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num) 
+                                          | (IData)(vlSymsp->TOP__tb_rng__rif.__PVT__req_num_i));
     ([&]() {
             vlSymsp->TOP.__VvifTrigger_h7b4084d7__1_Vtrigm___PVT__num_to_send_o = 1U;
         }(), vlSymsp->TOP__tb_rng__rif.__PVT__num_to_send_o) 
@@ -153,66 +156,66 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* v
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_0))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec0 = 1U;
-        ++(vlSymsp->__Vcoverage[186]);
+        ++(vlSymsp->__Vcoverage[184]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec0 = 0U;
-        ++(vlSymsp->__Vcoverage[187]);
+        ++(vlSymsp->__Vcoverage[185]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_1))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec1 = 1U;
-        ++(vlSymsp->__Vcoverage[188]);
+        ++(vlSymsp->__Vcoverage[186]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec1 = 0U;
-        ++(vlSymsp->__Vcoverage[189]);
+        ++(vlSymsp->__Vcoverage[187]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_2))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec2 = 1U;
-        ++(vlSymsp->__Vcoverage[190]);
+        ++(vlSymsp->__Vcoverage[188]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec2 = 0U;
-        ++(vlSymsp->__Vcoverage[191]);
+        ++(vlSymsp->__Vcoverage[189]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_3))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec3 = 1U;
-        ++(vlSymsp->__Vcoverage[192]);
+        ++(vlSymsp->__Vcoverage[190]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec3 = 0U;
-        ++(vlSymsp->__Vcoverage[193]);
+        ++(vlSymsp->__Vcoverage[191]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_4))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec4 = 1U;
-        ++(vlSymsp->__Vcoverage[194]);
+        ++(vlSymsp->__Vcoverage[192]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec4 = 0U;
-        ++(vlSymsp->__Vcoverage[195]);
+        ++(vlSymsp->__Vcoverage[193]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_5))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec5 = 1U;
-        ++(vlSymsp->__Vcoverage[196]);
+        ++(vlSymsp->__Vcoverage[194]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec5 = 0U;
-        ++(vlSymsp->__Vcoverage[197]);
+        ++(vlSymsp->__Vcoverage[195]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_6))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec6 = 1U;
-        ++(vlSymsp->__Vcoverage[198]);
+        ++(vlSymsp->__Vcoverage[196]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec6 = 0U;
-        ++(vlSymsp->__Vcoverage[199]);
+        ++(vlSymsp->__Vcoverage[197]);
     }
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__cache) 
          == (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__ram_7))) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec7 = 1U;
-        ++(vlSymsp->__Vcoverage[200]);
+        ++(vlSymsp->__Vcoverage[198]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec7 = 0U;
-        ++(vlSymsp->__Vcoverage[201]);
+        ++(vlSymsp->__Vcoverage[199]);
     }
     vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__decx = 
         ((((((((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec0) 
@@ -224,28 +227,28 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* v
           | (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec6)) 
          | (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec7));
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec7) {
-        ++(vlSymsp->__Vcoverage[202]);
+        ++(vlSymsp->__Vcoverage[200]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec6) {
-        ++(vlSymsp->__Vcoverage[203]);
+        ++(vlSymsp->__Vcoverage[201]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec5) {
-        ++(vlSymsp->__Vcoverage[204]);
+        ++(vlSymsp->__Vcoverage[202]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec4) {
-        ++(vlSymsp->__Vcoverage[205]);
+        ++(vlSymsp->__Vcoverage[203]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec3) {
-        ++(vlSymsp->__Vcoverage[206]);
+        ++(vlSymsp->__Vcoverage[204]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec2) {
-        ++(vlSymsp->__Vcoverage[207]);
+        ++(vlSymsp->__Vcoverage[205]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec1) {
-        ++(vlSymsp->__Vcoverage[208]);
+        ++(vlSymsp->__Vcoverage[206]);
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec0) {
-        ++(vlSymsp->__Vcoverage[209]);
+        ++(vlSymsp->__Vcoverage[207]);
     }
     if ((1U & ((((((((~ (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec0)) 
                      & (~ (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec1))) 
@@ -255,9 +258,14 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* v
                  & (~ (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec5))) 
                 & (~ (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec6))) 
                & (~ (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__dec7))))) {
-        ++(vlSymsp->__Vcoverage[210]);
+        ++(vlSymsp->__Vcoverage[208]);
     }
-    ++(vlSymsp->__Vcoverage[211]);
+    ++(vlSymsp->__Vcoverage[209]);
+    if (((IData)(vlSelfRef.__PVT__dut__DOT__req_num) 
+         ^ (IData)(vlSelfRef.dut__DOT____Vtogcov__req_num))) {
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 33, vlSelfRef.__PVT__dut__DOT__req_num, vlSelfRef.dut__DOT____Vtogcov__req_num);
+        vlSelfRef.dut__DOT____Vtogcov__req_num = vlSelfRef.__PVT__dut__DOT__req_num;
+    }
     if (((IData)(vlSymsp->TOP__tb_rng__rif.__PVT__clk_i) 
          ^ (IData)(vlSelfRef.dut__DOT____Vtogcov__clk_i))) {
         VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 7, vlSymsp->TOP__tb_rng__rif.__PVT__clk_i, vlSelfRef.dut__DOT____Vtogcov__clk_i);
@@ -319,50 +327,17 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___stl_sequent__TOP__tb_rng__0(Vtb_rng_tb_rng* v
     }
     if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__decx) {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__next_state = 0U;
-        ++(vlSymsp->__Vcoverage[212]);
+        ++(vlSymsp->__Vcoverage[210]);
     } else {
         vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__next_state = 1U;
-        ++(vlSymsp->__Vcoverage[213]);
+        ++(vlSymsp->__Vcoverage[211]);
     }
-    ++(vlSymsp->__Vcoverage[214]);
+    ++(vlSymsp->__Vcoverage[212]);
     if (((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__next_state) 
          ^ (IData)(vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__next_state))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 176, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__next_state, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__next_state);
+        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 174, vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__next_state, vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__next_state);
         vlSelfRef.dut__DOT__rng_rd__DOT____Vtogcov__next_state 
             = vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__next_state;
-    }
-}
-
-VL_ATTR_COLD void Vtb_rng_tb_rng___stl_comb__TOP__tb_rng__0(Vtb_rng_tb_rng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+      Vtb_rng_tb_rng___stl_comb__TOP__tb_rng__0\n"); );
-    Vtb_rng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Body
-    vlSelfRef.__PVT__dut__DOT__req_num_again = ((IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num) 
-                                                | (IData)(vlSelfRef.__PVT__dut__DOT__req_num));
-    if (((IData)(vlSelfRef.__PVT__dut__DOT__req_num_again) 
-         ^ (IData)(vlSelfRef.dut__DOT____Vtogcov__req_num_again))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 31, vlSelfRef.__PVT__dut__DOT__req_num_again, vlSelfRef.dut__DOT____Vtogcov__req_num_again);
-        vlSelfRef.dut__DOT____Vtogcov__req_num_again 
-            = vlSelfRef.__PVT__dut__DOT__req_num_again;
-    }
-    vlSelfRef.__PVT__dut__DOT__req_num = ((IData)(vlSymsp->TOP__tb_rng__rif.__PVT__req_num_i) 
-                                          | (IData)(vlSelfRef.__PVT__dut__DOT__req_num_again));
-    if (vlSelfRef.__PVT__dut__DOT__req_num) {
-        ++(vlSymsp->__Vcoverage[238]);
-    }
-    if (vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num) {
-        ++(vlSymsp->__Vcoverage[239]);
-    }
-    if ((1U & ((~ (IData)(vlSelfRef.__PVT__dut__DOT__rng_rd__DOT__req_num)) 
-               & (~ (IData)(vlSelfRef.__PVT__dut__DOT__req_num))))) {
-        ++(vlSymsp->__Vcoverage[240]);
-    }
-    ++(vlSymsp->__Vcoverage[241]);
-    if (((IData)(vlSelfRef.__PVT__dut__DOT__req_num) 
-         ^ (IData)(vlSelfRef.dut__DOT____Vtogcov__req_num))) {
-        VL_COV_TOGGLE_CHG_ST_I(1, vlSymsp->__Vcoverage + 33, vlSelfRef.__PVT__dut__DOT__req_num, vlSelfRef.dut__DOT____Vtogcov__req_num);
-        vlSelfRef.dut__DOT____Vtogcov__req_num = vlSelfRef.__PVT__dut__DOT__req_num;
     }
 }
 
@@ -374,7 +349,6 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___ctor_var_reset(Vtb_rng_tb_rng* vlSelf) {
     const uint64_t __VscopeHash = VL_MURMUR64_HASH(vlSelf->vlNamep);
     vlSelf->__PVT__clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 16707436170211756652ull);
     vlSelf->__Vtogcov__clk = 0;
-    vlSelf->__PVT__dut__DOT__req_num_again = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10249008469681491071ull);
     vlSelf->__PVT__dut__DOT__req_num = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 18147336848129975744ull);
     vlSelf->__PVT__dut__DOT__data_out = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 3702778893979843113ull);
     vlSelf->dut__DOT____Vtogcov__clk_i = 0;
@@ -432,7 +406,6 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___ctor_var_reset(Vtb_rng_tb_rng* vlSelf) {
     vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__dec5 = 0;
     vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__dec6 = 0;
     vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__dec7 = 0;
-    vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__req_num = 0;
     vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__next_state = 0;
     vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__wr_ff1 = 0;
     vlSelf->dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2 = 0;
@@ -582,66 +555,63 @@ VL_ATTR_COLD void Vtb_rng_tb_rng___configure_coverage(Vtb_rng_tb_rng* vlSelf, bo
     vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[168]), first, "../UVM/../src/rng_hs_dup_detector.v", 48, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "dec5");
     vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[170]), first, "../UVM/../src/rng_hs_dup_detector.v", 49, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "dec6");
     vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[172]), first, "../UVM/../src/rng_hs_dup_detector.v", 50, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "dec7");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[174]), first, "../UVM/../src/rng_hs_dup_detector.v", 53, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "req_num");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[176]), first, "../UVM/../src/rng_hs_dup_detector.v", 56, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "next_state");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[178]), first, "../UVM/../src/rng_hs_dup_detector.v", 59, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_ff1");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[180]), first, "../UVM/../src/rng_hs_dup_detector.v", 59, 13, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_ff2");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[182]), first, "../UVM/../src/rng_hs_dup_detector.v", 59, 21, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_ff2_d");
-    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[184]), first, "../UVM/../src/rng_hs_dup_detector.v", 60, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_pulse");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[186]), first, "../UVM/../src/rng_hs_dup_detector.v", 66, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "66-68");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[187]), first, "../UVM/../src/rng_hs_dup_detector.v", 66, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "71-72");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "../UVM/../src/rng_hs_dup_detector.v", 76, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "76-78");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "../UVM/../src/rng_hs_dup_detector.v", 76, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "81-82");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "../UVM/../src/rng_hs_dup_detector.v", 86, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "86-88");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[191]), first, "../UVM/../src/rng_hs_dup_detector.v", 86, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "91-92");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[192]), first, "../UVM/../src/rng_hs_dup_detector.v", 96, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "96-98");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[193]), first, "../UVM/../src/rng_hs_dup_detector.v", 96, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "101-102");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[194]), first, "../UVM/../src/rng_hs_dup_detector.v", 106, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "106-108");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[195]), first, "../UVM/../src/rng_hs_dup_detector.v", 106, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "111-112");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[196]), first, "../UVM/../src/rng_hs_dup_detector.v", 116, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "116-118");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[197]), first, "../UVM/../src/rng_hs_dup_detector.v", 116, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "121-122");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[198]), first, "../UVM/../src/rng_hs_dup_detector.v", 126, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "126-128");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[199]), first, "../UVM/../src/rng_hs_dup_detector.v", 126, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "131-132");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[200]), first, "../UVM/../src/rng_hs_dup_detector.v", 136, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "136-138");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[201]), first, "../UVM/../src/rng_hs_dup_detector.v", 136, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "141-142");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[202]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec7==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[203]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec6==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[204]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec5==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[205]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec4==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[206]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec3==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[207]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec2==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[208]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec1==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[209]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec0==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[210]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec0==0 && dec1==0 && dec2==0 && dec3==0 && dec4==0 && dec5==0 && dec6==0 && dec7==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[211]), first, "../UVM/../src/rng_hs_dup_detector.v", 63, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "63-64,146");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[212]), first, "../UVM/../src/rng_hs_dup_detector.v", 152, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "152-154");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[213]), first, "../UVM/../src/rng_hs_dup_detector.v", 152, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "157-158");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[214]), first, "../UVM/../src/rng_hs_dup_detector.v", 150, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "150-151");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[215]), first, "../UVM/../src/rng_hs_dup_detector.v", 177, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_ff2==1 && wr_ff2_d==0) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[216]), first, "../UVM/../src/rng_hs_dup_detector.v", 177, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_ff2_d==1) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[217]), first, "../UVM/../src/rng_hs_dup_detector.v", 177, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_ff2==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[218]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "165-170");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[219]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "171-174,177");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[220]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 9, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==0) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[221]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 9, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==1) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[222]), first, "../UVM/../src/rng_hs_dup_detector.v", 163, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "163-164");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[223]), first, "../UVM/../src/rng_hs_dup_detector.v", 189, 9, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "if", "189-191");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[224]), first, "../UVM/../src/rng_hs_dup_detector.v", 189, 10, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "else", "194-195");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[225]), first, "../UVM/../src/rng_hs_dup_detector.v", 183, 5, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "elsif", "183-184,186");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[226]), first, "../UVM/../src/rng_hs_dup_detector.v", 183, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==0) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[227]), first, "../UVM/../src/rng_hs_dup_detector.v", 183, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==1) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[228]), first, "../UVM/../src/rng_hs_dup_detector.v", 181, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "181-182");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[229]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 9, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "if", "221-222,224-231,234,237");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[230]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 10, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "else", "240,242-249,252,255");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[231]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 43, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "((next_state == approve_number)==1 && wr_pulse==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[232]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 43, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_pulse==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[233]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 43, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "((next_state == approve_number)==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[234]), first, "../UVM/../src/rng_hs_dup_detector.v", 202, 5, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "elsif", "202-203,205-212,215,218");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[235]), first, "../UVM/../src/rng_hs_dup_detector.v", 202, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==0) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[236]), first, "../UVM/../src/rng_hs_dup_detector.v", 202, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==1) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[237]), first, "../UVM/../src/rng_hs_dup_detector.v", 200, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "200-201");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[238]), first, "../UVM/../src/rng_hs_dup_detector.v", 261, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(req_num_i==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[239]), first, "../UVM/../src/rng_hs_dup_detector.v", 261, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(req_num==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[240]), first, "../UVM/../src/rng_hs_dup_detector.v", 261, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(req_num==0 && req_num_i==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[241]), first, "../UVM/../src/rng_hs_dup_detector.v", 259, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "259-261");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[31]), first, "../UVM/../src/rng_hs_dup_detector.v", 53, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "req_num");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[174]), first, "../UVM/../src/rng_hs_dup_detector.v", 56, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "next_state");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[176]), first, "../UVM/../src/rng_hs_dup_detector.v", 59, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_ff1");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[178]), first, "../UVM/../src/rng_hs_dup_detector.v", 59, 13, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_ff2");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[180]), first, "../UVM/../src/rng_hs_dup_detector.v", 59, 21, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_ff2_d");
+    vlSelf->__vlCoverToggleInsert(0, 0, 0, &(vlSymsp->__Vcoverage[182]), first, "../UVM/../src/rng_hs_dup_detector.v", 60, 5, ".dut.rng_rd", "v_toggle/rng_hs_dup_detector__pi2", "wr_pulse");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[184]), first, "../UVM/../src/rng_hs_dup_detector.v", 66, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "66-68");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[185]), first, "../UVM/../src/rng_hs_dup_detector.v", 66, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "71-72");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[186]), first, "../UVM/../src/rng_hs_dup_detector.v", 76, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "76-78");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[187]), first, "../UVM/../src/rng_hs_dup_detector.v", 76, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "81-82");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[188]), first, "../UVM/../src/rng_hs_dup_detector.v", 86, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "86-88");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[189]), first, "../UVM/../src/rng_hs_dup_detector.v", 86, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "91-92");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[190]), first, "../UVM/../src/rng_hs_dup_detector.v", 96, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "96-98");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[191]), first, "../UVM/../src/rng_hs_dup_detector.v", 96, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "101-102");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[192]), first, "../UVM/../src/rng_hs_dup_detector.v", 106, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "106-108");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[193]), first, "../UVM/../src/rng_hs_dup_detector.v", 106, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "111-112");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[194]), first, "../UVM/../src/rng_hs_dup_detector.v", 116, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "116-118");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[195]), first, "../UVM/../src/rng_hs_dup_detector.v", 116, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "121-122");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[196]), first, "../UVM/../src/rng_hs_dup_detector.v", 126, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "126-128");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[197]), first, "../UVM/../src/rng_hs_dup_detector.v", 126, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "131-132");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[198]), first, "../UVM/../src/rng_hs_dup_detector.v", 136, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "136-138");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[199]), first, "../UVM/../src/rng_hs_dup_detector.v", 136, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "141-142");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[200]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec7==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[201]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec6==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[202]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec5==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[203]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec4==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[204]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec3==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[205]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec2==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[206]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec1==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[207]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec0==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[208]), first, "../UVM/../src/rng_hs_dup_detector.v", 146, 66, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(dec0==0 && dec1==0 && dec2==0 && dec3==0 && dec4==0 && dec5==0 && dec6==0 && dec7==0) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[209]), first, "../UVM/../src/rng_hs_dup_detector.v", 63, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "63-64,146");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[210]), first, "../UVM/../src/rng_hs_dup_detector.v", 152, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "152-154");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[211]), first, "../UVM/../src/rng_hs_dup_detector.v", 152, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "157-158");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[212]), first, "../UVM/../src/rng_hs_dup_detector.v", 150, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "150-151");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[213]), first, "../UVM/../src/rng_hs_dup_detector.v", 177, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_ff2==1 && wr_ff2_d==0) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[214]), first, "../UVM/../src/rng_hs_dup_detector.v", 177, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_ff2_d==1) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[215]), first, "../UVM/../src/rng_hs_dup_detector.v", 177, 29, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_ff2==0) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[216]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 5, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "if", "165-170");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[217]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 6, ".dut.rng_rd", "v_branch/rng_hs_dup_detector__pi2", "else", "171-174,177");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[218]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 9, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==0) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[219]), first, "../UVM/../src/rng_hs_dup_detector.v", 165, 9, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==1) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[220]), first, "../UVM/../src/rng_hs_dup_detector.v", 163, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "163-164");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[221]), first, "../UVM/../src/rng_hs_dup_detector.v", 189, 9, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "if", "189-191");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[222]), first, "../UVM/../src/rng_hs_dup_detector.v", 189, 10, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "else", "194-195");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[223]), first, "../UVM/../src/rng_hs_dup_detector.v", 183, 5, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "elsif", "183-184,186");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[224]), first, "../UVM/../src/rng_hs_dup_detector.v", 183, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==0) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[225]), first, "../UVM/../src/rng_hs_dup_detector.v", 183, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==1) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[226]), first, "../UVM/../src/rng_hs_dup_detector.v", 181, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "181-182");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[227]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 9, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "if", "221-222,224-231,234,237");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[228]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 10, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "else", "240,242-249,252,255");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[229]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 43, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "((next_state == approve_number)==1 && wr_pulse==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[230]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 43, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(wr_pulse==0) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[231]), first, "../UVM/../src/rng_hs_dup_detector.v", 221, 43, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "((next_state == approve_number)==0) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[232]), first, "../UVM/../src/rng_hs_dup_detector.v", 202, 5, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "elsif", "202-203,205-212,215,218");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[233]), first, "../UVM/../src/rng_hs_dup_detector.v", 202, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==0) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[234]), first, "../UVM/../src/rng_hs_dup_detector.v", 202, 8, ".dut.rng_rd", "v_expr/rng_hs_dup_detector__pi2", "(rst_i==1) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[235]), first, "../UVM/../src/rng_hs_dup_detector.v", 200, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "200-201");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[236]), first, "../UVM/../src/rng_hs_dup_detector.v", 259, 1, ".dut.rng_rd", "v_line/rng_hs_dup_detector__pi2", "block", "259-261");
 }

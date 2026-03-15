@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_component_proxy::__VnoInFunc_get_immediate_chi
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_component_proxy::__VnoInFunc_get_immediate_children\n"); );
     // Body
     VL_NULL_CHECK(s, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 230)->__VnoInFunc_get_children(vlSymsp, children);
-    ++(vlSymsp->__Vcoverage[17856]);
+    ++(vlSymsp->__Vcoverage[17851]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_component_proxy::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -17,7 +17,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_component_proxy::init(VlProcessRef vlProcess, 
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[17857]);
+    ++(vlSymsp->__Vcoverage[17852]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_component_proxy::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

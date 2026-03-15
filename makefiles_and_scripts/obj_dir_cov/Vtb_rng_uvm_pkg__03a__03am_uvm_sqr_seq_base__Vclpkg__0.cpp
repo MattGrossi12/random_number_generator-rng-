@@ -10,7 +10,7 @@ void Vtb_rng_uvm_pkg__03a__03am_uvm_sqr_seq_base::init(VlProcessRef vlProcess, V
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[19976]);
+    ++(vlSymsp->__Vcoverage[19971]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03am_uvm_sqr_seq_base::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

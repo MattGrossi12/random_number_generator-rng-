@@ -14,7 +14,7 @@ VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi61__Vclpkg___e
     // Body
     vlSelfRef.__VnoInFunc____05Fdeferred_init(vlProcess, vlSymsp, __Vfunc____05Fdeferred_init__25__Vfuncout);
     vlSelfRef.__PVT__m___05Finitialized = __Vfunc____05Fdeferred_init__25__Vfuncout;
-    ++(vlSymsp->__Vcoverage[7462]);
+    ++(vlSymsp->__Vcoverage[7457]);
 }
 
 VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi61__Vclpkg___ctor_var_reset(Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi61__Vclpkg* vlSelf) {
@@ -30,39 +30,39 @@ VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi61__Vclpkg___c
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7433]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 6, "", "v_branch/uvm_registry_common__pi61", "if", "541-542");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7434]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 7, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7435]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 32, "", "v_expr/uvm_registry_common__pi61", "((Tname == \"<unknown>\")==1 && (m__type_aliases.size() != 32'sh0)==1) => 1", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7436]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 32, "", "v_expr/uvm_registry_common__pi61", "((m__type_aliases.size() != 32'sh0)==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7437]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 32, "", "v_expr/uvm_registry_common__pi61", "((Tname == \"<unknown>\")==0) => 0", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7438]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 540, 26, "", "v_line/uvm_registry_common__pi61", "block", "540,544");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7439]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 547, 27, "", "v_line/uvm_registry_common__pi61", "block", "547-548");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7440]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 553, 6, "", "v_branch/uvm_registry_common__pi61", "if", "553-554");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7441]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 553, 7, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7442]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 551, 29, "", "v_line/uvm_registry_common__pi61", "block", "551-552,555");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7443]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 560, 5, "", "v_branch/uvm_registry_common__pi61", "if", "560-561");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7444]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 560, 6, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7445]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 563, 5, "", "v_branch/uvm_registry_common__pi61", "if", "563-569");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7446]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 563, 6, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7447]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 558, 28, "", "v_line/uvm_registry_common__pi61", "block", "558-559,562");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7448]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 573, 24, "", "v_line/uvm_registry_common__pi61", "block", "573,575,577");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7449]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 587, 7, "", "v_branch/uvm_registry_common__pi61", "if", "587-588");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7450]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 587, 8, "", "v_branch/uvm_registry_common__pi61", "else", "590");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7451]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 586, 5, "", "v_branch/uvm_registry_common__pi61", "if", "586");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7452]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 586, 6, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7453]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 580, 24, "", "v_line/uvm_registry_common__pi61", "block", "580,583-584,592");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7454]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 601, 9, "", "v_branch/uvm_registry_common__pi61", "if", "601-602");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7455]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 601, 10, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7456]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 598, 6, "", "v_branch/uvm_registry_common__pi61", "if", "598-600");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7457]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 598, 7, "", "v_branch/uvm_registry_common__pi61", "else", "");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7458]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 595, 24, "", "v_line/uvm_registry_common__pi61", "block", "595-597");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7459]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 610, 6, "", "v_branch/uvm_registry_common__pi61", "if", "610-611");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7460]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 610, 7, "", "v_branch/uvm_registry_common__pi61", "else", "615-616");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7461]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 607, 23, "", "v_line/uvm_registry_common__pi61", "block", "607-608,618");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7462]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 620, 35, "", "v_line/uvm_registry_common__pi61", "block", "620");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7463]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 628, 30, "", "v_line/uvm_registry_common__pi61", "block", "628-629");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7464]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 622, 25, "", "v_line/uvm_registry_common__pi61", "block", "622-625,628");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7465]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 535, 1, "", "v_line/uvm_registry_common__pi61", "block", "535");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7428]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 6, "", "v_branch/uvm_registry_common__pi61", "if", "541-542");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7429]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 7, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7430]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 32, "", "v_expr/uvm_registry_common__pi61", "((Tname == \"<unknown>\")==1 && (m__type_aliases.size() != 32'sh0)==1) => 1", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7431]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 32, "", "v_expr/uvm_registry_common__pi61", "((m__type_aliases.size() != 32'sh0)==0) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7432]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 541, 32, "", "v_expr/uvm_registry_common__pi61", "((Tname == \"<unknown>\")==0) => 0", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7433]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 540, 26, "", "v_line/uvm_registry_common__pi61", "block", "540,544");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7434]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 547, 27, "", "v_line/uvm_registry_common__pi61", "block", "547-548");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7435]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 553, 6, "", "v_branch/uvm_registry_common__pi61", "if", "553-554");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7436]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 553, 7, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7437]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 551, 29, "", "v_line/uvm_registry_common__pi61", "block", "551-552,555");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7438]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 560, 5, "", "v_branch/uvm_registry_common__pi61", "if", "560-561");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7439]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 560, 6, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7440]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 563, 5, "", "v_branch/uvm_registry_common__pi61", "if", "563-569");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7441]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 563, 6, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7442]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 558, 28, "", "v_line/uvm_registry_common__pi61", "block", "558-559,562");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7443]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 573, 24, "", "v_line/uvm_registry_common__pi61", "block", "573,575,577");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7444]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 587, 7, "", "v_branch/uvm_registry_common__pi61", "if", "587-588");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7445]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 587, 8, "", "v_branch/uvm_registry_common__pi61", "else", "590");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7446]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 586, 5, "", "v_branch/uvm_registry_common__pi61", "if", "586");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7447]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 586, 6, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7448]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 580, 24, "", "v_line/uvm_registry_common__pi61", "block", "580,583-584,592");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7449]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 601, 9, "", "v_branch/uvm_registry_common__pi61", "if", "601-602");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7450]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 601, 10, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7451]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 598, 6, "", "v_branch/uvm_registry_common__pi61", "if", "598-600");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7452]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 598, 7, "", "v_branch/uvm_registry_common__pi61", "else", "");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7453]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 595, 24, "", "v_line/uvm_registry_common__pi61", "block", "595-597");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7454]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 610, 6, "", "v_branch/uvm_registry_common__pi61", "if", "610-611");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7455]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 610, 7, "", "v_branch/uvm_registry_common__pi61", "else", "615-616");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7456]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 607, 23, "", "v_line/uvm_registry_common__pi61", "block", "607-608,618");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7457]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 620, 35, "", "v_line/uvm_registry_common__pi61", "block", "620");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7458]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 628, 30, "", "v_line/uvm_registry_common__pi61", "block", "628-629");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7459]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 622, 25, "", "v_line/uvm_registry_common__pi61", "block", "622-625,628");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[7460]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_registry.svh", 535, 1, "", "v_line/uvm_registry_common__pi61", "block", "535");
 }
 
 VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi61___configure_coverage(Vtb_rng_uvm_pkg__03a__03auvm_registry_common__pi61* vlSelf, bool first) {
