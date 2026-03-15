@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_void::init(VlProcessRef vlProcess, Vtb_rng__Sy
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_void::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[682]);
+    ++(vlSymsp->__Vcoverage[677]);
     this->__PVT__constraint.set_randmode(this->__Vrandmode);
     this->__PVT__constraint.set_randmode(this->__Vrandmode);
     this->__PVT__constraint.set_randmode(this->__Vrandmode);
@@ -269,7 +269,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_void::__VnoInFunc_srandom(Vtb_rng__Syms* __res
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_void::__VnoInFunc_srandom\n"); );
     // Body
     __Vm_rng.srandom(seed);
-    ++(vlSymsp->__Vcoverage[683]);
+    ++(vlSymsp->__Vcoverage[678]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_void::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

@@ -10,7 +10,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root__Vclpkg::__VnoInFunc_get(VlProcessRef vlP
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_coreservice_t> cs;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_coreservice_t__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, cs);
     VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 359)->__VnoInFunc_get_root(vlProcess, vlSymsp, get__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[17247]);
+    ++(vlSymsp->__Vcoverage[17242]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root__Vclpkg::__VnoInFunc_m_uvm_get_root(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_root> &m_uvm_get_root__Vfuncrtn) {
@@ -25,26 +25,26 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root__Vclpkg::__VnoInFunc_m_uvm_get_root(VlPro
                 m_uvm_get_root__Vfuncrtn = VlNull{};
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[17254]);
+                ++(vlSymsp->__Vcoverage[17249]);
             }
             vlSymsp->TOP__uvm_pkg__03a__03auvm_domain__Vclpkg.__VnoInFunc_get_uvm_domain(vlProcess, vlSymsp, __VlefCall_0__get_uvm_domain);
             VL_NULL_CHECK(unnamedblk162__DOT__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 404)->__PVT__m_domain 
                 = __VlefCall_0__get_uvm_domain;
-            ++(vlSymsp->__Vcoverage[17255]);
+            ++(vlSymsp->__Vcoverage[17250]);
         } else {
-            ++(vlSymsp->__Vcoverage[17256]);
+            ++(vlSymsp->__Vcoverage[17251]);
         }
         m_uvm_get_root__Vfuncrtn = this->__PVT__m_inst;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[17257]);
+    ++(vlSymsp->__Vcoverage[17252]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_root"s;
-    ++(vlSymsp->__Vcoverage[17231]);
+    ++(vlSymsp->__Vcoverage[17226]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_die(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -59,21 +59,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_die(VlProcessRef vlProcess, 
     vlSymsp->TOP__uvm_pkg.__PVT__m_uvm_core_state = 9U;
     vlProcess->disableFork();
     VL_FINISH_MT("/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 161, "");
-    ++(vlSymsp->__Vcoverage[17232]);
+    ++(vlSymsp->__Vcoverage[17227]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_get_finish_on_completion(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &get_finish_on_completion__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_get_finish_on_completion\n"); );
     // Body
     get_finish_on_completion__Vfuncrtn = this->__PVT__finish_on_completion;
-    ++(vlSymsp->__Vcoverage[17234]);
+    ++(vlSymsp->__Vcoverage[17229]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_set_finish_on_completion(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ f) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_set_finish_on_completion\n"); );
     // Body
     this->__PVT__finish_on_completion = f;
-    ++(vlSymsp->__Vcoverage[17235]);
+    ++(vlSymsp->__Vcoverage[17230]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_phase_started(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -85,23 +85,23 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_phase_started(VlProcessRef v
         this->__VnoInFunc_do_resolve_bindings(vlProcess, vlSymsp);
         if (this->__PVT__enable_print_topology) {
             this->__VnoInFunc_print_topology(vlProcess, vlSymsp, VlNull{});
-            ++(vlSymsp->__Vcoverage[17238]);
+            ++(vlSymsp->__Vcoverage[17233]);
         } else {
-            ++(vlSymsp->__Vcoverage[17239]);
+            ++(vlSymsp->__Vcoverage[17234]);
         }
         vlSymsp->TOP__uvm_pkg__03a__03auvm_report_server__Vclpkg.__VnoInFunc_get_server(vlProcess, vlSymsp, unnamedblk1__DOT__srvr);
         VL_NULL_CHECK(unnamedblk1__DOT__srvr, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 321)->__VnoInFunc_get_severity_count(vlSymsp, 2U, __VlefCall_0__get_severity_count);
         if (VL_LTS_III(32, 0U, __VlefCall_0__get_severity_count)) {
             this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "BUILDERR"s, "stopping due to build errors"s, 0U, ""s, 0U, ""s, 0U);
-            ++(vlSymsp->__Vcoverage[17240]);
+            ++(vlSymsp->__Vcoverage[17235]);
         } else {
-            ++(vlSymsp->__Vcoverage[17241]);
+            ++(vlSymsp->__Vcoverage[17236]);
         }
-        ++(vlSymsp->__Vcoverage[17242]);
+        ++(vlSymsp->__Vcoverage[17237]);
     } else {
-        ++(vlSymsp->__Vcoverage[17243]);
+        ++(vlSymsp->__Vcoverage[17238]);
     }
-    ++(vlSymsp->__Vcoverage[17244]);
+    ++(vlSymsp->__Vcoverage[17239]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_end_of_elaboration_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -117,7 +117,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_end_of_elaboration_phase(VlP
     VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 339)->__VnoInFunc_get_component_visitor(vlProcess, vlSymsp, v);
     VL_NULL_CHECK(adapter, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 340)->__VnoInFunc_accept(vlProcess, vlSymsp, 
                                                                                 VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_root>{this}, v, p, 1U);
-    ++(vlSymsp->__Vcoverage[17246]);
+    ++(vlSymsp->__Vcoverage[17241]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -126,11 +126,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::init(VlProcessRef vlProcess, Vtb_rng__Sy
     // Body
     _ctor_var_reset(vlSymsp);
     this->__PVT__finish_on_completion = 1U;
-    ++(vlSymsp->__Vcoverage[17233]);
+    ++(vlSymsp->__Vcoverage[17228]);
     this->__PVT__enable_print_topology = 0U;
-    ++(vlSymsp->__Vcoverage[17236]);
+    ++(vlSymsp->__Vcoverage[17231]);
     this->__PVT__phase_timeout = 0x0020af59ebef0000ULL;
-    ++(vlSymsp->__Vcoverage[17237]);
+    ++(vlSymsp->__Vcoverage[17232]);
     IData/*31:0*/ __VlefCall_0__uvm_report_enabled;
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_handler> rh;
     {
@@ -141,20 +141,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::init(VlProcessRef vlProcess, Vtb_rng__Sy
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_inst, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 378)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 3U, "UVM/ROOT/MULTI"s, __VlefCall_0__uvm_report_enabled);
             if ((0U != __VlefCall_0__uvm_report_enabled)) {
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_inst, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 378)->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "UVM/ROOT/MULTI"s, "Attempting to construct multiple roots"s, 0U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x0000017aU, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[17248]);
+                ++(vlSymsp->__Vcoverage[17243]);
             } else {
-                ++(vlSymsp->__Vcoverage[17249]);
+                ++(vlSymsp->__Vcoverage[17244]);
             }
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17251]);
+            ++(vlSymsp->__Vcoverage[17246]);
         }
         vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_inst 
             = VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_root>{this};
         vlSymsp->TOP__uvm_pkg__03a__03auvm_cmdline_processor__Vclpkg.__VnoInFunc_get_inst(vlProcess, vlSymsp, this->__PVT__clp);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[17252]);
+    ++(vlSymsp->__Vcoverage[17247]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_report_header(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ file) {
@@ -183,21 +183,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_report_header(VlProcessRef v
         if ((0U != __VlefCall_0__get_arg_matches)) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17259]);
+            ++(vlSymsp->__Vcoverage[17254]);
         }
         if (vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_relnotes_done) {
-            ++(vlSymsp->__Vcoverage[17261]);
+            ++(vlSymsp->__Vcoverage[17256]);
         } else {
             q.push_back("\n  ***********       IMPORTANT RELEASE NOTES         ************\n"s);
             vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_relnotes_done = 1U;
             q.push_back("\n  This implementation of the UVM Library deviates from the 1800.2-2017\n"s);
             q.push_back("  standard.  See the DEVIATIONS.md file contained in the release\n"s);
             q.push_back("  for more details.\n"s);
-            ++(vlSymsp->__Vcoverage[17260]);
+            ++(vlSymsp->__Vcoverage[17255]);
         }
         q.push_back("\n----------------------------------------------------------------\n"s);
         __VlefCall_1__uvm_revision_string = "Accellera:1800.2-2017:UVM:1.0"s;
-        ++(vlSymsp->__Vcoverage[284]);
+        ++(vlSymsp->__Vcoverage[279]);
         q.push_back(VL_CONCATN_NNN(__VlefCall_1__uvm_revision_string, "\n"s));
         q.push_back("\n"s);
         q.push_back("All copyright owners for this kit are listed in NOTICE.txt\n"s);
@@ -205,32 +205,32 @@ void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_report_header(VlProcessRef v
         q.push_back("----------------------------------------------------------------\n"s);
         if (vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_relnotes_done) {
             q.push_back("\n      (Specify +UVM_NO_RELNOTES to turn off this notice)\n"s);
-            ++(vlSymsp->__Vcoverage[17264]);
+            ++(vlSymsp->__Vcoverage[17259]);
         } else {
-            ++(vlSymsp->__Vcoverage[17265]);
+            ++(vlSymsp->__Vcoverage[17260]);
         }
         this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "UVM/RELNOTES"s, __VlefCall_2__uvm_report_enabled);
         if ((0U != __VlefCall_2__uvm_report_enabled)) {
             this->__Vfunc_m_uvm_string_queue_join__25__Vfuncout = ""s;
             this->__Vfunc_m_uvm_string_queue_join__25__Vfuncout 
                 = VL_CVT_PACK_STR_ND(q);
-            ++(vlSymsp->__Vcoverage[434]);
+            ++(vlSymsp->__Vcoverage[429]);
             __VlefCall_3__m_uvm_string_queue_join = this->__Vfunc_m_uvm_string_queue_join__25__Vfuncout;
             this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "UVM/RELNOTES"s, 
                                               VL_CVT_PACK_STR_NN(__VlefCall_3__m_uvm_string_queue_join), 0x00000064U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x000001c1U, ""s, 1U);
-            ++(vlSymsp->__Vcoverage[17266]);
+            ++(vlSymsp->__Vcoverage[17261]);
         } else {
-            ++(vlSymsp->__Vcoverage[17267]);
+            ++(vlSymsp->__Vcoverage[17262]);
         }
         __Vlabel0: ;
     }
     if ((1U & (~ (IData)(vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_relnotes_done)))) {
-        ++(vlSymsp->__Vcoverage[17262]);
+        ++(vlSymsp->__Vcoverage[17257]);
     }
     if (vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__m_relnotes_done) {
-        ++(vlSymsp->__Vcoverage[17263]);
+        ++(vlSymsp->__Vcoverage[17258]);
     }
-    ++(vlSymsp->__Vcoverage[17268]);
+    ++(vlSymsp->__Vcoverage[17263]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string test_name) {
@@ -264,14 +264,14 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 0U, "NO_DPI_TSTNAME"s, __VlefCall_1__uvm_report_enabled);
             if ((0U != __VlefCall_1__uvm_report_enabled)) {
                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "NO_DPI_TSTNAME"s, "UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI"s, 0U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x00000205U, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[17269]);
+                ++(vlSymsp->__Vcoverage[17264]);
             } else {
-                ++(vlSymsp->__Vcoverage[17270]);
+                ++(vlSymsp->__Vcoverage[17265]);
             }
             testname_plusarg = 1U;
-            ++(vlSymsp->__Vcoverage[17271]);
+            ++(vlSymsp->__Vcoverage[17266]);
         } else {
-            ++(vlSymsp->__Vcoverage[17272]);
+            ++(vlSymsp->__Vcoverage[17267]);
         }
         if ((""s != test_name)) {
             if (Vtb_rng_uvm_pkg__03a__03auvm_component::__PVT__m_children.exists("uvm_test_top"s)) {
@@ -280,9 +280,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                         vlProcess, 
                                                         "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 
                                                         529);
-                ++(vlSymsp->__Vcoverage[17273]);
+                ++(vlSymsp->__Vcoverage[17268]);
             } else {
-                ++(vlSymsp->__Vcoverage[17274]);
+                ++(vlSymsp->__Vcoverage[17269]);
             }
             VL_NULL_CHECK(factory, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 531)->__VnoInFunc_create_component_by_name(vlProcess, vlSymsp, test_name, ""s, "uvm_test_top"s, VlNull{}, uvm_test_top);
             if ((VlNull{} == uvm_test_top)) {
@@ -294,28 +294,28 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                       VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN("Requested test from "s, msg), " not found."s)), 0U, ""s, 0U, ""s, 0U);
                 if (testname_plusarg) {
-                    ++(vlSymsp->__Vcoverage[17275]);
+                    ++(vlSymsp->__Vcoverage[17270]);
                 }
                 if ((1U & (~ (IData)(testname_plusarg)))) {
-                    ++(vlSymsp->__Vcoverage[17276]);
+                    ++(vlSymsp->__Vcoverage[17271]);
                 }
-                ++(vlSymsp->__Vcoverage[17277]);
+                ++(vlSymsp->__Vcoverage[17272]);
             } else {
-                ++(vlSymsp->__Vcoverage[17278]);
+                ++(vlSymsp->__Vcoverage[17273]);
             }
-            ++(vlSymsp->__Vcoverage[17279]);
+            ++(vlSymsp->__Vcoverage[17274]);
         } else {
-            ++(vlSymsp->__Vcoverage[17280]);
+            ++(vlSymsp->__Vcoverage[17275]);
         }
         if ((0U == Vtb_rng_uvm_pkg__03a__03auvm_component::__PVT__m_children.size())) {
             this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "NOCOMP"s, "No components instantiated. You must either instantiate at least one component before calling run_test or use run_test to do so. To run a test using run_test, use +UVM_TESTNAME or supply the test name in the argument to run_test(). Exiting simulation."s, 0U, ""s, 0U, ""s, 0U);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17282]);
+            ++(vlSymsp->__Vcoverage[17277]);
         }
         if ((""s == test_name)) {
             this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNTST"s, "Running test ..."s, 0x00000064U, ""s, 0U, ""s, 0U);
-            ++(vlSymsp->__Vcoverage[17285]);
+            ++(vlSymsp->__Vcoverage[17280]);
         } else {
             VL_NULL_CHECK(uvm_test_top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 555)->__VnoInFunc_get_type_name(vlSymsp, __VlefCall_2__get_type_name);
             if ((test_name == __VlefCall_2__get_type_name)) {
@@ -323,7 +323,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                   VL_CVT_PACK_STR_NN(
                                                                      VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN("Running test "s, test_name), "..."s)), 0x00000064U, ""s, 0U, ""s, 0U);
-                ++(vlSymsp->__Vcoverage[17283]);
+                ++(vlSymsp->__Vcoverage[17278]);
             } else {
                 VL_NULL_CHECK(uvm_test_top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 558)->__VnoInFunc_get_type_name(vlSymsp, __VlefCall_3__get_type_name);
                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNTST"s, 
@@ -332,7 +332,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN("Running test "s, __VlefCall_3__get_type_name), " (via factory override for test \""s), test_name), "\")..."s)), 0x00000064U, ""s, 0U, ""s, 0U);
-                        ++(vlSymsp->__Vcoverage[17284]);
+                        ++(vlSymsp->__Vcoverage[17279]);
                     }
                 }
                 this->__VnoInFunc_run_test____Vfork_1__0(std::make_shared<VlProcess>(vlProcess), vlSymsp, __VDynScope_run_test_0);
@@ -373,13 +373,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                 if (VL_UNLIKELY((__VlefCall_4__get_finish_on_completion))) {
                     vlProcess->disableFork();
                     VL_FINISH_MT("/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 585, "");
-                    ++(vlSymsp->__Vcoverage[17286]);
+                    ++(vlSymsp->__Vcoverage[17281]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17287]);
+                    ++(vlSymsp->__Vcoverage[17282]);
                 }
                 __Vlabel0: ;
             }
-            ++(vlSymsp->__Vcoverage[17288]);
+            ++(vlSymsp->__Vcoverage[17283]);
             co_return;
         }
 
@@ -413,12 +413,12 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             // Body
             if ((VlNull{} == comp)) {
                 comp = VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_root>{this};
-                ++(vlSymsp->__Vcoverage[17289]);
+                ++(vlSymsp->__Vcoverage[17284]);
             } else {
-                ++(vlSymsp->__Vcoverage[17290]);
+                ++(vlSymsp->__Vcoverage[17285]);
             }
             this->__VnoInFunc_m_find_all_recurse(vlProcess, vlSymsp, comp_match, comps, comp);
-            ++(vlSymsp->__Vcoverage[17291]);
+            ++(vlSymsp->__Vcoverage[17286]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_find(Vtb_rng__Syms* __restrict vlSymsp, std::string comp_match, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> &find__Vfuncrtn) {
@@ -440,9 +440,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 &(comp_match),
                                                                                 -1,
                                                                                 &(__VlefCall_0__get_full_name)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17292]);
+                    ++(vlSymsp->__Vcoverage[17287]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17293]);
+                    ++(vlSymsp->__Vcoverage[17288]);
                 }
                 if ((0U == comp_list.size())) {
                     this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "CMPNFD"s, 
@@ -452,12 +452,12 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                     find__Vfuncrtn = VlNull{};
                     goto __Vlabel0;
                 } else {
-                    ++(vlSymsp->__Vcoverage[17295]);
+                    ++(vlSymsp->__Vcoverage[17290]);
                 }
                 find__Vfuncrtn = comp_list.at(0U);
                 __Vlabel0: ;
             }
-            ++(vlSymsp->__Vcoverage[17296]);
+            ++(vlSymsp->__Vcoverage[17291]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_print_topology(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer> printer) {
@@ -469,25 +469,25 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                     this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "EMTCOMP"s, "print_topology - No UVM components to print."s, 0U, ""s, 0U, ""s, 0U);
                     goto __Vlabel0;
                 } else {
-                    ++(vlSymsp->__Vcoverage[17298]);
+                    ++(vlSymsp->__Vcoverage[17293]);
                 }
                 if ((VlNull{} == printer)) {
                     vlSymsp->TOP__uvm_pkg__03a__03auvm_printer__Vclpkg.__VnoInFunc_get_default(vlProcess, vlSymsp, printer);
-                    ++(vlSymsp->__Vcoverage[17299]);
+                    ++(vlSymsp->__Vcoverage[17294]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17300]);
+                    ++(vlSymsp->__Vcoverage[17295]);
                 }
                 this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 0U, "UVMTOP"s, __VlefCall_0__uvm_report_enabled);
                 if ((0U != __VlefCall_0__uvm_report_enabled)) {
                     this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "UVMTOP"s, "UVM testbench topology:"s, 0U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x00000280U, ""s, 1U);
-                    ++(vlSymsp->__Vcoverage[17301]);
+                    ++(vlSymsp->__Vcoverage[17296]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17302]);
+                    ++(vlSymsp->__Vcoverage[17297]);
                 }
                 this->__VnoInFunc_print(vlProcess, vlSymsp, printer);
                 __Vlabel0: ;
             }
-            ++(vlSymsp->__Vcoverage[17303]);
+            ++(vlSymsp->__Vcoverage[17298]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_set_timeout(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, QData/*63:0*/ timeout, CData/*0:0*/ overridable) {
@@ -495,7 +495,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             // Body
             {
                 if (vlSymsp->TOP__uvm_pkg__03a__03auvm_root__Vclpkg.__PVT__set_timeout__Vstatic__m_uvm_timeout_overridable) {
-                    ++(vlSymsp->__Vcoverage[17305]);
+                    ++(vlSymsp->__Vcoverage[17300]);
                 } else {
                     this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "NOTIMOUTOVR"s, VL_SFORMATF_N_NX("The global timeout setting of %0# is not overridable to %0# due to a previous setting.",0,
                                                                                 64,
@@ -509,7 +509,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                 this->__PVT__phase_timeout = timeout;
                 __Vlabel0: ;
             }
-            ++(vlSymsp->__Vcoverage[17306]);
+            ++(vlSymsp->__Vcoverage[17301]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_find_all_recurse(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string comp_match, VlQueue<VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component>> &comps, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp) {
@@ -542,16 +542,16 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                     VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 672)
                                                                      ->__VnoInFunc_get_child(vlProcess, vlSymsp, name, __VlefCall_1__get_child);
                     this->__VnoInFunc_m_find_all_recurse(vlProcess, vlSymsp, comp_match, comps, __VlefCall_1__get_child);
-                    ++(vlSymsp->__Vcoverage[17307]);
+                    ++(vlSymsp->__Vcoverage[17302]);
                     VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 674)
                                                                      ->__VnoInFunc_get_next_child(vlSymsp, name, __Vtask_get_next_child__65__Vfuncout);
                     __VlefCall_2__get_next_child = __Vtask_get_next_child__65__Vfuncout;
                     if (!((0U != __VlefCall_2__get_next_child))) break;
-                    ++(vlSymsp->__Vcoverage[17308]);
+                    ++(vlSymsp->__Vcoverage[17303]);
                 }
-                ++(vlSymsp->__Vcoverage[17309]);
+                ++(vlSymsp->__Vcoverage[17304]);
             } else {
-                ++(vlSymsp->__Vcoverage[17310]);
+                ++(vlSymsp->__Vcoverage[17305]);
             }
             VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 675)
                                                                      ->__VnoInFunc_get_full_name(vlProcess, vlSymsp, __VlefCall_3__get_full_name);
@@ -561,7 +561,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                 = this->__Vfunc_uvm_is_match__67__expr;
             this->__Vfunc_uvm_glob_to_re__68__Vfuncout 
                 = this->__Vfunc_uvm_glob_to_re__68__glob;
-            ++(vlSymsp->__Vcoverage[283]);
+            ++(vlSymsp->__Vcoverage[278]);
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_is_match__Vstatic__s 
                 = this->__Vfunc_uvm_glob_to_re__68__Vfuncout;
             this->__Vfunc_uvm_re_match__69__str = this->__Vfunc_uvm_is_match__67__str;
@@ -576,16 +576,16 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                     __Vfunc_uvm_re_match__69__Vfuncout = 0U;
                     goto __Vlabel0;
                 } else {
-                    ++(vlSymsp->__Vcoverage[255]);
+                    ++(vlSymsp->__Vcoverage[250]);
                 }
                 if ((0x5eU == VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,0U))) {
                     this->__Vfunc_uvm_re_match__69__re 
                         = VL_SUBSTR_N(this->__Vfunc_uvm_re_match__69__re,1U,
                                       (VL_LEN_IN(this->__Vfunc_uvm_re_match__69__re) 
                                        - (IData)(1U)));
-                    ++(vlSymsp->__Vcoverage[256]);
+                    ++(vlSymsp->__Vcoverage[251]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[257]);
+                    ++(vlSymsp->__Vcoverage[252]);
                 }
                 while (((vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                          != VL_LEN_IN(this->__Vfunc_uvm_re_match__69__str)) 
@@ -596,13 +596,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                         __Vfunc_uvm_re_match__69__Vfuncout = 1U;
                         goto __Vlabel0;
                     } else {
-                        ++(vlSymsp->__Vcoverage[262]);
+                        ++(vlSymsp->__Vcoverage[257]);
                     }
                     vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e 
                         = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e);
                     vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                         = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s);
-                    ++(vlSymsp->__Vcoverage[266]);
+                    ++(vlSymsp->__Vcoverage[261]);
                 }
                 while ((vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                         != VL_LEN_IN(this->__Vfunc_uvm_re_match__69__str))) {
@@ -614,13 +614,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                             __Vfunc_uvm_re_match__69__Vfuncout = 0U;
                             goto __Vlabel0;
                         } else {
-                            ++(vlSymsp->__Vcoverage[268]);
+                            ++(vlSymsp->__Vcoverage[263]);
                         }
                         vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__es 
                             = vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e;
                         vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__ss 
                             = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s);
-                        ++(vlSymsp->__Vcoverage[274]);
+                        ++(vlSymsp->__Vcoverage[269]);
                     } else {
                         if (((VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e) 
                               == VL_GETC_N(this->__Vfunc_uvm_re_match__69__str,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s)) 
@@ -629,7 +629,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                 = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e);
                             vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                                 = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s);
-                            ++(vlSymsp->__Vcoverage[269]);
+                            ++(vlSymsp->__Vcoverage[264]);
                         } else {
                             vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e 
                                 = vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__es;
@@ -639,29 +639,29 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                 = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__ss);
                             vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                                 = __Vfunc_uvm_re_match__69____Vincrement1;
-                            ++(vlSymsp->__Vcoverage[270]);
+                            ++(vlSymsp->__Vcoverage[265]);
                         }
                         if ((0x3fU == VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e))) {
-                            ++(vlSymsp->__Vcoverage[271]);
+                            ++(vlSymsp->__Vcoverage[266]);
                         }
                         if ((VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e) 
                              == VL_GETC_N(this->__Vfunc_uvm_re_match__69__str,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s))) {
-                            ++(vlSymsp->__Vcoverage[272]);
+                            ++(vlSymsp->__Vcoverage[267]);
                         }
                         if (((VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e) 
                               != VL_GETC_N(this->__Vfunc_uvm_re_match__69__str,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s)) 
                              & (0x3fU != VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e)))) {
-                            ++(vlSymsp->__Vcoverage[273]);
+                            ++(vlSymsp->__Vcoverage[268]);
                         }
                     }
-                    ++(vlSymsp->__Vcoverage[275]);
+                    ++(vlSymsp->__Vcoverage[270]);
                 }
                 while ((VL_LTS_III(32, vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e, 
                                    VL_LEN_IN(this->__Vfunc_uvm_re_match__69__re)) 
                         & (0x2aU == VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e)))) {
                     vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e 
                         = ((IData)(1U) + vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e);
-                    ++(vlSymsp->__Vcoverage[279]);
+                    ++(vlSymsp->__Vcoverage[274]);
                 }
                 __Vfunc_uvm_re_match__69__Vfuncout 
                     = ((vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e 
@@ -672,44 +672,44 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             if (((vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                   != VL_LEN_IN(this->__Vfunc_uvm_re_match__69__str)) 
                  & (0x2aU != VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e)))) {
-                ++(vlSymsp->__Vcoverage[258]);
+                ++(vlSymsp->__Vcoverage[253]);
             }
             if ((0x2aU == VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e))) {
-                ++(vlSymsp->__Vcoverage[259]);
+                ++(vlSymsp->__Vcoverage[254]);
             }
             if ((vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s 
                  == VL_LEN_IN(this->__Vfunc_uvm_re_match__69__str))) {
-                ++(vlSymsp->__Vcoverage[260]);
+                ++(vlSymsp->__Vcoverage[255]);
             }
             if (((VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e) 
                   != VL_GETC_N(this->__Vfunc_uvm_re_match__69__str,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s)) 
                  & (0x3fU != VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e)))) {
-                ++(vlSymsp->__Vcoverage[263]);
+                ++(vlSymsp->__Vcoverage[258]);
             }
             if ((0x3fU == VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e))) {
-                ++(vlSymsp->__Vcoverage[264]);
+                ++(vlSymsp->__Vcoverage[259]);
             }
             if ((VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e) 
                  == VL_GETC_N(this->__Vfunc_uvm_re_match__69__str,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__s))) {
-                ++(vlSymsp->__Vcoverage[265]);
+                ++(vlSymsp->__Vcoverage[260]);
             }
             if ((VL_LTS_III(32, vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e, 
                             VL_LEN_IN(this->__Vfunc_uvm_re_match__69__re)) 
                  & (0x2aU == VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e)))) {
-                ++(vlSymsp->__Vcoverage[276]);
+                ++(vlSymsp->__Vcoverage[271]);
             }
             if ((0x2aU != VL_GETC_N(this->__Vfunc_uvm_re_match__69__re,vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e))) {
-                ++(vlSymsp->__Vcoverage[277]);
+                ++(vlSymsp->__Vcoverage[272]);
             }
             if (VL_GTES_III(32, vlSymsp->TOP__uvm_pkg.__PVT__uvm_re_match__Vstatic__e, 
                             VL_LEN_IN(this->__Vfunc_uvm_re_match__69__re))) {
-                ++(vlSymsp->__Vcoverage[278]);
+                ++(vlSymsp->__Vcoverage[273]);
             }
-            ++(vlSymsp->__Vcoverage[282]);
+            ++(vlSymsp->__Vcoverage[277]);
             __Vfunc_uvm_is_match__67____VlefCall_0__uvm_re_match 
                 = __Vfunc_uvm_re_match__69__Vfuncout;
             __VlefCall_4__uvm_is_match = (0U == __Vfunc_uvm_is_match__67____VlefCall_0__uvm_re_match);
-            ++(vlSymsp->__Vcoverage[462]);
+            ++(vlSymsp->__Vcoverage[457]);
             if (__VlefCall_4__uvm_is_match) {
                 VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 676)
                                                                      ->__VnoInFunc_get_name(vlSymsp, __VlefCall_5__get_name);
@@ -717,11 +717,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             }
             if (__VlefCall_4__uvm_is_match) {
                 comps.push_back(comp);
-                ++(vlSymsp->__Vcoverage[17311]);
+                ++(vlSymsp->__Vcoverage[17306]);
             } else {
-                ++(vlSymsp->__Vcoverage[17312]);
+                ++(vlSymsp->__Vcoverage[17307]);
             }
-            ++(vlSymsp->__Vcoverage[17313]);
+            ++(vlSymsp->__Vcoverage[17308]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_add_child(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> child, CData/*0:0*/ &m_add_child__Vfuncrtn) {
@@ -731,7 +731,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             m_add_child__Vfuncrtn = 0U;
             Vtb_rng_uvm_pkg__03a__03auvm_component::__VnoInFunc_m_add_child(vlProcess, vlSymsp, child, __VlefCall_0__m_add_child);
             m_add_child__Vfuncrtn = __VlefCall_0__m_add_child;
-            ++(vlSymsp->__Vcoverage[17316]);
+            ++(vlSymsp->__Vcoverage[17311]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_build_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -744,7 +744,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
             this->__VnoInFunc_m_do_factory_settings(vlProcess, vlSymsp);
             this->__VnoInFunc_m_do_config_settings(vlProcess, vlSymsp);
             this->__VnoInFunc_m_do_max_quit_settings(vlProcess, vlSymsp);
-            ++(vlSymsp->__Vcoverage[17317]);
+            ++(vlSymsp->__Vcoverage[17312]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_do_verbosity_settings(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -793,11 +793,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                  == (IData)(__Vtask_uvm_split_string__80__sep))) {
                                 goto __Vlabel0;
                             } else {
-                                ++(vlSymsp->__Vcoverage[482]);
+                                ++(vlSymsp->__Vcoverage[477]);
                             }
                             __Vtask_uvm_split_string__80__e 
                                 = ((IData)(1U) + __Vtask_uvm_split_string__80__e);
-                            ++(vlSymsp->__Vcoverage[483]);
+                            ++(vlSymsp->__Vcoverage[478]);
                         }
                         __Vlabel0: ;
                     }
@@ -806,52 +806,52 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                         split_vals.push_back(VL_SUBSTR_N(this->__Vtask_uvm_split_string__80__str,__Vtask_uvm_split_string__80__s,
                                                          (__Vtask_uvm_split_string__80__e 
                                                           - (IData)(1U))));
-                        ++(vlSymsp->__Vcoverage[484]);
+                        ++(vlSymsp->__Vcoverage[479]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[485]);
+                        ++(vlSymsp->__Vcoverage[480]);
                     }
                     __Vtask_uvm_split_string__80__e 
                         = ((IData)(1U) + __Vtask_uvm_split_string__80__e);
-                    ++(vlSymsp->__Vcoverage[486]);
+                    ++(vlSymsp->__Vcoverage[481]);
                 }
-                ++(vlSymsp->__Vcoverage[487]);
+                ++(vlSymsp->__Vcoverage[482]);
                 if ((VL_GTS_III(32, 4U, split_vals.size()) 
                      | VL_LTS_III(32, 5U, split_vals.size()))) {
                     __Vtemp_1 = set_verbosity_settings.at(unnamedblk163__DOT__i);
                     this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "INVLCMDARGS"s, VL_SFORMATF_N_NX("Invalid number of arguments found on the command line for setting '+uvm_set_verbosity=%@'.  Setting ignored.",0,
                                                                                 -1,
                                                                                 &(__Vtemp_1)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17318]);
+                    ++(vlSymsp->__Vcoverage[17313]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17319]);
+                    ++(vlSymsp->__Vcoverage[17314]);
                 }
                 VL_NULL_CHECK(this->__PVT__clp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 738)
                                                                      ->__VnoInFunc_m_convert_verb(vlSymsp, 
                                                                                 VL_CVT_PACK_STR_NN(split_vals.at(2U)), __Vtask_m_convert_verb__82__verb_enum, __VlefCall_0__m_convert_verb);
                 if (__VlefCall_0__m_convert_verb) {
-                    ++(vlSymsp->__Vcoverage[17324]);
+                    ++(vlSymsp->__Vcoverage[17319]);
                 } else {
                     __Vtemp_2 = set_verbosity_settings.at(unnamedblk163__DOT__i);
                     this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "INVLCMDVERB"s, VL_SFORMATF_N_NX("Invalid verbosity found on the command line for setting '%@'.",0,
                                                                                 -1,
                                                                                 &(__Vtemp_2)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17323]);
+                    ++(vlSymsp->__Vcoverage[17318]);
                 }
                 unnamedblk163__DOT__i = ((IData)(1U) 
                                          + unnamedblk163__DOT__i);
-                ++(vlSymsp->__Vcoverage[17325]);
-            }
-            if (VL_LTS_III(32, 5U, split_vals.size())) {
                 ++(vlSymsp->__Vcoverage[17320]);
             }
+            if (VL_LTS_III(32, 5U, split_vals.size())) {
+                ++(vlSymsp->__Vcoverage[17315]);
+            }
             if (VL_GTS_III(32, 4U, split_vals.size())) {
-                ++(vlSymsp->__Vcoverage[17321]);
+                ++(vlSymsp->__Vcoverage[17316]);
             }
             if ((VL_LTES_III(32, 4U, split_vals.size()) 
                  & VL_GTES_III(32, 5U, split_vals.size()))) {
-                ++(vlSymsp->__Vcoverage[17322]);
+                ++(vlSymsp->__Vcoverage[17317]);
             }
-            ++(vlSymsp->__Vcoverage[17326]);
+            ++(vlSymsp->__Vcoverage[17321]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_do_timeout_settings(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -887,15 +887,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                     while (VL_LTS_III(32, unnamedblk164__DOT__unnamedblk165__DOT__i, timeout_settings.size())) {
                         if ((0U != unnamedblk164__DOT__unnamedblk165__DOT__i)) {
                             unnamedblk164__DOT__sep = "; "s;
-                            ++(vlSymsp->__Vcoverage[17327]);
+                            ++(vlSymsp->__Vcoverage[17322]);
                         } else {
-                            ++(vlSymsp->__Vcoverage[17328]);
+                            ++(vlSymsp->__Vcoverage[17323]);
                         }
                         unnamedblk164__DOT__timeout_list 
                             = VL_CONCATN_NNN(VL_CONCATN_NNN(unnamedblk164__DOT__timeout_list, unnamedblk164__DOT__sep), timeout_settings.at(unnamedblk164__DOT__unnamedblk165__DOT__i));
                         unnamedblk164__DOT__unnamedblk165__DOT__i 
                             = ((IData)(1U) + unnamedblk164__DOT__unnamedblk165__DOT__i);
-                        ++(vlSymsp->__Vcoverage[17329]);
+                        ++(vlSymsp->__Vcoverage[17324]);
                     }
                     this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "MULTTIMOUT"s, VL_SFORMATF_N_NX("Multiple (%0d) +UVM_TIMEOUT arguments provided on the command line.  '%@' will be used.  Provided list: %@.",0,
                                                                                 32,
@@ -904,9 +904,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 &(timeout),
                                                                                 -1,
                                                                                 &(unnamedblk164__DOT__timeout_list)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17330]);
+                    ++(vlSymsp->__Vcoverage[17325]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17331]);
+                    ++(vlSymsp->__Vcoverage[17326]);
                 }
                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "TIMOUTSET"s, VL_SFORMATF_N_NX("'+UVM_TIMEOUT=%@' provided on the command line is being applied.",0,
                                                                                 -1,
@@ -916,17 +916,17 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                              -1,&(override_spec)) ;
                 if (("YES"s == override_spec)) {
                     this->__VnoInFunc_set_timeout(vlProcess, vlSymsp, timeout_int, 1U);
-                    ++(vlSymsp->__Vcoverage[17332]);
+                    ++(vlSymsp->__Vcoverage[17327]);
                 } else if (("NO"s == override_spec)) {
                     this->__VnoInFunc_set_timeout(vlProcess, vlSymsp, timeout_int, 0U);
-                    ++(vlSymsp->__Vcoverage[17333]);
+                    ++(vlSymsp->__Vcoverage[17328]);
                 } else {
                     this->__VnoInFunc_set_timeout(vlProcess, vlSymsp, timeout_int, 1U);
-                    ++(vlSymsp->__Vcoverage[17334]);
+                    ++(vlSymsp->__Vcoverage[17329]);
                 }
-                ++(vlSymsp->__Vcoverage[17336]);
+                ++(vlSymsp->__Vcoverage[17331]);
             }
-            ++(vlSymsp->__Vcoverage[17337]);
+            ++(vlSymsp->__Vcoverage[17332]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_do_factory_settings(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -955,7 +955,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 - (IData)(1U)))));
                 unnamedblk166__DOT__i = ((IData)(1U) 
                                          + unnamedblk166__DOT__i);
-                ++(vlSymsp->__Vcoverage[17338]);
+                ++(vlSymsp->__Vcoverage[17333]);
             }
             VL_NULL_CHECK(this->__PVT__clp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 796)
                                                                      ->__VnoInFunc_get_arg_matches(vlSymsp, "/^\\+(UVM_SET_TYPE_OVERRIDE|uvm_set_type_override)=/"s, args, __Vtask_get_arg_matches__92__Vfuncout);
@@ -968,9 +968,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 - (IData)(1U)))));
                 unnamedblk167__DOT__i = ((IData)(1U) 
                                          + unnamedblk167__DOT__i);
-                ++(vlSymsp->__Vcoverage[17339]);
+                ++(vlSymsp->__Vcoverage[17334]);
             }
-            ++(vlSymsp->__Vcoverage[17340]);
+            ++(vlSymsp->__Vcoverage[17335]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_process_inst_override(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string ovr) {
@@ -1009,11 +1009,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                  == (IData)(__Vtask_uvm_split_string__96__sep))) {
                                 goto __Vlabel1;
                             } else {
-                                ++(vlSymsp->__Vcoverage[482]);
+                                ++(vlSymsp->__Vcoverage[477]);
                             }
                             __Vtask_uvm_split_string__96__e 
                                 = ((IData)(1U) + __Vtask_uvm_split_string__96__e);
-                            ++(vlSymsp->__Vcoverage[483]);
+                            ++(vlSymsp->__Vcoverage[478]);
                         }
                         __Vlabel1: ;
                     }
@@ -1022,15 +1022,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                         split_val.push_back(VL_SUBSTR_N(this->__Vtask_uvm_split_string__96__str,__Vtask_uvm_split_string__96__s,
                                                         (__Vtask_uvm_split_string__96__e 
                                                          - (IData)(1U))));
-                        ++(vlSymsp->__Vcoverage[484]);
+                        ++(vlSymsp->__Vcoverage[479]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[485]);
+                        ++(vlSymsp->__Vcoverage[480]);
                     }
                     __Vtask_uvm_split_string__96__e 
                         = ((IData)(1U) + __Vtask_uvm_split_string__96__e);
-                    ++(vlSymsp->__Vcoverage[486]);
+                    ++(vlSymsp->__Vcoverage[481]);
                 }
-                ++(vlSymsp->__Vcoverage[487]);
+                ++(vlSymsp->__Vcoverage[482]);
                 if ((3U != split_val.size())) {
                     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
                                                        VL_CVT_PACK_STR_NN(
@@ -1038,7 +1038,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid setting for +uvm_set_inst_override="s, ovr), ", setting must specify <requested_type>,<override_type>,<instance_path>"s)), 0U, ""s, 0U, ""s, 0U);
                     goto __Vlabel0;
                 } else {
-                    ++(vlSymsp->__Vcoverage[17342]);
+                    ++(vlSymsp->__Vcoverage[17337]);
                 }
                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "INSTOVR"s, 
                                                   VL_CVT_PACK_STR_NN(
@@ -1050,7 +1050,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CVT_PACK_STR_NN(split_val.at(2U)));
                 __Vlabel0: ;
             }
-            ++(vlSymsp->__Vcoverage[17343]);
+            ++(vlSymsp->__Vcoverage[17338]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_process_type_override(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string ovr) {
@@ -1091,11 +1091,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                  == (IData)(__Vtask_uvm_split_string__102__sep))) {
                                 goto __Vlabel1;
                             } else {
-                                ++(vlSymsp->__Vcoverage[482]);
+                                ++(vlSymsp->__Vcoverage[477]);
                             }
                             __Vtask_uvm_split_string__102__e 
                                 = ((IData)(1U) + __Vtask_uvm_split_string__102__e);
-                            ++(vlSymsp->__Vcoverage[483]);
+                            ++(vlSymsp->__Vcoverage[478]);
                         }
                         __Vlabel1: ;
                     }
@@ -1104,15 +1104,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                         split_val.push_back(VL_SUBSTR_N(this->__Vtask_uvm_split_string__102__str,__Vtask_uvm_split_string__102__s,
                                                         (__Vtask_uvm_split_string__102__e 
                                                          - (IData)(1U))));
-                        ++(vlSymsp->__Vcoverage[484]);
+                        ++(vlSymsp->__Vcoverage[479]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[485]);
+                        ++(vlSymsp->__Vcoverage[480]);
                     }
                     __Vtask_uvm_split_string__102__e 
                         = ((IData)(1U) + __Vtask_uvm_split_string__102__e);
-                    ++(vlSymsp->__Vcoverage[486]);
+                    ++(vlSymsp->__Vcoverage[481]);
                 }
-                ++(vlSymsp->__Vcoverage[487]);
+                ++(vlSymsp->__Vcoverage[482]);
                 if ((VL_LTS_III(32, 3U, split_val.size()) 
                      | VL_GTS_III(32, 2U, split_val.size()))) {
                     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
@@ -1121,15 +1121,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid setting for +uvm_set_type_override="s, ovr), ", setting must specify <requested_type>,<override_type>[,<replace>]"s)), 0U, ""s, 0U, ""s, 0U);
                     goto __Vlabel0;
                 } else {
-                    ++(vlSymsp->__Vcoverage[17345]);
+                    ++(vlSymsp->__Vcoverage[17340]);
                 }
                 if ((3U == split_val.size())) {
                     if (("0"s == split_val.at(2U))) {
                         replace = 0U;
-                        ++(vlSymsp->__Vcoverage[17351]);
+                        ++(vlSymsp->__Vcoverage[17346]);
                     } else if (("1"s == split_val.at(2U))) {
                         replace = 1U;
-                        ++(vlSymsp->__Vcoverage[17349]);
+                        ++(vlSymsp->__Vcoverage[17344]);
                     } else {
                         this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
                                                            VL_CVT_PACK_STR_NN(
@@ -1137,9 +1137,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid replace arg for +uvm_set_type_override="s, ovr), " value must be 0 or 1"s)), 0U, ""s, 0U, ""s, 0U);
                         goto __Vlabel0;
                     }
-                    ++(vlSymsp->__Vcoverage[17352]);
+                    ++(vlSymsp->__Vcoverage[17347]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17353]);
+                    ++(vlSymsp->__Vcoverage[17348]);
                 }
                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
                                                   VL_CVT_PACK_STR_NN(
@@ -1153,16 +1153,16 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                 __Vlabel0: ;
             }
             if (VL_GTS_III(32, 2U, split_val.size())) {
-                ++(vlSymsp->__Vcoverage[17346]);
+                ++(vlSymsp->__Vcoverage[17341]);
             }
             if (VL_LTS_III(32, 3U, split_val.size())) {
-                ++(vlSymsp->__Vcoverage[17347]);
+                ++(vlSymsp->__Vcoverage[17342]);
             }
             if ((VL_GTES_III(32, 3U, split_val.size()) 
                  & VL_LTES_III(32, 2U, split_val.size()))) {
-                ++(vlSymsp->__Vcoverage[17348]);
+                ++(vlSymsp->__Vcoverage[17343]);
             }
-            ++(vlSymsp->__Vcoverage[17354]);
+            ++(vlSymsp->__Vcoverage[17349]);
         }
 
         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_process_config(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string cfg, CData/*0:0*/ is_int) {
@@ -1205,11 +1205,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                  == (IData)(__Vtask_uvm_split_string__109__sep))) {
                                 goto __Vlabel1;
                             } else {
-                                ++(vlSymsp->__Vcoverage[482]);
+                                ++(vlSymsp->__Vcoverage[477]);
                             }
                             __Vtask_uvm_split_string__109__e 
                                 = ((IData)(1U) + __Vtask_uvm_split_string__109__e);
-                            ++(vlSymsp->__Vcoverage[483]);
+                            ++(vlSymsp->__Vcoverage[478]);
                         }
                         __Vlabel1: ;
                     }
@@ -1218,15 +1218,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                         split_val.push_back(VL_SUBSTR_N(this->__Vtask_uvm_split_string__109__str,__Vtask_uvm_split_string__109__s,
                                                         (__Vtask_uvm_split_string__109__e 
                                                          - (IData)(1U))));
-                        ++(vlSymsp->__Vcoverage[484]);
+                        ++(vlSymsp->__Vcoverage[479]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[485]);
+                        ++(vlSymsp->__Vcoverage[480]);
                     }
                     __Vtask_uvm_split_string__109__e 
                         = ((IData)(1U) + __Vtask_uvm_split_string__109__e);
-                    ++(vlSymsp->__Vcoverage[486]);
+                    ++(vlSymsp->__Vcoverage[481]);
                 }
-                ++(vlSymsp->__Vcoverage[487]);
+                ++(vlSymsp->__Vcoverage[482]);
                 if ((1U == split_val.size())) {
                     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
                                                        VL_CVT_PACK_STR_NN(
@@ -1236,7 +1236,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid +uvm_set_config command\""s, cfg), "\" missing field and value: component is \""s), split_val.at(0U)), "\""s)), 0U, ""s, 0U, ""s, 0U);
                                 goto __Vlabel0;
                             } else {
-                                ++(vlSymsp->__Vcoverage[17356]);
+                                ++(vlSymsp->__Vcoverage[17351]);
                             }
                             if ((2U == split_val.size())) {
                                 this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
@@ -1249,7 +1249,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid +uvm_set_config command\""s, cfg), "\" missing value: component is \""s), split_val.at(0U)), "\"  field is \""s), split_val.at(1U)), "\""s)), 0U, ""s, 0U, ""s, 0U);
                                                     goto __Vlabel0;
                                                 } else {
-                                                    ++(vlSymsp->__Vcoverage[17358]);
+                                                    ++(vlSymsp->__Vcoverage[17353]);
                                                 }
                                                 if (
                                                     VL_LTS_III(32, 3U, split_val.size())) {
@@ -1258,7 +1258,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 &(cfg)) , 0U, ""s, 0U, ""s, 0U);
                                                     goto __Vlabel0;
                                                 } else {
-                                                    ++(vlSymsp->__Vcoverage[17360]);
+                                                    ++(vlSymsp->__Vcoverage[17355]);
                                                 }
                                                 if (is_int) {
                                                     if (
@@ -1279,53 +1279,53 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                              == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 2));
-                                                            ++(vlSymsp->__Vcoverage[17361]);
+                                                            ++(vlSymsp->__Vcoverage[17356]);
                                                         } else if (
                                                                    ("0b"s 
                                                                     == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 2));
-                                                            ++(vlSymsp->__Vcoverage[17362]);
+                                                            ++(vlSymsp->__Vcoverage[17357]);
                                                         } else if (
                                                                    ("'o"s 
                                                                     == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 8));
-                                                            ++(vlSymsp->__Vcoverage[17363]);
+                                                            ++(vlSymsp->__Vcoverage[17358]);
                                                         } else if (
                                                                    ("'d"s 
                                                                     == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 10));
-                                                            ++(vlSymsp->__Vcoverage[17364]);
+                                                            ++(vlSymsp->__Vcoverage[17359]);
                                                         } else if (
                                                                    ("'h"s 
                                                                     == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 16));
-                                                            ++(vlSymsp->__Vcoverage[17365]);
+                                                            ++(vlSymsp->__Vcoverage[17360]);
                                                         } else if (
                                                                    ("'x"s 
                                                                     == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 16));
-                                                            ++(vlSymsp->__Vcoverage[17366]);
+                                                            ++(vlSymsp->__Vcoverage[17361]);
                                                         } else if (
                                                                    ("0x"s 
                                                                     == unnamedblk168__DOT__base)) {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(unnamedblk168__DOT__extval, 16));
-                                                            ++(vlSymsp->__Vcoverage[17367]);
+                                                            ++(vlSymsp->__Vcoverage[17362]);
                                                         } else {
                                                             VL_EXTENDS_WI(4096,32, v, 
                                                                           VL_ATOI_N(split_val.at(2U), 10));
-                                                            ++(vlSymsp->__Vcoverage[17368]);
+                                                            ++(vlSymsp->__Vcoverage[17363]);
                                                         }
-                                                        ++(vlSymsp->__Vcoverage[17369]);
+                                                        ++(vlSymsp->__Vcoverage[17364]);
                                                     } else {
                                                         VL_EXTENDS_WI(4096,32, v, 
                                                                       VL_ATOI_N(split_val.at(2U), 10));
-                                                        ++(vlSymsp->__Vcoverage[17370]);
+                                                        ++(vlSymsp->__Vcoverage[17365]);
                                                     }
                                                     this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
                                                                                 VL_CVT_PACK_STR_NN(
@@ -1333,7 +1333,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                     vlSymsp->TOP__uvm_pkg__03a__03auvm_config_db__Tz8__Vclpkg.__VnoInFunc_set(vlProcess, vlSymsp, m_uvm_top, 
                                                                                 VL_CVT_PACK_STR_NN(split_val.at(0U)), 
                                                                                 VL_CVT_PACK_STR_NN(split_val.at(1U)), v);
-                                                    ++(vlSymsp->__Vcoverage[17371]);
+                                                    ++(vlSymsp->__Vcoverage[17366]);
                                                 } else {
                                                     this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "UVM_CMDLINE_PROC"s, 
                                                                                 VL_CVT_PACK_STR_NN(
@@ -1342,11 +1342,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CVT_PACK_STR_NN(split_val.at(0U)), 
                                                                                 VL_CVT_PACK_STR_NN(split_val.at(1U)), 
                                                                                 VL_CVT_PACK_STR_NN(split_val.at(2U)));
-                                                    ++(vlSymsp->__Vcoverage[17372]);
+                                                    ++(vlSymsp->__Vcoverage[17367]);
                                                 }
                                                 __Vlabel0: ;
                                             }
-                                            ++(vlSymsp->__Vcoverage[17373]);
+                                            ++(vlSymsp->__Vcoverage[17368]);
                                         }
 
                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_process_default_sequence(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string cfg) {
@@ -1393,13 +1393,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                  == (IData)(__Vtask_uvm_split_string__120__sep))) {
                                                                 goto __Vlabel1;
                                                             } else {
-                                                                ++(vlSymsp->__Vcoverage[482]);
+                                                                ++(vlSymsp->__Vcoverage[477]);
                                                             }
                                                             __Vtask_uvm_split_string__120__e 
                                                                 = 
                                                                 ((IData)(1U) 
                                                                  + __Vtask_uvm_split_string__120__e);
-                                                            ++(vlSymsp->__Vcoverage[483]);
+                                                            ++(vlSymsp->__Vcoverage[478]);
                                                         }
                                                         __Vlabel1: ;
                                                     }
@@ -1410,17 +1410,17 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                             VL_SUBSTR_N(this->__Vtask_uvm_split_string__120__str,__Vtask_uvm_split_string__120__s,
                                                                                 (__Vtask_uvm_split_string__120__e 
                                                                                 - (IData)(1U))));
-                                                        ++(vlSymsp->__Vcoverage[484]);
+                                                        ++(vlSymsp->__Vcoverage[479]);
                                                     } else {
-                                                        ++(vlSymsp->__Vcoverage[485]);
+                                                        ++(vlSymsp->__Vcoverage[480]);
                                                     }
                                                     __Vtask_uvm_split_string__120__e 
                                                         = 
                                                         ((IData)(1U) 
                                                          + __Vtask_uvm_split_string__120__e);
-                                                    ++(vlSymsp->__Vcoverage[486]);
+                                                    ++(vlSymsp->__Vcoverage[481]);
                                                 }
-                                                ++(vlSymsp->__Vcoverage[487]);
+                                                ++(vlSymsp->__Vcoverage[482]);
                                                 if (
                                                     (1U 
                                                      == split_val.size())) {
@@ -1432,7 +1432,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid +uvm_set_default_sequence command\""s, cfg), "\" missing phase and type: sequencer is \""s), split_val.at(0U)), "\""s)), 0U, ""s, 0U, ""s, 0U);
                                                                 goto __Vlabel0;
                                                             } else {
-                                                                ++(vlSymsp->__Vcoverage[17375]);
+                                                                ++(vlSymsp->__Vcoverage[17370]);
                                                             }
                                                             if (
                                                                 (2U 
@@ -1447,7 +1447,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CONCATN_NNN("Invalid +uvm_set_default_sequence command\""s, cfg), "\" missing type: sequencer is \""s), split_val.at(0U)), "\"  phase is \""s), split_val.at(1U)), "\""s)), 0U, ""s, 0U, ""s, 0U);
                                                                                 goto __Vlabel0;
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17377]);
+                                                                                ++(vlSymsp->__Vcoverage[17372]);
                                                                                 }
                                                                                 if (
                                                                                 VL_LTS_III(32, 3U, split_val.size())) {
@@ -1456,7 +1456,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 &(cfg)) , 0U, ""s, 0U, ""s, 0U);
                                                                                 goto __Vlabel0;
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17379]);
+                                                                                ++(vlSymsp->__Vcoverage[17374]);
                                                                                 }
                                                                                 VL_NULL_CHECK(f, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 945)
                                                                                 ->__VnoInFunc_find_wrapper_by_name(vlProcess, vlSymsp, 
@@ -1478,11 +1478,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_CVT_PACK_STR_NN(
                                                                                 VL_CONCATN_NNN(
                                                                                 VL_CONCATN_NNN(split_val.at(0U), "."s), split_val.at(1U))), "default_sequence"s, w);
-                                                                                ++(vlSymsp->__Vcoverage[17381]);
+                                                                                ++(vlSymsp->__Vcoverage[17376]);
                                                                                 }
                                                                                 __Vlabel0: ;
                                                                             }
-                                                                            ++(vlSymsp->__Vcoverage[17382]);
+                                                                            ++(vlSymsp->__Vcoverage[17377]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_do_config_settings(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -1518,7 +1518,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk169__DOT__i);
-                                                                                ++(vlSymsp->__Vcoverage[17383]);
+                                                                                ++(vlSymsp->__Vcoverage[17378]);
                                                                             }
                                                                             VL_NULL_CHECK(this->__PVT__clp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 970)
                                                                                 ->__VnoInFunc_get_arg_matches(vlSymsp, "/^\\+(UVM_SET_CONFIG_STRING|uvm_set_config_string)=/"s, args, __Vtask_get_arg_matches__130__Vfuncout);
@@ -1534,7 +1534,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk170__DOT__i);
-                                                                                ++(vlSymsp->__Vcoverage[17384]);
+                                                                                ++(vlSymsp->__Vcoverage[17379]);
                                                                             }
                                                                             VL_NULL_CHECK(this->__PVT__clp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 974)
                                                                                 ->__VnoInFunc_get_arg_matches(vlSymsp, "/^\\+(UVM_SET_DEFAULT_SEQUENCE|uvm_set_default_sequence)=/"s, args, __Vtask_get_arg_matches__132__Vfuncout);
@@ -1550,9 +1550,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk171__DOT__i);
-                                                                                ++(vlSymsp->__Vcoverage[17385]);
+                                                                                ++(vlSymsp->__Vcoverage[17380]);
                                                                             }
-                                                                            ++(vlSymsp->__Vcoverage[17386]);
+                                                                            ++(vlSymsp->__Vcoverage[17381]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_do_max_quit_settings(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -1605,9 +1605,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 (0U 
                                                                                 != unnamedblk172__DOT__unnamedblk173__DOT__i)) {
                                                                                 unnamedblk172__DOT__sep = "; "s;
-                                                                                ++(vlSymsp->__Vcoverage[17387]);
+                                                                                ++(vlSymsp->__Vcoverage[17382]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17388]);
+                                                                                ++(vlSymsp->__Vcoverage[17383]);
                                                                                 }
                                                                                 unnamedblk172__DOT__max_quit_list 
                                                                                 = 
@@ -1617,7 +1617,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk172__DOT__unnamedblk173__DOT__i);
-                                                                                ++(vlSymsp->__Vcoverage[17389]);
+                                                                                ++(vlSymsp->__Vcoverage[17384]);
                                                                                 }
                                                                                 this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "MULTMAXQUIT"s, VL_SFORMATF_N_NX("Multiple (%0d) +UVM_MAX_QUIT_COUNT arguments provided on the command line.  '%@' will be used.  Provided list: %@.",0,
                                                                                 32,
@@ -1626,9 +1626,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 &(max_quit),
                                                                                 -1,
                                                                                 &(unnamedblk172__DOT__max_quit_list)) , 0U, ""s, 0U, ""s, 0U);
-                                                                                ++(vlSymsp->__Vcoverage[17390]);
+                                                                                ++(vlSymsp->__Vcoverage[17385]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17391]);
+                                                                                ++(vlSymsp->__Vcoverage[17386]);
                                                                                 }
                                                                                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "MAXQUITSET"s, VL_SFORMATF_N_NX("'+UVM_MAX_QUIT_COUNT=%@' provided on the command line is being applied.",0,
                                                                                 -1,
@@ -1653,13 +1653,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 == (IData)(__Vtask_uvm_split_string__138__sep))) {
                                                                                 goto __Vlabel0;
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[482]);
+                                                                                ++(vlSymsp->__Vcoverage[477]);
                                                                                 }
                                                                                 __Vtask_uvm_split_string__138__e 
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + __Vtask_uvm_split_string__138__e);
-                                                                                ++(vlSymsp->__Vcoverage[483]);
+                                                                                ++(vlSymsp->__Vcoverage[478]);
                                                                                 }
                                                                                 __Vlabel0: ;
                                                                                 }
@@ -1670,17 +1670,17 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 VL_SUBSTR_N(this->__Vtask_uvm_split_string__138__str,__Vtask_uvm_split_string__138__s,
                                                                                 (__Vtask_uvm_split_string__138__e 
                                                                                 - (IData)(1U))));
-                                                                                ++(vlSymsp->__Vcoverage[484]);
+                                                                                ++(vlSymsp->__Vcoverage[479]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[485]);
+                                                                                ++(vlSymsp->__Vcoverage[480]);
                                                                                 }
                                                                                 __Vtask_uvm_split_string__138__e 
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + __Vtask_uvm_split_string__138__e);
-                                                                                ++(vlSymsp->__Vcoverage[486]);
+                                                                                ++(vlSymsp->__Vcoverage[481]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[487]);
+                                                                                ++(vlSymsp->__Vcoverage[482]);
                                                                                 max_quit_int 
                                                                                 = 
                                                                                 VL_ATOI_N(split_max_quit.at(0U), 10);
@@ -1689,21 +1689,21 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 == split_max_quit.at(1U))) {
                                                                                 VL_NULL_CHECK(srvr, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 1014)
                                                                                 ->__VnoInFunc_set_max_quit_count(vlProcess, vlSymsp, max_quit_int, 1U);
-                                                                                ++(vlSymsp->__Vcoverage[17392]);
+                                                                                ++(vlSymsp->__Vcoverage[17387]);
                                                                                 } else if (
                                                                                 ("NO"s 
                                                                                 == split_max_quit.at(1U))) {
                                                                                 VL_NULL_CHECK(srvr, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 1015)
                                                                                 ->__VnoInFunc_set_max_quit_count(vlProcess, vlSymsp, max_quit_int, 0U);
-                                                                                ++(vlSymsp->__Vcoverage[17393]);
+                                                                                ++(vlSymsp->__Vcoverage[17388]);
                                                                                 } else {
                                                                                 VL_NULL_CHECK(srvr, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh", 1016)
                                                                                 ->__VnoInFunc_set_max_quit_count(vlProcess, vlSymsp, max_quit_int, 1U);
-                                                                                ++(vlSymsp->__Vcoverage[17394]);
+                                                                                ++(vlSymsp->__Vcoverage[17389]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17396]);
+                                                                                ++(vlSymsp->__Vcoverage[17391]);
                                                                             }
-                                                                            ++(vlSymsp->__Vcoverage[17397]);
+                                                                            ++(vlSymsp->__Vcoverage[17392]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_do_dump_args(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -1748,13 +1748,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk174__DOT__idx);
-                                                                                ++(vlSymsp->__Vcoverage[17398]);
+                                                                                ++(vlSymsp->__Vcoverage[17393]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17399]);
+                                                                                ++(vlSymsp->__Vcoverage[17394]);
                                                                             } else {
-                                                                                ++(vlSymsp->__Vcoverage[17400]);
+                                                                                ++(vlSymsp->__Vcoverage[17395]);
                                                                             }
-                                                                            ++(vlSymsp->__Vcoverage[17401]);
+                                                                            ++(vlSymsp->__Vcoverage[17396]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_check_verbosity(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -1781,18 +1781,18 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 (0U 
                                                                                 != verb_count)) {
                                                                                 verb_settings.push_back(verb_string);
-                                                                                ++(vlSymsp->__Vcoverage[17402]);
+                                                                                ++(vlSymsp->__Vcoverage[17397]);
                                                                             } else {
-                                                                                ++(vlSymsp->__Vcoverage[17403]);
+                                                                                ++(vlSymsp->__Vcoverage[17398]);
                                                                             }
                                                                             if (
                                                                                 VL_LTS_III(32, 0U, verb_count)) {
                                                                                 verb_string 
                                                                                 = verb_settings.at(0U);
                                                                                 plusarg = 1U;
-                                                                                ++(vlSymsp->__Vcoverage[17404]);
+                                                                                ++(vlSymsp->__Vcoverage[17399]);
                                                                             } else {
-                                                                                ++(vlSymsp->__Vcoverage[17405]);
+                                                                                ++(vlSymsp->__Vcoverage[17400]);
                                                                             }
                                                                             if (
                                                                                 VL_LTS_III(32, 1U, verb_count)) {
@@ -1805,9 +1805,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 (0U 
                                                                                 != unnamedblk175__DOT__unnamedblk176__DOT__i)) {
                                                                                 unnamedblk175__DOT__sep = ", "s;
-                                                                                ++(vlSymsp->__Vcoverage[17406]);
+                                                                                ++(vlSymsp->__Vcoverage[17401]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17407]);
+                                                                                ++(vlSymsp->__Vcoverage[17402]);
                                                                                 }
                                                                                 unnamedblk175__DOT__verb_list 
                                                                                 = 
@@ -1817,7 +1817,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk175__DOT__unnamedblk176__DOT__i);
-                                                                                ++(vlSymsp->__Vcoverage[17408]);
+                                                                                ++(vlSymsp->__Vcoverage[17403]);
                                                                                 }
                                                                                 this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "MULTVERB"s, VL_SFORMATF_N_NX("Multiple (%0d) +UVM_VERBOSITY arguments provided on the command line.  '%@' will be used.  Provided list: %@.",0,
                                                                                 32,
@@ -1826,9 +1826,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 &(verb_string),
                                                                                 -1,
                                                                                 &(unnamedblk175__DOT__verb_list)) , 0U, ""s, 0U, ""s, 0U);
-                                                                                ++(vlSymsp->__Vcoverage[17409]);
+                                                                                ++(vlSymsp->__Vcoverage[17404]);
                                                                             } else {
-                                                                                ++(vlSymsp->__Vcoverage[17410]);
+                                                                                ++(vlSymsp->__Vcoverage[17405]);
                                                                             }
                                                                             if (
                                                                                 (1U 
@@ -1854,61 +1854,61 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 ("UVM_NONE"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0U;
-                                                                                ++(vlSymsp->__Vcoverage[17411]);
+                                                                                ++(vlSymsp->__Vcoverage[17406]);
                                                                                 } else if (
                                                                                 ("NONE"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0U;
-                                                                                ++(vlSymsp->__Vcoverage[17412]);
+                                                                                ++(vlSymsp->__Vcoverage[17407]);
                                                                                 } else if (
                                                                                 ("UVM_LOW"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x00000064U;
-                                                                                ++(vlSymsp->__Vcoverage[17413]);
+                                                                                ++(vlSymsp->__Vcoverage[17408]);
                                                                                 } else if (
                                                                                 ("LOW"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x00000064U;
-                                                                                ++(vlSymsp->__Vcoverage[17414]);
+                                                                                ++(vlSymsp->__Vcoverage[17409]);
                                                                                 } else if (
                                                                                 ("UVM_MEDIUM"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x000000c8U;
-                                                                                ++(vlSymsp->__Vcoverage[17415]);
+                                                                                ++(vlSymsp->__Vcoverage[17410]);
                                                                                 } else if (
                                                                                 ("MEDIUM"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x000000c8U;
-                                                                                ++(vlSymsp->__Vcoverage[17416]);
+                                                                                ++(vlSymsp->__Vcoverage[17411]);
                                                                                 } else if (
                                                                                 ("UVM_HIGH"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x0000012cU;
-                                                                                ++(vlSymsp->__Vcoverage[17417]);
+                                                                                ++(vlSymsp->__Vcoverage[17412]);
                                                                                 } else {
                                                                                 verbosity = 0x0000012cU;
-                                                                                ++(vlSymsp->__Vcoverage[17418]);
+                                                                                ++(vlSymsp->__Vcoverage[17413]);
                                                                                 }
                                                                                 } else if (
                                                                                 ("UVM_FULL"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x00000190U;
-                                                                                ++(vlSymsp->__Vcoverage[17419]);
+                                                                                ++(vlSymsp->__Vcoverage[17414]);
                                                                                 } else if (
                                                                                 ("FULL"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x00000190U;
-                                                                                ++(vlSymsp->__Vcoverage[17420]);
+                                                                                ++(vlSymsp->__Vcoverage[17415]);
                                                                                 } else if (
                                                                                 ("UVM_DEBUG"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x000001f4U;
-                                                                                ++(vlSymsp->__Vcoverage[17421]);
+                                                                                ++(vlSymsp->__Vcoverage[17416]);
                                                                                 } else if (
                                                                                 ("DEBUG"s 
                                                                                 == verb_string)) {
                                                                                 verbosity = 0x000001f4U;
-                                                                                ++(vlSymsp->__Vcoverage[17422]);
+                                                                                ++(vlSymsp->__Vcoverage[17417]);
                                                                                 } else {
                                                                                 verbosity 
                                                                                 = 
@@ -1918,34 +1918,34 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "NSTVERB"s, VL_SFORMATF_N_NX("Non-standard verbosity value, using provided '%0d'.",0,
                                                                                 32,
                                                                                 verbosity) , 0U, ""s, 0U, ""s, 0U);
-                                                                                ++(vlSymsp->__Vcoverage[17423]);
+                                                                                ++(vlSymsp->__Vcoverage[17418]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17424]);
+                                                                                ++(vlSymsp->__Vcoverage[17419]);
                                                                                 }
                                                                                 if (
                                                                                 (0U 
                                                                                 == verbosity)) {
                                                                                 verbosity = 0x000000c8U;
                                                                                 this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "ILLVERB"s, "Illegal verbosity value, using default of UVM_MEDIUM."s, 0U, ""s, 0U, ""s, 0U);
-                                                                                ++(vlSymsp->__Vcoverage[17425]);
+                                                                                ++(vlSymsp->__Vcoverage[17420]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17426]);
+                                                                                ++(vlSymsp->__Vcoverage[17421]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17427]);
+                                                                                ++(vlSymsp->__Vcoverage[17422]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17428]);
+                                                                                ++(vlSymsp->__Vcoverage[17423]);
                                                                             } else {
-                                                                                ++(vlSymsp->__Vcoverage[17429]);
+                                                                                ++(vlSymsp->__Vcoverage[17424]);
                                                                             }
                                                                             this->__VnoInFunc_set_report_verbosity_level_hier(vlProcess, vlSymsp, verbosity);
-                                                                            ++(vlSymsp->__Vcoverage[17430]);
+                                                                            ++(vlSymsp->__Vcoverage[17425]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_check_uvm_field_flag_size(Vtb_rng__Syms* __restrict vlSymsp) {
                                                                             VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_m_check_uvm_field_flag_size\n"); );
                                                                             // Body
-                                                                            ++(vlSymsp->__Vcoverage[17432]);
-                                                                            ++(vlSymsp->__Vcoverage[17433]);
+                                                                            ++(vlSymsp->__Vcoverage[17427]);
+                                                                            ++(vlSymsp->__Vcoverage[17428]);
                                                                         }
 
                                                                         VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -1979,19 +1979,19 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "INVLCMDARGS"s, VL_SFORMATF_N_NX("\"+uvm_set_action=%@\" never took effect due to a mismatching component pattern",0,
                                                                                 -1,
                                                                                 &(__Vtemp_1)) , 0U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x0000046aU, ""s, 1U);
-                                                                                ++(vlSymsp->__Vcoverage[17434]);
+                                                                                ++(vlSymsp->__Vcoverage[17429]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17435]);
+                                                                                ++(vlSymsp->__Vcoverage[17430]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17436]);
+                                                                                ++(vlSymsp->__Vcoverage[17431]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17437]);
+                                                                                ++(vlSymsp->__Vcoverage[17432]);
                                                                                 }
                                                                                 unnamedblk177__DOT__idx 
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk177__DOT__idx);
-                                                                                ++(vlSymsp->__Vcoverage[17438]);
+                                                                                ++(vlSymsp->__Vcoverage[17433]);
                                                                             }
                                                                             unnamedblk178__DOT__idx = 0U;
                                                                             while (
@@ -2010,19 +2010,19 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "INVLCMDARGS"s, VL_SFORMATF_N_NX("\"+uvm_set_severity=%@\" never took effect due to a mismatching component pattern",0,
                                                                                 -1,
                                                                                 &(__Vtemp_2)) , 0U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x0000046eU, ""s, 1U);
-                                                                                ++(vlSymsp->__Vcoverage[17439]);
+                                                                                ++(vlSymsp->__Vcoverage[17434]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17440]);
+                                                                                ++(vlSymsp->__Vcoverage[17435]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17441]);
+                                                                                ++(vlSymsp->__Vcoverage[17436]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17442]);
+                                                                                ++(vlSymsp->__Vcoverage[17437]);
                                                                                 }
                                                                                 unnamedblk178__DOT__idx 
                                                                                 = 
                                                                                 ((IData)(1U) 
                                                                                 + unnamedblk178__DOT__idx);
-                                                                                ++(vlSymsp->__Vcoverage[17443]);
+                                                                                ++(vlSymsp->__Vcoverage[17438]);
                                                                             }
                                                                             if (
                                                                                 (0ULL 
@@ -2040,15 +2040,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                                 64,
                                                                                 VL_TIME_UNITED_D(1),
                                                                                 -12) ), ". No non-zero delays are allowed before "s), "run_test(), and pre-run user defined phases may not consume "s), "simulation time before the start of the run phase."s)), 0U, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_root.svh"s, 0x00000475U, ""s, 1U);
-                                                                                ++(vlSymsp->__Vcoverage[17444]);
+                                                                                ++(vlSymsp->__Vcoverage[17439]);
                                                                                 } else {
-                                                                                ++(vlSymsp->__Vcoverage[17445]);
+                                                                                ++(vlSymsp->__Vcoverage[17440]);
                                                                                 }
-                                                                                ++(vlSymsp->__Vcoverage[17446]);
+                                                                                ++(vlSymsp->__Vcoverage[17441]);
                                                                             } else {
-                                                                                ++(vlSymsp->__Vcoverage[17447]);
+                                                                                ++(vlSymsp->__Vcoverage[17442]);
                                                                             }
-                                                                            ++(vlSymsp->__Vcoverage[17448]);
+                                                                            ++(vlSymsp->__Vcoverage[17443]);
                                                                             co_return;
                                                                         }
 
@@ -2057,7 +2057,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                             // Body
                                                                             this->__PVT__enable_print_topology 
                                                                                 = enable;
-                                                                            ++(vlSymsp->__Vcoverage[17449]);
+                                                                            ++(vlSymsp->__Vcoverage[17444]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_get_enable_print_topology(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &get_enable_print_topology__Vfuncrtn) {
@@ -2065,7 +2065,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_run_test(VlProcessRef
                                                                             // Body
                                                                             get_enable_print_topology__Vfuncrtn 
                                                                                 = this->__PVT__enable_print_topology;
-                                                                            ++(vlSymsp->__Vcoverage[17450]);
+                                                                            ++(vlSymsp->__Vcoverage[17445]);
                                                                         }
 
                                                                         void Vtb_rng_uvm_pkg__03a__03auvm_root::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

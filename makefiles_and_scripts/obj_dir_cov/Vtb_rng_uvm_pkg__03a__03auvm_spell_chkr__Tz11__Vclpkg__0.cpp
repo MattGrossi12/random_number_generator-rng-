@@ -60,7 +60,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
             check__Vfuncrtn = 1U;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[8699]);
+            ++(vlSymsp->__Vcoverage[8694]);
         }
         min = this->__PVT__max;
         __VlefExpr_0 = (0U != strtab.first(unnamedblk1__DOT__key));
@@ -78,7 +78,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
                     if (VL_GTS_III(32, 0U, distance)) {
                         goto __Vlabel1;
                     } else {
-                        ++(vlSymsp->__Vcoverage[8701]);
+                        ++(vlSymsp->__Vcoverage[8696]);
                     }
                     if ((distance < min)) {
                         min = distance;
@@ -86,21 +86,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
                         min_key.push_back(unnamedblk1__DOT__key);
                         goto __Vlabel1;
                     } else {
-                        ++(vlSymsp->__Vcoverage[8703]);
+                        ++(vlSymsp->__Vcoverage[8698]);
                     }
                     if ((distance == min)) {
                         min_key.push_back(unnamedblk1__DOT__key);
-                        ++(vlSymsp->__Vcoverage[8704]);
+                        ++(vlSymsp->__Vcoverage[8699]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[8705]);
+                        ++(vlSymsp->__Vcoverage[8700]);
                     }
                     __Vlabel1: ;
                 }
-                ++(vlSymsp->__Vcoverage[8706]);
+                ++(vlSymsp->__Vcoverage[8701]);
             }
-            ++(vlSymsp->__Vcoverage[8707]);
+            ++(vlSymsp->__Vcoverage[8702]);
         } else {
-            ++(vlSymsp->__Vcoverage[8708]);
+            ++(vlSymsp->__Vcoverage[8703]);
         }
         if ((min == this->__PVT__max)) {
             this->__Vfunc_uvm_report_enabled__1__id = "UVM/CONFIGDB/SPELLCHK"s;
@@ -113,7 +113,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
                 = __Vtask_get_root__3__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__1__verbosity, (IData)(__Vfunc_uvm_report_enabled__1__severity), this->__Vfunc_uvm_report_enabled__1__id, __VlefCall_2__uvm_report_enabled);
-            ++(vlSymsp->__Vcoverage[437]);
+            ++(vlSymsp->__Vcoverage[432]);
             if ((0U != __VlefCall_2__uvm_report_enabled)) {
                 __Vtask_uvm_report_info__5__report_enabled_checked = 1U;
                 this->__Vtask_uvm_report_info__5__context_name = ""s;
@@ -131,12 +131,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
                 vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top 
                     = __Vtask_get_root__7__Vfuncout;
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 137)->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, this->__Vtask_uvm_report_info__5__id, this->__Vtask_uvm_report_info__5__message, __Vtask_uvm_report_info__5__verbosity, this->__Vtask_uvm_report_info__5__filename, __Vtask_uvm_report_info__5__line, this->__Vtask_uvm_report_info__5__context_name, (IData)(__Vtask_uvm_report_info__5__report_enabled_checked));
-                ++(vlSymsp->__Vcoverage[440]);
-                ++(vlSymsp->__Vcoverage[8709]);
+                ++(vlSymsp->__Vcoverage[435]);
+                ++(vlSymsp->__Vcoverage[8704]);
             } else {
-                ++(vlSymsp->__Vcoverage[8710]);
+                ++(vlSymsp->__Vcoverage[8705]);
             }
-            ++(vlSymsp->__Vcoverage[8716]);
+            ++(vlSymsp->__Vcoverage[8711]);
         } else {
             unnamedblk2__DOT__q.clear();
             unnamedblk2__DOT__q.atDefault().clear();
@@ -146,13 +146,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
                 unnamedblk2__DOT__q.push_back("|"s);
                 unnamedblk2__DOT__unnamedblk3__DOT__i 
                     = ((IData)(1U) + unnamedblk2__DOT__unnamedblk3__DOT__i);
-                ++(vlSymsp->__Vcoverage[8711]);
+                ++(vlSymsp->__Vcoverage[8706]);
             }
             if ((0U != unnamedblk2__DOT__q.size())) {
                 std::ignore = unnamedblk2__DOT__q.pop_back();
-                ++(vlSymsp->__Vcoverage[8712]);
+                ++(vlSymsp->__Vcoverage[8707]);
             } else {
-                ++(vlSymsp->__Vcoverage[8713]);
+                ++(vlSymsp->__Vcoverage[8708]);
             }
             this->__Vfunc_uvm_report_enabled__9__id = "UVM/CONFIGDB/SPELLCHK"s;
             __Vfunc_uvm_report_enabled__9__severity = 0U;
@@ -164,12 +164,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
                 = __Vtask_get_root__11__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__9__verbosity, (IData)(__Vfunc_uvm_report_enabled__9__severity), this->__Vfunc_uvm_report_enabled__9__id, __VlefCall_3__uvm_report_enabled);
-            ++(vlSymsp->__Vcoverage[437]);
+            ++(vlSymsp->__Vcoverage[432]);
             if ((0U != __VlefCall_3__uvm_report_enabled)) {
                 this->__Vfunc_m_uvm_string_queue_join__13__Vfuncout = ""s;
                 this->__Vfunc_m_uvm_string_queue_join__13__Vfuncout 
                     = VL_CVT_PACK_STR_ND(unnamedblk2__DOT__q);
-                ++(vlSymsp->__Vcoverage[434]);
+                ++(vlSymsp->__Vcoverage[429]);
                 __VlefCall_4__m_uvm_string_queue_join 
                     = this->__Vfunc_m_uvm_string_queue_join__13__Vfuncout;
                 __Vtask_uvm_report_info__14__report_enabled_checked = 1U;
@@ -188,17 +188,17 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_check(Vl
                 vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top 
                     = __Vtask_get_root__16__Vfuncout;
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 137)->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, this->__Vtask_uvm_report_info__14__id, this->__Vtask_uvm_report_info__14__message, __Vtask_uvm_report_info__14__verbosity, this->__Vtask_uvm_report_info__14__filename, __Vtask_uvm_report_info__14__line, this->__Vtask_uvm_report_info__14__context_name, (IData)(__Vtask_uvm_report_info__14__report_enabled_checked));
-                ++(vlSymsp->__Vcoverage[440]);
-                ++(vlSymsp->__Vcoverage[8714]);
+                ++(vlSymsp->__Vcoverage[435]);
+                ++(vlSymsp->__Vcoverage[8709]);
             } else {
-                ++(vlSymsp->__Vcoverage[8715]);
+                ++(vlSymsp->__Vcoverage[8710]);
             }
-            ++(vlSymsp->__Vcoverage[8717]);
+            ++(vlSymsp->__Vcoverage[8712]);
         }
         check__Vfuncrtn = 0U;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[8718]);
+    ++(vlSymsp->__Vcoverage[8713]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_levenshtein_distance(Vtb_rng__Syms* __restrict vlSymsp, std::string s, std::string t, IData/*31:0*/ &levenshtein_distance__Vfuncrtn) {
@@ -230,20 +230,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_levensht
             levenshtein_distance__Vfuncrtn = 0xffffffffU;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[8720]);
+            ++(vlSymsp->__Vcoverage[8715]);
         }
         d.renew(VL_MULS_III(32, m, n));
         k = 0U;
         while (VL_LTS_III(32, k, n)) {
             d.atWrite(k) = k;
             k = ((IData)(1U) + k);
-            ++(vlSymsp->__Vcoverage[8724]);
+            ++(vlSymsp->__Vcoverage[8719]);
         }
         k = 0U;
         while (VL_LTS_III(32, k, m)) {
             d.atWrite((k * n)) = k;
             k = ((IData)(1U) + k);
-            ++(vlSymsp->__Vcoverage[8725]);
+            ++(vlSymsp->__Vcoverage[8720]);
         }
         i = 1U;
         while (VL_LTS_III(32, i, n)) {
@@ -273,35 +273,35 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_levensht
                                            + cost), __VlefCall_0__minimum);
                 d.atWrite(((j * n) + i)) = __VlefCall_0__minimum;
                 j = ((IData)(1U) + j);
-                ++(vlSymsp->__Vcoverage[8728]);
+                ++(vlSymsp->__Vcoverage[8723]);
             }
             i = ((IData)(1U) + i);
-            ++(vlSymsp->__Vcoverage[8729]);
+            ++(vlSymsp->__Vcoverage[8724]);
         }
         distance = d.at(((n * m) - (IData)(1U)));
         levenshtein_distance__Vfuncrtn = distance;
         __Vlabel0: ;
     }
     if ((1U == m)) {
-        ++(vlSymsp->__Vcoverage[8721]);
+        ++(vlSymsp->__Vcoverage[8716]);
     }
     if ((1U == n)) {
-        ++(vlSymsp->__Vcoverage[8722]);
+        ++(vlSymsp->__Vcoverage[8717]);
     }
     if (((1U != n) & (1U != m))) {
-        ++(vlSymsp->__Vcoverage[8723]);
+        ++(vlSymsp->__Vcoverage[8718]);
     }
     if ((VL_GETC_N(s,(i - (IData)(1U))) != VL_GETC_N(t,
                                                      (j 
                                                       - (IData)(1U))))) {
-        ++(vlSymsp->__Vcoverage[8726]);
+        ++(vlSymsp->__Vcoverage[8721]);
     }
     if ((VL_GETC_N(s,(i - (IData)(1U))) == VL_GETC_N(t,
                                                      (j 
                                                       - (IData)(1U))))) {
-        ++(vlSymsp->__Vcoverage[8727]);
+        ++(vlSymsp->__Vcoverage[8722]);
     }
-    ++(vlSymsp->__Vcoverage[8730]);
+    ++(vlSymsp->__Vcoverage[8725]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_minimum(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ a, IData/*31:0*/ b, IData/*31:0*/ c, IData/*31:0*/ &minimum__Vfuncrtn) {
@@ -311,25 +311,25 @@ void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11__Vclpkg::__VnoInFunc_minimum(
     min = a;
     if (VL_LTS_III(32, b, min)) {
         min = b;
-        ++(vlSymsp->__Vcoverage[8731]);
+        ++(vlSymsp->__Vcoverage[8726]);
     } else {
-        ++(vlSymsp->__Vcoverage[8732]);
+        ++(vlSymsp->__Vcoverage[8727]);
     }
     if (VL_LTS_III(32, c, min)) {
         min = c;
-        ++(vlSymsp->__Vcoverage[8733]);
+        ++(vlSymsp->__Vcoverage[8728]);
     } else {
-        ++(vlSymsp->__Vcoverage[8734]);
+        ++(vlSymsp->__Vcoverage[8729]);
     }
     minimum__Vfuncrtn = min;
-    ++(vlSymsp->__Vcoverage[8735]);
+    ++(vlSymsp->__Vcoverage[8730]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[8736]);
+    ++(vlSymsp->__Vcoverage[8731]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_spell_chkr__Tz11::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

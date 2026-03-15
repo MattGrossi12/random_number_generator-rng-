@@ -40,12 +40,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
             get_by_type__Vfuncrtn = VlNull{};
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[9356]);
+            ++(vlSymsp->__Vcoverage[9351]);
         }
         VL_NULL_CHECK(rp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 81)->__VnoInFunc_get_by_type(vlSymsp, scope, type_handle, rsrc_base);
         __VlefExpr_0 = VL_CAST_DYNAMIC(rsrc_base, rsrc);
         if (__VlefExpr_0) {
-            ++(vlSymsp->__Vcoverage[9360]);
+            ++(vlSymsp->__Vcoverage[9355]);
         } else {
             VL_SFORMAT_NX(64,msg,"Resource with specified type handle in scope %@ was not located",0,
                           -1,&(scope));
@@ -59,7 +59,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
                 = __Vtask_get_root__5__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__3__verbosity, (IData)(__Vfunc_uvm_report_enabled__3__severity), this->__Vfunc_uvm_report_enabled__3__id, __VlefCall_1__uvm_report_enabled);
-            ++(vlSymsp->__Vcoverage[437]);
+            ++(vlSymsp->__Vcoverage[432]);
             if ((0U != __VlefCall_1__uvm_report_enabled)) {
                 __Vtask_uvm_report_warning__7__report_enabled_checked = 1U;
                 this->__Vtask_uvm_report_warning__7__context_name = ""s;
@@ -76,10 +76,10 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
                 vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top 
                     = __Vtask_get_root__9__Vfuncout;
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 156)->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, this->__Vtask_uvm_report_warning__7__id, this->__Vtask_uvm_report_warning__7__message, __Vtask_uvm_report_warning__7__verbosity, this->__Vtask_uvm_report_warning__7__filename, __Vtask_uvm_report_warning__7__line, this->__Vtask_uvm_report_warning__7__context_name, (IData)(__Vtask_uvm_report_warning__7__report_enabled_checked));
-                ++(vlSymsp->__Vcoverage[441]);
-                ++(vlSymsp->__Vcoverage[9357]);
+                ++(vlSymsp->__Vcoverage[436]);
+                ++(vlSymsp->__Vcoverage[9352]);
             } else {
-                ++(vlSymsp->__Vcoverage[9358]);
+                ++(vlSymsp->__Vcoverage[9353]);
             }
             get_by_type__Vfuncrtn = VlNull{};
             goto __Vlabel0;
@@ -87,7 +87,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
         get_by_type__Vfuncrtn = rsrc;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[9361]);
+    ++(vlSymsp->__Vcoverage[9356]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_name(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, CData/*0:0*/ rpterr, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_resource_> &get_by_name__Vfuncrtn) {
@@ -125,11 +125,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
             get_by_name__Vfuncrtn = VlNull{};
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[9363]);
+            ++(vlSymsp->__Vcoverage[9358]);
         }
         __VlefExpr_1 = VL_CAST_DYNAMIC(rsrc_base, rsrc);
         if (__VlefExpr_1) {
-            ++(vlSymsp->__Vcoverage[9369]);
+            ++(vlSymsp->__Vcoverage[9364]);
         } else {
             if (rpterr) {
                 VL_SFORMAT_NX(64,msg,"Resource with name %@ in scope %@ has incorrect type",0,
@@ -144,7 +144,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
                 vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
                     = __Vtask_get_root__16__Vfuncout;
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__14__verbosity, (IData)(__Vfunc_uvm_report_enabled__14__severity), this->__Vfunc_uvm_report_enabled__14__id, __VlefCall_2__uvm_report_enabled);
-                ++(vlSymsp->__Vcoverage[437]);
+                ++(vlSymsp->__Vcoverage[432]);
                 if ((0U != __VlefCall_2__uvm_report_enabled)) {
                     __Vtask_uvm_report_warning__18__report_enabled_checked = 1U;
                     this->__Vtask_uvm_report_warning__18__context_name = ""s;
@@ -161,14 +161,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
                     vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top 
                         = __Vtask_get_root__20__Vfuncout;
                     VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 156)->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, this->__Vtask_uvm_report_warning__18__id, this->__Vtask_uvm_report_warning__18__message, __Vtask_uvm_report_warning__18__verbosity, this->__Vtask_uvm_report_warning__18__filename, __Vtask_uvm_report_warning__18__line, this->__Vtask_uvm_report_warning__18__context_name, (IData)(__Vtask_uvm_report_warning__18__report_enabled_checked));
-                    ++(vlSymsp->__Vcoverage[441]);
-                    ++(vlSymsp->__Vcoverage[9364]);
+                    ++(vlSymsp->__Vcoverage[436]);
+                    ++(vlSymsp->__Vcoverage[9359]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[9365]);
+                    ++(vlSymsp->__Vcoverage[9360]);
                 }
-                ++(vlSymsp->__Vcoverage[9366]);
+                ++(vlSymsp->__Vcoverage[9361]);
             } else {
-                ++(vlSymsp->__Vcoverage[9367]);
+                ++(vlSymsp->__Vcoverage[9362]);
             }
             get_by_name__Vfuncrtn = VlNull{};
             goto __Vlabel0;
@@ -176,7 +176,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_get_by_
         get_by_name__Vfuncrtn = rsrc;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[9370]);
+    ++(vlSymsp->__Vcoverage[9365]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_default(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_resource_> &set_default__Vfuncrtn) {
@@ -189,7 +189,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_def
     r = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_resource_, vlProcess, vlSymsp, name);
     VL_NULL_CHECK(rp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 136)->__VnoInFunc_set_scope(vlProcess, vlSymsp, r, scope);
     set_default__Vfuncrtn = r;
-    ++(vlSymsp->__Vcoverage[9371]);
+    ++(vlSymsp->__Vcoverage[9366]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_m_show_msg(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string id, std::string rtype, std::string action, std::string scope, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_resource_> rsrc) {
@@ -239,7 +239,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_m_show_
     vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
         = __Vtask_get_root__29__Vfuncout;
     VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__27__verbosity, (IData)(__Vfunc_uvm_report_enabled__27__severity), this->__Vfunc_uvm_report_enabled__27__id, __VlefCall_2__uvm_report_enabled);
-    ++(vlSymsp->__Vcoverage[437]);
+    ++(vlSymsp->__Vcoverage[432]);
     if ((0U != __VlefCall_2__uvm_report_enabled)) {
         __Vtask_uvm_report_info__31__report_enabled_checked = 1U;
         this->__Vtask_uvm_report_info__31__context_name = ""s;
@@ -256,12 +256,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_m_show_
         vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top 
             = __Vtask_get_root__33__Vfuncout;
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 137)->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, this->__Vtask_uvm_report_info__31__id, this->__Vtask_uvm_report_info__31__message, __Vtask_uvm_report_info__31__verbosity, this->__Vtask_uvm_report_info__31__filename, __Vtask_uvm_report_info__31__line, this->__Vtask_uvm_report_info__31__context_name, (IData)(__Vtask_uvm_report_info__31__report_enabled_checked));
-        ++(vlSymsp->__Vcoverage[440]);
-        ++(vlSymsp->__Vcoverage[9372]);
+        ++(vlSymsp->__Vcoverage[435]);
+        ++(vlSymsp->__Vcoverage[9367]);
     } else {
-        ++(vlSymsp->__Vcoverage[9373]);
+        ++(vlSymsp->__Vcoverage[9368]);
     }
-    ++(vlSymsp->__Vcoverage[9374]);
+    ++(vlSymsp->__Vcoverage[9369]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor) {
@@ -278,11 +278,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set(Vtb
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
     if (__VlefCall_0__is_tracing) {
         this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/SET"s, "Resource"s, "set"s, scope, name, accessor, rsrc);
-        ++(vlSymsp->__Vcoverage[9375]);
+        ++(vlSymsp->__Vcoverage[9370]);
     } else {
-        ++(vlSymsp->__Vcoverage[9376]);
+        ++(vlSymsp->__Vcoverage[9371]);
     }
-    ++(vlSymsp->__Vcoverage[9377]);
+    ++(vlSymsp->__Vcoverage[9372]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_anonymous(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor) {
@@ -299,11 +299,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_ano
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
     if (__VlefCall_0__is_tracing) {
         this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/SETANON"s, "Resource"s, "set"s, scope, ""s, accessor, rsrc);
-        ++(vlSymsp->__Vcoverage[9378]);
+        ++(vlSymsp->__Vcoverage[9373]);
     } else {
-        ++(vlSymsp->__Vcoverage[9379]);
+        ++(vlSymsp->__Vcoverage[9374]);
     }
-    ++(vlSymsp->__Vcoverage[9380]);
+    ++(vlSymsp->__Vcoverage[9375]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_override(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor) {
@@ -320,11 +320,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_ove
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
     if (__VlefCall_0__is_tracing) {
         this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/SETOVRD"s, "Resource"s, "set"s, scope, name, accessor, rsrc);
-        ++(vlSymsp->__Vcoverage[9381]);
+        ++(vlSymsp->__Vcoverage[9376]);
     } else {
-        ++(vlSymsp->__Vcoverage[9382]);
+        ++(vlSymsp->__Vcoverage[9377]);
     }
-    ++(vlSymsp->__Vcoverage[9383]);
+    ++(vlSymsp->__Vcoverage[9378]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_override_type(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor) {
@@ -341,11 +341,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_ove
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
     if (__VlefCall_0__is_tracing) {
         this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/SETOVRDTYP"s, "Resource"s, "set"s, scope, name, accessor, rsrc);
-        ++(vlSymsp->__Vcoverage[9384]);
+        ++(vlSymsp->__Vcoverage[9379]);
     } else {
-        ++(vlSymsp->__Vcoverage[9385]);
+        ++(vlSymsp->__Vcoverage[9380]);
     }
-    ++(vlSymsp->__Vcoverage[9386]);
+    ++(vlSymsp->__Vcoverage[9381]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_override_name(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor) {
@@ -362,11 +362,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_set_ove
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
     if (__VlefCall_0__is_tracing) {
         this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/SETOVRDNAM"s, "Resource"s, "set"s, scope, name, accessor, rsrc);
-        ++(vlSymsp->__Vcoverage[9387]);
+        ++(vlSymsp->__Vcoverage[9382]);
     } else {
-        ++(vlSymsp->__Vcoverage[9388]);
+        ++(vlSymsp->__Vcoverage[9383]);
     }
-    ++(vlSymsp->__Vcoverage[9389]);
+    ++(vlSymsp->__Vcoverage[9384]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_read_by_name(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, IData/*31:0*/ &val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor, CData/*0:0*/ &read_by_name__Vfuncrtn) {
@@ -381,21 +381,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_read_by
         vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
         if (__VlefCall_0__is_tracing) {
             this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/RDBYNAM"s, "Resource"s, "read"s, scope, name, accessor, rsrc);
-            ++(vlSymsp->__Vcoverage[9390]);
+            ++(vlSymsp->__Vcoverage[9385]);
         } else {
-            ++(vlSymsp->__Vcoverage[9391]);
+            ++(vlSymsp->__Vcoverage[9386]);
         }
         if ((VlNull{} == rsrc)) {
             read_by_name__Vfuncrtn = 0U;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[9393]);
+            ++(vlSymsp->__Vcoverage[9388]);
         }
         VL_NULL_CHECK(rsrc, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 287)->__VnoInFunc_read(vlProcess, vlSymsp, accessor, val);
         read_by_name__Vfuncrtn = 1U;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[9394]);
+    ++(vlSymsp->__Vcoverage[9389]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_read_by_type(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, IData/*31:0*/ &val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor, CData/*0:0*/ &read_by_type__Vfuncrtn) {
@@ -410,21 +410,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_read_by
         vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
         if (__VlefCall_0__is_tracing) {
             this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/RDBYTYP"s, "Resource"s, "read"s, scope, ""s, accessor, rsrc);
-            ++(vlSymsp->__Vcoverage[9395]);
+            ++(vlSymsp->__Vcoverage[9390]);
         } else {
-            ++(vlSymsp->__Vcoverage[9396]);
+            ++(vlSymsp->__Vcoverage[9391]);
         }
         if ((VlNull{} == rsrc)) {
             read_by_type__Vfuncrtn = 0U;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[9398]);
+            ++(vlSymsp->__Vcoverage[9393]);
         }
         VL_NULL_CHECK(rsrc, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 325)->__VnoInFunc_read(vlProcess, vlSymsp, accessor, val);
         read_by_type__Vfuncrtn = 1U;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[9399]);
+    ++(vlSymsp->__Vcoverage[9394]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_write_by_name(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, std::string name, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor, CData/*0:0*/ &write_by_name__Vfuncrtn) {
@@ -439,21 +439,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_write_b
         vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
         if (__VlefCall_0__is_tracing) {
             this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/WR"s, "Resource"s, "written"s, scope, name, accessor, rsrc);
-            ++(vlSymsp->__Vcoverage[9400]);
+            ++(vlSymsp->__Vcoverage[9395]);
         } else {
-            ++(vlSymsp->__Vcoverage[9401]);
+            ++(vlSymsp->__Vcoverage[9396]);
         }
         if ((VlNull{} == rsrc)) {
             write_by_name__Vfuncrtn = 0U;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[9403]);
+            ++(vlSymsp->__Vcoverage[9398]);
         }
         VL_NULL_CHECK(rsrc, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 344)->__VnoInFunc_write(vlSymsp, val, accessor);
         write_by_name__Vfuncrtn = 1U;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[9404]);
+    ++(vlSymsp->__Vcoverage[9399]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_write_by_type(Vtb_rng__Syms* __restrict vlSymsp, std::string scope, IData/*31:0*/ val, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> accessor, CData/*0:0*/ &write_by_type__Vfuncrtn) {
@@ -468,21 +468,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_write_b
         vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db_options__Vclpkg.__VnoInFunc_is_tracing(vlSymsp, __VlefCall_0__is_tracing);
         if (__VlefCall_0__is_tracing) {
             this->__VnoInFunc_m_show_msg(vlProcess, vlSymsp, "RSRCDB/WRTYP"s, "Resource"s, "written"s, scope, ""s, accessor, rsrc);
-            ++(vlSymsp->__Vcoverage[9405]);
+            ++(vlSymsp->__Vcoverage[9400]);
         } else {
-            ++(vlSymsp->__Vcoverage[9406]);
+            ++(vlSymsp->__Vcoverage[9401]);
         }
         if ((VlNull{} == rsrc)) {
             write_by_type__Vfuncrtn = 0U;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[9408]);
+            ++(vlSymsp->__Vcoverage[9403]);
         }
         VL_NULL_CHECK(rsrc, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 363)->__VnoInFunc_write(vlSymsp, val, accessor);
         write_by_type__Vfuncrtn = 1U;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[9409]);
+    ++(vlSymsp->__Vcoverage[9404]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_dump(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -492,14 +492,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22__Vclpkg::__VnoInFunc_dump(Vt
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_resource_pool> rp;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_pool__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, rp);
     VL_NULL_CHECK(rp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_db.svh", 377)->__VnoInFunc_dump(vlSymsp, 0U, VlNull{});
-    ++(vlSymsp->__Vcoverage[9410]);
+    ++(vlSymsp->__Vcoverage[9405]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[9354]);
+    ++(vlSymsp->__Vcoverage[9349]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_resource_db__Tz22::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

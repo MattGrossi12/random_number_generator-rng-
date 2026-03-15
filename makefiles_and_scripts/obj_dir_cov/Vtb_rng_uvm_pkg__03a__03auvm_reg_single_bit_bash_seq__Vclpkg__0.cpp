@@ -8,14 +8,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq__Vclpkg::__VnoInFunc_g
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi184__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[24554]);
+    ++(vlSymsp->__Vcoverage[24549]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_reg_single_bit_bash_seq"s;
-    ++(vlSymsp->__Vcoverage[24559]);
+    ++(vlSymsp->__Vcoverage[24554]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,7 +25,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_get_objec
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi184__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[24555]);
+    ++(vlSymsp->__Vcoverage[24550]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_create(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create__Vfuncrtn) {
@@ -34,20 +34,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_create(Vl
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq> tmp;
     if ((""s == name)) {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq, vlProcess, vlSymsp, "uvm_reg_single_bit_bash_seq"s);
-        ++(vlSymsp->__Vcoverage[24556]);
+        ++(vlSymsp->__Vcoverage[24551]);
     } else {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq, vlProcess, vlSymsp, name);
-        ++(vlSymsp->__Vcoverage[24557]);
+        ++(vlSymsp->__Vcoverage[24552]);
     }
     create__Vfuncrtn = tmp;
-    ++(vlSymsp->__Vcoverage[24558]);
+    ++(vlSymsp->__Vcoverage[24553]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_reg_single_bit_bash_seq"s;
-    ++(vlSymsp->__Vcoverage[24560]);
+    ++(vlSymsp->__Vcoverage[24555]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -56,7 +56,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::init(VlProcessRef vlP
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[24561]);
+    ++(vlSymsp->__Vcoverage[24556]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_body(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -113,13 +113,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
             this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0U, 2U, "uvm_reg_bit_bash_seq"s, __VlefCall_0__uvm_report_enabled);
             if ((0U != __VlefCall_0__uvm_report_enabled)) {
                 this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "uvm_reg_bit_bash_seq"s, "No register specified to run sequence on"s, 0U, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh"s, 0x00000052U, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[24562]);
+                ++(vlSymsp->__Vcoverage[24557]);
             } else {
-                ++(vlSymsp->__Vcoverage[24563]);
+                ++(vlSymsp->__Vcoverage[24558]);
             }
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[24565]);
+            ++(vlSymsp->__Vcoverage[24560]);
         }
         VL_NULL_CHECK(this->__PVT__rg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh", 87)->__VnoInFunc_get_full_name(vlProcess, vlSymsp, __VlefCall_1__get_full_name);
         vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_db__Tz30__Vclpkg.__VnoInFunc_get_by_name(vlProcess, vlSymsp, 
@@ -136,7 +136,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
         if (__VlefLogOr_5) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[24567]);
+            ++(vlSymsp->__Vcoverage[24562]);
         }
         VL_NULL_CHECK(this->__PVT__rg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh", 93)->__VnoInFunc_get_n_bytes(vlSymsp, __VlefCall_6__get_n_bytes);
         n_bits = VL_SHIFTL_III(32,32,32, __VlefCall_6__get_n_bytes, 3U);
@@ -168,14 +168,14 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
                       ("WO1"s == field_access)) || 
                      ("NOACCESS"s == field_access))) {
                     unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__unnamedblk4__DOT__dc = 1U;
-                    ++(vlSymsp->__Vcoverage[24568]);
+                    ++(vlSymsp->__Vcoverage[24563]);
                 }
                 while (VL_LTS_III(32, unnamedblk1__DOT__unnamedblk2__DOT__next_lsb, unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__unnamedblk4__DOT__lsb)) {
                     __Vincrement1 = unnamedblk1__DOT__unnamedblk2__DOT__next_lsb;
                     unnamedblk1__DOT__unnamedblk2__DOT__next_lsb 
                         = ((IData)(1U) + unnamedblk1__DOT__unnamedblk2__DOT__next_lsb);
                     mode[(0x0000003fU & __Vincrement1)] = "RO"s;
-                    ++(vlSymsp->__Vcoverage[24569]);
+                    ++(vlSymsp->__Vcoverage[24564]);
                 }
                 unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk1_1__DOT____Vrepeat0 
                     = unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__unnamedblk4__DOT__w;
@@ -194,18 +194,18 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
                     unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk1_1__DOT____Vrepeat0 
                         = (unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__unnamedblk4__DOT__unnamedblk1_1__DOT____Vrepeat0 
                            - (IData)(1U));
-                    ++(vlSymsp->__Vcoverage[24570]);
+                    ++(vlSymsp->__Vcoverage[24565]);
                 }
                 unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__k 
                     = ((IData)(1U) + unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk3__DOT__k);
-                ++(vlSymsp->__Vcoverage[24571]);
+                ++(vlSymsp->__Vcoverage[24566]);
             }
             while (VL_GTS_III(32, 0x00000040U, unnamedblk1__DOT__unnamedblk2__DOT__next_lsb)) {
                 __Vincrement2 = unnamedblk1__DOT__unnamedblk2__DOT__next_lsb;
                 unnamedblk1__DOT__unnamedblk2__DOT__next_lsb 
                     = ((IData)(1U) + unnamedblk1__DOT__unnamedblk2__DOT__next_lsb);
                 mode[(0x0000003fU & __Vincrement2)] = "RO"s;
-                ++(vlSymsp->__Vcoverage[24572]);
+                ++(vlSymsp->__Vcoverage[24567]);
             }
             this->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, 0x00000064U, 0U, "uvm_reg_bit_bash_seq"s, __VlefCall_8__uvm_report_enabled);
             if ((0U != __VlefCall_8__uvm_report_enabled)) {
@@ -216,9 +216,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
                                                                                 &(__VlefCall_9__get_full_name),
                                                                                 -1,
                                                                                 &(__VlefCall_10__get_full_name)) , 0x00000064U, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh"s, 0x00000087U, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[24573]);
+                ++(vlSymsp->__Vcoverage[24568]);
             } else {
-                ++(vlSymsp->__Vcoverage[24574]);
+                ++(vlSymsp->__Vcoverage[24569]);
             }
             unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk5__DOT__k = 0U;
             unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk5__DOT__k = 0U;
@@ -228,7 +228,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
                                                    & unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk5__DOT__k))))) {
                         goto __Vlabel1;
                     } else {
-                        ++(vlSymsp->__Vcoverage[24576]);
+                        ++(vlSymsp->__Vcoverage[24571]);
                     }
                     co_await this->__VnoInFunc_bash_kth_bit(vlProcess, vlSymsp, this->__PVT__rg, unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk5__DOT__k, 
                                                             VL_CVT_PACK_STR_NN(mode
@@ -239,14 +239,14 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_bo
                 }
                 unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk5__DOT__k 
                     = ((IData)(1U) + unnamedblk1__DOT__unnamedblk2__DOT__unnamedblk5__DOT__k);
-                ++(vlSymsp->__Vcoverage[24577]);
+                ++(vlSymsp->__Vcoverage[24572]);
             }
             unnamedblk1__DOT__j = ((IData)(1U) + unnamedblk1__DOT__j);
-            ++(vlSymsp->__Vcoverage[24578]);
+            ++(vlSymsp->__Vcoverage[24573]);
         }
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[24579]);
+    ++(vlSymsp->__Vcoverage[24574]);
     co_return;
 }
 
@@ -292,9 +292,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_ba
                                                                                 &(mode),
                                                                                 32,
                                                                                 k) , 0x0000012cU, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh"s, 0x0000009eU, ""s, 1U);
-        ++(vlSymsp->__Vcoverage[24580]);
+        ++(vlSymsp->__Vcoverage[24575]);
     } else {
-        ++(vlSymsp->__Vcoverage[24581]);
+        ++(vlSymsp->__Vcoverage[24576]);
     }
     unnamedblk1_2__DOT____Vrepeat1 = 2U;
     while (VL_LTS_III(32, 0U, unnamedblk1_2__DOT____Vrepeat1)) {
@@ -327,13 +327,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_ba
                                                                                 &(__VlefCall_2__get_full_name),
                                                                                 -1,
                                                                                 &(__VlefCall_3__get_full_name)) , 0U, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh"s, 0x000000aaU, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[24584]);
+                ++(vlSymsp->__Vcoverage[24579]);
             } else {
-                ++(vlSymsp->__Vcoverage[24585]);
+                ++(vlSymsp->__Vcoverage[24580]);
             }
-            ++(vlSymsp->__Vcoverage[24586]);
+            ++(vlSymsp->__Vcoverage[24581]);
         } else {
-            ++(vlSymsp->__Vcoverage[24587]);
+            ++(vlSymsp->__Vcoverage[24582]);
         }
         VL_NULL_CHECK(rg, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh", 173)->__VnoInFunc_get(vlProcess, vlSymsp, ""s, 0U, __VlefCall_4__get);
         exp = (__VlefCall_4__get & (~ dc_mask));
@@ -355,13 +355,13 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_ba
                                                                                 &(__VlefCall_6__get_full_name),
                                                                                 -1,
                                                                                 &(__VlefCall_7__get_full_name)) , 0U, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh"s, 0x000000b1U, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[24588]);
+                ++(vlSymsp->__Vcoverage[24583]);
             } else {
-                ++(vlSymsp->__Vcoverage[24589]);
+                ++(vlSymsp->__Vcoverage[24584]);
             }
-            ++(vlSymsp->__Vcoverage[24590]);
+            ++(vlSymsp->__Vcoverage[24585]);
         } else {
-            ++(vlSymsp->__Vcoverage[24591]);
+            ++(vlSymsp->__Vcoverage[24586]);
         }
         val = (val & (~ dc_mask));
         if ((val != exp)) {
@@ -381,25 +381,25 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reg_single_bit_bash_seq::__VnoInFunc_ba
                                                                                 val,
                                                                                 64,
                                                                                 exp) , 0U, "/home/matheus/tools/1800.2-2017-1.0/src/reg/sequences/uvm_reg_bit_bash_seq.svh"s, 0x000000b7U, ""s, 1U);
-                ++(vlSymsp->__Vcoverage[24592]);
+                ++(vlSymsp->__Vcoverage[24587]);
             } else {
-                ++(vlSymsp->__Vcoverage[24593]);
+                ++(vlSymsp->__Vcoverage[24588]);
             }
-            ++(vlSymsp->__Vcoverage[24594]);
+            ++(vlSymsp->__Vcoverage[24589]);
         } else {
-            ++(vlSymsp->__Vcoverage[24595]);
+            ++(vlSymsp->__Vcoverage[24590]);
         }
         unnamedblk1_2__DOT____Vrepeat1 = (unnamedblk1_2__DOT____Vrepeat1 
                                           - (IData)(1U));
-        ++(vlSymsp->__Vcoverage[24596]);
+        ++(vlSymsp->__Vcoverage[24591]);
     }
     if ((1U & (~ (IData)((val >> (0x0000003fU & k)))))) {
-        ++(vlSymsp->__Vcoverage[24582]);
+        ++(vlSymsp->__Vcoverage[24577]);
     }
     if ((1U & (IData)((val >> (0x0000003fU & k))))) {
-        ++(vlSymsp->__Vcoverage[24583]);
+        ++(vlSymsp->__Vcoverage[24578]);
     }
-    ++(vlSymsp->__Vcoverage[24597]);
+    ++(vlSymsp->__Vcoverage[24592]);
     co_return;
 }
 

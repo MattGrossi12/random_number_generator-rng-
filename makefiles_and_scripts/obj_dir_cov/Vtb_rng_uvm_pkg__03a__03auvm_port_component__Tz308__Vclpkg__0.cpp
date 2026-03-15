@@ -12,12 +12,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::init(VlProcessRef vlPro
     /*super.new*/;
     if ((VlNull{} == port)) {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "Bad usage"s, "Null handle to port"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[19711]);
+        ++(vlSymsp->__Vcoverage[19706]);
     } else {
-        ++(vlSymsp->__Vcoverage[19712]);
+        ++(vlSymsp->__Vcoverage[19707]);
     }
     this->__PVT__m_port = port;
-    ++(vlSymsp->__Vcoverage[19713]);
+    ++(vlSymsp->__Vcoverage[19708]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
@@ -29,26 +29,26 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_get_type_na
             get_type_name__Vfuncrtn = "uvm_port_component"s;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[19715]);
+            ++(vlSymsp->__Vcoverage[19710]);
         }
         VL_NULL_CHECK(this->__PVT__m_port, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_port_base.svh", 130)->__VnoInFunc_get_type_name(vlSymsp, get_type_name__Vfuncrtn);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[19716]);
+    ++(vlSymsp->__Vcoverage[19711]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_resolve_bindings(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                      Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_resolve_bindings\n"); );
     // Body
     VL_NULL_CHECK(this->__PVT__m_port, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_port_base.svh", 134)->__VnoInFunc_resolve_bindings(vlProcess, vlSymsp);
-    ++(vlSymsp->__Vcoverage[19717]);
+    ++(vlSymsp->__Vcoverage[19712]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_get_port(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_port_base__Tz305> &get_port__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                      Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_get_port\n"); );
     // Body
     get_port__Vfuncrtn = this->__PVT__m_port;
-    ++(vlSymsp->__Vcoverage[19718]);
+    ++(vlSymsp->__Vcoverage[19713]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_get_connected_to(Vtb_rng__Syms* __restrict vlSymsp, VlAssocArray<std::string, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_port_component_base>> &list) {
@@ -76,13 +76,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_get_connect
             unnamedblk1__DOT__name__Vfirst = 0U;
             VL_NULL_CHECK(list1.at(unnamedblk1__DOT__name), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_port_base.svh", 156)->__VnoInFunc_get_comp(vlSymsp, __VlefCall_2__get_comp);
             list.at(unnamedblk1__DOT__name) = __VlefCall_2__get_comp;
-            ++(vlSymsp->__Vcoverage[19719]);
+            ++(vlSymsp->__Vcoverage[19714]);
         }
-        ++(vlSymsp->__Vcoverage[19720]);
+        ++(vlSymsp->__Vcoverage[19715]);
     } else {
-        ++(vlSymsp->__Vcoverage[19721]);
+        ++(vlSymsp->__Vcoverage[19716]);
     }
-    ++(vlSymsp->__Vcoverage[19722]);
+    ++(vlSymsp->__Vcoverage[19717]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_is_port(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_port__Vfuncrtn) {
@@ -90,7 +90,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_is_port(Vtb
     // Body
     is_port__Vfuncrtn = 0U;
     VL_NULL_CHECK(this->__PVT__m_port, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_port_base.svh", 161)->__VnoInFunc_is_port(vlSymsp, is_port__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[19723]);
+    ++(vlSymsp->__Vcoverage[19718]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_is_export(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_export__Vfuncrtn) {
@@ -98,7 +98,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_is_export(V
     // Body
     is_export__Vfuncrtn = 0U;
     VL_NULL_CHECK(this->__PVT__m_port, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_port_base.svh", 165)->__VnoInFunc_is_export(vlSymsp, is_export__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[19724]);
+    ++(vlSymsp->__Vcoverage[19719]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_is_imp(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_imp__Vfuncrtn) {
@@ -106,7 +106,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_is_imp(Vtb_
     // Body
     is_imp__Vfuncrtn = 0U;
     VL_NULL_CHECK(this->__PVT__m_port, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_port_base.svh", 169)->__VnoInFunc_is_imp(vlSymsp, is_imp__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[19725]);
+    ++(vlSymsp->__Vcoverage[19720]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_port_component__Tz308::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

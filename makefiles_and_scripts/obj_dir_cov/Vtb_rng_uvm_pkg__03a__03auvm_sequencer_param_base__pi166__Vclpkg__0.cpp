@@ -15,7 +15,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_c
         VL_NULL_CHECK(this->__PVT__m_req_fifo, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 90)->__VnoInFunc_try_peek(vlSymsp, __Vtask_try_peek__0__t, __VlefCall_0__try_peek);
         t = __Vtask_try_peek__0__t;
         if (__VlefCall_0__try_peek) {
-            ++(vlSymsp->__Vcoverage[20236]);
+            ++(vlSymsp->__Vcoverage[20231]);
         } else {
             get_current_item__Vfuncrtn = VlNull{};
             goto __Vlabel0;
@@ -23,7 +23,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_c
         get_current_item__Vfuncrtn = t;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[20237]);
+    ++(vlSymsp->__Vcoverage[20232]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_last_req(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ n, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> &last_req__Vfuncrtn) {
@@ -40,18 +40,18 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_last_
             last_req__Vfuncrtn = VlNull{};
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[20239]);
+            ++(vlSymsp->__Vcoverage[20234]);
         }
         if ((n == this->__PVT__m_last_req_buffer.size())) {
             last_req__Vfuncrtn = VlNull{};
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[20241]);
+            ++(vlSymsp->__Vcoverage[20236]);
         }
         last_req__Vfuncrtn = this->__PVT__m_last_req_buffer.at(n);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[20242]);
+    ++(vlSymsp->__Vcoverage[20237]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_last_rsp(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ n, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> &last_rsp__Vfuncrtn) {
@@ -68,18 +68,18 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_last_
             last_rsp__Vfuncrtn = VlNull{};
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[20244]);
+            ++(vlSymsp->__Vcoverage[20239]);
         }
         if ((n == this->__PVT__m_last_rsp_buffer.size())) {
             last_rsp__Vfuncrtn = VlNull{};
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[20246]);
+            ++(vlSymsp->__Vcoverage[20241]);
         }
         last_rsp__Vfuncrtn = this->__PVT__m_last_rsp_buffer.at(n);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[20247]);
+    ++(vlSymsp->__Vcoverage[20242]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
@@ -88,11 +88,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::init(VlProcessRef
     // Body
     _ctor_var_reset(vlSymsp);
     this->__PVT__m_num_last_reqs = 1U;
-    ++(vlSymsp->__Vcoverage[20232]);
+    ++(vlSymsp->__Vcoverage[20227]);
     this->__PVT__num_last_items = 1U;
-    ++(vlSymsp->__Vcoverage[20233]);
+    ++(vlSymsp->__Vcoverage[20228]);
     this->__PVT__m_num_last_rsps = 1U;
-    ++(vlSymsp->__Vcoverage[20234]);
+    ++(vlSymsp->__Vcoverage[20229]);
     /*super.new*/;
     this->__PVT__rsp_export = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_analysis_export__Tz229, vlProcess, vlSymsp, "rsp_export"s, 
                                      VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166>{this});
@@ -102,7 +102,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::init(VlProcessRef
     this->__PVT__m_req_fifo = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo__Tz229, vlProcess, vlSymsp, "req_fifo"s, 
                                      VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166>{this}, 1U);
     VL_NULL_CHECK(this->__PVT__m_req_fifo, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 239)->__PVT__print_enabled = 0U;
-    ++(vlSymsp->__Vcoverage[20248]);
+    ++(vlSymsp->__Vcoverage[20243]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_do_print(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer> printer) {
@@ -113,7 +113,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_do_pr
                                                                                 VL_EXTENDS_QI(64,32, this->__PVT__m_num_last_reqs), 0x00000020U, 0x02000000U, 0x2eU, ""s);
     VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 249)->__VnoInFunc_print_field_int(vlProcess, vlSymsp, "num_last_rsps"s, 
                                                                                 VL_EXTENDS_QI(64,32, this->__PVT__m_num_last_rsps), 0x00000020U, 0x02000000U, 0x2eU, ""s);
-    ++(vlSymsp->__Vcoverage[20249]);
+    ++(vlSymsp->__Vcoverage[20244]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_connect_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -122,7 +122,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_conne
     Vtb_rng_uvm_pkg__03a__03auvm_component::__VnoInFunc_connect_phase(vlProcess, vlSymsp, phase);
     VL_NULL_CHECK(this->__PVT__rsp_export, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 258)->__VnoInFunc_connect(vlProcess, vlSymsp, VL_NULL_CHECK(this->__PVT__sqr_rsp_analysis_fifo, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 258)
                                                                                 ->__PVT__analysis_export);
-    ++(vlSymsp->__Vcoverage[20250]);
+    ++(vlSymsp->__Vcoverage[20245]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_build_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -131,7 +131,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_build
     Vtb_rng_uvm_pkg__03a__03auvm_component::__VnoInFunc_build_phase(vlProcess, vlSymsp, phase);
     VL_NULL_CHECK(this->__PVT__sqr_rsp_analysis_fifo, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 267)->__PVT__sequencer_ptr 
         = VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166>{this};
-    ++(vlSymsp->__Vcoverage[20251]);
+    ++(vlSymsp->__Vcoverage[20246]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_send_request(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequence_base> sequence_ptr, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequence_item> t, CData/*0:0*/ rerandomize) {
@@ -148,16 +148,16 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_send_
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> param_t;
     if ((VlNull{} == sequence_ptr)) {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SNDREQ"s, "Send request sequence_ptr is null"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[20252]);
+        ++(vlSymsp->__Vcoverage[20247]);
     } else {
-        ++(vlSymsp->__Vcoverage[20253]);
+        ++(vlSymsp->__Vcoverage[20248]);
     }
     if (VL_GTS_III(32, 1U, VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 283)
                    ->__PVT__m_wait_for_grant_semaphore)) {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SNDREQ"s, "Send request called without wait_for_grant"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[20254]);
+        ++(vlSymsp->__Vcoverage[20249]);
     } else {
-        ++(vlSymsp->__Vcoverage[20255]);
+        ++(vlSymsp->__Vcoverage[20250]);
     }
     VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 286)->__PVT__m_wait_for_grant_semaphore 
         = (VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 286)
@@ -172,14 +172,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_send_
                 __VlefCond_2 = 0U;
             }
             if ((0U != __VlefCond_2)) {
-                ++(vlSymsp->__Vcoverage[20257]);
+                ++(vlSymsp->__Vcoverage[20252]);
             } else {
                 this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "SQRSNDREQ"s, "Failed to rerandomize sequence item in send_request"s, 0x000000c8U, ""s, 0U, ""s, 0U);
-                ++(vlSymsp->__Vcoverage[20256]);
+                ++(vlSymsp->__Vcoverage[20251]);
             }
-            ++(vlSymsp->__Vcoverage[20258]);
+            ++(vlSymsp->__Vcoverage[20253]);
         } else {
-            ++(vlSymsp->__Vcoverage[20259]);
+            ++(vlSymsp->__Vcoverage[20254]);
         }
         VL_NULL_CHECK(param_t, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 294)->__VnoInFunc_get_transaction_id(vlSymsp, __VlefCall_3__get_transaction_id);
         if ((0xffffffffU == __VlefCall_3__get_transaction_id)) {
@@ -189,15 +189,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_send_
                 = ((IData)(1U) + VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 295)
                    ->__PVT__m_next_transaction_id);
             VL_NULL_CHECK(param_t, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 295)->__VnoInFunc_set_transaction_id(vlSymsp, __Vincrement1);
-            ++(vlSymsp->__Vcoverage[20260]);
+            ++(vlSymsp->__Vcoverage[20255]);
         } else {
-            ++(vlSymsp->__Vcoverage[20261]);
+            ++(vlSymsp->__Vcoverage[20256]);
         }
         this->__VnoInFunc_m_last_req_push_front(vlSymsp, param_t);
-        ++(vlSymsp->__Vcoverage[20262]);
+        ++(vlSymsp->__Vcoverage[20257]);
     } else {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SQRSNDREQCAST"s, "send_request failed to cast sequence item"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[20263]);
+        ++(vlSymsp->__Vcoverage[20258]);
     }
     VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 302)->__VnoInFunc_m_get_sqr_sequence_id(vlSymsp, Vtb_rng_uvm_pkg__03a__03auvm_sequencer_base::__PVT__m_sequencer_id, 1U, __VlefCall_4__m_get_sqr_sequence_id);
     VL_NULL_CHECK(param_t, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 302)->__VnoInFunc_set_sequence_id(vlSymsp, __VlefCall_4__m_get_sqr_sequence_id);
@@ -205,14 +205,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_send_
                                                                                 VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166>{this});
     VL_NULL_CHECK(this->__PVT__m_req_fifo, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 304)->__VnoInFunc_try_put(vlProcess, vlSymsp, param_t, __VlefCall_5__try_put);
     if (__VlefCall_5__try_put) {
-        ++(vlSymsp->__Vcoverage[20265]);
+        ++(vlSymsp->__Vcoverage[20260]);
     } else {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SQRSNDREQGNI"s, "Concurrent calls to get_next_item() not supported. Consider using a semaphore to ensure that concurrent processes take turns in the driver"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[20264]);
+        ++(vlSymsp->__Vcoverage[20259]);
     }
     this->__PVT__m_num_reqs_sent = ((IData)(1U) + this->__PVT__m_num_reqs_sent);
     this->__VnoInFunc_grant_queued_locks(vlProcess, vlSymsp);
-    ++(vlSymsp->__Vcoverage[20266]);
+    ++(vlSymsp->__Vcoverage[20261]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_put_response(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> t) {
@@ -226,9 +226,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_put_r
     {
         if ((VlNull{} == t)) {
             this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SQRPUT"s, "Driver put a null response"s, 0U, ""s, 0U, ""s, 0U);
-            ++(vlSymsp->__Vcoverage[20267]);
+            ++(vlSymsp->__Vcoverage[20262]);
         } else {
-            ++(vlSymsp->__Vcoverage[20268]);
+            ++(vlSymsp->__Vcoverage[20263]);
         }
         this->__VnoInFunc_m_last_rsp_push_front(vlSymsp, t);
         this->__PVT__m_num_rsps_received = ((IData)(1U) 
@@ -238,7 +238,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_put_r
             this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SQRPUT"s, "Driver put a response with null sequence_id"s, 0U, ""s, 0U, ""s, 0U);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[20270]);
+            ++(vlSymsp->__Vcoverage[20265]);
         }
         VL_NULL_CHECK(t, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 335)->__VnoInFunc_get_sequence_id(vlSymsp, __VlefCall_1__get_sequence_id);
         this->__VnoInFunc_m_find_sequence(vlSymsp, __VlefCall_1__get_sequence_id, sequence_ptr);
@@ -248,20 +248,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_put_r
                 VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 340)->__VnoInFunc_response_handler(vlSymsp, t);
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[20272]);
+                ++(vlSymsp->__Vcoverage[20267]);
             }
             VL_NULL_CHECK(sequence_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 344)->__VnoInFunc_put_response(vlProcess, vlSymsp, t);
-            ++(vlSymsp->__Vcoverage[20273]);
+            ++(vlSymsp->__Vcoverage[20268]);
         } else {
             VL_NULL_CHECK(t, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_param_base.svh", 349)->__VnoInFunc_get_sequence_id(vlSymsp, __VlefCall_3__get_sequence_id);
             this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "Sequencer"s, VL_SFORMATF_N_NX("Dropping response for sequence %0d, sequence not found.  Probable cause: sequence exited or has been killed",0,
                                                                                 32,
                                                                                 __VlefCall_3__get_sequence_id) , 0x000000c8U, ""s, 0U, ""s, 0U);
-            ++(vlSymsp->__Vcoverage[20274]);
+            ++(vlSymsp->__Vcoverage[20269]);
         }
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[20275]);
+    ++(vlSymsp->__Vcoverage[20270]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_analysis_write(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequence_item> t) {
@@ -271,27 +271,27 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_analy
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> response;
     __VlefExpr_0 = VL_CAST_DYNAMIC(t, response);
     if (__VlefExpr_0) {
-        ++(vlSymsp->__Vcoverage[20277]);
+        ++(vlSymsp->__Vcoverage[20272]);
     } else {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "ANALWRT"s, "Failure to cast analysis port write item"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[20276]);
+        ++(vlSymsp->__Vcoverage[20271]);
     }
     this->__VnoInFunc_put_response(vlProcess, vlSymsp, response);
-    ++(vlSymsp->__Vcoverage[20278]);
+    ++(vlSymsp->__Vcoverage[20273]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_reqs_sent(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_num_reqs_sent__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_reqs_sent\n"); );
     // Body
     get_num_reqs_sent__Vfuncrtn = this->__PVT__m_num_reqs_sent;
-    ++(vlSymsp->__Vcoverage[20279]);
+    ++(vlSymsp->__Vcoverage[20274]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_rsps_received(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_num_rsps_received__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_rsps_received\n"); );
     // Body
     get_num_rsps_received__Vfuncrtn = this->__PVT__m_num_rsps_received;
-    ++(vlSymsp->__Vcoverage[20280]);
+    ++(vlSymsp->__Vcoverage[20275]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_set_num_last_reqs(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ max) {
@@ -301,26 +301,26 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_set_n
     if ((0x00000400U < max)) {
         this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "HSTOB"s, "Invalid last size; 1024 is the maximum and will be used"s, 0x000000c8U, ""s, 0U, ""s, 0U);
         max = 0x00000400U;
-        ++(vlSymsp->__Vcoverage[20281]);
+        ++(vlSymsp->__Vcoverage[20276]);
     } else {
-        ++(vlSymsp->__Vcoverage[20282]);
+        ++(vlSymsp->__Vcoverage[20277]);
     }
     while (((0U != this->__PVT__m_last_req_buffer.size()) 
             & (this->__PVT__m_last_req_buffer.size() 
                > max))) {
         std::ignore = this->__PVT__m_last_req_buffer.pop_back();
-        ++(vlSymsp->__Vcoverage[20283]);
+        ++(vlSymsp->__Vcoverage[20278]);
     }
     this->__PVT__m_num_last_reqs = max;
     this->__PVT__num_last_items = max;
-    ++(vlSymsp->__Vcoverage[20284]);
+    ++(vlSymsp->__Vcoverage[20279]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_last_reqs(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_num_last_reqs__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_last_reqs\n"); );
     // Body
     get_num_last_reqs__Vfuncrtn = this->__PVT__m_num_last_reqs;
-    ++(vlSymsp->__Vcoverage[20285]);
+    ++(vlSymsp->__Vcoverage[20280]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_m_last_req_push_front(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> item) {
@@ -328,21 +328,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_m_las
     // Body
     {
         if ((0U != this->__PVT__m_num_last_reqs)) {
-            ++(vlSymsp->__Vcoverage[20287]);
+            ++(vlSymsp->__Vcoverage[20282]);
         } else {
             goto __Vlabel0;
         }
         if ((this->__PVT__m_last_req_buffer.size() 
              == this->__PVT__m_num_last_reqs)) {
             std::ignore = this->__PVT__m_last_req_buffer.pop_back();
-            ++(vlSymsp->__Vcoverage[20288]);
+            ++(vlSymsp->__Vcoverage[20283]);
         } else {
-            ++(vlSymsp->__Vcoverage[20289]);
+            ++(vlSymsp->__Vcoverage[20284]);
         }
         this->__PVT__m_last_req_buffer.push_front(item);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[20290]);
+    ++(vlSymsp->__Vcoverage[20285]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_set_num_last_rsps(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ max) {
@@ -352,25 +352,25 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_set_n
     if ((0x00000400U < max)) {
         this->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, "HSTOB"s, "Invalid last size; 1024 is the maximum and will be used"s, 0x000000c8U, ""s, 0U, ""s, 0U);
         max = 0x00000400U;
-        ++(vlSymsp->__Vcoverage[20291]);
+        ++(vlSymsp->__Vcoverage[20286]);
     } else {
-        ++(vlSymsp->__Vcoverage[20292]);
+        ++(vlSymsp->__Vcoverage[20287]);
     }
     while (((0U != this->__PVT__m_last_rsp_buffer.size()) 
             & (this->__PVT__m_last_rsp_buffer.size() 
                > max))) {
         std::ignore = this->__PVT__m_last_rsp_buffer.pop_back();
-        ++(vlSymsp->__Vcoverage[20293]);
+        ++(vlSymsp->__Vcoverage[20288]);
     }
     this->__PVT__m_num_last_rsps = max;
-    ++(vlSymsp->__Vcoverage[20294]);
+    ++(vlSymsp->__Vcoverage[20289]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_last_rsps(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_num_last_rsps__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_get_num_last_rsps\n"); );
     // Body
     get_num_last_rsps__Vfuncrtn = this->__PVT__m_num_last_rsps;
-    ++(vlSymsp->__Vcoverage[20295]);
+    ++(vlSymsp->__Vcoverage[20290]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_m_last_rsp_push_front(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> item) {
@@ -378,21 +378,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_m_las
     // Body
     {
         if ((0U != this->__PVT__m_num_last_rsps)) {
-            ++(vlSymsp->__Vcoverage[20297]);
+            ++(vlSymsp->__Vcoverage[20292]);
         } else {
             goto __Vlabel0;
         }
         if ((this->__PVT__m_last_rsp_buffer.size() 
              == this->__PVT__m_num_last_rsps)) {
             std::ignore = this->__PVT__m_last_rsp_buffer.pop_back();
-            ++(vlSymsp->__Vcoverage[20298]);
+            ++(vlSymsp->__Vcoverage[20293]);
         } else {
-            ++(vlSymsp->__Vcoverage[20299]);
+            ++(vlSymsp->__Vcoverage[20294]);
         }
         this->__PVT__m_last_rsp_buffer.push_front(item);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[20300]);
+    ++(vlSymsp->__Vcoverage[20295]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_param_base__pi166::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

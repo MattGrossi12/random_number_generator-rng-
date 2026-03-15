@@ -17,15 +17,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::init(VlProcessRef vlProcess, Vtb_rn
     vlSymsp->TOP__uvm_pkg__03a__03auvm_coreservice_t__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, cs);
     if ((VlNull{} != cntxt)) {
         this->__PVT__m_cntxt = cntxt;
-        ++(vlSymsp->__Vcoverage[17698]);
+        ++(vlSymsp->__Vcoverage[17693]);
     } else {
         VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 91)->__VnoInFunc_get_root(vlProcess, vlSymsp, __Vtask_get_root__2__Vfuncout);
         this->__PVT__m_cntxt = __Vtask_get_root__2__Vfuncout;
-        ++(vlSymsp->__Vcoverage[17699]);
+        ++(vlSymsp->__Vcoverage[17694]);
     }
     this->__PVT__m_cb = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback, vlProcess, vlSymsp, 
                                VL_CVT_PACK_STR_NN(VL_CONCATN_NNN(name, "_cb"s)), this->__PVT__m_cntxt);
-    ++(vlSymsp->__Vcoverage[17700]);
+    ++(vlSymsp->__Vcoverage[17695]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_set_mode(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ mode, IData/*31:0*/ &set_mode__Vfuncrtn) {
@@ -34,23 +34,23 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_set_mode(Vtb_rng__Syms*
     set_mode__Vfuncrtn = this->__PVT__m_mode;
     if ((((2U == mode) | (1U == mode)) | (0U == mode))) {
         this->__PVT__m_mode = mode;
-        ++(vlSymsp->__Vcoverage[17701]);
+        ++(vlSymsp->__Vcoverage[17696]);
     } else {
-        ++(vlSymsp->__Vcoverage[17702]);
+        ++(vlSymsp->__Vcoverage[17697]);
     }
     if ((0U == mode)) {
-        ++(vlSymsp->__Vcoverage[17703]);
+        ++(vlSymsp->__Vcoverage[17698]);
     }
     if ((1U == mode)) {
-        ++(vlSymsp->__Vcoverage[17704]);
+        ++(vlSymsp->__Vcoverage[17699]);
     }
     if ((2U == mode)) {
-        ++(vlSymsp->__Vcoverage[17705]);
+        ++(vlSymsp->__Vcoverage[17700]);
     }
     if ((((2U != mode) & (1U != mode)) & (0U != mode))) {
-        ++(vlSymsp->__Vcoverage[17706]);
+        ++(vlSymsp->__Vcoverage[17701]);
     }
-    ++(vlSymsp->__Vcoverage[17707]);
+    ++(vlSymsp->__Vcoverage[17702]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_set_heartbeat(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_event_> e, VlQueue<VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component>> &comps) {
@@ -65,30 +65,30 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_set_heartbeat(Vtb_rng__
             c = comps.at(unnamedblk1__DOT__i);
             if (VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 129)
                 ->__PVT__cnt.exists(c)) {
-                ++(vlSymsp->__Vcoverage[17709]);
+                ++(vlSymsp->__Vcoverage[17704]);
             } else {
                 VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 130)->__PVT__cnt.at(c) = 0U;
-                ++(vlSymsp->__Vcoverage[17708]);
+                ++(vlSymsp->__Vcoverage[17703]);
             }
             if (VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 131)
                 ->__PVT__last_trigger.exists(c)) {
-                ++(vlSymsp->__Vcoverage[17711]);
+                ++(vlSymsp->__Vcoverage[17706]);
             } else {
                 VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 132)->__PVT__last_trigger.at(c) = 0ULL;
-                ++(vlSymsp->__Vcoverage[17710]);
+                ++(vlSymsp->__Vcoverage[17705]);
             }
             unnamedblk1__DOT__i = ((IData)(1U) + unnamedblk1__DOT__i);
-            ++(vlSymsp->__Vcoverage[17712]);
+            ++(vlSymsp->__Vcoverage[17707]);
         }
         if (((VlNull{} == e) & (VlNull{} == this->__PVT__m_event))) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17714]);
+            ++(vlSymsp->__Vcoverage[17709]);
         }
         this->__VnoInFunc_start(vlSymsp, e);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[17715]);
+    ++(vlSymsp->__Vcoverage[17710]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_add(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp) {
@@ -101,13 +101,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_add(Vtb_rng__Syms* __re
             ->__PVT__cnt.exists(c)) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17717]);
+            ++(vlSymsp->__Vcoverage[17712]);
         }
         VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 150)->__PVT__cnt.at(c) = 0U;
         VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 151)->__PVT__last_trigger.at(c) = 0ULL;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[17718]);
+    ++(vlSymsp->__Vcoverage[17713]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_remove(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp) {
@@ -118,18 +118,18 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_remove(Vtb_rng__Syms* _
     if (VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 163)
         ->__PVT__cnt.exists(c)) {
         VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 163)->__PVT__cnt.erase(c);
-        ++(vlSymsp->__Vcoverage[17719]);
+        ++(vlSymsp->__Vcoverage[17714]);
     } else {
-        ++(vlSymsp->__Vcoverage[17720]);
+        ++(vlSymsp->__Vcoverage[17715]);
     }
     if (VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 164)
         ->__PVT__last_trigger.exists(c)) {
         VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 164)->__PVT__last_trigger.erase(c);
-        ++(vlSymsp->__Vcoverage[17721]);
+        ++(vlSymsp->__Vcoverage[17716]);
     } else {
-        ++(vlSymsp->__Vcoverage[17722]);
+        ++(vlSymsp->__Vcoverage[17717]);
     }
-    ++(vlSymsp->__Vcoverage[17723]);
+    ++(vlSymsp->__Vcoverage[17718]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_start(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_event_> e) {
@@ -150,7 +150,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_start(Vtb_rng__Syms* __
                                                                                 VL_CONCATN_NNN("start() was called for: "s, __VlefCall_0__get_name), " with a null trigger and no currently set trigger"s)), 0U, ""s, 0U, ""s, 0U);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17725]);
+            ++(vlSymsp->__Vcoverage[17720]);
         }
         if ((((VlNull{} != this->__PVT__m_event) & 
               (e != this->__PVT__m_event)) & (IData)(this->__PVT__m_started))) {
@@ -167,19 +167,19 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_start(Vtb_rng__Syms* __
                                                                                 VL_CONCATN_NNN("start() was called for: "s, __VlefCall_1__get_name), " with trigger "s), __VlefCall_2__get_name), " which is different "s), "from the original trigger "s), __VlefCall_3__get_name)), 0U, ""s, 0U, ""s, 0U);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17727]);
+            ++(vlSymsp->__Vcoverage[17722]);
         }
         if ((VlNull{} != e)) {
             this->__PVT__m_event = e;
-            ++(vlSymsp->__Vcoverage[17728]);
+            ++(vlSymsp->__Vcoverage[17723]);
         } else {
-            ++(vlSymsp->__Vcoverage[17729]);
+            ++(vlSymsp->__Vcoverage[17724]);
         }
         this->__VnoInFunc_m_enable_cb(vlSymsp);
         this->__VnoInFunc_m_start_hb_process(vlSymsp);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[17730]);
+    ++(vlSymsp->__Vcoverage[17725]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_stop(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -188,7 +188,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_stop(Vtb_rng__Syms* __r
     this->__PVT__m_started = 0U;
     vlSymsp->fireEvent(this->__PVT__m_stop_event);
     this->__VnoInFunc_m_disable_cb(vlSymsp);
-    ++(vlSymsp->__Vcoverage[17731]);
+    ++(vlSymsp->__Vcoverage[17726]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_start_hb_process(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -198,13 +198,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_start_hb_process(Vtb_
         if (this->__PVT__m_started) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17733]);
+            ++(vlSymsp->__Vcoverage[17728]);
         }
         this->__PVT__m_started = 1U;
         this->__VnoInFunc_m_start_hb_process____Vfork_1__0(std::make_shared<VlProcess>(), vlSymsp);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[17734]);
+    ++(vlSymsp->__Vcoverage[17729]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_start_hb_process____Vfork_1__0(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -231,24 +231,24 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_enable_cb(Vtb_rng__Sy
         if ((VlNull{} == this->__PVT__m_objection)) {
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[17736]);
+            ++(vlSymsp->__Vcoverage[17731]);
         }
         if (this->__PVT__m_added) {
-            ++(vlSymsp->__Vcoverage[17738]);
+            ++(vlSymsp->__Vcoverage[17733]);
         } else {
             vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks__Tz15_TBz193__Vclpkg.__VnoInFunc_add(vlSymsp, this->__PVT__m_objection, this->__PVT__m_cb, 0U);
-            ++(vlSymsp->__Vcoverage[17737]);
+            ++(vlSymsp->__Vcoverage[17732]);
         }
         this->__PVT__m_added = 1U;
         __Vlabel0: ;
     }
     if ((1U & (~ (IData)(this->__PVT__m_added)))) {
-        ++(vlSymsp->__Vcoverage[17739]);
+        ++(vlSymsp->__Vcoverage[17734]);
     }
     if (this->__PVT__m_added) {
-        ++(vlSymsp->__Vcoverage[17740]);
+        ++(vlSymsp->__Vcoverage[17735]);
     }
-    ++(vlSymsp->__Vcoverage[17741]);
+    ++(vlSymsp->__Vcoverage[17736]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_disable_cb(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -258,7 +258,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_disable_cb(Vtb_rng__S
     __Vtask_callback_mode__17__Vfuncout = 0;
     // Body
     VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 226)->__VnoInFunc_callback_mode(vlSymsp, 0U, __Vtask_callback_mode__17__Vfuncout);
-    ++(vlSymsp->__Vcoverage[17742]);
+    ++(vlSymsp->__Vcoverage[17737]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -276,7 +276,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process(VlP
     co_await __Vfork_2__sync.join(vlProcess, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 
                                   233);
     vlProcess->disableFork();
-    ++(vlSymsp->__Vcoverage[17771]);
+    ++(vlSymsp->__Vcoverage[17766]);
     co_return;
 }
 
@@ -399,7 +399,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                ->__PVT__cnt.at(VL_NULL_CHECK(__Vtask___VforkTask_0__19____VDynScope_m_hb_process_1, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 246)
                                                ->__PVT__obj));
                         if (__Vtask___VforkTask_0__19____VlefExpr_2) {
-                            ++(vlSymsp->__Vcoverage[17744]);
+                            ++(vlSymsp->__Vcoverage[17739]);
                         } else {
                             VL_NULL_CHECK(this->__PVT__m_objection, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 248)->__VnoInFunc_get_name(vlSymsp, this->__Vtask_get_name__21__Vfuncout);
                             this->__Vtask___VforkTask_0__19____VlefCall_3__get_name 
@@ -423,15 +423,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                                                                 .at(VL_NULL_CHECK(__Vtask___VforkTask_0__19____VDynScope_m_hb_process_1, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 249)
                                                                                 ->__PVT__obj),
                                                                                 -12) , 0U, ""s, 0U, ""s, 0U);
-                            ++(vlSymsp->__Vcoverage[17743]);
+                            ++(vlSymsp->__Vcoverage[17738]);
                         }
-                        ++(vlSymsp->__Vcoverage[17745]);
+                        ++(vlSymsp->__Vcoverage[17740]);
                     }
-                    ++(vlSymsp->__Vcoverage[17746]);
+                    ++(vlSymsp->__Vcoverage[17741]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17747]);
+                    ++(vlSymsp->__Vcoverage[17742]);
                 }
-                ++(vlSymsp->__Vcoverage[17748]);
+                ++(vlSymsp->__Vcoverage[17743]);
             } else if ((2U == this->__PVT__m_mode)) {
                 __Vtask___VforkTask_0__19____VlefLogAnd_6 
                     = (0U != VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 255)
@@ -468,11 +468,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                 = this->__Vtask_get_full_name__25__Vfuncout;
                             this->__Vtask___VforkTask_0__19__unnamedblk3__DOT__s 
                                 = VL_CONCATN_NNN(VL_CONCATN_NNN(this->__Vtask___VforkTask_0__19__unnamedblk3__DOT__s, "\n  "s), this->__Vtask___VforkTask_0__19____VlefCall_9__get_full_name);
-                            ++(vlSymsp->__Vcoverage[17749]);
+                            ++(vlSymsp->__Vcoverage[17744]);
                         }
-                        ++(vlSymsp->__Vcoverage[17750]);
+                        ++(vlSymsp->__Vcoverage[17745]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[17751]);
+                        ++(vlSymsp->__Vcoverage[17746]);
                     }
                     VL_NULL_CHECK(this->__PVT__m_objection, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 262)->__VnoInFunc_get_name(vlSymsp, this->__Vtask_get_name__26__Vfuncout);
                     this->__Vtask___VforkTask_0__19____VlefCall_10__get_name 
@@ -486,11 +486,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                                                                 -12,
                                                                                 -1,
                                                                                 &(this->__Vtask___VforkTask_0__19__unnamedblk3__DOT__s)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17752]);
+                    ++(vlSymsp->__Vcoverage[17747]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17753]);
+                    ++(vlSymsp->__Vcoverage[17748]);
                 }
-                ++(vlSymsp->__Vcoverage[17754]);
+                ++(vlSymsp->__Vcoverage[17749]);
             } else if ((1U == this->__PVT__m_mode)) {
                 VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 267)->__VnoInFunc_objects_triggered(vlSymsp, __Vtask_objects_triggered__28__Vfuncout);
                 __Vtask___VforkTask_0__19____VlefCall_11__objects_triggered 
@@ -532,15 +532,15 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                               .at(VL_NULL_CHECK(__Vtask___VforkTask_0__19____VDynScope_m_hb_process_1, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 272)
                                                   ->__PVT__obj),
                                               -12);
-                                ++(vlSymsp->__Vcoverage[17755]);
+                                ++(vlSymsp->__Vcoverage[17750]);
                             } else {
-                                ++(vlSymsp->__Vcoverage[17756]);
+                                ++(vlSymsp->__Vcoverage[17751]);
                             }
-                            ++(vlSymsp->__Vcoverage[17757]);
+                            ++(vlSymsp->__Vcoverage[17752]);
                         }
-                        ++(vlSymsp->__Vcoverage[17758]);
+                        ++(vlSymsp->__Vcoverage[17753]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[17759]);
+                        ++(vlSymsp->__Vcoverage[17754]);
                     }
                     VL_NULL_CHECK(this->__PVT__m_objection, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 275)->__VnoInFunc_get_name(vlSymsp, this->__Vtask_get_name__30__Vfuncout);
                     this->__Vtask___VforkTask_0__19____VlefCall_16__get_name 
@@ -554,9 +554,9 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                                                                 -12,
                                                                                 -1,
                                                                                 &(this->__Vtask___VforkTask_0__19__unnamedblk5__DOT__s)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17760]);
+                    ++(vlSymsp->__Vcoverage[17755]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17761]);
+                    ++(vlSymsp->__Vcoverage[17756]);
                 }
                 __Vtask___VforkTask_0__19____VlefLogAnd_18 
                     = (0U != VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 277)
@@ -593,11 +593,11 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                 = this->__Vtask_get_full_name__33__Vfuncout;
                             this->__Vtask___VforkTask_0__19__unnamedblk7__DOT__s 
                                 = VL_CONCATN_NNN(VL_CONCATN_NNN(this->__Vtask___VforkTask_0__19__unnamedblk7__DOT__s, "\n  "s), this->__Vtask___VforkTask_0__19____VlefCall_21__get_full_name);
-                            ++(vlSymsp->__Vcoverage[17762]);
+                            ++(vlSymsp->__Vcoverage[17757]);
                         }
-                        ++(vlSymsp->__Vcoverage[17763]);
+                        ++(vlSymsp->__Vcoverage[17758]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[17764]);
+                        ++(vlSymsp->__Vcoverage[17759]);
                     }
                     VL_NULL_CHECK(this->__PVT__m_objection, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 284)->__VnoInFunc_get_name(vlSymsp, this->__Vtask_get_name__34__Vfuncout);
                     this->__Vtask___VforkTask_0__19____VlefCall_22__get_name 
@@ -611,21 +611,21 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_heartbeat::__VnoInFunc_m_hb_process____
                                                                                 -12,
                                                                                 -1,
                                                                                 &(this->__Vtask___VforkTask_0__19__unnamedblk7__DOT__s)) , 0U, ""s, 0U, ""s, 0U);
-                    ++(vlSymsp->__Vcoverage[17765]);
+                    ++(vlSymsp->__Vcoverage[17760]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[17766]);
+                    ++(vlSymsp->__Vcoverage[17761]);
                 }
-                ++(vlSymsp->__Vcoverage[17767]);
+                ++(vlSymsp->__Vcoverage[17762]);
             }
-            ++(vlSymsp->__Vcoverage[17768]);
+            ++(vlSymsp->__Vcoverage[17763]);
         } else {
-            ++(vlSymsp->__Vcoverage[17769]);
+            ++(vlSymsp->__Vcoverage[17764]);
         }
         VL_NULL_CHECK(this->__PVT__m_cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 289)->__VnoInFunc_reset_counts(vlSymsp);
         VL_NULL_CHECK(__Vtask___VforkTask_0__19____VDynScope_m_hb_process_1, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 290)->__PVT__last_trigger 
             = VL_RTOIROUND_Q_D(VL_TIME_UNITED_D(1));
         VL_NULL_CHECK(__Vtask___VforkTask_0__19____VDynScope_m_hb_process_1, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 291)->__PVT__triggered = 1U;
-        ++(vlSymsp->__Vcoverage[17770]);
+        ++(vlSymsp->__Vcoverage[17765]);
     }
     __Vfork_2__sync.done("/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 
                          234);

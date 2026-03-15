@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := all
+
 VERILATOR ?= verilator
 
 # Pasta que contem uvm_pkg.sv
@@ -6,6 +8,10 @@ UVM_HOME  ?= /home/matheus/tools/1800.2-2017-1.0/src
 TB_DIR      := ../UVM
 RTL_DIR     := ../src
 TOP         := tb_rng
+RTL_TOP     ?= rng_top
+
+# Paralelismo
+JOBS ?= $(shell nproc 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null || echo 1)
 
 # Caminhos absolutos normalizados
 PROJECT_ROOT := $(realpath ..)
@@ -26,6 +32,11 @@ COV_DAT         := $(COV_DIR)/uvm_coverage.dat
 COV_INFO_RAW    := $(COV_DIR)/uvm_coverage_raw.info
 COV_INFO_RTL    := $(COV_DIR)/rtl_coverage.info
 COV_HTML        := $(COV_DIR)/html_rtl
+
+# Lint
+LINT_WAIVER     ?=
+LINT_WAIVER_OPT := $(if $(strip $(LINT_WAIVER)),$(LINT_WAIVER),)
+LINT_WAIVER_OUT ?= verilator_lint.vlt
 
 # Args de runtime do teste normal
 RUN_ARGS ?= +UVM_TESTNAME=rng_test +UVM_VERBOSITY=UVM_NONE +UVM_NO_RELNOTES
@@ -64,7 +75,7 @@ VFLAGS_COMMON = \
     -sv \
     --binary \
     --timing \
-    -j $$(nproc) \
+    -j $(JOBS) \
     -Wno-fatal \
     --trace-vcd \
     -Wno-WIDTHTRUNC \
@@ -84,7 +95,34 @@ VFLAGS_COV = \
     --coverage \
     --Mdir $(OBJ_DIR_COV)
 
-all: run
+# Lint completo da bancada UVM
+LINT_FLAGS = \
+    -sv \
+    --lint-only \
+    --timing \
+    -j $(JOBS) \
+    -Wall \
+    -Wno-fatal \
+    -Wno-WIDTHTRUNC \
+    -Wno-WIDTHEXPAND \
+    +define+UVM_NO_DPI \
+    $(INC) \
+    --top-module $(TOP)
+
+# Lint focado apenas no RTL
+LINT_RTL_FLAGS = \
+    -sv \
+    --lint-only \
+    --timing \
+    -j $(JOBS) \
+    -Wall \
+    -Wno-fatal \
+    -Wno-WIDTHTRUNC \
+    -Wno-WIDTHEXPAND \
+    +incdir+$(RTL_DIR) \
+    --top-module $(RTL_TOP)
+
+all: coverage
 
 check_uvm:
 	@test -f "$(UVM_HOME)/uvm_pkg.sv" || \
@@ -103,6 +141,10 @@ check_tb_includes:
 		( echo "ERRO: arquivo referenciado por include nao encontrado: $$f"; exit 1 ); \
 	done
 
+check_verilator:
+	@command -v $(VERILATOR) >/dev/null 2>&1 || \
+	( echo "ERRO: verilator nao encontrado no PATH"; exit 1 )
+
 check_tools:
 	@command -v $(VERILATOR) >/dev/null 2>&1 || \
 	( echo "ERRO: verilator nao encontrado no PATH"; exit 1 )
@@ -115,15 +157,31 @@ check_html_tools:
 	@command -v genhtml >/dev/null 2>&1 || \
 	( echo "ERRO: genhtml nao encontrado no PATH (instale o pacote lcov)"; exit 1 )
 
-compile: check_tools check_uvm check_tb check_tb_includes
-	$(VERILATOR) $(VFLAGS) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+check_lint_waiver:
+	@if [ -n "$(LINT_WAIVER)" ]; then \
+		test -f "$(LINT_WAIVER)" || \
+		( echo "ERRO: arquivo de waiver nao encontrado: $(LINT_WAIVER)"; exit 1 ); \
+	fi
 
-compile_cov: check_tools check_uvm check_tb check_tb_includes
-	$(VERILATOR) $(VFLAGS_COV) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+lint: check_verilator check_uvm check_tb check_tb_includes check_lint_waiver
+	$(VERILATOR) $(LINT_WAIVER_OPT) $(LINT_FLAGS) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+
+lint_rtl: check_verilator check_lint_waiver
+	$(VERILATOR) $(LINT_WAIVER_OPT) $(LINT_RTL_FLAGS) $(RTL)
+
+lint_waiver: check_verilator check_uvm check_tb check_tb_includes
+	$(VERILATOR) $(LINT_FLAGS) --waiver-output $(LINT_WAIVER_OUT) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
+	@echo "Waiver inicial gerado em: $(LINT_WAIVER_OUT)"
+
+compile: lint check_tools check_uvm check_tb check_tb_includes
+	$(VERILATOR) $(VFLAGS) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
 
 run: compile
 	mkdir -p $(WAVE_DIR)
 	./$(OBJ_DIR)/V$(TOP) $(RUN_ARGS)
+
+compile_cov: run check_tools check_uvm check_tb check_tb_includes
+	$(VERILATOR) $(VFLAGS_COV) $(UVM_HOME)/uvm_pkg.sv $(RTL) $(TB)
 
 run_cov: compile_cov
 	mkdir -p $(WAVE_DIR) $(COV_DIR)
@@ -148,7 +206,7 @@ coverage_summary: lcov_rtl
 	lcov --summary $(COV_INFO_RTL)
 
 # HTML apenas do RTL, com caminhos normalizados
-html_rtl: lcov_rtl check_html_tools
+html_rtl: coverage_summary check_html_tools
 	rm -rf $(COV_HTML)
 	mkdir -p $(COV_HTML)
 	genhtml \
@@ -166,9 +224,11 @@ waves:
 	gtkwave $(WAVE_VCD)
 
 clean:
-	rm -rf $(OBJ_DIR) $(OBJ_DIR_COV) $(COV_DIR) $(WAVE_VCD) *.log
+	rm -rf $(OBJ_DIR) $(OBJ_DIR_COV) $(COV_DIR) $(WAVE_VCD) *.log $(LINT_WAIVER_OUT)
 
-.PHONY: all check_uvm check_tb check_tb_includes check_tools check_html_tools \
+.PHONY: all check_uvm check_tb check_tb_includes check_verilator check_tools \
+        check_html_tools check_lint_waiver \
+        lint lint_rtl lint_waiver \
         compile compile_cov run run_cov \
         lcov_raw lcov_rtl coverage_summary html_rtl coverage \
         waves clean

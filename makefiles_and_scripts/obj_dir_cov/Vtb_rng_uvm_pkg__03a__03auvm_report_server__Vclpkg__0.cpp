@@ -14,7 +14,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server__Vclpkg::__VnoInFunc_set_server(
     VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_server.svh", 204)->__VnoInFunc_get_report_server(vlProcess, vlSymsp, __VlefCall_0__get_report_server);
     VL_NULL_CHECK(server, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_server.svh", 204)->__VnoInFunc_copy(vlProcess, vlSymsp, __VlefCall_0__get_report_server, VlNull{});
     VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_server.svh", 205)->__VnoInFunc_set_report_server(vlSymsp, server);
-    ++(vlSymsp->__Vcoverage[15362]);
+    ++(vlSymsp->__Vcoverage[15357]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server__Vclpkg::__VnoInFunc_get_server(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_server> &get_server__Vfuncrtn) {
@@ -23,14 +23,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server__Vclpkg::__VnoInFunc_get_server(
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_coreservice_t> cs;
     vlSymsp->TOP__uvm_pkg__03a__03auvm_coreservice_t__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, cs);
     VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_server.svh", 231)->__VnoInFunc_get_report_server(vlProcess, vlSymsp, get_server__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[15363]);
+    ++(vlSymsp->__Vcoverage[15358]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_report_server"s;
-    ++(vlSymsp->__Vcoverage[15337]);
+    ++(vlSymsp->__Vcoverage[15332]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -39,59 +39,59 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::init(VlProcessRef vlProcess, Vt
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[15338]);
+    ++(vlSymsp->__Vcoverage[15333]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_max_quit_count(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ count, CData/*0:0*/ overridable) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_max_quit_count\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15339]);
+    ++(vlSymsp->__Vcoverage[15334]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_max_quit_count(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_max_quit_count__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_max_quit_count\n"); );
     // Body
     get_max_quit_count__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[15340]);
+    ++(vlSymsp->__Vcoverage[15335]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_quit_count(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ quit_count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_quit_count\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15341]);
+    ++(vlSymsp->__Vcoverage[15336]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_quit_count(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_quit_count__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_quit_count\n"); );
     // Body
     get_quit_count__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[15342]);
+    ++(vlSymsp->__Vcoverage[15337]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_severity_count(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, IData/*31:0*/ count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_severity_count\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15343]);
+    ++(vlSymsp->__Vcoverage[15338]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_severity_count(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, IData/*31:0*/ &get_severity_count__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_severity_count\n"); );
     // Body
     get_severity_count__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[15344]);
+    ++(vlSymsp->__Vcoverage[15339]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_id_count(Vtb_rng__Syms* __restrict vlSymsp, std::string id, IData/*31:0*/ count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_id_count\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15345]);
+    ++(vlSymsp->__Vcoverage[15340]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_id_count(Vtb_rng__Syms* __restrict vlSymsp, std::string id, IData/*31:0*/ &get_id_count__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_id_count\n"); );
     // Body
     get_id_count__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[15346]);
+    ++(vlSymsp->__Vcoverage[15341]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_id_set(Vtb_rng__Syms* __restrict vlSymsp, VlQueue<std::string> &q) {
@@ -99,7 +99,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_id_set(Vtb_rng_
     // Body
     q.clear();
     q.atDefault().clear();
-    ++(vlSymsp->__Vcoverage[15347]);
+    ++(vlSymsp->__Vcoverage[15342]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_severity_set(Vtb_rng__Syms* __restrict vlSymsp, VlQueue<CData/*1:0*/> &q) {
@@ -107,19 +107,19 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_severity_set(Vt
     // Body
     q.clear();
     q.atDefault() = 0;
-    ++(vlSymsp->__Vcoverage[15348]);
+    ++(vlSymsp->__Vcoverage[15343]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_message_database(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tr_database> database) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_set_message_database\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15349]);
+    ++(vlSymsp->__Vcoverage[15344]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_message_database(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tr_database> &get_message_database__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_get_message_database\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15350]);
+    ++(vlSymsp->__Vcoverage[15345]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> rhs) {
@@ -160,7 +160,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRe
     Vtb_rng_uvm_pkg__03a__03auvm_object::__VnoInFunc_do_copy(vlProcess, vlSymsp, rhs);
     __VlefExpr_0 = VL_CAST_DYNAMIC(rhs, rhs_);
     if (__VlefExpr_0) {
-        ++(vlSymsp->__Vcoverage[15354]);
+        ++(vlSymsp->__Vcoverage[15349]);
     } else {
         this->__Vfunc_uvm_report_enabled__2__id = "UVM/REPORT/SERVER/RPTCOPY"s;
         __Vfunc_uvm_report_enabled__2__severity = 2U;
@@ -172,7 +172,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRe
         vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
             = __Vtask_get_root__4__Vfuncout;
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__2__verbosity, (IData)(__Vfunc_uvm_report_enabled__2__severity), this->__Vfunc_uvm_report_enabled__2__id, __VlefCall_1__uvm_report_enabled);
-        ++(vlSymsp->__Vcoverage[437]);
+        ++(vlSymsp->__Vcoverage[432]);
         if ((0U != __VlefCall_1__uvm_report_enabled)) {
             __Vtask_uvm_report_error__6__report_enabled_checked = 1U;
             this->__Vtask_uvm_report_error__6__context_name = ""s;
@@ -188,12 +188,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRe
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_error__Vstatic__top 
                 = __Vtask_get_root__8__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_error__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 175)->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, this->__Vtask_uvm_report_error__6__id, this->__Vtask_uvm_report_error__6__message, __Vtask_uvm_report_error__6__verbosity, this->__Vtask_uvm_report_error__6__filename, __Vtask_uvm_report_error__6__line, this->__Vtask_uvm_report_error__6__context_name, (IData)(__Vtask_uvm_report_error__6__report_enabled_checked));
-            ++(vlSymsp->__Vcoverage[442]);
-            ++(vlSymsp->__Vcoverage[15351]);
+            ++(vlSymsp->__Vcoverage[437]);
+            ++(vlSymsp->__Vcoverage[15346]);
         } else {
-            ++(vlSymsp->__Vcoverage[15352]);
+            ++(vlSymsp->__Vcoverage[15347]);
         }
-        ++(vlSymsp->__Vcoverage[15353]);
+        ++(vlSymsp->__Vcoverage[15348]);
     }
     unnamedblk1__DOT__q.clear();
     unnamedblk1__DOT__q.atDefault() = 0;
@@ -205,7 +205,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRe
         this->__VnoInFunc_set_severity_count(vlSymsp, unnamedblk1__DOT__q.at(unnamedblk1__DOT__unnamedblk2__DOT__s), __VlefCall_2__get_severity_count);
         unnamedblk1__DOT__unnamedblk2__DOT__s = ((IData)(1U) 
                                                  + unnamedblk1__DOT__unnamedblk2__DOT__s);
-        ++(vlSymsp->__Vcoverage[15355]);
+        ++(vlSymsp->__Vcoverage[15350]);
     }
     unnamedblk3__DOT__q.clear();
     unnamedblk3__DOT__q.atDefault().clear();
@@ -218,7 +218,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRe
         this->__VnoInFunc_set_id_count(vlSymsp, VL_CVT_PACK_STR_NN(unnamedblk3__DOT__q.at(unnamedblk3__DOT__unnamedblk4__DOT__s)), __VlefCall_3__get_id_count);
         unnamedblk3__DOT__unnamedblk4__DOT__s = ((IData)(1U) 
                                                  + unnamedblk3__DOT__unnamedblk4__DOT__s);
-        ++(vlSymsp->__Vcoverage[15356]);
+        ++(vlSymsp->__Vcoverage[15351]);
     }
     VL_NULL_CHECK(rhs_, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_server.svh", 132)->__VnoInFunc_get_message_database(vlSymsp, __VlefCall_4__get_message_database);
     this->__VnoInFunc_set_message_database(vlSymsp, __VlefCall_4__get_message_database);
@@ -226,32 +226,32 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_do_copy(VlProcessRe
     this->__VnoInFunc_set_max_quit_count(vlProcess, vlSymsp, __VlefCall_5__get_max_quit_count, 1U);
     VL_NULL_CHECK(rhs_, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_server.svh", 134)->__VnoInFunc_get_quit_count(vlSymsp, __VlefCall_6__get_quit_count);
     this->__VnoInFunc_set_quit_count(vlSymsp, __VlefCall_6__get_quit_count);
-    ++(vlSymsp->__Vcoverage[15357]);
+    ++(vlSymsp->__Vcoverage[15352]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_process_report_message(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_message> report_message) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_process_report_message\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15358]);
+    ++(vlSymsp->__Vcoverage[15353]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_execute_report_message(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_message> report_message, std::string composed_message) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_execute_report_message\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15359]);
+    ++(vlSymsp->__Vcoverage[15354]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_compose_report_message(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_message> report_message, std::string report_object_name, std::string &compose_report_message__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_compose_report_message\n"); );
     // Body
     compose_report_message__Vfuncrtn = ""s;
-    ++(vlSymsp->__Vcoverage[15360]);
+    ++(vlSymsp->__Vcoverage[15355]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_report_summarize(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ file) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_report_summarize\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[15361]);
+    ++(vlSymsp->__Vcoverage[15356]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_server::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

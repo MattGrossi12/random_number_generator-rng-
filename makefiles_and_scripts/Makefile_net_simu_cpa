@@ -1,0 +1,116 @@
+# =========================================================
+# Simulação pós-síntese com Icarus Verilog + gate-level/SDF
+# Projeto: RNG
+# =========================================================
+
+# Arquivos gerados
+SIM  = sim.vvp
+WAVE = ../waveforms/netlist_simulation_cpa.vcd
+
+# Diretórios
+NETLIST_DIR = ../netlist
+LIB_DIR     = $(NETLIST_DIR)/libs_files
+TB_DIR      = ../testbenchs
+
+# Arquivos principais
+POST_SYN_NETLIST = $(NETLIST_DIR)/rng_top_pnl_refactor.v
+TESTBENCH        = $(TB_DIR)/testbench_top_cpa.v
+
+# ---------------------------------------------------------
+# Bibliotecas SKY130
+# ---------------------------------------------------------
+# IMPORTANTE:
+# - Nao compile sky130_fd_sc_hd.v junto com sky130_fd_sc_hd__blackbox.v
+#   ou com todos os arquivos sky130_fd_sc_hd__*.v, pois isso duplica
+#   as definicoes dos modulos.
+# - Se o arquivo consolidado existir, ele deve ser preferido.
+# - Somente se ele nao existir, caimos para os arquivos unitarios.
+
+SKY130_PRIMITIVES = $(LIB_DIR)/primitives.v
+
+SKY130_FD_SC_HD_FULL  = $(wildcard $(LIB_DIR)/sky130_fd_sc_hd.v)
+SKY130_FD_SC_HD_SPLIT = $(filter-out \
+	$(LIB_DIR)/sky130_fd_sc_hd__blackbox.v, \
+	$(wildcard $(LIB_DIR)/sky130_fd_sc_hd__*.v))
+
+SKY130_EF_SC_HD_FULL  = $(wildcard $(LIB_DIR)/sky130_ef_sc_hd.v)
+SKY130_EF_SC_HD_SPLIT = $(filter-out \
+	$(LIB_DIR)/sky130_ef_sc_hd__blackbox.v, \
+	$(wildcard $(LIB_DIR)/sky130_ef_sc_hd__*.v))
+
+ifneq ($(strip $(SKY130_FD_SC_HD_FULL)),)
+	SKY130_FD_SC_HD_LIBS = $(SKY130_FD_SC_HD_FULL)
+else
+	SKY130_FD_SC_HD_LIBS = $(SKY130_FD_SC_HD_SPLIT)
+endif
+
+ifneq ($(strip $(SKY130_EF_SC_HD_FULL)),)
+	SKY130_EF_SC_HD_LIBS = $(SKY130_EF_SC_HD_FULL)
+else
+	SKY130_EF_SC_HD_LIBS = $(SKY130_EF_SC_HD_SPLIT)
+endif
+
+STD_CELL_LIBS = \
+	$(SKY130_PRIMITIVES) \
+	$(SKY130_FD_SC_HD_LIBS) \
+	$(SKY130_EF_SC_HD_LIBS)
+
+# Lista completa de arquivos Verilog
+VERILOG_FILES = \
+	$(STD_CELL_LIBS) \
+	$(POST_SYN_NETLIST) \
+	$(TESTBENCH)
+
+# Flags de compilacao para gate-level + SDF
+# - USE_POWER_PINS: habilita VPWR/VGND/VPB/VNB nas celulas SKY130.
+# - Nao use -DFUNCTIONAL em simulacao temporal com specify/SDF.
+COMPILE_ARGS = -Wall -g2012 -s testbench
+COMPILE_ARGS += -DUSE_POWER_PINS
+COMPILE_ARGS += -gspecify -ginterconnect
+COMPILE_ARGS += -DUNIT_DELAY=\#1
+COMPILE_ARGS += -DSKY130_FD_SC_HD__LPFLOW_BLEEDER_1_TIMING_V
+VVP_FLAGS    =
+
+.PHONY: all post_synth icarus run gtk clean check_libs show_libs
+
+# Alvo padrão
+all: icarus
+
+# Alias explícito
+post_synth: icarus
+
+# Verificações básicas antes da compilação
+check_libs:
+	@test -f $(SKY130_PRIMITIVES) || (echo "Erro: arquivo ausente: $(SKY130_PRIMITIVES)" && exit 1)
+	@test -n "$(SKY130_FD_SC_HD_LIBS)" || (echo "Erro: biblioteca SKY130 FD SC HD nao encontrada em $(LIB_DIR)" && exit 1)
+	@test -f $(POST_SYN_NETLIST) || (echo "Erro: netlist ausente: $(POST_SYN_NETLIST)" && exit 1)
+	@test -f $(TESTBENCH) || (echo "Erro: testbench ausente: $(TESTBENCH)" && exit 1)
+
+show_libs:
+	@echo "Bibliotecas selecionadas para compilacao:"
+	@for f in $(STD_CELL_LIBS); do echo "  $$f"; done
+
+# Compila e executa a simulacao
+icarus: $(SIM) run
+
+# Compilação
+$(SIM): $(VERILOG_FILES) check_libs
+	@mkdir -p $(dir $(WAVE))
+	iverilog $(COMPILE_ARGS) -o $(SIM) $(VERILOG_FILES)
+
+# Execução da simulação
+run: $(SIM)
+	vvp $(SIM) $(VVP_FLAGS)
+
+# Visualização de waveform
+gtk: $(WAVE)
+	gtkwave $(WAVE)
+
+# Apenas verifica se o VCD foi realmente gerado pelo testbench
+$(WAVE): run
+	@test -f $(WAVE) || (echo "Erro: $(WAVE) nao foi gerado. Ajuste o testbench para usar \$$(dumpfile(\"$(WAVE)\")) e \$$(dumpvars)." && exit 1)
+
+# Limpeza
+clean:
+	rm -f $(SIM)
+	rm -f $(WAVE)

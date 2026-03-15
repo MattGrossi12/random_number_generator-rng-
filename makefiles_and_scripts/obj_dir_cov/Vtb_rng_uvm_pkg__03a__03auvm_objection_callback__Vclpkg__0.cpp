@@ -10,25 +10,25 @@ void Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::init(VlProcessRef vlProces
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[17694]);
+    ++(vlSymsp->__Vcoverage[17689]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_raised(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_objection> objection, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> source_obj, std::string description, IData/*31:0*/ count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_raised\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[17695]);
+    ++(vlSymsp->__Vcoverage[17690]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_dropped(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_objection> objection, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> source_obj, std::string description, IData/*31:0*/ count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_dropped\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[17696]);
+    ++(vlSymsp->__Vcoverage[17691]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_all_dropped(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_objection> objection, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> source_obj, std::string description, IData/*31:0*/ count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_all_dropped\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[17697]);
+    ++(vlSymsp->__Vcoverage[17692]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_objection_callback::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

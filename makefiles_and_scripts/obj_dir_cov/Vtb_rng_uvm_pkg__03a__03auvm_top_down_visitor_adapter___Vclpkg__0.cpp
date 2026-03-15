@@ -10,7 +10,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_top_down_visitor_adapter_::init(VlProcessRef v
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[17874]);
+    ++(vlSymsp->__Vcoverage[17869]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_top_down_visitor_adapter_::__VnoInFunc_accept(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> s, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_visitor_> v, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_structure_proxy_> p, CData/*0:0*/ invoke_begin_end) {
@@ -22,9 +22,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_top_down_visitor_adapter_::__VnoInFunc_accept(
     c.clear();
     if (invoke_begin_end) {
         VL_NULL_CHECK(v, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 129)->__VnoInFunc_begin_v(vlProcess, vlSymsp);
-        ++(vlSymsp->__Vcoverage[17875]);
+        ++(vlSymsp->__Vcoverage[17870]);
     } else {
-        ++(vlSymsp->__Vcoverage[17876]);
+        ++(vlSymsp->__Vcoverage[17871]);
     }
     VL_NULL_CHECK(v, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 131)->__VnoInFunc_visit(vlProcess, vlSymsp, s);
     VL_NULL_CHECK(p, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 132)->__VnoInFunc_get_immediate_children(vlSymsp, s, c);
@@ -32,15 +32,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_top_down_visitor_adapter_::__VnoInFunc_accept(
     while (VL_LTS_III(32, unnamedblk1__DOT__idx, c.size())) {
         this->__VnoInFunc_accept(vlProcess, vlSymsp, c.at(unnamedblk1__DOT__idx), v, p, 0U);
         unnamedblk1__DOT__idx = ((IData)(1U) + unnamedblk1__DOT__idx);
-        ++(vlSymsp->__Vcoverage[17877]);
+        ++(vlSymsp->__Vcoverage[17872]);
     }
     if (invoke_begin_end) {
         VL_NULL_CHECK(v, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 138)->__VnoInFunc_end_v(vlSymsp);
-        ++(vlSymsp->__Vcoverage[17878]);
+        ++(vlSymsp->__Vcoverage[17873]);
     } else {
-        ++(vlSymsp->__Vcoverage[17879]);
+        ++(vlSymsp->__Vcoverage[17874]);
     }
-    ++(vlSymsp->__Vcoverage[17880]);
+    ++(vlSymsp->__Vcoverage[17875]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_top_down_visitor_adapter_::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

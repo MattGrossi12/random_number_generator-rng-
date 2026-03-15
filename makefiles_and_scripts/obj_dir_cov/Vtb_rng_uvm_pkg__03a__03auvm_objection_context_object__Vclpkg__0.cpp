@@ -12,14 +12,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_objection_context_object::__VnoInFunc_clear(Vt
     this->__PVT__description = ""s;
     this->__PVT__count = 0U;
     this->__PVT__objection = VlNull{};
-    ++(vlSymsp->__Vcoverage[17692]);
+    ++(vlSymsp->__Vcoverage[17687]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_objection_context_object::init(Vtb_rng__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_objection_context_object::new\n"); );
     // Body
     _ctor_var_reset(vlSymsp);
-    ++(vlSymsp->__Vcoverage[17693]);
+    ++(vlSymsp->__Vcoverage[17688]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_objection_context_object::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

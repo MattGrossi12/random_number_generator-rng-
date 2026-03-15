@@ -1352,7 +1352,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_rng__Syms final : public VerilatedSyms {
     Vtb_rng_uvm_pkg__03a__03auvm_vreg_field_cbs__Vclpkg TOP__uvm_pkg__03a__03auvm_vreg_field_cbs__Vclpkg;
 
     // COVERAGE
-    uint32_t __Vcoverage[25546];
+    uint32_t __Vcoverage[25541];
 
     // SCOPE NAMES
     VerilatedScope* __Vscopep_std__process;

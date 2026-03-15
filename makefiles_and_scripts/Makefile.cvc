@@ -1,0 +1,143 @@
+# =========================================================
+# Simulação pós-síntese com CVC (Tachyon) + gate-level/SDF
+# Projeto: RNG
+# =========================================================
+
+# Binário do simulador
+CVC ?= cvc64
+
+# Arquivos gerados
+SIM  = sim_cvc
+WAVE = ../waveforms/netlist_simulation_cpa.vcd
+
+# Diretórios
+NETLIST_DIR = ../netlist
+LIB_DIR     = $(NETLIST_DIR)/libs_files
+TB_DIR      = ../testbenchs
+
+# Arquivos principais
+POST_SYN_NETLIST = $(NETLIST_DIR)/rng_top_pnl_refactor.v
+TESTBENCH        = $(TB_DIR)/testbench_top_cpa_cvc.v
+
+# ---------------------------------------------------------
+# Bibliotecas SKY130
+# ---------------------------------------------------------
+# IMPORTANTE:
+# - Nao compile sky130_fd_sc_hd.v junto com sky130_fd_sc_hd__blackbox.v
+#   ou com todos os arquivos sky130_fd_sc_hd__*.v, pois isso duplica
+#   as definicoes dos modulos.
+# - Se o arquivo consolidado existir, ele deve ser preferido.
+# - Somente se ele nao existir, caimos para os arquivos unitarios.
+
+SKY130_PRIMITIVES = $(LIB_DIR)/primitives.v
+
+SKY130_FD_SC_HD_FULL  = $(wildcard $(LIB_DIR)/sky130_fd_sc_hd.v)
+SKY130_FD_SC_HD_SPLIT = $(filter-out \
+    $(LIB_DIR)/sky130_fd_sc_hd__blackbox.v, \
+    $(wildcard $(LIB_DIR)/sky130_fd_sc_hd__*.v))
+
+SKY130_EF_SC_HD_FULL  = $(wildcard $(LIB_DIR)/sky130_ef_sc_hd.v)
+SKY130_EF_SC_HD_SPLIT = $(filter-out \
+    $(LIB_DIR)/sky130_ef_sc_hd__blackbox.v, \
+    $(wildcard $(LIB_DIR)/sky130_ef_sc_hd__*.v))
+
+ifneq ($(strip $(SKY130_FD_SC_HD_FULL)),)
+    SKY130_FD_SC_HD_LIBS = $(SKY130_FD_SC_HD_FULL)
+else
+    SKY130_FD_SC_HD_LIBS = $(SKY130_FD_SC_HD_SPLIT)
+endif
+
+ifneq ($(strip $(SKY130_EF_SC_HD_FULL)),)
+    SKY130_EF_SC_HD_LIBS = $(SKY130_EF_SC_HD_FULL)
+else
+    SKY130_EF_SC_HD_LIBS = $(SKY130_EF_SC_HD_SPLIT)
+endif
+
+STD_CELL_LIBS = \
+    $(SKY130_PRIMITIVES) \
+    $(SKY130_FD_SC_HD_LIBS) \
+    $(SKY130_EF_SC_HD_LIBS)
+
+# Lista completa de arquivos Verilog
+VERILOG_FILES = \
+    $(STD_CELL_LIBS) \
+    $(POST_SYN_NETLIST) \
+    $(TESTBENCH)
+
+# ---------------------------------------------------------
+# Flags do CVC
+# ---------------------------------------------------------
+# Argumentos de compilação para uso com células sky130 com/sem sdf
+COMPILE_ARGS += \
+                +acc+4 +incdir+$(LIB_DIR) \
+                +define+USE_POWER_PINS +define+FUNCTIONAL +define+UNIT_DELAY \
+                +informs +verbose \
+                +typdelays \
+                -l cvc_compile.log \
+                +large \
+                +parallel2=on \
+                +suppress_warns+679 \
+                +suppress_warns+531 \
+                +suppress_warns+597 \
+                +suppress_warns+3153 \
+                +suppress_warns+3154 \
+                +suppress_warns+3155
+
+# Arquivo opcional para complementar flags depois
+-include cvc_flags.mk
+
+.PHONY: all post_synth full build compile run gtk clean check_libs show_libs
+
+# ---------------------------------------------------------
+# Fluxo padrão
+# ---------------------------------------------------------
+# Ao executar apenas "make", roda o fluxo completo:
+# checagem -> listagem -> compilação -> execução
+all: full
+
+post_synth: full
+
+full: check_libs show_libs build run
+
+# ---------------------------------------------------------
+# Etapas separadas
+# ---------------------------------------------------------
+build: $(SIM)
+
+compile: build
+
+# Verificações básicas antes da compilação
+check_libs:
+	@test -f $(SKY130_PRIMITIVES) || (echo "Erro: arquivo ausente: $(SKY130_PRIMITIVES)" && exit 1)
+	@test -n "$(SKY130_FD_SC_HD_LIBS)" || (echo "Erro: biblioteca SKY130 FD SC HD nao encontrada em $(LIB_DIR)" && exit 1)
+	@test -f $(POST_SYN_NETLIST) || (echo "Erro: netlist ausente: $(POST_SYN_NETLIST)" && exit 1)
+	@test -f $(TESTBENCH) || (echo "Erro: testbench ausente: $(TESTBENCH)" && exit 1)
+
+show_libs:
+	@echo "Bibliotecas selecionadas para compilacao:"
+	@for f in $(STD_CELL_LIBS); do echo "  $$f"; done
+
+# Compilação
+$(SIM): $(VERILOG_FILES)
+	@mkdir -p $(dir $(WAVE))
+	$(CVC) $(COMPILE_ARGS) -o $(SIM) $(VERILOG_FILES)
+
+# Execução da simulação
+run: $(SIM)
+	./$(SIM)
+
+# Visualização de waveform
+gtk: $(WAVE)
+	gtkwave $(WAVE)
+
+# Apenas verifica se o VCD foi realmente gerado pelo testbench
+$(WAVE): run
+	@test -f $(WAVE) || (echo "Erro: $(WAVE) nao foi gerado. Ajuste o testbench para usar \$$(dumpfile(\"$(WAVE)\")) e \$$(dumpvars)." && exit 1)
+
+# Limpeza
+clean:
+	rm -f $(SIM)
+	rm -f $(WAVE)
+	rm -f cvcsim
+	rm -f cvc_compile.log
+	rm -f verilog.log

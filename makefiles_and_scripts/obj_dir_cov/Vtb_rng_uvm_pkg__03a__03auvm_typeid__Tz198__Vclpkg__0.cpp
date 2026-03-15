@@ -9,12 +9,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typeid__Tz198__Vclpkg::__VnoInFunc_get(Vtb_rng
     // Body
     if ((VlNull{} == this->__PVT__m_b_inst)) {
         this->__PVT__m_b_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_typeid__Tz198, vlSymsp);
-        ++(vlSymsp->__Vcoverage[13148]);
+        ++(vlSymsp->__Vcoverage[13143]);
     } else {
-        ++(vlSymsp->__Vcoverage[13149]);
+        ++(vlSymsp->__Vcoverage[13144]);
     }
     get__Vfuncrtn = this->__PVT__m_b_inst;
-    ++(vlSymsp->__Vcoverage[13150]);
+    ++(vlSymsp->__Vcoverage[13145]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_typeid__Tz198::init(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -23,7 +23,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typeid__Tz198::init(Vtb_rng__Syms* __restrict 
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[13151]);
+    ++(vlSymsp->__Vcoverage[13146]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_typeid__Tz198::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

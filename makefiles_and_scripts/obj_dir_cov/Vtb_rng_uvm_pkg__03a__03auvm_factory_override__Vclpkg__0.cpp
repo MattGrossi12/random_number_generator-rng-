@@ -15,7 +15,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_factory_override::init(Vtb_rng__Syms* __restri
     this->__PVT__ovrd.__PVT__m_type = ovrd_type;
     this->__PVT__replace = replace;
     this->__VnoInFunc_m_has_wildcard(vlSymsp, full_inst_path, this->__PVT__has_wildcard);
-    ++(vlSymsp->__Vcoverage[1198]);
+    ++(vlSymsp->__Vcoverage[1193]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_factory_override::__VnoInFunc_m_has_wildcard(Vtb_rng__Syms* __restrict vlSymsp, std::string nm, CData/*0:0*/ &m_has_wildcard__Vfuncrtn) {
@@ -33,25 +33,25 @@ void Vtb_rng_uvm_pkg__03a__03auvm_factory_override::__VnoInFunc_m_has_wildcard(V
                 m_has_wildcard__Vfuncrtn = 1U;
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[1200]);
+                ++(vlSymsp->__Vcoverage[1195]);
             }
             unnamedblk1__DOT__i = ((IData)(1U) + unnamedblk1__DOT__i);
-            ++(vlSymsp->__Vcoverage[1204]);
+            ++(vlSymsp->__Vcoverage[1199]);
         }
         m_has_wildcard__Vfuncrtn = 0U;
         __Vlabel0: ;
     }
     if ((0x3fU == VL_GETC_N(nm,unnamedblk1__DOT__i))) {
-        ++(vlSymsp->__Vcoverage[1201]);
+        ++(vlSymsp->__Vcoverage[1196]);
     }
     if ((0x2aU == VL_GETC_N(nm,unnamedblk1__DOT__i))) {
-        ++(vlSymsp->__Vcoverage[1202]);
+        ++(vlSymsp->__Vcoverage[1197]);
     }
     if (((0x2aU != VL_GETC_N(nm,unnamedblk1__DOT__i)) 
          & (0x3fU != VL_GETC_N(nm,unnamedblk1__DOT__i)))) {
-        ++(vlSymsp->__Vcoverage[1203]);
+        ++(vlSymsp->__Vcoverage[1198]);
     }
-    ++(vlSymsp->__Vcoverage[1205]);
+    ++(vlSymsp->__Vcoverage[1200]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_factory_override::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

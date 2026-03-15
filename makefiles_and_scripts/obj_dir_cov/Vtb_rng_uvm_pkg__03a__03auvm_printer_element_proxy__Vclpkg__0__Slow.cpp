@@ -16,8 +16,8 @@ VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy__Vclpkg___c
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[10056]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1142, 37, "", "v_line/uvm_printer_element_proxy", "block", "1142-1143");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[10057]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1146, 15, "", "v_line/uvm_printer_element_proxy", "block", "1146,1148");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[10051]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1142, 37, "", "v_line/uvm_printer_element_proxy", "block", "1142-1143");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[10052]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1146, 15, "", "v_line/uvm_printer_element_proxy", "block", "1146,1148");
 }
 
 VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy___configure_coverage(Vtb_rng_uvm_pkg__03a__03auvm_printer_element_proxy* vlSelf, bool first) {

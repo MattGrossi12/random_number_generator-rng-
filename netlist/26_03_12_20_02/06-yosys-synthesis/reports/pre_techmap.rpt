@@ -1,0 +1,34 @@
+105. Printing statistics.
+
+=== rng_top ===
+
+   Number of wires:                 75
+   Number of wire bits:             95
+   Number of public wires:          20
+   Number of public wire bits:      40
+   Number of ports:                  5
+   Number of port bits:              7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 91
+     $_ANDNOT_                      19
+     $_AND_                          1
+     $_DFFE_PN0P_                   30
+     $_DFF_PN0_                      5
+     $_NAND_                         1
+     $_ORNOT_                        1
+     $_OR_                           8
+     $_XNOR_                         8
+     $_XOR_                         18
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+

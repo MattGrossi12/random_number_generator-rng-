@@ -8,14 +8,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler__Vclpkg::__VnoInFunc_get_type(V
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_report_handler__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi6__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[15509]);
+    ++(vlSymsp->__Vcoverage[15504]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_report_handler__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_report_handler"s;
-    ++(vlSymsp->__Vcoverage[15514]);
+    ++(vlSymsp->__Vcoverage[15509]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler__Vclpkg::__VnoInFunc_format_action(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ action, std::string &format_action__Vfuncrtn) {
@@ -24,55 +24,55 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler__Vclpkg::__VnoInFunc_format_act
     std::string s;
     if ((0U == action)) {
         s = "NO ACTION"s;
-        ++(vlSymsp->__Vcoverage[15621]);
+        ++(vlSymsp->__Vcoverage[15616]);
     } else {
         s = ""s;
         if ((0U != (1U & action))) {
             s = VL_CONCATN_NNN(s, "DISPLAY "s);
-            ++(vlSymsp->__Vcoverage[15607]);
+            ++(vlSymsp->__Vcoverage[15602]);
         } else {
-            ++(vlSymsp->__Vcoverage[15608]);
+            ++(vlSymsp->__Vcoverage[15603]);
         }
         if ((0U != (2U & action))) {
             s = VL_CONCATN_NNN(s, "LOG "s);
-            ++(vlSymsp->__Vcoverage[15609]);
+            ++(vlSymsp->__Vcoverage[15604]);
         } else {
-            ++(vlSymsp->__Vcoverage[15610]);
+            ++(vlSymsp->__Vcoverage[15605]);
         }
         if ((0U != (0x00000040U & action))) {
             s = VL_CONCATN_NNN(s, "RM_RECORD "s);
-            ++(vlSymsp->__Vcoverage[15611]);
+            ++(vlSymsp->__Vcoverage[15606]);
         } else {
-            ++(vlSymsp->__Vcoverage[15612]);
+            ++(vlSymsp->__Vcoverage[15607]);
         }
         if ((0U != (4U & action))) {
             s = VL_CONCATN_NNN(s, "COUNT "s);
-            ++(vlSymsp->__Vcoverage[15613]);
+            ++(vlSymsp->__Vcoverage[15608]);
         } else {
-            ++(vlSymsp->__Vcoverage[15614]);
+            ++(vlSymsp->__Vcoverage[15609]);
         }
         if ((0U != (0x00000010U & action))) {
             s = VL_CONCATN_NNN(s, "CALL_HOOK "s);
-            ++(vlSymsp->__Vcoverage[15615]);
+            ++(vlSymsp->__Vcoverage[15610]);
         } else {
-            ++(vlSymsp->__Vcoverage[15616]);
+            ++(vlSymsp->__Vcoverage[15611]);
         }
         if ((0U != (8U & action))) {
             s = VL_CONCATN_NNN(s, "EXIT "s);
-            ++(vlSymsp->__Vcoverage[15617]);
+            ++(vlSymsp->__Vcoverage[15612]);
         } else {
-            ++(vlSymsp->__Vcoverage[15618]);
+            ++(vlSymsp->__Vcoverage[15613]);
         }
         if ((0U != (0x00000020U & action))) {
             s = VL_CONCATN_NNN(s, "STOP "s);
-            ++(vlSymsp->__Vcoverage[15619]);
+            ++(vlSymsp->__Vcoverage[15614]);
         } else {
-            ++(vlSymsp->__Vcoverage[15620]);
+            ++(vlSymsp->__Vcoverage[15615]);
         }
-        ++(vlSymsp->__Vcoverage[15622]);
+        ++(vlSymsp->__Vcoverage[15617]);
     }
     format_action__Vfuncrtn = s;
-    ++(vlSymsp->__Vcoverage[15623]);
+    ++(vlSymsp->__Vcoverage[15618]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -82,7 +82,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_object_type(Vt
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi6__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[15510]);
+    ++(vlSymsp->__Vcoverage[15505]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_create(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create__Vfuncrtn) {
@@ -91,20 +91,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_create(VlProcessRe
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_handler> tmp;
     if ((""s == name)) {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_report_handler, vlProcess, vlSymsp, "uvm_report_handler"s);
-        ++(vlSymsp->__Vcoverage[15511]);
+        ++(vlSymsp->__Vcoverage[15506]);
     } else {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_report_handler, vlProcess, vlSymsp, name);
-        ++(vlSymsp->__Vcoverage[15512]);
+        ++(vlSymsp->__Vcoverage[15507]);
     }
     create__Vfuncrtn = tmp;
-    ++(vlSymsp->__Vcoverage[15513]);
+    ++(vlSymsp->__Vcoverage[15508]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_report_handler"s;
-    ++(vlSymsp->__Vcoverage[15515]);
+    ++(vlSymsp->__Vcoverage[15510]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -114,7 +114,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::init(VlProcessRef vlProcess, V
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
     this->__VnoInFunc_initialize(vlProcess, vlSymsp);
-    ++(vlSymsp->__Vcoverage[15516]);
+    ++(vlSymsp->__Vcoverage[15511]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer> printer) {
@@ -267,11 +267,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
         __VlefExpr_1 = VL_CVT_PACK_STR_NN(Vtb_rng___024unit::__Venumtab_enum_name25
                                           .at(l_verbosity));
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 132)->__VnoInFunc_print_generic(vlProcess, vlSymsp, "max_verbosity_level"s, "uvm_verbosity"s, 0x00000020U, __VlefExpr_1, 0x2eU);
-        ++(vlSymsp->__Vcoverage[15517]);
+        ++(vlSymsp->__Vcoverage[15512]);
     } else {
         VL_EXTENDS_WI(4096,32, __Vtemp_1, this->__PVT__m_max_verbosity_level);
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 135)->__VnoInFunc_print_field(vlProcess, vlSymsp, "max_verbosity_level"s, __Vtemp_1, 0x00000020U, 0x02000000U, 0x2eU, "int"s);
-        ++(vlSymsp->__Vcoverage[15518]);
+        ++(vlSymsp->__Vcoverage[15513]);
     }
     VL_NULL_CHECK(this->__PVT__id_verbosities, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 139)->__VnoInFunc_first(vlSymsp, idx, __Vtask_first__7__Vfuncout);
     __VlefCall_2__first = __Vtask_first__7__Vfuncout;
@@ -293,7 +293,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                 VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 145)->__VnoInFunc_print_generic(vlProcess, vlSymsp, VL_SFORMATF_N_NX("[%@]",0,
                                                                                 -1,
                                                                                 &(idx)) , "uvm_verbosity"s, 0x00000020U, __VlefExpr_5, 0x2eU);
-                ++(vlSymsp->__Vcoverage[15519]);
+                ++(vlSymsp->__Vcoverage[15514]);
             } else {
                 unnamedblk1__DOT__l_str = ""s;
                 unnamedblk1__DOT__l_str = VL_SFORMATF_N_NX("%0d",0,
@@ -302,18 +302,18 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                 VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 150)->__VnoInFunc_print_generic(vlProcess, vlSymsp, VL_SFORMATF_N_NX("[%@]",0,
                                                                                 -1,
                                                                                 &(idx)) , "int"s, 0x00000020U, unnamedblk1__DOT__l_str, 0x2eU);
-                ++(vlSymsp->__Vcoverage[15520]);
+                ++(vlSymsp->__Vcoverage[15515]);
             }
-            ++(vlSymsp->__Vcoverage[15521]);
+            ++(vlSymsp->__Vcoverage[15516]);
             VL_NULL_CHECK(this->__PVT__id_verbosities, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 153)->__VnoInFunc_next(vlSymsp, idx, __Vtask_next__13__Vfuncout);
             __VlefCall_6__next = __Vtask_next__13__Vfuncout;
             if (!((0U != __VlefCall_6__next))) break;
-            ++(vlSymsp->__Vcoverage[15522]);
+            ++(vlSymsp->__Vcoverage[15517]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 154)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15523]);
+        ++(vlSymsp->__Vcoverage[15518]);
     } else {
-        ++(vlSymsp->__Vcoverage[15524]);
+        ++(vlSymsp->__Vcoverage[15519]);
     }
     if ((0U != this->__PVT__severity_id_verbosities.size())) {
         unnamedblk2__DOT___total_cnt = 0U;
@@ -331,11 +331,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                               .at(unnamedblk2__DOT__unnamedblk3__DOT__l_severity), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 161)->__VnoInFunc_num(vlSymsp, __VlefCall_9__num);
                 unnamedblk2__DOT___total_cnt = (unnamedblk2__DOT___total_cnt 
                                                 + __VlefCall_9__num);
-                ++(vlSymsp->__Vcoverage[15525]);
+                ++(vlSymsp->__Vcoverage[15520]);
             }
-            ++(vlSymsp->__Vcoverage[15526]);
+            ++(vlSymsp->__Vcoverage[15521]);
         } else {
-            ++(vlSymsp->__Vcoverage[15527]);
+            ++(vlSymsp->__Vcoverage[15522]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 162)->__VnoInFunc_print_array_header(vlProcess, vlSymsp, "severity_id_verbosities"s, unnamedblk2__DOT___total_cnt, "array"s, 0x2eU);
         __VlefExpr_10 = (0U != this->__PVT__severity_id_verbosities.first(l_severity));
@@ -366,7 +366,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 &(__Vtemp_2),
                                                                                 -1,
                                                                                 &(idx)) , "uvm_verbosity"s, 0x00000020U, __VlefExpr_13, 0x2eU);
-                            ++(vlSymsp->__Vcoverage[15528]);
+                            ++(vlSymsp->__Vcoverage[15523]);
                         } else {
                             unnamedblk2__DOT__unnamedblk4__DOT__unnamedblk5__DOT__l_str = ""s;
                             unnamedblk2__DOT__unnamedblk4__DOT__unnamedblk5__DOT__l_str 
@@ -380,31 +380,31 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 &(__Vtemp_3),
                                                                                 -1,
                                                                                 &(idx)) , "int"s, 0x00000020U, unnamedblk2__DOT__unnamedblk4__DOT__unnamedblk5__DOT__l_str, 0x2eU);
-                            ++(vlSymsp->__Vcoverage[15529]);
+                            ++(vlSymsp->__Vcoverage[15524]);
                         }
-                        ++(vlSymsp->__Vcoverage[15530]);
+                        ++(vlSymsp->__Vcoverage[15525]);
                         VL_NULL_CHECK(unnamedblk2__DOT__unnamedblk4__DOT__id_v_ary, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 179)->__VnoInFunc_next(vlSymsp, idx, __Vtask_next__21__Vfuncout);
                         __VlefCall_14__next = __Vtask_next__21__Vfuncout;
                         if (!((0U != __VlefCall_14__next))) break;
-                        ++(vlSymsp->__Vcoverage[15531]);
+                        ++(vlSymsp->__Vcoverage[15526]);
                     }
-                    ++(vlSymsp->__Vcoverage[15532]);
+                    ++(vlSymsp->__Vcoverage[15527]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[15533]);
+                    ++(vlSymsp->__Vcoverage[15528]);
                 }
-                ++(vlSymsp->__Vcoverage[15534]);
+                ++(vlSymsp->__Vcoverage[15529]);
                 __VlefExpr_15 = (0U != this->__PVT__severity_id_verbosities.next(l_severity));
                 if (!(__VlefExpr_15)) break;
-                ++(vlSymsp->__Vcoverage[15535]);
+                ++(vlSymsp->__Vcoverage[15530]);
             }
-            ++(vlSymsp->__Vcoverage[15536]);
+            ++(vlSymsp->__Vcoverage[15531]);
         } else {
-            ++(vlSymsp->__Vcoverage[15537]);
+            ++(vlSymsp->__Vcoverage[15532]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 182)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15538]);
+        ++(vlSymsp->__Vcoverage[15533]);
     } else {
-        ++(vlSymsp->__Vcoverage[15539]);
+        ++(vlSymsp->__Vcoverage[15534]);
     }
     VL_NULL_CHECK(this->__PVT__id_actions, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 186)->__VnoInFunc_first(vlSymsp, idx, __Vtask_first__23__Vfuncout);
     __VlefCall_16__first = __Vtask_first__23__Vfuncout;
@@ -418,16 +418,16 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 -1,
                                                                                 &(idx)) , "uvm_action"s, 0x00000020U, 
                                                                                 VL_CVT_PACK_STR_NN(__VlefCall_18__format_action), 0x2eU);
-            ++(vlSymsp->__Vcoverage[15540]);
+            ++(vlSymsp->__Vcoverage[15535]);
             VL_NULL_CHECK(this->__PVT__id_actions, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 193)->__VnoInFunc_next(vlSymsp, idx, __Vtask_next__29__Vfuncout);
             __VlefCall_19__next = __Vtask_next__29__Vfuncout;
             if (!((0U != __VlefCall_19__next))) break;
-            ++(vlSymsp->__Vcoverage[15541]);
+            ++(vlSymsp->__Vcoverage[15536]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 194)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15542]);
+        ++(vlSymsp->__Vcoverage[15537]);
     } else {
-        ++(vlSymsp->__Vcoverage[15543]);
+        ++(vlSymsp->__Vcoverage[15538]);
     }
     __VlefExpr_20 = (0U != this->__PVT__severity_actions.first(l_severity));
     if (__VlefExpr_20) {
@@ -441,15 +441,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 -1,
                                                                                 &(__Vtemp_4)) , "uvm_action"s, 0x00000020U, 
                                                                                 VL_CVT_PACK_STR_NN(__VlefCall_21__format_action), 0x2eU);
-            ++(vlSymsp->__Vcoverage[15544]);
+            ++(vlSymsp->__Vcoverage[15539]);
             __VlefExpr_22 = (0U != this->__PVT__severity_actions.next(l_severity));
             if (!(__VlefExpr_22)) break;
-            ++(vlSymsp->__Vcoverage[15545]);
+            ++(vlSymsp->__Vcoverage[15540]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 204)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15546]);
+        ++(vlSymsp->__Vcoverage[15541]);
     } else {
-        ++(vlSymsp->__Vcoverage[15547]);
+        ++(vlSymsp->__Vcoverage[15542]);
     }
     if ((0U != this->__PVT__severity_id_actions.size())) {
         unnamedblk6__DOT___total_cnt = 0U;
@@ -467,11 +467,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                               .at(unnamedblk6__DOT__unnamedblk7__DOT__l_severity), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 211)->__VnoInFunc_num(vlSymsp, __VlefCall_25__num);
                 unnamedblk6__DOT___total_cnt = (unnamedblk6__DOT___total_cnt 
                                                 + __VlefCall_25__num);
-                ++(vlSymsp->__Vcoverage[15548]);
+                ++(vlSymsp->__Vcoverage[15543]);
             }
-            ++(vlSymsp->__Vcoverage[15549]);
+            ++(vlSymsp->__Vcoverage[15544]);
         } else {
-            ++(vlSymsp->__Vcoverage[15550]);
+            ++(vlSymsp->__Vcoverage[15545]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 212)->__VnoInFunc_print_array_header(vlProcess, vlSymsp, "severity_id_actions"s, unnamedblk6__DOT___total_cnt, "array"s, 0x2eU);
         __VlefExpr_26 = (0U != this->__PVT__severity_id_actions.first(l_severity));
@@ -494,29 +494,29 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 -1,
                                                                                 &(idx)) , "uvm_action"s, 0x00000020U, 
                                                                                 VL_CVT_PACK_STR_NN(__VlefCall_29__format_action), 0x2eU);
-                        ++(vlSymsp->__Vcoverage[15551]);
+                        ++(vlSymsp->__Vcoverage[15546]);
                         VL_NULL_CHECK(unnamedblk6__DOT__unnamedblk8__DOT__id_a_ary, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 221)->__VnoInFunc_next(vlSymsp, idx, __Vtask_next__41__Vfuncout);
                         __VlefCall_30__next = __Vtask_next__41__Vfuncout;
                         if (!((0U != __VlefCall_30__next))) break;
-                        ++(vlSymsp->__Vcoverage[15552]);
+                        ++(vlSymsp->__Vcoverage[15547]);
                     }
-                    ++(vlSymsp->__Vcoverage[15553]);
+                    ++(vlSymsp->__Vcoverage[15548]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[15554]);
+                    ++(vlSymsp->__Vcoverage[15549]);
                 }
-                ++(vlSymsp->__Vcoverage[15555]);
+                ++(vlSymsp->__Vcoverage[15550]);
                 __VlefExpr_31 = (0U != this->__PVT__severity_id_actions.next(l_severity));
                 if (!(__VlefExpr_31)) break;
-                ++(vlSymsp->__Vcoverage[15556]);
+                ++(vlSymsp->__Vcoverage[15551]);
             }
-            ++(vlSymsp->__Vcoverage[15557]);
+            ++(vlSymsp->__Vcoverage[15552]);
         } else {
-            ++(vlSymsp->__Vcoverage[15558]);
+            ++(vlSymsp->__Vcoverage[15553]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 224)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15559]);
+        ++(vlSymsp->__Vcoverage[15554]);
     } else {
-        ++(vlSymsp->__Vcoverage[15560]);
+        ++(vlSymsp->__Vcoverage[15555]);
     }
     VL_NULL_CHECK(this->__PVT__sev_overrides, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 228)->__VnoInFunc_first(vlSymsp, l_severity, __Vtask_first__43__Vfuncout);
     __VlefCall_32__first = __Vtask_first__43__Vfuncout;
@@ -532,16 +532,16 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 &(__Vtemp_6)) , "uvm_severity"s, 0x00000020U, 
                                                                                 VL_CVT_PACK_STR_NN(Vtb_rng___024unit::__Venumtab_enum_name21
                                                                                 [unnamedblk9__DOT__l_severity_new]), 0x2eU);
-            ++(vlSymsp->__Vcoverage[15561]);
+            ++(vlSymsp->__Vcoverage[15556]);
             VL_NULL_CHECK(this->__PVT__sev_overrides, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 235)->__VnoInFunc_next(vlSymsp, l_severity, __Vtask_next__48__Vfuncout);
             __VlefCall_34__next = __Vtask_next__48__Vfuncout;
             if (!((0U != __VlefCall_34__next))) break;
-            ++(vlSymsp->__Vcoverage[15562]);
+            ++(vlSymsp->__Vcoverage[15557]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 236)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15563]);
+        ++(vlSymsp->__Vcoverage[15558]);
     } else {
-        ++(vlSymsp->__Vcoverage[15564]);
+        ++(vlSymsp->__Vcoverage[15559]);
     }
     if ((0U != this->__PVT__sev_id_overrides.size())) {
         unnamedblk10__DOT___total_cnt = 0U;
@@ -559,11 +559,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                               .at(unnamedblk10__DOT__unnamedblk11__DOT__idx), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 243)->__VnoInFunc_num(vlSymsp, __VlefCall_37__num);
                 unnamedblk10__DOT___total_cnt = (unnamedblk10__DOT___total_cnt 
                                                  + __VlefCall_37__num);
-                ++(vlSymsp->__Vcoverage[15565]);
+                ++(vlSymsp->__Vcoverage[15560]);
             }
-            ++(vlSymsp->__Vcoverage[15566]);
+            ++(vlSymsp->__Vcoverage[15561]);
         } else {
-            ++(vlSymsp->__Vcoverage[15567]);
+            ++(vlSymsp->__Vcoverage[15562]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 244)->__VnoInFunc_print_array_header(vlProcess, vlSymsp, "sev_id_overrides"s, unnamedblk10__DOT___total_cnt, "array"s, 0x2eU);
         __VlefExpr_38 = (0U != this->__PVT__sev_id_overrides.first(idx));
@@ -586,29 +586,29 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 &(idx)) , "uvm_severity"s, 0x00000020U, 
                                                                                 VL_CVT_PACK_STR_NN(Vtb_rng___024unit::__Venumtab_enum_name21
                                                                                 [unnamedblk10__DOT__unnamedblk12__DOT__unnamedblk13__DOT__new_sev]), 0x2eU);
-                        ++(vlSymsp->__Vcoverage[15568]);
+                        ++(vlSymsp->__Vcoverage[15563]);
                         VL_NULL_CHECK(unnamedblk10__DOT__unnamedblk12__DOT__sev_o_ary, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 254)->__VnoInFunc_next(vlSymsp, l_severity, __Vtask_next__55__Vfuncout);
                         __VlefCall_40__next = __Vtask_next__55__Vfuncout;
                         if (!((0U != __VlefCall_40__next))) break;
-                        ++(vlSymsp->__Vcoverage[15569]);
+                        ++(vlSymsp->__Vcoverage[15564]);
                     }
-                    ++(vlSymsp->__Vcoverage[15570]);
+                    ++(vlSymsp->__Vcoverage[15565]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[15571]);
+                    ++(vlSymsp->__Vcoverage[15566]);
                 }
-                ++(vlSymsp->__Vcoverage[15572]);
+                ++(vlSymsp->__Vcoverage[15567]);
                 __VlefExpr_41 = (0U != this->__PVT__sev_id_overrides.next(idx));
                 if (!(__VlefExpr_41)) break;
-                ++(vlSymsp->__Vcoverage[15573]);
+                ++(vlSymsp->__Vcoverage[15568]);
             }
-            ++(vlSymsp->__Vcoverage[15574]);
+            ++(vlSymsp->__Vcoverage[15569]);
         } else {
-            ++(vlSymsp->__Vcoverage[15575]);
+            ++(vlSymsp->__Vcoverage[15570]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 257)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15576]);
+        ++(vlSymsp->__Vcoverage[15571]);
     } else {
-        ++(vlSymsp->__Vcoverage[15577]);
+        ++(vlSymsp->__Vcoverage[15572]);
     }
     VL_EXTENDS_WI(4096,32, __Vtemp_8, this->__PVT__default_file_handle);
     VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 261)->__VnoInFunc_print_field(vlProcess, vlSymsp, "default_file_handle"s, __Vtemp_8, 0x00000020U, 0x07000000U, 0x2eU, "int"s);
@@ -623,16 +623,16 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
             VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 269)->__VnoInFunc_print_field(vlProcess, vlSymsp, VL_SFORMATF_N_NX("[%@]",0,
                                                                                 -1,
                                                                                 &(idx)) , __Vtemp_9, 0x00000020U, 0x07000000U, 0x2eU, "UVM_FILE"s);
-            ++(vlSymsp->__Vcoverage[15578]);
+            ++(vlSymsp->__Vcoverage[15573]);
             VL_NULL_CHECK(this->__PVT__id_file_handles, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 271)->__VnoInFunc_next(vlSymsp, idx, __Vtask_next__63__Vfuncout);
             __VlefCall_45__next = __Vtask_next__63__Vfuncout;
             if (!((0U != __VlefCall_45__next))) break;
-            ++(vlSymsp->__Vcoverage[15579]);
+            ++(vlSymsp->__Vcoverage[15574]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 272)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15580]);
+        ++(vlSymsp->__Vcoverage[15575]);
     } else {
-        ++(vlSymsp->__Vcoverage[15581]);
+        ++(vlSymsp->__Vcoverage[15576]);
     }
     __VlefExpr_46 = (0U != this->__PVT__severity_file_handles.first(l_severity));
     if (__VlefExpr_46) {
@@ -645,15 +645,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
             VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 279)->__VnoInFunc_print_field(vlProcess, vlSymsp, VL_SFORMATF_N_NX("[%@]",0,
                                                                                 -1,
                                                                                 &(__Vtemp_10)) , __VlefExpr_47, 0x00000020U, 0x07000000U, 0x2eU, "UVM_FILE"s);
-            ++(vlSymsp->__Vcoverage[15582]);
+            ++(vlSymsp->__Vcoverage[15577]);
             __VlefExpr_48 = (0U != this->__PVT__severity_file_handles.next(l_severity));
             if (!(__VlefExpr_48)) break;
-            ++(vlSymsp->__Vcoverage[15583]);
+            ++(vlSymsp->__Vcoverage[15578]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 282)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15584]);
+        ++(vlSymsp->__Vcoverage[15579]);
     } else {
-        ++(vlSymsp->__Vcoverage[15585]);
+        ++(vlSymsp->__Vcoverage[15580]);
     }
     if ((0U != this->__PVT__severity_id_file_handles.size())) {
         unnamedblk14__DOT___total_cnt = 0U;
@@ -671,11 +671,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                               .at(unnamedblk14__DOT__unnamedblk15__DOT__l_severity), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 289)->__VnoInFunc_num(vlSymsp, __VlefCall_51__num);
                 unnamedblk14__DOT___total_cnt = (unnamedblk14__DOT___total_cnt 
                                                  + __VlefCall_51__num);
-                ++(vlSymsp->__Vcoverage[15586]);
+                ++(vlSymsp->__Vcoverage[15581]);
             }
-            ++(vlSymsp->__Vcoverage[15587]);
+            ++(vlSymsp->__Vcoverage[15582]);
         } else {
-            ++(vlSymsp->__Vcoverage[15588]);
+            ++(vlSymsp->__Vcoverage[15583]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 290)->__VnoInFunc_print_array_header(vlProcess, vlSymsp, "severity_id_file_handles"s, unnamedblk14__DOT___total_cnt, "array"s, 0x2eU);
         __VlefExpr_52 = (0U != this->__PVT__severity_id_file_handles.first(l_severity));
@@ -697,31 +697,31 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_do_print(VlProcess
                                                                                 &(__Vtemp_11),
                                                                                 -1,
                                                                                 &(idx)) , __Vtemp_12, 0x00000020U, 0x07000000U, 0x2eU, "UVM_FILE"s);
-                        ++(vlSymsp->__Vcoverage[15589]);
+                        ++(vlSymsp->__Vcoverage[15584]);
                         VL_NULL_CHECK(unnamedblk14__DOT__unnamedblk16__DOT__id_f_ary, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 299)->__VnoInFunc_next(vlSymsp, idx, __Vtask_next__73__Vfuncout);
                         __VlefCall_55__next = __Vtask_next__73__Vfuncout;
                         if (!((0U != __VlefCall_55__next))) break;
-                        ++(vlSymsp->__Vcoverage[15590]);
+                        ++(vlSymsp->__Vcoverage[15585]);
                     }
-                    ++(vlSymsp->__Vcoverage[15591]);
+                    ++(vlSymsp->__Vcoverage[15586]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[15592]);
+                    ++(vlSymsp->__Vcoverage[15587]);
                 }
-                ++(vlSymsp->__Vcoverage[15593]);
+                ++(vlSymsp->__Vcoverage[15588]);
                 __VlefExpr_56 = (0U != this->__PVT__severity_id_file_handles.next(l_severity));
                 if (!(__VlefExpr_56)) break;
-                ++(vlSymsp->__Vcoverage[15594]);
+                ++(vlSymsp->__Vcoverage[15589]);
             }
-            ++(vlSymsp->__Vcoverage[15595]);
+            ++(vlSymsp->__Vcoverage[15590]);
         } else {
-            ++(vlSymsp->__Vcoverage[15596]);
+            ++(vlSymsp->__Vcoverage[15591]);
         }
         VL_NULL_CHECK(printer, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 302)->__VnoInFunc_print_array_footer(vlSymsp, 0U);
-        ++(vlSymsp->__Vcoverage[15597]);
+        ++(vlSymsp->__Vcoverage[15592]);
     } else {
-        ++(vlSymsp->__Vcoverage[15598]);
+        ++(vlSymsp->__Vcoverage[15593]);
     }
-    ++(vlSymsp->__Vcoverage[15599]);
+    ++(vlSymsp->__Vcoverage[15594]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_process_report_message(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_message> report_message) {
@@ -746,21 +746,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_process_report_mes
             VL_NULL_CHECK(this->__PVT__sev_id_overrides
                           .at(id), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 329)->__VnoInFunc_get(vlSymsp, severity, severity);
             VL_NULL_CHECK(report_message, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 330)->__VnoInFunc_set_severity(vlSymsp, severity);
-            ++(vlSymsp->__Vcoverage[15600]);
+            ++(vlSymsp->__Vcoverage[15595]);
         } else {
-            ++(vlSymsp->__Vcoverage[15601]);
+            ++(vlSymsp->__Vcoverage[15596]);
         }
-        ++(vlSymsp->__Vcoverage[15604]);
+        ++(vlSymsp->__Vcoverage[15599]);
     } else {
         VL_NULL_CHECK(this->__PVT__sev_overrides, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 334)->__VnoInFunc_exists(vlSymsp, severity, __VlefCall_1__exists);
         if ((0U != __VlefCall_1__exists)) {
             VL_NULL_CHECK(this->__PVT__sev_overrides, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 335)->__VnoInFunc_get(vlSymsp, severity, severity);
             VL_NULL_CHECK(report_message, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 336)->__VnoInFunc_set_severity(vlSymsp, severity);
-            ++(vlSymsp->__Vcoverage[15602]);
+            ++(vlSymsp->__Vcoverage[15597]);
         } else {
-            ++(vlSymsp->__Vcoverage[15603]);
+            ++(vlSymsp->__Vcoverage[15598]);
         }
-        ++(vlSymsp->__Vcoverage[15605]);
+        ++(vlSymsp->__Vcoverage[15600]);
     }
     this->__VnoInFunc_get_file_handle(vlSymsp, severity, id, __VlefCall_2__get_file_handle);
     VL_NULL_CHECK(report_message, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 339)->__VnoInFunc_set_file(vlSymsp, __VlefCall_2__get_file_handle);
@@ -769,7 +769,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_process_report_mes
     this->__VnoInFunc_get_action(vlSymsp, severity, id, __VlefCall_3__get_action);
     VL_NULL_CHECK(report_message, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 341)->__VnoInFunc_set_action(vlSymsp, __VlefCall_3__get_action);
     VL_NULL_CHECK(srvr, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 342)->__VnoInFunc_process_report_message(vlProcess, vlSymsp, report_message);
-    ++(vlSymsp->__Vcoverage[15606]);
+    ++(vlSymsp->__Vcoverage[15601]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_initialize(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -789,7 +789,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_initialize(VlProce
     this->__VnoInFunc_set_severity_file(vlSymsp, 1U, this->__PVT__default_file_handle);
     this->__VnoInFunc_set_severity_file(vlSymsp, 2U, this->__PVT__default_file_handle);
     this->__VnoInFunc_set_severity_file(vlSymsp, 3U, this->__PVT__default_file_handle);
-    ++(vlSymsp->__Vcoverage[15624]);
+    ++(vlSymsp->__Vcoverage[15619]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_severity_id_file(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ &get_severity_id_file__Vfuncrtn) {
@@ -808,37 +808,37 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_severity_id_fi
                 VL_NULL_CHECK(array, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 415)->__VnoInFunc_get(vlSymsp, id, get_severity_id_file__Vfuncrtn);
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[15626]);
+                ++(vlSymsp->__Vcoverage[15621]);
             }
-            ++(vlSymsp->__Vcoverage[15627]);
+            ++(vlSymsp->__Vcoverage[15622]);
         } else {
-            ++(vlSymsp->__Vcoverage[15628]);
+            ++(vlSymsp->__Vcoverage[15623]);
         }
         VL_NULL_CHECK(this->__PVT__id_file_handles, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 419)->__VnoInFunc_exists(vlSymsp, id, __VlefCall_1__exists);
         if ((0U != __VlefCall_1__exists)) {
             VL_NULL_CHECK(this->__PVT__id_file_handles, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 420)->__VnoInFunc_get(vlSymsp, id, get_severity_id_file__Vfuncrtn);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[15630]);
+            ++(vlSymsp->__Vcoverage[15625]);
         }
         if (this->__PVT__severity_file_handles.exists(severity)) {
             get_severity_id_file__Vfuncrtn = this->__PVT__severity_file_handles
                 .at((IData)(severity));
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[15632]);
+            ++(vlSymsp->__Vcoverage[15627]);
         }
         get_severity_id_file__Vfuncrtn = this->__PVT__default_file_handle;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[15633]);
+    ++(vlSymsp->__Vcoverage[15628]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_verbosity_level(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ verbosity_level) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_verbosity_level\n"); );
     // Body
     this->__PVT__m_max_verbosity_level = verbosity_level;
-    ++(vlSymsp->__Vcoverage[15634]);
+    ++(vlSymsp->__Vcoverage[15629]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_verbosity_level(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ &get_verbosity_level__Vfuncrtn) {
@@ -857,23 +857,23 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_verbosity_leve
                 VL_NULL_CHECK(array, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 455)->__VnoInFunc_get(vlSymsp, id, get_verbosity_level__Vfuncrtn);
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[15636]);
+                ++(vlSymsp->__Vcoverage[15631]);
             }
-            ++(vlSymsp->__Vcoverage[15637]);
+            ++(vlSymsp->__Vcoverage[15632]);
         } else {
-            ++(vlSymsp->__Vcoverage[15638]);
+            ++(vlSymsp->__Vcoverage[15633]);
         }
         VL_NULL_CHECK(this->__PVT__id_verbosities, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 459)->__VnoInFunc_exists(vlSymsp, id, __VlefCall_1__exists);
         if ((0U != __VlefCall_1__exists)) {
             VL_NULL_CHECK(this->__PVT__id_verbosities, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 460)->__VnoInFunc_get(vlSymsp, id, get_verbosity_level__Vfuncrtn);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[15640]);
+            ++(vlSymsp->__Vcoverage[15635]);
         }
         get_verbosity_level__Vfuncrtn = this->__PVT__m_max_verbosity_level;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[15641]);
+    ++(vlSymsp->__Vcoverage[15636]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_action(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ &get_action__Vfuncrtn) {
@@ -892,24 +892,24 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_action(Vtb_rng
                 VL_NULL_CHECK(array, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 484)->__VnoInFunc_get(vlSymsp, id, get_action__Vfuncrtn);
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[15643]);
+                ++(vlSymsp->__Vcoverage[15638]);
             }
-            ++(vlSymsp->__Vcoverage[15644]);
+            ++(vlSymsp->__Vcoverage[15639]);
         } else {
-            ++(vlSymsp->__Vcoverage[15645]);
+            ++(vlSymsp->__Vcoverage[15640]);
         }
         VL_NULL_CHECK(this->__PVT__id_actions, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 487)->__VnoInFunc_exists(vlSymsp, id, __VlefCall_1__exists);
         if ((0U != __VlefCall_1__exists)) {
             VL_NULL_CHECK(this->__PVT__id_actions, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 488)->__VnoInFunc_get(vlSymsp, id, get_action__Vfuncrtn);
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[15647]);
+            ++(vlSymsp->__Vcoverage[15642]);
         }
         get_action__Vfuncrtn = this->__PVT__severity_actions
             .at((IData)(severity));
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[15648]);
+    ++(vlSymsp->__Vcoverage[15643]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_file_handle(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ &get_file_handle__Vfuncrtn) {
@@ -925,7 +925,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_file_handle(Vt
             get_file_handle__Vfuncrtn = file;
             goto __Vlabel0;
         } else {
-            ++(vlSymsp->__Vcoverage[15650]);
+            ++(vlSymsp->__Vcoverage[15645]);
         }
         VL_NULL_CHECK(this->__PVT__id_file_handles, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 512)->__VnoInFunc_exists(vlSymsp, id, __VlefCall_0__exists);
         if ((0U != __VlefCall_0__exists)) {
@@ -934,11 +934,11 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_file_handle(Vt
                 get_file_handle__Vfuncrtn = file;
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[15652]);
+                ++(vlSymsp->__Vcoverage[15647]);
             }
-            ++(vlSymsp->__Vcoverage[15653]);
+            ++(vlSymsp->__Vcoverage[15648]);
         } else {
-            ++(vlSymsp->__Vcoverage[15654]);
+            ++(vlSymsp->__Vcoverage[15649]);
         }
         if (this->__PVT__severity_file_handles.exists(severity)) {
             file = this->__PVT__severity_file_handles
@@ -947,16 +947,16 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_get_file_handle(Vt
                 get_file_handle__Vfuncrtn = file;
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[15656]);
+                ++(vlSymsp->__Vcoverage[15651]);
             }
-            ++(vlSymsp->__Vcoverage[15657]);
+            ++(vlSymsp->__Vcoverage[15652]);
         } else {
-            ++(vlSymsp->__Vcoverage[15658]);
+            ++(vlSymsp->__Vcoverage[15653]);
         }
         get_file_handle__Vfuncrtn = this->__PVT__default_file_handle;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[15659]);
+    ++(vlSymsp->__Vcoverage[15654]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_action(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, IData/*31:0*/ action) {
@@ -964,14 +964,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_actio
     // Body
     this->__PVT__severity_actions.at((IData)(severity)) 
         = action;
-    ++(vlSymsp->__Vcoverage[15660]);
+    ++(vlSymsp->__Vcoverage[15655]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_id_action(Vtb_rng__Syms* __restrict vlSymsp, std::string id, IData/*31:0*/ action) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_id_action\n"); );
     // Body
     VL_NULL_CHECK(this->__PVT__id_actions, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 544)->__VnoInFunc_add(vlSymsp, id, action);
-    ++(vlSymsp->__Vcoverage[15661]);
+    ++(vlSymsp->__Vcoverage[15656]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_action(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ action) {
@@ -979,22 +979,22 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_ac
     // Body
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz22> __VlefCall_0__new;
     if (this->__PVT__severity_id_actions.exists(severity)) {
-        ++(vlSymsp->__Vcoverage[15663]);
+        ++(vlSymsp->__Vcoverage[15658]);
     } else {
         __VlefCall_0__new = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz22, vlProcess, vlSymsp, ""s);
         this->__PVT__severity_id_actions.at(severity) 
             = __VlefCall_0__new;
-        ++(vlSymsp->__Vcoverage[15662]);
+        ++(vlSymsp->__Vcoverage[15657]);
     }
     VL_NULL_CHECK(this->__PVT__severity_id_actions.at(severity), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 553)->__VnoInFunc_add(vlSymsp, id, action);
-    ++(vlSymsp->__Vcoverage[15664]);
+    ++(vlSymsp->__Vcoverage[15659]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_id_verbosity(Vtb_rng__Syms* __restrict vlSymsp, std::string id, IData/*31:0*/ verbosity) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_id_verbosity\n"); );
     // Body
     VL_NULL_CHECK(this->__PVT__id_verbosities, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 558)->__VnoInFunc_add(vlSymsp, id, verbosity);
-    ++(vlSymsp->__Vcoverage[15665]);
+    ++(vlSymsp->__Vcoverage[15660]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_verbosity(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ verbosity) {
@@ -1003,23 +1003,23 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_ve
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz22> __VlefCall_0__new;
     if (this->__PVT__severity_id_verbosities.exists(severity)) {
-        ++(vlSymsp->__Vcoverage[15667]);
+        ++(vlSymsp->__Vcoverage[15662]);
     } else {
         __VlefCall_0__new = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz22, vlProcess, vlSymsp, ""s);
         this->__PVT__severity_id_verbosities.at(severity) 
             = __VlefCall_0__new;
-        ++(vlSymsp->__Vcoverage[15666]);
+        ++(vlSymsp->__Vcoverage[15661]);
     }
     VL_NULL_CHECK(this->__PVT__severity_id_verbosities
                   .at(severity), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 567)->__VnoInFunc_add(vlSymsp, id, verbosity);
-    ++(vlSymsp->__Vcoverage[15668]);
+    ++(vlSymsp->__Vcoverage[15663]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_default_file(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ file) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_default_file\n"); );
     // Body
     this->__PVT__default_file_handle = file;
-    ++(vlSymsp->__Vcoverage[15669]);
+    ++(vlSymsp->__Vcoverage[15664]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_file(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, IData/*31:0*/ file) {
@@ -1027,14 +1027,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_file(
     // Body
     this->__PVT__severity_file_handles.at((IData)(severity)) 
         = file;
-    ++(vlSymsp->__Vcoverage[15670]);
+    ++(vlSymsp->__Vcoverage[15665]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_id_file(Vtb_rng__Syms* __restrict vlSymsp, std::string id, IData/*31:0*/ file) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_id_file\n"); );
     // Body
     VL_NULL_CHECK(this->__PVT__id_file_handles, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 589)->__VnoInFunc_add(vlSymsp, id, file);
-    ++(vlSymsp->__Vcoverage[15671]);
+    ++(vlSymsp->__Vcoverage[15666]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_file(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string id, IData/*31:0*/ file) {
@@ -1043,23 +1043,23 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_fi
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz22> __VlefCall_0__new;
     if (this->__PVT__severity_id_file_handles.exists(severity)) {
-        ++(vlSymsp->__Vcoverage[15673]);
+        ++(vlSymsp->__Vcoverage[15668]);
     } else {
         __VlefCall_0__new = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz2_TBz22, vlProcess, vlSymsp, ""s);
         this->__PVT__severity_id_file_handles.at(severity) 
             = __VlefCall_0__new;
-        ++(vlSymsp->__Vcoverage[15672]);
+        ++(vlSymsp->__Vcoverage[15667]);
     }
     VL_NULL_CHECK(this->__PVT__severity_id_file_handles
                   .at(severity), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 597)->__VnoInFunc_add(vlSymsp, id, file);
-    ++(vlSymsp->__Vcoverage[15674]);
+    ++(vlSymsp->__Vcoverage[15669]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_override(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ cur_severity, CData/*1:0*/ new_severity) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_override\n"); );
     // Body
     VL_NULL_CHECK(this->__PVT__sev_overrides, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 603)->__VnoInFunc_add(vlSymsp, cur_severity, (IData)(new_severity));
-    ++(vlSymsp->__Vcoverage[15675]);
+    ++(vlSymsp->__Vcoverage[15670]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_override(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ cur_severity, std::string id, CData/*1:0*/ new_severity) {
@@ -1067,14 +1067,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_set_severity_id_ov
     // Body
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz23_TBz23> __VlefCall_0__new;
     if (this->__PVT__sev_id_overrides.exists(id)) {
-        ++(vlSymsp->__Vcoverage[15677]);
+        ++(vlSymsp->__Vcoverage[15672]);
     } else {
         __VlefCall_0__new = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_pool__Tz23_TBz23, vlProcess, vlSymsp, ""s);
         this->__PVT__sev_id_overrides.at(id) = __VlefCall_0__new;
-        ++(vlSymsp->__Vcoverage[15676]);
+        ++(vlSymsp->__Vcoverage[15671]);
     }
     VL_NULL_CHECK(this->__PVT__sev_id_overrides.at(id), "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 616)->__VnoInFunc_add(vlSymsp, cur_severity, (IData)(new_severity));
-    ++(vlSymsp->__Vcoverage[15678]);
+    ++(vlSymsp->__Vcoverage[15673]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_report(Vtb_rng__Syms* __restrict vlSymsp, CData/*1:0*/ severity, std::string name, std::string id, std::string message, IData/*31:0*/ verbosity_level, std::string filename, IData/*31:0*/ line, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_report_object> client) {
@@ -1106,18 +1106,18 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_report(Vtb_rng__Sy
         vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
             = __Vtask_get_root__134__Vfuncout;
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__132__verbosity, (IData)(__Vfunc_uvm_report_enabled__132__severity), this->__Vfunc_uvm_report_enabled__132__id, __VlefCall_0__uvm_report_enabled);
-        ++(vlSymsp->__Vcoverage[437]);
+        ++(vlSymsp->__Vcoverage[432]);
         if ((0U != __VlefCall_0__uvm_report_enabled)) {
-            ++(vlSymsp->__Vcoverage[15680]);
+            ++(vlSymsp->__Vcoverage[15675]);
         } else {
             goto __Vlabel0;
         }
         if ((VlNull{} == client)) {
             VL_NULL_CHECK(cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 645)->__VnoInFunc_get_root(vlProcess, vlSymsp, __Vtask_get_root__136__Vfuncout);
             client = __Vtask_get_root__136__Vfuncout;
-            ++(vlSymsp->__Vcoverage[15681]);
+            ++(vlSymsp->__Vcoverage[15676]);
         } else {
-            ++(vlSymsp->__Vcoverage[15682]);
+            ++(vlSymsp->__Vcoverage[15677]);
         }
         vlSymsp->TOP__uvm_pkg__03a__03auvm_report_message__Vclpkg.__VnoInFunc_new_report_message(vlProcess, vlSymsp, "uvm_report_message"s, l_report_message);
         VL_NULL_CHECK(l_report_message, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_report_handler.svh", 648)->__VnoInFunc_set_report_message(vlSymsp, severity, id, message, verbosity_level, filename, line, name);
@@ -1127,7 +1127,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_report(Vtb_rng__Sy
         this->__VnoInFunc_process_report_message(vlProcess, vlSymsp, l_report_message);
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[15683]);
+    ++(vlSymsp->__Vcoverage[15678]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_report_handler::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

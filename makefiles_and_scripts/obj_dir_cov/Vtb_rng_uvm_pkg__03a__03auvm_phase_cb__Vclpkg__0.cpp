@@ -10,13 +10,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_phase_cb::init(VlProcessRef vlProcess, Vtb_rng
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[16469]);
+    ++(vlSymsp->__Vcoverage[16464]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_phase_cb::__VnoInFunc_phase_state_change(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase_state_change> change) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_phase_cb::__VnoInFunc_phase_state_change\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[16470]);
+    ++(vlSymsp->__Vcoverage[16465]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_phase_cb::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

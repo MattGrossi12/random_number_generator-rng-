@@ -26,7 +26,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_rng_tb_rng final {
     struct {
         CData/*0:0*/ __PVT__clk;
         CData/*0:0*/ __Vtogcov__clk;
-        CData/*0:0*/ __PVT__dut__DOT__req_num_again;
         CData/*0:0*/ __PVT__dut__DOT__req_num;
         CData/*2:0*/ __PVT__dut__DOT__data_out;
         CData/*0:0*/ dut__DOT____Vtogcov__clk_i;
@@ -84,14 +83,13 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_rng_tb_rng final {
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__dec5;
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__dec6;
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__dec7;
-        CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__req_num;
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__next_state;
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__wr_ff1;
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2;
-    };
-    struct {
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__wr_ff2_d;
         CData/*0:0*/ dut__DOT__rng_rd__DOT____Vtogcov__wr_pulse;
+    };
+    struct {
         CData/*2:0*/ __Vdly__dut__DOT__rng_dp__DOT__next_num;
         CData/*2:0*/ __Vdly__dut__DOT__rng_dp__DOT__inst__DOT__num_counter;
         CData/*1:0*/ __Vdly__dut__DOT__rng_sel__DOT__seed_s;

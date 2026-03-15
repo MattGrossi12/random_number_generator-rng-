@@ -10,34 +10,34 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::init(VlProcessRef vlProces
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[20787]);
+    ++(vlSymsp->__Vcoverage[20782]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_get_type_handle(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base> &get_type_handle__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_get_type_handle\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[20788]);
+    ++(vlSymsp->__Vcoverage[20783]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_get_type_handle_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_handle_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_get_type_handle_name\n"); );
     // Body
     get_type_handle_name__Vfuncrtn = ""s;
-    ++(vlSymsp->__Vcoverage[20789]);
+    ++(vlSymsp->__Vcoverage[20784]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_do_copy(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> rhs) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_do_copy\n"); );
     // Body
     Vtb_rng_uvm_pkg__03a__03auvm_object::__VnoInFunc_do_copy(vlProcess, vlSymsp, rhs);
-    ++(vlSymsp->__Vcoverage[20790]);
+    ++(vlSymsp->__Vcoverage[20785]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_create(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_create\n"); );
     // Body
     create__Vfuncrtn = VlNull{};
-    ++(vlSymsp->__Vcoverage[20791]);
+    ++(vlSymsp->__Vcoverage[20786]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_extension_base::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

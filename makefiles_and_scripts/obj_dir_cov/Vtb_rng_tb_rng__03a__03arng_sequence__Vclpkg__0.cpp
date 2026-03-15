@@ -8,14 +8,14 @@ void Vtb_rng_tb_rng__03a__03arng_sequence__Vclpkg::__VnoInFunc_get_type(Vtb_rng_
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_tb_rng__03a__03arng_sequence__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi64__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[531]);
+    ++(vlSymsp->__Vcoverage[526]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequence__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_tb_rng__03a__03arng_sequence__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "rng_sequence"s;
-    ++(vlSymsp->__Vcoverage[536]);
+    ++(vlSymsp->__Vcoverage[531]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,7 +25,7 @@ void Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_get_object_type(Vtb_rng__
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi64__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[532]);
+    ++(vlSymsp->__Vcoverage[527]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_create(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create__Vfuncrtn) {
@@ -34,20 +34,20 @@ void Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_create(VlProcessRef vlPro
     VlClassRef<Vtb_rng_tb_rng__03a__03arng_sequence> tmp;
     if ((""s == name)) {
         tmp = VL_NEW(Vtb_rng_tb_rng__03a__03arng_sequence, vlProcess, vlSymsp, "rng_sequence"s);
-        ++(vlSymsp->__Vcoverage[533]);
+        ++(vlSymsp->__Vcoverage[528]);
     } else {
         tmp = VL_NEW(Vtb_rng_tb_rng__03a__03arng_sequence, vlProcess, vlSymsp, name);
-        ++(vlSymsp->__Vcoverage[534]);
+        ++(vlSymsp->__Vcoverage[529]);
     }
     create__Vfuncrtn = tmp;
-    ++(vlSymsp->__Vcoverage[535]);
+    ++(vlSymsp->__Vcoverage[530]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "rng_sequence"s;
-    ++(vlSymsp->__Vcoverage[537]);
+    ++(vlSymsp->__Vcoverage[532]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_sequence::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -56,13 +56,13 @@ void Vtb_rng_tb_rng__03a__03arng_sequence::init(VlProcessRef vlProcess, Vtb_rng_
     // Body
     _ctor_var_reset(vlSymsp);
     this->__PVT__num_rounds = 0x00000018U;
-    ++(vlSymsp->__Vcoverage[538]);
+    ++(vlSymsp->__Vcoverage[533]);
     this->__PVT__seed = 0U;
-    ++(vlSymsp->__Vcoverage[539]);
+    ++(vlSymsp->__Vcoverage[534]);
     this->__PVT__use_seed = 0U;
-    ++(vlSymsp->__Vcoverage[540]);
+    ++(vlSymsp->__Vcoverage[535]);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[541]);
+    ++(vlSymsp->__Vcoverage[536]);
 }
 
 VlCoroutine Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_body(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -93,9 +93,9 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_body(VlProcessRef 
                                                                                 this->__PVT__num_rounds,
                                                                                 32,
                                                                                 s) , 0x00000064U, "../UVM/UVM_sequence.sv"s, 0x00000026U, ""s, 1U);
-        ++(vlSymsp->__Vcoverage[544]);
+        ++(vlSymsp->__Vcoverage[539]);
     } else {
-        ++(vlSymsp->__Vcoverage[545]);
+        ++(vlSymsp->__Vcoverage[540]);
     }
     unnamedblk1__DOT__r = 0U;
     unnamedblk1__DOT__r = 1U;
@@ -104,17 +104,17 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_body(VlProcessRef 
             clk_tog = 3ULL;
             lo = 5U;
             hi = 0x00000064U;
-            ++(vlSymsp->__Vcoverage[548]);
+            ++(vlSymsp->__Vcoverage[543]);
         } else if (VL_GTES_III(32, 0x00000010U, unnamedblk1__DOT__r)) {
             clk_tog = 7ULL;
             lo = 0x0000000fU;
             hi = 0x00000096U;
-            ++(vlSymsp->__Vcoverage[546]);
+            ++(vlSymsp->__Vcoverage[541]);
         } else {
             clk_tog = 0x000000000000000aULL;
             lo = 0x00000019U;
             hi = 0x000000faU;
-            ++(vlSymsp->__Vcoverage[547]);
+            ++(vlSymsp->__Vcoverage[542]);
         }
         vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi62__Vclpkg.__VnoInFunc_create(vlProcess, vlSymsp, VL_SFORMATF_N_NX("tr_r%0d",0,
                                                                                 32,
@@ -133,21 +133,21 @@ VlCoroutine Vtb_rng_tb_rng__03a__03arng_sequence::__VnoInFunc_body(VlProcessRef 
             this->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, "RNG_SEQ_ITEM"s, VL_SFORMATF_N_NX("Gerado: %@",0,
                                                                                 -1,
                                                                                 &(__VlefCall_2__convert2string)) , 0x00000064U, "../UVM/UVM_sequence.sv"s, 0x00000053U, ""s, 1U);
-            ++(vlSymsp->__Vcoverage[549]);
+            ++(vlSymsp->__Vcoverage[544]);
         } else {
-            ++(vlSymsp->__Vcoverage[550]);
+            ++(vlSymsp->__Vcoverage[545]);
         }
         co_await this->__VnoInFunc_finish_item(vlProcess, vlSymsp, tr, 0xffffffffU);
         unnamedblk1__DOT__r = ((IData)(1U) + unnamedblk1__DOT__r);
-        ++(vlSymsp->__Vcoverage[551]);
+        ++(vlSymsp->__Vcoverage[546]);
     }
     if (this->__PVT__use_seed) {
-        ++(vlSymsp->__Vcoverage[542]);
+        ++(vlSymsp->__Vcoverage[537]);
     }
     if ((1U & (~ (IData)(this->__PVT__use_seed)))) {
-        ++(vlSymsp->__Vcoverage[543]);
+        ++(vlSymsp->__Vcoverage[538]);
     }
-    ++(vlSymsp->__Vcoverage[552]);
+    ++(vlSymsp->__Vcoverage[547]);
     co_return;
 }
 

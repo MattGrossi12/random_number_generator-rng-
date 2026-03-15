@@ -8,21 +8,21 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_get_type(Vt
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi175__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[10058]);
+    ++(vlSymsp->__Vcoverage[10053]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_table_printer"s;
-    ++(vlSymsp->__Vcoverage[10063]);
+    ++(vlSymsp->__Vcoverage[10058]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_set_default(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_table_printer> printer) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_set_default\n"); );
     // Body
     this->__PVT__m_default_table_printer = printer;
-    ++(vlSymsp->__Vcoverage[10102]);
+    ++(vlSymsp->__Vcoverage[10097]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_get_default(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_table_printer> &get_default__Vfuncrtn) {
@@ -30,12 +30,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer__Vclpkg::__VnoInFunc_get_default
     // Body
     if ((VlNull{} == this->__PVT__m_default_table_printer)) {
         this->__PVT__m_default_table_printer = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_table_printer, vlProcess, vlSymsp, "uvm_default_table_printer"s);
-        ++(vlSymsp->__Vcoverage[10103]);
+        ++(vlSymsp->__Vcoverage[10098]);
     } else {
-        ++(vlSymsp->__Vcoverage[10104]);
+        ++(vlSymsp->__Vcoverage[10099]);
     }
     get_default__Vfuncrtn = this->__PVT__m_default_table_printer;
-    ++(vlSymsp->__Vcoverage[10105]);
+    ++(vlSymsp->__Vcoverage[10100]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -45,7 +45,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_get_object_type(Vtb
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_object_registry__pi175__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[10059]);
+    ++(vlSymsp->__Vcoverage[10054]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_create(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> &create__Vfuncrtn) {
@@ -54,20 +54,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_create(VlProcessRef
     VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_table_printer> tmp;
     if ((""s == name)) {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_table_printer, vlProcess, vlSymsp, ""s);
-        ++(vlSymsp->__Vcoverage[10060]);
+        ++(vlSymsp->__Vcoverage[10055]);
     } else {
         tmp = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_table_printer, vlProcess, vlSymsp, name);
-        ++(vlSymsp->__Vcoverage[10061]);
+        ++(vlSymsp->__Vcoverage[10056]);
     }
     create__Vfuncrtn = tmp;
-    ++(vlSymsp->__Vcoverage[10062]);
+    ++(vlSymsp->__Vcoverage[10057]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_table_printer"s;
-    ++(vlSymsp->__Vcoverage[10064]);
+    ++(vlSymsp->__Vcoverage[10059]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -76,15 +76,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::init(VlProcessRef vlProcess, Vt
     // Body
     _ctor_var_reset(vlSymsp);
     this->__PVT__m_max_name = 4U;
-    ++(vlSymsp->__Vcoverage[10065]);
+    ++(vlSymsp->__Vcoverage[10060]);
     this->__PVT__m_max_type = 4U;
-    ++(vlSymsp->__Vcoverage[10066]);
+    ++(vlSymsp->__Vcoverage[10061]);
     this->__PVT__m_max_size = 4U;
-    ++(vlSymsp->__Vcoverage[10067]);
+    ++(vlSymsp->__Vcoverage[10062]);
     this->__PVT__m_max_value = 5U;
-    ++(vlSymsp->__Vcoverage[10068]);
+    ++(vlSymsp->__Vcoverage[10063]);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[10069]);
+    ++(vlSymsp->__Vcoverage[10064]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_pop_element(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -116,30 +116,30 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_pop_element(Vtb_rng
         this->__VnoInFunc_get_indent(vlSymsp, __VlefCall_2__get_indent);
         this->__PVT__m_max_name = (VL_LEN_IN(name_str) 
                                    + VL_MULS_III(32, __VlefCall_2__get_indent, level));
-        ++(vlSymsp->__Vcoverage[10070]);
+        ++(vlSymsp->__Vcoverage[10065]);
     } else {
-        ++(vlSymsp->__Vcoverage[10071]);
+        ++(vlSymsp->__Vcoverage[10066]);
     }
     if (VL_GTS_III(32, VL_LEN_IN(type_name_str), this->__PVT__m_max_type)) {
         this->__PVT__m_max_type = VL_LEN_IN(type_name_str);
-        ++(vlSymsp->__Vcoverage[10072]);
+        ++(vlSymsp->__Vcoverage[10067]);
     } else {
-        ++(vlSymsp->__Vcoverage[10073]);
+        ++(vlSymsp->__Vcoverage[10068]);
     }
     if (VL_GTS_III(32, VL_LEN_IN(size_str), this->__PVT__m_max_size)) {
         this->__PVT__m_max_size = VL_LEN_IN(size_str);
-        ++(vlSymsp->__Vcoverage[10074]);
+        ++(vlSymsp->__Vcoverage[10069]);
     } else {
-        ++(vlSymsp->__Vcoverage[10075]);
+        ++(vlSymsp->__Vcoverage[10070]);
     }
     if (VL_GTS_III(32, VL_LEN_IN(value_str), this->__PVT__m_max_value)) {
         this->__PVT__m_max_value = VL_LEN_IN(value_str);
-        ++(vlSymsp->__Vcoverage[10076]);
+        ++(vlSymsp->__Vcoverage[10071]);
     } else {
-        ++(vlSymsp->__Vcoverage[10077]);
+        ++(vlSymsp->__Vcoverage[10072]);
     }
     Vtb_rng_uvm_pkg__03a__03auvm_printer::__VnoInFunc_pop_element(vlSymsp);
-    ++(vlSymsp->__Vcoverage[10078]);
+    ++(vlSymsp->__Vcoverage[10073]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string &emit__Vfuncrtn) {
@@ -181,7 +181,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
     linefeed = ""s;
     if (Vtb_rng_uvm_pkg__03a__03auvm_printer::__PVT__m_flushed) {
         Vtb_rng_uvm_pkg__03a__03auvm_printer::__PVT__m_flushed = 0U;
-        ++(vlSymsp->__Vcoverage[10082]);
+        ++(vlSymsp->__Vcoverage[10077]);
     } else {
         this->__Vfunc_uvm_report_enabled__13__id = "UVM/PRINT/NO_FLUSH"s;
         __Vfunc_uvm_report_enabled__13__severity = 2U;
@@ -193,7 +193,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
         vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
             = __Vtask_get_root__15__Vfuncout;
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__13__verbosity, (IData)(__Vfunc_uvm_report_enabled__13__severity), this->__Vfunc_uvm_report_enabled__13__id, __VlefCall_0__uvm_report_enabled);
-        ++(vlSymsp->__Vcoverage[437]);
+        ++(vlSymsp->__Vcoverage[432]);
         if ((0U != __VlefCall_0__uvm_report_enabled)) {
             __Vtask_uvm_report_error__17__report_enabled_checked = 1U;
             this->__Vtask_uvm_report_error__17__context_name = ""s;
@@ -209,12 +209,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
             vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_error__Vstatic__top 
                 = __Vtask_get_root__19__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_error__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 175)->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, this->__Vtask_uvm_report_error__17__id, this->__Vtask_uvm_report_error__17__message, __Vtask_uvm_report_error__17__verbosity, this->__Vtask_uvm_report_error__17__filename, __Vtask_uvm_report_error__17__line, this->__Vtask_uvm_report_error__17__context_name, (IData)(__Vtask_uvm_report_error__17__report_enabled_checked));
-            ++(vlSymsp->__Vcoverage[442]);
-            ++(vlSymsp->__Vcoverage[10079]);
+            ++(vlSymsp->__Vcoverage[437]);
+            ++(vlSymsp->__Vcoverage[10074]);
         } else {
-            ++(vlSymsp->__Vcoverage[10080]);
+            ++(vlSymsp->__Vcoverage[10075]);
         }
-        ++(vlSymsp->__Vcoverage[10081]);
+        ++(vlSymsp->__Vcoverage[10076]);
     }
     this->__VnoInFunc_get_line_prefix(vlSymsp, __VlefCall_1__get_line_prefix);
     linefeed = VL_CONCATN_NNN("\n"s, __VlefCall_1__get_line_prefix);
@@ -236,9 +236,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
             = VL_REPLICATEN_NNI("-"s, unnamedblk44__DOT__m);
         vlSymsp->TOP__uvm_pkg__03a__03auvm_table_printer__Vclpkg.__PVT__m_space 
             = VL_REPLICATEN_NNI(" "s, unnamedblk44__DOT__m);
-        ++(vlSymsp->__Vcoverage[10085]);
+        ++(vlSymsp->__Vcoverage[10080]);
     } else {
-        ++(vlSymsp->__Vcoverage[10086]);
+        ++(vlSymsp->__Vcoverage[10081]);
     }
     unnamedblk45__DOT__header = ""s;
     this->__VnoInFunc_get_name_enabled(vlSymsp, __VlefCall_2__get_name_enabled);
@@ -249,9 +249,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
                                                    VL_SUBSTR_N(vlSymsp->TOP__uvm_pkg__03a__03auvm_table_printer__Vclpkg.__PVT__m_space,1U,
                                                                (this->__PVT__m_max_name 
                                                                 - (IData)(2U))));
-        ++(vlSymsp->__Vcoverage[10087]);
+        ++(vlSymsp->__Vcoverage[10082]);
     } else {
-        ++(vlSymsp->__Vcoverage[10088]);
+        ++(vlSymsp->__Vcoverage[10083]);
     }
     this->__VnoInFunc_get_type_name_enabled(vlSymsp, __VlefCall_3__get_type_name_enabled);
     if (__VlefCall_3__get_type_name_enabled) {
@@ -263,9 +263,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
                                                    VL_SUBSTR_N(vlSymsp->TOP__uvm_pkg__03a__03auvm_table_printer__Vclpkg.__PVT__m_space,1U,
                                                                (this->__PVT__m_max_type 
                                                                 - (IData)(2U))));
-        ++(vlSymsp->__Vcoverage[10089]);
+        ++(vlSymsp->__Vcoverage[10084]);
     } else {
-        ++(vlSymsp->__Vcoverage[10090]);
+        ++(vlSymsp->__Vcoverage[10085]);
     }
     this->__VnoInFunc_get_size_enabled(vlSymsp, __VlefCall_4__get_size_enabled);
     if (__VlefCall_4__get_size_enabled) {
@@ -277,9 +277,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
                                                    VL_SUBSTR_N(vlSymsp->TOP__uvm_pkg__03a__03auvm_table_printer__Vclpkg.__PVT__m_space,1U,
                                                                (this->__PVT__m_max_size 
                                                                 - (IData)(2U))));
-        ++(vlSymsp->__Vcoverage[10091]);
+        ++(vlSymsp->__Vcoverage[10086]);
     } else {
-        ++(vlSymsp->__Vcoverage[10092]);
+        ++(vlSymsp->__Vcoverage[10087]);
     }
     dashes = VL_CONCATN_NNN(VL_CONCATN_NNN(dashes, 
                                            VL_SUBSTR_N(vlSymsp->TOP__uvm_pkg__03a__03auvm_table_printer__Vclpkg.__PVT__emit__Vstatic__dash,1U,this->__PVT__m_max_value)), linefeed);
@@ -296,12 +296,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_emit(VlProcessRef v
     this->__VnoInFunc_get_line_prefix(vlSymsp, __VlefCall_7__get_line_prefix);
     emit__Vfuncrtn = VL_CONCATN_NNN(__VlefCall_7__get_line_prefix, s);
     if ((1U & (~ (IData)(Vtb_rng_uvm_pkg__03a__03auvm_printer::__PVT__m_flushed)))) {
-        ++(vlSymsp->__Vcoverage[10083]);
+        ++(vlSymsp->__Vcoverage[10078]);
     }
     if (Vtb_rng_uvm_pkg__03a__03auvm_printer::__PVT__m_flushed) {
-        ++(vlSymsp->__Vcoverage[10084]);
+        ++(vlSymsp->__Vcoverage[10079]);
     }
-    ++(vlSymsp->__Vcoverage[10093]);
+    ++(vlSymsp->__Vcoverage[10088]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_m_emit_element(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_printer_element> element, IData/*31:0*/ level, std::string &m_emit_element__Vfuncrtn) {
@@ -354,9 +354,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_m_emit_element(Vtb_
                                                  VL_LEN_IN(unnamedblk46__DOT__name_str)) 
                                                 - (level 
                                                    * __VlefCall_3__get_indent)))));
-        ++(vlSymsp->__Vcoverage[10094]);
+        ++(vlSymsp->__Vcoverage[10089]);
     } else {
-        ++(vlSymsp->__Vcoverage[10095]);
+        ++(vlSymsp->__Vcoverage[10090]);
     }
     this->__VnoInFunc_get_type_name_enabled(vlSymsp, __VlefCall_4__get_type_name_enabled);
     if (__VlefCall_4__get_type_name_enabled) {
@@ -365,9 +365,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_m_emit_element(Vtb_
                                             ((IData)(2U) 
                                              + (this->__PVT__m_max_type 
                                                 - VL_LEN_IN(unnamedblk46__DOT__type_name_str)))));
-        ++(vlSymsp->__Vcoverage[10096]);
+        ++(vlSymsp->__Vcoverage[10091]);
     } else {
-        ++(vlSymsp->__Vcoverage[10097]);
+        ++(vlSymsp->__Vcoverage[10092]);
     }
     this->__VnoInFunc_get_size_enabled(vlSymsp, __VlefCall_5__get_size_enabled);
     if (__VlefCall_5__get_size_enabled) {
@@ -376,9 +376,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_m_emit_element(Vtb_
                                             ((IData)(2U) 
                                              + (this->__PVT__m_max_size 
                                                 - VL_LEN_IN(unnamedblk46__DOT__size_str)))));
-        ++(vlSymsp->__Vcoverage[10098]);
+        ++(vlSymsp->__Vcoverage[10093]);
     } else {
-        ++(vlSymsp->__Vcoverage[10099]);
+        ++(vlSymsp->__Vcoverage[10094]);
     }
     result = VL_CONCATN_NNN(VL_CONCATN_NNN(VL_CONCATN_NNN(
                                                           VL_CONCATN_NNN(result, unnamedblk46__DOT__row_str), unnamedblk46__DOT__value_str), 
@@ -394,10 +394,10 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_m_emit_element(Vtb_
                                           + level), __VlefCall_6__m_emit_element);
         result = VL_CONCATN_NNN(result, __VlefCall_6__m_emit_element);
         unnamedblk47__DOT__i = ((IData)(1U) + unnamedblk47__DOT__i);
-        ++(vlSymsp->__Vcoverage[10100]);
+        ++(vlSymsp->__Vcoverage[10095]);
     }
     m_emit_element__Vfuncrtn = result;
-    ++(vlSymsp->__Vcoverage[10101]);
+    ++(vlSymsp->__Vcoverage[10096]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_set_indent(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ indent) {
@@ -407,7 +407,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_set_indent(Vtb_rng_
     this->__VnoInFunc_get_knobs(vlSymsp, _knobs);
     VL_NULL_CHECK(_knobs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1818)->__PVT__indent 
         = indent;
-    ++(vlSymsp->__Vcoverage[10106]);
+    ++(vlSymsp->__Vcoverage[10101]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_get_indent(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &get_indent__Vfuncrtn) {
@@ -418,7 +418,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_get_indent(Vtb_rng_
     this->__VnoInFunc_get_knobs(vlSymsp, _knobs);
     get_indent__Vfuncrtn = VL_NULL_CHECK(_knobs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_printer.svh", 1822)
         ->__PVT__indent;
-    ++(vlSymsp->__Vcoverage[10107]);
+    ++(vlSymsp->__Vcoverage[10102]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_flush(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -429,7 +429,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_flush(VlProcessRef 
     this->__PVT__m_max_type = 4U;
     this->__PVT__m_max_size = 4U;
     this->__PVT__m_max_value = 5U;
-    ++(vlSymsp->__Vcoverage[10108]);
+    ++(vlSymsp->__Vcoverage[10103]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_table_printer::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

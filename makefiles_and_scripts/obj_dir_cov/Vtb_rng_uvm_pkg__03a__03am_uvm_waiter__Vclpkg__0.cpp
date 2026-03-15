@@ -10,7 +10,7 @@ void Vtb_rng_uvm_pkg__03a__03am_uvm_waiter::init(Vtb_rng__Syms* __restrict vlSym
     _ctor_var_reset(vlSymsp);
     this->__PVT__inst_name = inst_name;
     this->__PVT__field_name = field_name;
-    ++(vlSymsp->__Vcoverage[8046]);
+    ++(vlSymsp->__Vcoverage[8041]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03am_uvm_waiter::_ctor_var_reset(Vtb_rng__Syms* __restrict vlSymsp) {

@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229__Vclpkg::__VnoInFunc_get_
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_abstract_component_registry__pi173__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[19531]);
+    ++(vlSymsp->__Vcoverage[19526]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -18,7 +18,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_get_object_t
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_abstract_component_registry__pi173__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[19532]);
+    ++(vlSymsp->__Vcoverage[19527]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
@@ -45,14 +45,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::init(VlProcessRef vlProc
                                  VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229>{this});
     this->__PVT__get_ap = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_analysis_port__Tz229, vlProcess, vlSymsp, "get_ap"s, 
                                  VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229>{this});
-    ++(vlSymsp->__Vcoverage[19533]);
+    ++(vlSymsp->__Vcoverage[19528]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_use_automatic_config(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &use_automatic_config__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                    Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_use_automatic_config\n"); );
     // Body
     use_automatic_config__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19534]);
+    ++(vlSymsp->__Vcoverage[19529]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_flush(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -60,7 +60,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_flush(Vtb_rn
     // Body
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "flush"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
-    ++(vlSymsp->__Vcoverage[19535]);
+    ++(vlSymsp->__Vcoverage[19530]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_size(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &size__Vfuncrtn) {
@@ -70,7 +70,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_size(Vtb_rng
     size__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "size"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     size__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19536]);
+    ++(vlSymsp->__Vcoverage[19531]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_put(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> t) {
@@ -79,7 +79,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_put(V
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     VL_KEEP_THIS;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "put"s, "fifo channel task not implemented"s, 0U, ""s, 0U, ""s, 0U);
-    ++(vlSymsp->__Vcoverage[19537]);
+    ++(vlSymsp->__Vcoverage[19532]);
     co_return;
 }
 
@@ -89,7 +89,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_get(V
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     VL_KEEP_THIS;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "get"s, "fifo channel task not implemented"s, 0U, ""s, 0U, ""s, 0U);
-    ++(vlSymsp->__Vcoverage[19538]);
+    ++(vlSymsp->__Vcoverage[19533]);
     co_return;
 }
 
@@ -98,7 +98,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_peek(
     // Body
     VL_KEEP_THIS;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "peek"s, "fifo channel task not implemented"s, 0U, ""s, 0U, ""s, 0U);
-    ++(vlSymsp->__Vcoverage[19539]);
+    ++(vlSymsp->__Vcoverage[19534]);
     co_return;
 }
 
@@ -108,7 +108,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_try_put(VlPr
     try_put__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "try_put"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     try_put__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19540]);
+    ++(vlSymsp->__Vcoverage[19535]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_try_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> &t, CData/*0:0*/ &try_get__Vfuncrtn) {
@@ -117,7 +117,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_try_get(VlPr
     try_get__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "try_get"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     try_get__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19541]);
+    ++(vlSymsp->__Vcoverage[19536]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_try_peek(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> &t, CData/*0:0*/ &try_peek__Vfuncrtn) {
@@ -127,7 +127,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_try_peek(Vtb
     try_peek__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "try_peek"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     try_peek__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19542]);
+    ++(vlSymsp->__Vcoverage[19537]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_can_put(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &can_put__Vfuncrtn) {
@@ -137,7 +137,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_can_put(Vtb_
     can_put__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "can_put"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     can_put__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19543]);
+    ++(vlSymsp->__Vcoverage[19538]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_can_get(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &can_get__Vfuncrtn) {
@@ -147,7 +147,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_can_get(Vtb_
     can_get__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "can_get"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     can_get__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19544]);
+    ++(vlSymsp->__Vcoverage[19539]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_can_peek(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &can_peek__Vfuncrtn) {
@@ -157,7 +157,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_can_peek(Vtb
     can_peek__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "can_peek"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     can_peek__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19545]);
+    ++(vlSymsp->__Vcoverage[19540]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_ok_to_put(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tlm_event> &ok_to_put__Vfuncrtn) {
@@ -166,7 +166,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_ok_to_put(Vt
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "ok_to_put"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     ok_to_put__Vfuncrtn = VlNull{};
-    ++(vlSymsp->__Vcoverage[19546]);
+    ++(vlSymsp->__Vcoverage[19541]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_ok_to_get(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tlm_event> &ok_to_get__Vfuncrtn) {
@@ -175,7 +175,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_ok_to_get(Vt
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "ok_to_get"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     ok_to_get__Vfuncrtn = VlNull{};
-    ++(vlSymsp->__Vcoverage[19547]);
+    ++(vlSymsp->__Vcoverage[19542]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_ok_to_peek(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_tlm_event> &ok_to_peek__Vfuncrtn) {
@@ -184,7 +184,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_ok_to_peek(V
     VlProcessRef vlProcess = std::make_shared<VlProcess>();
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "ok_to_peek"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     ok_to_peek__Vfuncrtn = VlNull{};
-    ++(vlSymsp->__Vcoverage[19548]);
+    ++(vlSymsp->__Vcoverage[19543]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_is_empty(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_empty__Vfuncrtn) {
@@ -194,7 +194,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_is_empty(Vtb
     is_empty__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "is_empty"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     is_empty__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19549]);
+    ++(vlSymsp->__Vcoverage[19544]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_is_full(Vtb_rng__Syms* __restrict vlSymsp, CData/*0:0*/ &is_full__Vfuncrtn) {
@@ -204,7 +204,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_is_full(Vtb_
     is_full__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "is_full"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     is_full__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19550]);
+    ++(vlSymsp->__Vcoverage[19545]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_used(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &used__Vfuncrtn) {
@@ -214,7 +214,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_used(Vtb_rng
     used__Vfuncrtn = 0U;
     this->__VnoInFunc_uvm_report_error(vlProcess, vlSymsp, "used"s, "fifo channel function not implemented"s, 0U, ""s, 0U, ""s, 0U);
     used__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[19551]);
+    ++(vlSymsp->__Vcoverage[19546]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_tlm_fifo_base__Tz229::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

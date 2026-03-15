@@ -1338,15 +1338,12 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_rng___024root final {
     CData/*0:0*/ __VvifTrigger_h7b4084d7__3_Vtrigm___PVT__req_num_i;
     CData/*0:0*/ __VvifTrigger_h7b4084d7__4_Vtrigm___PVT__wr_i;
     CData/*0:0*/ __VvifTrigger_h7b4084d7__5_Vtrigm___PVT__clk_toggle_tu;
-    CData/*0:0*/ __Vtrigprevexpr___TOP__tb_rng____PVT__dut__DOT__req_num__0;
-    CData/*0:0*/ __VstlDidInit;
     CData/*0:0*/ __VstlFirstIteration;
     CData/*0:0*/ __VstlPhaseResult;
     CData/*0:0*/ __VicoFirstIteration;
     CData/*0:0*/ __VicoPhaseResult;
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_rng__rif____PVT__clk_i__0;
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_rng__rif____PVT__rst_i__0;
-    CData/*0:0*/ __Vtrigprevexpr___TOP__tb_rng____PVT__dut__DOT__req_num__1;
     CData/*0:0*/ __Vtrigprevexpr_h0ebb1ce0__1;
     CData/*0:0*/ __VactPhaseResult;
     CData/*0:0*/ __VinactPhaseResult;
@@ -1354,7 +1351,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_rng___024root final {
     IData/*31:0*/ __VactIterCount;
     IData/*31:0*/ __VinactIterCount;
     IData/*31:0*/ __Vi;
-    VlUnpacked<QData/*63:0*/, 2> __VstlTriggered;
+    VlUnpacked<QData/*63:0*/, 1> __VstlTriggered;
     VlUnpacked<QData/*63:0*/, 1> __VicoTriggered;
     VlUnpacked<QData/*63:0*/, 4> __VactTriggered;
     VlUnpacked<QData/*63:0*/, 3> __VactTriggeredAcc;

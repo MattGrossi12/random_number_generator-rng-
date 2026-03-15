@@ -16,11 +16,11 @@ VL_ATTR_COLD void Vtb_rng_tb_rng__03a__03arng_sequencer__Vclpkg___configure_cove
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[526]), first, "../UVM/UVM_sequencer.sv", 2, 28, "", "v_line/rng_sequencer", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[527]), first, "../UVM/UVM_sequencer.sv", 2, 40, "", "v_line/rng_sequencer", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[528]), first, "../UVM/UVM_sequencer.sv", 2, 29, "", "v_line/rng_sequencer", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[529]), first, "../UVM/UVM_sequencer.sv", 2, 30, "", "v_line/rng_sequencer", "block", "2");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[530]), first, "../UVM/UVM_sequencer.sv", 4, 14, "", "v_line/rng_sequencer", "block", "4,6");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[521]), first, "../UVM/UVM_sequencer.sv", 2, 28, "", "v_line/rng_sequencer", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[522]), first, "../UVM/UVM_sequencer.sv", 2, 40, "", "v_line/rng_sequencer", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[523]), first, "../UVM/UVM_sequencer.sv", 2, 29, "", "v_line/rng_sequencer", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[524]), first, "../UVM/UVM_sequencer.sv", 2, 30, "", "v_line/rng_sequencer", "block", "2");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[525]), first, "../UVM/UVM_sequencer.sv", 4, 14, "", "v_line/rng_sequencer", "block", "4,6");
 }
 
 VL_ATTR_COLD void Vtb_rng_tb_rng__03a__03arng_sequencer___configure_coverage(Vtb_rng_tb_rng__03a__03arng_sequencer* vlSelf, bool first) {

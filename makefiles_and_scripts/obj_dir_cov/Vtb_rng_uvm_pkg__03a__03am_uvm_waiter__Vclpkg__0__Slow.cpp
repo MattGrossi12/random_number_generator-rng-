@@ -16,7 +16,7 @@ VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03am_uvm_waiter__Vclpkg___configure_cove
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[8046]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_config_db.svh", 49, 12, "", "v_line/m_uvm_waiter", "block", "49-51");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[8041]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_config_db.svh", 49, 12, "", "v_line/m_uvm_waiter", "block", "49-51");
 }
 
 VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03am_uvm_waiter___configure_coverage(Vtb_rng_uvm_pkg__03a__03am_uvm_waiter* vlSelf, bool first) {

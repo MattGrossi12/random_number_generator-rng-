@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase__Vclpkg::__VnoInFunc_type_name(Vtb
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_reset_phase__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_reset_phase"s;
-    ++(vlSymsp->__Vcoverage[16639]);
+    ++(vlSymsp->__Vcoverage[16634]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase__Vclpkg::__VnoInFunc_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reset_phase> &get__Vfuncrtn) {
@@ -16,12 +16,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase__Vclpkg::__VnoInFunc_get(VlProcess
     // Body
     if ((VlNull{} == this->__PVT__m_inst)) {
         this->__PVT__m_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_reset_phase, vlProcess, vlSymsp, "reset"s);
-        ++(vlSymsp->__Vcoverage[16641]);
+        ++(vlSymsp->__Vcoverage[16636]);
     } else {
-        ++(vlSymsp->__Vcoverage[16642]);
+        ++(vlSymsp->__Vcoverage[16637]);
     }
     get__Vfuncrtn = this->__PVT__m_inst;
-    ++(vlSymsp->__Vcoverage[16643]);
+    ++(vlSymsp->__Vcoverage[16638]);
 }
 
 VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::__VnoInFunc_exec_task(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -29,7 +29,7 @@ VlCoroutine Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::__VnoInFunc_exec_task(VlPr
     // Body
     VL_KEEP_THIS;
     VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_runtime_phases.svh", 73)->__VnoInFunc_reset_phase(vlSymsp, phase);
-    ++(vlSymsp->__Vcoverage[16638]);
+    ++(vlSymsp->__Vcoverage[16633]);
     co_return;
 }
 
@@ -37,7 +37,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::__VnoInFunc_get_type_name(Vtb_rng
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_reset_phase"s;
-    ++(vlSymsp->__Vcoverage[16640]);
+    ++(vlSymsp->__Vcoverage[16635]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -46,7 +46,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::init(VlProcessRef vlProcess, Vtb_
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[16644]);
+    ++(vlSymsp->__Vcoverage[16639]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_reset_phase::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

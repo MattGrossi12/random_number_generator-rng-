@@ -13,7 +13,7 @@ Vtb_rng__Syms::Vtb_rng__Syms(VerilatedContext* contextp, const char* namep, Vtb_
     , TOP{this, namep}
 {
     // Check resources
-    Verilated::stackCheck(95867156);
+    Verilated::stackCheck(95867124);
     // Setup sub module instances
     TOP____024unit.ctor(this, "$unit");
     TOP__std.ctor(this, "std");

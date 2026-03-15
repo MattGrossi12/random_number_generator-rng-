@@ -12,7 +12,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_analysis_fifo__pi171::init(VlProcess
     /*super.new*/;
     this->__PVT__analysis_export = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_analysis_imp__Tz229_TBz303, vlProcess, vlSymsp, "analysis_export"s, 
                                           VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_sequencer_analysis_fifo__pi171>{this});
-    ++(vlSymsp->__Vcoverage[20301]);
+    ++(vlSymsp->__Vcoverage[20296]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_analysis_fifo__pi171::__VnoInFunc_write(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_reg_item> t) {
@@ -20,12 +20,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_analysis_fifo__pi171::__VnoInFunc_wr
     // Body
     if ((VlNull{} == this->__PVT__sequencer_ptr)) {
         this->__VnoInFunc_uvm_report_fatal(vlProcess, vlSymsp, "SEQRNULL"s, "The sequencer pointer is null when attempting a write"s, 0U, ""s, 0U, ""s, 0U);
-        ++(vlSymsp->__Vcoverage[20302]);
+        ++(vlSymsp->__Vcoverage[20297]);
     } else {
-        ++(vlSymsp->__Vcoverage[20303]);
+        ++(vlSymsp->__Vcoverage[20298]);
     }
     VL_NULL_CHECK(this->__PVT__sequencer_ptr, "/home/matheus/tools/1800.2-2017-1.0/src/seq/uvm_sequencer_analysis_fifo.svh", 36)->__VnoInFunc_analysis_write(vlProcess, vlSymsp, t);
-    ++(vlSymsp->__Vcoverage[20304]);
+    ++(vlSymsp->__Vcoverage[20299]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_sequencer_analysis_fifo__pi171::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

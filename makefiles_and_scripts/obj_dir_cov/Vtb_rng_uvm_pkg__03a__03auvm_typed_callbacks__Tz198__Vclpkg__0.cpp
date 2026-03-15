@@ -13,12 +13,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
         vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__VnoInFunc_m_initialize(vlProcess, vlSymsp, __Vtask_m_initialize__0__Vfuncout);
         this->__PVT__m_t_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198, vlProcess, vlSymsp);
         this->__PVT__m_tw_cb_q = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48, vlProcess, vlSymsp, "typewide_queue"s);
-        ++(vlSymsp->__Vcoverage[12925]);
+        ++(vlSymsp->__Vcoverage[12920]);
     } else {
-        ++(vlSymsp->__Vcoverage[12926]);
+        ++(vlSymsp->__Vcoverage[12921]);
     }
     m_initialize__Vfuncrtn = this->__PVT__m_t_inst;
-    ++(vlSymsp->__Vcoverage[12927]);
+    ++(vlSymsp->__Vcoverage[12922]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_cb_find(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48> q, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_callback> cb, IData/*31:0*/ &m_cb_find__Vfuncrtn) {
@@ -39,15 +39,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                 m_cb_find__Vfuncrtn = unnamedblk3__DOT__i;
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[12940]);
+                ++(vlSymsp->__Vcoverage[12935]);
             }
             unnamedblk3__DOT__i = ((IData)(1U) + unnamedblk3__DOT__i);
-            ++(vlSymsp->__Vcoverage[12941]);
+            ++(vlSymsp->__Vcoverage[12936]);
         }
         m_cb_find__Vfuncrtn = 0xffffffffU;
         __Vlabel0: ;
     }
-    ++(vlSymsp->__Vcoverage[12942]);
+    ++(vlSymsp->__Vcoverage[12937]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_cb_find_name(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48> q, std::string name, std::string where, IData/*31:0*/ &m_cb_find_name__Vfuncrtn) {
@@ -93,7 +93,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                 vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top 
                     = __Vtask_get_root__10__Vfuncout;
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__8__verbosity, (IData)(__Vfunc_uvm_report_enabled__8__severity), this->__Vfunc_uvm_report_enabled__8__id, __VlefCall_2__uvm_report_enabled);
-                ++(vlSymsp->__Vcoverage[437]);
+                ++(vlSymsp->__Vcoverage[432]);
                 if ((0U != __VlefCall_2__uvm_report_enabled)) {
                     __Vtask_uvm_report_warning__12__report_enabled_checked = 1U;
                     this->__Vtask_uvm_report_warning__12__context_name = ""s;
@@ -114,24 +114,24 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                             = __Vtask_get_root__14__Vfuncout;
                         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_warning__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 156)
                         ->__VnoInFunc_uvm_report_warning(vlProcess, vlSymsp, this->__Vtask_uvm_report_warning__12__id, this->__Vtask_uvm_report_warning__12__message, __Vtask_uvm_report_warning__12__verbosity, this->__Vtask_uvm_report_warning__12__filename, __Vtask_uvm_report_warning__12__line, this->__Vtask_uvm_report_warning__12__context_name, (IData)(__Vtask_uvm_report_warning__12__report_enabled_checked));
-                        ++(vlSymsp->__Vcoverage[441]);
-                        ++(vlSymsp->__Vcoverage[12943]);
+                        ++(vlSymsp->__Vcoverage[436]);
+                        ++(vlSymsp->__Vcoverage[12938]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[12944]);
+                        ++(vlSymsp->__Vcoverage[12939]);
                     }
                     m_cb_find_name__Vfuncrtn = 1U;
                     goto __Vlabel0;
                 } else {
-                    ++(vlSymsp->__Vcoverage[12946]);
+                    ++(vlSymsp->__Vcoverage[12941]);
                 }
                 unnamedblk4__DOT__i = ((IData)(1U) 
                                        + unnamedblk4__DOT__i);
-                ++(vlSymsp->__Vcoverage[12947]);
+                ++(vlSymsp->__Vcoverage[12942]);
             }
             m_cb_find_name__Vfuncrtn = 0U;
             __Vlabel0: ;
         }
-        ++(vlSymsp->__Vcoverage[12948]);
+        ++(vlSymsp->__Vcoverage[12943]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_display(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_mem> obj) {
@@ -224,14 +224,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
         vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_tracing = 0U;
         if ((""s != this->__PVT__m_typename)) {
             tname = this->__PVT__m_typename;
-            ++(vlSymsp->__Vcoverage[12989]);
+            ++(vlSymsp->__Vcoverage[12984]);
         } else if ((VlNull{} != obj)) {
             VL_NULL_CHECK(obj, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 340)
                         ->__VnoInFunc_get_type_name(vlSymsp, tname);
-            ++(vlSymsp->__Vcoverage[12987]);
+            ++(vlSymsp->__Vcoverage[12982]);
         } else {
             tname = "*"s;
-            ++(vlSymsp->__Vcoverage[12988]);
+            ++(vlSymsp->__Vcoverage[12983]);
         }
         q = this->__PVT__m_tw_cb_q;
         unnamedblk7__DOT__i = 0U;
@@ -250,10 +250,10 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         ->__VnoInFunc_is_enabled(vlSymsp, __VlefCall_2__is_enabled);
             if (__VlefCall_2__is_enabled) {
                 mode_q.push_back("ON"s);
-                ++(vlSymsp->__Vcoverage[12990]);
+                ++(vlSymsp->__Vcoverage[12985]);
             } else {
                 mode_q.push_back("OFF"s);
-                ++(vlSymsp->__Vcoverage[12991]);
+                ++(vlSymsp->__Vcoverage[12986]);
             }
             VL_NULL_CHECK(cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 351)
                         ->__VnoInFunc_get_name(vlSymsp, str);
@@ -265,7 +265,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                                         VL_LEN_IN(str))
                               ? max_inst_name : VL_LEN_IN(str));
             unnamedblk7__DOT__i = ((IData)(1U) + unnamedblk7__DOT__i);
-            ++(vlSymsp->__Vcoverage[12996]);
+            ++(vlSymsp->__Vcoverage[12991]);
         }
         if ((VlNull{} == obj)) {
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 358)
@@ -278,20 +278,20 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         if (__VlefExpr_4) {
                             goto __Vlabel0;
                         } else {
-                            ++(vlSymsp->__Vcoverage[12998]);
+                            ++(vlSymsp->__Vcoverage[12993]);
                         }
-                        ++(vlSymsp->__Vcoverage[12999]);
+                        ++(vlSymsp->__Vcoverage[12994]);
                         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 361)
                         ->__VnoInFunc_next(vlSymsp, bobj, __Vtask_next__23__Vfuncout);
                         __VlefCall_5__next = __Vtask_next__23__Vfuncout;
                         if (!((0U != __VlefCall_5__next))) break;
-                        ++(vlSymsp->__Vcoverage[13000]);
+                        ++(vlSymsp->__Vcoverage[12995]);
                     }
                     __Vlabel0: ;
                 }
-                ++(vlSymsp->__Vcoverage[13001]);
+                ++(vlSymsp->__Vcoverage[12996]);
             } else {
-                ++(vlSymsp->__Vcoverage[13002]);
+                ++(vlSymsp->__Vcoverage[12997]);
             }
             __VlefLogOr_7 = (VlNull{} != me);
             if ((1U & (~ (IData)(__VlefLogOr_7)))) {
@@ -303,9 +303,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                 qs.push_back(VL_SFORMATF_N_NX("Registered callbacks for all instances of %@\n",0,
                                               -1,&(tname)) );
                 qs.push_back("---------------------------------------------------------------\n"s);
-                ++(vlSymsp->__Vcoverage[13003]);
+                ++(vlSymsp->__Vcoverage[12998]);
             } else {
-                ++(vlSymsp->__Vcoverage[13004]);
+                ++(vlSymsp->__Vcoverage[12999]);
             }
             if ((VlNull{} != me)) {
                 while (true) {
@@ -317,9 +317,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                             q = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48, vlProcess, vlSymsp, ""s);
                             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 373)
                         ->__VnoInFunc_add(vlSymsp, bobj, q);
-                            ++(vlSymsp->__Vcoverage[13005]);
+                            ++(vlSymsp->__Vcoverage[13000]);
                         } else {
-                            ++(vlSymsp->__Vcoverage[13006]);
+                            ++(vlSymsp->__Vcoverage[13001]);
                         }
                         unnamedblk8__DOT__i = 0U;
                         unnamedblk8__DOT__i = 0U;
@@ -339,10 +339,10 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         ->__VnoInFunc_is_enabled(vlSymsp, __VlefCall_12__is_enabled);
                             if (__VlefCall_12__is_enabled) {
                                 mode_q.push_back("ON"s);
-                                ++(vlSymsp->__Vcoverage[13007]);
+                                ++(vlSymsp->__Vcoverage[13002]);
                             } else {
                                 mode_q.push_back("OFF"s);
-                                ++(vlSymsp->__Vcoverage[13008]);
+                                ++(vlSymsp->__Vcoverage[13003]);
                             }
                             VL_NULL_CHECK(cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 382)
                         ->__VnoInFunc_get_name(vlSymsp, str);
@@ -358,42 +358,42 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                                               : VL_LEN_IN(str));
                             unnamedblk8__DOT__i = ((IData)(1U) 
                                                    + unnamedblk8__DOT__i);
-                            ++(vlSymsp->__Vcoverage[13013]);
+                            ++(vlSymsp->__Vcoverage[13008]);
                         }
                         if (VL_GTS_III(32, max_cb_name, 
                                        VL_LEN_IN(str))) {
-                            ++(vlSymsp->__Vcoverage[13009]);
+                            ++(vlSymsp->__Vcoverage[13004]);
                         }
                         if (VL_LTES_III(32, max_cb_name, 
                                         VL_LEN_IN(str))) {
-                            ++(vlSymsp->__Vcoverage[13010]);
+                            ++(vlSymsp->__Vcoverage[13005]);
                         }
                         if (VL_GTS_III(32, max_inst_name, 
                                        VL_LEN_IN(str))) {
-                            ++(vlSymsp->__Vcoverage[13011]);
+                            ++(vlSymsp->__Vcoverage[13006]);
                         }
                         if (VL_LTES_III(32, max_inst_name, 
                                         VL_LEN_IN(str))) {
-                            ++(vlSymsp->__Vcoverage[13012]);
+                            ++(vlSymsp->__Vcoverage[13007]);
                         }
-                        ++(vlSymsp->__Vcoverage[13014]);
+                        ++(vlSymsp->__Vcoverage[13009]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[13015]);
+                        ++(vlSymsp->__Vcoverage[13010]);
                     }
-                    ++(vlSymsp->__Vcoverage[13016]);
+                    ++(vlSymsp->__Vcoverage[13011]);
                     VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 388)
                         ->__VnoInFunc_next(vlSymsp, bobj, __Vtask_next__35__Vfuncout);
                     __VlefCall_13__next = __Vtask_next__35__Vfuncout;
                     if (!((0U != __VlefCall_13__next))) break;
-                    ++(vlSymsp->__Vcoverage[13017]);
+                    ++(vlSymsp->__Vcoverage[13012]);
                 }
-                ++(vlSymsp->__Vcoverage[13018]);
+                ++(vlSymsp->__Vcoverage[13013]);
             } else {
                 qs.push_back(VL_SFORMATF_N_NX("No callbacks registered for any instances of type %@\n",0,
                                               -1,&(tname)) );
-                ++(vlSymsp->__Vcoverage[13019]);
+                ++(vlSymsp->__Vcoverage[13014]);
             }
-            ++(vlSymsp->__Vcoverage[13033]);
+            ++(vlSymsp->__Vcoverage[13028]);
         } else {
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 395)
                         ->__VnoInFunc_exists(vlSymsp, bobj, __VlefCall_14__exists);
@@ -410,9 +410,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                                               -1,&(__VlefCall_17__get_full_name),
                                               -1,&(tname)) );
                 qs.push_back("---------------------------------------------------------------\n"s);
-                ++(vlSymsp->__Vcoverage[13020]);
+                ++(vlSymsp->__Vcoverage[13015]);
             } else {
-                ++(vlSymsp->__Vcoverage[13021]);
+                ++(vlSymsp->__Vcoverage[13016]);
             }
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 399)
                         ->__VnoInFunc_exists(vlSymsp, bobj, __VlefCall_18__exists);
@@ -423,9 +423,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                     q = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48, vlProcess, vlSymsp, ""s);
                     VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 403)
                         ->__VnoInFunc_add(vlSymsp, bobj, q);
-                    ++(vlSymsp->__Vcoverage[13022]);
+                    ++(vlSymsp->__Vcoverage[13017]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[13023]);
+                    ++(vlSymsp->__Vcoverage[13018]);
                 }
                 unnamedblk9__DOT__i = 0U;
                 unnamedblk9__DOT__i = 0U;
@@ -445,10 +445,10 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         ->__VnoInFunc_is_enabled(vlSymsp, __VlefCall_22__is_enabled);
                     if (__VlefCall_22__is_enabled) {
                         mode_q.push_back("ON"s);
-                        ++(vlSymsp->__Vcoverage[13024]);
+                        ++(vlSymsp->__Vcoverage[13019]);
                     } else {
                         mode_q.push_back("OFF"s);
-                        ++(vlSymsp->__Vcoverage[13025]);
+                        ++(vlSymsp->__Vcoverage[13020]);
                     }
                     VL_NULL_CHECK(cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 412)
                         ->__VnoInFunc_get_name(vlSymsp, str);
@@ -464,42 +464,42 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                                       : VL_LEN_IN(str));
                     unnamedblk9__DOT__i = ((IData)(1U) 
                                            + unnamedblk9__DOT__i);
-                    ++(vlSymsp->__Vcoverage[13030]);
+                    ++(vlSymsp->__Vcoverage[13025]);
                 }
                 if (VL_GTS_III(32, max_cb_name, VL_LEN_IN(str))) {
-                    ++(vlSymsp->__Vcoverage[13026]);
+                    ++(vlSymsp->__Vcoverage[13021]);
                 }
                 if (VL_LTES_III(32, max_cb_name, VL_LEN_IN(str))) {
-                    ++(vlSymsp->__Vcoverage[13027]);
+                    ++(vlSymsp->__Vcoverage[13022]);
                 }
                 if (VL_GTS_III(32, max_inst_name, VL_LEN_IN(str))) {
-                    ++(vlSymsp->__Vcoverage[13028]);
+                    ++(vlSymsp->__Vcoverage[13023]);
                 }
                 if (VL_LTES_III(32, max_inst_name, 
                                 VL_LEN_IN(str))) {
-                    ++(vlSymsp->__Vcoverage[13029]);
+                    ++(vlSymsp->__Vcoverage[13024]);
                 }
-                ++(vlSymsp->__Vcoverage[13031]);
+                ++(vlSymsp->__Vcoverage[13026]);
             } else {
-                ++(vlSymsp->__Vcoverage[13032]);
+                ++(vlSymsp->__Vcoverage[13027]);
             }
-            ++(vlSymsp->__Vcoverage[13034]);
+            ++(vlSymsp->__Vcoverage[13029]);
         }
         if ((0U != cbq.size())) {
-            ++(vlSymsp->__Vcoverage[13038]);
+            ++(vlSymsp->__Vcoverage[13033]);
         } else {
             if ((VlNull{} == obj)) {
                 str = "*"s;
-                ++(vlSymsp->__Vcoverage[13035]);
+                ++(vlSymsp->__Vcoverage[13030]);
             } else {
                 VL_NULL_CHECK(obj, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 421)
                         ->__VnoInFunc_get_full_name(vlProcess, vlSymsp, str);
-                ++(vlSymsp->__Vcoverage[13036]);
+                ++(vlSymsp->__Vcoverage[13031]);
             }
             qs.push_back(VL_SFORMATF_N_NX("No callbacks registered for instance %@ of type %@\n",0,
                                           -1,&(str),
                                           -1,&(tname)) );
-            ++(vlSymsp->__Vcoverage[13037]);
+            ++(vlSymsp->__Vcoverage[13032]);
         }
         unnamedblk10__DOT__i = 0U;
         while (VL_LTS_III(32, unnamedblk10__DOT__i, cbq.size())) {
@@ -519,7 +519,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                                           -1,&(__Vtemp_4),
                                           -1,&(__Vtemp_5)) );
             unnamedblk10__DOT__i = ((IData)(1U) + unnamedblk10__DOT__i);
-            ++(vlSymsp->__Vcoverage[13039]);
+            ++(vlSymsp->__Vcoverage[13034]);
         }
         this->__Vfunc_uvm_report_enabled__51__id = "UVM/CB/DISPLAY"s;
         __Vfunc_uvm_report_enabled__51__severity = 0U;
@@ -533,12 +533,12 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
             = __Vtask_get_root__53__Vfuncout;
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_enabled__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 90)
                         ->__VnoInFunc_uvm_report_enabled(vlProcess, vlSymsp, __Vfunc_uvm_report_enabled__51__verbosity, (IData)(__Vfunc_uvm_report_enabled__51__severity), this->__Vfunc_uvm_report_enabled__51__id, __VlefCall_23__uvm_report_enabled);
-        ++(vlSymsp->__Vcoverage[437]);
+        ++(vlSymsp->__Vcoverage[432]);
         if ((0U != __VlefCall_23__uvm_report_enabled)) {
             this->__Vfunc_m_uvm_string_queue_join__55__Vfuncout = ""s;
             this->__Vfunc_m_uvm_string_queue_join__55__Vfuncout 
                 = VL_CVT_PACK_STR_ND(qs);
-            ++(vlSymsp->__Vcoverage[434]);
+            ++(vlSymsp->__Vcoverage[429]);
             __VlefCall_24__m_uvm_string_queue_join 
                 = this->__Vfunc_m_uvm_string_queue_join__55__Vfuncout;
             __Vtask_uvm_report_info__56__report_enabled_checked = 1U;
@@ -558,25 +558,25 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                 = __Vtask_get_root__58__Vfuncout;
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg.__PVT__uvm_report_info__Vstatic__top, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_globals.svh", 137)
                         ->__VnoInFunc_uvm_report_info(vlProcess, vlSymsp, this->__Vtask_uvm_report_info__56__id, this->__Vtask_uvm_report_info__56__message, __Vtask_uvm_report_info__56__verbosity, this->__Vtask_uvm_report_info__56__filename, __Vtask_uvm_report_info__56__line, this->__Vtask_uvm_report_info__56__context_name, (IData)(__Vtask_uvm_report_info__56__report_enabled_checked));
-            ++(vlSymsp->__Vcoverage[440]);
-            ++(vlSymsp->__Vcoverage[13040]);
+            ++(vlSymsp->__Vcoverage[435]);
+            ++(vlSymsp->__Vcoverage[13035]);
         } else {
-            ++(vlSymsp->__Vcoverage[13041]);
+            ++(vlSymsp->__Vcoverage[13036]);
         }
         vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_tracing = 1U;
         if (VL_GTS_III(32, max_cb_name, VL_LEN_IN(str))) {
-            ++(vlSymsp->__Vcoverage[12992]);
+            ++(vlSymsp->__Vcoverage[12987]);
         }
         if (VL_LTES_III(32, max_cb_name, VL_LEN_IN(str))) {
-            ++(vlSymsp->__Vcoverage[12993]);
+            ++(vlSymsp->__Vcoverage[12988]);
         }
         if (VL_GTS_III(32, max_inst_name, VL_LEN_IN(str))) {
-            ++(vlSymsp->__Vcoverage[12994]);
+            ++(vlSymsp->__Vcoverage[12989]);
         }
         if (VL_LTES_III(32, max_inst_name, VL_LEN_IN(str))) {
-            ++(vlSymsp->__Vcoverage[12995]);
+            ++(vlSymsp->__Vcoverage[12990]);
         }
-        ++(vlSymsp->__Vcoverage[13042]);
+        ++(vlSymsp->__Vcoverage[13037]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198::__VnoInFunc_m_am_i_a(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, CData/*0:0*/ &m_am_i_a__Vfuncrtn) {
@@ -590,13 +590,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                 m_am_i_a__Vfuncrtn = 1U;
                 goto __Vlabel0;
             } else {
-                ++(vlSymsp->__Vcoverage[12929]);
+                ++(vlSymsp->__Vcoverage[12924]);
             }
             __VlefExpr_0 = VL_CAST_DYNAMIC(obj, this_type);
             m_am_i_a__Vfuncrtn = (1U & __VlefExpr_0);
             __Vlabel0: ;
         }
-        ++(vlSymsp->__Vcoverage[12930]);
+        ++(vlSymsp->__Vcoverage[12925]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198::__VnoInFunc_m_get_tw_cb_q(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48> &m_get_tw_cb_q__Vfuncrtn) {
@@ -622,15 +622,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         if ((VlNull{} != m_get_tw_cb_q__Vfuncrtn)) {
                             goto __Vlabel0;
                         } else {
-                            ++(vlSymsp->__Vcoverage[12932]);
+                            ++(vlSymsp->__Vcoverage[12927]);
                         }
-                        ++(vlSymsp->__Vcoverage[12933]);
+                        ++(vlSymsp->__Vcoverage[12928]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[12934]);
+                        ++(vlSymsp->__Vcoverage[12929]);
                     }
                     unnamedblk1__DOT__i = ((IData)(1U) 
                                            + unnamedblk1__DOT__i);
-                    ++(vlSymsp->__Vcoverage[12935]);
+                    ++(vlSymsp->__Vcoverage[12930]);
                 }
                 m_get_tw_cb_q__Vfuncrtn = vlSymsp->TOP__uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg.__PVT__m_tw_cb_q;
             } else {
@@ -638,7 +638,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
             }
             __Vlabel0: ;
         }
-        ++(vlSymsp->__Vcoverage[12938]);
+        ++(vlSymsp->__Vcoverage[12933]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198::__VnoInFunc_m_add_tw_cbs(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_callback> cb, IData/*31:0*/ ordering) {
@@ -678,15 +678,15 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
             if ((0U == ordering)) {
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg.__PVT__m_tw_cb_q, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 256)
                         ->__VnoInFunc_push_back(vlSymsp, cb);
-                ++(vlSymsp->__Vcoverage[12949]);
+                ++(vlSymsp->__Vcoverage[12944]);
             } else {
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg.__PVT__m_tw_cb_q, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 258)
                         ->__VnoInFunc_push_front(vlSymsp, cb);
-                ++(vlSymsp->__Vcoverage[12950]);
+                ++(vlSymsp->__Vcoverage[12945]);
             }
-            ++(vlSymsp->__Vcoverage[12951]);
+            ++(vlSymsp->__Vcoverage[12946]);
         } else {
-            ++(vlSymsp->__Vcoverage[12952]);
+            ++(vlSymsp->__Vcoverage[12947]);
         }
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 260)
                         ->__VnoInFunc_first(vlSymsp, obj, __Vtask_first__7__Vfuncout);
@@ -701,14 +701,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         q = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48, vlProcess, vlSymsp, ""s);
                         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 266)
                         ->__VnoInFunc_add(vlSymsp, obj, q);
-                        ++(vlSymsp->__Vcoverage[12953]);
+                        ++(vlSymsp->__Vcoverage[12948]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[12954]);
+                        ++(vlSymsp->__Vcoverage[12949]);
                     }
                     vlSymsp->TOP__uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg.__VnoInFunc_m_cb_find(vlProcess, vlSymsp, q, cb, __VlefCall_5__m_cb_find);
                     if ((0xffffffffU == __VlefCall_5__m_cb_find)) {
                         if (warned) {
-                            ++(vlSymsp->__Vcoverage[12956]);
+                            ++(vlSymsp->__Vcoverage[12951]);
                         } else {
                             VL_NULL_CHECK(cb, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 270)
                         ->__VnoInFunc_get_name(vlSymsp, __VlefCall_6__get_name);
@@ -718,41 +718,41 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                                                                                 VL_CVT_PACK_STR_NN(__VlefCall_6__get_name), 
                                                                                 VL_CVT_PACK_STR_NN(
                                                                                 VL_CONCATN_NNN("object instance "s, __VlefCall_7__get_full_name)), __Vtask_m_cb_find_name__14__Vfuncout);
-                            ++(vlSymsp->__Vcoverage[12955]);
+                            ++(vlSymsp->__Vcoverage[12950]);
                         }
                         if ((0U == ordering)) {
                             VL_NULL_CHECK(q, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 273)
                         ->__VnoInFunc_push_back(vlSymsp, cb);
-                            ++(vlSymsp->__Vcoverage[12959]);
+                            ++(vlSymsp->__Vcoverage[12954]);
                         } else {
                             VL_NULL_CHECK(q, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 275)
                         ->__VnoInFunc_push_front(vlSymsp, cb);
-                            ++(vlSymsp->__Vcoverage[12960]);
+                            ++(vlSymsp->__Vcoverage[12955]);
                         }
                         if ((1U & (~ (IData)(warned)))) {
-                            ++(vlSymsp->__Vcoverage[12957]);
+                            ++(vlSymsp->__Vcoverage[12952]);
                         }
                         if (warned) {
-                            ++(vlSymsp->__Vcoverage[12958]);
+                            ++(vlSymsp->__Vcoverage[12953]);
                         }
-                        ++(vlSymsp->__Vcoverage[12961]);
+                        ++(vlSymsp->__Vcoverage[12956]);
                     } else {
-                        ++(vlSymsp->__Vcoverage[12962]);
+                        ++(vlSymsp->__Vcoverage[12957]);
                     }
-                    ++(vlSymsp->__Vcoverage[12963]);
+                    ++(vlSymsp->__Vcoverage[12958]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[12964]);
+                    ++(vlSymsp->__Vcoverage[12959]);
                 }
-                ++(vlSymsp->__Vcoverage[12965]);
+                ++(vlSymsp->__Vcoverage[12960]);
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 278)
                         ->__VnoInFunc_next(vlSymsp, obj, __Vtask_next__17__Vfuncout);
                 __VlefCall_8__next = __Vtask_next__17__Vfuncout;
                 if (!((0U != __VlefCall_8__next))) break;
-                ++(vlSymsp->__Vcoverage[12966]);
+                ++(vlSymsp->__Vcoverage[12961]);
             }
-            ++(vlSymsp->__Vcoverage[12967]);
+            ++(vlSymsp->__Vcoverage[12962]);
         } else {
-            ++(vlSymsp->__Vcoverage[12968]);
+            ++(vlSymsp->__Vcoverage[12963]);
         }
         unnamedblk5__DOT__i = 0U;
         while (VL_LTS_III(32, unnamedblk5__DOT__i, Vtb_rng_uvm_pkg__03a__03auvm_callbacks_base::__PVT__m_derived_types.size())) {
@@ -761,14 +761,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
             if ((cb_pair != VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198>{this})) {
                 VL_NULL_CHECK(cb_pair, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 283)
                         ->__VnoInFunc_m_add_tw_cbs(vlProcess, vlSymsp, cb, ordering);
-                ++(vlSymsp->__Vcoverage[12969]);
+                ++(vlSymsp->__Vcoverage[12964]);
             } else {
-                ++(vlSymsp->__Vcoverage[12970]);
+                ++(vlSymsp->__Vcoverage[12965]);
             }
             unnamedblk5__DOT__i = ((IData)(1U) + unnamedblk5__DOT__i);
-            ++(vlSymsp->__Vcoverage[12971]);
+            ++(vlSymsp->__Vcoverage[12966]);
         }
-        ++(vlSymsp->__Vcoverage[12972]);
+        ++(vlSymsp->__Vcoverage[12967]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198::__VnoInFunc_m_delete_tw_cbs(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_callback> cb, CData/*0:0*/ &m_delete_tw_cbs__Vfuncrtn) {
@@ -794,9 +794,9 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
             VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg.__PVT__m_tw_cb_q, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 296)
                         ->__VnoInFunc_delete(vlProcess, vlSymsp, pos);
             m_delete_tw_cbs__Vfuncrtn = 1U;
-            ++(vlSymsp->__Vcoverage[12973]);
+            ++(vlSymsp->__Vcoverage[12968]);
         } else {
-            ++(vlSymsp->__Vcoverage[12974]);
+            ++(vlSymsp->__Vcoverage[12969]);
         }
         VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 300)
                         ->__VnoInFunc_first(vlSymsp, obj, __Vtask_first__21__Vfuncout);
@@ -809,29 +809,29 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                     q = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_queue__Tz48, vlProcess, vlSymsp, ""s);
                     VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 305)
                         ->__VnoInFunc_add(vlSymsp, obj, q);
-                    ++(vlSymsp->__Vcoverage[12975]);
+                    ++(vlSymsp->__Vcoverage[12970]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[12976]);
+                    ++(vlSymsp->__Vcoverage[12971]);
                 }
                 vlSymsp->TOP__uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg.__VnoInFunc_m_cb_find(vlProcess, vlSymsp, q, cb, pos);
                 if ((0xffffffffU != pos)) {
                     VL_NULL_CHECK(q, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 309)
                         ->__VnoInFunc_delete(vlProcess, vlSymsp, pos);
                     m_delete_tw_cbs__Vfuncrtn = 1U;
-                    ++(vlSymsp->__Vcoverage[12977]);
+                    ++(vlSymsp->__Vcoverage[12972]);
                 } else {
-                    ++(vlSymsp->__Vcoverage[12978]);
+                    ++(vlSymsp->__Vcoverage[12973]);
                 }
-                ++(vlSymsp->__Vcoverage[12979]);
+                ++(vlSymsp->__Vcoverage[12974]);
                 VL_NULL_CHECK(vlSymsp->TOP__uvm_pkg__03a__03auvm_callbacks_base__Vclpkg.__PVT__m_pool, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_callback.svh", 312)
                         ->__VnoInFunc_next(vlSymsp, obj, __Vtask_next__27__Vfuncout);
                 __VlefCall_1__next = __Vtask_next__27__Vfuncout;
                 if (!((0U != __VlefCall_1__next))) break;
-                ++(vlSymsp->__Vcoverage[12980]);
+                ++(vlSymsp->__Vcoverage[12975]);
             }
-            ++(vlSymsp->__Vcoverage[12981]);
+            ++(vlSymsp->__Vcoverage[12976]);
         } else {
-            ++(vlSymsp->__Vcoverage[12982]);
+            ++(vlSymsp->__Vcoverage[12977]);
         }
         unnamedblk6__DOT__i = 0U;
         while (VL_LTS_III(32, unnamedblk6__DOT__i, Vtb_rng_uvm_pkg__03a__03auvm_callbacks_base::__PVT__m_derived_types.size())) {
@@ -842,14 +842,14 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
                         ->__VnoInFunc_m_delete_tw_cbs(vlProcess, vlSymsp, cb, __VlefCall_2__m_delete_tw_cbs);
                 m_delete_tw_cbs__Vfuncrtn = ((IData)(m_delete_tw_cbs__Vfuncrtn) 
                                              | (IData)(__VlefCall_2__m_delete_tw_cbs));
-                ++(vlSymsp->__Vcoverage[12983]);
+                ++(vlSymsp->__Vcoverage[12978]);
             } else {
-                ++(vlSymsp->__Vcoverage[12984]);
+                ++(vlSymsp->__Vcoverage[12979]);
             }
             unnamedblk6__DOT__i = ((IData)(1U) + unnamedblk6__DOT__i);
-            ++(vlSymsp->__Vcoverage[12985]);
+            ++(vlSymsp->__Vcoverage[12980]);
         }
-        ++(vlSymsp->__Vcoverage[12986]);
+        ++(vlSymsp->__Vcoverage[12981]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp) {
@@ -858,7 +858,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198__Vclpkg::__VnoInFunc_m_
         // Body
         _ctor_var_reset(vlSymsp);
         /*super.new*/;
-        ++(vlSymsp->__Vcoverage[13043]);
+        ++(vlSymsp->__Vcoverage[13038]);
     }
 
     void Vtb_rng_uvm_pkg__03a__03auvm_typed_callbacks__Tz198::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

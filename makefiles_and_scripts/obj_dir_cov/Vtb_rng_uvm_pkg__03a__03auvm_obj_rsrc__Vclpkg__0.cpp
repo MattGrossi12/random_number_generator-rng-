@@ -14,7 +14,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_obj_rsrc::init(VlProcessRef vlProcess, Vtb_rng
     vlSymsp->TOP__uvm_pkg__03a__03auvm_resource_pool__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, rp);
     VL_NULL_CHECK(rp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_resource_specializations.svh", 134)->__VnoInFunc_set_scope(vlProcess, vlSymsp, 
                                                                                 VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_obj_rsrc>{this}, s);
-    ++(vlSymsp->__Vcoverage[8026]);
+    ++(vlSymsp->__Vcoverage[8021]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_obj_rsrc::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

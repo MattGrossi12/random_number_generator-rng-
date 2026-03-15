@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-03-11 11:48:45</td>
+            <td class="headerValue">2026-03-12 19:56:36</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">-</td>
@@ -103,11 +103,11 @@
 <span id="L33"><span class="lineNum">      33</span>              : (</span>
 <span id="L34"><span class="lineNum">      34</span> <span class="tlaGNC tlaBgGNC">         277 :     input  wire       clk_i,</span></span>
 <span id="L35"><span class="lineNum">      35</span> <span class="tlaGNC">           1 :     input  wire       rst_i,</span></span>
-<span id="L36"><span class="lineNum">      36</span> <span class="tlaGNC">           1 :     input  wire       req_num_i,</span></span>
-<span id="L37"><span class="lineNum">      37</span> <span class="tlaGNC">         136 :     output wire [T_WIDTH:0] next_num_o</span></span>
+<span id="L36"><span class="lineNum">      36</span> <span class="tlaGNC">           7 :     input  wire       req_num_i,</span></span>
+<span id="L37"><span class="lineNum">      37</span> <span class="tlaGNC">         133 :     output wire [T_WIDTH:0] next_num_o</span></span>
 <span id="L38"><span class="lineNum">      38</span>              : );</span>
 <span id="L39"><span class="lineNum">      39</span>              : </span>
-<span id="L40"><span class="lineNum">      40</span> <span class="tlaGNC">         136 : reg [T_WIDTH:0] num_counter;</span></span>
+<span id="L40"><span class="lineNum">      40</span> <span class="tlaGNC">         133 : reg [T_WIDTH:0] num_counter;</span></span>
 <span id="L41"><span class="lineNum">      41</span>              : </span>
 <span id="L42"><span class="lineNum">      42</span>              : assign next_num_o  = num_counter;</span>
 <span id="L43"><span class="lineNum">      43</span>              : </span>
@@ -117,20 +117,20 @@
 <span id="L47"><span class="lineNum">      47</span> <span class="tlaGNC">           5 :         num_counter &lt;= 3'd0;</span></span>
 <span id="L48"><span class="lineNum">      48</span>              :     end </span>
 <span id="L49"><span class="lineNum">      49</span>              :     else </span>
-<span id="L50"><span class="lineNum">      50</span> <span class="tlaGNC">         272 :         if(req_num_i) </span></span>
-<span id="L51"><span class="lineNum">      51</span> <span class="tlaGNC">         272 :             begin</span></span>
-<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC">         238 :                 if(num_counter == 3'b111)</span></span>
-<span id="L53"><span class="lineNum">      53</span> <span class="tlaGNC">          34 :                     begin   </span></span>
-<span id="L54"><span class="lineNum">      54</span> <span class="tlaGNC">          34 :                         num_counter &lt;= 0;</span></span>
+<span id="L50"><span class="lineNum">      50</span> <span class="tlaGNC">         266 :         if(req_num_i) </span></span>
+<span id="L51"><span class="lineNum">      51</span> <span class="tlaGNC">         266 :             begin</span></span>
+<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC">         233 :                 if(num_counter == 3'b111)</span></span>
+<span id="L53"><span class="lineNum">      53</span> <span class="tlaGNC">          33 :                     begin   </span></span>
+<span id="L54"><span class="lineNum">      54</span> <span class="tlaGNC">          33 :                         num_counter &lt;= 0;</span></span>
 <span id="L55"><span class="lineNum">      55</span>              :                     end</span>
 <span id="L56"><span class="lineNum">      56</span>              :                 else</span>
-<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">         238 :                     begin</span></span>
-<span id="L58"><span class="lineNum">      58</span> <span class="tlaGNC">         238 :                         num_counter &lt;= num_counter + 1;</span></span>
+<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">         233 :                     begin</span></span>
+<span id="L58"><span class="lineNum">      58</span> <span class="tlaGNC">         233 :                         num_counter &lt;= num_counter + 1;</span></span>
 <span id="L59"><span class="lineNum">      59</span>              :                     end</span>
 <span id="L60"><span class="lineNum">      60</span>              :             end</span>
 <span id="L61"><span class="lineNum">      61</span>              :         else</span>
-<span id="L62"><span class="lineNum">      62</span> <span class="tlaGNC">           1 :             begin</span></span>
-<span id="L63"><span class="lineNum">      63</span> <span class="tlaGNC">           1 :                 num_counter &lt;= num_counter;</span></span>
+<span id="L62"><span class="lineNum">      62</span> <span class="tlaGNC">           7 :             begin</span></span>
+<span id="L63"><span class="lineNum">      63</span> <span class="tlaGNC">           7 :                 num_counter &lt;= num_counter;</span></span>
 <span id="L64"><span class="lineNum">      64</span>              :             end</span>
 <span id="L65"><span class="lineNum">      65</span>              : end</span>
 <span id="L66"><span class="lineNum">      66</span>              : </span>

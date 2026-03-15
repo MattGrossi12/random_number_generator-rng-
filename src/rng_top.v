@@ -50,7 +50,10 @@ module rng_top
     wire [T_WIDTH:0] data_out;
 
     assign req_num = req_num_i | req_num_again;
-    assign num_to_send_o = data_out;
+
+    assign num_to_send_o[2] = data_out[2];
+    assign num_to_send_o[1] = data_out[1];
+    assign num_to_send_o[0] = data_out[0];
 
     rng_data_path                   #(
                                         .DEPTH         (DEPTH),

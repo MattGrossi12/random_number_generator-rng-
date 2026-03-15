@@ -10,33 +10,33 @@ void Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::init(VlProcessRef vlPr
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[18080]);
+    ++(vlSymsp->__Vcoverage[18075]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_set(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03am_uvm_tr_stream_cfg> value) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_set\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18081]);
+    ++(vlSymsp->__Vcoverage[18076]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_try_set(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03am_uvm_tr_stream_cfg> value, CData/*0:0*/ &try_set__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_try_set\n"); );
     // Body
     try_set__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[18082]);
+    ++(vlSymsp->__Vcoverage[18077]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_get(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03am_uvm_tr_stream_cfg> &get__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_get\n"); );
     // Body
-    ++(vlSymsp->__Vcoverage[18083]);
+    ++(vlSymsp->__Vcoverage[18078]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_try_get(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03am_uvm_tr_stream_cfg> &value, CData/*0:0*/ &try_get__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+              Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_try_get\n"); );
     // Body
     try_get__Vfuncrtn = 0U;
-    ++(vlSymsp->__Vcoverage[18084]);
+    ++(vlSymsp->__Vcoverage[18079]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_set_get_dap_base__Tz18::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

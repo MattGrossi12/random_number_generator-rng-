@@ -16,8 +16,8 @@ VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_component_proxy__Vclpkg___configu
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
     (void)first;  // Prevent unused variable warning
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[17856]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 229, 25, "", "v_line/uvm_component_proxy", "block", "229-230");
-    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[17857]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 234, 12, "", "v_line/uvm_component_proxy", "block", "234-235");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[17851]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 229, 25, "", "v_line/uvm_component_proxy", "block", "229-230");
+    vlSelf->__vlCoverInsert(&(vlSymsp->__Vcoverage[17852]), first, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_traversal.svh", 234, 12, "", "v_line/uvm_component_proxy", "block", "234-235");
 }
 
 VL_ATTR_COLD void Vtb_rng_uvm_pkg__03a__03auvm_component_proxy___configure_coverage(Vtb_rng_uvm_pkg__03a__03auvm_component_proxy* vlSelf, bool first) {

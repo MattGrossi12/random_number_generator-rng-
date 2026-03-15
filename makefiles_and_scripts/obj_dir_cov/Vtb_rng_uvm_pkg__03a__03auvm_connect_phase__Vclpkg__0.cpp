@@ -8,7 +8,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase__Vclpkg::__VnoInFunc_type_name(V
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_uvm_pkg__03a__03auvm_connect_phase__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "uvm_connect_phase"s;
-    ++(vlSymsp->__Vcoverage[16576]);
+    ++(vlSymsp->__Vcoverage[16571]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase__Vclpkg::__VnoInFunc_get(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_connect_phase> &get__Vfuncrtn) {
@@ -16,26 +16,26 @@ void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase__Vclpkg::__VnoInFunc_get(VlProce
     // Body
     if ((VlNull{} == this->__PVT__m_inst)) {
         this->__PVT__m_inst = VL_NEW(Vtb_rng_uvm_pkg__03a__03auvm_connect_phase, vlProcess, vlSymsp, "connect"s);
-        ++(vlSymsp->__Vcoverage[16578]);
+        ++(vlSymsp->__Vcoverage[16573]);
     } else {
-        ++(vlSymsp->__Vcoverage[16579]);
+        ++(vlSymsp->__Vcoverage[16574]);
     }
     get__Vfuncrtn = this->__PVT__m_inst;
-    ++(vlSymsp->__Vcoverage[16580]);
+    ++(vlSymsp->__Vcoverage[16575]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::__VnoInFunc_exec_func(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> comp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::__VnoInFunc_exec_func\n"); );
     // Body
     VL_NULL_CHECK(comp, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_common_phases.svh", 114)->__VnoInFunc_connect_phase(vlProcess, vlSymsp, phase);
-    ++(vlSymsp->__Vcoverage[16575]);
+    ++(vlSymsp->__Vcoverage[16570]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "uvm_connect_phase"s;
-    ++(vlSymsp->__Vcoverage[16577]);
+    ++(vlSymsp->__Vcoverage[16572]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name) {
@@ -44,7 +44,7 @@ void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::init(VlProcessRef vlProcess, Vt
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[16581]);
+    ++(vlSymsp->__Vcoverage[16576]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_connect_phase::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

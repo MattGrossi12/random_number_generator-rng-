@@ -8,14 +8,14 @@ void Vtb_rng_tb_rng__03a__03arng_agent__Vclpkg::__VnoInFunc_get_type(Vtb_rng__Sy
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_tb_rng__03a__03arng_agent__Vclpkg::__VnoInFunc_get_type\n"); );
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__pi68__Vclpkg.__VnoInFunc_get(vlSymsp, get_type__Vfuncrtn);
-    ++(vlSymsp->__Vcoverage[650]);
+    ++(vlSymsp->__Vcoverage[645]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent__Vclpkg::__VnoInFunc_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+  Vtb_rng_tb_rng__03a__03arng_agent__Vclpkg::__VnoInFunc_type_name\n"); );
     // Body
     type_name__Vfuncrtn = "rng_agent"s;
-    ++(vlSymsp->__Vcoverage[652]);
+    ++(vlSymsp->__Vcoverage[647]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_get_object_type(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object_wrapper> &get_object_type__Vfuncrtn) {
@@ -25,14 +25,14 @@ void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_get_object_type(Vtb_rng__Sym
     // Body
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__pi68__Vclpkg.__VnoInFunc_get(vlSymsp, __Vfunc_get__0__Vfuncout);
     get_object_type__Vfuncrtn = __Vfunc_get__0__Vfuncout;
-    ++(vlSymsp->__Vcoverage[651]);
+    ++(vlSymsp->__Vcoverage[646]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_get_type_name(Vtb_rng__Syms* __restrict vlSymsp, std::string &get_type_name__Vfuncrtn) {
     VL_DEBUG_IF(VL_DBG_MSGF("+                      Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_get_type_name\n"); );
     // Body
     get_type_name__Vfuncrtn = "rng_agent"s;
-    ++(vlSymsp->__Vcoverage[653]);
+    ++(vlSymsp->__Vcoverage[648]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent::init(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, std::string name, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_component> parent) {
@@ -41,7 +41,7 @@ void Vtb_rng_tb_rng__03a__03arng_agent::init(VlProcessRef vlProcess, Vtb_rng__Sy
     // Body
     _ctor_var_reset(vlSymsp);
     /*super.new*/;
-    ++(vlSymsp->__Vcoverage[654]);
+    ++(vlSymsp->__Vcoverage[649]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_build_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -54,7 +54,7 @@ void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_build_phase(VlProcessRef vlP
                                                                                 VlClassRef<Vtb_rng_tb_rng__03a__03arng_agent>{this}, ""s, this->__PVT__driver);
     vlSymsp->TOP__uvm_pkg__03a__03auvm_component_registry__pi66__Vclpkg.__VnoInFunc_create(vlProcess, vlSymsp, "monitor"s, 
                                                                                 VlClassRef<Vtb_rng_tb_rng__03a__03arng_agent>{this}, ""s, this->__PVT__monitor);
-    ++(vlSymsp->__Vcoverage[655]);
+    ++(vlSymsp->__Vcoverage[650]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_connect_phase(VlProcessRef vlProcess, Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_phase> phase) {
@@ -64,7 +64,7 @@ void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_connect_phase(VlProcessRef v
     VL_NULL_CHECK(VL_NULL_CHECK(this->__PVT__driver, "../UVM/UVM_agent.sv", 44)
                   ->__PVT__seq_item_port, "../UVM/UVM_agent.sv", 44)->__VnoInFunc_connect(vlProcess, vlSymsp, VL_NULL_CHECK(this->__PVT__sequencer, "../UVM/UVM_agent.sv", 44)
                                                                                 ->__PVT__seq_item_export);
-    ++(vlSymsp->__Vcoverage[656]);
+    ++(vlSymsp->__Vcoverage[651]);
 }
 
 void Vtb_rng_tb_rng__03a__03arng_agent::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {

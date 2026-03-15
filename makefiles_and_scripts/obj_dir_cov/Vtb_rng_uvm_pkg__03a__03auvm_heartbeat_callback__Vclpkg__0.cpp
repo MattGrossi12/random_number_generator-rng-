@@ -12,17 +12,17 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::init(VlProcessRef vlProces
     // Body
     _ctor_var_reset(vlSymsp);
     vlSymsp->TOP__uvm_pkg__03a__03auvm_coreservice_t__Vclpkg.__VnoInFunc_get(vlProcess, vlSymsp, this->__PVT__cs);
-    ++(vlSymsp->__Vcoverage[17772]);
+    ++(vlSymsp->__Vcoverage[17767]);
     /*super.new*/;
     if ((VlNull{} != target)) {
         this->__PVT__target = target;
-        ++(vlSymsp->__Vcoverage[17773]);
+        ++(vlSymsp->__Vcoverage[17768]);
     } else {
         VL_NULL_CHECK(this->__PVT__cs, "/home/matheus/tools/1800.2-2017-1.0/src/base/uvm_heartbeat.svh", 312)->__VnoInFunc_get_root(vlProcess, vlSymsp, __Vtask_get_root__2__Vfuncout);
         this->__PVT__target = __Vtask_get_root__2__Vfuncout;
-        ++(vlSymsp->__Vcoverage[17774]);
+        ++(vlSymsp->__Vcoverage[17769]);
     }
-    ++(vlSymsp->__Vcoverage[17775]);
+    ++(vlSymsp->__Vcoverage[17770]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_raised(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_objection> objection, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> source_obj, std::string description, IData/*31:0*/ count) {
@@ -31,28 +31,28 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_raised(Vtb_rng
     IData/*31:0*/ __VlefExpr_0;
     if ((obj == this->__PVT__target)) {
         if (this->__PVT__cnt.exists(source_obj)) {
-            ++(vlSymsp->__Vcoverage[17777]);
+            ++(vlSymsp->__Vcoverage[17772]);
         } else {
             this->__PVT__cnt.at(source_obj) = 0U;
-            ++(vlSymsp->__Vcoverage[17776]);
+            ++(vlSymsp->__Vcoverage[17771]);
         }
         __VlefExpr_0 = ((IData)(1U) + this->__PVT__cnt
                         .at(source_obj));
         this->__PVT__cnt.at(source_obj) = __VlefExpr_0;
         this->__PVT__last_trigger.at(source_obj) = 
             VL_RTOIROUND_Q_D(VL_TIME_UNITED_D(1));
-        ++(vlSymsp->__Vcoverage[17778]);
+        ++(vlSymsp->__Vcoverage[17773]);
     } else {
-        ++(vlSymsp->__Vcoverage[17779]);
+        ++(vlSymsp->__Vcoverage[17774]);
     }
-    ++(vlSymsp->__Vcoverage[17780]);
+    ++(vlSymsp->__Vcoverage[17775]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_dropped(Vtb_rng__Syms* __restrict vlSymsp, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_objection> objection, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> obj, VlClassRef<Vtb_rng_uvm_pkg__03a__03auvm_object> source_obj, std::string description, IData/*31:0*/ count) {
     VL_DEBUG_IF(VL_DBG_MSGF("+          Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_dropped\n"); );
     // Body
     this->__VnoInFunc_raised(vlSymsp, objection, obj, source_obj, description, count);
-    ++(vlSymsp->__Vcoverage[17781]);
+    ++(vlSymsp->__Vcoverage[17776]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_reset_counts(Vtb_rng__Syms* __restrict vlSymsp) {
@@ -74,13 +74,13 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_reset_counts(V
             if (!(__VlefExpr_1)) break;
             unnamedblk1__DOT__i__Vfirst = 0U;
             this->__PVT__cnt.at(unnamedblk1__DOT__i) = 0U;
-            ++(vlSymsp->__Vcoverage[17782]);
+            ++(vlSymsp->__Vcoverage[17777]);
         }
-        ++(vlSymsp->__Vcoverage[17783]);
+        ++(vlSymsp->__Vcoverage[17778]);
     } else {
-        ++(vlSymsp->__Vcoverage[17784]);
+        ++(vlSymsp->__Vcoverage[17779]);
     }
-    ++(vlSymsp->__Vcoverage[17785]);
+    ++(vlSymsp->__Vcoverage[17780]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_objects_triggered(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &objects_triggered__Vfuncrtn) {
@@ -107,17 +107,17 @@ void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_objects_trigge
             if (__VlefExpr_2) {
                 objects_triggered__Vfuncrtn = ((IData)(1U) 
                                                + objects_triggered__Vfuncrtn);
-                ++(vlSymsp->__Vcoverage[17786]);
+                ++(vlSymsp->__Vcoverage[17781]);
             } else {
-                ++(vlSymsp->__Vcoverage[17787]);
+                ++(vlSymsp->__Vcoverage[17782]);
             }
-            ++(vlSymsp->__Vcoverage[17788]);
+            ++(vlSymsp->__Vcoverage[17783]);
         }
-        ++(vlSymsp->__Vcoverage[17789]);
+        ++(vlSymsp->__Vcoverage[17784]);
     } else {
-        ++(vlSymsp->__Vcoverage[17790]);
+        ++(vlSymsp->__Vcoverage[17785]);
     }
-    ++(vlSymsp->__Vcoverage[17791]);
+    ++(vlSymsp->__Vcoverage[17786]);
 }
 
 void Vtb_rng_uvm_pkg__03a__03auvm_heartbeat_callback::__VnoInFunc_randomize(Vtb_rng__Syms* __restrict vlSymsp, IData/*31:0*/ &randomize__Vfuncrtn) {
