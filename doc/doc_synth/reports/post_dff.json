@@ -1,0 +1,55 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/matheus/openframe_user_project/openlane/rng/runs/26_03_12_18_53/tmp/7f0f51cbc66643a4b250369996ce1922.lib ",
+   "modules": {
+      "\\rng_top": {
+         "num_wires":         106,
+         "num_wire_bits":     126,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 41,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         122,
+         "area":              919.632000,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 19,
+            "$_AND_": 1,
+            "$_MUX_": 30,
+            "$_NAND_": 1,
+            "$_ORNOT_": 1,
+            "$_OR_": 9,
+            "$_XNOR_": 8,
+            "$_XOR_": 18,
+            "sky130_fd_sc_hd__dfrtp_2": 35
+         }
+      }
+   },
+      "design": {
+         "num_wires":         106,
+         "num_wire_bits":     126,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 41,
+         "num_ports":         5,
+         "num_port_bits":     7,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         122,
+         "area":              919.632000,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 19,
+            "$_AND_": 1,
+            "$_MUX_": 30,
+            "$_NAND_": 1,
+            "$_ORNOT_": 1,
+            "$_OR_": 9,
+            "$_XNOR_": 8,
+            "$_XOR_": 18,
+            "sky130_fd_sc_hd__dfrtp_2": 35
+         }
+      }
+}
+
