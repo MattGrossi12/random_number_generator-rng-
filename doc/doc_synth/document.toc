@@ -1,0 +1,11 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Síntese baseada em FPGA}{2}{}%
+\contentsline {section}{\numberline {2}Fluxo de Funcionamento e Timing}{4}{}%
+\contentsline {section}{\numberline {3}Síntese baseada em ASIC Flow no PDK Open-SKY130}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Definições da estrutura para a síntese}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Restrições de Design (SDC - Synopsys Design Constraints)}{6}{}%
+\contentsline {section}{\numberline {4}Resultados da Síntese Lógica e Física}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Diagrama Lógico}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Consumo de Potência}{7}{}%
+\contentsline {section}{\numberline {5}Soc-View}{8}{}%
+\contentsline {section}{\numberline {6}Simulação}{9}{}%
