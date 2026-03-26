@@ -1,0 +1,7 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Introdução e Especificação}{1}{section.1}%
+\contentsline {section}{\numberline {2}Implementação RTL}{3}{section.2}%
+\contentsline {section}{\numberline {3}Estratégia de Verificação e Resultados}{6}{section.3}%
+\contentsline {section}{\numberline {4}Síntese Lógica e Resultados PPA}{9}{section.4}%
+\contentsline {section}{\numberline {5}Conclusão e Lições Aprendidas}{16}{section.5}%
+\contentsline {section}{\numberline {6}Referências e Apêndices}{17}{section.6}%
